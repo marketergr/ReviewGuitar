@@ -1,0 +1,51 @@
+{
+  "main": [
+    {
+      "name": "Acoustic",
+      "url": "/acoustic",
+      "categories": ["beginner", "intermediate", "advanced", "professional"]
+    },
+    {
+      "name": "Electric",
+      "url": "/electric",
+      "categories": ["beginner", "intermediate", "advanced", "professional"]
+    },
+    {
+      "name": "Accessories",
+      "url": "/accessories",
+      "categories": ["strings", "picks", "cables", "stands", "cases"]
+    },
+    {
+      "name": "Learning",
+      "url": "/learning",
+      "categories": ["courses", "books", "videos", "apps"]
+    },
+    {
+      "name": "Buying",
+      "url": "/buying",
+      "categories": ["guides", "reviews", "comparisons", "deals"]
+    }
+  ],
+  "footer": [
+    {
+      "name": "Acoustic",
+      "url": "/acoustic"
+    },
+    {
+      "name": "Electric",
+      "url": "/electric"
+    },
+    {
+      "name": "Accessories",
+      "url": "/accessories"
+    },
+    {
+      "name": "Learning",
+      "url": "/learning"
+    },
+    {
+      "name": "Buying",
+      "url": "/buying"
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+#!/usr/bin/env node
+/**
+ * Programmatic SEO Generator for GuitarReview.com
+ * Implements AI content injection and deep SEO architecture
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const BASE_URL = "https://www.guitarreview.com";
+const PROJECT_ROOT = path.resolve(__dirname);
+const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
+
+// Load AI Cache
+let contentCache = {};
+if (fs.existsSync('content_cache.json')) {
+    contentCache = JSON.parse(fs.readFileSync('content_cache.json', 'utf8'));
+}
+
+const SEO_KEYWORDS = {
+    acoustic: {
+        beginner: ["best acoustic guitar for beginners 2026", "top rated beginner acoustic guitar", "affordable acoustic guitar starter kit", "buy acoustic guitar beginner bundle"],
+        intermediate: ["best intermediate acoustic guitar", "professional acoustic guitar reviews", "top selling acoustic guitars 2026", "acoustic guitar upgrade deals"],
+        advanced: ["professional acoustic guitar comparison", "best acoustic guitar for recording", "high end acoustic guitar reviews", "acoustic guitar tonewood guide"],
+        professional: ["professional acoustic guitar purchase", "best acoustic guitar brands 2026", "custom acoustic guitar builders", "investment grade acoustic guitars"]
+    },
+    electric: {
+        beginner: ["best electric guitar for beginners 2026", "starter electric guitar kit buy", "affordable electric guitar beginner", "top rated beginner electric guitar"],
+        intermediate: ["best intermediate electric guitar", "electric guitar upgrade deals", "professional electric guitar reviews", "top selling electric guitars 2026"],
+        advanced: ["professional electric guitar comparison", "best electric guitar for solos", "high end electric guitar reviews", "electric guitar customization guide"],
+        professional: ["professional electric guitar purchase", "best electric guitar brands 2026", "custom electric guitar builders", "investment grade electric guitars"]
+    },
+    accessories: {
+        strings: ["best guitar strings 2026", "buy guitar strings bulk", "guitar strings review comparison", "affordable guitar strings deals"],
+        picks: ["best guitar picks 2026", "buy guitar picks bulk", "guitar picks review comparison", "top rated guitar picks"],
+        cables: ["best guitar cables 2026", "buy instrument cables", "guitar cable review comparison", "affordable guitar cables"],
+        stands: ["best guitar stands 2026", "buy guitar stands", "guitar stand review comparison", "top rated guitar stands"],
+        cases: ["best guitar cases 2026", "buy guitar cases reviews", "guitar case comparison guide", "affordable guitar hard cases"]
+    },
+    learning: {
+        courses: ["best guitar courses 2026", "buy online guitar lessons", "guitar learning courses review", "top rated guitar courses"],
+        books: ["best guitar books 2026", "buy guitar learning books", "guitar method book review", "top guitar books for beginners"],
+        videos: ["best guitar video courses", "buy guitar tutorial videos", "guitar lesson video review", "top rated guitar tutorials"],
+        apps: ["best guitar learning apps 2026", "buy guitar app subscription", "guitar app review comparison", "top guitar learning apps"]
+    },
+    buying: {
+        guides: ["guitar buying guide 2026", "best guitar buying guide", "how to buy a guitar guide", "guitar purchase guide review"],
+        reviews: ["guitar reviews 2026", "best guitar reviews site", "guitar review comparison", "top guitar reviews"],
+        comparisons: ["guitar comparison 2026", "best guitar vs comparison", "acoustic vs electric guitar buy", "guitar brands comparison"],
+        deals: ["best guitar deals 2026", "guitar sale deals", "affordable guitar deals", "guitar discount offers"]
+    }
+};
+
+function generateURL(silo, category, keyword) {
+    let cleanKeyword = keyword.toLowerCase().trim();
+    cleanKeyword = cleanKeyword.replace(/\s+/g, '-')
+        .replace(/,/g, '')
+        .replace(/\./g, '')
+        .replace(/[?!=]/g, '');
+    
+    const redundant = ["the", "best", "top", "buy", "purchase", "review", "guide"];
+    const words = cleanKeyword.split("-");
+    const filteredWords = words.filter(w => !redundant.includes(w) || w === words[0]);
+    
+    return `/${silo}/${category}/${filteredWords.join('-')}`;
+}
+
+function generateMetaTags(keyword, silo, category, pageType = "landing") {
+    let title = `${keyword.toUpperCase()} | GuitarReview.com`;
+    let description = `Expert reviews and buying guides for ${keyword}. Find the elite deals on premium guitars and accessories.`;
+    
+    return {
+        title,
+        description,
+        getKeywords: keyword,
+        og_title: title,
+        og_description: description,
+        og_type: "article",
+        og_url: `${BASE_URL}${generateURL(silo, category, keyword)}`,
+        twitter_card: "summary_large_image",
+        twitter_title: title,
+        twitter_description: description
+    };
+}
+
+function generateSchema(keyword, silo, category) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": keyword,
+        "description": `Expert review and analysis of ${keyword}`,
+        "brand": { "@type": "Brand", "name": "GuitarReview" },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "254"
+        }
+    };
+}
+
+function renderProductGrid(filteredProducts) {
+    if (filteredProducts.length === 0) return '';
+    
+    return `
+    <span class="section-title">Editor's Choice Selection</span>
+    <div class="product-grid">
+        ${filteredProducts.map(p => `
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="${p.image}" alt="${p.name}" class="product-img">
+                </div>
+                <div class="product-card-content">
+                    <span class="product-badge">${p.category.toUpperCase()} PICK</span>
+                    <h3 class="product-title">${p.name}</h3>
+                    <div class="product-rating">${'★'.repeat(Math.floor(p.rating))}${p.rating % 1 !== 0 ? '½' : ''} (${p.rating})</div>
+                    <p class="product-desc">${p.description}</p>
+                    
+                    <div class="pros-cons-grid">
+                        <div class="pros-box">
+                            <h4>Pros</h4>
+                            <ul class="pros-cons-list">
+                                ${(p.pros || []).map(p => `<li>${p}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="cons-box">
+                            <h4>Cons</h4>
+                            <ul class="pros-cons-list">
+                                ${(p.cons || []).map(c => `<li>${c}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="product-features">
+                        ${p.features.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                    <div class="product-price">${p.price}</div>
+                    <a href="${p.amazonLink}" class="btn-amazon">Check Price on Amazon</a>
+                </div>
+            </div>
+        `).join('')}
+    </div>
+    `;
+}
+
+function renderCrossSiloLinks(silo, basePath) {
+    const accessoryLinks = [
+        { name: "Top-Rated Strings", url: basePath + "silos/accessories/index.html" },
+        { name: "Essential Tuners", url: basePath + "silos/accessories/index.html" },
+        { name: "Beginner Lessons", url: basePath + "silos/learning/index.html" }
+    ];
+
+    if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
+
+    return `
+    <div style="margin: 4rem 0; padding: 3rem; background: var(--glass); border: 1px solid var(--border); border-radius: 12px;">
+        <h4 style="font-size: 0.75rem; letter-spacing: 0.2em; color: var(--primary); margin-bottom: 1.5rem; text-transform: uppercase;">Essential Recommendations</h4>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            ${accessoryLinks.map(link => `
+                <a href="${link.url}" class="recom-badge" style="text-decoration: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    ${link.name}
+                </a>
+            `).join('')}
+        </div>
+    </div>
+    `;
+}
+
+function generateLandingPage(silo, category, keyword, metaTags, schema) {
+    const schemaJson = JSON.stringify(schema, null, 2);
+    
+    const matchedProducts = products.filter(p => p.silo === silo && (
+        keyword.toLowerCase().includes(p.category) || 
+        category.toLowerCase().includes(p.category)
+    ));
+    
+    const finalProducts = matchedProducts.length > 0 ? matchedProducts : products.filter(p => p.silo === silo);
+    const aiArticle = contentCache[keyword] || `
+        <h2 style="color: var(--primary); font-size: 1rem; margin-bottom: 1.5rem; letter-spacing: 0.2em;">EXECUTIVE SUMMARY</h2>
+        <p style="font-size: 1.1rem; color: var(--text-dim); line-height: 1.8;">
+            Our exhaustive analysis of <strong>${keyword}</strong> reveals key insights for the musician seeking premium gear in 2026. 
+            We've evaluated performance, build quality, and overall value.
+        </p>
+    `;
+
+    return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${metaTags.title}</title>
+    <meta name="description" content="${metaTags.description}">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="application/ld+json">
+${schemaJson}
+    </script>
+</head>
+<body>
+    <header>
+        <h1>GuitarReview.com</h1>
+        <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../silos/acoustic/index.html">Acoustic</a></li>
+            <li><a href="../silos/electric/index.html">Electric</a></li>
+            <li><a href="../silos/accessories/index.html">Accessories</a></li>
+            <li><a href="../silos/learning/index.html">Learning</a></li>
+            <li><a href="../silos/buying/index.html">Guides</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div style="padding: 4rem 2rem; max-width: 1000px; margin: 0 auto;">
+            <nav style="font-size: 0.7rem; color: #666; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">
+                <a href="../index.html" style="color: #666; text-decoration: none;">HOME</a> > ${silo} > ${category}
+            </nav>
+            
+            <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; font-family: 'Montserrat', sans-serif; text-transform: uppercase;">
+                ${keyword}
+            </h1>
+
+            <div class="article-content">
+                ${aiArticle}
+            </div>
+
+            ${renderProductGrid(finalProducts.slice(0, 3))}
+
+            ${renderCrossSiloLinks(silo, "../")}
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
+                <div style="background: var(--glass); border: 1px solid var(--border); padding: 2rem; border-radius: 8px;">
+                    <h3 style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--primary);">TECHNICAL CALIBRATION</h3>
+                    <ul style="font-size: 0.85rem; color: var(--text-dim); padding-left: 1.2rem;">
+                        <li>Professional Fretwork Alignment</li>
+                        <li>Optimal Action Configuration</li>
+                        <li>High-Fidelity Pickup Response</li>
+                    </ul>
+                </div>
+                <div style="background: var(--glass); border: 1px solid var(--border); padding: 2rem; border-radius: 8px;">
+                    <h3 style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--primary);">VERDICT</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-dim);">
+                        An essential benchmark for players seeking uncompromising quality in 2026.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 GuitarReview.com. All Rights Reserved. <br>Affiliate disclosure applies.</p>
+    </footer>
+</body>
+</html>`;
+}
+
+function main() {
+    console.log("Starting Programmatic SEO Generation with AI content injection...");
+    const pages = [];
+    if (!fs.existsSync(path.join(PROJECT_ROOT, 'pages'))) fs.mkdirSync(path.join(PROJECT_ROOT, 'pages'));
+
+    for (const [silo, categories] of Object.entries(SEO_KEYWORDS)) {
+        for (const [category, keywords] of Object.entries(categories)) {
+            for (const keyword of keywords) {
+                const metaTags = generateMetaTags(keyword, silo, category);
+                const schema = generateSchema(keyword, silo, category);
+                const pageContent = generateLandingPage(silo, category, keyword, metaTags, schema);
+                
+                const filename = `${silo}_${category}_${keyword.replace(/\s+/g, '_')}.html`;
+                const pagePath = path.join(PROJECT_ROOT, 'pages', filename);
+                fs.writeFileSync(pagePath, pageContent);
+                pages.push({ url: `${BASE_URL}${generateURL(silo, category, keyword)}`, filename });
+            }
+        }
+    }
+    console.log(`\nComplete! Generated ${pages.length} pages`);
+}
+
+main();

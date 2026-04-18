@@ -1,0 +1,55 @@
+{
+  "siteTitle": "GuitarReview.com",
+  "siloConfigs": [
+    {
+      "name": "acoustic",
+      "displayName": "Acoustic Guitars",
+      "pages": [
+        {"slug": "best-under-500", "title": "Best Acoustic Guitars Under $500 2026", "keywords": "best acoustic guitar under 500, acoustic guitar deals 2026"},
+        {"slug": "top-brands", "title": "Top Acoustic Guitar Brands Review 2026", "keywords": "top acoustic guitar brands, acoustic guitar review"},
+        {"slug": "care-guide", "title": "Acoustic Guitar Care Guide 2026", "keywords": "acoustic guitar care, how to maintain guitar"},
+        {"slug": "beginner-guide", "title": "Beginner Acoustic Guitar Guide 2026", "keywords": "best acoustic guitar for beginners, beginner guitar guide"}
+      ]
+    },
+    {
+      "name": "electric",
+      "displayName": "Electric Guitars",
+      "pages": [
+        {"slug": "best-under-300", "title": "Best Electric Guitars Under $300 2026", "keywords": "best electric guitar under 300, electric guitar deals"},
+        {"slug": "starter-kit", "title": "Electric Guitar Starter Kit Review 2026", "keywords": "electric guitar starter kit, beginner electric guitar"},
+        {"slug": "amp-reviews", "title": "Electric Guitar Amp Reviews 2026", "keywords": "best guitar amps, electric amp review"},
+        {"slug": "effects-pedals", "title": "Effects Pedals Comparison 2026", "keywords": "guitar effects pedals review, best pedals"}
+      ]
+    },
+    {
+      "name": "accessories",
+      "displayName": "Accessories",
+      "pages": [
+        {"slug": "cables-affordable", "title": "Affordable Guitar Cables Review 2026", "keywords": "guitar cables affordable, best guitar cables"},
+        {"slug": "cases-hard", "title": "Hard Guitar Cases Comparison 2026", "keywords": "guitar hard cases, best guitar case"},
+        {"slug": "picks-2026", "title": "Best Guitar Picks 2026 Review", "keywords": "guitar picks review, best picks"},
+        {"slug": "tuners-review", "title": "Digital Tuner Review 2026", "keywords": "best guitar tuner, digital tuner review"}
+      ]
+    },
+    {
+      "name": "learning",
+      "displayName": "Learning & Lessons",
+      "pages": [
+        {"slug": "online-courses", "title": "Best Online Guitar Courses 2026", "keywords": "online guitar lessons, best guitar course"},
+        {"slug": "apps-review", "title": "Guitar Learning Apps Review 2026", "keywords": "guitar apps review, learn guitar app"},
+        {"slug": "beginner-tips", "title": "Beginner Guitar Tips 2026", "keywords": "guitar tips for beginners, learn guitar fast"},
+        {"slug": "techniques", "title": "Guitar Techniques Guide 2026", "keywords": "guitar techniques, how to play guitar"}
+      ]
+    },
+    {
+      "name": "buying",
+      "displayName": "Buying Guides",
+      "pages": [
+        {"slug": "where-to-buy", "title": "Where to Buy Guitars 2026", "keywords": "where to buy guitar, guitar store comparison"},
+        {"slug": "online-vs-store", "title": "Online vs Music Store 2026", "keywords": "buy guitar online vs store, guitar purchase guide"},
+        {"slug": "deals-guide", "title": "Guitar Deals & Discounts 2026", "keywords": "guitar deals, guitar discount 2026"},
+        {"slug": "return-policy", "title": "Guitar Return Policy Guide 2026", "keywords": "guitar return policy, buying guide"}
+      ]
+    }
+  ]
+}
