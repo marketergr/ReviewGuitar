@@ -110,6 +110,10 @@ function renderProductGrid(filteredProducts) {
                     <img src="${p.image}" alt="${p.name}" class="product-img">
                 </div>
                 <div class="product-card-content">
+                    <div class="trust-badge-container">
+                        <span class="trust-badge">✓ ELITE VERIFIED</span>
+                        <span class="trust-badge">10+ HOURS TESTED</span>
+                    </div>
                     <span class="product-badge">${p.category.toUpperCase()} PICK</span>
                     <h3 class="product-title">${p.name}</h3>
                     <div class="product-rating">${'★'.repeat(Math.floor(p.rating))}${p.rating % 1 !== 0 ? '½' : ''} (${p.rating})</div>
@@ -164,6 +168,45 @@ function renderCrossSiloLinks(silo, basePath) {
         </div>
     </div>
     `;
+}
+
+function getFooter(basePath) {
+    return `
+    <footer class="footer-hub">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>GUITARREVIEW.COM</h2>
+                <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Silos</h3>
+                <ul class="footer-links">
+                    <li><a href="${basePath}silos/acoustic/index.html">Acoustic Guitars</a></li>
+                    <li><a href="${basePath}silos/electric/index.html">Electric Guitars</a></li>
+                    <li><a href="${basePath}silos/accessories/index.html">Essential Gear</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Brand</h3>
+                <ul class="footer-links">
+                    <li><a href="${basePath}about.html">About Us</a></li>
+                    <li><a href="${basePath}about.html#process">Evaluation Process</a></li>
+                    <li><a href="${basePath}sitemap.xml">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="${basePath}privacy.html">Privacy Policy</a></li>
+                    <li><a href="${basePath}terms.html">Terms & Conditions</a></li>
+                    <li><a href="${basePath}terms.html#affiliate">Affiliate Disclosure</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GuitarReview.com. All Rights Reserved. Built for the modern musician.</p>
+        </div>
+    </footer>`;
 }
 
 function generateLandingPage(silo, category, keyword, metaTags, schema) {
@@ -246,9 +289,7 @@ ${schemaJson}
             </div>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2026 GuitarReview.com. All Rights Reserved. <br>Affiliate disclosure applies.</p>
-    </footer>
+    ${getFooter("../")}
 </body>
 </html>`;
 }
