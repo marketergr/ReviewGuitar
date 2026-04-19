@@ -196,7 +196,7 @@ structure.siloConfigs.forEach(silo => {
     ${getFooter("../../")}
     `;
   
-  var dir = 'silos/' + silo.name;
+  var dir = 'collections/' + silo.name;
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, {recursive: true});
   fs.writeFileSync(dir + '/index.html', siloHTML);
   pageCount++;
