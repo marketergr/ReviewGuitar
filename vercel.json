@@ -1,0 +1,499 @@
+{
+  "redirects": [
+    {
+      "source": "/best-under-500",
+      "destination": "/collections/acoustic/best-under-500.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-under-500.html",
+      "destination": "/collections/acoustic/best-under-500.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic/best-under-500.html",
+      "destination": "/collections/acoustic/best-under-500.html",
+      "permanent": true
+    },
+    {
+      "source": "/top-brands",
+      "destination": "/collections/acoustic/top-brands.html",
+      "permanent": true
+    },
+    {
+      "source": "/top-brands.html",
+      "destination": "/collections/acoustic/top-brands.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic/top-brands.html",
+      "destination": "/collections/acoustic/top-brands.html",
+      "permanent": true
+    },
+    {
+      "source": "/care-guide",
+      "destination": "/collections/acoustic/care-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/care-guide.html",
+      "destination": "/collections/acoustic/care-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic/care-guide.html",
+      "destination": "/collections/acoustic/care-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/beginner-guide",
+      "destination": "/collections/acoustic/beginner-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/beginner-guide.html",
+      "destination": "/collections/acoustic/beginner-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic/beginner-guide.html",
+      "destination": "/collections/acoustic/beginner-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic",
+      "destination": "/collections/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html",
+      "destination": "/collections/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html",
+      "destination": "/collections/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-yamaha-ntx3-brown-sunburst",
+      "destination": "/collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-yamaha-ntx3-brown-sunburst.html",
+      "destination": "/collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic/guitar-yamaha-ntx3-brown-sunburst.html",
+      "destination": "/collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic",
+      "destination": "/collections/acoustic/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/acoustic/index.html",
+      "destination": "/collections/acoustic/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-under-300",
+      "destination": "/collections/electric/best-under-300.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-under-300.html",
+      "destination": "/collections/electric/best-under-300.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/best-under-300.html",
+      "destination": "/collections/electric/best-under-300.html",
+      "permanent": true
+    },
+    {
+      "source": "/starter-kit",
+      "destination": "/collections/electric/starter-kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/starter-kit.html",
+      "destination": "/collections/electric/starter-kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/starter-kit.html",
+      "destination": "/collections/electric/starter-kit.html",
+      "permanent": true
+    },
+    {
+      "source": "/amp-reviews",
+      "destination": "/collections/electric/amp-reviews.html",
+      "permanent": true
+    },
+    {
+      "source": "/amp-reviews.html",
+      "destination": "/collections/electric/amp-reviews.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/amp-reviews.html",
+      "destination": "/collections/electric/amp-reviews.html",
+      "permanent": true
+    },
+    {
+      "source": "/effects-pedals",
+      "destination": "/collections/electric/effects-pedals.html",
+      "permanent": true
+    },
+    {
+      "source": "/effects-pedals.html",
+      "destination": "/collections/electric/effects-pedals.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/effects-pedals.html",
+      "destination": "/collections/electric/effects-pedals.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit",
+      "destination": "/collections/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html",
+      "destination": "/collections/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html",
+      "destination": "/collections/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck",
+      "destination": "/collections/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html",
+      "destination": "/collections/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html",
+      "destination": "/collections/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html",
+      "permanent": true
+    },
+    {
+      "source": "/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst",
+      "destination": "/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html",
+      "permanent": true
+    },
+    {
+      "source": "/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html",
+      "destination": "/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html",
+      "destination": "/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric",
+      "destination": "/collections/electric/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/electric/index.html",
+      "destination": "/collections/electric/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night",
+      "destination": "/collections/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html",
+      "destination": "/collections/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html",
+      "destination": "/collections/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes",
+      "destination": "/collections/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html",
+      "destination": "/collections/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html",
+      "destination": "/collections/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html",
+      "permanent": true
+    },
+    {
+      "source": "/bass-buying-guide",
+      "destination": "/collections/bass/bass-buying-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/bass-buying-guide.html",
+      "destination": "/collections/bass/bass-buying-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/bass/bass-buying-guide.html",
+      "destination": "/collections/bass/bass-buying-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/bass",
+      "destination": "/collections/bass/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/bass/index.html",
+      "destination": "/collections/bass/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/cables-affordable",
+      "destination": "/collections/accessories/cables-affordable.html",
+      "permanent": true
+    },
+    {
+      "source": "/cables-affordable.html",
+      "destination": "/collections/accessories/cables-affordable.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/accessories/cables-affordable.html",
+      "destination": "/collections/accessories/cables-affordable.html",
+      "permanent": true
+    },
+    {
+      "source": "/cases-hard",
+      "destination": "/collections/accessories/cases-hard.html",
+      "permanent": true
+    },
+    {
+      "source": "/cases-hard.html",
+      "destination": "/collections/accessories/cases-hard.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/accessories/cases-hard.html",
+      "destination": "/collections/accessories/cases-hard.html",
+      "permanent": true
+    },
+    {
+      "source": "/picks-2026",
+      "destination": "/collections/accessories/picks-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/picks-2026.html",
+      "destination": "/collections/accessories/picks-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/accessories/picks-2026.html",
+      "destination": "/collections/accessories/picks-2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/tuners-review",
+      "destination": "/collections/accessories/tuners-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/tuners-review.html",
+      "destination": "/collections/accessories/tuners-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/accessories/tuners-review.html",
+      "destination": "/collections/accessories/tuners-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/accessories",
+      "destination": "/collections/accessories/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/accessories/index.html",
+      "destination": "/collections/accessories/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-courses",
+      "destination": "/collections/learning/online-courses.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-courses.html",
+      "destination": "/collections/learning/online-courses.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/learning/online-courses.html",
+      "destination": "/collections/learning/online-courses.html",
+      "permanent": true
+    },
+    {
+      "source": "/apps-review",
+      "destination": "/collections/learning/apps-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/apps-review.html",
+      "destination": "/collections/learning/apps-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/learning/apps-review.html",
+      "destination": "/collections/learning/apps-review.html",
+      "permanent": true
+    },
+    {
+      "source": "/beginner-tips",
+      "destination": "/collections/learning/beginner-tips.html",
+      "permanent": true
+    },
+    {
+      "source": "/beginner-tips.html",
+      "destination": "/collections/learning/beginner-tips.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/learning/beginner-tips.html",
+      "destination": "/collections/learning/beginner-tips.html",
+      "permanent": true
+    },
+    {
+      "source": "/techniques",
+      "destination": "/collections/learning/techniques.html",
+      "permanent": true
+    },
+    {
+      "source": "/techniques.html",
+      "destination": "/collections/learning/techniques.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/learning/techniques.html",
+      "destination": "/collections/learning/techniques.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-guitar-lesson-affiliates",
+      "destination": "/collections/learning/best-guitar-lesson-affiliates.html",
+      "permanent": true
+    },
+    {
+      "source": "/best-guitar-lesson-affiliates.html",
+      "destination": "/collections/learning/best-guitar-lesson-affiliates.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/learning/best-guitar-lesson-affiliates.html",
+      "destination": "/collections/learning/best-guitar-lesson-affiliates.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/learning",
+      "destination": "/collections/learning/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/learning/index.html",
+      "destination": "/collections/learning/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/where-to-buy",
+      "destination": "/collections/buying/where-to-buy.html",
+      "permanent": true
+    },
+    {
+      "source": "/where-to-buy.html",
+      "destination": "/collections/buying/where-to-buy.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/buying/where-to-buy.html",
+      "destination": "/collections/buying/where-to-buy.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-vs-store",
+      "destination": "/collections/buying/online-vs-store.html",
+      "permanent": true
+    },
+    {
+      "source": "/online-vs-store.html",
+      "destination": "/collections/buying/online-vs-store.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/buying/online-vs-store.html",
+      "destination": "/collections/buying/online-vs-store.html",
+      "permanent": true
+    },
+    {
+      "source": "/deals-guide",
+      "destination": "/collections/buying/deals-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/deals-guide.html",
+      "destination": "/collections/buying/deals-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/buying/deals-guide.html",
+      "destination": "/collections/buying/deals-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/return-policy",
+      "destination": "/collections/buying/return-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/return-policy.html",
+      "destination": "/collections/buying/return-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/buying/return-policy.html",
+      "destination": "/collections/buying/return-policy.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/buying",
+      "destination": "/collections/buying/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/silos/buying/index.html",
+      "destination": "/collections/buying/index.html",
+      "permanent": true
+    }
+  ]
+}

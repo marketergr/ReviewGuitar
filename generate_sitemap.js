@@ -2,14 +2,14 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE_URL = 'https://www.guitarreview.com';
-const PROJECT_ROOT = __dirname;
+const EXCLUDED_DIRS = ['node_modules', '.git', 'css', 'js', 'images', 'silos', 'pages', 'templates'];
 
 function getFiles(dir, fileList = []) {
     const files = fs.readdirSync(dir);
     files.forEach((file) => {
         const filePath = path.join(dir, file);
         if (fs.statSync(filePath).isDirectory()) {
-            if (file !== 'node_modules' && file !== '.git' && file !== 'css' && file !== 'js' && file !== 'images') {
+            if (EXCLUDED_DIRS.indexOf(file) === -1) {
                 getFiles(filePath, fileList);
             }
         } else {
@@ -22,14 +22,16 @@ function getFiles(dir, fileList = []) {
 }
 
 function generateSitemap() {
-    console.log("Locating all pages for sitemap...");
-    const htmlFiles = getFiles(PROJECT_ROOT);
+    console.log("Building high-authority sitemap...");
+    const htmlFiles = getFiles(__dirname);
     
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
 
     htmlFiles.forEach(file => {
-        const relativePath = path.relative(PROJECT_ROOT, file).replace(/\\/g, '/');
+        const relativePath = path.relative(__dirname, file).replace(/\\/g, '/');
+        if (relativePath === 'navigation.html') return; // Skip helper pages
+        
         const url = `${BASE_URL}/${relativePath}`.replace('/index.html', '/');
         
         xml += `
@@ -45,7 +47,7 @@ function generateSitemap() {
 </urlset>`;
 
     fs.writeFileSync('sitemap.xml', xml);
-    console.log(`Success! sitemap.xml generated with ${htmlFiles.length} URLs.`);
+    console.log(`Success! sitemap.xml generated with ${htmlFiles.length - 1} URLs (cleaned).`);
 }
 
 generateSitemap();

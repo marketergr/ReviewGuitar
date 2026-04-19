@@ -18,11 +18,11 @@ function getHeader(basePath, title, breadcrumbs) {
     <nav>
         <ul>
             <li><a href="${basePath}index.html">Home</a></li>
-            <li><a href="${basePath}silos/acoustic/index.html">Acoustic</a></li>
-            <li><a href="${basePath}silos/electric/index.html">Electric</a></li>
-            <li><a href="${basePath}silos/accessories/index.html">Accessories</a></li>
-            <li><a href="${basePath}silos/learning/index.html">Learning</a></li>
-            <li><a href="${basePath}silos/buying/index.html">Guides</a></li>
+            <li><a href="${basePath}collections/acoustic/index.html">Acoustic</a></li>
+            <li><a href="${basePath}collections/electric/index.html">Electric</a></li>
+            <li><a href="${basePath}collections/accessories/index.html">Accessories</a></li>
+            <li><a href="${basePath}collections/learning/index.html">Learning</a></li>
+            <li><a href="${basePath}collections/buying/index.html">Guides</a></li>
         </ul>
     </nav>
     <main>
@@ -160,6 +160,10 @@ structure.siloConfigs.forEach(silo => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert ${silo.displayName} reviews and buyer guides for 2026. Discover the high-fidelity sound of premium ${silo.name} gear and accessories.">
     <meta name="keywords" content="${silo.name} guitar, ${silo.name} review, boutique ${silo.name} 2026, professional guitar guides">
+    <meta property="og:title" content="${silo.displayName} Expert Reviews & Buyer Guides 2026">
+    <meta property="og:description" content="Premium analysis of the best ${silo.name} gear in 2026.">
+    <meta property="og:image" content="../../images/silo-${silo.name}-aesthetic.jpg">
+    <meta name="pinterest:description" content="Explore top-rated ${silo.name} reviews and aesthetic guitar guides for 2026.">
     <title>${silo.displayName} Expert Reviews & Buyer Guides 2026 | GuitarReview.com</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -222,6 +226,10 @@ structure.siloConfigs.forEach(silo => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="In-depth ${page.title} analysis and buyer recommendations. Explore elite ${silo.name} gear through our technically calibrated reviews.">
     <meta name="keywords" content="${kwArray.join(', ')}">
+    <meta property="og:title" content="${page.title} | Expert Analysis & Reviews 2026">
+    <meta property="og:description" content="Professional BoFU guide for ${page.title}. Technical specs and purchase analysis.">
+    <meta property="og:image" content="../../images/cluster-${page.slug}-pinterest.jpg">
+    <meta name="pinterest:description" content="Check out our aesthetic review and buy guide for ${page.title}. #guitar #aesthetic #musician">
     <title>${page.title} | Expert Analysis & Reviews 2026 | GuitarReview.com</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -229,6 +237,12 @@ structure.siloConfigs.forEach(silo => {
     ${getHeader("../../", page.title.toUpperCase(), ` > <a href="index.html" style="color: #666; text-decoration: none;">${silo.displayName.toUpperCase()}</a> > ${page.title.toUpperCase()}`)}
     
     ${clusterExpertContent}
+
+    <div class="aesthetic-spotlight" style="margin-bottom: 4rem; padding: 4rem; background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1), transparent); border-radius: 24px; border: 1px solid var(--border);">
+        <span style="font-size: 0.75rem; letter-spacing: 0.3em; color: var(--primary); text-transform: uppercase;">Aesthetic Detail Spotlight</span>
+        <h3 style="font-size: 2.2rem; margin: 1.5rem 0;">Why this dominates Pinterest in 2026</h3>
+        <p style="color: var(--text-dim); line-height: 1.8; max-width: 700px;">The visual language of modern guitar revolves around the marriage of high-performance hardware and boutique finishing. Our analysis shows that instruments featured here prioritize the "Art-as-Instrument" philosophy currently trending across designer-musician communities.</p>
+    </div>
 
     ${renderProductGrid(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2))}
 
