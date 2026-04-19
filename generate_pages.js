@@ -75,6 +75,7 @@ function renderProductGrid(filteredProducts) {
                     </ul>
                     <div class="product-price">${p.price}</div>
                     <a href="${p.amazonLink}" class="btn-amazon">Check Price on Amazon</a>
+                    <span style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; display: block;">*Paid affiliate link</span>
                 </div>
             </div>
         `).join('')}
