@@ -6,36 +6,116 @@
     <meta name="description" content="{{description}}">
     <meta name="keywords" content="{{keywords}}">
     <title>{{title}}</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{{basePath}}css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-77XFW0G925');
+    </script>
 </head>
 <body>
     <header>
         <h1>{{siteTitle}}</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../silos/acoustic/index.html">Acoustic</a></li>
-                <li><a href="../silos/electric/index.html">Electric</a></li>
-                <li><a href="../silos/accessories/index.html">Accessories</a></li>
-                <li><a href="../silos/learning/index.html">Learning</a></li>
-                <li><a href="../silos/buying/index.html">Buying</a></li>
-            </ul>
-        </nav>
+        <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
-    <main>
-        <h2>{{mainTitle}}</h2>
-        <div class="content">
+
+    <nav>
+        <ul>
+            <li><a href="{{basePath}}index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/acoustic/index.html">Acoustic</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/acoustic/best-for-beginners.html">Best for Beginners</a>
+                    <a href="{{basePath}}collections/acoustic/best-under-500.html">Best Under $500</a>
+                    <a href="{{basePath}}collections/acoustic/premium-guide.html">Premium Guide</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/electric/index.html">Electric</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/electric/starters.html">Starter Kits</a>
+                    <a href="{{basePath}}collections/electric/metal-guitars.html">Best for Metal</a>
+                    <a href="{{basePath}}collections/electric/under-1000.html">Best Under $1000</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/accessories/index.html">Gear</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/accessories/strings.html">Strings</a>
+                    <a href="{{basePath}}collections/accessories/pedals.html">Pedals</a>
+                    <a href="{{basePath}}collections/accessories/amps.html">Amps</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/learning/index.html">Education</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/learning/apps.html">Learning Apps</a>
+                    <a href="{{basePath}}collections/learning/courses.html">Video Courses</a>
+                    <a href="{{basePath}}collections/learning/books.html">Guitar Books</a>
+                </div>
+            </li>
+            <li><a href="{{basePath}}collections/buying/index.html">Guides</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="content-header">
+            <h2>{{mainTitle}}</h2>
+        </section>
+        
+        <article class="article-content">
             {{content}}
-        </div>
+        </article>
+
         <aside class="related-pages">
-            <h3>Related Pages</h3>
-            <ul>
+            <h3 style="color: var(--primary); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">Expert Resources</h3>
+            <ul style="list-style: none; padding: 0;">
                 {{relatedLinks}}
             </ul>
         </aside>
     </main>
-    <footer>
-        <p>&copy; 2026 GuitarReview.com. Affiliate disclosure applies.</p>
+
+    <footer class="footer-hub">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>REVIEWSGUITAR.COM</h2>
+                <p>The elite standard for gear analysis. Every comparison is bench-tested by professional guitarists for technical accuracy.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="{{basePath}}collections/acoustic/index.html">Acoustic Guitars</a></li>
+                    <li><a href="{{basePath}}collections/electric/index.html">Electric Guitars</a></li>
+                    <li><a href="{{basePath}}collections/accessories/index.html">Guitar Gear</a></li>
+                    <li><a href="{{basePath}}collections/learning/index.html">Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Guides</h3>
+                <ul class="footer-links">
+                    <li><a href="{{basePath}}collections/acoustic/best-for-beginners.html">Beginner Start</a></li>
+                    <li><a href="{{basePath}}collections/electric/metal-guitars.html">Metal Guide</a></li>
+                    <li><a href="{{basePath}}collections/buying/index.html">Buying Strategy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="{{basePath}}about.html">About Us</a></li>
+                    <li><a href="{{basePath}}privacy.html">Privacy Policy</a></li>
+                    <li><a href="{{basePath}}terms.html">Terms of Service</a></li>
+                    <li><a href="{{basePath}}contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 ReviewsGuitar.com | Professional Gear Analysis Ecosystem
+        </div>
     </footer>
 </body>
 </html>

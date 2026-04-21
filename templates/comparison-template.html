@@ -29,10 +29,38 @@
     <nav>
         <ul>
             <li><a href="{{basePath}}index.html">Home</a></li>
-            <li><a href="{{basePath}}collections/acoustic/index.html">Acoustic</a></li>
-            <li><a href="{{basePath}}collections/electric/index.html">Electric</a></li>
-            <li><a href="{{basePath}}collections/accessories/index.html">Accessories</a></li>
-            <li><a href="{{basePath}}collections/learning/index.html">Learning</a></li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/acoustic/index.html">Acoustic</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/acoustic/best-for-beginners.html">Best for Beginners</a>
+                    <a href="{{basePath}}collections/acoustic/best-under-500.html">Best Under $500</a>
+                    <a href="{{basePath}}collections/acoustic/premium-guide.html">Premium Guide</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/electric/index.html">Electric</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/electric/starters.html">Starter Kits</a>
+                    <a href="{{basePath}}collections/electric/metal-guitars.html">Best for Metal</a>
+                    <a href="{{basePath}}collections/electric/under-1000.html">Best Under $1000</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/accessories/index.html">Gear</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/accessories/strings.html">Strings</a>
+                    <a href="{{basePath}}collections/accessories/pedals.html">Pedals</a>
+                    <a href="{{basePath}}collections/accessories/amps.html">Amps</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="{{basePath}}collections/learning/index.html">Education</a>
+                <div class="dropdown-content">
+                    <a href="{{basePath}}collections/learning/apps.html">Learning Apps</a>
+                    <a href="{{basePath}}collections/learning/courses.html">Video Courses</a>
+                    <a href="{{basePath}}collections/learning/books.html">Guitar Books</a>
+                </div>
+            </li>
             <li><a href="{{basePath}}collections/buying/index.html">Guides</a></li>
         </ul>
     </nav>
@@ -118,18 +146,29 @@
                 <p>The elite standard for gear analysis. Every comparison is bench-tested by professional guitarists for technical accuracy.</p>
             </div>
             <div class="footer-column">
-                <h3>Silos</h3>
+                <h3>Categories</h3>
                 <ul class="footer-links">
-                    <li><a href="{{basePath}}collections/acoustic/index.html">Acoustic</a></li>
-                    <li><a href="{{basePath}}collections/electric/index.html">Electric</a></li>
-                    <li><a href="{{basePath}}collections/accessories/index.html">Gear</a></li>
+                    <li><a href="{{basePath}}collections/acoustic/index.html">Acoustic Guitars</a></li>
+                    <li><a href="{{basePath}}collections/electric/index.html">Electric Guitars</a></li>
+                    <li><a href="{{basePath}}collections/accessories/index.html">Guitar Gear</a></li>
+                    <li><a href="{{basePath}}collections/learning/index.html">Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Guides</h3>
+                <ul class="footer-links">
+                    <li><a href="{{basePath}}collections/acoustic/best-for-beginners.html">Beginner Start</a></li>
+                    <li><a href="{{basePath}}collections/electric/metal-guitars.html">Metal Guide</a></li>
+                    <li><a href="{{basePath}}collections/buying/index.html">Buying Strategy</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Legal</h3>
                 <ul class="footer-links">
-                    <li><a href="{{basePath}}privacy.html">Privacy</a></li>
-                    <li><a href="{{basePath}}terms.html">Terms</a></li>
+                    <li><a href="{{basePath}}about.html">About Us</a></li>
+                    <li><a href="{{basePath}}privacy.html">Privacy Policy</a></li>
+                    <li><a href="{{basePath}}terms.html">Terms of Service</a></li>
+                    <li><a href="{{basePath}}contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>

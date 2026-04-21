@@ -91,6 +91,55 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--primary);
 }
 
+/* Dropdown Submenu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(15px);
+    min-width: 220px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    z-index: 1000;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+.dropdown-content a {
+    color: var(--text-dim) !important;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.75rem !important;
+    text-transform: none !important;
+    letter-spacing: 0.05em;
+    transition: var(--transition);
+}
+
+.dropdown-content a:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--primary) !important;
+    padding-left: 1.8rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ensure the dropdown arrow fits */
+.dropdown > a::after {
+    content: '▾';
+    margin-left: 0.5rem;
+    font-size: 0.6rem;
+    vertical-align: middle;
+}
+
 /* Main Content */
 main {
     max-width: 1400px;
@@ -547,8 +596,9 @@ footer p {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .footer-brand h2 {
