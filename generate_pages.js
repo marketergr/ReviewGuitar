@@ -270,6 +270,15 @@ structure.siloConfigs.forEach(silo => {
     <meta name="pinterest:description" content="Explore top-rated ${silo.name} reviews and aesthetic guitar guides for 2026.">
     <title>${silo.displayName} Expert Reviews & Buyer Guides 2026 | ReviewsGuitar.com</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-77XFW0G925');
+    </script>
 </head>
 <body>
     ${getHeader("../../", silo.displayName.toUpperCase(), ` > <a href="index.html" style="color: #666; text-decoration: none;">${silo.displayName.toUpperCase()}</a>`)}
@@ -330,6 +339,15 @@ structure.siloConfigs.forEach(silo => {
     <meta name="pinterest:description" content="Check out our aesthetic review and buy guide for ${page.title}. #guitar #aesthetic #musician">
     <title>${page.title} | Expert Analysis & Reviews 2026 | ReviewsGuitar.com</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-77XFW0G925');
+    </script>
 </head>
 <body>
     ${getHeader("../../", page.title.toUpperCase(), ` > <a href="index.html" style="color: #666; text-decoration: none;">${silo.displayName.toUpperCase()}</a> > ${page.title.toUpperCase()}`)}
