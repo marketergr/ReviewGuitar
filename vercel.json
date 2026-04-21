@@ -1,6 +1,39 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.reviewsguitar.com"
+        }
+      ],
+      "destination": "https://reviewsguitar.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "guitarreview.com"
+        }
+      ],
+      "destination": "https://reviewsguitar.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.guitarreview.com"
+        }
+      ],
+      "destination": "https://reviewsguitar.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/best-under-500",
       "destination": "/collections/acoustic/best-under-500.html",
       "permanent": true
