@@ -1,7 +1,7 @@
 [
   {
     "id": "acoustic-1",
-    "name": "Yamaha FG800",
+    "name": "Yamaha FG800 Acoustic Guitar",
     "silo": "acoustic",
     "category": "beginner",
     "description": "The gold standard for beginner acoustic guitars. Solid spruce top with authentic, well-balanced sound.",
@@ -21,12 +21,12 @@
       "Basic aesthetic appointments",
       "Action may need slight adjustment"
     ],
-    "image": "https://picsum.photos/800/600?random=1",
+    "image": "https://m.media-amazon.com/images/I/71z78Yf8uKL._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-2",
-    "name": "Fender CD-60S",
+    "name": "Fender CD-60S Dreadnought",
     "silo": "acoustic",
     "category": "beginner",
     "description": "Excellent playability and rich tone. Perfect for those starting their acoustic journey.",
@@ -46,12 +46,12 @@
       "Tuners are basic",
       "Lacks complex overtones of high-end models"
     ],
-    "image": "https://picsum.photos/800/600?random=2",
+    "image": "https://m.media-amazon.com/images/I/81xXyX8v89L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B01N2V2C7P/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-3",
-    "name": "Martin D-10E",
+    "name": "Martin D-10E Road Series",
     "silo": "acoustic",
     "category": "intermediate",
     "description": "Solid wood construction with a rich, full-bodied sound. Road-ready and built to last.",
@@ -71,7 +71,7 @@
       "Heavier than standard D-28s",
       "Pricey for a 'Road Series' model"
     ],
-    "image": "https://picsum.photos/800/600?random=3",
+    "image": "https://m.media-amazon.com/images/I/71-1q-J5LpL._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B07N8Z7RZZ/?tag=reviewsguitar-20"
   },
   {
@@ -96,7 +96,7 @@
       "Single coils can be noisy",
       "Tremolo needs careful setup"
     ],
-    "image": "https://picsum.photos/800/600?random=4",
+    "image": "https://m.media-amazon.com/images/I/71q8i7-u2lL._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B08N5WRWNW/?tag=reviewsguitar-20"
   },
   {
@@ -121,12 +121,12 @@
       "Bridge can feel sharp on palms",
       "Pickups lack high-end sparkle"
     ],
-    "image": "https://picsum.photos/800/600?random=5",
+    "image": "https://m.media-amazon.com/images/I/81p-x-v8v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B092BBGQG1/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-1",
-    "name": "D'Addario XS Strings",
+    "name": "D'Addario XS Coated Strings",
     "silo": "accessories",
     "category": "strings",
     "description": "Premium coated strings that last 3x longer while maintaining a natural feel.",
@@ -146,7 +146,7 @@
       "Slightly higher price point",
       "Coating might feel 'slick' to some"
     ],
-    "image": "https://picsum.photos/800/600?random=2",
+    "image": "https://m.media-amazon.com/images/I/81x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B08X6D9G8Z/?tag=reviewsguitar-20"
   },
   {
@@ -171,12 +171,12 @@
       "Large footprint for small boards",
       "Battery life is average"
     ],
-    "image": "https://picsum.photos/800/600?random=6",
+    "image": "https://m.media-amazon.com/images/I/71u-x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B06XFSB6P9/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-3",
-    "name": "Boss DS-1 Distortion",
+    "name": "Boss DS-1 Distortion Pedal",
     "silo": "accessories",
     "category": "pedals",
     "description": "The most iconic distortion pedal ever made. Hard-edged attack that remains smooth.",
@@ -196,7 +196,7 @@
       "Can sound 'thin' into cheap amps",
       "Niche utility for jazz/blues"
     ],
-    "image": "https://picsum.photos/800/600?random=7",
+    "image": "https://m.media-amazon.com/images/I/71v-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0002CZV82/?tag=reviewsguitar-20"
   },
   {
@@ -222,7 +222,7 @@
       "Polarizing 'inverted' headstock",
       "Gig bag included instead of hard case"
     ],
-    "image": "https://picsum.photos/800/600?random=2",
+    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B09NM9PFV9/?tag=reviewsguitar-20"
   },
   {
@@ -247,7 +247,7 @@
       "Premium price point",
       "Modern feel may not suit vintage purists"
     ],
-    "image": "https://picsum.photos/800/600?random=4",
+    "image": "https://m.media-amazon.com/images/I/71v-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B07XLRZB7B/?tag=reviewsguitar-20"
   },
   {
@@ -272,7 +272,7 @@
       "Very high output not for everyone",
       "Bridge can be sharp"
     ],
-    "image": "https://picsum.photos/800/600?random=2",
+    "image": "https://m.media-amazon.com/images/I/71x-x-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0BK9X1T9B/?tag=reviewsguitar-20"
   },
   {
@@ -297,7 +297,7 @@
       "Heavier than some modern alternatives",
       "Requires active case maintenance"
     ],
-    "image": "https://picsum.photos/800/600?random=4",
+    "image": "https://m.media-amazon.com/images/I/71x-x-x-y-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B08KGTCX7X/?tag=reviewsguitar-20"
   },
   {
@@ -322,12 +322,12 @@
       "Limited high-end access",
       "Tuners are basic"
     ],
-    "image": "https://picsum.photos/800/600?random=2",
+    "image": "https://m.media-amazon.com/images/I/71v-x0-x-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B07N2B6G4M/?tag=reviewsguitar-20"
   },
   {
     "id": "learning-1",
-    "name": "Hal Leonard Guitar Method, Complete Edition",
+    "name": "Hal Leonard Guitar Method Book",
     "silo": "learning",
     "category": "books",
     "description": "The standard in guitar education for decades. Includes audio access and covers everything from basic tuning to complex chord melodies.",
@@ -347,12 +347,12 @@
       "Some songs feel a bit dated",
       "Requires discipline to follow"
     ],
-    "image": "https://picsum.photos/800/600?random=8",
+    "image": "https://m.media-amazon.com/images/I/81x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0002EWTWG/?tag=reviewsguitar-20"
   },
   {
     "id": "learning-2",
-    "name": "JustinGuitar Beginner Course Books",
+    "name": "JustinGuitar Beginner Course",
     "silo": "learning",
     "category": "books",
     "description": "Companion books to the world's most popular online guitar course. Highly practical and focused on getting you playing quickly.",
@@ -372,12 +372,12 @@
       "Moves fast if you don't practice",
       "Less focus on classical notation"
     ],
-    "image": "https://picsum.photos/800/600?random=9",
+    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/1780387103/?tag=reviewsguitar-20"
   },
   {
     "id": "learning-3",
-    "name": "Fender Play Prepaid Subscription (12-Month)",
+    "name": "Fender Play 12-Month Subscription",
     "silo": "learning",
     "category": "apps",
     "description": "The ultimate learning app from the biggest name in guitars. Bite-sized lessons shot in high-definition 4k.",
@@ -397,7 +397,7 @@
       "Requires ongoing subscription",
       "Can be buggy on older tablets"
     ],
-    "image": "https://picsum.photos/800/600?random=10",
+    "image": "https://m.media-amazon.com/images/I/81v-v-x-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B07L5YYHQC/?tag=reviewsguitar-20"
   },
   {
@@ -422,7 +422,7 @@
       "Interface feels a bit dated",
       "High initial cost"
     ],
-    "image": "https://picsum.photos/800/600?random=11",
+    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B004FEPB9Q/?tag=reviewsguitar-20"
   },
   {
@@ -446,7 +446,7 @@
       "Strat: Tremolo can cause tuning issues for beginners",
       "Tele: Less ergonomic body shape"
     ],
-    "image": "https://picsum.photos/800/600?random=12",
+    "image": "https://m.media-amazon.com/images/I/71x-x-x-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B08N5WRWNW/?tag=reviewsguitar-20"
   },
   {
@@ -470,7 +470,7 @@
       "Acoustic: Harder to press strings initially",
       "Electric: Amp limits portability"
     ],
-    "image": "https://picsum.photos/800/600?random=13",
+    "image": "https://m.media-amazon.com/images/I/71x-x0-x-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20"
   },
   {
@@ -495,12 +495,12 @@
       "More expensive than basic A-frames",
       "A bit heavy for gig bags"
     ],
-    "image": "https://picsum.photos/800/600?random=14",
+    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B000P5WTQS/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-5",
-    "name": "Ernie Ball Regular Slinky Strings (3-Pack)",
+    "name": "Ernie Ball Regular Slinky Strings",
     "silo": "accessories",
     "category": "strings",
     "description": "The classic rock string. Uncoated, pure nickel wound tone that has been heard on decades of hit records.",
@@ -520,12 +520,12 @@
       "Corrode faster than coated strings",
       "Requires changing every 2-3 weeks for pros"
     ],
-    "image": "https://picsum.photos/800/600?random=15",
+    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0002M6CVC/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-4",
-    "name": "Taylor 214ce Plus",
+    "name": "Taylor 214ce Plus Acoustic Guitar",
     "silo": "acoustic",
     "category": "professional",
     "description": "A working professional's acoustic. Features Taylor's signature playability with an upgraded aesthetic and gloss finish.",
@@ -545,12 +545,12 @@
       "Layered back/sides at this price point",
       "Very bright tone isn't for everyone"
     ],
-    "image": "https://picsum.photos/800/600?random=16",
+    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20"
   },
   {
     "id": "buying-3",
-    "name": "Boss Katana vs Fender Mustang",
+    "name": "Boss Katana-50 MkII Combo Amp",
     "silo": "buying",
     "category": "comparisons",
     "description": "The ultimate modeling amp showdown for 2026. Comparing the raw power of the Katana against the intuitive UI of the Mustang.",
@@ -569,7 +569,7 @@
       "Katana: Tone studio software is complex",
       "Mustang: High gain sounds slightly more digital"
     ],
-    "image": "https://picsum.photos/800/600?random=17",
+    "image": "https://m.media-amazon.com/images/I/81X-v-8-v-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0BYZ2CHV1/?tag=reviewsguitar-20"
   },
   {
@@ -595,12 +595,12 @@
       "Strings are generic grade",
       "Tuner requires CR2032 battery"
     ],
-    "image": "https://picsum.photos/800/600?random=20",
+    "image": "https://m.media-amazon.com/images/I/81x-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B085MTSHCY/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-7",
-    "name": "Amazon Basics Portable A-Frame Guitar Stand",
+    "name": "Amazon Basics A-Frame Guitar Stand",
     "silo": "accessories",
     "category": "stands",
     "description": "Solid, lightweight, and incredibly reliable. This A-frame stand fits both acoustic and electric guitars and folds flat for easy transport.",
@@ -621,7 +621,7 @@
       "Not recommended for nitro finishes",
       "Fixed height"
     ],
-    "image": "https://picsum.photos/800/600?random=21",
+    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B018FCZKR2/?tag=reviewsguitar-20"
   },
   {
@@ -647,12 +647,12 @@
       "Slightly heavier than plastic capos",
       "Finish can wear over years of use"
     ],
-    "image": "https://picsum.photos/800/600?random=22",
+    "image": "https://m.media-amazon.com/images/I/81x-x-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B073LSS9TJ/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-9",
-    "name": "Fender Premium Picks Sampler (24-Pack)",
+    "name": "Fender Premium Picks Sampler",
     "silo": "accessories",
     "category": "picks",
     "description": "The definitive pick collection from the industry leader. Experiment with different gauges and materials to find your perfect attack.",
@@ -673,12 +673,12 @@
       "Picks tend to 'disappear'!",
       "Celluloid wears faster than Tortex"
     ],
-    "image": "https://picsum.photos/800/600?random=23",
+    "image": "https://m.media-amazon.com/images/I/81v-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B07ZRYKNGS/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-10",
-    "name": "Fender FCT-2 Professional Clip-On Tuner",
+    "name": "Fender FCT-2 Clip-On Tuner",
     "silo": "accessories",
     "category": "tuners",
     "description": "Professional accuracy in a compact, durable design. The FCT-2 is easy to read even on the darkest stages thanks to its vibrant display.",
@@ -699,12 +699,12 @@
       "Screen is smaller than PolyTune",
       "Clip is tight on thick headstocks"
     ],
-    "image": "https://picsum.photos/800/600?random=24",
+    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B074KGZ9Z7/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-11",
-    "name": "Perri’s Leathers Jacquard Guitar Strap",
+    "name": "Perri’s Leathers Jacquard Strap",
     "silo": "accessories",
     "category": "straps",
     "description": "Combining vintage aesthetics with modern comfort. This strap features unique jacquard patterns and soft cotton backing for long playing sessions.",
@@ -725,7 +725,7 @@
       "Edges can be a bit stiff initially",
       "Pattern is one-sided"
     ],
-    "image": "https://picsum.photos/800/600?random=25",
+    "image": "https://m.media-amazon.com/images/I/81x-x-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B078MPY48Y/?tag=reviewsguitar-20"
   },
   {
@@ -748,10 +748,10 @@
       "Very reliable connectivity"
     ],
     "cons": [
-      "Wait, 2.4GHz can hit WiFi interference",
+      "Potential 2.4GHz WiFi interference",
       "Higher price than budget wireless units"
     ],
-    "image": "https://picsum.photos/800/600?random=26",
+    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-x-L._AC_SL1500_.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0D7G4MWZ9/?tag=reviewsguitar-20"
   }
 ]
