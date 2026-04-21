@@ -11,7 +11,7 @@
     "pros": ["Incredible sustain for the price", "Build quality outlasts clones", "Highly comfortable neck profile"],
     "cons": ["Basic aesthetic appointments", "Action may need slight adjustment"],
     "image": "https://picsum.photos/800/600?random=1",
-    "amazonLink": "https://www.amazon.com/dp/B01CPK89S2/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B01CPK89S2/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-2",
@@ -25,7 +25,7 @@
     "pros": ["Solid wood top at budget price", "Rolled fingerboard edges", "Very lightweight"],
     "cons": ["Tuners are basic", "Lacks complex overtones of high-end models"],
     "image": "https://picsum.photos/800/600?random=2",
-    "amazonLink": "https://www.amazon.com/dp/B01N2V2C7P/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B01N2V2C7P/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-3",
@@ -39,7 +39,7 @@
     "pros": ["Iconic Martin tone", "Professional-grade electronics", "Sustainable materials"],
     "cons": ["Heavier than standard D-28s", "Pricey for a 'Road Series' model"],
     "image": "https://picsum.photos/800/600?random=3",
-    "amazonLink": "https://www.amazon.com/dp/B07N8Z7RZZ/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B07N8Z7RZZ/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-1",
@@ -53,7 +53,7 @@
     "pros": ["Extremely versatile tonal range", "Bulletproof construction", "Classic Fender playability"],
     "cons": ["Single coils can be noisy", "Tremolo needs careful setup"],
     "image": "https://picsum.photos/800/600?random=4",
-    "amazonLink": "https://www.amazon.com/dp/B07CXK87YV/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B07CXK87YV/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-2",
@@ -67,7 +67,7 @@
     "pros": ["Authentic Tele 'twang'", "Slim, fast neck", "Solid value-to-performance ratio"],
     "cons": ["Bridge can feel sharp on palms", "Pickups lack high-end sparkle"],
     "image": "https://picsum.photos/800/600?random=5",
-    "amazonLink": "https://www.amazon.com/dp/B092BBGQG1/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B092BBGQG1/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-1",
@@ -81,7 +81,7 @@
     "pros": ["Incredible longevity", "Consistent tone for weeks", "Minimal finger noise"],
     "cons": ["Slightly higher price point", "Coating might feel 'slick' to some"],
     "image": "https://picsum.photos/800/600?random=2",
-    "amazonLink": "https://www.amazon.com/dp/B08X6D9G8Z/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B08X6D9G8Z/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-2",
@@ -95,7 +95,7 @@
     "pros": ["Instant tuning of all strings", "Crystal clear display", "Built-in premium buffer"],
     "cons": ["Large footprint for small boards", "Battery life is average"],
     "image": "https://picsum.photos/800/600?random=6",
-    "amazonLink": "https://www.amazon.com/dp/B06XFSB6P9/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B06XFSB6P9/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-3",
@@ -109,7 +109,7 @@
     "pros": ["Foundational rock tone", "Responsive gain control", "Low price/High durability"],
     "cons": ["Can sound 'thin' into cheap amps", "Niche utility for jazz/blues"],
     "image": "https://picsum.photos/800/600?random=7",
-    "amazonLink": "https://www.amazon.com/dp/B0002CZV82/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B0002CZV82/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-3",
@@ -123,7 +123,7 @@
     "pros": ["Authentic JM signature tone", "Exceptional build quality for the price", "Extremely comfortable 635JM neck carve"],
     "cons": ["Polarizing 'inverted' headstock", "Gig bag included instead of hard case"],
     "image": "https://picsum.photos/800/600?random=2",
-    "amazonLink": "https://www.amazon.com/dp/B09NM9PFV9/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B09NM9PFV9/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-4",
@@ -137,7 +137,7 @@
     "pros": ["Silent electronics for studio use", "Incredible sustain", "Boutique-level finish"],
     "cons": ["Premium price point", "Modern feel may not suit vintage purists"],
     "image": "https://picsum.photos/800/600?random=4",
-    "amazonLink": "https://www.amazon.com/dp/B07XLRZB7B/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B07XLRZB7B/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-5",
@@ -151,7 +151,7 @@
     "pros": ["Exceptional clarity for low tunings", "Satin neck finish", "Rock-solid tuning"],
     "cons": ["Very high output not for everyone", "Bridge can be sharp"],
     "image": "https://picsum.photos/800/600?random=2",
-    "amazonLink": "https://www.amazon.com/dp/B0BK9X1T9B/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B0BK9X1T9B/?tag=reviewsguitar-20"
   },
   {
     "id": "bass-1",
@@ -165,7 +165,7 @@
     "pros": ["Incredible tonal definition", "Premium bridge hardware", "Stunning visual depth"],
     "cons": ["Heavier than some modern alternatives", "Requires active case maintenance"],
     "image": "https://picsum.photos/800/600?random=4",
-    "amazonLink": "https://www.amazon.com/dp/B08KGTCX7X/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B08KGTCX7X/?tag=reviewsguitar-20"
   },
   {
     "id": "bass-2",
@@ -179,7 +179,7 @@
     "pros": ["Extremely easy to play", "Cool retro aesthetic", "Big tone from a small package"],
     "cons": ["Limited high-end access", "Tuners are basic"],
     "image": "https://picsum.photos/800/600?random=2",
-    "amazonLink": "https://www.amazon.com/dp/B07N2B6G4M/?tag=guitarreview-20"
+    "amazonLink": "https://www.amazon.com/dp/B07N2B6G4M/?tag=reviewsguitar-20"
   }
 ]
 

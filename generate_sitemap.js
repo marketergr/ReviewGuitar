@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://www.guitarreview.com';
-const EXCLUDED_DIRS = ['node_modules', '.git', 'css', 'js', 'images', 'silos', 'pages', 'templates'];
+const BASE_URL = 'https://reviewsguitar.com';
+const EXCLUDED_DIRS = ['node_modules', '.git', 'css', 'js', 'images', 'silos', 'templates'];
 
 function getFiles(dir, fileList = []) {
     const files = fs.readdirSync(dir);

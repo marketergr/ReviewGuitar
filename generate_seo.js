@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = "https://www.guitarreview.com";
+const BASE_URL = "https://reviewsguitar.com";
 const PROJECT_ROOT = path.resolve(__dirname);
 const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
 
@@ -66,7 +66,7 @@ function generateURL(silo, category, keyword) {
 }
 
 function generateMetaTags(keyword, silo, category, pageType = "landing") {
-    let title = `${keyword.toUpperCase()} | GuitarReview.com`;
+    let title = `${keyword.toUpperCase()} | ReviewsGuitar.com`;
     let description = `Expert reviews and buying guides for ${keyword}. Find the elite deals on premium guitars and accessories.`;
     
     return {
@@ -89,7 +89,7 @@ function generateSchema(keyword, silo, category) {
         "@type": "Product",
         "name": keyword,
         "description": `Expert review and analysis of ${keyword}`,
-        "brand": { "@type": "Brand", "name": "GuitarReview" },
+        "brand": { "@type": "Brand", "name": "ReviewsGuitar" },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
@@ -148,9 +148,9 @@ function renderProductGrid(filteredProducts) {
 
 function renderCrossSiloLinks(silo, basePath) {
     const accessoryLinks = [
-        { name: "Top-Rated Strings", url: basePath + "silos/accessories/index.html" },
-        { name: "Essential Tuners", url: basePath + "silos/accessories/index.html" },
-        { name: "Beginner Lessons", url: basePath + "silos/learning/index.html" }
+        { name: "Top-Rated Strings", url: basePath + "collections/accessories/index.html" },
+        { name: "Essential Tuners", url: basePath + "collections/accessories/index.html" },
+        { name: "Beginner Lessons", url: basePath + "collections/learning/index.html" }
     ];
 
     if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
@@ -175,15 +175,15 @@ function getFooter(basePath) {
     <footer class="footer-hub">
         <div class="footer-content">
             <div class="footer-brand">
-                <h2>GUITARREVIEW.COM</h2>
+                <h2>REVIEWSGUITAR.COM</h2>
                 <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p>
             </div>
             <div class="footer-column">
                 <h3>Silos</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}silos/acoustic/index.html">Acoustic Guitars</a></li>
-                    <li><a href="${basePath}silos/electric/index.html">Electric Guitars</a></li>
-                    <li><a href="${basePath}silos/accessories/index.html">Essential Gear</a></li>
+                    <li><a href="${basePath}collections/acoustic/index.html">Acoustic Guitars</a></li>
+                    <li><a href="${basePath}collections/electric/index.html">Electric Guitars</a></li>
+                    <li><a href="${basePath}collections/accessories/index.html">Essential Gear</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -204,7 +204,7 @@ function getFooter(basePath) {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 GuitarReview.com. All Rights Reserved. Built for the modern musician.</p>
+            <p>&copy; 2026 ReviewsGuitar.com. All Rights Reserved. Built for the modern musician.</p>
         </div>
     </footer>`;
 }
@@ -240,17 +240,17 @@ ${schemaJson}
 </head>
 <body>
     <header>
-        <h1>GuitarReview.com</h1>
+        <h1>ReviewsGuitar.com</h1>
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../silos/acoustic/index.html">Acoustic</a></li>
-            <li><a href="../silos/electric/index.html">Electric</a></li>
-            <li><a href="../silos/accessories/index.html">Accessories</a></li>
-            <li><a href="../silos/learning/index.html">Learning</a></li>
-            <li><a href="../silos/buying/index.html">Guides</a></li>
+            <li><a href="../collections/acoustic/index.html">Acoustic</a></li>
+            <li><a href="../collections/electric/index.html">Electric</a></li>
+            <li><a href="../collections/accessories/index.html">Accessories</a></li>
+            <li><a href="../collections/learning/index.html">Learning</a></li>
+            <li><a href="../collections/buying/index.html">Guides</a></li>
         </ul>
     </nav>
     <main>

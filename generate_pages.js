@@ -12,7 +12,7 @@ if (fs.existsSync('macro_content_cache.json')) {
 function getHeader(basePath, title, breadcrumbs) {
     return `
     <header>
-        <h1>GuitarReview.com</h1>
+        <h1>ReviewsGuitar.com</h1>
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
@@ -85,9 +85,9 @@ function renderProductGrid(filteredProducts) {
 
 function renderCrossSiloLinks(silo, basePath) {
     const accessoryLinks = [
-        { name: "Top-Rated Strings", url: basePath + "silos/accessories/index.html" },
-        { name: "Essential Tuners", url: basePath + "silos/accessories/index.html" },
-        { name: "Beginner Lessons", url: basePath + "silos/learning/index.html" }
+        { name: "Top-Rated Strings", url: basePath + "collections/accessories/index.html" },
+        { name: "Essential Tuners", url: basePath + "collections/accessories/index.html" },
+        { name: "Beginner Lessons", url: basePath + "collections/learning/index.html" }
     ];
 
     if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
@@ -114,15 +114,15 @@ function getFooter(basePath) {
     <footer class="footer-hub">
         <div class="footer-content">
             <div class="footer-brand">
-                <h2>GUITARREVIEW.COM</h2>
+                <h2>REVIEWSGUITAR.COM</h2>
                 <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p>
             </div>
             <div class="footer-column">
-                <h3>Silos</h3>
+                <h3>Collections</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}silos/acoustic/index.html">Acoustic Guitars</a></li>
-                    <li><a href="${basePath}silos/electric/index.html">Electric Guitars</a></li>
-                    <li><a href="${basePath}silos/accessories/index.html">Essential Gear</a></li>
+                    <li><a href="${basePath}collections/acoustic/index.html">Acoustic Guitars</a></li>
+                    <li><a href="${basePath}collections/electric/index.html">Electric Guitars</a></li>
+                    <li><a href="${basePath}collections/accessories/index.html">Essential Gear</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -143,7 +143,7 @@ function getFooter(basePath) {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 GuitarReview.com. All Rights Reserved. Built for the modern musician.</p>
+            <p>&copy; 2026 ReviewsGuitar.com. All Rights Reserved. Built for the modern musician.</p>
         </div>
     </footer>
     </body>
@@ -165,7 +165,7 @@ structure.siloConfigs.forEach(silo => {
     <meta property="og:description" content="Premium analysis of the best ${silo.name} gear in 2026.">
     <meta property="og:image" content="../../images/silo-${silo.name}-aesthetic.jpg">
     <meta name="pinterest:description" content="Explore top-rated ${silo.name} reviews and aesthetic guitar guides for 2026.">
-    <title>${silo.displayName} Expert Reviews & Buyer Guides 2026 | GuitarReview.com</title>
+    <title>${silo.displayName} Expert Reviews & Buyer Guides 2026 | ReviewsGuitar.com</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -231,7 +231,7 @@ structure.siloConfigs.forEach(silo => {
     <meta property="og:description" content="Professional BoFU guide for ${page.title}. Technical specs and purchase analysis.">
     <meta property="og:image" content="../../images/cluster-${page.slug}-pinterest.jpg">
     <meta name="pinterest:description" content="Check out our aesthetic review and buy guide for ${page.title}. #guitar #aesthetic #musician">
-    <title>${page.title} | Expert Analysis & Reviews 2026 | GuitarReview.com</title>
+    <title>${page.title} | Expert Analysis & Reviews 2026 | ReviewsGuitar.com</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
