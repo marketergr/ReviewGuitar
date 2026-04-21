@@ -571,5 +571,187 @@
     ],
     "image": "https://picsum.photos/800/600?random=17",
     "amazonLink": "https://www.amazon.com/dp/B0BYZ2CHV1/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-6",
+    "name": "NERECNDENS 66PCS Guitar Accessories Kit",
+    "silo": "accessories",
+    "category": "kits",
+    "description": "A comprehensive all-in-one survival kit for every guitarist. Includes everything from high-quality strings and a digital tuner to a versatile capo and assorted picks.",
+    "price": "$21.99",
+    "rating": 4.8,
+    "features": [
+      "Digital Clip-On Tuner",
+      "Reinforced Guitar Capo",
+      "Acoustic String Sets & Winder",
+      "Picks, Pins, and Bone Nuts"
+    ],
+    "pros": [
+      "Incredible value for beginners",
+      "All essential tools in one pack",
+      "Includes protective storage case"
+    ],
+    "cons": [
+      "Strings are generic grade",
+      "Tuner requires CR2032 battery"
+    ],
+    "image": "https://picsum.photos/800/600?random=20",
+    "amazonLink": "https://www.amazon.com/dp/B085MTSHCY/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-7",
+    "name": "Amazon Basics Portable A-Frame Guitar Stand",
+    "silo": "accessories",
+    "category": "stands",
+    "description": "Solid, lightweight, and incredibly reliable. This A-frame stand fits both acoustic and electric guitars and folds flat for easy transport.",
+    "price": "$15.49",
+    "rating": 4.8,
+    "features": [
+      "Universal A-Frame Design",
+      "Padded Foam Arms",
+      "Locking Mechanism for Stability",
+      "Non-Slip Feet"
+    ],
+    "pros": [
+      "Extremely affordable",
+      "Fits wide range of body shapes",
+      "Very durable steel construction"
+    ],
+    "cons": [
+      "Not recommended for nitro finishes",
+      "Fixed height"
+    ],
+    "image": "https://picsum.photos/800/600?random=21",
+    "amazonLink": "https://www.amazon.com/dp/B018FCZKR2/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-8",
+    "name": "WINGO Professional Guitar Capo",
+    "silo": "accessories",
+    "category": "capos",
+    "description": "Engineered for precision and aesthetics. This rosewood-finished capo provides even pressure across the fretboard without causing buzz.",
+    "price": "$10.99",
+    "rating": 4.8,
+    "features": [
+      "Aircraft-Grade Zinc Alloy",
+      "Premium Rosewood Finish",
+      "High-Tension Steel Spring",
+      "Silicone Padding Protection"
+    ],
+    "pros": [
+      "Elegant visual design",
+      "One-handed quick release",
+      "Perfect tuning stability"
+    ],
+    "cons": [
+      "Slightly heavier than plastic capos",
+      "Finish can wear over years of use"
+    ],
+    "image": "https://picsum.photos/800/600?random=22",
+    "amazonLink": "https://www.amazon.com/dp/B073LSS9TJ/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-9",
+    "name": "Fender Premium Picks Sampler (24-Pack)",
+    "silo": "accessories",
+    "category": "picks",
+    "description": "The definitive pick collection from the industry leader. Experiment with different gauges and materials to find your perfect attack.",
+    "price": "$13.99",
+    "rating": 4.8,
+    "features": [
+      "Thin, Medium, and Heavy Gauges",
+      "Celluloid Construction",
+      "Classic 351 Shape",
+      "Assorted Colors"
+    ],
+    "pros": [
+      "Ideal for discovering your style",
+      "Traditional warm feel",
+      "Excellent grip texture"
+    ],
+    "cons": [
+      "Picks tend to 'disappear'!",
+      "Celluloid wears faster than Tortex"
+    ],
+    "image": "https://picsum.photos/800/600?random=23",
+    "amazonLink": "https://www.amazon.com/dp/B07ZRYKNGS/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-10",
+    "name": "Fender FCT-2 Professional Clip-On Tuner",
+    "silo": "accessories",
+    "category": "tuners",
+    "description": "Professional accuracy in a compact, durable design. The FCT-2 is easy to read even on the darkest stages thanks to its vibrant display.",
+    "price": "$14.99",
+    "rating": 4.7,
+    "features": [
+      "Vibration-Based Tuning",
+      "360-Degree Rotation",
+      "Bright LED Display",
+      "Dual-Hinge Clip"
+    ],
+    "pros": [
+      "Works in noisy environments",
+      "Extremely discrete on headstock",
+      "Fast response time"
+    ],
+    "cons": [
+      "Screen is smaller than PolyTune",
+      "Clip is tight on thick headstocks"
+    ],
+    "image": "https://picsum.photos/800/600?random=24",
+    "amazonLink": "https://www.amazon.com/dp/B074KGZ9Z7/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-11",
+    "name": "Perri’s Leathers Jacquard Guitar Strap",
+    "silo": "accessories",
+    "category": "straps",
+    "description": "Combining vintage aesthetics with modern comfort. This strap features unique jacquard patterns and soft cotton backing for long playing sessions.",
+    "price": "$12.99",
+    "rating": 4.8,
+    "features": [
+      "2-Inch Width",
+      "Adjustable Length (39\" - 58\")",
+      "Leather Reinforced Ends",
+      "Woven Jacquard Fabric"
+    ],
+    "pros": [
+      "Beautiful vintage patterns",
+      "Very comfortable on shoulders",
+      "Secure fit on strap buttons"
+    ],
+    "cons": [
+      "Edges can be a bit stiff initially",
+      "Pattern is one-sided"
+    ],
+    "image": "https://picsum.photos/800/600?random=25",
+    "amazonLink": "https://www.amazon.com/dp/B078MPY48Y/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-12",
+    "name": "Fender Telepath Wireless System",
+    "silo": "accessories",
+    "category": "wireless",
+    "description": "Freedom from cables with zero latency. The Telepath system uses high-fidelity 2.4GHz technology to deliver pure tone with total mobility.",
+    "price": "$199.99",
+    "rating": 4.5,
+    "features": [
+      "Ultra-Low Latency (<4ms)",
+      "100ft Range",
+      "Rechargeable Battery (8+ Hours)",
+      "Auto-Pairing System"
+    ],
+    "pros": [
+      "No tone loss compared to cables",
+      "Compact plug-and-play design",
+      "Very reliable connectivity"
+    ],
+    "cons": [
+      "Wait, 2.4GHz can hit WiFi interference",
+      "Higher price than budget wireless units"
+    ],
+    "image": "https://picsum.photos/800/600?random=26",
+    "amazonLink": "https://www.amazon.com/dp/B0D7G4MWZ9/?tag=reviewsguitar-20"
   }
 ]
