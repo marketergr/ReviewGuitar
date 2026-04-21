@@ -25,17 +25,17 @@ function generateDeepContent(keyword, silo, category) {
     return `
         <h2 style="color: var(--primary); font-size: 1rem; margin-bottom: 1.5rem; letter-spacing: 0.2em;">EXECUTIVE SUMMARY</h2>
         <p style="font-size: 1.1rem; color: var(--text-dim); line-height: 1.8; margin-bottom: 2rem;">
-            When evaluating <strong>\${formattedKeyword}</strong>, understanding the nuance between technical specifications 
-            and real-world playability is critical. In \${year}, advancing manufacturing standards have elevated the baseline quality 
+            When evaluating <strong>${formattedKeyword}</strong>, understanding the nuance between technical specifications 
+            and real-world playability is critical. In ${year}, advancing manufacturing standards have elevated the baseline quality 
             across the board, meaning your choice should be dictated by specific tonal requirements, ergonomic preferences, and long-term durability.
-            Our exhaustive analysis reveals key insights for the musician seeking premium gear within the \${silo} space.
+            Our exhaustive analysis reveals key insights for the musician seeking premium gear within the ${silo} space.
         </p>
 
         <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">1. Historical Context & The Modern Market</h3>
         <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-            The landscape for \${formattedKeyword} has fundamentally shifted over the last decade. Previously, players had to 
+            The landscape for ${formattedKeyword} has fundamentally shifted over the last decade. Previously, players had to 
             compromise between affordability and professional-grade reliability. Today, CNC routing and sophisticated 
-            quality control mean that even intermediate \${category} gear performs at levels previously reserved for flagship models.
+            quality control mean that even intermediate ${category} gear performs at levels previously reserved for flagship models.
         </p>
 
         <div style="background: var(--glass); border: 1px solid var(--border); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
@@ -47,21 +47,21 @@ function generateDeepContent(keyword, silo, category) {
             </ul>
         </div>
 
-        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">2. Technical Evaluation of \${formattedKeyword}</h3>
+        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">2. Technical Evaluation of ${formattedKeyword}</h3>
         <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-            Before finalizing a purchase, evaluate the core components. For \${silo} purchases, attention to detail in the 
-            fundamental build quality outlasts marketing hype. Let's look at the hardware choices that make \${formattedKeyword} 
+            Before finalizing a purchase, evaluate the core components. For ${silo} purchases, attention to detail in the 
+            fundamental build quality outlasts marketing hype. Let's look at the hardware choices that make ${formattedKeyword} 
             worth considering. Fretwork precision, electronic shielding, and nut slotting are often where cost-cutting occurs, 
             so these are the exact areas our editors scrutinize.
         </p>
         <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 2rem;">
-            Whether you are recording in a dedicated studio or playing live out of a hybrid rig, the \${category} tools 
+            Whether you are recording in a dedicated studio or playing live out of a hybrid rig, the ${category} tools 
             you select will dictate the friction between your ideas and your sound.
         </p>
 
-        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">3. Final Verdict for \${year}</h3>
+        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">3. Final Verdict for ${year}</h3>
         <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-            Ultimately, \${formattedKeyword} remains a highly viable space for both advancing learners and seasoned pros. 
+            Ultimately, ${formattedKeyword} remains a highly viable space for both advancing learners and seasoned pros. 
             By aligning your specific musical goals with the technical realities of these products, you ensure an investment 
             that inspires continuous play. Review our Editor's Choice selections below, which have been filtered through 
             our rigorous 10+ hour bench-testing protocol.
@@ -212,7 +212,7 @@ function renderComparisonFeature(products) {
                 ${index === 0 ? '🏆 CHAMPION PICK' : '🎯 TOP ALTERNATIVE'}
             </div>
             
-            <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;">
+            <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;" loading="lazy" decoding="async">
             
             <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 800;">${p.name}</h3>
             <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary); margin-bottom: 1.5rem;">${p.price}</div>
@@ -314,7 +314,7 @@ function getFooter(basePath) {
     </footer>`;
 }
 
-function generateLandingPage(silo, category, keyword, metaTags, schema) {
+function generateLandingPage(silo, category, keyword, metaTags, schema, fileName) {
     const schemaJson = JSON.stringify(schema, null, 2);
     
     const matchedProducts = products.filter(p => p.silo === silo && (
@@ -332,7 +332,11 @@ function generateLandingPage(silo, category, keyword, metaTags, schema) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${metaTags.title}</title>
     <meta name="description" content="${metaTags.description}">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="canonical" href="https://reviewsguitar.com/pages/${fileName}">
+    <link rel="preconnect" href="https://m.media-amazon.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/style.min.css">
     <script type="application/ld+json">
 ${schemaJson}
     </script>
@@ -412,9 +416,9 @@ function main() {
             for (const keyword of keywords) {
                 const metaTags = generateMetaTags(keyword, silo, category);
                 const schema = generateSchema(keyword, silo, category);
-                const pageContent = generateLandingPage(silo, category, keyword, metaTags, schema);
-                
                 const filename = `${silo}_${category}_${keyword.replace(/\s+/g, '_')}.html`;
+                const pageContent = generateLandingPage(silo, category, keyword, metaTags, schema, filename);
+                
                 const pagePath = path.join(PROJECT_ROOT, 'pages', filename);
                 fs.writeFileSync(pagePath, pageContent);
                 pages.push({ url: `${BASE_URL}${generateURL(silo, category, keyword)}`, filename });

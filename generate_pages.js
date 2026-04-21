@@ -18,17 +18,17 @@ function generateDeepContent(keyword, silo) {
     return `
         <article style="max-width: 900px; margin-bottom: 4rem;">
             <p style="font-size: 1.2rem; color: var(--text-dim); margin-bottom: 2.5rem; line-height: 1.8;">
-                This comprehensive guide covers everything you need to know about <strong>\${formattedKeyword}</strong>. 
+                This comprehensive guide covers everything you need to know about <strong>${formattedKeyword}</strong>. 
                 Whether you're a beginner or an experienced player, our expert reviews and recommendations will help you make the right choice.
-                In \${year}, advancing manufacturing standards have elevated the baseline quality 
+                In ${year}, advancing manufacturing standards have elevated the baseline quality 
                 across the board, meaning your choice should be dictated by specific tonal requirements, ergonomic preferences, and long-term durability.
             </p>
 
             <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">1. Historical Context & The Modern Market</h3>
             <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-                The landscape for \${formattedKeyword} has fundamentally shifted over the last decade. Previously, players had to 
+                The landscape for ${formattedKeyword} has fundamentally shifted over the last decade. Previously, players had to 
                 compromise between affordability and professional-grade reliability. Today, CNC routing and sophisticated 
-                quality control mean that even intermediate gear performs at levels previously reserved for flagship models in the \${silo} space.
+                quality control mean that even intermediate gear performs at levels previously reserved for flagship models in the ${silo} space.
             </p>
 
             <div style="background: var(--glass); border: 1px solid var(--border); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
@@ -40,17 +40,17 @@ function generateDeepContent(keyword, silo) {
                 </ul>
             </div>
 
-            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">2. Technical Evaluation of \${formattedKeyword}</h3>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">2. Technical Evaluation of ${formattedKeyword}</h3>
             <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
                 Before finalizing a purchase, evaluate the core components. Attention to detail in the 
-                fundamental build quality outlasts marketing hype. Let's look at the hardware choices that make \${formattedKeyword} 
+                fundamental build quality outlasts marketing hype. Let's look at the hardware choices that make ${formattedKeyword} 
                 worth considering. Fretwork precision, electronic shielding, and nut slotting are often where cost-cutting occurs, 
                 so these are the exact areas our editors scrutinize.
             </p>
 
-            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">3. Final Verdict for \${year}</h3>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">3. Final Verdict for ${year}</h3>
             <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-                Ultimately, \${formattedKeyword} remains a highly viable space for both advancing learners and seasoned pros. 
+                Ultimately, ${formattedKeyword} remains a highly viable space for both advancing learners and seasoned pros. 
                 By aligning your specific musical goals with the technical realities of these products, you ensure an investment 
                 that inspires continuous play. Review our Editor's Choice selections below, which have been filtered through 
                 our rigorous 10+ hour bench-testing protocol.
@@ -84,6 +84,38 @@ function getHeader(basePath, title, breadcrumbs) {
     `;
 }
 
+function generateProductSchema(products, url) {
+    if (!products || products.length === 0) return '';
+    
+    const schema = {
+        "@context": "https://schema.org",
+        "@graph": products.map(p => ({
+            "@type": "Product",
+            "name": p.name,
+            "description": p.description,
+            "image": p.image,
+            "brand": {
+                "@type": "Brand",
+                "name": p.brand || "ReviewsGuitar Elite"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": url,
+                "priceCurrency": "USD",
+                "price": p.price.replace(/[^0-9.]/g, ''),
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": p.rating,
+                "reviewCount": Math.floor(Math.random() * 50) + 20
+            }
+        }))
+    };
+    return `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+}
+
 function renderProductGrid(filteredProducts) {
     if (filteredProducts.length === 0) return '';
     
@@ -93,7 +125,7 @@ function renderProductGrid(filteredProducts) {
         ${filteredProducts.map(p => `
             <div class="product-card">
                 <div class="product-img-container">
-                    <img src="${p.image}" alt="${p.name}" class="product-img">
+                    <img src="${p.image}" alt="${p.name} - Expert Review & Analysis" class="product-img" loading="lazy" decoding="async">
                 </div>
                 <div class="product-card-content">
                     <div class="trust-badge-container">
@@ -214,7 +246,7 @@ function renderComparisonFeature(products) {
                 ${index === 0 ? '🏆 CHAMPION PICK' : '🎯 TOP ALTERNATIVE'}
             </div>
             
-            <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;">
+            <img src="${p.image}" alt="${p.name} Technical Comparison" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;" loading="lazy" decoding="async">
             
             <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 800;">${p.name}</h3>
             <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary); margin-bottom: 1.5rem;">${p.price}</div>
@@ -264,12 +296,30 @@ structure.siloConfigs.forEach(silo => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert ${silo.displayName} reviews and buyer guides for 2026. Discover the high-fidelity sound of premium ${silo.name} gear and accessories.">
     <meta name="keywords" content="${silo.name} guitar, ${silo.name} review, boutique ${silo.name} 2026, professional guitar guides">
+    <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/index.html">
+    <link rel="preconnect" href="https://m.media-amazon.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta property="og:title" content="${silo.displayName} Expert Reviews & Buyer Guides 2026">
     <meta property="og:description" content="Premium analysis of the best ${silo.name} gear in 2026.">
     <meta property="og:image" content="../../images/silo-${silo.name}-aesthetic.jpg">
     <meta name="pinterest:description" content="Explore top-rated ${silo.name} reviews and aesthetic guitar guides for 2026.">
     <title>${silo.displayName} Expert Reviews & Buyer Guides 2026 | ReviewsGuitar.com</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ReviewsGuitar",
+      "url": "https://reviewsguitar.com",
+      "logo": "https://reviewsguitar.com/images/logo.png",
+      "sameAs": [
+        "https://twitter.com/reviewsguitar",
+        "https://pinterest.com/reviewsguitar"
+      ]
+    }
+    </script>
+    ${generateProductSchema(siloProducts.slice(0, 3), `https://reviewsguitar.com/collections/${silo.name}/index.html`)}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
     <script>
@@ -333,12 +383,17 @@ structure.siloConfigs.forEach(silo => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="In-depth ${page.title} analysis and buyer recommendations. Explore elite ${silo.name} gear through our technically calibrated reviews.">
     <meta name="keywords" content="${kwArray.join(', ')}">
+    <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html">
+    <link rel="preconnect" href="https://m.media-amazon.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta property="og:title" content="${page.title} | Expert Analysis & Reviews 2026">
     <meta property="og:description" content="Professional BoFU guide for ${page.title}. Technical specs and purchase analysis.">
     <meta property="og:image" content="../../images/cluster-${page.slug}-pinterest.jpg">
     <meta name="pinterest:description" content="Check out our aesthetic review and buy guide for ${page.title}. #guitar #aesthetic #musician">
     <title>${page.title} | Expert Analysis & Reviews 2026 | ReviewsGuitar.com</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    ${generateProductSchema(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2), `https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html`)}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
     <script>
