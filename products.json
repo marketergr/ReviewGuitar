@@ -7,11 +7,22 @@
     "description": "The gold standard for beginner acoustic guitars. Solid spruce top with authentic, well-balanced sound.",
     "price": "$229.99",
     "rating": 4.8,
-    "features": ["Solid Spruce Top", "Nato/Okume Back & Sides", "Walnut Fingerboard"],
-    "pros": ["Incredible sustain for the price", "Build quality outlasts clones", "Highly comfortable neck profile"],
-    "cons": ["Basic aesthetic appointments", "Action may need slight adjustment"],
+    "features": [
+      "Solid Spruce Top",
+      "Nato/Okume Back & Sides",
+      "Walnut Fingerboard"
+    ],
+    "pros": [
+      "Incredible sustain for the price",
+      "Build quality outlasts clones",
+      "Highly comfortable neck profile"
+    ],
+    "cons": [
+      "Basic aesthetic appointments",
+      "Action may need slight adjustment"
+    ],
     "image": "https://picsum.photos/800/600?random=1",
-    "amazonLink": "https://www.amazon.com/dp/B01CPK89S2/?tag=reviewsguitar-20"
+    "amazonLink": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-2",
@@ -21,9 +32,20 @@
     "description": "Excellent playability and rich tone. Perfect for those starting their acoustic journey.",
     "price": "$199.99",
     "rating": 4.7,
-    "features": ["Dreadnought Body", "Solid Mahogany Top", "Easy-to-Play Neck"],
-    "pros": ["Solid wood top at budget price", "Rolled fingerboard edges", "Very lightweight"],
-    "cons": ["Tuners are basic", "Lacks complex overtones of high-end models"],
+    "features": [
+      "Dreadnought Body",
+      "Solid Mahogany Top",
+      "Easy-to-Play Neck"
+    ],
+    "pros": [
+      "Solid wood top at budget price",
+      "Rolled fingerboard edges",
+      "Very lightweight"
+    ],
+    "cons": [
+      "Tuners are basic",
+      "Lacks complex overtones of high-end models"
+    ],
     "image": "https://picsum.photos/800/600?random=2",
     "amazonLink": "https://www.amazon.com/dp/B01N2V2C7P/?tag=reviewsguitar-20"
   },
@@ -35,9 +57,20 @@
     "description": "Solid wood construction with a rich, full-bodied sound. Road-ready and built to last.",
     "price": "$899.00",
     "rating": 4.9,
-    "features": ["Solid Sapele Body", "Fishman MX-T Electronics", "Soft Shell Case Included"],
-    "pros": ["Iconic Martin tone", "Professional-grade electronics", "Sustainable materials"],
-    "cons": ["Heavier than standard D-28s", "Pricey for a 'Road Series' model"],
+    "features": [
+      "Solid Sapele Body",
+      "Fishman MX-T Electronics",
+      "Soft Shell Case Included"
+    ],
+    "pros": [
+      "Iconic Martin tone",
+      "Professional-grade electronics",
+      "Sustainable materials"
+    ],
+    "cons": [
+      "Heavier than standard D-28s",
+      "Pricey for a 'Road Series' model"
+    ],
     "image": "https://picsum.photos/800/600?random=3",
     "amazonLink": "https://www.amazon.com/dp/B07N8Z7RZZ/?tag=reviewsguitar-20"
   },
@@ -49,11 +82,22 @@
     "description": "The quintessential electric guitar. Versatile, iconic, and built for professional performance.",
     "price": "$849.99",
     "rating": 4.9,
-    "features": ["Alder Body", "Player Series Alnico 5 Pickups", "Modern C Neck Profile"],
-    "pros": ["Extremely versatile tonal range", "Bulletproof construction", "Classic Fender playability"],
-    "cons": ["Single coils can be noisy", "Tremolo needs careful setup"],
+    "features": [
+      "Alder Body",
+      "Player Series Alnico 5 Pickups",
+      "Modern C Neck Profile"
+    ],
+    "pros": [
+      "Extremely versatile tonal range",
+      "Bulletproof construction",
+      "Classic Fender playability"
+    ],
+    "cons": [
+      "Single coils can be noisy",
+      "Tremolo needs careful setup"
+    ],
     "image": "https://picsum.photos/800/600?random=4",
-    "amazonLink": "https://www.amazon.com/dp/B07CXK87YV/?tag=reviewsguitar-20"
+    "amazonLink": "https://www.amazon.com/dp/B08N5WRWNW/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-2",
@@ -63,9 +107,20 @@
     "description": "Classic Telecaster style and tone at an accessible price. Perfect for rock, country, and blues.",
     "price": "$289.99",
     "rating": 4.6,
-    "features": ["Poplar Body", "Two Single-Coil Pickups", "Maple Neck"],
-    "pros": ["Authentic Tele 'twang'", "Slim, fast neck", "Solid value-to-performance ratio"],
-    "cons": ["Bridge can feel sharp on palms", "Pickups lack high-end sparkle"],
+    "features": [
+      "Poplar Body",
+      "Two Single-Coil Pickups",
+      "Maple Neck"
+    ],
+    "pros": [
+      "Authentic Tele 'twang'",
+      "Slim, fast neck",
+      "Solid value-to-performance ratio"
+    ],
+    "cons": [
+      "Bridge can feel sharp on palms",
+      "Pickups lack high-end sparkle"
+    ],
     "image": "https://picsum.photos/800/600?random=5",
     "amazonLink": "https://www.amazon.com/dp/B092BBGQG1/?tag=reviewsguitar-20"
   },
@@ -77,9 +132,20 @@
     "description": "Premium coated strings that last 3x longer while maintaining a natural feel.",
     "price": "$14.99",
     "rating": 4.9,
-    "features": ["Phosphor Bronze", "Ultra-Thin Film Coating", "NY Steel Core"],
-    "pros": ["Incredible longevity", "Consistent tone for weeks", "Minimal finger noise"],
-    "cons": ["Slightly higher price point", "Coating might feel 'slick' to some"],
+    "features": [
+      "Phosphor Bronze",
+      "Ultra-Thin Film Coating",
+      "NY Steel Core"
+    ],
+    "pros": [
+      "Incredible longevity",
+      "Consistent tone for weeks",
+      "Minimal finger noise"
+    ],
+    "cons": [
+      "Slightly higher price point",
+      "Coating might feel 'slick' to some"
+    ],
     "image": "https://picsum.photos/800/600?random=2",
     "amazonLink": "https://www.amazon.com/dp/B08X6D9G8Z/?tag=reviewsguitar-20"
   },
@@ -90,10 +156,21 @@
     "category": "tuners",
     "description": "The world's most advanced polyphonic tuner. Accurate, fast, and built like a tank.",
     "price": "$99.00",
-    "rating": 5.0,
-    "features": ["Polyphonic Tuning", "Bonafide Buffer", "Retina Display"],
-    "pros": ["Instant tuning of all strings", "Crystal clear display", "Built-in premium buffer"],
-    "cons": ["Large footprint for small boards", "Battery life is average"],
+    "rating": 5,
+    "features": [
+      "Polyphonic Tuning",
+      "Bonafide Buffer",
+      "Retina Display"
+    ],
+    "pros": [
+      "Instant tuning of all strings",
+      "Crystal clear display",
+      "Built-in premium buffer"
+    ],
+    "cons": [
+      "Large footprint for small boards",
+      "Battery life is average"
+    ],
     "image": "https://picsum.photos/800/600?random=6",
     "amazonLink": "https://www.amazon.com/dp/B06XFSB6P9/?tag=reviewsguitar-20"
   },
@@ -105,9 +182,20 @@
     "description": "The most iconic distortion pedal ever made. Hard-edged attack that remains smooth.",
     "price": "$62.00",
     "rating": 4.8,
-    "features": ["Classic Distortion", "Tone/Level/Dist Controls", "Bulletproof Build"],
-    "pros": ["Foundational rock tone", "Responsive gain control", "Low price/High durability"],
-    "cons": ["Can sound 'thin' into cheap amps", "Niche utility for jazz/blues"],
+    "features": [
+      "Classic Distortion",
+      "Tone/Level/Dist Controls",
+      "Bulletproof Build"
+    ],
+    "pros": [
+      "Foundational rock tone",
+      "Responsive gain control",
+      "Low price/High durability"
+    ],
+    "cons": [
+      "Can sound 'thin' into cheap amps",
+      "Niche utility for jazz/blues"
+    ],
     "image": "https://picsum.photos/800/600?random=7",
     "amazonLink": "https://www.amazon.com/dp/B0002CZV82/?tag=reviewsguitar-20"
   },
@@ -119,9 +207,21 @@
     "description": "The SE Silver Sky is a workhorse version of the original John Mayer signature model, delivering vintage-inspired tones with modern PRS reliability.",
     "price": "$849.00",
     "rating": 4.9,
-    "features": ["Poplar Body", "635JM 'S' Single-Coil Pickups", "8.5\" Fretboard Radius", "2-Point Steel Tremolo"],
-    "pros": ["Authentic JM signature tone", "Exceptional build quality for the price", "Extremely comfortable 635JM neck carve"],
-    "cons": ["Polarizing 'inverted' headstock", "Gig bag included instead of hard case"],
+    "features": [
+      "Poplar Body",
+      "635JM 'S' Single-Coil Pickups",
+      "8.5\" Fretboard Radius",
+      "2-Point Steel Tremolo"
+    ],
+    "pros": [
+      "Authentic JM signature tone",
+      "Exceptional build quality for the price",
+      "Extremely comfortable 635JM neck carve"
+    ],
+    "cons": [
+      "Polarizing 'inverted' headstock",
+      "Gig bag included instead of hard case"
+    ],
     "image": "https://picsum.photos/800/600?random=2",
     "amazonLink": "https://www.amazon.com/dp/B09NM9PFV9/?tag=reviewsguitar-20"
   },
@@ -132,10 +232,21 @@
     "category": "professional",
     "description": "The ultimate in precision and performance. Features the unique 'Texas Tea' finish and a lightning-fast roasted maple neck.",
     "price": "$2,199.99",
-    "rating": 5.0,
-    "features": ["Texas Tea Finish", "Ultra Noiseless Vintage Pickups", "Augmented 'D' Neck Profile"],
-    "pros": ["Silent electronics for studio use", "Incredible sustain", "Boutique-level finish"],
-    "cons": ["Premium price point", "Modern feel may not suit vintage purists"],
+    "rating": 5,
+    "features": [
+      "Texas Tea Finish",
+      "Ultra Noiseless Vintage Pickups",
+      "Augmented 'D' Neck Profile"
+    ],
+    "pros": [
+      "Silent electronics for studio use",
+      "Incredible sustain",
+      "Boutique-level finish"
+    ],
+    "cons": [
+      "Premium price point",
+      "Modern feel may not suit vintage purists"
+    ],
     "image": "https://picsum.photos/800/600?random=4",
     "amazonLink": "https://www.amazon.com/dp/B07XLRZB7B/?tag=reviewsguitar-20"
   },
@@ -147,9 +258,20 @@
     "description": "Designed for the modern metal player. High-output Seymour Duncan pickups and a flat 20\" radius for fast leads.",
     "price": "$1,099.00",
     "rating": 4.9,
-    "features": ["Holcomb Burst Finish", "Seymour Duncan Alpha/Omega Pickups", "25.5\" Scale Length"],
-    "pros": ["Exceptional clarity for low tunings", "Satin neck finish", "Rock-solid tuning"],
-    "cons": ["Very high output not for everyone", "Bridge can be sharp"],
+    "features": [
+      "Holcomb Burst Finish",
+      "Seymour Duncan Alpha/Omega Pickups",
+      "25.5\" Scale Length"
+    ],
+    "pros": [
+      "Exceptional clarity for low tunings",
+      "Satin neck finish",
+      "Rock-solid tuning"
+    ],
+    "cons": [
+      "Very high output not for everyone",
+      "Bridge can be sharp"
+    ],
     "image": "https://picsum.photos/800/600?random=2",
     "amazonLink": "https://www.amazon.com/dp/B0BK9X1T9B/?tag=reviewsguitar-20"
   },
@@ -160,10 +282,21 @@
     "category": "professional",
     "description": "The 'Dark Night' of bass guitars. V-Mod II pickups and refined ergonomics for the professional stage.",
     "price": "$1,799.99",
-    "rating": 5.0,
-    "features": ["Dark Night Finish", "V-Mod II Single-Coil Jazz Bass Pickups", "Slim C Neck"],
-    "pros": ["Incredible tonal definition", "Premium bridge hardware", "Stunning visual depth"],
-    "cons": ["Heavier than some modern alternatives", "Requires active case maintenance"],
+    "rating": 5,
+    "features": [
+      "Dark Night Finish",
+      "V-Mod II Single-Coil Jazz Bass Pickups",
+      "Slim C Neck"
+    ],
+    "pros": [
+      "Incredible tonal definition",
+      "Premium bridge hardware",
+      "Stunning visual depth"
+    ],
+    "cons": [
+      "Heavier than some modern alternatives",
+      "Requires active case maintenance"
+    ],
     "image": "https://picsum.photos/800/600?random=4",
     "amazonLink": "https://www.amazon.com/dp/B08KGTCX7X/?tag=reviewsguitar-20"
   },
@@ -175,13 +308,268 @@
     "description": "Short-scale comfort with a punchy 60s vibe. Features the iconic competition stripes.",
     "price": "$459.99",
     "rating": 4.7,
-    "features": ["Lake Placid Blue with Olympic White Stripes", "30\" Short Scale", "Fender-Designed Alnico Pickup"],
-    "pros": ["Extremely easy to play", "Cool retro aesthetic", "Big tone from a small package"],
-    "cons": ["Limited high-end access", "Tuners are basic"],
+    "features": [
+      "Lake Placid Blue with Olympic White Stripes",
+      "30\" Short Scale",
+      "Fender-Designed Alnico Pickup"
+    ],
+    "pros": [
+      "Extremely easy to play",
+      "Cool retro aesthetic",
+      "Big tone from a small package"
+    ],
+    "cons": [
+      "Limited high-end access",
+      "Tuners are basic"
+    ],
     "image": "https://picsum.photos/800/600?random=2",
     "amazonLink": "https://www.amazon.com/dp/B07N2B6G4M/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "learning-1",
+    "name": "Hal Leonard Guitar Method, Complete Edition",
+    "silo": "learning",
+    "category": "books",
+    "description": "The standard in guitar education for decades. Includes audio access and covers everything from basic tuning to complex chord melodies.",
+    "price": "$24.99",
+    "rating": 4.8,
+    "features": [
+      "Spiral Bound",
+      "Audio Access Included",
+      "Covers Books 1, 2, & 3"
+    ],
+    "pros": [
+      "Highly structured progression",
+      "Great for self-taught players",
+      "Includes standard notation and tab"
+    ],
+    "cons": [
+      "Some songs feel a bit dated",
+      "Requires discipline to follow"
+    ],
+    "image": "https://picsum.photos/800/600?random=8",
+    "amazonLink": "https://www.amazon.com/dp/B0002EWTWG/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "learning-2",
+    "name": "JustinGuitar Beginner Course Books",
+    "silo": "learning",
+    "category": "books",
+    "description": "Companion books to the world's most popular online guitar course. Highly practical and focused on getting you playing quickly.",
+    "price": "$19.99",
+    "rating": 4.9,
+    "features": [
+      "Practical Chord Focus",
+      "Rhythm Strumming Patterns",
+      "Spiral Bound available"
+    ],
+    "pros": [
+      "Direct tie-in with free video lessons",
+      "Very encouraging tone",
+      "Focuses on musicality, not just theory"
+    ],
+    "cons": [
+      "Moves fast if you don't practice",
+      "Less focus on classical notation"
+    ],
+    "image": "https://picsum.photos/800/600?random=9",
+    "amazonLink": "https://www.amazon.com/dp/1780387103/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "learning-3",
+    "name": "Fender Play Prepaid Subscription (12-Month)",
+    "silo": "learning",
+    "category": "apps",
+    "description": "The ultimate learning app from the biggest name in guitars. Bite-sized lessons shot in high-definition 4k.",
+    "price": "$89.99",
+    "rating": 4.7,
+    "features": [
+      "Thousands of Songs",
+      "Path-based Learning",
+      "Multi-angle HD Video"
+    ],
+    "pros": [
+      "Highest production value",
+      "Huge library of licensed songs",
+      "Great progression paths"
+    ],
+    "cons": [
+      "Requires ongoing subscription",
+      "Can be buggy on older tablets"
+    ],
+    "image": "https://picsum.photos/800/600?random=10",
+    "amazonLink": "https://www.amazon.com/dp/B07L5YYHQC/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "learning-4",
+    "name": "Guitar Tricks Annual Membership",
+    "silo": "learning",
+    "category": "courses",
+    "description": "One of the oldest and most comprehensive online courses available. Features the core learning system and massive song library.",
+    "price": "$179.99",
+    "rating": 4.8,
+    "features": [
+      "Core Learning System",
+      "11,000+ Lessons",
+      "Advanced Style Paths"
+    ],
+    "pros": [
+      "Incredibly deep curriculum",
+      "Excellent for specific genres (Blues, Country)",
+      "Downloadable tabs"
+    ],
+    "cons": [
+      "Interface feels a bit dated",
+      "High initial cost"
+    ],
+    "image": "https://picsum.photos/800/600?random=11",
+    "amazonLink": "https://www.amazon.com/dp/B004FEPB9Q/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "buying-1",
+    "name": "Fender Player Stratocaster vs Telecaster",
+    "silo": "buying",
+    "category": "comparisons",
+    "description": "The ultimate comparison: The versatile contoured Stratocaster against the punchy, rock-solid Telecaster. Both represent the pinnacle of intermediate workhorses.",
+    "price": "$849.99",
+    "rating": 4.9,
+    "features": [
+      "Strat: 3 Single-Coils, Tremolo",
+      "Tele: 2 Single-Coils, Fixed Bridge",
+      "Both: Alder Body, Maple Neck"
+    ],
+    "pros": [
+      "Strat: Incredible comfort and tremolo options",
+      "Tele: Bulletproof tuning stability and 'twang'"
+    ],
+    "cons": [
+      "Strat: Tremolo can cause tuning issues for beginners",
+      "Tele: Less ergonomic body shape"
+    ],
+    "image": "https://picsum.photos/800/600?random=12",
+    "amazonLink": "https://www.amazon.com/dp/B08N5WRWNW/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "buying-2",
+    "name": "Acoustic vs Electric Starter Guitars",
+    "silo": "buying",
+    "category": "comparisons",
+    "description": "Comparing the Yamaha FG800 Acoustic against the Squier Affinity Stratocaster. The eternal debate for beginners settled.",
+    "price": "$250 - $350",
+    "rating": 4.8,
+    "features": [
+      "Acoustic: Grab and go, builds finger strength",
+      "Electric: Easier on fingers, requires amp setup",
+      "Both: Trusted reliable brands"
+    ],
+    "pros": [
+      "Acoustic: No extra gear required",
+      "Electric: Volume control with headphones"
+    ],
+    "cons": [
+      "Acoustic: Harder to press strings initially",
+      "Electric: Amp limits portability"
+    ],
+    "image": "https://picsum.photos/800/600?random=13",
+    "amazonLink": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-4",
+    "name": "Hercules GS414B PLUS Guitar Stand",
+    "silo": "accessories",
+    "category": "stands",
+    "description": "The industry standard for stage-ready guitar stands. Auto-grip system secures your instrument flawlessly.",
+    "price": "$52.99",
+    "rating": 5,
+    "features": [
+      "Auto-Grip System",
+      "Height Adjustable",
+      "Specially Formulated Foam"
+    ],
+    "pros": [
+      "Impossible to knock over accidentally",
+      "Safe for nitrocellulose finishes",
+      "Folds down compactly"
+    ],
+    "cons": [
+      "More expensive than basic A-frames",
+      "A bit heavy for gig bags"
+    ],
+    "image": "https://picsum.photos/800/600?random=14",
+    "amazonLink": "https://www.amazon.com/dp/B000P5WTQS/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-5",
+    "name": "Ernie Ball Regular Slinky Strings (3-Pack)",
+    "silo": "accessories",
+    "category": "strings",
+    "description": "The classic rock string. Uncoated, pure nickel wound tone that has been heard on decades of hit records.",
+    "price": "$16.99",
+    "rating": 4.8,
+    "features": [
+      "10-46 Gauge",
+      "Nickel Wound",
+      "Element Shield Packaging"
+    ],
+    "pros": [
+      "Classic bright tone",
+      "Extremely affordable in bulk",
+      "Reliable intonation"
+    ],
+    "cons": [
+      "Corrode faster than coated strings",
+      "Requires changing every 2-3 weeks for pros"
+    ],
+    "image": "https://picsum.photos/800/600?random=15",
+    "amazonLink": "https://www.amazon.com/dp/B0002M6CVC/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "acoustic-4",
+    "name": "Taylor 214ce Plus",
+    "silo": "acoustic",
+    "category": "professional",
+    "description": "A working professional's acoustic. Features Taylor's signature playability with an upgraded aesthetic and gloss finish.",
+    "price": "$1,399.00",
+    "rating": 4.9,
+    "features": [
+      "Solid Sitka Spruce Top",
+      "Rosewood Layered Back/Sides",
+      "Expression System 2 Electronics"
+    ],
+    "pros": [
+      "Incredible articulation",
+      "Stage-ready electronics",
+      "Aerocase included"
+    ],
+    "cons": [
+      "Layered back/sides at this price point",
+      "Very bright tone isn't for everyone"
+    ],
+    "image": "https://picsum.photos/800/600?random=16",
+    "amazonLink": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "buying-3",
+    "name": "Boss Katana vs Fender Mustang",
+    "silo": "buying",
+    "category": "comparisons",
+    "description": "The ultimate modeling amp showdown for 2026. Comparing the raw power of the Katana against the intuitive UI of the Mustang.",
+    "price": "$299.99",
+    "rating": 4.8,
+    "features": [
+      "Katana: 5 Amp Characters, 60+ Boss Effects",
+      "Mustang: Color Screen, WiFi Updates",
+      "Both: 50 Watts, 12-inch Speakers"
+    ],
+    "pros": [
+      "Katana: Superior high-gain tones and gig volume",
+      "Mustang: Much easier to dial in tones without a PC"
+    ],
+    "cons": [
+      "Katana: Tone studio software is complex",
+      "Mustang: High gain sounds slightly more digital"
+    ],
+    "image": "https://picsum.photos/800/600?random=17",
+    "amazonLink": "https://www.amazon.com/dp/B0BYZ2CHV1/?tag=reviewsguitar-20"
   }
 ]
-
-
-
