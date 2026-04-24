@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /debug_ollama.js
+Disallow: /generate_*.js
+Disallow: /populate_*.js
+Disallow: /minify.js
+Disallow: /map_urls.js
+
 Sitemap: https://reviewsguitar.com/sitemap.xml
