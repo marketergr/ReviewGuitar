@@ -5,5 +5,6 @@ Disallow: /generate_*.js
 Disallow: /populate_*.js
 Disallow: /minify.js
 Disallow: /map_urls.js
+Disallow: /pages/
 
 Sitemap: https://reviewsguitar.com/sitemap.xml

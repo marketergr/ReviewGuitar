@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/best/beginner-acoustic-guitar",
-      "destination": "/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar.html"
+      "destination": "/collections/acoustic/best-for-beginners.html"
     },
     {
       "source": "/vs/yamaha-fg800-vs-fender-cd-60s",
@@ -10,7 +10,7 @@
     },
     {
       "source": "/best/electric-guitar-metal-under-800",
-      "destination": "/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html"
+      "destination": "/collections/electric/metal-guitars.html"
     },
     {
       "source": "/reviews/fender-player-ii-stratocaster",
@@ -22,7 +22,7 @@
     },
     {
       "source": "/best/beginner-electric-guitar-kit",
-      "destination": "/pages/electric_beginner_starter_electric_guitar_kit_buy.html"
+      "destination": "/collections/electric/starters.html"
     },
     {
       "source": "/vs/yamaha-pacifica-vs-squier-strat",
@@ -34,11 +34,11 @@
     },
     {
       "source": "/reviews/prs-se-custom-24",
-      "destination": "/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html"
+      "destination": "/collections/electric/silver-sky-review.html"
     },
     {
       "source": "/best/guitar-strings-blues",
-      "destination": "/collections/accessories/index.html"
+      "destination": "/collections/accessories/strings.html"
     },
     {
       "source": "/vs/gibson-les-paul-50s-vs-60s",
@@ -46,7 +46,7 @@
     },
     {
       "source": "/best/travel-acoustic-guitar",
-      "destination": "/collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html"
+      "destination": "/collections/acoustic/hybrid-guide.html"
     },
     {
       "source": "/alternatives/epiphone-les-paul-standard",

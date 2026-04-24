@@ -8,9 +8,9 @@
         {"slug": "best-under-500", "title": "Best Acoustic Guitars Under $500 2026", "keywords": "best acoustic guitar under 500, acoustic guitar deals 2026"},
         {"slug": "top-brands", "title": "Top Acoustic Guitar Brands Review 2026", "keywords": "top acoustic guitar brands, acoustic guitar review"},
         {"slug": "care-guide", "title": "Acoustic Guitar Care Guide 2026", "keywords": "acoustic guitar care, how to maintain guitar"},
-        {"slug": "beginner-guide", "title": "Beginner Acoustic Guitar Guide 2026", "keywords": "best acoustic guitar for beginners, beginner guitar guide"},
-        {"slug": "guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic", "title": "Alvarez AF30CE Artist Series Review 2026", "keywords": "Alvarez AF30CE, acoustic-electric guitar review, best folk guitar 2026"},
-        {"slug": "guitar-yamaha-ntx3-brown-sunburst", "title": "Yamaha NTX3 Nylon String Hybrid Review", "keywords": "Yamaha NTX3, nylon string electric, guitar review 2026"}
+        {"slug": "best-for-beginners", "title": "Beginner Acoustic Guitar Guide 2026", "keywords": "best acoustic guitar for beginners, beginner guitar guide"},
+        {"slug": "premium-guide", "title": "Alvarez AF30CE Artist Series Review 2026", "keywords": "Alvarez AF30CE, acoustic-electric guitar review, best folk guitar 2026"},
+        {"slug": "hybrid-guide", "title": "Yamaha NTX3 Nylon String Hybrid Review", "keywords": "Yamaha NTX3, nylon string electric, guitar review 2026"}
       ]
     },
     {
@@ -18,20 +18,20 @@
       "displayName": "Electric Guitars",
       "pages": [
         {"slug": "best-under-300", "title": "Best Electric Guitars Under $300 2026", "keywords": "best electric guitar under 300, electric guitar deals"},
-        {"slug": "starter-kit", "title": "Electric Guitar Starter Kit Review 2026", "keywords": "electric guitar starter kit, beginner electric guitar"},
+        {"slug": "starters", "title": "Electric Guitar Starter Kit Review 2026", "keywords": "electric guitar starter kit, beginner electric guitar"},
         {"slug": "amp-reviews", "title": "Electric Guitar Amp Reviews 2026", "keywords": "best guitar amps, electric amp review"},
         {"slug": "effects-pedals", "title": "Effects Pedals Comparison 2026", "keywords": "guitar effects pedals review, best pedals"},
-        {"slug": "guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit", "title": "PRS John Mayer SE Silver Sky Review 2026", "keywords": "PRS SE Silver Sky, Dragon Fruit guitar, John Mayer signature review, affordable professional electric guitar"},
-        {"slug": "guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck", "title": "Fender American Ultra Telecaster Review 2026", "keywords": "Fender Ultra Telecaster, Texas Tea guitar, professional electric review, roasted maple neck"},
-        {"slug": "prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst", "title": "PRS SE Mark Holcomb Review 2026", "keywords": "PRS Mark Holcomb, progressive metal guitar, SE signature review, Holcomb Burst"}
+        {"slug": "silver-sky-review", "title": "PRS John Mayer SE Silver Sky Review 2026", "keywords": "PRS SE Silver Sky, Dragon Fruit guitar, John Mayer signature review, affordable professional electric guitar"},
+        {"slug": "ultra-tele-review", "title": "Fender American Ultra Telecaster Review 2026", "keywords": "Fender Ultra Telecaster, Texas Tea guitar, professional electric review, roasted maple neck"},
+        {"slug": "metal-guitars", "title": "PRS SE Mark Holcomb Review 2026", "keywords": "PRS Mark Holcomb, progressive metal guitar, SE signature review, Holcomb Burst"}
       ]
     },
     {
       "name": "bass",
       "displayName": "Bass Guitars",
       "pages": [
-        {"slug": "guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night", "title": "Fender American Pro II Jazz Bass Review 2026", "keywords": "Fender Jazz Bass, Dark Night finish, professional bass review, limited edition bass"},
-        {"slug": "guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes", "title": "Squier Competition Mustang Bass Review 2026", "keywords": "Squier Mustang Bass, short scale bass review, competition stripes guitar, Lake Placid Blue bass"},
+        {"slug": "pro-jazz-bass", "title": "Fender American Pro II Jazz Bass Review 2026", "keywords": "Fender Jazz Bass, Dark Night finish, professional bass review, limited edition bass"},
+        {"slug": "mustang-bass", "title": "Squier Competition Mustang Bass Review 2026", "keywords": "Squier Mustang Bass, short scale bass review, competition stripes guitar, Lake Placid Blue bass"},
         {"slug": "bass-buying-guide", "title": "Bass Guitar Buyer's Guide 2026", "keywords": "best bass guitar for beginners, bass gear guide, buy bass guitar online"}
       ]
     },
@@ -39,19 +39,20 @@
       "name": "accessories",
       "displayName": "Accessories",
       "pages": [
-        {"slug": "cables-affordable", "title": "Affordable Guitar Cables Review 2026", "keywords": "guitar cables affordable, best guitar cables"},
-        {"slug": "cases-hard", "title": "Hard Guitar Cases Comparison 2026", "keywords": "guitar hard cases, best guitar case"},
-        {"slug": "picks-2026", "title": "Best Guitar Picks 2026 Review", "keywords": "guitar picks review, best picks"},
-        {"slug": "tuners-review", "title": "Digital Tuner Review 2026", "keywords": "best guitar tuner, digital tuner review"}
+        {"slug": "strings", "title": "Best Guitar Strings Review 2026", "keywords": "best guitar strings, acoustic strings, electric guitar strings 2026"},
+        {"slug": "pedals", "title": "Essential Guitar Pedals Comparison 2026", "keywords": "guitar pedals review, best overdrive pedals, delay pedals"},
+        {"slug": "amps", "title": "Top-Rated Guitar Amps Review 2026", "keywords": "best guitar amps, tube amps vs solid state, amp review"},
+        {"slug": "cables", "title": "Best Guitar Cables Review 2026", "keywords": "guitar cables affordable, best instrument cables"},
+        {"slug": "tuners", "title": "Digital Tuner Review 2026", "keywords": "best guitar tuner, digital tuner review"}
       ]
     },
     {
       "name": "learning",
       "displayName": "Learning & Lessons",
       "pages": [
-        {"slug": "online-courses", "title": "Best Online Guitar Courses 2026", "keywords": "online guitar lessons, best guitar course"},
-        {"slug": "apps-review", "title": "Guitar Learning Apps Review 2026", "keywords": "guitar apps review, learn guitar app"},
-        {"slug": "beginner-tips", "title": "Beginner Guitar Tips 2026", "keywords": "guitar tips for beginners, learn guitar fast"},
+        {"slug": "courses", "title": "Best Online Guitar Courses 2026", "keywords": "online guitar lessons, best guitar course"},
+        {"slug": "apps", "title": "Guitar Learning Apps Review 2026", "keywords": "guitar apps review, learn guitar app"},
+        {"slug": "tips", "title": "Beginner Guitar Tips 2026", "keywords": "guitar tips for beginners, learn guitar fast"},
         {"slug": "techniques", "title": "Guitar Techniques Guide 2026", "keywords": "guitar techniques, how to play guitar"},
         {"slug": "best-guitar-lesson-affiliates", "title": "Best Online Guitar Lessons Review 2026", "keywords": "best online guitar lessons, guitar tricks review, truefire affiliate, sweetwater guitar lessons"}
       ]
