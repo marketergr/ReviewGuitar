@@ -6,8 +6,8 @@
       "permanent": true
     },
     {
-      "source": "/go/:asin",
-      "destination": "https://www.amazon.com/dp/:asin/?tag=reviewsguitar-20",
+      "source": "/go/:slug",
+      "destination": "https://www.amazon.com/s?k=:slug&tag=reviewsguitar-20",
       "permanent": false
     }
   ],
