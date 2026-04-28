@@ -58,7 +58,7 @@ header p {
     margin-top: 0.5rem;
 }
 
-nav {
+body > nav {
     position: sticky;
     top: 0;
     background: rgba(5, 5, 5, 0.8);
@@ -78,7 +78,7 @@ nav {
     text-align: center;
 }
 
-nav ul {
+body > nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -87,7 +87,7 @@ nav ul {
     gap: 2rem;
 }
 
-nav ul li a {
+body > nav ul li a {
     color: var(--text-dim);
     text-decoration: none;
     font-weight: 600;
@@ -97,7 +97,7 @@ nav ul li a {
     transition: var(--transition);
 }
 
-nav ul li a:hover, nav ul li a.active {
+body > nav ul li a:hover, body > nav ul li a.active {
     color: var(--primary);
 }
 
@@ -110,6 +110,8 @@ nav ul li a:hover, nav ul li a.active {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 100%;
+    margin-top: 0;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(15px);
     min-width: 220px;
@@ -117,8 +119,16 @@ nav ul li a:hover, nav ul li a.active {
     z-index: 1000;
     border: 1px solid var(--border);
     border-radius: 4px;
-    margin-top: 1rem;
     padding: 1rem 0;
+}
+
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    height: 8px;
 }
 
 .dropdown-content a {
@@ -138,7 +148,7 @@ nav ul li a:hover, nav ul li a.active {
     padding-left: 1.8rem;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown.is-open .dropdown-content {
     display: block;
 }
 
@@ -285,14 +295,14 @@ footer p {
     .hero h2 { font-size: 2.5rem; }
     
     .mobile-menu-toggle { display: block; }
-    nav ul.nav-links {
+    body > nav ul.nav-links {
         display: none;
         flex-direction: column;
         gap: 0.5rem;
         padding-top: 1rem;
     }
-    nav ul.nav-links.active { display: flex; }
-    
+    body > nav ul.nav-links.active { display: flex; }
+
     .dropdown-content {
         position: static;
         display: none;
@@ -302,7 +312,7 @@ footer p {
         background: transparent;
         margin-top: 0;
     }
-    .dropdown:hover .dropdown-content {
+    .dropdown.is-open .dropdown-content {
         display: block;
     }
 }

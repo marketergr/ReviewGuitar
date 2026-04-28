@@ -4,6 +4,11 @@
       "source": "/silos/:path*",
       "destination": "/collections/:path*",
       "permanent": true
+    },
+    {
+      "source": "/go/:asin",
+      "destination": "https://www.amazon.com/dp/:asin/?tag=reviewsguitar-20",
+      "permanent": false
     }
   ],
   "rewrites": [
