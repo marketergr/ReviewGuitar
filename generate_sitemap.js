@@ -1,53 +1,54 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://reviewsguitar.com';
-const EXCLUDED_DIRS = ['node_modules', '.git', 'css', 'js', 'images', 'silos', 'templates'];
+const rootDir = process.cwd();
+const domain = 'https://reviewsguitar.com';
+const sitemapPath = path.join(rootDir, 'sitemap.xml');
 
-function getFiles(dir, fileList = []) {
+let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+function processDir(dir) {
     const files = fs.readdirSync(dir);
-    files.forEach((file) => {
-        const filePath = path.join(dir, file);
-        if (fs.statSync(filePath).isDirectory()) {
-            if (EXCLUDED_DIRS.indexOf(file) === -1) {
-                getFiles(filePath, fileList);
+    for (const file of files) {
+        if (file === 'node_modules' || file === '.git' || file === 'GSC') continue;
+        
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+            processDir(fullPath);
+        } else if (file.endsWith('.html')) {
+            // Ignore templates
+            if (fullPath.includes('templates')) continue;
+            
+            let relPath = path.relative(rootDir, fullPath).replace(/\\/g, '/');
+            
+            // Format URL (remove index.html or .html for clean urls)
+            let urlPath = relPath;
+            if (urlPath === 'index.html') urlPath = '';
+            else if (urlPath.endsWith('/index.html')) urlPath = urlPath.replace('/index.html', '/');
+            else if (urlPath.endsWith('.html')) urlPath = urlPath.replace('.html', '');
+            
+            const fullUrl = `${domain}/${urlPath}`;
+            
+            // Assign priority and changefreq based on depth
+            let priority = '0.6';
+            let changefreq = 'monthly';
+            
+            if (urlPath === '') {
+                priority = '1.0';
+                changefreq = 'weekly';
+            } else if (urlPath.startsWith('collections/') && urlPath.endsWith('/')) {
+                priority = '0.8';
+                changefreq = 'weekly';
             }
-        } else {
-            if (file.endsWith('.html')) {
-                fileList.push(filePath);
-            }
+            
+            xml += `  <url>\n    <loc>${fullUrl}</loc>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>\n`;
         }
-    });
-    return fileList;
+    }
 }
 
-function generateSitemap() {
-    console.log("Building high-authority sitemap...");
-    const htmlFiles = getFiles(__dirname);
-    
-    let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
+processDir(rootDir);
 
-    htmlFiles.forEach(file => {
-        const relativePath = path.relative(__dirname, file).replace(/\\/g, '/');
-        if (relativePath === 'navigation.html') return; // Skip helper pages
-        
-        const url = `${BASE_URL}/${relativePath}`.replace('/index.html', '/');
-        
-        xml += `
-  <url>
-    <loc>${url}</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>${relativePath === 'index.html' ? 'daily' : 'weekly'}</changefreq>
-    <priority>${relativePath === 'index.html' ? '1.0' : '0.8'}</priority>
-  </url>`;
-    });
+xml += `</urlset>`;
 
-    xml += `
-</urlset>`;
-
-    fs.writeFileSync('sitemap.xml', xml);
-    console.log(`Success! sitemap.xml generated with ${htmlFiles.length - 1} URLs (cleaned).`);
-}
-
-generateSitemap();
+fs.writeFileSync(sitemapPath, xml);
+console.log('Successfully generated sitemap.xml with ' + (xml.match(/<url>/g) || []).length + ' URLs');
