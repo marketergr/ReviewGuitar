@@ -9,7 +9,7 @@
 ### Page: Top Acoustic Guitar Brands Review 2026
 - **Primary Tag:** #guitar #aesthetic #acoustic
 - **Pin Idea 1 (Aesthetic):** Top-down shot of the gear with a coffee and a notebook. Title: "Modern Acoustic Guitars Essentials".
-- **Pin Idea 2 (BoFU):** Comparison chart of top 3 acoustic models. Title: "Best Acoustic Guitars Under $1000".
+
 
 ### Page: Acoustic Guitar Care Guide 2026
 - **Primary Tag:** #guitar #aesthetic #acoustic
