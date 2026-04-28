@@ -14,7 +14,7 @@
     <meta property="og:image" content="../../images/cluster-apps-pinterest.jpg">
     <meta name="pinterest:description" content="Check out our aesthetic review and buy guide for Guitar Learning Apps Review 2026. #guitar #aesthetic #musician">
     <title>Guitar Learning Apps Review 2026 | Expert Analysis & Reviews 2026 | ReviewsGuitar.com</title>
-    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Product","name":"Fender Play 12-Month Subscription","description":"The ultimate learning app from the biggest name in guitars. Bite-sized lessons shot in high-definition 4k.","image":"https://m.media-amazon.com/images/I/81v-v-x-v-L._AC_SL1500_.jpg","brand":{"@type":"Brand","name":"ReviewsGuitar Elite"},"offers":{"@type":"Offer","url":"https://reviewsguitar.com/collections/learning/apps.html","priceCurrency":"USD","price":"89.99","itemCondition":"https://schema.org/NewCondition","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.7,"reviewCount":57}}]}</script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
@@ -33,13 +33,42 @@
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../collections/acoustic/index.html">Acoustic</a></li>
-            <li><a href="../../collections/electric/index.html">Electric</a></li>
-            <li><a href="../../collections/accessories/index.html">Accessories</a></li>
-            <li><a href="../../collections/learning/index.html">Learning</a></li>
-            <li><a href="../../collections/buying/index.html">Guides</a></li>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="/collections/acoustic/index.html">Acoustic</a>
+                <div class="dropdown-content">
+                    <a href="/collections/acoustic/beginner-guide.html">Best for Beginners</a>
+                    <a href="/collections/acoustic/best-under-500.html">Best Under $500</a>
+                    <a href="/collections/acoustic/top-brands.html">Premium Guide</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/electric/index.html">Electric</a>
+                <div class="dropdown-content">
+                    <a href="/collections/electric/starter-kit.html">Starter Kits</a>
+                    <a href="/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html">Best for Metal</a>
+                    <a href="/collections/electric/best-under-300.html">Best Under $300</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/accessories/index.html">Gear</a>
+                <div class="dropdown-content">
+                    <a href="/collections/accessories/index.html">Strings & Amps</a>
+                    <a href="/collections/accessories/picks-2026.html">Pedals & Picks</a>
+                    <a href="/collections/accessories/tuners-review.html">Tuners</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/learning/index.html">Education</a>
+                <div class="dropdown-content">
+                    <a href="/collections/learning/apps-review.html">Learning Apps</a>
+                    <a href="/collections/learning/online-courses.html">Video Courses</a>
+                    <a href="/collections/learning/index.html">Guitar Books</a>
+                </div>
+            </li>
+            <li><a href="/collections/buying/index.html">Guides</a></li>
         </ul>
     </nav>
     <main>
@@ -212,26 +241,27 @@
             <div class="footer-column">
                 <h3>Collections</h3>
                 <ul class="footer-links">
-                    <li><a href="../../collections/acoustic/index.html">Acoustic Guitars</a></li>
-                    <li><a href="../../collections/electric/index.html">Electric Guitars</a></li>
-                    <li><a href="../../collections/accessories/index.html">Essential Gear</a></li>
-                    <li><a href="../../collections/learning/index.html">Learning Silo</a></li>
+                    <li><a href="/collections/acoustic/index.html">Acoustic Guitars</a></li>
+                    <li><a href="/collections/electric/index.html">Electric Guitars</a></li>
+                    <li><a href="/collections/accessories/index.html">Essential Gear</a></li>
+                    <li><a href="/collections/learning/index.html">Education</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Our Brand</h3>
+                <h3>Guides</h3>
                 <ul class="footer-links">
-                    <li><a href="../../about.html">About Us</a></li>
-                    <li><a href="../../about.html#process">Evaluation Process</a></li>
-                    <li><a href="../../sitemap.xml">Sitemap</a></li>
+                    <li><a href="/collections/acoustic/beginner-guide.html">Beginner Start</a></li>
+                    <li><a href="/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html">Metal Guide</a></li>
+                    <li><a href="/collections/buying/index.html">Buying Strategy</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Legal</h3>
                 <ul class="footer-links">
-                    <li><a href="../../privacy.html">Privacy Policy</a></li>
-                    <li><a href="../../terms.html">Terms & Conditions</a></li>
-                    <li><a href="../../contact.html">Contact Us</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms & Conditions</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -239,6 +269,18 @@
             <p>&copy; 2026 ReviewsGuitar.com. All Rights Reserved. Built for the modern musician.</p>
         </div>
     </footer>
-    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if(mobileMenuToggle && navLinks) {
+                mobileMenuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
     </html>
     
