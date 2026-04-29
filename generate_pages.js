@@ -359,6 +359,10 @@ structure.siloConfigs.forEach(silo => {
     }
     </script>
     ${generateProductSchema(siloProducts.slice(0, 3), `https://reviewsguitar.com/collections/${silo.name}/index.html`)}
+    <meta name="google-adsense-account" content="ca-pub-9853769972652980">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9853769972652980"
+     crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
     <script>
@@ -433,6 +437,10 @@ structure.siloConfigs.forEach(silo => {
     <title>${page.title} | Expert Analysis & Reviews 2026 | ReviewsGuitar.com</title>
     <link rel="stylesheet" href="../../css/style.min.css">
     ${generateProductSchema(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2), `https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html`)}
+    <meta name="google-adsense-account" content="ca-pub-9853769972652980">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9853769972652980"
+     crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
     <script>

@@ -337,6 +337,10 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/style.min.css">
+    <meta name="google-adsense-account" content="ca-pub-9853769972652980">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9853769972652980"
+     crossorigin="anonymous"></script>
     <script type="application/ld+json">
 ${schemaJson}
     </script>
