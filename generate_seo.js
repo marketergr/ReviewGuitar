@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Programmatic SEO Generator for GuitarReview.com
- * Implements AI content injection and deep SEO architecture
+ * Implements AI content injection, deep SEO architecture, and Pinterest optimization
  */
 
 const fs = require('fs');
@@ -10,6 +10,56 @@ const path = require('path');
 const BASE_URL = "https://reviewsguitar.com";
 const PROJECT_ROOT = path.resolve(__dirname);
 const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
+
+// ASIN → slug mapping for cloaked affiliate links
+const ASIN_TO_SLUG = {
+    'B01CFOG89M': 'yamaha-fg800-acoustic-guitar',
+    'B01N2V2C7P': 'fender-cd-60s-dreadnought',
+    'B07N8Z7RZZ': 'martin-d-10e-road-series',
+    'B08N5WRWNW': 'fender-player-stratocaster',
+    'B092BBGQG1': 'squier-affinity-telecaster',
+    'B08X6D9G8Z': 'daddario-xs-coated-strings',
+    'B06XFSB6P9': 'tc-electronic-polytune-3',
+    'B0002CZV82': 'boss-ds-1-distortion-pedal',
+    'B09NM9PFV9': 'prs-se-silver-sky',
+    'B07XLRZB7B': 'fender-american-ultra-telecaster',
+    'B0BK9X1T9B': 'prs-se-mark-holcomb-signature',
+    'B08KGTCX7X': 'fender-american-pro-ii-jazz-bass',
+    'B07N2B6G4M': 'squier-classic-vibe-mustang-bass',
+    'B0002EWTWG': 'hal-leonard-guitar-method-book',
+    '1780387103': 'justinguitar-beginner-course',
+    'B07L5YYHQC': 'fender-play-12-month-subscription',
+    'B004FEPB9Q': 'guitar-tricks-annual-membership',
+    'B000P5WTQS': 'hercules-gs414b-plus-guitar-stand',
+    'B0002M6CVC': 'ernie-ball-regular-slinky-strings',
+    'B084G21NYH': 'taylor-214ce-plus-acoustic-guitar',
+    'B0BYZ2CHV1': 'boss-katana-50-mkii-combo-amp',
+    'B085MTSHCY': 'nerecndens-66pcs-guitar-accessories-kit',
+    'B018FCZKR2': 'amazon-basics-a-frame-guitar-stand',
+    'B073LSS9TJ': 'wingo-professional-guitar-capo',
+    'B07ZRYKNGS': 'fender-premium-picks-sampler',
+    'B074KGZ9Z7': 'fender-fct-2-clip-on-tuner',
+    'B078MPY48Y': 'perris-leathers-jacquard-strap',
+    'B0D7G4MWZ9': 'fender-player-ii-stratocaster',
+    'B07NLY3N2X': 'gibson-les-paul-standard-60s',
+    'B01CFOCHRC': 'yamaha-fg830-acoustic-guitar',
+    'B07N29NYV8': 'squier-classic-vibe-60s-stratocaster',
+    'B081BD8PVG': 'epiphone-sg-standard-61',
+    'B000O5E668': 'yamaha-pacifica-112v',
+    'B009230588': 'jackson-js22-dinky',
+    'B099K1R8L3': 'fender-player-plus-telecaster',
+    'B07CXK87YV': 'fender-player-stratocaster',
+    'B01CPK89S2': 'yamaha-fg800-acoustic-guitar',
+    'B007S2Z4O8': 'martin-d-18-standard-series',
+};
+
+function getCloakedLink(amazonLink) {
+    const asinMatch = amazonLink.match(/\/dp\/([A-Z0-9]{10})/);
+    if (asinMatch && ASIN_TO_SLUG[asinMatch[1]]) {
+        return `/go/${ASIN_TO_SLUG[asinMatch[1]]}`;
+    }
+    return amazonLink; // fallback to raw link if no mapping
+}
 
 // Load AI Cache
 let contentCache = {};
@@ -159,7 +209,7 @@ function renderProductGrid(filteredProducts) {
         ${filteredProducts.map(p => `
             <div class="product-card">
                 <div class="product-img-container">
-                    <img src="${p.image}" alt="${p.name}" class="product-img">
+                    <img src="${p.image}" alt="${p.name}" class="product-img" data-pin-description="${p.name} — ${p.description}" data-pin-url="${BASE_URL}/go/${ASIN_TO_SLUG[p.amazonLink.match(/\/dp\/([A-Z0-9]{10})/)?.[1]] || ''}">
                 </div>
                 <div class="product-card-content">
                     <div class="trust-badge-container">
@@ -190,7 +240,7 @@ function renderProductGrid(filteredProducts) {
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
                     <div class="product-price">${p.price}</div>
-                    <a href="${p.amazonLink}" class="btn-amazon" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                    <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon pinterest-cta" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
                 </div>
             </div>
         `).join('')}
@@ -212,7 +262,7 @@ function renderComparisonFeature(products) {
                 ${index === 0 ? '🏆 CHAMPION PICK' : '🎯 TOP ALTERNATIVE'}
             </div>
             
-            <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;" loading="lazy" decoding="async">
+            <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;" loading="lazy" decoding="async" data-pin-description="${p.name} — ${p.description}">
             
             <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 800;">${p.name}</h3>
             <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary); margin-bottom: 1.5rem;">${p.price}</div>
@@ -228,7 +278,7 @@ function renderComparisonFeature(products) {
                 </ul>
             </div>
             
-            <a href="${p.amazonLink}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="width: 100%; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+            <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'} pinterest-cta" style="width: 100%; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
         </div>
         `).slice(0, 2).join('')}
     </div>
@@ -242,7 +292,7 @@ function renderComparisonFeature(products) {
                     <div style="padding: 1.5rem;">
                         <h4 style="margin-bottom: 0.5rem;">${p.name}</h4>
                         <div style="color: var(--primary); margin-bottom: 1rem;">${p.price}</div>
-                        <a href="${p.amazonLink}" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.8rem;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                        <a href="${getCloakedLink(p.amazonLink)}" class="btn pinterest-cta" style="width: 100%; text-align: center; display: block; font-size: 0.8rem;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
                     </div>
                 </div>
             `).join('')}
@@ -325,6 +375,9 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     const finalProducts = matchedProducts.length > 0 ? matchedProducts : products.filter(p => p.silo === silo);
     const aiArticle = contentCache[keyword] || generateDeepContent(keyword, silo, category);
 
+    const ogImage = finalProducts.length > 0 ? finalProducts[0].image : 'https://reviewsguitar.com/images/logo.png';
+    const pinDescription = `${keyword} — Expert reviews, buying guides, and the best deals for ${new Date().getFullYear()}. Find your perfect guitar gear at ReviewsGuitar.com`;
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -333,6 +386,25 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     <title>${metaTags.title}</title>
     <meta name="description" content="${metaTags.description}">
     <link rel="canonical" href="https://reviewsguitar.com/pages/${fileName}">
+    <!-- Open Graph / Pinterest Rich Pins -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="${metaTags.title}">
+    <meta property="og:description" content="${metaTags.description}">
+    <meta property="og:image" content="${ogImage}">
+    <meta property="og:url" content="https://reviewsguitar.com/pages/${fileName}">
+    <meta property="og:site_name" content="ReviewsGuitar.com">
+    <meta property="article:published_time" content="${new Date().toISOString()}">
+    <meta property="article:section" content="${silo}">
+    <meta property="article:tag" content="guitar, ${silo}, ${category}, review, ${new Date().getFullYear()}">
+    <!-- Pinterest specific -->
+    <meta name="pinterest-rich-pin" content="true">
+    <meta name="pin:description" content="${pinDescription}">
+    <meta name="pin:media" content="${ogImage}">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${metaTags.title}">
+    <meta name="twitter:description" content="${metaTags.description}">
+    <meta name="twitter:image" content="${ogImage}">
     <link rel="preconnect" href="https://m.media-amazon.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -370,20 +442,31 @@ ${schemaJson}
         </ul>
     </nav>
     <main>
+        <!-- Pinterest-optimized hero section -->
+        <div class="pinterest-hero" style="position: relative; overflow: hidden; padding: 5rem 2rem 4rem; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%); text-align: center;">
+            <div style="position: absolute; inset: 0; background: url('${ogImage}') center/cover no-repeat; opacity: 0.12;"></div>
+            <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
+                <span style="display: inline-block; background: var(--primary); color: #000; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.15em; padding: 0.4rem 1.2rem; border-radius: 20px; margin-bottom: 1.5rem; text-transform: uppercase;">${silo} · ${category}</span>
+                <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 1.5rem; font-family: 'Montserrat', sans-serif; text-transform: uppercase; color: #fff;">
+                    ${keyword}
+                </h1>
+                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">${metaTags.description}</p>
+                <a href="#products" class="btn-amazon pinterest-cta" style="display: inline-block; padding: 1rem 2.5rem; font-size: 1.1rem;">See Our Top Picks ↓</a>
+            </div>
+        </div>
+
         <div style="padding: 4rem 2rem; max-width: 1000px; margin: 0 auto;">
             <nav style="font-size: 0.7rem; color: #666; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">
                 <a href="../index.html" style="color: #666; text-decoration: none;">HOME</a> > ${silo} > ${category}
             </nav>
-            
-            <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 2rem; font-family: 'Montserrat', sans-serif; text-transform: uppercase;">
-                ${keyword}
-            </h1>
 
             <div class="article-content">
                 ${aiArticle}
             </div>
 
+            <div id="products">
             ${(category === 'comparisons' || silo === 'buying') ? renderComparisonFeature(finalProducts.slice(0, 4)) : renderProductGrid(finalProducts.slice(0, 3))}
+            </div>
 
             ${renderCrossSiloLinks(silo, "../")}
 
@@ -406,6 +489,8 @@ ${schemaJson}
         </div>
     </main>
     ${getFooter("../")}
+    <!-- Pinterest SDK for Save buttons -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true" data-pin-tall="true" data-pin-round="true"></script>
 </body>
 </html>`;
 }
