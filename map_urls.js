@@ -48,9 +48,11 @@ lines.forEach(line => {
   if (match) {
     // Standard Vercel Rewrite: source -> destination
     // Note: Leading slash is mandatory for both
+    // Stripping .html to support cleanUrls: true
+    const cleanMatch = match.endsWith('.html') ? match.slice(0, -5) : match;
     rewrites.push({
       source: source,
-      destination: `/${match}`
+      destination: `/${cleanMatch}`
     });
   }
 });
