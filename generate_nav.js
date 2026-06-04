@@ -2,9 +2,9 @@ const fs = require('fs');
 const structure = JSON.parse(fs.readFileSync('site-structure.json', 'utf8'));
 let navHTML = '<ul>\n';
 structure.siloConfigs.forEach(silo => {
-  navHTML += '    <li><a href="silos/' + silo.name + '/index.html">' + silo.displayName + '</a></li>\n';
+  navHTML += '    <li><a href="/collections/' + silo.name + '">' + silo.displayName + '</a></li>\n';
   silo.pages.forEach(page => {
-    navHTML += '    <li><a href="silos/' + silo.name + '/' + page.slug + '.html">' + page.title + '</a></li>\n';
+    navHTML += '    <li><a href="/collections/' + silo.name + '/' + page.slug + '">' + page.title + '</a></li>\n';
   });
 });
 navHTML += '  </ul>\n';

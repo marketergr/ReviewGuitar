@@ -303,9 +303,9 @@ function renderComparisonFeature(products) {
 
 function renderCrossSiloLinks(silo, basePath) {
     const accessoryLinks = [
-        { name: "Top-Rated Strings", url: basePath + "collections/accessories/index.html" },
-        { name: "Essential Tuners", url: basePath + "collections/accessories/index.html" },
-        { name: "Beginner Lessons", url: basePath + "collections/learning/index.html" }
+        { name: "Top-Rated Strings", url: "/collections/accessories" },
+        { name: "Essential Tuners", url: "/collections/accessories" },
+        { name: "Beginner Lessons", url: "/collections/learning" }
     ];
 
     if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
@@ -336,25 +336,25 @@ function getFooter(basePath) {
             <div class="footer-column">
                 <h3>Silos</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}collections/acoustic/index.html">Acoustic Guitars</a></li>
-                    <li><a href="${basePath}collections/electric/index.html">Electric Guitars</a></li>
-                    <li><a href="${basePath}collections/accessories/index.html">Essential Gear</a></li>
+                    <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
+                    <li><a href="/collections/electric">Electric Guitars</a></li>
+                    <li><a href="/collections/accessories">Essential Gear</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Our Brand</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}about.html">About Us</a></li>
-                    <li><a href="${basePath}about.html#process">Evaluation Process</a></li>
-                    <li><a href="${basePath}sitemap.xml">Sitemap</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/about#process">Evaluation Process</a></li>
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Legal</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}privacy.html">Privacy Policy</a></li>
-                    <li><a href="${basePath}terms.html">Terms & Conditions</a></li>
-                    <li><a href="${basePath}terms.html#affiliate">Affiliate Disclosure</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                    <li><a href="/terms#affiliate">Affiliate Disclosure</a></li>
                 </ul>
             </div>
         </div>
@@ -428,17 +428,17 @@ ${schemaJson}
 </head>
 <body>
     <header>
-        <h1>ReviewsGuitar.com</h1>
+        <div style="font-size: 2rem; font-weight: bold;">ReviewsGuitar.com</div>
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../collections/acoustic/index.html">Acoustic</a></li>
-            <li><a href="../collections/electric/index.html">Electric</a></li>
-            <li><a href="../collections/accessories/index.html">Accessories</a></li>
-            <li><a href="../collections/learning/index.html">Learning</a></li>
-            <li><a href="../collections/buying/index.html">Guides</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/acoustic">Acoustic</a></li>
+            <li><a href="/collections/electric">Electric</a></li>
+            <li><a href="/collections/accessories">Accessories</a></li>
+            <li><a href="/collections/learning">Learning</a></li>
+            <li><a href="/collections/buying">Guides</a></li>
         </ul>
     </nav>
     <main>

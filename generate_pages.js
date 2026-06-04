@@ -10,6 +10,64 @@ if (fs.existsSync('macro_content_cache.json')) {
     macroCache = JSON.parse(fs.readFileSync('macro_content_cache.json', 'utf8'));
 }
 
+const ASIN_TO_SLUG = {
+    'B01CFOG89M': 'yamaha-fg800-acoustic-guitar',
+    'B01N2V2C7P': 'fender-cd-60s-dreadnought',
+    'B07N8Z7RZZ': 'martin-d-10e-road-series',
+    'B08N5WRWNW': 'fender-player-stratocaster',
+    'B092BBGQG1': 'squier-affinity-telecaster',
+    'B08X6D9G8Z': 'daddario-xs-coated-strings',
+    'B06XFSB6P9': 'tc-electronic-polytune-3',
+    'B0002CZV82': 'boss-ds-1-distortion-pedal',
+    'B09NM9PFV9': 'prs-se-silver-sky',
+    'B07XLRZB7B': 'fender-american-ultra-telecaster',
+    'B0BK9X1T9B': 'prs-se-mark-holcomb-signature',
+    'B08KGTCX7X': 'fender-american-pro-ii-jazz-bass',
+    'B07N2B6G4M': 'squier-classic-vibe-mustang-bass',
+    'B0002EWTWG': 'hal-leonard-guitar-method-book',
+    '1780387103': 'justinguitar-beginner-course',
+    'B07L5YYHQC': 'fender-play-12-month-subscription',
+    'B004FEPB9Q': 'guitar-tricks-annual-membership',
+    'B000P5WTQS': 'hercules-gs414b-plus-guitar-stand',
+    'B0002M6CVC': 'ernie-ball-regular-slinky-strings',
+    'B084G21NYH': 'taylor-214ce-plus-acoustic-guitar',
+    'B0BYZ2CHV1': 'boss-katana-50-mkii-combo-amp',
+    'B085MTSHCY': 'nerecndens-66pcs-guitar-accessories-kit',
+    'B018FCZKR2': 'amazon-basics-a-frame-guitar-stand',
+    'B073LSS9TJ': 'wingo-professional-guitar-capo',
+    'B07ZRYKNGS': 'fender-premium-picks-sampler',
+    'B074KGZ9Z7': 'fender-fct-2-clip-on-tuner',
+    'B078MPY48Y': 'perris-leathers-jacquard-strap',
+    'B0D7G4MWZ9': 'fender-player-ii-stratocaster',
+    'B07NLY3N2X': 'gibson-les-paul-standard-60s',
+    'B01CFOCHRC': 'yamaha-fg830-acoustic-guitar',
+    'B07N29NYV8': 'squier-classic-vibe-60s-stratocaster',
+    'B081BD8PVG': 'epiphone-sg-standard-61',
+    'B000O5E668': 'yamaha-pacifica-112v',
+    'B009230588': 'jackson-js22-dinky',
+    'B099K1R8L3': 'fender-player-plus-telecaster',
+    'B07CXK87YV': 'fender-player-stratocaster',
+    'B01CPK89S2': 'yamaha-fg800-acoustic-guitar',
+    'B007S2Z4O8': 'martin-d-18-standard-series',
+};
+
+function getCloakedLink(amazonLink) {
+    if (!amazonLink) return '#';
+    const asinMatch = amazonLink.match(/\/dp\/([A-Z0-9]{10})/);
+    if (asinMatch && ASIN_TO_SLUG[asinMatch[1]]) {
+        return `/go/${ASIN_TO_SLUG[asinMatch[1]]}`;
+    }
+    return amazonLink;
+}
+
+function getSeoTitle(title) {
+    const full = `${title} | Expert Analysis & Reviews 2026 | ReviewsGuitar.com`;
+    if (full.length <= 60) return full;
+    const shorter = `${title} | ReviewsGuitar.com`;
+    if (shorter.length <= 60) return shorter;
+    return title.substring(0, 56) + '...';
+}
+
 function generateDeepContent(keyword, silo) {
     const titleCase = str => str.replace(/\b\w/g, c => c.toUpperCase());
     const formattedKeyword = titleCase(keyword.replace(/_/g, ' '));
@@ -93,17 +151,17 @@ function generateDeepContent(keyword, silo) {
 function getHeader(basePath, title, breadcrumbs) {
     return `
     <header>
-        <h1>ReviewsGuitar.com</h1>
+        <div style="font-size: 2rem; font-weight: bold;">ReviewsGuitar.com</div>
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
         <ul>
-            <li><a href="${basePath}index.html">Home</a></li>
-            <li><a href="${basePath}collections/acoustic/index.html">Acoustic</a></li>
-            <li><a href="${basePath}collections/electric/index.html">Electric</a></li>
-            <li><a href="${basePath}collections/accessories/index.html">Accessories</a></li>
-            <li><a href="${basePath}collections/learning/index.html">Learning</a></li>
-            <li><a href="${basePath}collections/buying/index.html">Guides</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/acoustic">Acoustic</a></li>
+            <li><a href="/collections/electric">Electric</a></li>
+            <li><a href="/collections/accessories">Accessories</a></li>
+            <li><a href="/collections/learning">Learning</a></li>
+            <li><a href="/collections/buying">Guides</a></li>
         </ul>
     </nav>
     <main>
@@ -111,7 +169,7 @@ function getHeader(basePath, title, breadcrumbs) {
             <nav style="font-size: 0.8rem; color: #666; margin-bottom: 2rem;">
                 <a href="${basePath}index.html" style="color: #666; text-decoration: none;">HOME</a> ${breadcrumbs}
             </nav>
-            <h2 style="font-size: 3rem; margin-bottom: 3rem;">${title}</h2>
+            <h1 style="font-size: 3rem; margin-bottom: 3rem;">${title}</h1>
     `;
 }
 
@@ -194,7 +252,7 @@ function renderProductGrid(filteredProducts) {
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
                     <div class="product-price">${p.price}</div>
-                    <a href="${p.amazonLink}" class="btn-amazon" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                    <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
                     <span style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; display: block;">*Paid affiliate link</span>
                 </div>
             </div>
@@ -205,9 +263,9 @@ function renderProductGrid(filteredProducts) {
 
 function renderCrossSiloLinks(silo, basePath) {
     const accessoryLinks = [
-        { name: "Top-Rated Strings", url: basePath + "collections/accessories/index.html" },
-        { name: "Essential Tuners", url: basePath + "collections/accessories/index.html" },
-        { name: "Beginner Lessons", url: basePath + "collections/learning/index.html" }
+        { name: "Top-Rated Strings", url: "/collections/accessories" },
+        { name: "Essential Tuners", url: "/collections/accessories" },
+        { name: "Beginner Lessons", url: "/collections/learning" }
     ];
 
     if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
@@ -240,26 +298,26 @@ function getFooter(basePath) {
             <div class="footer-column">
                 <h3>Collections</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}collections/acoustic/index.html">Acoustic Guitars</a></li>
-                    <li><a href="${basePath}collections/electric/index.html">Electric Guitars</a></li>
-                    <li><a href="${basePath}collections/accessories/index.html">Essential Gear</a></li>
-                    <li><a href="${basePath}collections/learning/index.html">Learning Silo</a></li>
+                    <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
+                    <li><a href="/collections/electric">Electric Guitars</a></li>
+                    <li><a href="/collections/accessories">Essential Gear</a></li>
+                    <li><a href="/collections/learning">Learning Silo</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Our Brand</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}about.html">About Us</a></li>
-                    <li><a href="${basePath}about.html#process">Evaluation Process</a></li>
-                    <li><a href="${basePath}sitemap.xml">Sitemap</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/about#process">Evaluation Process</a></li>
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Legal</h3>
                 <ul class="footer-links">
-                    <li><a href="${basePath}privacy.html">Privacy Policy</a></li>
-                    <li><a href="${basePath}terms.html">Terms & Conditions</a></li>
-                    <li><a href="${basePath}contact.html">Contact Us</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -301,7 +359,7 @@ function renderComparisonFeature(products) {
                 </ul>
             </div>
             
-            <a href="${p.amazonLink}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="width: 100%; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+            <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="width: 100%; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
         </div>
         `).slice(0, 2).join('')}
     </div>
@@ -315,7 +373,7 @@ function renderComparisonFeature(products) {
                     <div style="padding: 1.5rem;">
                         <h4 style="margin-bottom: 0.5rem;">${p.name}</h4>
                         <div style="color: var(--primary); margin-bottom: 1rem;">${p.price}</div>
-                        <a href="${p.amazonLink}" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.8rem;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                        <a href="${getCloakedLink(p.amazonLink)}" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.8rem;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
                     </div>
                 </div>
             `).join('')}
@@ -343,7 +401,7 @@ structure.siloConfigs.forEach(silo => {
     <meta property="og:description" content="Premium analysis of the best ${silo.name} gear in 2026.">
     <meta property="og:image" content="../../images/silo-${silo.name}-aesthetic.jpg">
     <meta name="pinterest:description" content="Explore top-rated ${silo.name} reviews and aesthetic guitar guides for 2026.">
-    <title>${silo.displayName} Expert Reviews & Buyer Guides 2026 | ReviewsGuitar.com</title>
+    <title>${getSeoTitle(silo.displayName)}</title>
     <link rel="stylesheet" href="../../css/style.min.css">
     <script type="application/ld+json">
     {
@@ -424,7 +482,7 @@ structure.siloConfigs.forEach(silo => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="In-depth ${page.title} analysis and buyer recommendations. Explore elite ${silo.name} gear through our technically calibrated reviews.">
+    <meta name="description" content="Expert ${page.title} analysis and buyer recommendations. Find elite ${silo.name} gear with our reviews.">
     <meta name="keywords" content="${kwArray.join(', ')}">
     <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html">
     <link rel="preconnect" href="https://m.media-amazon.com">
@@ -434,7 +492,7 @@ structure.siloConfigs.forEach(silo => {
     <meta property="og:description" content="Professional BoFU guide for ${page.title}. Technical specs and purchase analysis.">
     <meta property="og:image" content="../../images/cluster-${page.slug}-pinterest.jpg">
     <meta name="pinterest:description" content="Check out our aesthetic review and buy guide for ${page.title}. #guitar #aesthetic #musician">
-    <title>${page.title} | Expert Analysis & Reviews 2026 | ReviewsGuitar.com</title>
+    <title>${getSeoTitle(page.title)}</title>
     <link rel="stylesheet" href="../../css/style.min.css">
     ${generateProductSchema(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2), `https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html`)}
     <meta name="google-adsense-account" content="ca-pub-9853769972652980">
