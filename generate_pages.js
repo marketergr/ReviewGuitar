@@ -169,7 +169,7 @@ function getHeader(basePath, title, breadcrumbs) {
     <main>
         <div style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
             <nav style="font-size: 0.8rem; color: #666; margin-bottom: 2rem;">
-                <a href="${basePath}index.html" style="color: #666; text-decoration: none;">HOME</a> ${breadcrumbs}
+                <a href="/" style="color: #666; text-decoration: none;">HOME</a> ${breadcrumbs}
             </nav>
             <h1 style="font-size: 3rem; margin-bottom: 3rem;">${title}</h1>
     `;
@@ -215,6 +215,8 @@ function renderProductGrid(filteredProducts, pageUrl) {
     <div class="product-grid">
         ${filteredProducts.map(p => {
             const fallbackImg = "https://images.unsplash.com/photo-1550985616-10810253b84d?auto=format&fit=crop&w=800&q=80"; // Premium Placeholder
+            const imgToUse = p.image || fallbackImg;
+            const absoluteImage = imgToUse.startsWith('http') ? imgToUse : `https://reviewsguitar.com${imgToUse.startsWith('/') ? '' : '/'}${imgToUse}`;
             return `
             <div class="product-card">
                 <div class="product-img-container" style="background: #111;">
@@ -256,7 +258,7 @@ function renderProductGrid(filteredProducts, pageUrl) {
                     <div class="product-price">${p.price}</div>
                     <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
                         <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" style="flex: 1; text-align: center; margin-top: 0;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
-                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(p.image || fallbackImg)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.8rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.8rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
                             <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                             Save
                         </a>
@@ -345,7 +347,9 @@ function renderComparisonFeature(products, pageUrl) {
     return `
     <span class="section-title">Head-to-Head Technical Breakdown</span>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0; margin-bottom: 4rem; border: 1px solid var(--border); border-radius: 12px; overflow: hidden;">
-        ${products.map((p, index) => `
+        ${products.map((p, index) => {
+            const absoluteImage = p.image.startsWith('http') ? p.image : `https://reviewsguitar.com${p.image.startsWith('/') ? '' : '/'}${p.image}`;
+            return `
         <div style="background: var(--glass); padding: 2.5rem; position: relative; ${index > 0 ? 'border-left: 1px solid var(--border);' : ''}">
             ${index > 0 ? '<div style="position: absolute; top: -20px; left: -20px; width: 40px; height: 40px; background: var(--bg); border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary); z-index: 10;">VS</div>' : ''}
             
@@ -371,19 +375,22 @@ function renderComparisonFeature(products, pageUrl) {
             
             <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
                 <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="flex: 1; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
-                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 1rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 1rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
                     <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                     Save
                 </a>
             </div>
         </div>
-        `).slice(0, 2).join('')}
+        `;
+        }).slice(0, 2).join('')}
     </div>
     
     ${products.length > 2 ? `
         <h4 style="margin: 3rem 0 1.5rem; font-size: 1.5rem; color: #fff;">Other Worthy Contenders</h4>
         <div class="product-grid">
-            ${products.slice(2).map(p => `
+            ${products.slice(2).map(p => {
+                const absoluteImage = p.image.startsWith('http') ? p.image : `https://reviewsguitar.com${p.image.startsWith('/') ? '' : '/'}${p.image}`;
+                return `
                 <div class="product-card" style="transform: scale(0.95);">
                     <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 150px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
@@ -391,13 +398,14 @@ function renderComparisonFeature(products, pageUrl) {
                         <div style="color: var(--primary); margin-bottom: 1rem;">${p.price}</div>
                         <div class="cta-button-group" style="display: flex; gap: 8px; margin-top: 1rem;">
                             <a href="${getCloakedLink(p.amazonLink)}" class="btn" style="flex: 1; text-align: center; font-size: 0.8rem; padding: 0.6rem 0.4rem; display: block;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
-                            <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                            <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
                                 <svg viewBox="0 0 24 24" fill="currentColor" style="width: 12px; height: 12px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                             </a>
                         </div>
                     </div>
                 </div>
-            `).join('')}
+            `;
+            }).join('')}
         </div>
     ` : ''}
     `;
@@ -414,7 +422,7 @@ structure.siloConfigs.forEach(silo => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert ${silo.displayName} reviews and buyer guides for 2026. Discover the high-fidelity sound of premium ${silo.name} gear and accessories.">
     <meta name="keywords" content="${silo.name} guitar, ${silo.name} review, boutique ${silo.name} 2026, professional guitar guides">
-    <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/index.html">
+    <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/">
     ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}
     <link rel="preconnect" href="https://m.media-amazon.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -439,7 +447,7 @@ structure.siloConfigs.forEach(silo => {
       ]
     }
     </script>
-    ${generateProductSchema(siloProducts.slice(0, 3), `https://reviewsguitar.com/collections/${silo.name}/index.html`)}
+    ${generateProductSchema(siloProducts.slice(0, 3), `https://reviewsguitar.com/collections/${silo.name}/`)}
     <meta name="google-adsense-account" content="ca-pub-9853769972652980">
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9853769972652980"
@@ -473,7 +481,7 @@ structure.siloConfigs.forEach(silo => {
         </div>
     </div>
 
-    ${renderProductGrid(siloProducts.slice(0, 3), `https://reviewsguitar.com/collections/${silo.name}/index.html`)}
+    ${renderProductGrid(siloProducts.slice(0, 3), `https://reviewsguitar.com/collections/${silo.name}/`)}
 
     ${renderCrossSiloLinks(silo.name, "../../")}
 
@@ -505,13 +513,19 @@ structure.siloConfigs.forEach(silo => {
         kwArray.some(k => k.toLowerCase().includes(p.category))
     ));
     
+    // Determine the Pinterest Image
+    let pinterestImage = `../../images/pinterest_${silo.name}_guitars.png`;
+    if (!fs.existsSync(`images/pinterest_${silo.name}_guitars.png`)) {
+        pinterestImage = `../../images/silo-${silo.name}.png`;
+    }
+    
     // Find matching cluster content
     const clusterKey = Object.keys(macroCache.clusters).find(k => page.slug.includes(k) || page.title.toLowerCase().includes(k)) || "";
     const clusterExpertContent = macroCache.clusters[clusterKey] || generateDeepContent(page.title, silo.name);
 
     const activeProducts = matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2);
     const mainProductPrice = activeProducts.length > 0 ? parseFloat(activeProducts[0].price.replace(/[^0-9.]/g, '')) : 0.00;
-    const pageUrl = `https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html`;
+    const pageUrl = `https://reviewsguitar.com/collections/${silo.name}/${page.slug}`;
 
     var clusterHTML = `<!DOCTYPE html>
 <html lang="en">
@@ -527,7 +541,7 @@ structure.siloConfigs.forEach(silo => {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta property="og:title" content="${page.title} | Expert Analysis & Reviews 2026">
     <meta property="og:description" content="Professional BoFU guide for ${page.title}. Technical specs and purchase analysis.">
-    <meta property="og:image" content="../../images/cluster-${page.slug}-pinterest.jpg">
+    <meta property="og:image" content="${pinterestImage}">
     <meta property="og:type" content="product">
     <meta property="og:price:amount" content="${mainProductPrice > 0 ? mainProductPrice.toFixed(2) : '0.00'}">
     <meta property="og:price:currency" content="USD">

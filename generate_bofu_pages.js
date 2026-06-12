@@ -248,7 +248,7 @@ function updateVercelJson(bofuData) {
         const slug = d.url.replace(/\//g, '_').replace(/^_/, ''); // e.g. best_beginner-acoustic-guitar
         return {
             source: d.url,
-            destination: `/pages/bofu_${slug}.html`
+            destination: `/pages/bofu_${slug}`
         };
     });
 
