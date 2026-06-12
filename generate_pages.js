@@ -3,6 +3,12 @@ const structure = JSON.parse(fs.readFileSync('site-structure.json', 'utf8'));
 const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
 let pageCount = 0;
 
+// Load central configuration
+let config = { amazonTrackingId: "reviewsguitar-20", pinterestTagId: "", pinterestDomainVerify: "" };
+if (fs.existsSync('config.json')) {
+    config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+}
+
 // Load Macro Content Cache
 // Load Macro Content Cache
 let macroCache = { clusters: {}, silos: {} };
@@ -11,27 +17,27 @@ if (fs.existsSync('macro_content_cache.json')) {
 }
 
 const ASIN_TO_SLUG = {
-    'B01CFOG89M': 'yamaha-fg800-acoustic-guitar',
-    'B01N2V2C7P': 'fender-cd-60s-dreadnought',
-    'B07N8Z7RZZ': 'martin-d-10e-road-series',
+    'B0BYFC65L7': 'yamaha-fg800-acoustic-guitar',
+    'B071FV8G1Z': 'fender-cd-60s-dreadnought',
+    'B0GFXZ1PNS': 'martin-d-10e-road-series',
     'B08N5WRWNW': 'fender-player-stratocaster',
-    'B092BBGQG1': 'squier-affinity-telecaster',
-    'B08X6D9G8Z': 'daddario-xs-coated-strings',
-    'B06XFSB6P9': 'tc-electronic-polytune-3',
+    'B091BFC6NS': 'squier-affinity-telecaster',
+    'B08VJKZ8PK': 'daddario-xs-coated-strings',
+    'B06Y4G7NQD': 'tc-electronic-polytune-3',
     'B0002CZV82': 'boss-ds-1-distortion-pedal',
-    'B09NM9PFV9': 'prs-se-silver-sky',
-    'B07XLRZB7B': 'fender-american-ultra-telecaster',
-    'B0BK9X1T9B': 'prs-se-mark-holcomb-signature',
-    'B08KGTCX7X': 'fender-american-pro-ii-jazz-bass',
-    'B07N2B6G4M': 'squier-classic-vibe-mustang-bass',
+    'B0FKC3BDHN': 'prs-se-silver-sky',
+    'B0DK1WMVJH': 'fender-american-ultra-telecaster',
+    'B0GFFM786H': 'prs-se-mark-holcomb-signature',
+    'B08L335N1Q': 'fender-american-pro-ii-jazz-bass',
+    'B07T7H8WKY': 'squier-classic-vibe-mustang-bass',
     'B0002EWTWG': 'hal-leonard-guitar-method-book',
-    '1780387103': 'justinguitar-beginner-course',
+    '1495059960': 'justinguitar-beginner-course',
     'B07L5YYHQC': 'fender-play-12-month-subscription',
     'B004FEPB9Q': 'guitar-tricks-annual-membership',
     'B000P5WTQS': 'hercules-gs414b-plus-guitar-stand',
     'B0002M6CVC': 'ernie-ball-regular-slinky-strings',
-    'B084G21NYH': 'taylor-214ce-plus-acoustic-guitar',
-    'B0BYZ2CHV1': 'boss-katana-50-mkii-combo-amp',
+    'B0CTJ734SN': 'taylor-214ce-plus-acoustic-guitar',
+    'B0DYK5G1ZL': 'boss-katana-50-mkii-combo-amp',
     'B085MTSHCY': 'nerecndens-66pcs-guitar-accessories-kit',
     'B018FCZKR2': 'amazon-basics-a-frame-guitar-stand',
     'B073LSS9TJ': 'wingo-professional-guitar-capo',
@@ -40,24 +46,20 @@ const ASIN_TO_SLUG = {
     'B078MPY48Y': 'perris-leathers-jacquard-strap',
     'B0D7G4MWZ9': 'fender-player-ii-stratocaster',
     'B07NLY3N2X': 'gibson-les-paul-standard-60s',
-    'B01CFOCHRC': 'yamaha-fg830-acoustic-guitar',
-    'B07N29NYV8': 'squier-classic-vibe-60s-stratocaster',
-    'B081BD8PVG': 'epiphone-sg-standard-61',
-    'B000O5E668': 'yamaha-pacifica-112v',
-    'B009230588': 'jackson-js22-dinky',
-    'B099K1R8L3': 'fender-player-plus-telecaster',
+    'B01CFOAQP2': 'yamaha-fg830-acoustic-guitar',
+    'B07T7H7KXX': 'squier-classic-vibe-60s-stratocaster',
+    'B0GQC1PWR4': 'epiphone-sg-standard-61',
+    'B0010X7LF8': 'yamaha-pacifica-112v',
+    'B0C2CD2JJW': 'jackson-js22-dinky',
+    'B0D2LQNDS7': 'fender-player-plus-telecaster',
     'B07CXK87YV': 'fender-player-stratocaster',
-    'B01CPK89S2': 'yamaha-fg800-acoustic-guitar',
-    'B007S2Z4O8': 'martin-d-18-standard-series',
+    'B0CZ2D7P9X': 'yamaha-fg800-acoustic-guitar',
+    'B0F9B64NS1': 'martin-d-18-standard-series',
 };
 
 function getCloakedLink(amazonLink) {
     if (!amazonLink) return '#';
-    const asinMatch = amazonLink.match(/\/dp\/([A-Z0-9]{10})/);
-    if (asinMatch && ASIN_TO_SLUG[asinMatch[1]]) {
-        return `/go/${ASIN_TO_SLUG[asinMatch[1]]}`;
-    }
-    return amazonLink;
+    return amazonLink; // Raw direct link to bypass AdBlockers
 }
 
 function getSeoTitle(title) {
@@ -205,7 +207,7 @@ function generateProductSchema(products, url) {
     return `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
 }
 
-function renderProductGrid(filteredProducts) {
+function renderProductGrid(filteredProducts, pageUrl) {
     if (filteredProducts.length === 0) return '';
     
     return `
@@ -252,7 +254,13 @@ function renderProductGrid(filteredProducts) {
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
                     <div class="product-price">${p.price}</div>
-                    <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                    <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
+                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" style="flex: 1; text-align: center; margin-top: 0;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(p.image || fallbackImg)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.8rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                            Save
+                        </a>
+                    </div>
                     <span style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; display: block;">*Paid affiliate link</span>
                 </div>
             </div>
@@ -325,11 +333,13 @@ function getFooter(basePath) {
             <p>&copy; 2026 ReviewsGuitar.com. All Rights Reserved. Built for the modern musician.</p>
         </div>
     </footer>
+    <!-- Pinterest SDK for Save buttons -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true" data-pin-tall="true" data-pin-round="true"></script>
     </body>
     </html>`;
 }
 
-function renderComparisonFeature(products) {
+function renderComparisonFeature(products, pageUrl) {
     if (products.length === 0) return '';
     
     return `
@@ -359,7 +369,13 @@ function renderComparisonFeature(products) {
                 </ul>
             </div>
             
-            <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="width: 100%; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+            <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
+                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="flex: 1; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 1rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                    Save
+                </a>
+            </div>
         </div>
         `).slice(0, 2).join('')}
     </div>
@@ -373,7 +389,12 @@ function renderComparisonFeature(products) {
                     <div style="padding: 1.5rem;">
                         <h4 style="margin-bottom: 0.5rem;">${p.name}</h4>
                         <div style="color: var(--primary); margin-bottom: 1rem;">${p.price}</div>
-                        <a href="${getCloakedLink(p.amazonLink)}" class="btn" style="width: 100%; text-align: center; display: block; font-size: 0.8rem;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                        <div class="cta-button-group" style="display: flex; gap: 8px; margin-top: 1rem;">
+                            <a href="${getCloakedLink(p.amazonLink)}" class="btn" style="flex: 1; text-align: center; font-size: 0.8rem; padding: 0.6rem 0.4rem; display: block;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                            <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 12px; height: 12px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             `).join('')}
@@ -394,12 +415,14 @@ structure.siloConfigs.forEach(silo => {
     <meta name="description" content="Expert ${silo.displayName} reviews and buyer guides for 2026. Discover the high-fidelity sound of premium ${silo.name} gear and accessories.">
     <meta name="keywords" content="${silo.name} guitar, ${silo.name} review, boutique ${silo.name} 2026, professional guitar guides">
     <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/index.html">
+    ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}
     <link rel="preconnect" href="https://m.media-amazon.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta property="og:title" content="${silo.displayName} Expert Reviews & Buyer Guides 2026">
     <meta property="og:description" content="Premium analysis of the best ${silo.name} gear in 2026.">
     <meta property="og:image" content="../../images/silo-${silo.name}-aesthetic.jpg">
+    <meta property="og:type" content="website">
     <meta name="pinterest:description" content="Explore top-rated ${silo.name} reviews and aesthetic guitar guides for 2026.">
     <title>${getSeoTitle(silo.displayName)}</title>
     <link rel="stylesheet" href="../../css/style.min.css">
@@ -421,6 +444,15 @@ structure.siloConfigs.forEach(silo => {
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9853769972652980"
      crossorigin="anonymous"></script>
+    ${config.pinterestTagId ? `<!-- Pinterest Tag -->
+    <script>
+    !function(e){if(!window.pwt){window.pwt={};var t=e.createElement("script");t.async=!0,t.src="https://s.pinterest.com/js/pwtitg.js";var n=e.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)}var r=window.pwt;r.queue=[],r.track=function(e,t,n){r.queue.push([e,t,n])}}(document);
+    pwt.track("pageview");
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=${config.pinterestTagId}&noscript=1" />
+    </noscript>
+    <!-- End Pinterest Tag -->` : ''}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
     <script>
@@ -432,7 +464,7 @@ structure.siloConfigs.forEach(silo => {
     </script>
 </head>
 <body>
-    ${getHeader("../../", silo.displayName.toUpperCase(), ` > <a href="index.html" style="color: #666; text-decoration: none;">${silo.displayName.toUpperCase()}</a>`)}
+    ${getHeader("../../", silo.displayName.toUpperCase(), ` > <a href="/collections/${silo.name}" style="color: #666; text-decoration: none;">${silo.displayName.toUpperCase()}</a>`)}
     
     <div class="featured-silos" style="padding: 0; margin-bottom: 4rem;">
         <div class="silo-card card-${silo.name}" style="min-height: 300px;">
@@ -441,7 +473,7 @@ structure.siloConfigs.forEach(silo => {
         </div>
     </div>
 
-    ${renderProductGrid(siloProducts.slice(0, 3))}
+    ${renderProductGrid(siloProducts.slice(0, 3), `https://reviewsguitar.com/collections/${silo.name}/index.html`)}
 
     ${renderCrossSiloLinks(silo.name, "../../")}
 
@@ -453,7 +485,7 @@ structure.siloConfigs.forEach(silo => {
             <div class="silo-card" style="min-height: 200px; background: var(--surface); justify-content: flex-start; padding: 2rem;">
                 <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">${p.title}</h3>
                 <p style="font-size: 0.85rem; margin-bottom: 1.5rem;">Expert analysis on ${kwArray.slice(0, 2).map(k => k.trim()).join(', ')}.</p>
-                <a href="${p.slug}.html" style="color: var(--primary); font-size: 0.8rem;">READ GUIDE →</a>
+                <a href="/collections/${silo.name}/${p.slug}" style="color: var(--primary); font-size: 0.8rem;">READ GUIDE →</a>
             </div>
         `}).join('')}
     </div>
@@ -477,6 +509,10 @@ structure.siloConfigs.forEach(silo => {
     const clusterKey = Object.keys(macroCache.clusters).find(k => page.slug.includes(k) || page.title.toLowerCase().includes(k)) || "";
     const clusterExpertContent = macroCache.clusters[clusterKey] || generateDeepContent(page.title, silo.name);
 
+    const activeProducts = matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2);
+    const mainProductPrice = activeProducts.length > 0 ? parseFloat(activeProducts[0].price.replace(/[^0-9.]/g, '')) : 0.00;
+    const pageUrl = `https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html`;
+
     var clusterHTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -484,21 +520,35 @@ structure.siloConfigs.forEach(silo => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert ${page.title} analysis and buyer recommendations. Find elite ${silo.name} gear with our reviews.">
     <meta name="keywords" content="${kwArray.join(', ')}">
-    <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html">
+    <link rel="canonical" href="${pageUrl}">
+    ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}
     <link rel="preconnect" href="https://m.media-amazon.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta property="og:title" content="${page.title} | Expert Analysis & Reviews 2026">
     <meta property="og:description" content="Professional BoFU guide for ${page.title}. Technical specs and purchase analysis.">
     <meta property="og:image" content="../../images/cluster-${page.slug}-pinterest.jpg">
+    <meta property="og:type" content="product">
+    <meta property="og:price:amount" content="${mainProductPrice > 0 ? mainProductPrice.toFixed(2) : '0.00'}">
+    <meta property="og:price:currency" content="USD">
+    <meta property="og:availability" content="instock">
     <meta name="pinterest:description" content="Check out our aesthetic review and buy guide for ${page.title}. #guitar #aesthetic #musician">
     <title>${getSeoTitle(page.title)}</title>
     <link rel="stylesheet" href="../../css/style.min.css">
-    ${generateProductSchema(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2), `https://reviewsguitar.com/collections/${silo.name}/${page.slug}.html`)}
+    ${generateProductSchema(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2), pageUrl)}
     <meta name="google-adsense-account" content="ca-pub-9853769972652980">
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9853769972652980"
      crossorigin="anonymous"></script>
+    ${config.pinterestTagId ? `<!-- Pinterest Tag -->
+    <script>
+    !function(e){if(!window.pwt){window.pwt={};var t=e.createElement("script");t.async=!0,t.src="https://s.pinterest.com/js/pwtitg.js";var n=e.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)}var r=window.pwt;r.queue=[],r.track=function(e,t,n){r.queue.push([e,t,n])}}(document);
+    pwt.track("pageview");
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=${config.pinterestTagId}&noscript=1" />
+    </noscript>
+    <!-- End Pinterest Tag -->` : ''}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
     <script>
@@ -510,7 +560,7 @@ structure.siloConfigs.forEach(silo => {
     </script>
 </head>
 <body>
-    ${getHeader("../../", page.title.toUpperCase(), ` > <a href="index.html" style="color: #666; text-decoration: none;">${silo.displayName.toUpperCase()}</a> > ${page.title.toUpperCase()}`)}
+    ${getHeader("../../", page.title.toUpperCase(), ` > <a href="/collections/${silo.name}" style="color: #666; text-decoration: none;">${silo.displayName.toUpperCase()}</a> > ${page.title.toUpperCase()}`)}
     
     ${clusterExpertContent}
 
@@ -520,7 +570,7 @@ structure.siloConfigs.forEach(silo => {
         <p style="color: var(--text-dim); line-height: 1.8; max-width: 700px;">The visual language of modern guitar revolves around the marriage of high-performance hardware and boutique finishing. Our analysis shows that instruments featured here prioritize the "Art-as-Instrument" philosophy currently trending across designer-musician communities.</p>
     </div>
 
-    ${(page.slug.includes('comparison') || silo.name === 'buying') ? renderComparisonFeature(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 4)) : renderProductGrid(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2))}
+    ${(page.slug.includes('comparison') || silo.name === 'buying') ? renderComparisonFeature(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 4), pageUrl) : renderProductGrid(matchedProducts.length > 0 ? matchedProducts : siloProducts.slice(0, 2), pageUrl)}
 
 
     ${renderCrossSiloLinks(silo.name, "../../")}
@@ -543,7 +593,7 @@ structure.siloConfigs.forEach(silo => {
 
     <div style="border-top: 1px solid var(--border); padding-top: 3rem; margin-top: 4rem;">
         <h3 style="font-size: 1rem; margin-bottom: 1.5rem; color: var(--primary);">RELATED EXPLORATION</h3>
-        <a href="index.html" class="btn" style="padding: 0.8rem 1.5rem; font-size: 0.75rem;">BACK TO ${silo.displayName.toUpperCase()}</a>
+        <a href="/collections/${silo.name}" class="btn" style="padding: 0.8rem 1.5rem; font-size: 0.75rem;">BACK TO ${silo.displayName.toUpperCase()}</a>
     </div>
 
     ${getFooter("../../")}

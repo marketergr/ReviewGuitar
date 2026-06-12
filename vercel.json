@@ -1,5 +1,81 @@
 {
   "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/silos/:path*",
@@ -8,22 +84,22 @@
     },
     {
       "source": "/go/yamaha-fg800-acoustic-guitar",
-      "destination": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0BYFC65L7/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/yamaha-fg800",
-      "destination": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0BYFC65L7/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/fender-cd-60s-dreadnought",
-      "destination": "https://www.amazon.com/dp/B01N2V2C7P/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B071FV8G1Z/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/martin-d-10e-road-series",
-      "destination": "https://www.amazon.com/dp/B07N8Z7RZZ/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0GFXZ1PNS/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -33,17 +109,17 @@
     },
     {
       "source": "/go/squier-affinity-telecaster",
-      "destination": "https://www.amazon.com/dp/B092BBGQG1/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B091BFC6NS/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/daddario-xs-coated-strings",
-      "destination": "https://www.amazon.com/dp/B08X6D9G8Z/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B08VJKZ8PK/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/tc-electronic-polytune-3",
-      "destination": "https://www.amazon.com/dp/B06XFSB6P9/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B06Y4G7NQD/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -53,32 +129,32 @@
     },
     {
       "source": "/go/prs-john-mayer-se-silver-sky",
-      "destination": "https://www.amazon.com/dp/B09NM9PFV9/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0FKC3BDHN/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/prs-se-silver-sky",
-      "destination": "https://www.amazon.com/dp/B09NM9PFV9/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0FKC3BDHN/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/fender-american-ultra-telecaster",
-      "destination": "https://www.amazon.com/dp/B07XLRZB7B/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0DK1WMVJH/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/prs-se-mark-holcomb-signature",
-      "destination": "https://www.amazon.com/dp/B0BK9X1T9B/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0GFFM786H/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/fender-american-pro-ii-jazz-bass",
-      "destination": "https://www.amazon.com/dp/B08KGTCX7X/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B08L335N1Q/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/squier-classic-vibe-mustang-bass",
-      "destination": "https://www.amazon.com/dp/B07N2B6G4M/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B07T7H8WKY/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -88,7 +164,7 @@
     },
     {
       "source": "/go/justinguitar-beginner-course",
-      "destination": "https://www.amazon.com/dp/1780387103/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/1495059960/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -113,12 +189,12 @@
     },
     {
       "source": "/go/taylor-214ce-plus-acoustic-guitar",
-      "destination": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0CTJ734SN/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/boss-katana-50-mkii-combo-amp",
-      "destination": "https://www.amazon.com/dp/B0BYZ2CHV1/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0DYK5G1ZL/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -168,37 +244,37 @@
     },
     {
       "source": "/go/yamaha-fg830-acoustic-guitar",
-      "destination": "https://www.amazon.com/dp/B01CFOCHRC/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B01CFOAQP2/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/squier-classic-vibe-60s-stratocaster",
-      "destination": "https://www.amazon.com/dp/B07N29NYV8/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B07T7H7KXX/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/epiphone-les-paul-standard-60s",
-      "destination": "https://www.amazon.com/dp/B081BD8PVG/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0GQC1PWR4/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/yamaha-pacifica-112v",
-      "destination": "https://www.amazon.com/dp/B000O5E668/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0010X7LF8/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/epiphone-sg-standard-61",
-      "destination": "https://www.amazon.com/dp/B081BD8PVG/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0GQC1PWR4/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/jackson-js22-dinky",
-      "destination": "https://www.amazon.com/dp/B009230588/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0C2CD2JJW/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/fender-player-plus-telecaster",
-      "destination": "https://www.amazon.com/dp/B099K1R8L3/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0D2LQNDS7/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -208,17 +284,17 @@
     },
     {
       "source": "/go/taylor-314ce-studio",
-      "destination": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0CTJ734SN/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/taylor-214ce-k-deluxe",
-      "destination": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0CTJ734SN/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
       "source": "/go/martin-d-18-standard-series",
-      "destination": "https://www.amazon.com/dp/B007S2Z4O8/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0F9B64NS1/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -228,7 +304,7 @@
     },
     {
       "source": "/go/acoustic-vs-electric-starter-guitars",
-      "destination": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20",
+      "destination": "https://www.amazon.com/dp/B0BYFC65L7/?tag=reviewsguitar-20",
       "permanent": false
     },
     {
@@ -240,243 +316,243 @@
   "rewrites": [
     {
       "source": "/best/beginner-acoustic-guitar",
-      "destination": "/collections/acoustic/best-for-beginners"
+      "destination": "/pages/bofu_best_beginner-acoustic-guitar.html"
     },
     {
       "source": "/vs/yamaha-fg800-vs-fender-cd-60s",
-      "destination": "/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-fender-cd-60s-dreadnought"
+      "destination": "/pages/bofu_vs_yamaha-fg800-vs-fender-cd-60s.html"
     },
     {
       "source": "/best/electric-guitar-metal-under-800",
-      "destination": "/collections/electric/metal-guitars"
+      "destination": "/pages/bofu_best_electric-guitar-metal-under-800.html"
     },
     {
       "source": "/reviews/fender-player-ii-stratocaster",
-      "destination": "/collections/electric/fender-american-ultra-telecaster-vs-fender-player-ii-stratocaster"
+      "destination": "/pages/bofu_reviews_fender-player-ii-stratocaster.html"
     },
     {
       "source": "/vs/martin-d28-vs-taylor-814ce",
-      "destination": "/collections/acoustic/index"
+      "destination": "/pages/bofu_vs_martin-d28-vs-taylor-814ce.html"
     },
     {
       "source": "/best/beginner-electric-guitar-kit",
-      "destination": "/collections/electric/starters"
+      "destination": "/pages/bofu_best_beginner-electric-guitar-kit.html"
     },
     {
       "source": "/vs/yamaha-pacifica-vs-squier-strat",
-      "destination": "/collections/electric/squier-classic-vibe-60s-stratocaster-vs-yamaha-pacifica-112v"
+      "destination": "/pages/bofu_vs_yamaha-pacifica-vs-squier-strat.html"
     },
     {
       "source": "/best/acoustic-guitar-under-500",
-      "destination": "/collections/acoustic/best-under-500"
+      "destination": "/pages/bofu_best_acoustic-guitar-under-500.html"
     },
     {
       "source": "/reviews/prs-se-custom-24",
-      "destination": "/collections/electric/silver-sky-review"
+      "destination": "/pages/bofu_reviews_prs-se-custom-24.html"
     },
     {
       "source": "/best/guitar-strings-blues",
-      "destination": "/collections/accessories/strings"
+      "destination": "/pages/bofu_best_guitar-strings-blues.html"
     },
     {
       "source": "/vs/gibson-les-paul-50s-vs-60s",
-      "destination": "/collections/electric/index"
+      "destination": "/pages/bofu_vs_gibson-les-paul-50s-vs-60s.html"
     },
     {
       "source": "/best/travel-acoustic-guitar",
-      "destination": "/collections/acoustic/hybrid-guide"
+      "destination": "/pages/bofu_best_travel-acoustic-guitar.html"
     },
     {
       "source": "/alternatives/epiphone-les-paul-standard",
-      "destination": "/collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61"
+      "destination": "/pages/bofu_alternatives_epiphone-les-paul-standard.html"
     },
     {
       "source": "/best/home-practice-guitar-amp",
-      "destination": "/collections/electric/amp-reviews"
+      "destination": "/pages/bofu_best_home-practice-guitar-amp.html"
     },
     {
       "source": "/reviews/boss-katana-50-mkii",
-      "destination": "/collections/electric/amp-reviews"
+      "destination": "/pages/bofu_reviews_boss-katana-50-mkii.html"
     },
     {
       "source": "/best/fingerstyle-acoustic-guitar",
-      "destination": "/collections/acoustic/index"
+      "destination": "/pages/bofu_best_fingerstyle-acoustic-guitar.html"
     },
     {
       "source": "/vs/telecaster-vs-stratocaster-beginner",
-      "destination": "/collections/electric/squier-classic-vibe-60s-stratocaster-vs-yamaha-pacifica-112v"
+      "destination": "/pages/bofu_vs_telecaster-vs-stratocaster-beginner.html"
     },
     {
       "source": "/reviews/best-guitar-tuners",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_reviews_best-guitar-tuners.html"
     },
     {
       "source": "/vs/gretsch-streamliner-vs-epiphone-dot",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_gretsch-streamliner-vs-epiphone-dot.html"
     },
     {
       "source": "/best/recording-acoustic-guitar",
-      "destination": "/pages/acoustic_advanced_best_acoustic_guitar_for_recording"
+      "destination": "/pages/bofu_best_recording-acoustic-guitar.html"
     },
     {
       "source": "/vs/yamaha-fg830-vs-fg800",
-      "destination": "/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar"
+      "destination": "/pages/bofu_vs_yamaha-fg830-vs-fg800.html"
     },
     {
       "source": "/best/acoustic-guitar-small-hands",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_acoustic-guitar-small-hands.html"
     },
     {
       "source": "/reviews/marshall-dsl40cr",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_reviews_marshall-dsl40cr.html"
     },
     {
       "source": "/best/blues-overdrive-pedals",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_blues-overdrive-pedals.html"
     },
     {
       "source": "/vs/squier-classic-vibe-50s-vs-60s",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_squier-classic-vibe-50s-vs-60s.html"
     },
     {
       "source": "/best/electric-guitar-under-1000",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_electric-guitar-under-1000.html"
     },
     {
       "source": "/vs/martin-d10e-vs-taylor-214ce",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_martin-d10e-vs-taylor-214ce.html"
     },
     {
       "source": "/best/acoustic-guitar-flight-cases",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_acoustic-guitar-flight-cases.html"
     },
     {
       "source": "/best/jazzmaster-style-guitars",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_jazzmaster-style-guitars.html"
     },
     {
       "source": "/reviews/yamaha-dynamic-classical",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_reviews_yamaha-dynamic-classical.html"
     },
     {
       "source": "/best/best-guitar-cables",
-      "destination": "/pages/accessories_cables_best_guitar_cables_2026"
+      "destination": "/pages/bofu_best_best-guitar-cables.html"
     },
     {
       "source": "/vs/fender-player-vs-american-professional",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_fender-player-vs-american-professional.html"
     },
     {
       "source": "/best/acoustic-guitar-under-1000",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_acoustic-guitar-under-1000.html"
     },
     {
       "source": "/best/best-shredding-picks",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-shredding-picks.html"
     },
     {
       "source": "/reviews/fishman-fluence-pickups",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_reviews_fishman-fluence-pickups.html"
     },
     {
       "source": "/best/best-7-string-guitar",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-7-string-guitar.html"
     },
     {
       "source": "/vs/martin-d18-vs-d28",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_martin-d18-vs-d28.html"
     },
     {
       "source": "/best/hybrid-guitar-reviews",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_hybrid-guitar-reviews.html"
     },
     {
       "source": "/reviews/tc-polytune-3",
-      "destination": "/collections/accessories/daddario-xs-coated-strings-vs-tc-electronic-polytune-3"
+      "destination": "/pages/bofu_reviews_tc-polytune-3.html"
     },
     {
       "source": "/best/best-budget-bass",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-budget-bass.html"
     },
     {
       "source": "/vs/squier-sonic-vs-affinity",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_squier-sonic-vs-affinity.html"
     },
     {
       "source": "/best/best-locking-tuners",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-locking-tuners.html"
     },
     {
       "source": "/reviews/daddario-xs-strings",
-      "destination": "/collections/accessories/daddario-xs-coated-strings-vs-amazon-basics-a-frame-guitar-stand"
+      "destination": "/pages/bofu_reviews_daddario-xs-strings.html"
     },
     {
       "source": "/best/best-loop-pedal-budget",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-loop-pedal-budget.html"
     },
     {
       "source": "/vs/taylor-gs-mini-mahogany-vs-spruce",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_taylor-gs-mini-mahogany-vs-spruce.html"
     },
     {
       "source": "/best/boutique-electric-guitars",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_boutique-electric-guitars.html"
     },
     {
       "source": "/vs/yamaha-pacifica-012-vs-112v",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_yamaha-pacifica-012-vs-112v.html"
     },
     {
       "source": "/best/telecaster-metal-pickups",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_telecaster-metal-pickups.html"
     },
     {
       "source": "/best/best-wireless-guitar-system",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-wireless-guitar-system.html"
     },
     {
       "source": "/reviews/ernie-ball-volume-pedal",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_reviews_ernie-ball-volume-pedal.html"
     },
     {
       "source": "/best/best-lightweight-guitar",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-lightweight-guitar.html"
     },
     {
       "source": "/vs/martin-lx1-vs-baby-taylor",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_martin-lx1-vs-baby-taylor.html"
     },
     {
       "source": "/best/best-12-string-capo",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-12-string-capo.html"
     },
     {
       "source": "/reviews/fender-mustang-lt25",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_reviews_fender-mustang-lt25.html"
     },
     {
       "source": "/best/best-p90-pickups",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-p90-pickups.html"
     },
     {
       "source": "/vs/ibanez-rg-vs-s-series",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_ibanez-rg-vs-s-series.html"
     },
     {
       "source": "/best/best-guitar-headphones",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-guitar-headphones.html"
     },
     {
       "source": "/reviews/vox-ac15",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_reviews_vox-ac15.html"
     },
     {
       "source": "/best/best-wah-pedals",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_best_best-wah-pedals.html"
     },
     {
       "source": "/vs/seagull-s6-vs-yamaha-fg800",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+      "destination": "/pages/bofu_vs_seagull-s6-vs-yamaha-fg800.html"
     }
   ]
 }

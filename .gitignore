@@ -1,0 +1,15 @@
+# Credentials & secrets
+GSC/credentials.json
+GSC/oauth_client.json
+GSC/tokens.json
+*.key
+*.pem
+*.pem
+
+# Node
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+.vercel

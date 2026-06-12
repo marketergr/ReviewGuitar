@@ -1,0 +1,301 @@
+# ReviewsGuitar.com - Complete Gear Database
+> **Last Updated:** 2026-06-11T09:51:00.799Z
+
+Below is the comprehensive list of all guitars, amps, pedals, and learning resources reviewed on ReviewsGuitar.com.
+
+## Category: BEGINNER
+
+### Yamaha FG800 Acoustic Guitar
+- **Brand:** undefined
+- **Price:** $229.99
+- **Key Feature:** The gold standard for beginner acoustic guitars.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-1](https://reviewsguitar.com/reviews/acoustic-1)
+
+### Fender CD-60S Dreadnought
+- **Brand:** undefined
+- **Price:** $199.99
+- **Key Feature:** Excellent playability and rich tone.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-2](https://reviewsguitar.com/reviews/acoustic-2)
+
+### Squier Affinity Telecaster
+- **Brand:** undefined
+- **Price:** $289.99
+- **Key Feature:** Classic Telecaster style and tone at an accessible price.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-2](https://reviewsguitar.com/reviews/electric-2)
+
+### Squier Classic Vibe Mustang Bass
+- **Brand:** undefined
+- **Price:** $459.99
+- **Key Feature:** Short-scale comfort with a punchy 60s vibe.
+- **Review Link:** [https://reviewsguitar.com/reviews/bass-2](https://reviewsguitar.com/reviews/bass-2)
+
+### Yamaha FG830 Acoustic Guitar
+- **Brand:** undefined
+- **Price:** $399.99
+- **Key Feature:** The top-tier of the FG series.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-5](https://reviewsguitar.com/reviews/acoustic-5)
+
+### Squier Classic Vibe '60s Stratocaster
+- **Brand:** undefined
+- **Price:** $449.99
+- **Key Feature:** A tribute to the 1960s Strat.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-8](https://reviewsguitar.com/reviews/electric-8)
+
+### Yamaha Pacifica 112V
+- **Brand:** undefined
+- **Price:** $329.99
+- **Key Feature:** The reigning champion of beginner versatility.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-10](https://reviewsguitar.com/reviews/electric-10)
+
+### Epiphone SG Standard '61
+- **Brand:** undefined
+- **Price:** $549.00
+- **Key Feature:** Classic 60s SG styling with ProBucker humbuckers and CTS electronics.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-13](https://reviewsguitar.com/reviews/electric-13)
+
+### Jackson JS22 Dinky
+- **Brand:** undefined
+- **Price:** $199.99
+- **Key Feature:** High-output humbuckers and a fast maple neck with a compound-radius fingerboard.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-14](https://reviewsguitar.com/reviews/electric-14)
+
+## Category: INTERMEDIATE
+
+### Martin D-10E Road Series
+- **Brand:** undefined
+- **Price:** $899.00
+- **Key Feature:** Solid wood construction with a rich, full-bodied sound.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-3](https://reviewsguitar.com/reviews/acoustic-3)
+
+### Fender Player Stratocaster
+- **Brand:** undefined
+- **Price:** $849.99
+- **Key Feature:** The quintessential electric guitar.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-1](https://reviewsguitar.com/reviews/electric-1)
+
+### Fender Player II Stratocaster
+- **Brand:** undefined
+- **Price:** $799.99
+- **Key Feature:** The evolution of the standard.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-6](https://reviewsguitar.com/reviews/electric-6)
+
+### Epiphone Les Paul Standard 60s
+- **Brand:** undefined
+- **Price:** $649.00
+- **Key Feature:** Inspired by Gibson.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-9](https://reviewsguitar.com/reviews/electric-9)
+
+### Taylor 214ce-K Deluxe
+- **Brand:** undefined
+- **Price:** $1,599.00
+- **Key Feature:** Stunning Koa aesthetics with Taylor's signature playability.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-8](https://reviewsguitar.com/reviews/acoustic-8)
+
+## Category: STRINGS
+
+### D'Addario XS Coated Strings
+- **Brand:** undefined
+- **Price:** $14.99
+- **Key Feature:** Premium coated strings that last 3x longer while maintaining a natural feel.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-1](https://reviewsguitar.com/reviews/accessories-1)
+
+### Ernie Ball Regular Slinky Strings
+- **Brand:** undefined
+- **Price:** $16.99
+- **Key Feature:** The classic rock string.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-5](https://reviewsguitar.com/reviews/accessories-5)
+
+## Category: TUNERS
+
+### TC Electronic PolyTune 3
+- **Brand:** undefined
+- **Price:** $99.00
+- **Key Feature:** The world's most advanced polyphonic tuner.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-2](https://reviewsguitar.com/reviews/accessories-2)
+
+### Fender FCT-2 Clip-On Tuner
+- **Brand:** undefined
+- **Price:** $14.99
+- **Key Feature:** Professional accuracy in a compact, durable design.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-10](https://reviewsguitar.com/reviews/accessories-10)
+
+## Category: PEDALS
+
+### Boss DS-1 Distortion Pedal
+- **Brand:** undefined
+- **Price:** $62.00
+- **Key Feature:** The most iconic distortion pedal ever made.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-3](https://reviewsguitar.com/reviews/accessories-3)
+
+## Category: PROFESSIONAL
+
+### PRS John Mayer SE Silver Sky
+- **Brand:** undefined
+- **Price:** $849.00
+- **Key Feature:** The SE Silver Sky is a workhorse version of the original John Mayer signature model, delivering vintage-inspired tones with modern PRS reliability.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-3](https://reviewsguitar.com/reviews/electric-3)
+
+### Fender American Ultra Telecaster
+- **Brand:** undefined
+- **Price:** $2,199.99
+- **Key Feature:** The ultimate in precision and performance.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-4](https://reviewsguitar.com/reviews/electric-4)
+
+### PRS SE Mark Holcomb Signature
+- **Brand:** undefined
+- **Price:** $1,099.00
+- **Key Feature:** Designed for the modern metal player.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-5](https://reviewsguitar.com/reviews/electric-5)
+
+### Fender American Pro II Jazz Bass
+- **Brand:** undefined
+- **Price:** $1,799.99
+- **Key Feature:** The 'Dark Night' of bass guitars.
+- **Review Link:** [https://reviewsguitar.com/reviews/bass-1](https://reviewsguitar.com/reviews/bass-1)
+
+### Taylor 214ce Plus Acoustic Guitar
+- **Brand:** undefined
+- **Price:** $1,399.00
+- **Key Feature:** A working professional's acoustic.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-4](https://reviewsguitar.com/reviews/acoustic-4)
+
+### Gibson Les Paul Standard '60s
+- **Brand:** undefined
+- **Price:** $2,799.00
+- **Key Feature:** The return of the king.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-7](https://reviewsguitar.com/reviews/electric-7)
+
+### Taylor 314ce Studio
+- **Brand:** undefined
+- **Price:** $1,999.00
+- **Key Feature:** The ultimate workhorse acoustic-electric.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-6](https://reviewsguitar.com/reviews/acoustic-6)
+
+### PRS SE Silver Sky
+- **Brand:** undefined
+- **Price:** $849.00
+- **Key Feature:** John Mayer's signature tone made accessible.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-11](https://reviewsguitar.com/reviews/electric-11)
+
+### Gibson SG Standard
+- **Brand:** undefined
+- **Price:** $1,799.00
+- **Key Feature:** The rock monster.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-12](https://reviewsguitar.com/reviews/electric-12)
+
+### Martin D-18 Standard Series
+- **Brand:** undefined
+- **Price:** $2,799.00
+- **Key Feature:** The definitive mahogany dreadnought.
+- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-7](https://reviewsguitar.com/reviews/acoustic-7)
+
+### Fender Player Plus Telecaster
+- **Brand:** undefined
+- **Price:** $1,099.99
+- **Key Feature:** Combining classic Tele vibe with modern features.
+- **Review Link:** [https://reviewsguitar.com/reviews/electric-15](https://reviewsguitar.com/reviews/electric-15)
+
+## Category: BOOKS
+
+### Hal Leonard Guitar Method Book
+- **Brand:** undefined
+- **Price:** $24.99
+- **Key Feature:** The standard in guitar education for decades.
+- **Review Link:** [https://reviewsguitar.com/reviews/learning-1](https://reviewsguitar.com/reviews/learning-1)
+
+### JustinGuitar Beginner Course
+- **Brand:** undefined
+- **Price:** $19.99
+- **Key Feature:** Companion books to the world's most popular online guitar course.
+- **Review Link:** [https://reviewsguitar.com/reviews/learning-2](https://reviewsguitar.com/reviews/learning-2)
+
+## Category: APPS
+
+### Fender Play 12-Month Subscription
+- **Brand:** undefined
+- **Price:** $89.99
+- **Key Feature:** The ultimate learning app from the biggest name in guitars.
+- **Review Link:** [https://reviewsguitar.com/reviews/learning-3](https://reviewsguitar.com/reviews/learning-3)
+
+## Category: COURSES
+
+### Guitar Tricks Annual Membership
+- **Brand:** undefined
+- **Price:** $179.99
+- **Key Feature:** One of the oldest and most comprehensive online courses available.
+- **Review Link:** [https://reviewsguitar.com/reviews/learning-4](https://reviewsguitar.com/reviews/learning-4)
+
+## Category: COMPARISONS
+
+### Fender Player Stratocaster vs Telecaster
+- **Brand:** undefined
+- **Price:** $849.99
+- **Key Feature:** The ultimate comparison: The versatile contoured Stratocaster against the punchy, rock-solid Telecaster.
+- **Review Link:** [https://reviewsguitar.com/reviews/buying-1](https://reviewsguitar.com/reviews/buying-1)
+
+### Acoustic vs Electric Starter Guitars
+- **Brand:** undefined
+- **Price:** $250 - $350
+- **Key Feature:** Comparing the Yamaha FG800 Acoustic against the Squier Affinity Stratocaster.
+- **Review Link:** [https://reviewsguitar.com/reviews/buying-2](https://reviewsguitar.com/reviews/buying-2)
+
+### Boss Katana-50 MkII Combo Amp
+- **Brand:** undefined
+- **Price:** $299.99
+- **Key Feature:** The ultimate modeling amp showdown for 2026.
+- **Review Link:** [https://reviewsguitar.com/reviews/buying-3](https://reviewsguitar.com/reviews/buying-3)
+
+## Category: STANDS
+
+### Hercules GS414B PLUS Guitar Stand
+- **Brand:** undefined
+- **Price:** $52.99
+- **Key Feature:** The industry standard for stage-ready guitar stands.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-4](https://reviewsguitar.com/reviews/accessories-4)
+
+### Amazon Basics A-Frame Guitar Stand
+- **Brand:** undefined
+- **Price:** $15.49
+- **Key Feature:** Solid, lightweight, and incredibly reliable.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-7](https://reviewsguitar.com/reviews/accessories-7)
+
+## Category: KITS
+
+### NERECNDENS 66PCS Guitar Accessories Kit
+- **Brand:** undefined
+- **Price:** $21.99
+- **Key Feature:** A comprehensive all-in-one survival kit for every guitarist.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-6](https://reviewsguitar.com/reviews/accessories-6)
+
+## Category: CAPOS
+
+### WINGO Professional Guitar Capo
+- **Brand:** undefined
+- **Price:** $10.99
+- **Key Feature:** Engineered for precision and aesthetics.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-8](https://reviewsguitar.com/reviews/accessories-8)
+
+## Category: PICKS
+
+### Fender Premium Picks Sampler
+- **Brand:** undefined
+- **Price:** $13.99
+- **Key Feature:** The definitive pick collection from the industry leader.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-9](https://reviewsguitar.com/reviews/accessories-9)
+
+## Category: STRAPS
+
+### Perri’s Leathers Jacquard Strap
+- **Brand:** undefined
+- **Price:** $12.99
+- **Key Feature:** Combining vintage aesthetics with modern comfort.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-11](https://reviewsguitar.com/reviews/accessories-11)
+
+## Category: WIRELESS
+
+### Fender Telepath Wireless System
+- **Brand:** undefined
+- **Price:** $199.99
+- **Key Feature:** Freedom from cables with zero latency.
+- **Review Link:** [https://reviewsguitar.com/reviews/accessories-12](https://reviewsguitar.com/reviews/accessories-12)
+

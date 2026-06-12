@@ -6,7 +6,7 @@ const ROOT = __dirname;
 // Match the inline nav script block (handles whitespace/indentation variations)
 const OLD_SCRIPT_RE = /<script>\s*document\.addEventListener\('DOMContentLoaded'[\s\S]*?\.mobile-menu-toggle[\s\S]*?<\/script>/;
 
-const NEW_SCRIPT = `    <script src="/js/nav.js"></script>`;
+const NEW_SCRIPT = `    <script src="/js/nav.min.js"></script>`;
 
 function getAllHtmlFiles(dir, files = []) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });

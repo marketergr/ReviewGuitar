@@ -21,8 +21,8 @@
       "Basic aesthetic appointments",
       "Action may need slight adjustment"
     ],
-    "image": "https://m.media-amazon.com/images/I/71z78Yf8uKL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0BYFC65L7/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-2",
@@ -46,8 +46,8 @@
       "Tuners are basic",
       "Lacks complex overtones of high-end models"
     ],
-    "image": "https://m.media-amazon.com/images/I/81xXyX8v89L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B01N2V2C7P/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B071FV8G1Z/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-3",
@@ -71,33 +71,8 @@
       "Heavier than standard D-28s",
       "Pricey for a 'Road Series' model"
     ],
-    "image": "https://m.media-amazon.com/images/I/71-1q-J5LpL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B07N8Z7RZZ/?tag=reviewsguitar-20"
-  },
-  {
-    "id": "electric-1",
-    "name": "Fender Player Stratocaster",
-    "silo": "electric",
-    "category": "intermediate",
-    "description": "The quintessential electric guitar. Versatile, iconic, and built for professional performance.",
-    "price": "$849.99",
-    "rating": 4.9,
-    "features": [
-      "Alder Body",
-      "Player Series Alnico 5 Pickups",
-      "Modern C Neck Profile"
-    ],
-    "pros": [
-      "Extremely versatile tonal range",
-      "Bulletproof construction",
-      "Classic Fender playability"
-    ],
-    "cons": [
-      "Single coils can be noisy",
-      "Tremolo needs careful setup"
-    ],
-    "image": "https://m.media-amazon.com/images/I/71q8i7-u2lL._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B08N5WRWNW/?tag=reviewsguitar-20"
+    "image": "/images/pinterest_acoustic_guitars.png",
+    "amazonLink": "https://www.amazon.com/dp/B0GFXZ1PNS/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-2",
@@ -121,8 +96,8 @@
       "Bridge can feel sharp on palms",
       "Pickups lack high-end sparkle"
     ],
-    "image": "https://m.media-amazon.com/images/I/81p-x-v8v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B092BBGQG1/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1550252112-9c1737be2e30?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B091BFC6NS/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-1",
@@ -146,8 +121,8 @@
       "Slightly higher price point",
       "Coating might feel 'slick' to some"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-v-8-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B08X6D9G8Z/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B08VJKZ8PK/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-2",
@@ -171,8 +146,8 @@
       "Large footprint for small boards",
       "Battery life is average"
     ],
-    "image": "https://m.media-amazon.com/images/I/71u-x-v-8-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B06XFSB6P9/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1618609378039-b572f64c5b42?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B06Y4G7NQD/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-3",
@@ -196,7 +171,7 @@
       "Can sound 'thin' into cheap amps",
       "Niche utility for jazz/blues"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-v-8-v-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B0002CZV82/?tag=reviewsguitar-20"
   },
   {
@@ -222,8 +197,8 @@
       "Polarizing 'inverted' headstock",
       "Gig bag included instead of hard case"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B09NM9PFV9/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0FKC3BDHN/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-4",
@@ -247,8 +222,8 @@
       "Premium price point",
       "Modern feel may not suit vintage purists"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-v-8-x-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B07XLRZB7B/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1521410821245-2d59b28413c5?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0DK1WMVJH/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-5",
@@ -272,8 +247,8 @@
       "Very high output not for everyone",
       "Bridge can be sharp"
     ],
-    "image": "https://m.media-amazon.com/images/I/71x-x-v-8-x-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B0BK9X1T9B/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1605020420620-20c943cc4669?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0GFFM786H/?tag=reviewsguitar-20"
   },
   {
     "id": "bass-1",
@@ -297,8 +272,8 @@
       "Heavier than some modern alternatives",
       "Requires active case maintenance"
     ],
-    "image": "https://m.media-amazon.com/images/I/71x-x-x-y-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B08KGTCX7X/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1485278537138-4e8911a13c02?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B08L335N1Q/?tag=reviewsguitar-20"
   },
   {
     "id": "bass-2",
@@ -322,8 +297,8 @@
       "Limited high-end access",
       "Tuners are basic"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-x0-x-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B07N2B6G4M/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1582234375176-477d46e417a5?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B07T7H8WKY/?tag=reviewsguitar-20"
   },
   {
     "id": "learning-1",
@@ -347,7 +322,7 @@
       "Some songs feel a bit dated",
       "Requires discipline to follow"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-v-8-v-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B0002EWTWG/?tag=reviewsguitar-20"
   },
   {
@@ -372,82 +347,8 @@
       "Moves fast if you don't practice",
       "Less focus on classical notation"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/1780387103/?tag=reviewsguitar-20"
-  },
-  {
-    "id": "learning-3",
-    "name": "Fender Play 12-Month Subscription",
-    "silo": "learning",
-    "category": "apps",
-    "description": "The ultimate learning app from the biggest name in guitars. Bite-sized lessons shot in high-definition 4k.",
-    "price": "$89.99",
-    "rating": 4.7,
-    "features": [
-      "Thousands of Songs",
-      "Path-based Learning",
-      "Multi-angle HD Video"
-    ],
-    "pros": [
-      "Highest production value",
-      "Huge library of licensed songs",
-      "Great progression paths"
-    ],
-    "cons": [
-      "Requires ongoing subscription",
-      "Can be buggy on older tablets"
-    ],
-    "image": "https://m.media-amazon.com/images/I/81v-v-x-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B07L5YYHQC/?tag=reviewsguitar-20"
-  },
-  {
-    "id": "learning-4",
-    "name": "Guitar Tricks Annual Membership",
-    "silo": "learning",
-    "category": "courses",
-    "description": "One of the oldest and most comprehensive online courses available. Features the core learning system and massive song library.",
-    "price": "$179.99",
-    "rating": 4.8,
-    "features": [
-      "Core Learning System",
-      "11,000+ Lessons",
-      "Advanced Style Paths"
-    ],
-    "pros": [
-      "Incredibly deep curriculum",
-      "Excellent for specific genres (Blues, Country)",
-      "Downloadable tabs"
-    ],
-    "cons": [
-      "Interface feels a bit dated",
-      "High initial cost"
-    ],
-    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B004FEPB9Q/?tag=reviewsguitar-20"
-  },
-  {
-    "id": "buying-1",
-    "name": "Fender Player Stratocaster vs Telecaster",
-    "silo": "buying",
-    "category": "comparisons",
-    "description": "The ultimate comparison: The versatile contoured Stratocaster against the punchy, rock-solid Telecaster. Both represent the pinnacle of intermediate workhorses.",
-    "price": "$849.99",
-    "rating": 4.9,
-    "features": [
-      "Strat: 3 Single-Coils, Tremolo",
-      "Tele: 2 Single-Coils, Fixed Bridge",
-      "Both: Alder Body, Maple Neck"
-    ],
-    "pros": [
-      "Strat: Incredible comfort and tremolo options",
-      "Tele: Bulletproof tuning stability and 'twang'"
-    ],
-    "cons": [
-      "Strat: Tremolo can cause tuning issues for beginners",
-      "Tele: Less ergonomic body shape"
-    ],
-    "image": "https://m.media-amazon.com/images/I/71x-x-x-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B08N5WRWNW/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/1495059960/?tag=reviewsguitar-20"
   },
   {
     "id": "buying-2",
@@ -470,8 +371,8 @@
       "Acoustic: Harder to press strings initially",
       "Electric: Amp limits portability"
     ],
-    "image": "https://m.media-amazon.com/images/I/71x-x0-x-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B01CFOG89M/?tag=reviewsguitar-20"
+    "image": "/images/pinterest_beginner_guitars.png",
+    "amazonLink": "https://www.amazon.com/dp/B0BYFC65L7/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-4",
@@ -495,7 +396,7 @@
       "More expensive than basic A-frames",
       "A bit heavy for gig bags"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-v-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1549222945-0d65b7501be8?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B000P5WTQS/?tag=reviewsguitar-20"
   },
   {
@@ -520,7 +421,7 @@
       "Corrode faster than coated strings",
       "Requires changing every 2-3 weeks for pros"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-v-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B0002M6CVC/?tag=reviewsguitar-20"
   },
   {
@@ -545,8 +446,8 @@
       "Layered back/sides at this price point",
       "Very bright tone isn't for everyone"
     ],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1556449895-a33c9dba9867?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0CTJ734SN/?tag=reviewsguitar-20"
   },
   {
     "id": "buying-3",
@@ -569,8 +470,8 @@
       "Katana: Tone studio software is complex",
       "Mustang: High gain sounds slightly more digital"
     ],
-    "image": "https://m.media-amazon.com/images/I/81X-v-8-v-L._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B0BYZ2CHV1/?tag=reviewsguitar-20"
+    "image": "https://images.unsplash.com/photo-1558098329-a11cff621064?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0DYK5G1ZL/?tag=reviewsguitar-20"
   },
   {
     "id": "accessories-6",
@@ -595,7 +496,7 @@
       "Strings are generic grade",
       "Tuner requires CR2032 battery"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B085MTSHCY/?tag=reviewsguitar-20"
   },
   {
@@ -621,7 +522,7 @@
       "Not recommended for nitro finishes",
       "Fixed height"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1549222945-0d65b7501be8?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B018FCZKR2/?tag=reviewsguitar-20"
   },
   {
@@ -647,7 +548,7 @@
       "Slightly heavier than plastic capos",
       "Finish can wear over years of use"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B073LSS9TJ/?tag=reviewsguitar-20"
   },
   {
@@ -673,7 +574,7 @@
       "Picks tend to 'disappear'!",
       "Celluloid wears faster than Tortex"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-v-8-x-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B07ZRYKNGS/?tag=reviewsguitar-20"
   },
   {
@@ -699,7 +600,7 @@
       "Screen is smaller than PolyTune",
       "Clip is tight on thick headstocks"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1618609378039-b572f64c5b42?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B074KGZ9Z7/?tag=reviewsguitar-20"
   },
   {
@@ -725,7 +626,7 @@
       "Edges can be a bit stiff initially",
       "Pattern is one-sided"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1525201548942-d8c8b09d55f0?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B078MPY48Y/?tag=reviewsguitar-20"
   },
   {
@@ -751,7 +652,7 @@
       "Potential 2.4GHz WiFi interference",
       "Higher price than budget wireless units"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "https://images.unsplash.com/photo-1598653222000-6b7b7a552625?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B0D7G4MWZ9/?tag=reviewsguitar-20"
   },
   {
@@ -762,25 +663,23 @@
     "description": "The evolution of the standard. Featuring rolled fingerboard edges, upgraded Alnico V pickups, and the classic 2-point tremolo.",
     "price": "$799.99",
     "rating": 4.9,
-    "features": ["Alder Body", "Player Series Alnico 5 Pickups", "Modern C Neck Profile", "Rolled Edges"],
-    "pros": ["Exceptional comfort", "Pure vintage Strat quack", "Reliable hardware"],
-    "cons": ["Price increase over original Player", "No locking tuners"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
+    "features": [
+      "Alder Body",
+      "Player Series Alnico 5 Pickups",
+      "Modern C Neck Profile",
+      "Rolled Edges"
+    ],
+    "pros": [
+      "Exceptional comfort",
+      "Pure vintage Strat quack",
+      "Reliable hardware"
+    ],
+    "cons": [
+      "Price increase over original Player",
+      "No locking tuners"
+    ],
+    "image": "https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=800&q=80",
     "amazonLink": "https://www.amazon.com/dp/B0D7G4MWZ9/?tag=reviewsguitar-20"
-  },
-  {
-    "id": "electric-7",
-    "name": "Gibson Les Paul Standard '60s",
-    "silo": "electric",
-    "category": "professional",
-    "description": "The return of the king. Non-weight relieved mahogany body with an AA figured maple top and SlimTaper neck profile.",
-    "price": "$2,799.00",
-    "rating": 4.9,
-    "features": ["BurstBucker 61 Pickups", "SlimTaper Neck", "Grover Rotomatic Tuners", "Nitrocellulose Finish"],
-    "pros": ["Incredible sustain", "Boutique-level finish", "Classic rock history"],
-    "cons": ["Heavy weight", "Investment-level pricing"],
-    "image": "https://m.media-amazon.com/images/I/81X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B07NLY3N2X/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-5",
@@ -790,11 +689,23 @@
     "description": "The top-tier of the FG series. Solid spruce top with rosewood back and sides for enhanced resonance and depth.",
     "price": "$399.99",
     "rating": 4.9,
-    "features": ["Solid Spruce Top", "Rosewood Back & Sides", "Scalloped Bracing", "Die-Cast Tuners"],
-    "pros": ["Rich, complex overtones", "Great projection", "Unbeatable value"],
-    "cons": ["Body is quite large for children", "Basic aesthetic"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B01CFOCHRC/?tag=reviewsguitar-20"
+    "features": [
+      "Solid Spruce Top",
+      "Rosewood Back & Sides",
+      "Scalloped Bracing",
+      "Die-Cast Tuners"
+    ],
+    "pros": [
+      "Rich, complex overtones",
+      "Great projection",
+      "Unbeatable value"
+    ],
+    "cons": [
+      "Body is quite large for children",
+      "Basic aesthetic"
+    ],
+    "image": "https://images.unsplash.com/photo-1485278537138-4e8911a13c02?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B01CFOAQP2/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-6",
@@ -804,11 +715,23 @@
     "description": "The ultimate workhorse acoustic-electric. V-Class bracing and the Expression System 2 electronics make this a stage favorite.",
     "price": "$1,999.00",
     "rating": 4.9,
-    "features": ["Grand Auditorium Body", "Solid Sapele Back/Sides", "V-Class Bracing", "ES2 Electronics"],
-    "pros": ["Perfect balance across frequencies", "Extremely easy playability", "Professional electronics"],
-    "cons": ["Sapele back isn't fully Rosewood", "Slightly clinical tone"],
-    "image": "https://m.media-amazon.com/images/I/81X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20"
+    "features": [
+      "Grand Auditorium Body",
+      "Solid Sapele Back/Sides",
+      "V-Class Bracing",
+      "ES2 Electronics"
+    ],
+    "pros": [
+      "Perfect balance across frequencies",
+      "Extremely easy playability",
+      "Professional electronics"
+    ],
+    "cons": [
+      "Sapele back isn't fully Rosewood",
+      "Slightly clinical tone"
+    ],
+    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0CTJ734SN/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-8",
@@ -818,11 +741,23 @@
     "description": "A tribute to the 1960s Strat. Fender-designed alnico pickups and vintage-tinted gloss neck finish.",
     "price": "$449.99",
     "rating": 4.8,
-    "features": ["Poplar Body", "Alnico Single-Coil Pickups", "C-Shaped Neck", "Vintage-Style Tremolo"],
-    "pros": ["Pro-level sound at half the price", "Stunning vintage looks", "Great modding platform"],
-    "cons": ["Thick gloss neck can feel sticky", "Narrow tall frets not for everyone"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B07N29NYV8/?tag=reviewsguitar-20"
+    "features": [
+      "Poplar Body",
+      "Alnico Single-Coil Pickups",
+      "C-Shaped Neck",
+      "Vintage-Style Tremolo"
+    ],
+    "pros": [
+      "Pro-level sound at half the price",
+      "Stunning vintage looks",
+      "Great modding platform"
+    ],
+    "cons": [
+      "Thick gloss neck can feel sticky",
+      "Narrow tall frets not for everyone"
+    ],
+    "image": "https://images.unsplash.com/photo-1525201548942-d8c8b09d55f0?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B07T7H7KXX/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-9",
@@ -832,11 +767,23 @@
     "description": "Inspired by Gibson. Features ProBucker humbuckers and a SlimTaper 60s neck for that classic vibe.",
     "price": "$649.00",
     "rating": 4.8,
-    "features": ["Mahogany Body", "AA Flame Maple Veneer", "ProBucker-2 & 3", "Grover Rotomatics"],
-    "pros": ["Amazing value", "Classic LP sustain", "Reliable electronics"],
-    "cons": ["Heavier than modern Gibsons", "Poly finish is quite thick"],
-    "image": "https://m.media-amazon.com/images/I/81X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B081BD8PVG/?tag=reviewsguitar-20"
+    "features": [
+      "Mahogany Body",
+      "AA Flame Maple Veneer",
+      "ProBucker-2 & 3",
+      "Grover Rotomatics"
+    ],
+    "pros": [
+      "Amazing value",
+      "Classic LP sustain",
+      "Reliable electronics"
+    ],
+    "cons": [
+      "Heavier than modern Gibsons",
+      "Poly finish is quite thick"
+    ],
+    "image": "https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0GQC1PWR4/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-10",
@@ -846,11 +793,23 @@
     "description": "The reigning champion of beginner versatility. Humbucker/Single/Single configuration for any genre.",
     "price": "$329.99",
     "rating": 4.9,
-    "features": ["Solid Alder Body", "Maple Neck", "Rosewood Fingerboard", "Push-Pull Coil Tap"],
-    "pros": ["Versatile pickup layout", "Solid build quality", "Easy to play"],
-    "cons": ["Basic aesthetic", "Bridge pickup can be bright"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B000O5E668/?tag=reviewsguitar-20"
+    "features": [
+      "Solid Alder Body",
+      "Maple Neck",
+      "Rosewood Fingerboard",
+      "Push-Pull Coil Tap"
+    ],
+    "pros": [
+      "Versatile pickup layout",
+      "Solid build quality",
+      "Easy to play"
+    ],
+    "cons": [
+      "Basic aesthetic",
+      "Bridge pickup can be bright"
+    ],
+    "image": "https://images.unsplash.com/photo-1521410821245-2d59b28413c5?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0010X7LF8/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-11",
@@ -860,25 +819,23 @@
     "description": "John Mayer's signature tone made accessible. Features the 635JM 'S' pickups and a comfortable 8.5\" radius.",
     "price": "$849.00",
     "rating": 4.9,
-    "features": ["Poplar Body", "Maple Neck", "Rosewood Fingerboard", "Steel Tremolo"],
-    "pros": ["Vintage single-coil clarity", "Incredible neck feel", "Premium gig bag included"],
-    "cons": ["Plastic tuners feel cheap", "Nut may need lubrication"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B09NM9PFV9/?tag=reviewsguitar-20"
-  },
-  {
-    "id": "electric-12",
-    "name": "Gibson SG Standard",
-    "silo": "electric",
-    "category": "professional",
-    "description": "The rock monster. Mahogany body and neck with 490R and 490T pickups for that classic SG snap and power.",
-    "price": "$1,799.00",
-    "rating": 4.8,
-    "features": ["Mahogany Body", "Rounded Neck Profile", "Alnico 2 Humbuckers", "Graph Tech Nut"],
-    "pros": ["Iconic devil-horn looks", "Effortless high-fret access", "Resonant mahogany tone"],
-    "cons": ["Prone to 'neck dive'", "Requires a hard case (included)"],
-    "image": "https://m.media-amazon.com/images/I/81X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B07NLY3N2X/?tag=reviewsguitar-20"
+    "features": [
+      "Poplar Body",
+      "Maple Neck",
+      "Rosewood Fingerboard",
+      "Steel Tremolo"
+    ],
+    "pros": [
+      "Vintage single-coil clarity",
+      "Incredible neck feel",
+      "Premium gig bag included"
+    ],
+    "cons": [
+      "Plastic tuners feel cheap",
+      "Nut may need lubrication"
+    ],
+    "image": "https://images.unsplash.com/photo-1582234375176-477d46e417a5?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0FKC3BDHN/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-7",
@@ -888,11 +845,23 @@
     "description": "The definitive mahogany dreadnought. Solid Sitka spruce top and mahogany back/sides for clear, warm, woody tone.",
     "price": "$2,799.00",
     "rating": 5,
-    "features": ["Solid Sitka Spruce Top", "Solid Mahogany Back/Sides", "Forward Shifted Bracing", "Dovetail Neck Joint"],
-    "pros": ["The gold standard for recording", "Punchy mids and clear highs", "Lifetime investment"],
-    "cons": ["Investment price point", "No electronics included"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B007S2Z4O8/?tag=reviewsguitar-20"
+    "features": [
+      "Solid Sitka Spruce Top",
+      "Solid Mahogany Back/Sides",
+      "Forward Shifted Bracing",
+      "Dovetail Neck Joint"
+    ],
+    "pros": [
+      "The gold standard for recording",
+      "Punchy mids and clear highs",
+      "Lifetime investment"
+    ],
+    "cons": [
+      "Investment price point",
+      "No electronics included"
+    ],
+    "image": "https://images.unsplash.com/photo-1525201548942-d8c8b09d55f0?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0F9B64NS1/?tag=reviewsguitar-20"
   },
   {
     "id": "acoustic-8",
@@ -902,11 +871,23 @@
     "description": "Stunning Koa aesthetics with Taylor's signature playability. Features a gloss finish and Expression System 2.",
     "price": "$1,599.00",
     "rating": 4.9,
-    "features": ["Solid Sitka Spruce Top", "Layered Koa Back/Sides", "ES2 Electronics", "Grand Auditorium Shape"],
-    "pros": ["Visually stunning koa", "Clear, modern tone", "Includes hard case"],
-    "cons": ["Layered back at this price", "Koa can be bright"],
-    "image": "https://m.media-amazon.com/images/I/81X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B084G21NYH/?tag=reviewsguitar-20"
+    "features": [
+      "Solid Sitka Spruce Top",
+      "Layered Koa Back/Sides",
+      "ES2 Electronics",
+      "Grand Auditorium Shape"
+    ],
+    "pros": [
+      "Visually stunning koa",
+      "Clear, modern tone",
+      "Includes hard case"
+    ],
+    "cons": [
+      "Layered back at this price",
+      "Koa can be bright"
+    ],
+    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0CTJ734SN/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-13",
@@ -916,11 +897,23 @@
     "description": "Classic 60s SG styling with ProBucker humbuckers and CTS electronics. A rock powerhouse for any level.",
     "price": "$549.00",
     "rating": 4.7,
-    "features": ["Mahogany Body", "SlimTaper 60s Neck", "ProBucker 2/3", "Graph Tech Nut"],
-    "pros": ["Vintage vibes", "Great sounding pickups", "Accessible price"],
-    "cons": ["Fret edges can be rough", "Basic hardware"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B081BD8PVG/?tag=reviewsguitar-20"
+    "features": [
+      "Mahogany Body",
+      "SlimTaper 60s Neck",
+      "ProBucker 2/3",
+      "Graph Tech Nut"
+    ],
+    "pros": [
+      "Vintage vibes",
+      "Great sounding pickups",
+      "Accessible price"
+    ],
+    "cons": [
+      "Fret edges can be rough",
+      "Basic hardware"
+    ],
+    "image": "https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0GQC1PWR4/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-14",
@@ -930,11 +923,23 @@
     "description": "High-output humbuckers and a fast maple neck with a compound-radius fingerboard. Built for speed and metal.",
     "price": "$199.99",
     "rating": 4.6,
-    "features": ["Poplar Body", "High-Output Humbuckers", "Amaranth Fingerboard", "Jumbo Frets"],
-    "pros": ["Fastest neck in its class", "Heavy distortion clarity", "Super affordable"],
-    "cons": ["Tuners feel loose", "Basic tremolo"],
-    "image": "https://m.media-amazon.com/images/I/71X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B009230588/?tag=reviewsguitar-20"
+    "features": [
+      "Poplar Body",
+      "High-Output Humbuckers",
+      "Amaranth Fingerboard",
+      "Jumbo Frets"
+    ],
+    "pros": [
+      "Fastest neck in its class",
+      "Heavy distortion clarity",
+      "Super affordable"
+    ],
+    "cons": [
+      "Tuners feel loose",
+      "Basic tremolo"
+    ],
+    "image": "https://images.unsplash.com/photo-1593696140826-c58b021acf8b?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0C2CD2JJW/?tag=reviewsguitar-20"
   },
   {
     "id": "electric-15",
@@ -944,10 +949,22 @@
     "description": "Combining classic Tele vibe with modern features. Noiseless pickups and a 12\" radius for smooth bends.",
     "price": "$1,099.99",
     "rating": 4.8,
-    "features": ["Alder Body", "Noiseless Tele Pickups", "Locking Tuners", "12\" Radius"],
-    "pros": ["Silent electronics", "Modern playability", "Stunning finishes"],
-    "cons": ["Single coil purists might miss the noise!", "Pricey for a Mexican model"],
-    "image": "https://m.media-amazon.com/images/I/81X8X8X8X8X._AC_SL1500_.jpg",
-    "amazonLink": "https://www.amazon.com/dp/B099K1R8L3/?tag=reviewsguitar-20"
+    "features": [
+      "Alder Body",
+      "Noiseless Tele Pickups",
+      "Locking Tuners",
+      "12\" Radius"
+    ],
+    "pros": [
+      "Silent electronics",
+      "Modern playability",
+      "Stunning finishes"
+    ],
+    "cons": [
+      "Single coil purists might miss the noise!",
+      "Pricey for a Mexican model"
+    ],
+    "image": "https://images.unsplash.com/photo-1550252112-9c1737be2e30?auto=format&fit=crop&w=800&q=80",
+    "amazonLink": "https://www.amazon.com/dp/B0D2LQNDS7/?tag=reviewsguitar-20"
   }
 ]

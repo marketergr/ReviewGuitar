@@ -11,29 +11,35 @@ const BASE_URL = "https://reviewsguitar.com";
 const PROJECT_ROOT = path.resolve(__dirname);
 const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
 
+// Load central configuration
+let config = { amazonTrackingId: "reviewsguitar-20", pinterestTagId: "", pinterestDomainVerify: "" };
+if (fs.existsSync('config.json')) {
+    config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+}
+
 // ASIN → slug mapping for cloaked affiliate links
 const ASIN_TO_SLUG = {
-    'B01CFOG89M': 'yamaha-fg800-acoustic-guitar',
-    'B01N2V2C7P': 'fender-cd-60s-dreadnought',
-    'B07N8Z7RZZ': 'martin-d-10e-road-series',
+    'B0BYFC65L7': 'yamaha-fg800-acoustic-guitar',
+    'B071FV8G1Z': 'fender-cd-60s-dreadnought',
+    'B0GFXZ1PNS': 'martin-d-10e-road-series',
     'B08N5WRWNW': 'fender-player-stratocaster',
-    'B092BBGQG1': 'squier-affinity-telecaster',
-    'B08X6D9G8Z': 'daddario-xs-coated-strings',
-    'B06XFSB6P9': 'tc-electronic-polytune-3',
+    'B091BFC6NS': 'squier-affinity-telecaster',
+    'B08VJKZ8PK': 'daddario-xs-coated-strings',
+    'B06Y4G7NQD': 'tc-electronic-polytune-3',
     'B0002CZV82': 'boss-ds-1-distortion-pedal',
-    'B09NM9PFV9': 'prs-se-silver-sky',
-    'B07XLRZB7B': 'fender-american-ultra-telecaster',
-    'B0BK9X1T9B': 'prs-se-mark-holcomb-signature',
-    'B08KGTCX7X': 'fender-american-pro-ii-jazz-bass',
-    'B07N2B6G4M': 'squier-classic-vibe-mustang-bass',
+    'B0FKC3BDHN': 'prs-se-silver-sky',
+    'B0DK1WMVJH': 'fender-american-ultra-telecaster',
+    'B0GFFM786H': 'prs-se-mark-holcomb-signature',
+    'B08L335N1Q': 'fender-american-pro-ii-jazz-bass',
+    'B07T7H8WKY': 'squier-classic-vibe-mustang-bass',
     'B0002EWTWG': 'hal-leonard-guitar-method-book',
-    '1780387103': 'justinguitar-beginner-course',
+    '1495059960': 'justinguitar-beginner-course',
     'B07L5YYHQC': 'fender-play-12-month-subscription',
     'B004FEPB9Q': 'guitar-tricks-annual-membership',
     'B000P5WTQS': 'hercules-gs414b-plus-guitar-stand',
     'B0002M6CVC': 'ernie-ball-regular-slinky-strings',
-    'B084G21NYH': 'taylor-214ce-plus-acoustic-guitar',
-    'B0BYZ2CHV1': 'boss-katana-50-mkii-combo-amp',
+    'B0CTJ734SN': 'taylor-214ce-plus-acoustic-guitar',
+    'B0DYK5G1ZL': 'boss-katana-50-mkii-combo-amp',
     'B085MTSHCY': 'nerecndens-66pcs-guitar-accessories-kit',
     'B018FCZKR2': 'amazon-basics-a-frame-guitar-stand',
     'B073LSS9TJ': 'wingo-professional-guitar-capo',
@@ -42,23 +48,19 @@ const ASIN_TO_SLUG = {
     'B078MPY48Y': 'perris-leathers-jacquard-strap',
     'B0D7G4MWZ9': 'fender-player-ii-stratocaster',
     'B07NLY3N2X': 'gibson-les-paul-standard-60s',
-    'B01CFOCHRC': 'yamaha-fg830-acoustic-guitar',
-    'B07N29NYV8': 'squier-classic-vibe-60s-stratocaster',
-    'B081BD8PVG': 'epiphone-sg-standard-61',
-    'B000O5E668': 'yamaha-pacifica-112v',
-    'B009230588': 'jackson-js22-dinky',
-    'B099K1R8L3': 'fender-player-plus-telecaster',
+    'B01CFOAQP2': 'yamaha-fg830-acoustic-guitar',
+    'B07T7H7KXX': 'squier-classic-vibe-60s-stratocaster',
+    'B0GQC1PWR4': 'epiphone-sg-standard-61',
+    'B0010X7LF8': 'yamaha-pacifica-112v',
+    'B0C2CD2JJW': 'jackson-js22-dinky',
+    'B0D2LQNDS7': 'fender-player-plus-telecaster',
     'B07CXK87YV': 'fender-player-stratocaster',
-    'B01CPK89S2': 'yamaha-fg800-acoustic-guitar',
-    'B007S2Z4O8': 'martin-d-18-standard-series',
+    'B0CZ2D7P9X': 'yamaha-fg800-acoustic-guitar',
+    'B0F9B64NS1': 'martin-d-18-standard-series',
 };
 
 function getCloakedLink(amazonLink) {
-    const asinMatch = amazonLink.match(/\/dp\/([A-Z0-9]{10})/);
-    if (asinMatch && ASIN_TO_SLUG[asinMatch[1]]) {
-        return `/go/${ASIN_TO_SLUG[asinMatch[1]]}`;
-    }
-    return amazonLink; // fallback to raw link if no mapping
+    return amazonLink; // Raw direct link to bypass AdBlockers
 }
 
 // Load AI Cache
@@ -169,6 +171,8 @@ function generateURL(silo, category, keyword) {
 
 function generateMetaTags(keyword, silo, category, pageType = "landing") {
     let title = `${keyword.toUpperCase()} | ReviewsGuitar.com`;
+    if (title.length > 65) title = keyword.toUpperCase();
+    if (title.length > 65) title = title.substring(0, 65);
     let description = `Expert reviews and buying guides for ${keyword}. Find the elite deals on premium guitars and accessories.`;
     
     return {
@@ -200,7 +204,7 @@ function generateSchema(keyword, silo, category) {
     };
 }
 
-function renderProductGrid(filteredProducts) {
+function renderProductGrid(filteredProducts, fileName) {
     if (filteredProducts.length === 0) return '';
     
     return `
@@ -240,7 +244,13 @@ function renderProductGrid(filteredProducts) {
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
                     <div class="product-price">${p.price}</div>
-                    <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon pinterest-cta" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                    <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
+                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" style="flex: 1; text-align: center; margin-top: 0;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.8rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                            Save
+                        </a>
+                    </div>
                 </div>
             </div>
         `).join('')}
@@ -248,7 +258,7 @@ function renderProductGrid(filteredProducts) {
     `;
 }
 
-function renderComparisonFeature(products) {
+function renderComparisonFeature(products, fileName) {
     if (products.length === 0) return '';
     
     return `
@@ -278,7 +288,13 @@ function renderComparisonFeature(products) {
                 </ul>
             </div>
             
-            <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'} pinterest-cta" style="width: 100%; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+            <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
+                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="flex: 1; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 1rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                    <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                    Save
+                </a>
+            </div>
         </div>
         `).slice(0, 2).join('')}
     </div>
@@ -292,7 +308,12 @@ function renderComparisonFeature(products) {
                     <div style="padding: 1.5rem;">
                         <h4 style="margin-bottom: 0.5rem;">${p.name}</h4>
                         <div style="color: var(--primary); margin-bottom: 1rem;">${p.price}</div>
-                        <a href="${getCloakedLink(p.amazonLink)}" class="btn pinterest-cta" style="width: 100%; text-align: center; display: block; font-size: 0.8rem;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                        <div class="cta-button-group" style="display: flex; gap: 8px; margin-top: 1rem;">
+                            <a href="${getCloakedLink(p.amazonLink)}" class="btn" style="flex: 1; text-align: center; font-size: 0.8rem; padding: 0.6rem 0.4rem; display: block;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                            <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+                                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 12px; height: 12px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             `).join('')}
@@ -378,6 +399,8 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     const ogImage = finalProducts.length > 0 ? finalProducts[0].image : 'https://reviewsguitar.com/images/logo.png';
     const pinDescription = `${keyword} — Expert reviews, buying guides, and the best deals for ${new Date().getFullYear()}. Find your perfect guitar gear at ReviewsGuitar.com`;
 
+    const productPrice = finalProducts.length > 0 ? parseFloat(finalProducts[0].price.replace(/[^0-9.]/g, '')) : 0.00;
+
     return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -386,13 +409,17 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     <title>${metaTags.title}</title>
     <meta name="description" content="${metaTags.description}">
     <link rel="canonical" href="https://reviewsguitar.com/pages/${fileName}">
+    ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}
     <!-- Open Graph / Pinterest Rich Pins -->
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="product">
     <meta property="og:title" content="${metaTags.title}">
     <meta property="og:description" content="${metaTags.description}">
     <meta property="og:image" content="${ogImage}">
     <meta property="og:url" content="https://reviewsguitar.com/pages/${fileName}">
     <meta property="og:site_name" content="ReviewsGuitar.com">
+    <meta property="og:price:amount" content="${productPrice > 0 ? productPrice.toFixed(2) : '0.00'}">
+    <meta property="og:price:currency" content="USD">
+    <meta property="og:availability" content="instock">
     <meta property="article:published_time" content="${new Date().toISOString()}">
     <meta property="article:section" content="${silo}">
     <meta property="article:tag" content="guitar, ${silo}, ${category}, review, ${new Date().getFullYear()}">
@@ -416,6 +443,15 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     <script type="application/ld+json">
 ${schemaJson}
     </script>
+    ${config.pinterestTagId ? `<!-- Pinterest Tag -->
+    <script>
+    !function(e){if(!window.pwt){window.pwt={};var t=e.createElement("script");t.async=!0,t.src="https://s.pinterest.com/js/pwtitg.js";var n=e.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)}var r=window.pwt;r.queue=[],r.track=function(e,t,n){r.queue.push([e,t,n])}}(document);
+    pwt.track("pageview");
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=${config.pinterestTagId}&noscript=1" />
+    </noscript>
+    <!-- End Pinterest Tag -->` : ''}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
     <script>
@@ -465,7 +501,7 @@ ${schemaJson}
             </div>
 
             <div id="products">
-            ${(category === 'comparisons' || silo === 'buying') ? renderComparisonFeature(finalProducts.slice(0, 4)) : renderProductGrid(finalProducts.slice(0, 3))}
+            ${(category === 'comparisons' || silo === 'buying') ? renderComparisonFeature(finalProducts.slice(0, 4), fileName) : renderProductGrid(finalProducts.slice(0, 3), fileName)}
             </div>
 
             ${renderCrossSiloLinks(silo, "../")}

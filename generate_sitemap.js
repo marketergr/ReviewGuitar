@@ -1,54 +1,138 @@
+/**
+ * generate_sitemap.js
+ * 
+ * Generates sitemap.xml with:
+ * - lastmod dates for every URL
+ * - Tiered priorities:
+ *     1.0  → Homepage
+ *     0.9  → Silo hub pages (/collections/{silo}/)
+ *     0.8  → Product review/guide pages
+ *     0.7  → SEO landing pages (/pages/)
+ *     0.5  → Comparison pages (-vs-)
+ *     0.4  → Static pages (about, privacy, etc.)
+ * - Clean URLs (no .html extensions)
+ * - Excludes dev/utility files
+ * 
+ * Run: node generate_sitemap.js
+ */
+
 const fs = require('fs');
 const path = require('path');
 
 const rootDir = process.cwd();
 const domain = 'https://reviewsguitar.com';
 const sitemapPath = path.join(rootDir, 'sitemap.xml');
+const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
-let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+// Directories to skip entirely
+const SKIP_DIRS = new Set(['node_modules', '.git', 'GSC', 'docs', 'templates', 'js', 'css', 'images']);
 
-function processDir(dir) {
-    const files = fs.readdirSync(dir);
-    for (const file of files) {
-        if (file === 'node_modules' || file === '.git' || file === 'GSC') continue;
-        
-        const fullPath = path.join(dir, file);
-        if (fs.statSync(fullPath).isDirectory()) {
-            processDir(fullPath);
-        } else if (file.endsWith('.html')) {
-            // Ignore templates
-            if (fullPath.includes('templates')) continue;
-            
-            let relPath = path.relative(rootDir, fullPath).replace(/\\/g, '/');
-            
-            // Format URL (remove index.html or .html for clean urls)
-            let urlPath = relPath;
-            if (urlPath === 'index.html') urlPath = '';
-            else if (urlPath.endsWith('/index.html')) urlPath = urlPath.replace('/index.html', '/');
-            else if (urlPath.endsWith('.html')) urlPath = urlPath.replace('.html', '');
-            
-            const fullUrl = `${domain}/${urlPath}`;
-            
-            // Assign priority and changefreq based on depth
-            let priority = '0.6';
-            let changefreq = 'monthly';
-            
-            if (urlPath === '') {
-                priority = '1.0';
-                changefreq = 'weekly';
-            } else if (urlPath.startsWith('collections/') && urlPath.endsWith('/')) {
-                priority = '0.8';
-                changefreq = 'weekly';
-            }
-            
-            xml += `  <url>\n    <loc>${fullUrl}</loc>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>\n`;
-        }
-    }
+// Top-level HTML files to skip (utility/non-content)
+const SKIP_FILES = new Set(['navigation.html', 'sitemap.html']);
+
+// Static pages (lower priority, less frequent)
+const STATIC_PAGES = new Set(['about', 'contact', 'privacy', 'terms']);
+
+const urls = [];
+
+function getPriorityAndFreq(urlPath) {
+  // Homepage
+  if (urlPath === '') {
+    return { priority: '1.0', changefreq: 'weekly' };
+  }
+  // Silo hub pages (e.g. collections/acoustic/)
+  if (urlPath.match(/^collections\/[^/]+\/?$/)) {
+    return { priority: '0.9', changefreq: 'weekly' };
+  }
+  // Static pages
+  if (STATIC_PAGES.has(urlPath)) {
+    return { priority: '0.4', changefreq: 'monthly' };
+  }
+  // SEO landing pages
+  if (urlPath.startsWith('pages/')) {
+    return { priority: '0.7', changefreq: 'monthly' };
+  }
+  // Comparison pages (have -vs- in path)
+  if (urlPath.includes('-vs-')) {
+    return { priority: '0.5', changefreq: 'monthly' };
+  }
+  // Product review/guide pages (collections but not comparisons)
+  if (urlPath.startsWith('collections/')) {
+    return { priority: '0.8', changefreq: 'monthly' };
+  }
+  // Default
+  return { priority: '0.5', changefreq: 'monthly' };
 }
 
+function processDir(dir) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      if (SKIP_DIRS.has(entry.name)) continue;
+      processDir(fullPath);
+    } else if (entry.name.endsWith('.html')) {
+      if (SKIP_FILES.has(entry.name)) continue;
+
+      let relPath = path.relative(rootDir, fullPath).replace(/\\/g, '/');
+
+      // Clean URL transforms
+      let urlPath = relPath;
+      if (urlPath === 'index.html') {
+        urlPath = '';
+      } else if (urlPath.endsWith('/index.html')) {
+        urlPath = urlPath.replace('/index.html', '/');
+      } else if (urlPath.endsWith('.html')) {
+        urlPath = urlPath.replace('.html', '');
+      }
+
+      const fullUrl = urlPath === '' ? domain + '/' : `${domain}/${urlPath}`;
+      const { priority, changefreq } = getPriorityAndFreq(urlPath);
+
+      urls.push({ url: fullUrl, priority, changefreq, urlPath });
+    }
+  }
+}
+
+// Process all files
 processDir(rootDir);
+
+// Sort: homepage first, then by priority desc, then alphabetically
+urls.sort((a, b) => {
+  if (a.urlPath === '') return -1;
+  if (b.urlPath === '') return 1;
+  const pDiff = parseFloat(b.priority) - parseFloat(a.priority);
+  if (pDiff !== 0) return pDiff;
+  return a.url.localeCompare(b.url);
+});
+
+// Build XML
+let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+for (const { url, changefreq, priority } of urls) {
+  xml += `  <url>\n`;
+  xml += `    <loc>${url}</loc>\n`;
+  xml += `    <lastmod>${today}</lastmod>\n`;
+  xml += `    <changefreq>${changefreq}</changefreq>\n`;
+  xml += `    <priority>${priority}</priority>\n`;
+  xml += `  </url>\n`;
+}
 
 xml += `</urlset>`;
 
-fs.writeFileSync(sitemapPath, xml);
-console.log('Successfully generated sitemap.xml with ' + (xml.match(/<url>/g) || []).length + ' URLs');
+fs.writeFileSync(sitemapPath, xml, 'utf8');
+
+const count = urls.length;
+const byPriority = {};
+for (const { priority } of urls) {
+  byPriority[priority] = (byPriority[priority] || 0) + 1;
+}
+
+console.log(`Sitemap generated: ${count} URLs`);
+console.log('\nBreakdown by priority:');
+for (const [p, n] of Object.entries(byPriority).sort().reverse()) {
+  console.log(`  priority ${p}: ${n} pages`);
+}
+console.log(`\nSaved to: ${sitemapPath}`);
