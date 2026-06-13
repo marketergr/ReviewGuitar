@@ -602,7 +602,7 @@ structure.siloConfigs.forEach(silo => {
 
     <div class="aesthetic-spotlight" style="margin-bottom: 4rem; padding: 4rem; background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1), transparent); border-radius: 24px; border: 1px solid var(--border);">
         <span style="font-size: 0.75rem; letter-spacing: 0.3em; color: var(--primary); text-transform: uppercase;">Aesthetic Detail Spotlight</span>
-        <h3 style="font-size: 2.2rem; margin: 1.5rem 0;">Why this dominates Pinterest in 2026</h3>
+        <h3 style="font-size: 2.2rem; margin: 1.5rem 0;">Why Design & Aesthetics Matter in 2026</h3>
         <p style="color: var(--text-dim); line-height: 1.8; max-width: 700px;">The visual language of modern guitar revolves around the marriage of high-performance hardware and boutique finishing. Our analysis shows that instruments featured here prioritize the "Art-as-Instrument" philosophy currently trending across designer-musician communities.</p>
     </div>
 
