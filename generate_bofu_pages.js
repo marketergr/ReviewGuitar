@@ -88,25 +88,92 @@ function parseCSV(content) {
 function matchProducts(keyword) {
     const kwLower = keyword.toLowerCase();
     
-    // Simple relevance matcher
+    // Determine target silo
+    let targetSilo = null;
+    if (kwLower.includes('electric')) {
+        targetSilo = 'electric';
+    } else if (kwLower.includes('acoustic')) {
+        targetSilo = 'acoustic';
+    } else if (kwLower.includes('bass')) {
+        targetSilo = 'bass';
+    } else if (kwLower.includes('learning') || kwLower.includes('lessons') || kwLower.includes('course') || kwLower.includes('book') || kwLower.includes('app')) {
+        targetSilo = 'learning';
+    } else if (kwLower.includes('string') || kwLower.includes('pedal') || kwLower.includes('amp') || kwLower.includes('cable') || kwLower.includes('tuner') || kwLower.includes('strap') || kwLower.includes('wireless') || kwLower.includes('accessory') || kwLower.includes('stand') || kwLower.includes('capo') || kwLower.includes('pick') || kwLower.includes('headphones') || kwLower.includes('cases') || kwLower.includes('flight')) {
+        targetSilo = 'accessories';
+    }
+
+    const BRANDS = ['yamaha', 'fender', 'squier', 'martin', 'taylor', 'prs', 'boss', 'tc electronic', 'epiphone', 'jackson', 'hercules', 'ernie ball', 'wingo', 'perri', 'hal leonard', 'justinguitar', 'nerecndens', 'gibson', 'ibanez', 'vox', 'marshall', 'gretsch', 'seagull'];
+    const activeBrands = BRANDS.filter(b => kwLower.includes(b));
+
     let scored = products.map(p => {
         let score = 0;
-        const searchStr = (p.name + " " + p.category + " " + p.brand).toLowerCase();
-        const kwWords = kwLower.split(' ');
+        const pNameLower = p.name.toLowerCase();
         
-        kwWords.forEach(w => {
-            if (w.length > 2 && searchStr.includes(w)) score += 1;
+        // 1. Silo Match
+        if (targetSilo) {
+            if (p.silo === targetSilo) {
+                score += 15;
+            } else {
+                score -= 10;
+            }
+        }
+        
+        // 2. Brand Match
+        let pBrand = null;
+        for (const b of BRANDS) {
+            if (pNameLower.includes(b)) {
+                pBrand = b;
+                break;
+            }
+        }
+        
+        if (activeBrands.length > 0) {
+            if (pBrand && activeBrands.includes(pBrand)) {
+                score += 20;
+            } else if (pBrand) {
+                score -= 15;
+            }
+        }
+
+        // 3. Model / Word Match
+        // Extract specific model words from keyword (e.g. fg800, 112v, etc.)
+        const modelWords = ['fg800', 'fg830', 'cd-60s', 'stratocaster', 'strat', 'telecaster', 'tele', 'pacifica', 'dinky', 'mustang', 'katana', 'polytune', 'ds-1', 'd-18', 'd-10e', '214ce', '314ce', 'silver sky', 'ultra', 'regular slinky', 'xs', 'gs414b', 'fct-2', 'telepath', '66pcs', 'method', 'lessons'];
+        modelWords.forEach(mw => {
+            if (kwLower.includes(mw) && pNameLower.includes(mw)) {
+                score += 25;
+            }
         });
         
-        // Brand exact match heavily weighted
-        if (p.brand && kwLower.includes(p.brand.toLowerCase())) score += 3;
+        // 4. Price Match (under X)
+        let priceNum = parseFloat(p.price.replace(/[^0-9.]/g, '')) || 0;
+        if (kwLower.includes('under')) {
+            const match = kwLower.match(/under\s*\$?(\d+)/);
+            if (match) {
+                const maxPrice = parseFloat(match[1]);
+                if (priceNum <= maxPrice) {
+                    score += 10;
+                } else {
+                    score -= 30; // severe penalty for exceeding budget
+                }
+            }
+        }
+
+        // 5. General word overlap
+        const searchStr = (p.name + " " + p.category + " " + p.silo + " " + (p.description || "")).toLowerCase();
+        const kwWords = kwLower.split(' ');
+        kwWords.forEach(w => {
+            if (w.length > 2 && searchStr.includes(w)) {
+                score += 1;
+            }
+        });
         
         return { product: p, score };
     });
     
     scored.sort((a, b) => b.score - a.score);
-    // Return top 2 if it's a 'vs' or 'review', top 4 if it's 'best-of'
-    return scored.slice(0, 4).map(s => s.product);
+    // Return top 2 for vs pages, top 4 for best-of/other
+    const sliceCount = kwLower.includes(' vs ') || kwLower.includes('comparison') ? 2 : 4;
+    return scored.slice(0, sliceCount).map(s => s.product);
 }
 
 function generateBoFuPage(data, matchedProducts, fileName) {

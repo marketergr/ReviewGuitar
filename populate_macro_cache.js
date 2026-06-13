@@ -20,7 +20,7 @@ const macroCache = {
                         <li><strong>Playability Index:</strong> We measure the "effort-to-sound" ratio, ensuring that beginners don't quit because of poor hardware.</li>
                     </ul>
 
-                    <p>Ready to master your sound? Explore our silos below for deep-dives into specific categories.</p>
+                    <p>Ready to master your sound? Explore our collections below for deep-dives into specific categories.</p>
                 </div>
                 
                 <div class="faq-section">
@@ -61,7 +61,7 @@ const macroCache = {
         `,
         learning: `
             <div class="article-content" style="margin-top: 0;">
-                <p>The path to mastery has changed. In 2026, the most successful students use a hybrid approach: part interactive software, part structured video curriculum. Our learning silo reviews the tools that help you skip the frustration and get straight to the music.</p>
+                <p>The path to mastery has changed. In 2026, the most successful students use a hybrid approach: part interactive software, part structured video curriculum. Our learning hub reviews the tools that help you skip the frustration and get straight to the music.</p>
             </div>
         `,
         buying: `

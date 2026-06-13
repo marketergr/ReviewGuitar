@@ -355,11 +355,12 @@ function getFooter(basePath) {
                 <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p>
             </div>
             <div class="footer-column">
-                <h3>Silos</h3>
+                <h3>Collections</h3>
                 <ul class="footer-links">
                     <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
                     <li><a href="/collections/electric">Electric Guitars</a></li>
                     <li><a href="/collections/accessories">Essential Gear</a></li>
+                    <li><a href="/collections/learning">Education</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -435,7 +436,7 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     <link rel="preconnect" href="https://m.media-amazon.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="google-adsense-account" content="ca-pub-9853769972652980">
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9853769972652980"

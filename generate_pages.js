@@ -311,7 +311,7 @@ function getFooter(basePath) {
                     <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
                     <li><a href="/collections/electric">Electric Guitars</a></li>
                     <li><a href="/collections/accessories">Essential Gear</a></li>
-                    <li><a href="/collections/learning">Learning Silo</a></li>
+                    <li><a href="/collections/learning">Education</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -496,6 +496,13 @@ structure.siloConfigs.forEach(silo => {
                 <a href="/collections/${silo.name}/${p.slug}" style="color: var(--primary); font-size: 0.8rem;">READ GUIDE →</a>
             </div>
         `}).join('')}
+        ${silo.name === 'buying' ? `
+            <div class="silo-card" style="min-height: 200px; background: var(--surface); justify-content: flex-start; padding: 2rem;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Distribution Guide 2026</h3>
+                <p style="font-size: 0.85rem; margin-bottom: 1.5rem;">Expert analysis on best way to distribute your guitar music.</p>
+                <a href="/guides/recording/best-way-to-distribute-your-guitar-music-in-2026.html" style="color: var(--primary); font-size: 0.8rem;">READ GUIDE →</a>
+            </div>
+        ` : ''}
     </div>
     ${getFooter("../../")}
     `;
@@ -507,11 +514,26 @@ structure.siloConfigs.forEach(silo => {
   
   silo.pages.forEach(function(page) {
     const kwArray = (typeof page.keywords === 'string' ? page.keywords.split(',') : page.keywords) || [];
-    const matchedProducts = products.filter(p => p.silo === silo.name && (
-        page.title.toLowerCase().includes(p.category) || 
-        page.slug.toLowerCase().includes(p.category) ||
-        kwArray.some(k => k.toLowerCase().includes(p.category))
-    ));
+    
+    let matchedProducts = [];
+    const priceMatch = page.slug.match(/under-(\d+)/);
+    if (priceMatch) {
+      const maxPrice = parseFloat(priceMatch[1]);
+      matchedProducts = products.filter(p => {
+        if (p.silo !== silo.name) return false;
+        const priceNum = parseFloat(p.price.replace(/[^0-9.]/g, '')) || 0;
+        return priceNum <= maxPrice;
+      });
+      // Sort by rating descending and limit to top 4 products
+      matchedProducts.sort((a, b) => b.rating - a.rating);
+      matchedProducts = matchedProducts.slice(0, 4);
+    } else {
+      matchedProducts = products.filter(p => p.silo === silo.name && (
+          page.title.toLowerCase().includes(p.category) || 
+          page.slug.toLowerCase().includes(p.category) ||
+          kwArray.some(k => k.toLowerCase().includes(p.category))
+      ));
+    }
     
     // Determine the Pinterest Image
     let pinterestImage = `../../images/pinterest_${silo.name}_guitars.png`;

@@ -24,6 +24,27 @@ const domain = 'https://reviewsguitar.com';
 const sitemapPath = path.join(rootDir, 'sitemap.xml');
 const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
+// Load vercel.json rewrites for clean URL resolution
+const vercelConfigPath = path.join(rootDir, 'vercel.json');
+let rewriteMap = {};
+if (fs.existsSync(vercelConfigPath)) {
+  try {
+    const vercelConfig = JSON.parse(fs.readFileSync(vercelConfigPath, 'utf8'));
+    if (vercelConfig.rewrites) {
+      vercelConfig.rewrites.forEach(r => {
+        const dest = r.destination.replace(/^\//, '');
+        rewriteMap[dest] = r.source;
+        rewriteMap[dest + '.html'] = r.source;
+        if (dest.endsWith('.html')) {
+          rewriteMap[dest.slice(0, -5)] = r.source;
+        }
+      });
+    }
+  } catch (e) {
+    console.error('Failed to parse vercel.json:', e);
+  }
+}
+
 // Directories to skip entirely
 const SKIP_DIRS = new Set(['node_modules', '.git', 'GSC', 'docs', 'templates', 'js', 'css', 'images']);
 
@@ -87,10 +108,16 @@ function processDir(dir) {
         urlPath = urlPath.replace('.html', '');
       }
 
-      const fullUrl = urlPath === '' ? domain + '/' : `${domain}/${urlPath}`;
+      // Resolve internal path to clean rewrite source if present in vercel.json
+      let displayPath = urlPath;
+      if (rewriteMap[urlPath]) {
+        displayPath = rewriteMap[urlPath].replace(/^\//, '');
+      }
+
+      const fullUrl = displayPath === '' ? domain + '/' : `${domain}/${displayPath}`;
       const { priority, changefreq } = getPriorityAndFreq(urlPath);
 
-      urls.push({ url: fullUrl, priority, changefreq, urlPath });
+      urls.push({ url: fullUrl, priority, changefreq, urlPath: displayPath });
     }
   }
 }
