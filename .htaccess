@@ -24,12 +24,6 @@ RewriteRule ^guitar-martin-d-10e-road-series-in-natural/?$ /collections/acoustic
 RewriteRule ^guitar-martin-d-10e-road-series-in-natural$ /collections/acoustic/premium-guide.html [R=301,L]
 RewriteRule ^guitar-taylor-214ce-plus-acoustic-guitar-in-natural/?$ /collections/acoustic/premium-guide.html [R=301,L]
 RewriteRule ^guitar-taylor-214ce-plus-acoustic-guitar-in-natural$ /collections/acoustic/premium-guide.html [R=301,L]
-
-# Catch-all for unmatched Pinterest /guitar-* URLs
-RewriteRule ^guitar-.*/?$ /?utm_source=Pinterest&utm_medium=organic [R=301,L]
-
-# Catch-all for other legacy product URLs
-RewriteRule ^(.+-vs-.+)/?$ /pages/buying_guides_guitar_buying_guide_2026.html [R=301,L]
 RewriteRule ^best-under-500/?$ /collections/acoustic/best-under-500.html [R=301,L]
 RewriteRule ^best-under-500.html$ /collections/acoustic/best-under-500.html [R=301,L]
 RewriteRule ^silos/acoustic/best-under-500.html$ /collections/acoustic/best-under-500.html [R=301,L]
@@ -135,3 +129,9 @@ RewriteRule ^return-policy.html$ /collections/buying/return-policy.html [R=301,L
 RewriteRule ^silos/buying/return-policy.html$ /collections/buying/return-policy.html [R=301,L]
 RewriteRule ^silos/buying/index.html$ /collections/buying/index.html [R=301,L]
 RewriteRule ^silos/buying/?$ /collections/buying/index.html [R=301,L]
+
+# Catch-all for unmatched Pinterest /guitar-* URLs
+RewriteRule ^guitar-.*/?$ /?utm_source=Pinterest&utm_medium=organic [R=301,L]
+
+# Catch-all for other legacy product URLs
+RewriteRule ^(.+-vs-.+)/?$ /pages/buying_guides_guitar_buying_guide_2026.html [R=301,L]

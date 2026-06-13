@@ -17,7 +17,7 @@
     <meta property="og:price:amount" content="14.99">
     <meta property="og:price:currency" content="USD">
     <meta property="og:availability" content="instock">
-    <meta property="article:published_time" content="2026-06-13T05:28:02.777Z">
+    <meta property="article:published_time" content="2026-06-13T20:11:09.830Z">
     <meta property="article:section" content="accessories">
     <meta property="article:tag" content="guitar, accessories, cases, review, 2026">
     <!-- Pinterest specific -->
@@ -78,6 +78,7 @@
             <li class="dropdown">
                 <a href="/collections/acoustic">Acoustic</a>
                 <div class="dropdown-content">
+                    <a href="/collections/acoustic">All Acoustic Guitars</a>
                     <a href="/collections/acoustic/best-for-beginners">Best for Beginners</a>
                     <a href="/collections/acoustic/best-under-500">Best Under $500</a>
                     <a href="/collections/acoustic/premium-guide">Premium Guide</a>
@@ -86,6 +87,7 @@
             <li class="dropdown">
                 <a href="/collections/electric">Electric</a>
                 <div class="dropdown-content">
+                    <a href="/collections/electric">All Electric Guitars</a>
                     <a href="/collections/electric/starters">Starter Kits</a>
                     <a href="/collections/electric/metal-guitars">Best for Metal</a>
                     <a href="/collections/electric/best-under-300">Best Under $300</a>
@@ -95,6 +97,7 @@
             <li class="dropdown">
                 <a href="/collections/accessories">Gear</a>
                 <div class="dropdown-content">
+                    <a href="/collections/accessories">All Gear</a>
                     <a href="/collections/accessories/strings">Strings</a>
                     <a href="/collections/accessories/pedals">Pedals</a>
                     <a href="/collections/accessories/amps">Amps</a>
@@ -103,6 +106,7 @@
             <li class="dropdown">
                 <a href="/collections/learning">Education</a>
                 <div class="dropdown-content">
+                    <a href="/collections/learning">All Education</a>
                     <a href="/collections/learning/apps">Learning Apps</a>
                     <a href="/collections/learning/courses">Video Courses</a>
                     <a href="/collections/learning/tips">Guitar Tips</a>
@@ -360,6 +364,42 @@
                     navLinks.classList.toggle('active');
                 });
             }
+
+            const isMobile = () => window.innerWidth <= 768;
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                let closeTimer = null;
+                
+                dropdown.addEventListener('mouseenter', () => {
+                    if (isMobile()) return;
+                    clearTimeout(closeTimer);
+                    dropdown.classList.add('is-open');
+                });
+                
+                dropdown.addEventListener('mouseleave', () => {
+                    if (isMobile()) return;
+                    closeTimer = setTimeout(() => {
+                        dropdown.classList.remove('is-open');
+                    }, 150);
+                });
+                
+                const trigger = dropdown.querySelector('a');
+                if (trigger) {
+                    trigger.addEventListener('click', (e) => {
+                        if (!isMobile()) return;
+                        e.preventDefault();
+                        const isOpen = dropdown.classList.contains('is-open');
+                        document.querySelectorAll('.dropdown.is-open').forEach(d => d.classList.remove('is-open'));
+                        if (!isOpen) dropdown.classList.add('is-open');
+                    });
+                }
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.dropdown')) {
+                    document.querySelectorAll('.dropdown.is-open').forEach(d => d.classList.remove('is-open'));
+                }
+            });
         });
     </script>
 </body>
