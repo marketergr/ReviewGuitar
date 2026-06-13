@@ -121,6 +121,11 @@ function processDir(dir) {
             if (styleRegex.test(content)) {
                 content = content.replace(styleRegex, '<link rel="stylesheet" href="/css/style.min.css">');
             }
+
+            // Inject favicon link if not already present
+            if (!content.includes('rel="icon"') && !content.includes('rel="shortcut icon"')) {
+                content = content.replace(/<\/head>/i, '    <link rel="icon" type="image/png" href="/images/favicon.png">\n</head>');
+            }
             
             fs.writeFileSync(fullPath, content);
             console.log('Updated', fullPath);
