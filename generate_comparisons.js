@@ -179,10 +179,10 @@ function generateVerdict(pA, pB) {
 function generateSpecTable(pA, pB) {
     const features = [...new Set([...pA.features, ...pB.features])].slice(0, 5);
     return features.map(f => `
-        <tr style="border-bottom: 1px solid var(--border);">
-            <td style="padding: 1.5rem; font-weight: bold; color: var(--primary);">${f}</td>
-            <td style="padding: 1.5rem;">${pA.features.includes(f) ? "✓" : "-"}</td>
-            <td style="padding: 1.5rem;">${pB.features.includes(f) ? "✓" : "-"}</td>
+        <tr>
+            <td class="feature-name-cell">${f}</td>
+            <td>${pA.features.includes(f) ? "✓" : "-"}</td>
+            <td>${pB.features.includes(f) ? "✓" : "-"}</td>
         </tr>
     `).join('');
 }

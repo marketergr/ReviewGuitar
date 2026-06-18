@@ -74,18 +74,20 @@
         </ul>
     </nav>
 
-    <main class="container">
+    <main class="container main-grid-layout">
         <section class="content-header">
             <h2>{{mainTitle}}</h2>
         </section>
         
-        <article class="article-content">
-            {{content}}
-        </article>
+        <div class="main-content-column">
+            <article class="article-content">
+                {{content}}
+            </article>
+        </div>
 
-        <aside class="related-pages">
-            <h3 style="color: var(--primary); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">Expert Resources</h3>
-            <ul style="list-style: none; padding: 0;">
+        <aside class="related-sidebar">
+            <h3>Expert Resources</h3>
+            <ul>
                 {{relatedLinks}}
             </ul>
         </aside>

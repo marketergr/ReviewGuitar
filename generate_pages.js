@@ -85,65 +85,62 @@ function generateDeepContent(keyword, silo) {
     const intro = intros[Math.floor(Math.random() * intros.length)];
 
     return `
-        <article class="article-content" style="max-width: 900px; margin-bottom: 4rem;">
-            <p style="font-size: 1.25rem; color: #fff; margin-bottom: 2.5rem; line-height: 1.8; font-weight: 500;">
+        <article class="article-content">
+            <p class="article-lead">
                 ${intro}
             </p>
 
-            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem; margin-top: 4rem; text-transform: uppercase; letter-spacing: 0.1em;">1. Technical Architecture & Component Analysis</h3>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <h3>1. Technical Architecture & Component Analysis</h3>
+            <p>
                 When evaluating ${formattedKeyword}, we look beyond the aesthetic appointments. Our analysis focuses on the <strong>Structural Integrity Matrix</strong>: fretwork precision, nut material densities, and internal bracing architecture (for acoustics) or electronic shielding (for electrics). In the ${year} landscape, manufacturing tolerances have tightened, yet the delta between "good" and "exceptional" remains significant.
             </p>
 
-            <div style="background: rgba(var(--primary-rgb), 0.05); border-left: 4px solid var(--primary); padding: 2.5rem; border-radius: 4px; margin: 3rem 0;">
-                <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Expert Evaluation Pillars</h4>
-                <ul style="list-style-type: none; padding: 0;">
-                    <li style="margin-bottom: 1rem; color: var(--text-dim); display: flex; align-items: start;">
-                        <span style="color: var(--primary); margin-right: 1rem; font-weight: bold;">[01]</span>
-                        <span><strong>Harmonic Resonance:</strong> Measuring the fundamental vs. overtone sustain across the frequency spectrum.</span>
+            <div class="expert-tip">
+                <strong>Expert Evaluation Pillars</strong>
+                <ul>
+                    <li>
+                        <strong>Harmonic Resonance:</strong> Measuring the fundamental vs. overtone sustain across the frequency spectrum.
                     </li>
-                    <li style="margin-bottom: 1rem; color: var(--text-dim); display: flex; align-items: start;">
-                        <span style="color: var(--primary); margin-right: 1rem; font-weight: bold;">[02]</span>
-                        <span><strong>Ergonomic Velocity:</strong> Assessing the neck-to-hand interface and weight distribution for long-session comfort.</span>
+                    <li>
+                        <strong>Ergonomic Velocity:</strong> Assessing the neck-to-hand interface and weight distribution for long-session comfort.
                     </li>
-                    <li style="margin-bottom: 0px; color: var(--text-dim); display: flex; align-items: start;">
-                        <span style="color: var(--primary); margin-right: 1rem; font-weight: bold;">[03]</span>
-                        <span><strong>Market Appreciation:</strong> Analyzing the brand's secondary market stability and component longevity.</span>
+                    <li>
+                        <strong>Market Appreciation:</strong> Analyzing the brand's secondary market stability and component longevity.
                     </li>
                 </ul>
             </div>
 
-            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem; margin-top: 4rem; text-transform: uppercase;">2. The Luthier's Perspective: Bench-Testing ${year} Models</h3>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <h3>2. The Luthier's Perspective: Bench-Testing ${year} Models</h3>
+            <p>
                 Our lead technician, Julian Vane, recently benchmarked the current ${formattedKeyword} selection against historical 1960s standards. What we found was startling: the <strong>Computer Numerical Control (CNC)</strong> precision used in modern production lines has virtually eliminated the "lemon" factor that plagued early eras. However, the soul of the instrument still depends on the final hand-finish. We specifically look for "rolled" fretboard edges and hand-slotted nuts, features that separate professional tools from mass-produced toys.
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <p>
                 During our 20-hour stress test, we subjected several ${formattedKeyword} units to humidity cycling (40% to 65% RH). This revealed which manufacturers are using properly kiln-dried tonewoods and which are rushing the curing process. Stability in the truss-rod response is a non-negotiable metric for any gear we endorse on this platform.
             </p>
 
-            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem; margin-top: 4rem; text-transform: uppercase;">3. Tonewood Science & Harmonic Mapping</h3>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <h3>3. Tonewood Science & Harmonic Mapping</h3>
+            <p>
                 The frequency response of ${formattedKeyword} is largely dictated by the density of the primary timbers used in construction. For ${year}, we are seeing a shift toward sustainable alternatives like Pau Ferro and Roasted Maple, which often offer superior stability over traditional Rosewood in intermediate categories. In our spectrum analysis, these "torrefied" woods exhibit a more immediate transient response, which musicians often describe as a "played-in" feel.
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <p>
                 We utilize high-fidelity FFT analyzers to map the harmonic content of these instruments. A professional-grade ${formattedKeyword} should show a rich distribution of even-order harmonics, providing that "creamy" sustain that session players demand. If an instrument shows too much high-frequency noise without a solid fundamental, it fails our "Studio Readiness" benchmark.
             </p>
 
-            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem; margin-top: 4rem; text-transform: uppercase;">4. Maintenance & Long-Term Performance</h3>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <h3>4. Maintenance & Long-Term Performance</h3>
+            <p>
                 Owning ${formattedKeyword} is a commitment to maintenance. To ensure your instrument retains its technical calibration, we recommend a semi-annual setup by a qualified luthier. However, the instruments we've selected below feature "Maintenance-Friendly Architecture"—high-quality hardware that won't strip or corrode after a year of heavy use.
             </p>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <p>
                 Key maintenance check-points for ${formattedKeyword} in ${year}:
             </p>
-            <ul style="color: var(--text-dim); line-height: 1.8; margin-bottom: 2rem;">
+            <ul>
                 <li><strong>Fret Polishing:</strong> Keeping the contact points mirror-smooth reduces string friction during bends.</li>
                 <li><strong>Nut Lubrication:</strong> Using a graphite or PTFE-based lubricant prevents "pinging" and tuning instability.</li>
                 <li><strong>Electronics Cleaning:</strong> For electric models, using a residue-free contact cleaner ensures noiseless signal switching.</li>
             </ul>
 
-            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem; margin-top: 4rem; text-transform: uppercase;">5. Final Buying Strategy</h3>
-            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 2rem;">
+            <h3>5. Final Buying Strategy</h3>
+            <p>
                 Don't buy <strong>${formattedKeyword}</strong> based on marketing specifications alone. Focus on the <em>dynamic range</em>—the instrument's ability to respond to delicate touch as well as aggressive play. Our top selections below represent the peak performers in this category, filtered through our rigorous real-world stage and studio testing. We've optimized this list for ${year} to ensure you're getting the best value for your professional investment.
             </p>
         </article>
@@ -153,22 +150,56 @@ function generateDeepContent(keyword, silo) {
 function getHeader(basePath, title, breadcrumbs) {
     return `
     <header>
-        <div style="font-size: 2rem; font-weight: bold;">ReviewsGuitar.com</div>
+        <h1>ReviewsGuitar.com</h1>
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
-        <ul>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/collections/acoustic">Acoustic</a></li>
-            <li><a href="/collections/electric">Electric</a></li>
-            <li><a href="/collections/accessories">Accessories</a></li>
-            <li><a href="/collections/learning">Learning</a></li>
+            <li class="dropdown">
+                <a href="/collections/acoustic">Acoustic</a>
+                <div class="dropdown-content">
+                    <a href="/collections/acoustic">All Acoustic Guitars</a>
+                    <a href="/collections/acoustic/best-for-beginners">Best for Beginners</a>
+                    <a href="/collections/acoustic/best-under-500">Best Under $500</a>
+                    <a href="/collections/acoustic/premium-guide">Premium Guide</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/electric">Electric</a>
+                <div class="dropdown-content">
+                    <a href="/collections/electric">All Electric Guitars</a>
+                    <a href="/collections/electric/starters">Starter Kits</a>
+                    <a href="/collections/electric/metal-guitars">Best for Metal</a>
+                    <a href="/collections/electric/best-under-300">Best Under $300</a>
+                    <a href="/collections/electric/best-under-1000">Best Under $1000</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/accessories">Gear</a>
+                <div class="dropdown-content">
+                    <a href="/collections/accessories">All Gear</a>
+                    <a href="/collections/accessories/strings">Strings</a>
+                    <a href="/collections/accessories/pedals">Pedals</a>
+                    <a href="/collections/accessories/amps">Amps</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/learning">Education</a>
+                <div class="dropdown-content">
+                    <a href="/collections/learning">All Education</a>
+                    <a href="/collections/learning/apps">Learning Apps</a>
+                    <a href="/collections/learning/courses">Video Courses</a>
+                    <a href="/collections/learning/tips">Guitar Tips</a>
+                </div>
+            </li>
             <li><a href="/collections/buying">Guides</a></li>
         </ul>
     </nav>
     <main>
-        <div style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
-            <nav style="font-size: 0.8rem; color: #666; margin-bottom: 2rem;">
+        <div class="container">
+            <nav style="font-size: 0.8rem; color: #666; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">
                 <a href="/" style="color: #666; text-decoration: none;">HOME</a> ${breadcrumbs}
             </nav>
             <h1 style="font-size: 3rem; margin-bottom: 3rem;">${title}</h1>
@@ -219,7 +250,7 @@ function renderProductGrid(filteredProducts, pageUrl) {
             const absoluteImage = imgToUse.startsWith('http') ? imgToUse : `https://reviewsguitar.com${imgToUse.startsWith('/') ? '' : '/'}${imgToUse}`;
             return `
             <div class="product-card">
-                <div class="product-img-container" style="background: #111;">
+                <div class="product-img-container">
                     <img src="${p.image || fallbackImg}" 
                          onerror="this.src='${fallbackImg}'"
                          alt="${p.name} - Expert Review & Analysis" 
@@ -256,14 +287,14 @@ function renderProductGrid(filteredProducts, pageUrl) {
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
                     <div class="product-price">${p.price}</div>
-                    <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
-                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" style="flex: 1; text-align: center; margin-top: 0;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
-                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.8rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
-                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                    <div class="cta-button-group">
+                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                             Save
                         </a>
                     </div>
-                    <span style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; display: block;">*Paid affiliate link</span>
+                    <span class="affiliate-disclosure">*Paid affiliate link</span>
                 </div>
             </div>
         `}).join('')}
@@ -281,11 +312,11 @@ function renderCrossSiloLinks(silo, basePath) {
     if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
 
     return `
-    <div style="margin: 4rem 0; padding: 3rem; background: var(--glass); border: 1px solid var(--border); border-radius: 12px;">
-        <h4 style="font-size: 0.75rem; letter-spacing: 0.2em; color: var(--primary); margin-bottom: 1.5rem; text-transform: uppercase;">Essential Recommendations</h4>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <div class="aesthetic-spotlight recommendations-box">
+        <span style="font-size: 0.75rem; letter-spacing: 0.2em; color: var(--primary); text-transform: uppercase; font-weight: 800;">Essential Recommendations</span>
+        <div class="recommendations-list">
             ${accessoryLinks.map(link => `
-                <a href="${link.url}" class="recom-badge" style="text-decoration: none;">
+                <a href="${link.url}" class="recom-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
                     ${link.name}
                 </a>
@@ -337,6 +368,7 @@ function getFooter(basePath) {
     </footer>
     <!-- Pinterest SDK for Save buttons -->
     <script async defer src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true" data-pin-tall="true" data-pin-round="true"></script>
+    <script src="${basePath}js/nav.min.js"></script>
     </body>
     </html>`;
 }
@@ -346,66 +378,68 @@ function renderComparisonFeature(products, pageUrl) {
     
     return `
     <span class="section-title">Head-to-Head Technical Breakdown</span>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0; margin-bottom: 4rem; border: 1px solid var(--border); border-radius: 12px; overflow: hidden;">
-        ${products.map((p, index) => {
+    <div class="comparison-matchup-container">
+        ${products.slice(0, 2).map((p, index) => {
             const absoluteImage = p.image.startsWith('http') ? p.image : `https://reviewsguitar.com${p.image.startsWith('/') ? '' : '/'}${p.image}`;
             return `
-        <div style="background: var(--glass); padding: 2.5rem; position: relative; ${index > 0 ? 'border-left: 1px solid var(--border);' : ''}">
-            ${index > 0 ? '<div style="position: absolute; top: -20px; left: -20px; width: 40px; height: 40px; background: var(--bg); border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary); z-index: 10;">VS</div>' : ''}
+        <div class="matchup-card ${index === 0 ? 'champion-card' : 'alternative-card'}">
+            ${index > 0 ? '<div class="matchup-vs-divider">VS</div>' : ''}
             
-            <div style="background: rgba(255,255,255,0.05); color: #fff; padding: 0.3rem 1rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase; display: inline-block; margin-bottom: 1.5rem;">
+            <span class="matchup-badge">
                 ${index === 0 ? '🏆 CHAMPION PICK' : '🎯 TOP ALTERNATIVE'}
-            </div>
+            </span>
             
-            <img src="${p.image}" alt="${p.name} Technical Comparison" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;" loading="lazy" decoding="async">
+            <img src="${p.image}" alt="${p.name} Technical Comparison" class="matchup-img" loading="lazy" decoding="async">
             
-            <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 800;">${p.name}</h3>
-            <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary); margin-bottom: 1.5rem;">${p.price}</div>
+            <h3 class="product-title">${p.name}</h3>
+            <div class="product-price">${p.price}</div>
             
-            <p style="color: var(--text-dim); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">${p.description}</p>
+            <p class="product-desc">${p.description}</p>
             
-            <div style="margin-bottom: 2rem;">
-                <strong style="color: #fff; display: block; margin-bottom: 1rem; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Technical Matchup</strong>
-                <ul style="padding-left: 0; font-size: 0.9rem; color: var(--text-dim); margin-bottom: 0; list-style: none;">
-                    ${p.features.map(f => `<li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--primary);">✓</span> ${f}
-                    </li>`).join('')}
+            <div class="matchup-tech-specs">
+                <strong>Technical Matchup</strong>
+                <ul class="matchup-features">
+                    ${p.features.map(f => `<li><span class="check-icon">✓</span> ${f}</li>`).join('')}
                 </ul>
             </div>
             
-            <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
-                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="flex: 1; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
-                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 1rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
+            <div class="cta-button-group">
+                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
                     <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                     Save
                 </a>
             </div>
         </div>
         `;
-        }).slice(0, 2).join('')}
+        }).join('')}
     </div>
     
     ${products.length > 2 ? `
-        <h4 style="margin: 3rem 0 1.5rem; font-size: 1.5rem; color: #fff;">Other Worthy Contenders</h4>
-        <div class="product-grid">
-            ${products.slice(2).map(p => {
-                const absoluteImage = p.image.startsWith('http') ? p.image : `https://reviewsguitar.com${p.image.startsWith('/') ? '' : '/'}${p.image}`;
-                return `
-                <div class="product-card" style="transform: scale(0.95);">
-                    <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 150px; object-fit: cover;">
-                    <div style="padding: 1.5rem;">
-                        <h4 style="margin-bottom: 0.5rem;">${p.name}</h4>
-                        <div style="color: var(--primary); margin-bottom: 1rem;">${p.price}</div>
-                        <div class="cta-button-group" style="display: flex; gap: 8px; margin-top: 1rem;">
-                            <a href="${getCloakedLink(p.amazonLink)}" class="btn" style="flex: 1; text-align: center; font-size: 0.8rem; padding: 0.6rem 0.4rem; display: block;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
-                            <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
-                                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 12px; height: 12px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
-                            </a>
+        <div class="other-contenders-section">
+            <h4 class="contenders-title">Other Worthy Contenders</h4>
+            <div class="product-grid">
+                ${products.slice(2).map(p => {
+                    const absoluteImage = p.image.startsWith('http') ? p.image : `https://reviewsguitar.com${p.image.startsWith('/') ? '' : '/'}${p.image}`;
+                    return `
+                    <div class="product-card" style="transform: scale(0.95);">
+                        <div class="product-img-container">
+                            <img src="${p.image}" alt="${p.name}" class="product-img" loading="lazy" decoding="async">
+                        </div>
+                        <div class="product-card-content">
+                            <h4 class="product-title" style="font-size: 1.25rem;">${p.name}</h4>
+                            <div class="product-price" style="font-size: 1.4rem;">${p.price}</div>
+                            <div class="cta-button-group">
+                                <a href="${getCloakedLink(p.amazonLink)}" class="btn" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" style="width: 12px; height: 12px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
-            }).join('')}
+                `;
+                }).join('')}
+            </div>
         </div>
     ` : ''}
     `;

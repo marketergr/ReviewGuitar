@@ -75,49 +75,50 @@ function generateDeepContent(keyword, silo, category) {
     const year = new Date().getFullYear();
 
     return `
-        <h2 style="color: var(--primary); font-size: 1rem; margin-bottom: 1.5rem; letter-spacing: 0.2em;">EXECUTIVE SUMMARY</h2>
-        <p style="font-size: 1.1rem; color: var(--text-dim); line-height: 1.8; margin-bottom: 2rem;">
-            When evaluating <strong>${formattedKeyword}</strong>, understanding the nuance between technical specifications 
-            and real-world playability is critical. In ${year}, advancing manufacturing standards have elevated the baseline quality 
-            across the board, meaning your choice should be dictated by specific tonal requirements, ergonomic preferences, and long-term durability.
-            Our exhaustive analysis reveals key insights for the musician seeking premium gear within the ${silo} space.
-        </p>
+        <article class="article-content">
+            <p class="article-lead">
+                When evaluating <strong>${formattedKeyword}</strong>, understanding the nuance between technical specifications 
+                and real-world playability is critical. In ${year}, advancing manufacturing standards have elevated the baseline quality 
+                across the board, meaning your choice should be dictated by specific tonal requirements, ergonomic preferences, and long-term durability.
+                Our exhaustive analysis reveals key insights for the musician seeking premium gear within the ${silo} space.
+            </p>
 
-        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">1. Historical Context & The Modern Market</h3>
-        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-            The landscape for ${formattedKeyword} has fundamentally shifted over the last decade. Previously, players had to 
-            compromise between affordability and professional-grade reliability. Today, CNC routing and sophisticated 
-            quality control mean that even intermediate ${category} gear performs at levels previously reserved for flagship models.
-        </p>
+            <h3>1. Historical Context & The Modern Market</h3>
+            <p>
+                The landscape for ${formattedKeyword} has fundamentally shifted over the last decade. Previously, players had to 
+                compromise between affordability and professional-grade reliability. Today, CNC routing and sophisticated 
+                quality control mean that even intermediate ${category} gear performs at levels previously reserved for flagship models.
+            </p>
 
-        <div style="background: var(--glass); border: 1px solid var(--border); padding: 2rem; border-radius: 8px; margin: 2rem 0;">
-            <h4 style="font-size: 1.2rem; color: var(--primary); margin-bottom: 1rem;">Core Selection Criteria</h4>
-            <ul style="list-style-type: none; padding: 0;">
-                <li style="margin-bottom: 0.8rem;"><strong>✓ Structural Integrity:</strong> Resistance to humidity shifts and gigging wear.</li>
-                <li style="margin-bottom: 0.8rem;"><strong>✓ Tonal Versatility:</strong> Ability to cross genres vs hyper-specialization.</li>
-                <li style="margin-bottom: 0.8rem;"><strong>✓ Price-to-Performance Ratio:</strong> Diminishing returns analysis.</li>
-            </ul>
-        </div>
+            <div class="expert-tip">
+                <strong>Core Selection Criteria</strong>
+                <ul>
+                    <li><strong>✓ Structural Integrity:</strong> Resistance to humidity shifts and gigging wear.</li>
+                    <li><strong>✓ Tonal Versatility:</strong> Ability to cross genres vs hyper-specialization.</li>
+                    <li><strong>✓ Price-to-Performance Ratio:</strong> Diminishing returns analysis.</li>
+                </ul>
+            </div>
 
-        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">2. Technical Evaluation of ${formattedKeyword}</h3>
-        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-            Before finalizing a purchase, evaluate the core components. For ${silo} purchases, attention to detail in the 
-            fundamental build quality outlasts marketing hype. Let's look at the hardware choices that make ${formattedKeyword} 
-            worth considering. Fretwork precision, electronic shielding, and nut slotting are often where cost-cutting occurs, 
-            so these are the exact areas our editors scrutinize.
-        </p>
-        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 2rem;">
-            Whether you are recording in a dedicated studio or playing live out of a hybrid rig, the ${category} tools 
-            you select will dictate the friction between your ideas and your sound.
-        </p>
+            <h3>2. Technical Evaluation of ${formattedKeyword}</h3>
+            <p>
+                Before finalizing a purchase, evaluate the core components. For ${silo} purchases, attention to detail in the 
+                fundamental build quality outlasts marketing hype. Let's look at the hardware choices that make ${formattedKeyword} 
+                worth considering. Fretwork precision, electronic shielding, and nut slotting are often where cost-cutting occurs, 
+                so these are the exact areas our editors scrutinize.
+            </p>
+            <p>
+                Whether you are recording in a dedicated studio or playing live out of a hybrid rig, the ${category} tools 
+                you select will dictate the friction between your ideas and your sound.
+            </p>
 
-        <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 3rem;">3. Final Verdict for ${year}</h3>
-        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-dim); margin-bottom: 1.5rem;">
-            Ultimately, ${formattedKeyword} remains a highly viable space for both advancing learners and seasoned pros. 
-            By aligning your specific musical goals with the technical realities of these products, you ensure an investment 
-            that inspires continuous play. Review our Editor's Choice selections below, which have been filtered through 
-            our rigorous 10+ hour bench-testing protocol.
-        </p>
+            <h3>3. Final Verdict for ${year}</h3>
+            <p>
+                Ultimately, ${formattedKeyword} remains a highly viable space for both advancing learners and seasoned pros. 
+                By aligning your specific musical goals with the technical realities of these products, you ensure an investment 
+                that inspires continuous play. Review our Editor's Choice selections below, which have been filtered through 
+                our rigorous 10+ hour bench-testing protocol.
+            </p>
+        </article>
     `;
 }
 
@@ -244,13 +245,14 @@ function renderProductGrid(filteredProducts, fileName) {
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
                     <div class="product-price">${p.price}</div>
-                    <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
-                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" style="flex: 1; text-align: center; margin-top: 0;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
-                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.8rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
-                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                    <div class="cta-button-group">
+                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                        <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="pinterest-icon"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                             Save
                         </a>
                     </div>
+                    <span class="affiliate-disclosure">*Paid affiliate link</span>
                 </div>
             </div>
         `).join('')}
@@ -263,60 +265,64 @@ function renderComparisonFeature(products, fileName) {
     
     return `
     <span class="section-title">Head-to-Head Technical Breakdown</span>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0; margin-bottom: 4rem; border: 1px solid var(--border); border-radius: 12px; overflow: hidden;">
-        ${products.map((p, index) => `
-        <div style="background: var(--glass); padding: 2.5rem; position: relative; ${index > 0 ? 'border-left: 1px solid var(--border);' : ''}">
-            ${index > 0 ? '<div style="position: absolute; top: -20px; left: -20px; width: 40px; height: 40px; background: var(--bg); border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary); z-index: 10;">VS</div>' : ''}
+    <div class="comparison-matchup-container">
+        ${products.slice(0, 2).map((p, index) => {
+            return `
+        <div class="matchup-card ${index === 0 ? 'champion-card' : 'alternative-card'}">
+            ${index > 0 ? '<div class="matchup-vs-divider">VS</div>' : ''}
             
-            <div style="background: rgba(255,255,255,0.05); color: #fff; padding: 0.3rem 1rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase; display: inline-block; margin-bottom: 1.5rem;">
+            <span class="matchup-badge">
                 ${index === 0 ? '🏆 CHAMPION PICK' : '🎯 TOP ALTERNATIVE'}
-            </div>
+            </span>
             
-            <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px; margin-bottom: 1.5rem;" loading="lazy" decoding="async" data-pin-description="${p.name} — ${p.description}">
+            <img src="${p.image}" alt="${p.name}" class="matchup-img" loading="lazy" decoding="async" data-pin-description="${p.name} — ${p.description}">
             
-            <h3 style="margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 800;">${p.name}</h3>
-            <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary); margin-bottom: 1.5rem;">${p.price}</div>
+            <h3 class="product-title">${p.name}</h3>
+            <div class="product-price">${p.price}</div>
             
-            <p style="color: var(--text-dim); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem;">${p.description}</p>
+            <p class="product-desc">${p.description}</p>
             
-            <div style="margin-bottom: 2rem;">
-                <strong style="color: #fff; display: block; margin-bottom: 1rem; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">Technical Matchup</strong>
-                <ul style="padding-left: 0; font-size: 0.9rem; color: var(--text-dim); margin-bottom: 0; list-style: none;">
-                    ${p.features.map(f => `<li style="margin-bottom: 0.8rem; padding-left: 1.5rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: var(--primary);">✓</span> ${f}
-                    </li>`).join('')}
+            <div class="matchup-tech-specs">
+                <strong>Technical Matchup</strong>
+                <ul class="matchup-features">
+                    ${p.features.map(f => `<li><span class="check-icon">✓</span> ${f}</li>`).join('')}
                 </ul>
             </div>
             
-            <div class="cta-button-group" style="display: flex; gap: 10px; margin-top: 1.5rem;">
-                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" style="flex: 1; text-align: center; display: block; padding: 1rem;" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
-                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 1rem 1.2rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
-                    <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+            <div class="cta-button-group">
+                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="pinterest-icon"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                     Save
                 </a>
             </div>
         </div>
-        `).slice(0, 2).join('')}
+        `;
+        }).slice(0, 2).join('')}
     </div>
     
     ${products.length > 2 ? `
-        <h4 style="margin: 3rem 0 1.5rem; font-size: 1.5rem; color: #fff;">Other Worthy Contenders</h4>
-        <div class="product-grid">
-            ${products.slice(2).map(p => `
-                <div class="product-card" style="transform: scale(0.95);">
-                    <img src="${p.image}" alt="${p.name}" style="width: 100%; height: 150px; object-fit: cover;">
-                    <div style="padding: 1.5rem;">
-                        <h4 style="margin-bottom: 0.5rem;">${p.name}</h4>
-                        <div style="color: var(--primary); margin-bottom: 1rem;">${p.price}</div>
-                        <div class="cta-button-group" style="display: flex; gap: 8px; margin-top: 1rem;">
-                            <a href="${getCloakedLink(p.amazonLink)}" class="btn" style="flex: 1; text-align: center; font-size: 0.8rem; padding: 0.6rem 0.4rem; display: block;" target="_blank" rel="noopener nofollow">Check on Amazon</a>
-                            <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" style="background: #e60023; color: #fff; text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 8px; font-weight: bold; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; transition: background 0.3s;" target="_blank" rel="noopener nofollow">
-                                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 12px; height: 12px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
-                            </a>
+        <div class="other-contenders-section">
+            <h4 class="contenders-title">Other Worthy Contenders</h4>
+            <div class="product-grid">
+                ${products.slice(2).map(p => `
+                    <div class="product-card">
+                        <div class="product-img-container">
+                            <img src="${p.image}" alt="${p.name}" class="product-img">
+                        </div>
+                        <div class="product-card-content">
+                            <h4 class="product-title">${p.name}</h4>
+                            <div class="product-price">${p.price}</div>
+                            <div class="cta-button-group">
+                                <a href="${getCloakedLink(p.amazonLink)}" class="btn" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                                <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" class="pinterest-icon"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `).join('')}
+                `).join('')}
+            </div>
         </div>
     ` : ''}
     `;
@@ -332,11 +338,11 @@ function renderCrossSiloLinks(silo, basePath) {
     if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
 
     return `
-    <div style="margin: 4rem 0; padding: 3rem; background: var(--glass); border: 1px solid var(--border); border-radius: 12px;">
-        <h4 style="font-size: 0.75rem; letter-spacing: 0.2em; color: var(--primary); margin-bottom: 1.5rem; text-transform: uppercase;">Essential Recommendations</h4>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <div class="aesthetic-spotlight recommendations-box">
+        <span class="recommendations-title">Essential Recommendations</span>
+        <div class="recommendations-list">
             ${accessoryLinks.map(link => `
-                <a href="${link.url}" class="recom-badge" style="text-decoration: none;">
+                <a href="${link.url}" class="recom-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
                     ${link.name}
                 </a>
@@ -376,14 +382,15 @@ function getFooter(basePath) {
                 <ul class="footer-links">
                     <li><a href="/privacy">Privacy Policy</a></li>
                     <li><a href="/terms">Terms & Conditions</a></li>
-                    <li><a href="/terms#affiliate">Affiliate Disclosure</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 ReviewsGuitar.com. All Rights Reserved. Built for the modern musician.</p>
         </div>
-    </footer>`;
+    </footer>
+    <script src="${basePath}js/nav.min.js"></script>`;
 }
 
 function generateLandingPage(silo, category, keyword, metaTags, schema, fileName) {
@@ -465,36 +472,68 @@ ${schemaJson}
 </head>
 <body>
     <header>
-        <div style="font-size: 2rem; font-weight: bold;">ReviewsGuitar.com</div>
+        <h1>ReviewsGuitar.com</h1>
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
-        <ul>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/collections/acoustic">Acoustic</a></li>
-            <li><a href="/collections/electric">Electric</a></li>
-            <li><a href="/collections/accessories">Accessories</a></li>
-            <li><a href="/collections/learning">Learning</a></li>
+            <li class="dropdown">
+                <a href="/collections/acoustic">Acoustic</a>
+                <div class="dropdown-content">
+                    <a href="/collections/acoustic">All Acoustic Guitars</a>
+                    <a href="/collections/acoustic/best-for-beginners">Best for Beginners</a>
+                    <a href="/collections/acoustic/best-under-500">Best Under $500</a>
+                    <a href="/collections/acoustic/premium-guide">Premium Guide</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/electric">Electric</a>
+                <div class="dropdown-content">
+                    <a href="/collections/electric">All Electric Guitars</a>
+                    <a href="/collections/electric/starters">Starter Kits</a>
+                    <a href="/collections/electric/metal-guitars">Best for Metal</a>
+                    <a href="/collections/electric/best-under-300">Best Under $300</a>
+                    <a href="/collections/electric/best-under-1000">Best Under $1000</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/accessories">Gear</a>
+                <div class="dropdown-content">
+                    <a href="/collections/accessories">All Gear</a>
+                    <a href="/collections/accessories/strings">Strings</a>
+                    <a href="/collections/accessories/pedals">Pedals</a>
+                    <a href="/collections/accessories/amps">Amps</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/learning">Education</a>
+                <div class="dropdown-content">
+                    <a href="/collections/learning">All Education</a>
+                    <a href="/collections/learning/apps">Learning Apps</a>
+                    <a href="/collections/learning/courses">Video Courses</a>
+                    <a href="/collections/learning/tips">Guitar Tips</a>
+                </div>
+            </li>
             <li><a href="/collections/buying">Guides</a></li>
         </ul>
     </nav>
     <main>
         <!-- Pinterest-optimized hero section -->
-        <div class="pinterest-hero" style="position: relative; overflow: hidden; padding: 5rem 2rem 4rem; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%); text-align: center;">
+        <div class="pinterest-hero">
             <div style="position: absolute; inset: 0; background: url('${ogImage}') center/cover no-repeat; opacity: 0.12;"></div>
             <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
-                <span style="display: inline-block; background: var(--primary); color: #000; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.15em; padding: 0.4rem 1.2rem; border-radius: 20px; margin-bottom: 1.5rem; text-transform: uppercase;">${silo} · ${category}</span>
-                <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin-bottom: 1.5rem; font-family: 'Montserrat', sans-serif; text-transform: uppercase; color: #fff;">
-                    ${keyword}
-                </h1>
-                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">${metaTags.description}</p>
-                <a href="#products" class="btn-amazon pinterest-cta" style="display: inline-block; padding: 1rem 2.5rem; font-size: 1.1rem;">See Our Top Picks ↓</a>
+                <span class="lf-section-label">${silo} · ${category}</span>
+                <h1>${keyword}</h1>
+                <p style="font-size: 1.15rem; color: var(--text-dim); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">${metaTags.description}</p>
+                <a href="#products" class="btn-amazon pinterest-cta">See Our Top Picks ↓</a>
             </div>
         </div>
 
-        <div style="padding: 4rem 2rem; max-width: 1000px; margin: 0 auto;">
-            <nav style="font-size: 0.7rem; color: #666; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">
-                <a href="../index.html" style="color: #666; text-decoration: none;">HOME</a> > ${silo} > ${category}
+        <div class="container" style="max-width: 1000px;">
+            <nav class="breadcrumb-nav">
+                <a href="../index.html">HOME</a> > ${silo} > ${category}
             </nav>
 
             <div class="article-content">
@@ -507,18 +546,18 @@ ${schemaJson}
 
             ${renderCrossSiloLinks(silo, "../")}
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 3rem;">
-                <div style="background: var(--glass); border: 1px solid var(--border); padding: 2rem; border-radius: 8px;">
-                    <h3 style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--primary);">TECHNICAL CALIBRATION</h3>
-                    <ul style="font-size: 0.85rem; color: var(--text-dim); padding-left: 1.2rem;">
+            <div class="verdict-grid">
+                <div class="verdict-grid-box">
+                    <h3>TECHNICAL CALIBRATION</h3>
+                    <ul>
                         <li>Professional Fretwork Alignment</li>
                         <li>Optimal Action Configuration</li>
                         <li>High-Fidelity Pickup Response</li>
                     </ul>
                 </div>
-                <div style="background: var(--glass); border: 1px solid var(--border); padding: 2rem; border-radius: 8px;">
-                    <h3 style="font-size: 0.9rem; margin-bottom: 1rem; color: var(--primary);">VERDICT</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-dim);">
+                <div class="verdict-grid-box">
+                    <h3>VERDICT</h3>
+                    <p>
                         An essential benchmark for players seeking uncompromising quality in 2026.
                     </p>
                 </div>
