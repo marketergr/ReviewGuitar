@@ -1,10 +1,10 @@
 # ReviewsGuitar.com - Expert Guitar Reviews & Buyer Guides
 
-> **Last Updated:** 2026-06-11T09:51:00.799Z
+> **Last Updated:** 2026-06-18T17:37:24.401Z
 > **Goal:** Provide expert, unbiased, and data-driven reviews for acoustic and electric guitars, pedals, and learning resources.
 
 ## About Us
-ReviewsGuitar.com is a premier resource for guitarists of all levels. Our team spends hours bench-testing gear so you don't have to.
+ReviewsGuitar.com is a resource for guitarists of all levels, offering reviews, comparisons, and buying guides for guitars, gear, and learning resources.
 
 ## Top Guitar Recommendations (TL;DR)
 - **Best beginner:** [Yamaha FG800 Acoustic Guitar](https://reviewsguitar.com/reviews/acoustic-1) - *$229.99*
@@ -14,9 +14,7 @@ ReviewsGuitar.com is a premier resource for guitarists of all levels. Our team s
 - **Best pedals:** [Boss DS-1 Distortion Pedal](https://reviewsguitar.com/reviews/accessories-3) - *$62.00*
 - **Best professional:** [PRS John Mayer SE Silver Sky](https://reviewsguitar.com/reviews/electric-3) - *$849.00*
 - **Best books:** [Hal Leonard Guitar Method Book](https://reviewsguitar.com/reviews/learning-1) - *$24.99*
-- **Best apps:** [Fender Play 12-Month Subscription](https://reviewsguitar.com/reviews/learning-3) - *$89.99*
-- **Best courses:** [Guitar Tricks Annual Membership](https://reviewsguitar.com/reviews/learning-4) - *$179.99*
-- **Best comparisons:** [Fender Player Stratocaster vs Telecaster](https://reviewsguitar.com/reviews/buying-1) - *$849.99*
+- **Best comparisons:** [Acoustic vs Electric Starter Guitars](https://reviewsguitar.com/reviews/buying-2) - *$250 - $350*
 - **Best stands:** [Hercules GS414B PLUS Guitar Stand](https://reviewsguitar.com/reviews/accessories-4) - *$52.99*
 - **Best kits:** [NERECNDENS 66PCS Guitar Accessories Kit](https://reviewsguitar.com/reviews/accessories-6) - *$21.99*
 - **Best capos:** [WINGO Professional Guitar Capo](https://reviewsguitar.com/reviews/accessories-8) - *$10.99*

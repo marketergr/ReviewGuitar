@@ -24,7 +24,7 @@ function generateLLMs() {
 > **Goal:** Provide expert, unbiased, and data-driven reviews for acoustic and electric guitars, pedals, and learning resources.
 
 ## About Us
-ReviewsGuitar.com is a premier resource for guitarists of all levels. Our team spends hours bench-testing gear so you don't have to.
+ReviewsGuitar.com is a resource for guitarists of all levels, offering reviews, comparisons, and buying guides for guitars, gear, and learning resources.
 
 ## Top Guitar Recommendations (TL;DR)
 `;

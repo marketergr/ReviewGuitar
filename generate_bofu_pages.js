@@ -247,7 +247,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
             <span class="bofu-badge">${data.type.toUpperCase()} GUIDE</span>
             <h1 class="bofu-intent-header">${data.keyword.replace(/\b\w/g, c => c.toUpperCase())}</h1>
             <p style="font-size: 1.1rem; color: #aaa; line-height: 1.7;">
-                Stop endlessly searching. We've taken the top gear matching <strong>${data.keyword}</strong> and put them through our rigorous 10+ hour bench-testing protocol. Here are the elite choices for 2026.
+                Stop endlessly searching. We've compared the top gear matching <strong>${data.keyword}</strong> on specs, real-world value, and player feedback. Here are our top choices for 2026.
             </p>
             <p style="font-size: 0.85rem; color: #666; margin-top: 1rem; border-top: 1px solid #333; padding-top: 0.5rem;">
                 <em>Disclosure: As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.</em>

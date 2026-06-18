@@ -63,6 +63,15 @@ function getCloakedLink(amazonLink) {
     return amazonLink; // Raw direct link to bypass AdBlockers
 }
 
+// Convert a lowercase keyword phrase into a readable headline (Title Case,
+// minor words lowercased) so headings/titles stop shouting in ALL CAPS.
+function toTitleCase(str) {
+    const minor = new Set(['a','an','the','and','but','or','nor','for','on','at','to','by','in','of','up','vs','via','with']);
+    return String(str).toLowerCase().split(/\s+/).map((w, i) =>
+        (i === 0 || !minor.has(w)) ? w.charAt(0).toUpperCase() + w.slice(1) : w
+    ).join(' ');
+}
+
 // Load AI Cache
 let contentCache = {};
 if (fs.existsSync('content_cache.json')) {
@@ -113,10 +122,9 @@ function generateDeepContent(keyword, silo, category) {
 
             <h3>3. Final Verdict for ${year}</h3>
             <p>
-                Ultimately, ${formattedKeyword} remains a highly viable space for both advancing learners and seasoned pros. 
-                By aligning your specific musical goals with the technical realities of these products, you ensure an investment 
-                that inspires continuous play. Review our Editor's Choice selections below, which have been filtered through 
-                our rigorous 10+ hour bench-testing protocol.
+                Ultimately, this category remains a strong choice for both advancing learners and seasoned players.
+                By aligning your specific musical goals with the technical realities of these products, you make a purchase
+                that supports continuous play. Review our selections below.
             </p>
         </article>
     `;
@@ -171,10 +179,10 @@ function generateURL(silo, category, keyword) {
 }
 
 function generateMetaTags(keyword, silo, category, pageType = "landing") {
-    let title = `${keyword.toUpperCase()} | ReviewsGuitar.com`;
-    if (title.length > 65) title = keyword.toUpperCase();
-    if (title.length > 65) title = title.substring(0, 65);
-    let description = `Expert reviews and buying guides for ${keyword}. Find the elite deals on premium guitars and accessories.`;
+    const kwTitle = toTitleCase(keyword);
+    let title = `${kwTitle} | ReviewsGuitar.com`;
+    if (title.length > 60) title = kwTitle;
+    let description = `Expert reviews and buying guides for ${keyword}, with specs, pros and cons, and current prices to help you choose.`;
     
     return {
         title,
@@ -217,10 +225,6 @@ function renderProductGrid(filteredProducts, fileName) {
                     <img src="${p.image}" alt="${p.name}" class="product-img" data-pin-description="${p.name} — ${p.description}" data-pin-url="${BASE_URL}/go/${ASIN_TO_SLUG[p.amazonLink.match(/\/dp\/([A-Z0-9]{10})/)?.[1]] || ''}">
                 </div>
                 <div class="product-card-content">
-                    <div class="trust-badge-container">
-                        <span class="trust-badge">✓ ELITE VERIFIED</span>
-                        <span class="trust-badge">10+ HOURS TESTED</span>
-                    </div>
                     <span class="product-badge">${p.category.toUpperCase()} PICK</span>
                     <h3 class="product-title">${p.name}</h3>
                     <div class="product-rating">${'★'.repeat(Math.floor(p.rating))}${p.rating % 1 !== 0 ? '½' : ''} (${p.rating})</div>
@@ -525,7 +529,7 @@ ${schemaJson}
             <div style="position: absolute; inset: 0; background: url('${ogImage}') center/cover no-repeat; opacity: 0.12;"></div>
             <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
                 <span class="lf-section-label">${silo} · ${category}</span>
-                <h1>${keyword}</h1>
+                <h1>${toTitleCase(keyword)}</h1>
                 <p style="font-size: 1.15rem; color: var(--text-dim); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">${metaTags.description}</p>
                 <a href="#products" class="btn-amazon pinterest-cta">See Our Top Picks ↓</a>
             </div>
@@ -536,6 +540,7 @@ ${schemaJson}
                 <a href="../index.html">HOME</a> > ${silo} > ${category}
             </nav>
 
+            <!-- TODO(human): Add first-hand notes for this guide (hands-on impressions, action height/setup needed, who it genuinely suits) to strengthen first-hand experience signals. Current copy is general guidance. -->
             <div class="article-content">
                 ${aiArticle}
             </div>
@@ -545,23 +550,6 @@ ${schemaJson}
             </div>
 
             ${renderCrossSiloLinks(silo, "../")}
-
-            <div class="verdict-grid">
-                <div class="verdict-grid-box">
-                    <h3>TECHNICAL CALIBRATION</h3>
-                    <ul>
-                        <li>Professional Fretwork Alignment</li>
-                        <li>Optimal Action Configuration</li>
-                        <li>High-Fidelity Pickup Response</li>
-                    </ul>
-                </div>
-                <div class="verdict-grid-box">
-                    <h3>VERDICT</h3>
-                    <p>
-                        An essential benchmark for players seeking uncompromising quality in 2026.
-                    </p>
-                </div>
-            </div>
         </div>
     </main>
     ${getFooter("../")}

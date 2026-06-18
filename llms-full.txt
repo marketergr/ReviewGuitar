@@ -1,5 +1,5 @@
 # ReviewsGuitar.com - Complete Gear Database
-> **Last Updated:** 2026-06-11T09:51:00.799Z
+> **Last Updated:** 2026-06-18T17:37:24.401Z
 
 Below is the comprehensive list of all guitars, amps, pedals, and learning resources reviewed on ReviewsGuitar.com.
 
@@ -66,12 +66,6 @@ Below is the comprehensive list of all guitars, amps, pedals, and learning resou
 - **Price:** $899.00
 - **Key Feature:** Solid wood construction with a rich, full-bodied sound.
 - **Review Link:** [https://reviewsguitar.com/reviews/acoustic-3](https://reviewsguitar.com/reviews/acoustic-3)
-
-### Fender Player Stratocaster
-- **Brand:** undefined
-- **Price:** $849.99
-- **Key Feature:** The quintessential electric guitar.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-1](https://reviewsguitar.com/reviews/electric-1)
 
 ### Fender Player II Stratocaster
 - **Brand:** undefined
@@ -159,12 +153,6 @@ Below is the comprehensive list of all guitars, amps, pedals, and learning resou
 - **Key Feature:** A working professional's acoustic.
 - **Review Link:** [https://reviewsguitar.com/reviews/acoustic-4](https://reviewsguitar.com/reviews/acoustic-4)
 
-### Gibson Les Paul Standard '60s
-- **Brand:** undefined
-- **Price:** $2,799.00
-- **Key Feature:** The return of the king.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-7](https://reviewsguitar.com/reviews/electric-7)
-
 ### Taylor 314ce Studio
 - **Brand:** undefined
 - **Price:** $1,999.00
@@ -176,12 +164,6 @@ Below is the comprehensive list of all guitars, amps, pedals, and learning resou
 - **Price:** $849.00
 - **Key Feature:** John Mayer's signature tone made accessible.
 - **Review Link:** [https://reviewsguitar.com/reviews/electric-11](https://reviewsguitar.com/reviews/electric-11)
-
-### Gibson SG Standard
-- **Brand:** undefined
-- **Price:** $1,799.00
-- **Key Feature:** The rock monster.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-12](https://reviewsguitar.com/reviews/electric-12)
 
 ### Martin D-18 Standard Series
 - **Brand:** undefined
@@ -209,29 +191,7 @@ Below is the comprehensive list of all guitars, amps, pedals, and learning resou
 - **Key Feature:** Companion books to the world's most popular online guitar course.
 - **Review Link:** [https://reviewsguitar.com/reviews/learning-2](https://reviewsguitar.com/reviews/learning-2)
 
-## Category: APPS
-
-### Fender Play 12-Month Subscription
-- **Brand:** undefined
-- **Price:** $89.99
-- **Key Feature:** The ultimate learning app from the biggest name in guitars.
-- **Review Link:** [https://reviewsguitar.com/reviews/learning-3](https://reviewsguitar.com/reviews/learning-3)
-
-## Category: COURSES
-
-### Guitar Tricks Annual Membership
-- **Brand:** undefined
-- **Price:** $179.99
-- **Key Feature:** One of the oldest and most comprehensive online courses available.
-- **Review Link:** [https://reviewsguitar.com/reviews/learning-4](https://reviewsguitar.com/reviews/learning-4)
-
 ## Category: COMPARISONS
-
-### Fender Player Stratocaster vs Telecaster
-- **Brand:** undefined
-- **Price:** $849.99
-- **Key Feature:** The ultimate comparison: The versatile contoured Stratocaster against the punchy, rock-solid Telecaster.
-- **Review Link:** [https://reviewsguitar.com/reviews/buying-1](https://reviewsguitar.com/reviews/buying-1)
 
 ### Acoustic vs Electric Starter Guitars
 - **Brand:** undefined

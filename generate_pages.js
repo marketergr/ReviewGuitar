@@ -3,6 +3,9 @@ const structure = JSON.parse(fs.readFileSync('site-structure.json', 'utf8'));
 const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
 let pageCount = 0;
 
+// Proper Title Case (lowercases first, so it also fixes ALL-CAPS input).
+const toTitleCase = str => String(str).toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+
 // Load central configuration
 let config = { amazonTrackingId: "reviewsguitar-20", pinterestTagId: "", pinterestDomainVerify: "" };
 if (fs.existsSync('config.json')) {
@@ -77,9 +80,9 @@ function generateDeepContent(keyword, silo) {
 
     // Diversified content blocks to avoid "footprint"
     const intros = [
-        `In ${year}, the market for <strong>${formattedKeyword}</strong> has reached a tipping point where professional specifications are becoming standard in intermediate price points. Our technical audit analyzes how this shift impacts your long-term investment.`,
-        `Selecting <strong>${formattedKeyword}</strong> requires a deep understanding of both material science and acoustic engineering. In this ${year} guide, we bench-test the top contenders to see which models truly deserve the 'Elite' designation.`,
-        `The search for the perfect <strong>${formattedKeyword}</strong> often leads to a trade-off between vintage character and modern reliability. Our editors have spent 50+ hours analyzing the ${year} lineup to find the outliers that offer genuine professional performance.`
+        `In ${year}, the market for <strong>${formattedKeyword}</strong> has reached a tipping point where professional specifications are becoming standard at intermediate price points. This guide analyzes how that shift affects your long-term value.`,
+        `Choosing <strong>${formattedKeyword}</strong> means weighing build materials, playability, and reliability. This ${year} guide compares the top contenders so you can match the right option to your needs.`,
+        `The search for the right <strong>${formattedKeyword}</strong> often comes down to a trade-off between vintage character and modern reliability. This ${year} guide highlights the options that offer genuine value.`
     ];
 
     const intro = intros[Math.floor(Math.random() * intros.length)];
@@ -90,58 +93,45 @@ function generateDeepContent(keyword, silo) {
                 ${intro}
             </p>
 
-            <h3>1. Technical Architecture & Component Analysis</h3>
+            <!-- TODO(human): Add first-hand notes for this category (gear you've owned/played, setup quirks, who each option suits). The guidance below is general; demonstrated first-hand experience is what Google's reviews system rewards. -->
+
+            <h3>1. What to Look For</h3>
             <p>
-                When evaluating ${formattedKeyword}, we look beyond the aesthetic appointments. Our analysis focuses on the <strong>Structural Integrity Matrix</strong>: fretwork precision, nut material densities, and internal bracing architecture (for acoustics) or electronic shielding (for electrics). In the ${year} landscape, manufacturing tolerances have tightened, yet the delta between "good" and "exceptional" remains significant.
+                Look beyond the spec sheet to build quality and consistency: fretwork and nut slotting on guitars, materials and connectors on cables, and component quality on electronics. Modern manufacturing tolerances are tighter than ever, but the gap between "good" and "excellent" still comes down to the details.
             </p>
 
             <div class="expert-tip">
-                <strong>Expert Evaluation Pillars</strong>
+                <strong>How to compare</strong>
                 <ul>
-                    <li>
-                        <strong>Harmonic Resonance:</strong> Measuring the fundamental vs. overtone sustain across the frequency spectrum.
-                    </li>
-                    <li>
-                        <strong>Ergonomic Velocity:</strong> Assessing the neck-to-hand interface and weight distribution for long-session comfort.
-                    </li>
-                    <li>
-                        <strong>Market Appreciation:</strong> Analyzing the brand's secondary market stability and component longevity.
-                    </li>
+                    <li><strong>Build &amp; materials:</strong> Are the core components durable and well finished for the price?</li>
+                    <li><strong>Playability &amp; usability:</strong> Is it comfortable and reliable for long sessions?</li>
+                    <li><strong>Value over time:</strong> Will it hold up, and does the price match the performance?</li>
                 </ul>
             </div>
 
-            <h3>2. The Luthier's Perspective: Bench-Testing ${year} Models</h3>
+            <h3>2. Build Quality &amp; Materials</h3>
             <p>
-                Our lead technician, Julian Vane, recently benchmarked the current ${formattedKeyword} selection against historical 1960s standards. What we found was startling: the <strong>Computer Numerical Control (CNC)</strong> precision used in modern production lines has virtually eliminated the "lemon" factor that plagued early eras. However, the soul of the instrument still depends on the final hand-finish. We specifically look for "rolled" fretboard edges and hand-slotted nuts, features that separate professional tools from mass-produced toys.
-            </p>
-            <p>
-                During our 20-hour stress test, we subjected several ${formattedKeyword} units to humidity cycling (40% to 65% RH). This revealed which manufacturers are using properly kiln-dried tonewoods and which are rushing the curing process. Stability in the truss-rod response is a non-negotiable metric for any gear we endorse on this platform.
+                CNC precision in modern production lines has largely eliminated the inconsistency of older eras, but hand-finishing still matters — rolled fretboard edges and properly cut nuts separate genuinely good instruments from rushed ones. On acoustics, a solid top generally opens up and sounds better over time; on electrics, shielding and hardware quality drive long-term reliability.
             </p>
 
-            <h3>3. Tonewood Science & Harmonic Mapping</h3>
+            <h3>3. Tonewoods &amp; Sound</h3>
             <p>
-                The frequency response of ${formattedKeyword} is largely dictated by the density of the primary timbers used in construction. For ${year}, we are seeing a shift toward sustainable alternatives like Pau Ferro and Roasted Maple, which often offer superior stability over traditional Rosewood in intermediate categories. In our spectrum analysis, these "torrefied" woods exhibit a more immediate transient response, which musicians often describe as a "played-in" feel.
-            </p>
-            <p>
-                We utilize high-fidelity FFT analyzers to map the harmonic content of these instruments. A professional-grade ${formattedKeyword} should show a rich distribution of even-order harmonics, providing that "creamy" sustain that session players demand. If an instrument shows too much high-frequency noise without a solid fundamental, it fails our "Studio Readiness" benchmark.
+                For guitars, the timbers used shape the frequency response. Sustainable choices like Pau Ferro and roasted maple often offer better stability than traditional rosewood at intermediate price points, and torrefied ("roasted") woods tend to feel "played-in" sooner. Match the wood and body style to the sound you want rather than chasing a spec.
             </p>
 
-            <h3>4. Maintenance & Long-Term Performance</h3>
+            <h3>4. Maintenance &amp; Longevity</h3>
             <p>
-                Owning ${formattedKeyword} is a commitment to maintenance. To ensure your instrument retains its technical calibration, we recommend a semi-annual setup by a qualified luthier. However, the instruments we've selected below feature "Maintenance-Friendly Architecture"—high-quality hardware that won't strip or corrode after a year of heavy use.
-            </p>
-            <p>
-                Key maintenance check-points for ${formattedKeyword} in ${year}:
+                A little maintenance keeps any instrument performing. Guitars benefit from a semi-annual setup; key check-points:
             </p>
             <ul>
-                <li><strong>Fret Polishing:</strong> Keeping the contact points mirror-smooth reduces string friction during bends.</li>
-                <li><strong>Nut Lubrication:</strong> Using a graphite or PTFE-based lubricant prevents "pinging" and tuning instability.</li>
-                <li><strong>Electronics Cleaning:</strong> For electric models, using a residue-free contact cleaner ensures noiseless signal switching.</li>
+                <li><strong>Fret polishing:</strong> Smooth contact points reduce friction on bends.</li>
+                <li><strong>Nut lubrication:</strong> A graphite or PTFE-based lubricant prevents "pinging" and tuning drift.</li>
+                <li><strong>Electronics cleaning:</strong> On electric models, a residue-free contact cleaner keeps switching noise-free.</li>
             </ul>
 
-            <h3>5. Final Buying Strategy</h3>
+            <h3>5. Buying Strategy</h3>
             <p>
-                Don't buy <strong>${formattedKeyword}</strong> based on marketing specifications alone. Focus on the <em>dynamic range</em>—the instrument's ability to respond to delicate touch as well as aggressive play. Our top selections below represent the peak performers in this category, filtered through our rigorous real-world stage and studio testing. We've optimized this list for ${year} to ensure you're getting the best value for your professional investment.
+                Don't buy on marketing specs alone. Focus on dynamic range — how the instrument responds to both delicate and aggressive playing — and on whether it genuinely fits how and what you play. Our selections below are the standouts in this category for ${year}.
             </p>
         </article>
     `;
@@ -202,7 +192,7 @@ function getHeader(basePath, title, breadcrumbs) {
             <nav style="font-size: 0.8rem; color: #666; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">
                 <a href="/" style="color: #666; text-decoration: none;">HOME</a> ${breadcrumbs}
             </nav>
-            <h1 style="font-size: 3rem; margin-bottom: 3rem;">${title}</h1>
+            <h1 style="font-size: 3rem; margin-bottom: 3rem;">${toTitleCase(title)}</h1>
     `;
 }
 
@@ -259,10 +249,6 @@ function renderProductGrid(filteredProducts, pageUrl) {
                          decoding="async">
                 </div>
                 <div class="product-card-content">
-                    <div class="trust-badge-container">
-                        <span class="trust-badge">✓ ELITE VERIFIED</span>
-                        <span class="trust-badge">10+ HOURS TESTED</span>
-                    </div>
                     <span class="product-badge">${p.category.toUpperCase()} PICK</span>
                     <h3 class="product-title">${p.name}</h3>
                     <div class="product-rating">${'★'.repeat(Math.floor(p.rating))}${p.rating % 1 !== 0 ? '½' : ''} (${p.rating})</div>
