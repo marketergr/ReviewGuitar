@@ -191,7 +191,7 @@ function generateComparisonPageHtml(pA, pB, silo, fileName, relativePath) {
     const slug = `${slugify(pA.name)}-vs-${slugify(pB.name)}`;
     const seoTitle = getSeoTitle(pA, pB);
     const seoDescription = getSeoDescription(pA, pB);
-    const pageUrl = `https://reviewsguitar.com/${relativePath}/${fileName}`;
+    const pageUrl = `https://reviewsguitar.com/${relativePath}/${slug}`;
     
     // Parse price amount for Rich Pins
     const priceAmountA = parseFloat(pA.price.replace(/[^0-9.]/g, '')) || 0.00;
@@ -210,7 +210,8 @@ function generateComparisonPageHtml(pA, pB, silo, fileName, relativePath) {
     <meta property="og:price:amount" content="${richPinPrice > 0 ? richPinPrice.toFixed(2) : '0.00'}">
     <meta property="og:price:currency" content="USD">
     <meta property="og:availability" content="instock">
-    <meta property="article:published_time" content="${new Date().toISOString()}">
+    <meta property="article:published_time" content="2026-06-20T00:00:00.000Z">
+    <meta property="article:modified_time" content="${new Date().toISOString()}">
     <meta property="article:section" content="${silo}">
     <meta property="article:tag" content="guitar, ${silo}, comparison, ${new Date().getFullYear()}">
     <meta name="pinterest:description" content="${seoDescription}">
