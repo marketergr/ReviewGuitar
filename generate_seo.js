@@ -457,19 +457,20 @@ function generateLandingPage(silo, category, keyword, metaTags, fileName) {
     <title>${metaTags.title}</title>
     <meta name="description" content="${metaTags.description}">
     <meta name="author" content="${AUTHOR_META}">
-    <link rel="canonical" href="https://reviewsguitar.com/pages/${fileName}">
+    <link rel="canonical" href="${metaTags.og_url}">
     ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}
     <!-- Open Graph / Pinterest Rich Pins -->
     <meta property="og:type" content="product">
     <meta property="og:title" content="${metaTags.title}">
     <meta property="og:description" content="${metaTags.description}">
     <meta property="og:image" content="${ogImage}">
-    <meta property="og:url" content="https://reviewsguitar.com/pages/${fileName}">
+    <meta property="og:url" content="${metaTags.og_url}">
     <meta property="og:site_name" content="ReviewsGuitar.com">
     <meta property="og:price:amount" content="${productPrice > 0 ? productPrice.toFixed(2) : '0.00'}">
     <meta property="og:price:currency" content="USD">
     <meta property="og:availability" content="instock">
-    <meta property="article:published_time" content="${new Date().toISOString()}">
+    <meta property="article:published_time" content="2026-06-20T00:00:00.000Z">
+    <meta property="article:modified_time" content="${new Date().toISOString()}">
     <meta property="article:section" content="${silo}">
     <meta property="article:tag" content="guitar, ${silo}, ${category}, review, ${new Date().getFullYear()}">
     <!-- Pinterest specific -->
