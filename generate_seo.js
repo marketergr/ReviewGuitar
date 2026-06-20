@@ -258,7 +258,7 @@ function renderProductGrid(filteredProducts, fileName) {
         ${filteredProducts.map(p => `
             <div class="product-card">
                 <div class="product-img-container">
-                    <img src="${p.image}" alt="${p.name}" class="product-img" data-pin-description="${p.name} — ${p.description}" data-pin-url="${BASE_URL}/pages/${fileName}">
+                    <img src="${p.image}" alt="${p.name}" class="product-img" loading="lazy" decoding="async" data-pin-description="${p.name} — ${p.description}" data-pin-url="${BASE_URL}/pages/${fileName}">
                 </div>
                 <div class="product-card-content">
                     <span class="product-badge">${p.category.toUpperCase()} PICK</span>
@@ -348,7 +348,7 @@ function renderComparisonFeature(products, fileName) {
                 ${products.slice(2).map(p => `
                     <div class="product-card">
                         <div class="product-img-container">
-                            <img src="${p.image}" alt="${p.name}" class="product-img">
+                            <img src="${p.image}" alt="${p.name}" class="product-img" loading="lazy" decoding="async">
                         </div>
                         <div class="product-card-content">
                             <h4 class="product-title">${p.name}</h4>
