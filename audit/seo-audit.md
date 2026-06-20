@@ -1,6 +1,6 @@
 # SEO Audit — reviewsguitar.com
 
-_Generated 2026-06-18 · branch `seo-remediation` · 413 pages audited (read-only)._
+_Generated 2026-06-20 · branch `seo-remediation` · 413 pages audited (read-only)._
 
 > Word counts are visible-text approximations (scripts/styles/tags stripped). "kw" = title phrase minus brand; kwInBody = exact-match repeats in visible text.
 
@@ -25,8 +25,6 @@ _Generated 2026-06-18 · branch `seo-remediation` · 413 pages audited (read-onl
 - underscore-url: **147**
 - thin: **101**
 - aggregateRating: **121**
-- filler-calibration: **1**
-- editorial-team-author: **5**
 - kw-stuffed: **33**
 - no-title: **39**
 - title-long: **1**
@@ -373,10 +371,6 @@ _Generated 2026-06-18 · branch `seo-remediation` · 413 pages audited (read-onl
 - pages/acoustic_advanced_high_end_acoustic_guitar_reviews.html
 - …and 61 more (see seo-audit.json)
 
-### "TECHNICAL CALIBRATION" filler (1)
-
-- about.html
-
 ## Duplicate titles (top 30 groups)
 
 
@@ -395,179 +389,179 @@ _Generated 2026-06-18 · branch `seo-remediation` · 413 pages audited (read-onl
 
 | Path | Words | Title (len) | Desc len | Canonical | Flags |
 |---|---|---|---|---|---|
-| about.html | 544 | 55 | 129 | …/about | filler-calibration editorial-team-author |
-| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | 371 | 48 | 138 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-premium-picks-sampler.html | 372 | 64 | 154 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-telepath-wireless-system.html | 370 | 51 | 141 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-perris-leathers-jacquard-strap.html | 371 | 67 | 157 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-wingo-professional-guitar-capo.html | 365 | 59 | 149 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
-| collections/accessories/amps.html | 647 | 54 | 122 | …/collections/accessories/amps | aggregateRating kw-stuffed(4x) |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-amazon-basics-a-frame-guitar-stand.html | 366 | 45 | 135 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-ernie-ball-regular-slinky-strings.html | 361 | 57 | 147 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-fender-fct-2-clip-on-tuner.html | 362 | 67 | 160 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-fender-premium-picks-sampler.html | 361 | 69 | 142 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-fender-telepath-wireless-system.html | 347 | 39 | 129 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-hercules-gs414b-plus-guitar-stand.html | 347 | 44 | 134 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-hercules-gs414b-plus-guitar-stand.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-nerecndens-66pcs-guitar-accessories-kit.html | 373 | 56 | 146 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-perris-leathers-jacquard-strap.html | 360 | 55 | 145 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/boss-ds-1-distortion-pedal-vs-wingo-professional-guitar-capo.html | 356 | 71 | 137 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
-| collections/accessories/cables.html | 644 | 51 | 119 | …/collections/accessories/cables | aggregateRating kw-stuffed(4x) |
-| collections/accessories/daddario-xs-coated-strings-vs-amazon-basics-a-frame-guitar-stand.html | 358 | 48 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-boss-ds-1-distortion-pedal.html | 342 | 68 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-boss-ds-1-distortion-pedal.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-ernie-ball-regular-slinky-strings.html | 353 | 60 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-fender-fct-2-clip-on-tuner.html | 354 | 68 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-fender-premium-picks-sampler.html | 353 | 70 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-fender-telepath-wireless-system.html | 349 | 42 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-hercules-gs414b-plus-guitar-stand.html | 350 | 47 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-hercules-gs414b-plus-guitar-stand.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | 365 | 59 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-perris-leathers-jacquard-strap.html | 352 | 58 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-tc-electronic-polytune-3.html | 345 | 66 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-tc-electronic-polytune-3.html | canonical-has-.html |
-| collections/accessories/daddario-xs-coated-strings-vs-wingo-professional-guitar-capo.html | 345 | 50 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
-| collections/accessories/ernie-ball-regular-slinky-strings-vs-amazon-basics-a-frame-guitar-stand.html | 373 | 69 | 159 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
-| collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-fct-2-clip-on-tuner.html | 365 | 60 | 150 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-premium-picks-sampler.html | 365 | 65 | 122 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-telepath-wireless-system.html | 364 | 63 | 153 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/ernie-ball-regular-slinky-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | 379 | 69 | 126 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
-| collections/accessories/ernie-ball-regular-slinky-strings-vs-perris-leathers-jacquard-strap.html | 366 | 68 | 125 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/ernie-ball-regular-slinky-strings-vs-wingo-professional-guitar-capo.html | 370 | 71 | 117 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
-| collections/accessories/fender-fct-2-clip-on-tuner-vs-fender-telepath-wireless-system.html | 361 | 42 | 132 | …/collections/accessories/fender-fct-2-clip-on-tuner-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/fender-fct-2-clip-on-tuner-vs-perris-leathers-jacquard-strap.html | 362 | 58 | 148 | …/collections/accessories/fender-fct-2-clip-on-tuner-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/fender-premium-picks-sampler-vs-fender-fct-2-clip-on-tuner.html | 365 | 69 | 145 | …/collections/accessories/fender-premium-picks-sampler-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/fender-premium-picks-sampler-vs-fender-telepath-wireless-system.html | 362 | 58 | 148 | …/collections/accessories/fender-premium-picks-sampler-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/fender-premium-picks-sampler-vs-perris-leathers-jacquard-strap.html | 362 | 63 | 120 | …/collections/accessories/fender-premium-picks-sampler-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-amazon-basics-a-frame-guitar-stand.html | 379 | 56 | 146 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-ernie-ball-regular-slinky-strings.html | 374 | 68 | 158 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | 371 | 47 | 137 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-premium-picks-sampler.html | 372 | 63 | 153 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-telepath-wireless-system.html | 360 | 50 | 140 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-nerecndens-66pcs-guitar-accessories-kit.html | 386 | 67 | 157 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-perris-leathers-jacquard-strap.html | 373 | 66 | 156 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-wingo-professional-guitar-capo.html | 366 | 58 | 148 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
-| collections/accessories/index.html | 422 | 32 | 131 | …/collections/accessories/ | aggregateRating kw-stuffed(6x) |
-| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-amazon-basics-a-frame-guitar-stand.html | 388 | 68 | 158 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
-| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-fct-2-clip-on-tuner.html | 381 | 59 | 149 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-premium-picks-sampler.html | 391 | 64 | 121 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-telepath-wireless-system.html | 380 | 62 | 152 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-perris-leathers-jacquard-strap.html | 390 | 67 | 124 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-wingo-professional-guitar-capo.html | 385 | 70 | 160 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
-| collections/accessories/pedals.html | 586 | 60 | 128 | …/collections/accessories/pedals | aggregateRating kw-stuffed(4x) |
-| collections/accessories/perris-leathers-jacquard-strap-vs-fender-telepath-wireless-system.html | 364 | 61 | 151 | …/collections/accessories/perris-leathers-jacquard-strap-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/strings.html | 657 | 52 | 120 | …/collections/accessories/strings | aggregateRating kw-stuffed(4x) |
-| collections/accessories/tc-electronic-polytune-3-vs-amazon-basics-a-frame-guitar-stand.html | 371 | 60 | 150 | …/collections/accessories/tc-electronic-polytune-3-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-boss-ds-1-distortion-pedal.html | 352 | 65 | 158 | …/collections/accessories/tc-electronic-polytune-3-vs-boss-ds-1-distortion-pedal.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-ernie-ball-regular-slinky-strings.html | 365 | 61 | 118 | …/collections/accessories/tc-electronic-polytune-3-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-fender-fct-2-clip-on-tuner.html | 365 | 65 | 158 | …/collections/accessories/tc-electronic-polytune-3-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-fender-premium-picks-sampler.html | 364 | 67 | 160 | …/collections/accessories/tc-electronic-polytune-3-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-fender-telepath-wireless-system.html | 354 | 70 | 144 | …/collections/accessories/tc-electronic-polytune-3-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-hercules-gs414b-plus-guitar-stand.html | 362 | 59 | 149 | …/collections/accessories/tc-electronic-polytune-3-vs-hercules-gs414b-plus-guitar-stand.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-nerecndens-66pcs-guitar-accessories-kit.html | 378 | 71 | 117 | …/collections/accessories/tc-electronic-polytune-3-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-perris-leathers-jacquard-strap.html | 365 | 70 | 160 | …/collections/accessories/tc-electronic-polytune-3-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/accessories/tc-electronic-polytune-3-vs-wingo-professional-guitar-capo.html | 359 | 69 | 152 | …/collections/accessories/tc-electronic-polytune-3-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
-| collections/accessories/tuners.html | 655 | 46 | 114 | …/collections/accessories/tuners | aggregateRating kw-stuffed(4x) |
-| collections/accessories/wingo-professional-guitar-capo-vs-fender-fct-2-clip-on-tuner.html | 361 | 71 | 140 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
-| collections/accessories/wingo-professional-guitar-capo-vs-fender-premium-picks-sampler.html | 359 | 66 | 156 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-premium-picks-sampler.html | canonical-has-.html |
-| collections/accessories/wingo-professional-guitar-capo-vs-fender-telepath-wireless-system.html | 357 | 53 | 143 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-telepath-wireless-system.html | canonical-has-.html |
-| collections/accessories/wingo-professional-guitar-capo-vs-perris-leathers-jacquard-strap.html | 358 | 69 | 159 | …/collections/accessories/wingo-professional-guitar-capo-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
-| collections/acoustic/best-for-beginners.html | 432 | 56 | 121 | …/collections/acoustic/best-for-beginners | aggregateRating |
-| collections/acoustic/best-under-500.html | 721 | 58 | 123 | …/collections/acoustic/best-under-500 | aggregateRating kw-stuffed(4x) |
-| collections/acoustic/care-guide.html | 653 | 52 | 117 | …/collections/acoustic/care-guide | aggregateRating kw-stuffed(4x) |
-| collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-10e-road-series.html | 336 | 64 | 157 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-10e-road-series.html | canonical-has-.html |
-| collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-18-standard-series.html | 345 | 67 | 160 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-18-standard-series.html | canonical-has-.html |
-| collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-k-deluxe.html | 333 | 61 | 154 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
-| collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-plus-acoustic-guitar.html | 343 | 45 | 135 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-plus-acoustic-guitar.html | canonical-has-.html |
-| collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-314ce-studio.html | 334 | 59 | 152 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-314ce-studio.html | canonical-has-.html |
-| collections/acoustic/fender-cd-60s-dreadnought-vs-yamaha-fg830-acoustic-guitar.html | 342 | 68 | 130 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
-| collections/acoustic/hybrid-guide.html | 665 | 59 | 124 | …/collections/acoustic/hybrid-guide | aggregateRating kw-stuffed(4x) |
-| collections/acoustic/index.html | 508 | 37 | 133 | …/collections/acoustic/ | aggregateRating kw-stuffed(9x) |
-| collections/acoustic/martin-d-10e-road-series-vs-martin-d-18-standard-series.html | 353 | 66 | 159 | …/collections/acoustic/martin-d-10e-road-series-vs-martin-d-18-standard-series.html | canonical-has-.html |
-| collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-k-deluxe.html | 341 | 60 | 153 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
-| collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-plus-acoustic-guitar.html | 350 | 44 | 134 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-plus-acoustic-guitar.html | canonical-has-.html |
-| collections/acoustic/martin-d-10e-road-series-vs-taylor-314ce-studio.html | 342 | 58 | 151 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-314ce-studio.html | canonical-has-.html |
-| collections/acoustic/martin-d-10e-road-series-vs-yamaha-fg830-acoustic-guitar.html | 359 | 67 | 160 | …/collections/acoustic/martin-d-10e-road-series-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
-| collections/acoustic/martin-d-18-standard-series-vs-taylor-214ce-k-deluxe.html | 357 | 63 | 156 | …/collections/acoustic/martin-d-18-standard-series-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
-| collections/acoustic/premium-guide.html | 663 | 61 | 126 | …/collections/acoustic/premium-guide | aggregateRating kw-stuffed(4x) |
-| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-martin-d-18-standard-series.html | 358 | 43 | 133 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-martin-d-18-standard-series.html | canonical-has-.html |
-| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 348 | 69 | 143 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
-| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-314ce-studio.html | 351 | 67 | 160 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-314ce-studio.html | canonical-has-.html |
-| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | 365 | 44 | 134 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
-| collections/acoustic/taylor-314ce-studio-vs-martin-d-18-standard-series.html | 347 | 61 | 154 | …/collections/acoustic/taylor-314ce-studio-vs-martin-d-18-standard-series.html | canonical-has-.html |
-| collections/acoustic/taylor-314ce-studio-vs-taylor-214ce-k-deluxe.html | 335 | 55 | 148 | …/collections/acoustic/taylor-314ce-studio-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
-| collections/acoustic/top-brands.html | 657 | 59 | 124 | …/collections/acoustic/top-brands | aggregateRating kw-stuffed(4x) |
-| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-fender-cd-60s-dreadnought.html | 342 | 68 | 130 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-fender-cd-60s-dreadnought.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-10e-road-series.html | 349 | 67 | 160 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-10e-road-series.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-18-standard-series.html | 358 | 70 | 128 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-18-standard-series.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 346 | 64 | 157 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-plus-acoustic-guitar.html | 355 | 44 | 134 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-plus-acoustic-guitar.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-314ce-studio.html | 347 | 62 | 155 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-314ce-studio.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | 354 | 71 | 129 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg830-acoustic-guitar-vs-martin-d-18-standard-series.html | 356 | 70 | 128 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-martin-d-18-standard-series.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 344 | 64 | 157 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
-| collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-314ce-studio.html | 345 | 62 | 155 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-314ce-studio.html | canonical-has-.html |
-| collections/bass/bass-buying-guide.html | 606 | 51 | 24 | …/collections/bass/bass-buying-guide | aggregateRating kw-stuffed(4x) |
-| collections/bass/fender-american-pro-ii-jazz-bass-vs-squier-classic-vibe-mustang-bass.html | 392 | 68 | 125 | …/collections/bass/fender-american-pro-ii-jazz-bass-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
-| collections/bass/index.html | 327 | 33 | 125 | …/collections/bass/ | aggregateRating kw-stuffed(6x) |
-| collections/bass/mustang-bass.html | 679 | 46 | 125 | …/collections/bass/mustang-bass | aggregateRating |
-| collections/bass/pro-jazz-bass.html | 624 | 47 | 126 | …/collections/bass/pro-jazz-bass | aggregateRating |
-| collections/buying/deals-guide.html | 628 | 50 | 113 | …/collections/buying/deals-guide | aggregateRating kw-stuffed(4x) |
-| collections/buying/fender-cd-60s-dreadnought-vs-epiphone-sg-standard-61.html | 339 | 64 | 57 | …/collections/buying/fender-cd-60s-dreadnought-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/buying/fender-cd-60s-dreadnought-vs-jackson-js22-dinky.html | 332 | 58 | 151 | …/collections/buying/fender-cd-60s-dreadnought-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/buying/fender-cd-60s-dreadnought-vs-squier-affinity-telecaster.html | 331 | 66 | 159 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-affinity-telecaster.html | canonical-has-.html |
-| collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-60s-stratocaster.html | 349 | 65 | 44 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-mustang-bass.html | 353 | 60 | 150 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
-| collections/buying/fender-cd-60s-dreadnought-vs-yamaha-pacifica-112v.html | 328 | 60 | 153 | …/collections/buying/fender-cd-60s-dreadnought-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/buying/index.html | 402 | 34 | 128 | …/collections/buying/ | aggregateRating kw-stuffed(4x) |
-| collections/buying/online-vs-store.html | 638 | 47 | 110 | …/collections/buying/online-vs-store | aggregateRating kw-stuffed(4x) |
-| collections/buying/return-policy.html | 632 | 52 | 115 | …/collections/buying/return-policy | aggregateRating kw-stuffed(4x) |
-| collections/buying/squier-affinity-telecaster-vs-squier-classic-vibe-mustang-bass.html | 354 | 62 | 119 | …/collections/buying/squier-affinity-telecaster-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
-| collections/buying/squier-affinity-telecaster-vs-yamaha-fg830-acoustic-guitar.html | 343 | 69 | 143 | …/collections/buying/squier-affinity-telecaster-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
-| collections/buying/squier-classic-vibe-mustang-bass-vs-epiphone-sg-standard-61.html | 362 | 71 | 64 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/buying/squier-classic-vibe-mustang-bass-vs-jackson-js22-dinky.html | 366 | 65 | 158 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/buying/squier-classic-vibe-mustang-bass-vs-squier-classic-vibe-60s-stratocaster.html | 371 | 69 | 63 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-fg830-acoustic-guitar.html | 364 | 59 | 149 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
-| collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-pacifica-112v.html | 351 | 67 | 160 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/buying/where-to-buy.html | 634 | 46 | 109 | …/collections/buying/where-to-buy | aggregateRating kw-stuffed(4x) |
-| collections/buying/yamaha-fg800-acoustic-guitar-vs-epiphone-sg-standard-61.html | 352 | 67 | 60 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/buying/yamaha-fg800-acoustic-guitar-vs-jackson-js22-dinky.html | 345 | 61 | 154 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-affinity-telecaster.html | 344 | 69 | 143 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-affinity-telecaster.html | canonical-has-.html |
-| collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | 361 | 64 | 43 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-mustang-bass.html | 365 | 59 | 149 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
-| collections/buying/yamaha-fg800-acoustic-guitar-vs-yamaha-pacifica-112v.html | 340 | 63 | 156 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/buying/yamaha-fg830-acoustic-guitar-vs-epiphone-sg-standard-61.html | 349 | 67 | 60 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/buying/yamaha-fg830-acoustic-guitar-vs-jackson-js22-dinky.html | 354 | 61 | 154 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/buying/yamaha-fg830-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | 358 | 64 | 43 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/buying/yamaha-fg830-acoustic-guitar-vs-yamaha-pacifica-112v.html | 339 | 63 | 156 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/electric/amp-reviews.html | 674 | 53 | 118 | …/collections/electric/amp-reviews | aggregateRating kw-stuffed(4x) |
-| collections/electric/best-under-1000.html | 800 | 59 | 124 | …/collections/electric/best-under-1000 | aggregateRating kw-stuffed(4x) |
-| collections/electric/best-under-300.html | 657 | 58 | 123 | …/collections/electric/best-under-300 | aggregateRating kw-stuffed(4x) |
-| collections/electric/effects-pedals.html | 673 | 51 | 116 | …/collections/electric/effects-pedals | aggregateRating kw-stuffed(4x) |
-| collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61.html | 353 | 69 | 62 | …/collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/epiphone-les-paul-standard-60s-vs-fender-player-plus-telecaster.html | 351 | 63 | 120 | …/collections/electric/epiphone-les-paul-standard-60s-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| about.html | 333 | 59 | 123 | …/about | — |
+| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | 392 | 48 | 138 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-premium-picks-sampler.html | 393 | 64 | 154 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-telepath-wireless-system.html | 391 | 51 | 141 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-perris-leathers-jacquard-strap.html | 392 | 67 | 157 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/amazon-basics-a-frame-guitar-stand-vs-wingo-professional-guitar-capo.html | 386 | 59 | 149 | …/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
+| collections/accessories/amps.html | 673 | 54 | 122 | …/collections/accessories/amps | aggregateRating kw-stuffed(4x) |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-amazon-basics-a-frame-guitar-stand.html | 387 | 45 | 135 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-ernie-ball-regular-slinky-strings.html | 382 | 57 | 147 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-fender-fct-2-clip-on-tuner.html | 383 | 67 | 160 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-fender-premium-picks-sampler.html | 382 | 69 | 142 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-fender-telepath-wireless-system.html | 368 | 39 | 129 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-hercules-gs414b-plus-guitar-stand.html | 368 | 44 | 134 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-hercules-gs414b-plus-guitar-stand.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-nerecndens-66pcs-guitar-accessories-kit.html | 394 | 56 | 146 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-perris-leathers-jacquard-strap.html | 381 | 55 | 145 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/boss-ds-1-distortion-pedal-vs-wingo-professional-guitar-capo.html | 377 | 71 | 137 | …/collections/accessories/boss-ds-1-distortion-pedal-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
+| collections/accessories/cables.html | 667 | 51 | 119 | …/collections/accessories/cables | aggregateRating kw-stuffed(4x) |
+| collections/accessories/daddario-xs-coated-strings-vs-amazon-basics-a-frame-guitar-stand.html | 379 | 48 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-boss-ds-1-distortion-pedal.html | 363 | 68 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-boss-ds-1-distortion-pedal.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-ernie-ball-regular-slinky-strings.html | 374 | 60 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-fender-fct-2-clip-on-tuner.html | 375 | 68 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-fender-premium-picks-sampler.html | 374 | 70 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-fender-telepath-wireless-system.html | 370 | 42 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-hercules-gs414b-plus-guitar-stand.html | 371 | 47 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-hercules-gs414b-plus-guitar-stand.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | 386 | 59 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-perris-leathers-jacquard-strap.html | 373 | 58 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-tc-electronic-polytune-3.html | 366 | 66 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-tc-electronic-polytune-3.html | canonical-has-.html |
+| collections/accessories/daddario-xs-coated-strings-vs-wingo-professional-guitar-capo.html | 366 | 50 | 9 | …/collections/accessories/daddario-xs-coated-strings-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
+| collections/accessories/ernie-ball-regular-slinky-strings-vs-amazon-basics-a-frame-guitar-stand.html | 394 | 69 | 159 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
+| collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-fct-2-clip-on-tuner.html | 386 | 60 | 150 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-premium-picks-sampler.html | 386 | 65 | 122 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-telepath-wireless-system.html | 385 | 63 | 153 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/ernie-ball-regular-slinky-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | 400 | 69 | 126 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
+| collections/accessories/ernie-ball-regular-slinky-strings-vs-perris-leathers-jacquard-strap.html | 387 | 68 | 125 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/ernie-ball-regular-slinky-strings-vs-wingo-professional-guitar-capo.html | 391 | 71 | 117 | …/collections/accessories/ernie-ball-regular-slinky-strings-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
+| collections/accessories/fender-fct-2-clip-on-tuner-vs-fender-telepath-wireless-system.html | 382 | 42 | 132 | …/collections/accessories/fender-fct-2-clip-on-tuner-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/fender-fct-2-clip-on-tuner-vs-perris-leathers-jacquard-strap.html | 383 | 58 | 148 | …/collections/accessories/fender-fct-2-clip-on-tuner-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/fender-premium-picks-sampler-vs-fender-fct-2-clip-on-tuner.html | 386 | 69 | 145 | …/collections/accessories/fender-premium-picks-sampler-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/fender-premium-picks-sampler-vs-fender-telepath-wireless-system.html | 383 | 58 | 148 | …/collections/accessories/fender-premium-picks-sampler-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/fender-premium-picks-sampler-vs-perris-leathers-jacquard-strap.html | 383 | 63 | 120 | …/collections/accessories/fender-premium-picks-sampler-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-amazon-basics-a-frame-guitar-stand.html | 400 | 56 | 146 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-ernie-ball-regular-slinky-strings.html | 395 | 68 | 158 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | 392 | 47 | 137 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-premium-picks-sampler.html | 393 | 63 | 153 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-telepath-wireless-system.html | 381 | 50 | 140 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-nerecndens-66pcs-guitar-accessories-kit.html | 407 | 67 | 157 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-perris-leathers-jacquard-strap.html | 394 | 66 | 156 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/hercules-gs414b-plus-guitar-stand-vs-wingo-professional-guitar-capo.html | 387 | 58 | 148 | …/collections/accessories/hercules-gs414b-plus-guitar-stand-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
+| collections/accessories/index.html | 445 | 32 | 131 | …/collections/accessories/ | aggregateRating kw-stuffed(6x) |
+| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-amazon-basics-a-frame-guitar-stand.html | 409 | 68 | 158 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
+| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-fct-2-clip-on-tuner.html | 402 | 59 | 149 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-premium-picks-sampler.html | 412 | 64 | 121 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-telepath-wireless-system.html | 401 | 62 | 152 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-perris-leathers-jacquard-strap.html | 411 | 67 | 124 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-wingo-professional-guitar-capo.html | 406 | 70 | 160 | …/collections/accessories/nerecndens-66pcs-guitar-accessories-kit-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
+| collections/accessories/pedals.html | 609 | 60 | 128 | …/collections/accessories/pedals | aggregateRating kw-stuffed(4x) |
+| collections/accessories/perris-leathers-jacquard-strap-vs-fender-telepath-wireless-system.html | 385 | 61 | 151 | …/collections/accessories/perris-leathers-jacquard-strap-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/strings.html | 675 | 52 | 120 | …/collections/accessories/strings | aggregateRating kw-stuffed(4x) |
+| collections/accessories/tc-electronic-polytune-3-vs-amazon-basics-a-frame-guitar-stand.html | 392 | 60 | 150 | …/collections/accessories/tc-electronic-polytune-3-vs-amazon-basics-a-frame-guitar-stand.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-boss-ds-1-distortion-pedal.html | 373 | 65 | 158 | …/collections/accessories/tc-electronic-polytune-3-vs-boss-ds-1-distortion-pedal.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-ernie-ball-regular-slinky-strings.html | 386 | 61 | 118 | …/collections/accessories/tc-electronic-polytune-3-vs-ernie-ball-regular-slinky-strings.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-fender-fct-2-clip-on-tuner.html | 386 | 65 | 158 | …/collections/accessories/tc-electronic-polytune-3-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-fender-premium-picks-sampler.html | 385 | 67 | 160 | …/collections/accessories/tc-electronic-polytune-3-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-fender-telepath-wireless-system.html | 375 | 70 | 144 | …/collections/accessories/tc-electronic-polytune-3-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-hercules-gs414b-plus-guitar-stand.html | 383 | 59 | 149 | …/collections/accessories/tc-electronic-polytune-3-vs-hercules-gs414b-plus-guitar-stand.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-nerecndens-66pcs-guitar-accessories-kit.html | 399 | 71 | 117 | …/collections/accessories/tc-electronic-polytune-3-vs-nerecndens-66pcs-guitar-accessories-kit.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-perris-leathers-jacquard-strap.html | 386 | 70 | 160 | …/collections/accessories/tc-electronic-polytune-3-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/accessories/tc-electronic-polytune-3-vs-wingo-professional-guitar-capo.html | 380 | 69 | 152 | …/collections/accessories/tc-electronic-polytune-3-vs-wingo-professional-guitar-capo.html | canonical-has-.html |
+| collections/accessories/tuners.html | 673 | 46 | 114 | …/collections/accessories/tuners | aggregateRating kw-stuffed(4x) |
+| collections/accessories/wingo-professional-guitar-capo-vs-fender-fct-2-clip-on-tuner.html | 382 | 71 | 140 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-fct-2-clip-on-tuner.html | canonical-has-.html |
+| collections/accessories/wingo-professional-guitar-capo-vs-fender-premium-picks-sampler.html | 380 | 66 | 156 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-premium-picks-sampler.html | canonical-has-.html |
+| collections/accessories/wingo-professional-guitar-capo-vs-fender-telepath-wireless-system.html | 378 | 53 | 143 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-telepath-wireless-system.html | canonical-has-.html |
+| collections/accessories/wingo-professional-guitar-capo-vs-perris-leathers-jacquard-strap.html | 379 | 69 | 159 | …/collections/accessories/wingo-professional-guitar-capo-vs-perris-leathers-jacquard-strap.html | canonical-has-.html |
+| collections/acoustic/best-for-beginners.html | 455 | 56 | 121 | …/collections/acoustic/best-for-beginners | aggregateRating |
+| collections/acoustic/best-under-500.html | 749 | 58 | 123 | …/collections/acoustic/best-under-500 | aggregateRating kw-stuffed(4x) |
+| collections/acoustic/care-guide.html | 681 | 52 | 117 | …/collections/acoustic/care-guide | aggregateRating kw-stuffed(4x) |
+| collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-10e-road-series.html | 357 | 64 | 157 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-10e-road-series.html | canonical-has-.html |
+| collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-18-standard-series.html | 366 | 67 | 160 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-18-standard-series.html | canonical-has-.html |
+| collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-k-deluxe.html | 354 | 61 | 154 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
+| collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-plus-acoustic-guitar.html | 364 | 45 | 135 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-plus-acoustic-guitar.html | canonical-has-.html |
+| collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-314ce-studio.html | 355 | 59 | 152 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-314ce-studio.html | canonical-has-.html |
+| collections/acoustic/fender-cd-60s-dreadnought-vs-yamaha-fg830-acoustic-guitar.html | 362 | 68 | 130 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
+| collections/acoustic/hybrid-guide.html | 688 | 59 | 124 | …/collections/acoustic/hybrid-guide | aggregateRating kw-stuffed(4x) |
+| collections/acoustic/index.html | 531 | 37 | 133 | …/collections/acoustic/ | aggregateRating kw-stuffed(9x) |
+| collections/acoustic/martin-d-10e-road-series-vs-martin-d-18-standard-series.html | 374 | 66 | 159 | …/collections/acoustic/martin-d-10e-road-series-vs-martin-d-18-standard-series.html | canonical-has-.html |
+| collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-k-deluxe.html | 362 | 60 | 153 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
+| collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-plus-acoustic-guitar.html | 371 | 44 | 134 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-plus-acoustic-guitar.html | canonical-has-.html |
+| collections/acoustic/martin-d-10e-road-series-vs-taylor-314ce-studio.html | 363 | 58 | 151 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-314ce-studio.html | canonical-has-.html |
+| collections/acoustic/martin-d-10e-road-series-vs-yamaha-fg830-acoustic-guitar.html | 380 | 67 | 160 | …/collections/acoustic/martin-d-10e-road-series-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
+| collections/acoustic/martin-d-18-standard-series-vs-taylor-214ce-k-deluxe.html | 378 | 63 | 156 | …/collections/acoustic/martin-d-18-standard-series-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
+| collections/acoustic/premium-guide.html | 689 | 61 | 126 | …/collections/acoustic/premium-guide | aggregateRating kw-stuffed(4x) |
+| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-martin-d-18-standard-series.html | 379 | 43 | 133 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-martin-d-18-standard-series.html | canonical-has-.html |
+| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 369 | 69 | 143 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
+| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-314ce-studio.html | 372 | 67 | 160 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-314ce-studio.html | canonical-has-.html |
+| collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | 386 | 44 | 134 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
+| collections/acoustic/taylor-314ce-studio-vs-martin-d-18-standard-series.html | 368 | 61 | 154 | …/collections/acoustic/taylor-314ce-studio-vs-martin-d-18-standard-series.html | canonical-has-.html |
+| collections/acoustic/taylor-314ce-studio-vs-taylor-214ce-k-deluxe.html | 356 | 55 | 148 | …/collections/acoustic/taylor-314ce-studio-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
+| collections/acoustic/top-brands.html | 682 | 59 | 124 | …/collections/acoustic/top-brands | aggregateRating kw-stuffed(4x) |
+| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-fender-cd-60s-dreadnought.html | 362 | 68 | 130 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-fender-cd-60s-dreadnought.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-10e-road-series.html | 370 | 67 | 160 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-10e-road-series.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-18-standard-series.html | 379 | 70 | 128 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-martin-d-18-standard-series.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 367 | 64 | 157 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-plus-acoustic-guitar.html | 376 | 44 | 134 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-214ce-plus-acoustic-guitar.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-314ce-studio.html | 368 | 62 | 155 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-taylor-314ce-studio.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg800-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | 375 | 71 | 129 | …/collections/acoustic/yamaha-fg800-acoustic-guitar-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg830-acoustic-guitar-vs-martin-d-18-standard-series.html | 377 | 70 | 128 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-martin-d-18-standard-series.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 365 | 64 | 157 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | canonical-has-.html |
+| collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-314ce-studio.html | 366 | 62 | 155 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-314ce-studio.html | canonical-has-.html |
+| collections/bass/bass-buying-guide.html | 634 | 51 | 24 | …/collections/bass/bass-buying-guide | aggregateRating kw-stuffed(4x) |
+| collections/bass/fender-american-pro-ii-jazz-bass-vs-squier-classic-vibe-mustang-bass.html | 413 | 68 | 125 | …/collections/bass/fender-american-pro-ii-jazz-bass-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
+| collections/bass/index.html | 350 | 33 | 125 | …/collections/bass/ | aggregateRating kw-stuffed(6x) |
+| collections/bass/mustang-bass.html | 704 | 46 | 125 | …/collections/bass/mustang-bass | aggregateRating |
+| collections/bass/pro-jazz-bass.html | 645 | 47 | 126 | …/collections/bass/pro-jazz-bass | aggregateRating |
+| collections/buying/deals-guide.html | 654 | 50 | 113 | …/collections/buying/deals-guide | aggregateRating kw-stuffed(4x) |
+| collections/buying/fender-cd-60s-dreadnought-vs-epiphone-sg-standard-61.html | 360 | 64 | 57 | …/collections/buying/fender-cd-60s-dreadnought-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/buying/fender-cd-60s-dreadnought-vs-jackson-js22-dinky.html | 353 | 58 | 151 | …/collections/buying/fender-cd-60s-dreadnought-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/buying/fender-cd-60s-dreadnought-vs-squier-affinity-telecaster.html | 352 | 66 | 159 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-affinity-telecaster.html | canonical-has-.html |
+| collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-60s-stratocaster.html | 370 | 65 | 44 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-mustang-bass.html | 374 | 60 | 150 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
+| collections/buying/fender-cd-60s-dreadnought-vs-yamaha-pacifica-112v.html | 349 | 60 | 153 | …/collections/buying/fender-cd-60s-dreadnought-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/buying/index.html | 425 | 34 | 128 | …/collections/buying/ | aggregateRating kw-stuffed(4x) |
+| collections/buying/online-vs-store.html | 661 | 47 | 110 | …/collections/buying/online-vs-store | aggregateRating kw-stuffed(4x) |
+| collections/buying/return-policy.html | 655 | 52 | 115 | …/collections/buying/return-policy | aggregateRating kw-stuffed(4x) |
+| collections/buying/squier-affinity-telecaster-vs-squier-classic-vibe-mustang-bass.html | 375 | 62 | 119 | …/collections/buying/squier-affinity-telecaster-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
+| collections/buying/squier-affinity-telecaster-vs-yamaha-fg830-acoustic-guitar.html | 364 | 69 | 143 | …/collections/buying/squier-affinity-telecaster-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
+| collections/buying/squier-classic-vibe-mustang-bass-vs-epiphone-sg-standard-61.html | 383 | 71 | 64 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/buying/squier-classic-vibe-mustang-bass-vs-jackson-js22-dinky.html | 387 | 65 | 158 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/buying/squier-classic-vibe-mustang-bass-vs-squier-classic-vibe-60s-stratocaster.html | 392 | 69 | 63 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-fg830-acoustic-guitar.html | 385 | 59 | 149 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-fg830-acoustic-guitar.html | canonical-has-.html |
+| collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-pacifica-112v.html | 372 | 67 | 160 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/buying/where-to-buy.html | 657 | 46 | 109 | …/collections/buying/where-to-buy | aggregateRating kw-stuffed(4x) |
+| collections/buying/yamaha-fg800-acoustic-guitar-vs-epiphone-sg-standard-61.html | 373 | 67 | 60 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/buying/yamaha-fg800-acoustic-guitar-vs-jackson-js22-dinky.html | 366 | 61 | 154 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-affinity-telecaster.html | 365 | 69 | 143 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-affinity-telecaster.html | canonical-has-.html |
+| collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | 382 | 64 | 43 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-mustang-bass.html | 386 | 59 | 149 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-squier-classic-vibe-mustang-bass.html | canonical-has-.html |
+| collections/buying/yamaha-fg800-acoustic-guitar-vs-yamaha-pacifica-112v.html | 361 | 63 | 156 | …/collections/buying/yamaha-fg800-acoustic-guitar-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/buying/yamaha-fg830-acoustic-guitar-vs-epiphone-sg-standard-61.html | 370 | 67 | 60 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/buying/yamaha-fg830-acoustic-guitar-vs-jackson-js22-dinky.html | 375 | 61 | 154 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/buying/yamaha-fg830-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | 379 | 64 | 43 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/buying/yamaha-fg830-acoustic-guitar-vs-yamaha-pacifica-112v.html | 360 | 63 | 156 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/amp-reviews.html | 700 | 53 | 118 | …/collections/electric/amp-reviews | aggregateRating kw-stuffed(4x) |
+| collections/electric/best-under-1000.html | 825 | 59 | 124 | …/collections/electric/best-under-1000 | aggregateRating kw-stuffed(4x) |
+| collections/electric/best-under-300.html | 680 | 58 | 123 | …/collections/electric/best-under-300 | aggregateRating kw-stuffed(4x) |
+| collections/electric/effects-pedals.html | 691 | 51 | 116 | …/collections/electric/effects-pedals | aggregateRating kw-stuffed(4x) |
+| collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61.html | 374 | 69 | 62 | …/collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/epiphone-les-paul-standard-60s-vs-fender-player-plus-telecaster.html | 372 | 63 | 120 | …/collections/electric/epiphone-les-paul-standard-60s-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/epiphone-les-paul-standard-60s-vs-gibson-sg-standard.html | 31 | 1 | 156 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/epiphone-les-paul-standard-60s-vs-jackson-js22-dinky.html | 357 | 63 | 156 | …/collections/electric/epiphone-les-paul-standard-60s-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/epiphone-les-paul-standard-60s-vs-prs-se-silver-sky.html | 355 | 62 | 155 | …/collections/electric/epiphone-les-paul-standard-60s-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/electric/epiphone-les-paul-standard-60s-vs-yamaha-pacifica-112v.html | 352 | 65 | 158 | …/collections/electric/epiphone-les-paul-standard-60s-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/electric/epiphone-sg-standard-61-vs-fender-player-plus-telecaster.html | 345 | 68 | 28 | …/collections/electric/epiphone-sg-standard-61-vs-fender-player-plus-telecaster.html | canonical-has-.html |
-| collections/electric/epiphone-sg-standard-61-vs-jackson-js22-dinky.html | 350 | 57 | 28 | …/collections/electric/epiphone-sg-standard-61-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-epiphone-les-paul-standard-60s.html | 370 | 66 | 123 | …/collections/electric/fender-american-ultra-telecaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-epiphone-sg-standard-61.html | 363 | 71 | 64 | …/collections/electric/fender-american-ultra-telecaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-fender-player-ii-stratocaster.html | 367 | 65 | 122 | …/collections/electric/fender-american-ultra-telecaster-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-fender-player-plus-telecaster.html | 361 | 65 | 122 | …/collections/electric/fender-american-ultra-telecaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/epiphone-les-paul-standard-60s-vs-jackson-js22-dinky.html | 378 | 63 | 156 | …/collections/electric/epiphone-les-paul-standard-60s-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/epiphone-les-paul-standard-60s-vs-prs-se-silver-sky.html | 376 | 62 | 155 | …/collections/electric/epiphone-les-paul-standard-60s-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/electric/epiphone-les-paul-standard-60s-vs-yamaha-pacifica-112v.html | 373 | 65 | 158 | …/collections/electric/epiphone-les-paul-standard-60s-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/epiphone-sg-standard-61-vs-fender-player-plus-telecaster.html | 366 | 68 | 28 | …/collections/electric/epiphone-sg-standard-61-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/epiphone-sg-standard-61-vs-jackson-js22-dinky.html | 371 | 57 | 28 | …/collections/electric/epiphone-sg-standard-61-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-epiphone-les-paul-standard-60s.html | 391 | 66 | 123 | …/collections/electric/fender-american-ultra-telecaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-epiphone-sg-standard-61.html | 384 | 71 | 64 | …/collections/electric/fender-american-ultra-telecaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-fender-player-ii-stratocaster.html | 388 | 65 | 122 | …/collections/electric/fender-american-ultra-telecaster-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-fender-player-plus-telecaster.html | 382 | 65 | 122 | …/collections/electric/fender-american-ultra-telecaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/fender-american-ultra-telecaster-vs-gibson-les-paul-standard-60s.html | 31 | 1 | 68 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/fender-american-ultra-telecaster-vs-gibson-sg-standard.html | 31 | 1 | 158 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/fender-american-ultra-telecaster-vs-jackson-js22-dinky.html | 357 | 65 | 158 | …/collections/electric/fender-american-ultra-telecaster-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-prs-se-mark-holcomb-signature.html | 377 | 66 | 156 | …/collections/electric/fender-american-ultra-telecaster-vs-prs-se-mark-holcomb-signature.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-prs-se-silver-sky.html | 365 | 64 | 157 | …/collections/electric/fender-american-ultra-telecaster-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | 373 | 69 | 63 | …/collections/electric/fender-american-ultra-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/electric/fender-american-ultra-telecaster-vs-yamaha-pacifica-112v.html | 352 | 67 | 160 | …/collections/electric/fender-american-ultra-telecaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/electric/fender-player-ii-stratocaster-vs-epiphone-les-paul-standard-60s.html | 357 | 63 | 120 | …/collections/electric/fender-player-ii-stratocaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
-| collections/electric/fender-player-ii-stratocaster-vs-epiphone-sg-standard-61.html | 351 | 68 | 61 | …/collections/electric/fender-player-ii-stratocaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/fender-player-ii-stratocaster-vs-fender-player-plus-telecaster.html | 350 | 62 | 119 | …/collections/electric/fender-player-ii-stratocaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-jackson-js22-dinky.html | 378 | 65 | 158 | …/collections/electric/fender-american-ultra-telecaster-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-prs-se-mark-holcomb-signature.html | 398 | 66 | 156 | …/collections/electric/fender-american-ultra-telecaster-vs-prs-se-mark-holcomb-signature.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-prs-se-silver-sky.html | 386 | 64 | 157 | …/collections/electric/fender-american-ultra-telecaster-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | 394 | 69 | 63 | …/collections/electric/fender-american-ultra-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/electric/fender-american-ultra-telecaster-vs-yamaha-pacifica-112v.html | 373 | 67 | 160 | …/collections/electric/fender-american-ultra-telecaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/fender-player-ii-stratocaster-vs-epiphone-les-paul-standard-60s.html | 378 | 63 | 120 | …/collections/electric/fender-player-ii-stratocaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
+| collections/electric/fender-player-ii-stratocaster-vs-epiphone-sg-standard-61.html | 372 | 68 | 61 | …/collections/electric/fender-player-ii-stratocaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/fender-player-ii-stratocaster-vs-fender-player-plus-telecaster.html | 371 | 62 | 119 | …/collections/electric/fender-player-ii-stratocaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/fender-player-ii-stratocaster-vs-gibson-les-paul-standard-60s.html | 31 | 1 | 65 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/fender-player-ii-stratocaster-vs-gibson-sg-standard.html | 31 | 1 | 155 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/fender-player-ii-stratocaster-vs-jackson-js22-dinky.html | 356 | 62 | 155 | …/collections/electric/fender-player-ii-stratocaster-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/fender-player-ii-stratocaster-vs-prs-se-silver-sky.html | 354 | 61 | 154 | …/collections/electric/fender-player-ii-stratocaster-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/electric/fender-player-ii-stratocaster-vs-squier-classic-vibe-60s-stratocaster.html | 371 | 70 | 60 | …/collections/electric/fender-player-ii-stratocaster-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/electric/fender-player-ii-stratocaster-vs-yamaha-pacifica-112v.html | 351 | 64 | 157 | …/collections/electric/fender-player-ii-stratocaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/fender-player-ii-stratocaster-vs-jackson-js22-dinky.html | 377 | 62 | 155 | …/collections/electric/fender-player-ii-stratocaster-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/fender-player-ii-stratocaster-vs-prs-se-silver-sky.html | 375 | 61 | 154 | …/collections/electric/fender-player-ii-stratocaster-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/electric/fender-player-ii-stratocaster-vs-squier-classic-vibe-60s-stratocaster.html | 392 | 70 | 60 | …/collections/electric/fender-player-ii-stratocaster-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/electric/fender-player-ii-stratocaster-vs-yamaha-pacifica-112v.html | 372 | 64 | 157 | …/collections/electric/fender-player-ii-stratocaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
 | collections/electric/fender-player-stratocaster-vs-epiphone-les-paul-standard-60s.html | 31 | 1 | 117 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/fender-player-stratocaster-vs-epiphone-sg-standard-61.html | 31 | 1 | 58 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/fender-player-stratocaster-vs-fender-american-ultra-telecaster.html | 31 | 1 | 119 | ∅ | no-canonical thin(<300w) no-title |
@@ -593,108 +587,108 @@ _Generated 2026-06-18 · branch `seo-remediation` · 413 pages audited (read-onl
 | collections/electric/gibson-sg-standard-vs-epiphone-sg-standard-61.html | 31 | 1 | 50 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/gibson-sg-standard-vs-fender-player-plus-telecaster.html | 31 | 1 | 155 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/gibson-sg-standard-vs-jackson-js22-dinky.html | 31 | 1 | 144 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/index.html | 557 | 37 | 133 | …/collections/electric/ | aggregateRating kw-stuffed(9x) |
-| collections/electric/jackson-js22-dinky-vs-fender-player-plus-telecaster.html | 338 | 62 | 155 | …/collections/electric/jackson-js22-dinky-vs-fender-player-plus-telecaster.html | canonical-has-.html |
-| collections/electric/metal-guitars.html | 690 | 52 | 117 | …/collections/electric/metal-guitars | aggregateRating kw-stuffed(4x) |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-les-paul-standard-60s.html | 383 | 62 | 119 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-sg-standard-61.html | 387 | 67 | 60 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-fender-american-ultra-telecaster.html | 382 | 64 | 121 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-fender-american-ultra-telecaster.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-ii-stratocaster.html | 379 | 61 | 118 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-plus-telecaster.html | 375 | 61 | 118 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/index.html | 580 | 37 | 133 | …/collections/electric/ | aggregateRating kw-stuffed(9x) |
+| collections/electric/jackson-js22-dinky-vs-fender-player-plus-telecaster.html | 359 | 62 | 155 | …/collections/electric/jackson-js22-dinky-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/metal-guitars.html | 710 | 52 | 117 | …/collections/electric/metal-guitars | aggregateRating kw-stuffed(4x) |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-les-paul-standard-60s.html | 404 | 62 | 119 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-sg-standard-61.html | 408 | 67 | 60 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-fender-american-ultra-telecaster.html | 403 | 64 | 121 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-fender-american-ultra-telecaster.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-ii-stratocaster.html | 400 | 61 | 118 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-plus-telecaster.html | 396 | 61 | 118 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/prs-john-mayer-se-silver-sky-vs-gibson-les-paul-standard-60s.html | 31 | 1 | 64 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/prs-john-mayer-se-silver-sky-vs-gibson-sg-standard.html | 31 | 1 | 154 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-jackson-js22-dinky.html | 382 | 61 | 154 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-mark-holcomb-signature.html | 390 | 62 | 152 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-mark-holcomb-signature.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-silver-sky.html | 380 | 60 | 153 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-squier-classic-vibe-60s-stratocaster.html | 398 | 69 | 59 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/electric/prs-john-mayer-se-silver-sky-vs-yamaha-pacifica-112v.html | 377 | 63 | 156 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-les-paul-standard-60s.html | 378 | 64 | 154 | …/collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
-| collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-sg-standard-61.html | 371 | 68 | 51 | …/collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-ii-stratocaster.html | 365 | 63 | 153 | …/collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
-| collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-plus-telecaster.html | 359 | 63 | 153 | …/collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-jackson-js22-dinky.html | 403 | 61 | 154 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-mark-holcomb-signature.html | 411 | 62 | 152 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-mark-holcomb-signature.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-silver-sky.html | 401 | 60 | 153 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-squier-classic-vibe-60s-stratocaster.html | 419 | 69 | 59 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/electric/prs-john-mayer-se-silver-sky-vs-yamaha-pacifica-112v.html | 398 | 63 | 156 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-les-paul-standard-60s.html | 399 | 64 | 154 | …/collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-sg-standard-61.html | 392 | 68 | 51 | …/collections/electric/prs-se-mark-holcomb-signature-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-ii-stratocaster.html | 386 | 63 | 153 | …/collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-plus-telecaster.html | 380 | 63 | 153 | …/collections/electric/prs-se-mark-holcomb-signature-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/prs-se-mark-holcomb-signature-vs-gibson-les-paul-standard-60s.html | 31 | 1 | 55 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/prs-se-mark-holcomb-signature-vs-gibson-sg-standard.html | 31 | 1 | 155 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/prs-se-mark-holcomb-signature-vs-jackson-js22-dinky.html | 365 | 62 | 155 | …/collections/electric/prs-se-mark-holcomb-signature-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/prs-se-mark-holcomb-signature-vs-prs-se-silver-sky.html | 363 | 61 | 154 | …/collections/electric/prs-se-mark-holcomb-signature-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/electric/prs-se-mark-holcomb-signature-vs-squier-classic-vibe-60s-stratocaster.html | 381 | 71 | 50 | …/collections/electric/prs-se-mark-holcomb-signature-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/electric/prs-se-mark-holcomb-signature-vs-yamaha-pacifica-112v.html | 360 | 64 | 157 | …/collections/electric/prs-se-mark-holcomb-signature-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/electric/prs-se-silver-sky-vs-epiphone-sg-standard-61.html | 356 | 56 | 49 | …/collections/electric/prs-se-silver-sky-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/prs-se-silver-sky-vs-fender-player-plus-telecaster.html | 345 | 61 | 154 | …/collections/electric/prs-se-silver-sky-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-jackson-js22-dinky.html | 386 | 62 | 155 | …/collections/electric/prs-se-mark-holcomb-signature-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-prs-se-silver-sky.html | 384 | 61 | 154 | …/collections/electric/prs-se-mark-holcomb-signature-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-squier-classic-vibe-60s-stratocaster.html | 402 | 71 | 50 | …/collections/electric/prs-se-mark-holcomb-signature-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/electric/prs-se-mark-holcomb-signature-vs-yamaha-pacifica-112v.html | 381 | 64 | 157 | …/collections/electric/prs-se-mark-holcomb-signature-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/prs-se-silver-sky-vs-epiphone-sg-standard-61.html | 377 | 56 | 49 | …/collections/electric/prs-se-silver-sky-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/prs-se-silver-sky-vs-fender-player-plus-telecaster.html | 366 | 61 | 154 | …/collections/electric/prs-se-silver-sky-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/prs-se-silver-sky-vs-gibson-sg-standard.html | 31 | 1 | 143 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/prs-se-silver-sky-vs-jackson-js22-dinky.html | 351 | 50 | 143 | …/collections/electric/prs-se-silver-sky-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/silver-sky-review.html | 895 | 61 | 126 | …/collections/electric/silver-sky-review | aggregateRating kw-stuffed(4x) |
-| collections/electric/squier-affinity-telecaster-vs-epiphone-les-paul-standard-60s.html | 347 | 71 | 117 | …/collections/electric/squier-affinity-telecaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-epiphone-sg-standard-61.html | 339 | 65 | 58 | …/collections/electric/squier-affinity-telecaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-fender-american-ultra-telecaster.html | 344 | 62 | 119 | …/collections/electric/squier-affinity-telecaster-vs-fender-american-ultra-telecaster.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-fender-player-ii-stratocaster.html | 344 | 70 | 160 | …/collections/electric/squier-affinity-telecaster-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-fender-player-plus-telecaster.html | 338 | 70 | 160 | …/collections/electric/squier-affinity-telecaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/prs-se-silver-sky-vs-jackson-js22-dinky.html | 372 | 50 | 143 | …/collections/electric/prs-se-silver-sky-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/silver-sky-review.html | 916 | 61 | 126 | …/collections/electric/silver-sky-review | aggregateRating kw-stuffed(4x) |
+| collections/electric/squier-affinity-telecaster-vs-epiphone-les-paul-standard-60s.html | 368 | 71 | 117 | …/collections/electric/squier-affinity-telecaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-epiphone-sg-standard-61.html | 360 | 65 | 58 | …/collections/electric/squier-affinity-telecaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-fender-american-ultra-telecaster.html | 365 | 62 | 119 | …/collections/electric/squier-affinity-telecaster-vs-fender-american-ultra-telecaster.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-fender-player-ii-stratocaster.html | 365 | 70 | 160 | …/collections/electric/squier-affinity-telecaster-vs-fender-player-ii-stratocaster.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-fender-player-plus-telecaster.html | 359 | 70 | 160 | …/collections/electric/squier-affinity-telecaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/squier-affinity-telecaster-vs-gibson-les-paul-standard-60s.html | 31 | 1 | 62 | ∅ | no-canonical thin(<300w) no-title |
 | collections/electric/squier-affinity-telecaster-vs-gibson-sg-standard.html | 31 | 1 | 152 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/squier-affinity-telecaster-vs-jackson-js22-dinky.html | 332 | 59 | 152 | …/collections/electric/squier-affinity-telecaster-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-prs-john-mayer-se-silver-sky.html | 371 | 69 | 159 | …/collections/electric/squier-affinity-telecaster-vs-prs-john-mayer-se-silver-sky.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-prs-se-mark-holcomb-signature.html | 354 | 70 | 150 | …/collections/electric/squier-affinity-telecaster-vs-prs-se-mark-holcomb-signature.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-prs-se-silver-sky.html | 341 | 58 | 151 | …/collections/electric/squier-affinity-telecaster-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | 349 | 67 | 57 | …/collections/electric/squier-affinity-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
-| collections/electric/squier-affinity-telecaster-vs-yamaha-pacifica-112v.html | 327 | 61 | 154 | …/collections/electric/squier-affinity-telecaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-les-paul-standard-60s.html | 360 | 69 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
-| collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-sg-standard-61.html | 354 | 65 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/squier-classic-vibe-60s-stratocaster-vs-fender-player-plus-telecaster.html | 354 | 70 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-jackson-js22-dinky.html | 353 | 59 | 152 | …/collections/electric/squier-affinity-telecaster-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-prs-john-mayer-se-silver-sky.html | 392 | 69 | 159 | …/collections/electric/squier-affinity-telecaster-vs-prs-john-mayer-se-silver-sky.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-prs-se-mark-holcomb-signature.html | 375 | 70 | 150 | …/collections/electric/squier-affinity-telecaster-vs-prs-se-mark-holcomb-signature.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-prs-se-silver-sky.html | 362 | 58 | 151 | …/collections/electric/squier-affinity-telecaster-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | 370 | 67 | 57 | …/collections/electric/squier-affinity-telecaster-vs-squier-classic-vibe-60s-stratocaster.html | canonical-has-.html |
+| collections/electric/squier-affinity-telecaster-vs-yamaha-pacifica-112v.html | 348 | 61 | 154 | …/collections/electric/squier-affinity-telecaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-les-paul-standard-60s.html | 381 | 69 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-les-paul-standard-60s.html | canonical-has-.html |
+| collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-sg-standard-61.html | 375 | 65 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/squier-classic-vibe-60s-stratocaster-vs-fender-player-plus-telecaster.html | 375 | 70 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/squier-classic-vibe-60s-stratocaster-vs-gibson-sg-standard.html | 31 | 1 | 27 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/squier-classic-vibe-60s-stratocaster-vs-jackson-js22-dinky.html | 360 | 70 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/squier-classic-vibe-60s-stratocaster-vs-prs-se-silver-sky.html | 359 | 69 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/electric/squier-classic-vibe-60s-stratocaster-vs-yamaha-pacifica-112v.html | 344 | 61 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
-| collections/electric/starters.html | 834 | 60 | 125 | …/collections/electric/starters | aggregateRating kw-stuffed(4x) |
-| collections/electric/ultra-tele-review.html | 886 | 47 | 130 | …/collections/electric/ultra-tele-review | aggregateRating |
-| collections/electric/yamaha-pacifica-112v-vs-epiphone-sg-standard-61.html | 335 | 59 | 52 | …/collections/electric/yamaha-pacifica-112v-vs-epiphone-sg-standard-61.html | canonical-has-.html |
-| collections/electric/yamaha-pacifica-112v-vs-fender-player-plus-telecaster.html | 334 | 64 | 157 | …/collections/electric/yamaha-pacifica-112v-vs-fender-player-plus-telecaster.html | canonical-has-.html |
+| collections/electric/squier-classic-vibe-60s-stratocaster-vs-jackson-js22-dinky.html | 381 | 70 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/squier-classic-vibe-60s-stratocaster-vs-prs-se-silver-sky.html | 380 | 69 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/electric/squier-classic-vibe-60s-stratocaster-vs-yamaha-pacifica-112v.html | 365 | 61 | 27 | …/collections/electric/squier-classic-vibe-60s-stratocaster-vs-yamaha-pacifica-112v.html | canonical-has-.html |
+| collections/electric/starters.html | 855 | 60 | 125 | …/collections/electric/starters | aggregateRating kw-stuffed(4x) |
+| collections/electric/ultra-tele-review.html | 906 | 47 | 130 | …/collections/electric/ultra-tele-review | aggregateRating |
+| collections/electric/yamaha-pacifica-112v-vs-epiphone-sg-standard-61.html | 356 | 59 | 52 | …/collections/electric/yamaha-pacifica-112v-vs-epiphone-sg-standard-61.html | canonical-has-.html |
+| collections/electric/yamaha-pacifica-112v-vs-fender-player-plus-telecaster.html | 355 | 64 | 157 | …/collections/electric/yamaha-pacifica-112v-vs-fender-player-plus-telecaster.html | canonical-has-.html |
 | collections/electric/yamaha-pacifica-112v-vs-gibson-sg-standard.html | 31 | 1 | 146 | ∅ | no-canonical thin(<300w) no-title |
-| collections/electric/yamaha-pacifica-112v-vs-jackson-js22-dinky.html | 339 | 53 | 146 | …/collections/electric/yamaha-pacifica-112v-vs-jackson-js22-dinky.html | canonical-has-.html |
-| collections/electric/yamaha-pacifica-112v-vs-prs-se-silver-sky.html | 338 | 52 | 145 | …/collections/electric/yamaha-pacifica-112v-vs-prs-se-silver-sky.html | canonical-has-.html |
-| collections/learning/apps.html | 671 | 53 | 118 | …/collections/learning/apps | aggregateRating kw-stuffed(4x) |
-| collections/learning/best-guitar-lesson-affiliates.html | 685 | 59 | 124 | …/collections/learning/best-guitar-lesson-affiliates | aggregateRating kw-stuffed(4x) |
-| collections/learning/courses.html | 669 | 52 | 117 | …/collections/learning/courses | aggregateRating kw-stuffed(4x) |
-| collections/learning/index.html | 390 | 39 | 135 | …/collections/learning/ | aggregateRating kw-stuffed(4x) |
-| collections/learning/techniques.html | 670 | 49 | 114 | …/collections/learning/techniques | aggregateRating kw-stuffed(4x) |
-| collections/learning/tips.html | 383 | 46 | 111 | …/collections/learning/tips | aggregateRating |
-| contact.html | 442 | 31 | 115 | …/contact | editorial-team-author |
+| collections/electric/yamaha-pacifica-112v-vs-jackson-js22-dinky.html | 360 | 53 | 146 | …/collections/electric/yamaha-pacifica-112v-vs-jackson-js22-dinky.html | canonical-has-.html |
+| collections/electric/yamaha-pacifica-112v-vs-prs-se-silver-sky.html | 359 | 52 | 145 | …/collections/electric/yamaha-pacifica-112v-vs-prs-se-silver-sky.html | canonical-has-.html |
+| collections/learning/apps.html | 694 | 53 | 118 | …/collections/learning/apps | aggregateRating kw-stuffed(4x) |
+| collections/learning/best-guitar-lesson-affiliates.html | 708 | 59 | 124 | …/collections/learning/best-guitar-lesson-affiliates | aggregateRating kw-stuffed(4x) |
+| collections/learning/courses.html | 692 | 52 | 117 | …/collections/learning/courses | aggregateRating kw-stuffed(4x) |
+| collections/learning/index.html | 413 | 39 | 135 | …/collections/learning/ | aggregateRating kw-stuffed(4x) |
+| collections/learning/techniques.html | 688 | 49 | 114 | …/collections/learning/techniques | aggregateRating kw-stuffed(4x) |
+| collections/learning/tips.html | 406 | 46 | 111 | …/collections/learning/tips | aggregateRating |
+| contact.html | 442 | 31 | 115 | …/contact | — |
 | guides/recording/best-way-to-distribute-your-guitar-music-in-2026.html | 446 | 69 | 160 | …/guides/recording/best-way-to-distribute-your-guitar-music-in-2026 | — |
-| index.html | 1722 | 57 | 126 | …/ | editorial-team-author |
-| pages/accessories_cables_affordable_guitar_cables.html | 614 | 45 | 128 | …/pages/accessories_cables_affordable_guitar_cables.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_cables_best_guitar_cables_2026.html | 617 | 44 | 127 | …/pages/accessories_cables_best_guitar_cables_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_cables_buy_instrument_cables.html | 614 | 42 | 125 | …/pages/accessories_cables_buy_instrument_cables.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_cables_guitar_cable_review_comparison.html | 617 | 51 | 134 | …/pages/accessories_cables_guitar_cable_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_cases_affordable_guitar_hard_cases.html | 617 | 49 | 132 | …/pages/accessories_cases_affordable_guitar_hard_cases.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_cases_best_guitar_cases_2026.html | 617 | 43 | 126 | …/pages/accessories_cases_best_guitar_cases_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_cases_buy_guitar_cases_reviews.html | 617 | 45 | 128 | …/pages/accessories_cases_buy_guitar_cases_reviews.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_cases_guitar_case_comparison_guide.html | 617 | 49 | 132 | …/pages/accessories_cases_guitar_case_comparison_guide.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_picks_best_guitar_picks_2026.html | 517 | 43 | 126 | …/pages/accessories_picks_best_guitar_picks_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_picks_buy_guitar_picks_bulk.html | 517 | 42 | 125 | …/pages/accessories_picks_buy_guitar_picks_bulk.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_picks_guitar_picks_review_comparison.html | 517 | 51 | 134 | …/pages/accessories_picks_guitar_picks_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_picks_top_rated_guitar_picks.html | 517 | 43 | 126 | …/pages/accessories_picks_top_rated_guitar_picks.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_stands_best_guitar_stands_2026.html | 580 | 44 | 127 | …/pages/accessories_stands_best_guitar_stands_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_stands_buy_guitar_stands.html | 577 | 38 | 121 | …/pages/accessories_stands_buy_guitar_stands.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_stands_guitar_stand_review_comparison.html | 580 | 51 | 134 | …/pages/accessories_stands_guitar_stand_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_stands_top_rated_guitar_stands.html | 580 | 44 | 127 | …/pages/accessories_stands_top_rated_guitar_stands.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_strings_affordable_guitar_strings_deals.html | 568 | 52 | 135 | …/pages/accessories_strings_affordable_guitar_strings_deals.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_strings_best_guitar_strings_2026.html | 568 | 45 | 128 | …/pages/accessories_strings_best_guitar_strings_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_strings_buy_guitar_strings_bulk.html | 568 | 44 | 127 | …/pages/accessories_strings_buy_guitar_strings_bulk.html | canonical-has-.html underscore-url aggregateRating |
-| pages/accessories_strings_guitar_strings_review_comparison.html | 568 | 53 | 136 | …/pages/accessories_strings_guitar_strings_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_advanced_acoustic_guitar_tonewood_guide.html | 646 | 51 | 134 | …/pages/acoustic_advanced_acoustic_guitar_tonewood_guide.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_advanced_best_acoustic_guitar_for_recording.html | 650 | 55 | 138 | …/pages/acoustic_advanced_best_acoustic_guitar_for_recording.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_advanced_high_end_acoustic_guitar_reviews.html | 650 | 53 | 136 | …/pages/acoustic_advanced_high_end_acoustic_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_advanced_professional_acoustic_guitar_comparison.html | 661 | 60 | 143 | …/pages/acoustic_advanced_professional_acoustic_guitar_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_beginner_affordable_acoustic_guitar_starter_kit.html | 654 | 59 | 142 | …/pages/acoustic_beginner_affordable_acoustic_guitar_starter_kit.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_beginner_best_acoustic_guitar_for_beginners_2026.html | 657 | 60 | 143 | …/pages/acoustic_beginner_best_acoustic_guitar_for_beginners_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_beginner_buy_acoustic_guitar_beginner_bundle.html | 654 | 56 | 139 | …/pages/acoustic_beginner_buy_acoustic_guitar_beginner_bundle.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_beginner_top_rated_beginner_acoustic_guitar.html | 654 | 55 | 138 | …/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_intermediate_acoustic_guitar_upgrade_deals.html | 592 | 50 | 133 | …/pages/acoustic_intermediate_acoustic_guitar_upgrade_deals.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_intermediate_best_intermediate_acoustic_guitar.html | 592 | 54 | 137 | …/pages/acoustic_intermediate_best_intermediate_acoustic_guitar.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_intermediate_professional_acoustic_guitar_reviews.html | 654 | 57 | 140 | …/pages/acoustic_intermediate_professional_acoustic_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_intermediate_top_selling_acoustic_guitars_2026.html | 595 | 54 | 137 | …/pages/acoustic_intermediate_top_selling_acoustic_guitars_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_professional_best_acoustic_guitar_brands_2026.html | 664 | 53 | 136 | …/pages/acoustic_professional_best_acoustic_guitar_brands_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_professional_custom_acoustic_guitar_builders.html | 661 | 52 | 135 | …/pages/acoustic_professional_custom_acoustic_guitar_builders.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_professional_investment_grade_acoustic_guitars.html | 661 | 54 | 137 | …/pages/acoustic_professional_investment_grade_acoustic_guitars.html | canonical-has-.html underscore-url aggregateRating |
-| pages/acoustic_professional_professional_acoustic_guitar_purchase.html | 661 | 58 | 141 | …/pages/acoustic_professional_professional_acoustic_guitar_purchase.html | canonical-has-.html underscore-url aggregateRating |
+| index.html | 1722 | 57 | 126 | …/ | — |
+| pages/accessories_cables_affordable_guitar_cables.html | 637 | 45 | 128 | …/pages/accessories_cables_affordable_guitar_cables.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_cables_best_guitar_cables_2026.html | 640 | 44 | 127 | …/pages/accessories_cables_best_guitar_cables_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_cables_buy_instrument_cables.html | 637 | 42 | 125 | …/pages/accessories_cables_buy_instrument_cables.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_cables_guitar_cable_review_comparison.html | 640 | 51 | 134 | …/pages/accessories_cables_guitar_cable_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_cases_affordable_guitar_hard_cases.html | 640 | 49 | 132 | …/pages/accessories_cases_affordable_guitar_hard_cases.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_cases_best_guitar_cases_2026.html | 640 | 43 | 126 | …/pages/accessories_cases_best_guitar_cases_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_cases_buy_guitar_cases_reviews.html | 640 | 45 | 128 | …/pages/accessories_cases_buy_guitar_cases_reviews.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_cases_guitar_case_comparison_guide.html | 640 | 49 | 132 | …/pages/accessories_cases_guitar_case_comparison_guide.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_picks_best_guitar_picks_2026.html | 540 | 43 | 126 | …/pages/accessories_picks_best_guitar_picks_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_picks_buy_guitar_picks_bulk.html | 540 | 42 | 125 | …/pages/accessories_picks_buy_guitar_picks_bulk.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_picks_guitar_picks_review_comparison.html | 540 | 51 | 134 | …/pages/accessories_picks_guitar_picks_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_picks_top_rated_guitar_picks.html | 540 | 43 | 126 | …/pages/accessories_picks_top_rated_guitar_picks.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_stands_best_guitar_stands_2026.html | 603 | 44 | 127 | …/pages/accessories_stands_best_guitar_stands_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_stands_buy_guitar_stands.html | 600 | 38 | 121 | …/pages/accessories_stands_buy_guitar_stands.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_stands_guitar_stand_review_comparison.html | 603 | 51 | 134 | …/pages/accessories_stands_guitar_stand_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_stands_top_rated_guitar_stands.html | 603 | 44 | 127 | …/pages/accessories_stands_top_rated_guitar_stands.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_strings_affordable_guitar_strings_deals.html | 591 | 52 | 135 | …/pages/accessories_strings_affordable_guitar_strings_deals.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_strings_best_guitar_strings_2026.html | 591 | 45 | 128 | …/pages/accessories_strings_best_guitar_strings_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_strings_buy_guitar_strings_bulk.html | 591 | 44 | 127 | …/pages/accessories_strings_buy_guitar_strings_bulk.html | canonical-has-.html underscore-url aggregateRating |
+| pages/accessories_strings_guitar_strings_review_comparison.html | 591 | 53 | 136 | …/pages/accessories_strings_guitar_strings_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_advanced_acoustic_guitar_tonewood_guide.html | 669 | 51 | 134 | …/pages/acoustic_advanced_acoustic_guitar_tonewood_guide.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_advanced_best_acoustic_guitar_for_recording.html | 673 | 55 | 138 | …/pages/acoustic_advanced_best_acoustic_guitar_for_recording.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_advanced_high_end_acoustic_guitar_reviews.html | 673 | 53 | 136 | …/pages/acoustic_advanced_high_end_acoustic_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_advanced_professional_acoustic_guitar_comparison.html | 684 | 60 | 143 | …/pages/acoustic_advanced_professional_acoustic_guitar_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_beginner_affordable_acoustic_guitar_starter_kit.html | 677 | 59 | 142 | …/pages/acoustic_beginner_affordable_acoustic_guitar_starter_kit.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_beginner_best_acoustic_guitar_for_beginners_2026.html | 680 | 60 | 143 | …/pages/acoustic_beginner_best_acoustic_guitar_for_beginners_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_beginner_buy_acoustic_guitar_beginner_bundle.html | 677 | 56 | 139 | …/pages/acoustic_beginner_buy_acoustic_guitar_beginner_bundle.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_beginner_top_rated_beginner_acoustic_guitar.html | 677 | 55 | 138 | …/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_intermediate_acoustic_guitar_upgrade_deals.html | 615 | 50 | 133 | …/pages/acoustic_intermediate_acoustic_guitar_upgrade_deals.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_intermediate_best_intermediate_acoustic_guitar.html | 615 | 54 | 137 | …/pages/acoustic_intermediate_best_intermediate_acoustic_guitar.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_intermediate_professional_acoustic_guitar_reviews.html | 677 | 57 | 140 | …/pages/acoustic_intermediate_professional_acoustic_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_intermediate_top_selling_acoustic_guitars_2026.html | 618 | 54 | 137 | …/pages/acoustic_intermediate_top_selling_acoustic_guitars_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_professional_best_acoustic_guitar_brands_2026.html | 687 | 53 | 136 | …/pages/acoustic_professional_best_acoustic_guitar_brands_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_professional_custom_acoustic_guitar_builders.html | 684 | 52 | 135 | …/pages/acoustic_professional_custom_acoustic_guitar_builders.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_professional_investment_grade_acoustic_guitars.html | 684 | 54 | 137 | …/pages/acoustic_professional_investment_grade_acoustic_guitars.html | canonical-has-.html underscore-url aggregateRating |
+| pages/acoustic_professional_professional_acoustic_guitar_purchase.html | 684 | 58 | 141 | …/pages/acoustic_professional_professional_acoustic_guitar_purchase.html | canonical-has-.html underscore-url aggregateRating |
 | pages/bofu_alternatives_epiphone-les-paul-standard.html | 229 | 51 | 129 | …/alternatives/epiphone-les-paul-standard | underscore-url thin(<300w) |
 | pages/bofu_best_acoustic-guitar-flight-cases.html | 227 | 60 | 127 | …/best/acoustic-guitar-flight-cases | underscore-url thin(<300w) |
 | pages/bofu_best_acoustic-guitar-small-hands.html | 228 | 58 | 131 | …/best/acoustic-guitar-small-hands | underscore-url thin(<300w) |
@@ -758,53 +752,53 @@ _Generated 2026-06-18 · branch `seo-remediation` · 413 pages audited (read-onl
 | pages/bofu_vs_yamaha-fg830-vs-fg800.html | 175 | 57 | 135 | …/vs/yamaha-fg830-vs-fg800 | underscore-url thin(<300w) |
 | pages/bofu_vs_yamaha-pacifica-012-vs-112v.html | 229 | 52 | 129 | …/vs/yamaha-pacifica-012-vs-112v | underscore-url thin(<300w) |
 | pages/bofu_vs_yamaha-pacifica-vs-squier-strat.html | 162 | 56 | 139 | …/vs/yamaha-pacifica-vs-squier-strat | underscore-url thin(<300w) |
-| pages/buying_comparisons_acoustic_vs_electric_guitar_buy.html | 565 | 52 | 135 | …/pages/buying_comparisons_acoustic_vs_electric_guitar_buy.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_comparisons_best_guitar_vs_comparison.html | 560 | 46 | 129 | …/pages/buying_comparisons_best_guitar_vs_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_comparisons_guitar_brands_comparison.html | 557 | 45 | 128 | …/pages/buying_comparisons_guitar_brands_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_comparisons_guitar_comparison_2026.html | 557 | 43 | 126 | …/pages/buying_comparisons_guitar_comparison_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_deals_affordable_guitar_deals.html | 557 | 44 | 127 | …/pages/buying_deals_affordable_guitar_deals.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_deals_best_guitar_deals_2026.html | 560 | 43 | 126 | …/pages/buying_deals_best_guitar_deals_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_deals_guitar_discount_offers.html | 557 | 43 | 126 | …/pages/buying_deals_guitar_discount_offers.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_deals_guitar_sale_deals.html | 557 | 38 | 121 | …/pages/buying_deals_guitar_sale_deals.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_guides_best_guitar_buying_guide.html | 560 | 45 | 128 | …/pages/buying_guides_best_guitar_buying_guide.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_guides_guitar_buying_guide_2026.html | 560 | 45 | 128 | …/pages/buying_guides_guitar_buying_guide_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_guides_guitar_purchase_guide_review.html | 560 | 49 | 132 | …/pages/buying_guides_guitar_purchase_guide_review.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_guides_how_to_buy_a_guitar_guide.html | 566 | 46 | 129 | …/pages/buying_guides_how_to_buy_a_guitar_guide.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_reviews_best_guitar_reviews_site.html | 560 | 45 | 128 | …/pages/buying_reviews_best_guitar_reviews_site.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_reviews_guitar_review_comparison.html | 557 | 45 | 128 | …/pages/buying_reviews_guitar_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_reviews_guitar_reviews_2026.html | 557 | 40 | 123 | …/pages/buying_reviews_guitar_reviews_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/buying_reviews_top_guitar_reviews.html | 557 | 39 | 122 | …/pages/buying_reviews_top_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_advanced_best_electric_guitar_for_solos.html | 680 | 51 | 134 | …/pages/electric_advanced_best_electric_guitar_for_solos.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_advanced_electric_guitar_customization_guide.html | 677 | 56 | 139 | …/pages/electric_advanced_electric_guitar_customization_guide.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_advanced_high_end_electric_guitar_reviews.html | 680 | 53 | 136 | …/pages/electric_advanced_high_end_electric_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_advanced_professional_electric_guitar_comparison.html | 686 | 60 | 143 | …/pages/electric_advanced_professional_electric_guitar_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_beginner_affordable_electric_guitar_beginner.html | 652 | 56 | 139 | …/pages/electric_beginner_affordable_electric_guitar_beginner.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_beginner_best_electric_guitar_for_beginners_2026.html | 658 | 60 | 143 | …/pages/electric_beginner_best_electric_guitar_for_beginners_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_beginner_starter_electric_guitar_kit_buy.html | 655 | 52 | 135 | …/pages/electric_beginner_starter_electric_guitar_kit_buy.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_beginner_top_rated_beginner_electric_guitar.html | 655 | 55 | 138 | …/pages/electric_beginner_top_rated_beginner_electric_guitar.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_intermediate_best_intermediate_electric_guitar.html | 599 | 54 | 137 | …/pages/electric_intermediate_best_intermediate_electric_guitar.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_intermediate_electric_guitar_upgrade_deals.html | 599 | 50 | 133 | …/pages/electric_intermediate_electric_guitar_upgrade_deals.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_intermediate_professional_electric_guitar_reviews.html | 686 | 57 | 140 | …/pages/electric_intermediate_professional_electric_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_intermediate_top_selling_electric_guitars_2026.html | 602 | 54 | 137 | …/pages/electric_intermediate_top_selling_electric_guitars_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_professional_best_electric_guitar_brands_2026.html | 689 | 53 | 136 | …/pages/electric_professional_best_electric_guitar_brands_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_professional_custom_electric_guitar_builders.html | 686 | 52 | 135 | …/pages/electric_professional_custom_electric_guitar_builders.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_professional_investment_grade_electric_guitars.html | 686 | 54 | 137 | …/pages/electric_professional_investment_grade_electric_guitars.html | canonical-has-.html underscore-url aggregateRating |
-| pages/electric_professional_professional_electric_guitar_purchase.html | 686 | 58 | 141 | …/pages/electric_professional_professional_electric_guitar_purchase.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_apps_best_guitar_learning_apps_2026.html | 574 | 51 | 134 | …/pages/learning_apps_best_guitar_learning_apps_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_apps_buy_guitar_app_subscription.html | 571 | 48 | 131 | …/pages/learning_apps_buy_guitar_app_subscription.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_apps_guitar_app_review_comparison.html | 571 | 49 | 132 | …/pages/learning_apps_guitar_app_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_apps_top_guitar_learning_apps.html | 571 | 45 | 128 | …/pages/learning_apps_top_guitar_learning_apps.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_books_best_guitar_books_2026.html | 571 | 43 | 126 | …/pages/learning_books_best_guitar_books_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_books_buy_guitar_learning_books.html | 571 | 46 | 129 | …/pages/learning_books_buy_guitar_learning_books.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_books_guitar_method_book_review.html | 571 | 46 | 129 | …/pages/learning_books_guitar_method_book_review.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_books_top_guitar_books_for_beginners.html | 574 | 51 | 134 | …/pages/learning_books_top_guitar_books_for_beginners.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_courses_best_guitar_courses_2026.html | 571 | 45 | 128 | …/pages/learning_courses_best_guitar_courses_2026.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_courses_buy_online_guitar_lessons.html | 571 | 46 | 129 | …/pages/learning_courses_buy_online_guitar_lessons.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_courses_guitar_learning_courses_review.html | 571 | 51 | 134 | …/pages/learning_courses_guitar_learning_courses_review.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_courses_top_rated_guitar_courses.html | 571 | 45 | 128 | …/pages/learning_courses_top_rated_guitar_courses.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_videos_best_guitar_video_courses.html | 571 | 46 | 129 | …/pages/learning_videos_best_guitar_video_courses.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_videos_buy_guitar_tutorial_videos.html | 571 | 47 | 130 | …/pages/learning_videos_buy_guitar_tutorial_videos.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_videos_guitar_lesson_video_review.html | 571 | 47 | 130 | …/pages/learning_videos_guitar_lesson_video_review.html | canonical-has-.html underscore-url aggregateRating |
-| pages/learning_videos_top_rated_guitar_tutorials.html | 571 | 47 | 130 | …/pages/learning_videos_top_rated_guitar_tutorials.html | canonical-has-.html underscore-url aggregateRating |
-| privacy.html | 549 | 35 | 87 | …/privacy | editorial-team-author kw-stuffed(7x) |
-| terms.html | 601 | 39 | 99 | …/terms | editorial-team-author |
+| pages/buying_comparisons_acoustic_vs_electric_guitar_buy.html | 588 | 52 | 135 | …/pages/buying_comparisons_acoustic_vs_electric_guitar_buy.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_comparisons_best_guitar_vs_comparison.html | 583 | 46 | 129 | …/pages/buying_comparisons_best_guitar_vs_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_comparisons_guitar_brands_comparison.html | 580 | 45 | 128 | …/pages/buying_comparisons_guitar_brands_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_comparisons_guitar_comparison_2026.html | 580 | 43 | 126 | …/pages/buying_comparisons_guitar_comparison_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_deals_affordable_guitar_deals.html | 580 | 44 | 127 | …/pages/buying_deals_affordable_guitar_deals.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_deals_best_guitar_deals_2026.html | 583 | 43 | 126 | …/pages/buying_deals_best_guitar_deals_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_deals_guitar_discount_offers.html | 580 | 43 | 126 | …/pages/buying_deals_guitar_discount_offers.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_deals_guitar_sale_deals.html | 580 | 38 | 121 | …/pages/buying_deals_guitar_sale_deals.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_guides_best_guitar_buying_guide.html | 583 | 45 | 128 | …/pages/buying_guides_best_guitar_buying_guide.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_guides_guitar_buying_guide_2026.html | 583 | 45 | 128 | …/pages/buying_guides_guitar_buying_guide_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_guides_guitar_purchase_guide_review.html | 583 | 49 | 132 | …/pages/buying_guides_guitar_purchase_guide_review.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_guides_how_to_buy_a_guitar_guide.html | 589 | 46 | 129 | …/pages/buying_guides_how_to_buy_a_guitar_guide.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_reviews_best_guitar_reviews_site.html | 583 | 45 | 128 | …/pages/buying_reviews_best_guitar_reviews_site.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_reviews_guitar_review_comparison.html | 580 | 45 | 128 | …/pages/buying_reviews_guitar_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_reviews_guitar_reviews_2026.html | 580 | 40 | 123 | …/pages/buying_reviews_guitar_reviews_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/buying_reviews_top_guitar_reviews.html | 580 | 39 | 122 | …/pages/buying_reviews_top_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_advanced_best_electric_guitar_for_solos.html | 703 | 51 | 134 | …/pages/electric_advanced_best_electric_guitar_for_solos.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_advanced_electric_guitar_customization_guide.html | 700 | 56 | 139 | …/pages/electric_advanced_electric_guitar_customization_guide.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_advanced_high_end_electric_guitar_reviews.html | 703 | 53 | 136 | …/pages/electric_advanced_high_end_electric_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_advanced_professional_electric_guitar_comparison.html | 709 | 60 | 143 | …/pages/electric_advanced_professional_electric_guitar_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_beginner_affordable_electric_guitar_beginner.html | 675 | 56 | 139 | …/pages/electric_beginner_affordable_electric_guitar_beginner.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_beginner_best_electric_guitar_for_beginners_2026.html | 681 | 60 | 143 | …/pages/electric_beginner_best_electric_guitar_for_beginners_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_beginner_starter_electric_guitar_kit_buy.html | 678 | 52 | 135 | …/pages/electric_beginner_starter_electric_guitar_kit_buy.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_beginner_top_rated_beginner_electric_guitar.html | 678 | 55 | 138 | …/pages/electric_beginner_top_rated_beginner_electric_guitar.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_intermediate_best_intermediate_electric_guitar.html | 622 | 54 | 137 | …/pages/electric_intermediate_best_intermediate_electric_guitar.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_intermediate_electric_guitar_upgrade_deals.html | 622 | 50 | 133 | …/pages/electric_intermediate_electric_guitar_upgrade_deals.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_intermediate_professional_electric_guitar_reviews.html | 709 | 57 | 140 | …/pages/electric_intermediate_professional_electric_guitar_reviews.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_intermediate_top_selling_electric_guitars_2026.html | 625 | 54 | 137 | …/pages/electric_intermediate_top_selling_electric_guitars_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_professional_best_electric_guitar_brands_2026.html | 712 | 53 | 136 | …/pages/electric_professional_best_electric_guitar_brands_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_professional_custom_electric_guitar_builders.html | 709 | 52 | 135 | …/pages/electric_professional_custom_electric_guitar_builders.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_professional_investment_grade_electric_guitars.html | 709 | 54 | 137 | …/pages/electric_professional_investment_grade_electric_guitars.html | canonical-has-.html underscore-url aggregateRating |
+| pages/electric_professional_professional_electric_guitar_purchase.html | 709 | 58 | 141 | …/pages/electric_professional_professional_electric_guitar_purchase.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_apps_best_guitar_learning_apps_2026.html | 597 | 51 | 134 | …/pages/learning_apps_best_guitar_learning_apps_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_apps_buy_guitar_app_subscription.html | 594 | 48 | 131 | …/pages/learning_apps_buy_guitar_app_subscription.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_apps_guitar_app_review_comparison.html | 594 | 49 | 132 | …/pages/learning_apps_guitar_app_review_comparison.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_apps_top_guitar_learning_apps.html | 594 | 45 | 128 | …/pages/learning_apps_top_guitar_learning_apps.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_books_best_guitar_books_2026.html | 594 | 43 | 126 | …/pages/learning_books_best_guitar_books_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_books_buy_guitar_learning_books.html | 594 | 46 | 129 | …/pages/learning_books_buy_guitar_learning_books.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_books_guitar_method_book_review.html | 594 | 46 | 129 | …/pages/learning_books_guitar_method_book_review.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_books_top_guitar_books_for_beginners.html | 597 | 51 | 134 | …/pages/learning_books_top_guitar_books_for_beginners.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_courses_best_guitar_courses_2026.html | 594 | 45 | 128 | …/pages/learning_courses_best_guitar_courses_2026.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_courses_buy_online_guitar_lessons.html | 594 | 46 | 129 | …/pages/learning_courses_buy_online_guitar_lessons.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_courses_guitar_learning_courses_review.html | 594 | 51 | 134 | …/pages/learning_courses_guitar_learning_courses_review.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_courses_top_rated_guitar_courses.html | 594 | 45 | 128 | …/pages/learning_courses_top_rated_guitar_courses.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_videos_best_guitar_video_courses.html | 594 | 46 | 129 | …/pages/learning_videos_best_guitar_video_courses.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_videos_buy_guitar_tutorial_videos.html | 594 | 47 | 130 | …/pages/learning_videos_buy_guitar_tutorial_videos.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_videos_guitar_lesson_video_review.html | 594 | 47 | 130 | …/pages/learning_videos_guitar_lesson_video_review.html | canonical-has-.html underscore-url aggregateRating |
+| pages/learning_videos_top_rated_guitar_tutorials.html | 594 | 47 | 130 | …/pages/learning_videos_top_rated_guitar_tutorials.html | canonical-has-.html underscore-url aggregateRating |
+| privacy.html | 549 | 35 | 87 | …/privacy | kw-stuffed(7x) |
+| terms.html | 601 | 39 | 99 | …/terms | — |

@@ -12,6 +12,16 @@ if (fs.existsSync('config.json')) {
     config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 }
 
+// EEAT helpers (author + affiliate disclosure), config-driven so a real reviewer
+// can be filled in once (config.author) and propagate on regeneration.
+const AUTHOR = (config.author && config.author.name) ? config.author : null;
+const AUTHOR_META = AUTHOR ? AUTHOR.name : "ReviewsGuitar.com";
+const AFFILIATE_DISCLOSURE = config.affiliateDisclosure || "Some links on this page are affiliate links. As an Amazon Associate, ReviewsGuitar.com earns from qualifying purchases — at no extra cost to you.";
+const authorByline = () => AUTHOR
+    ? `<p class="byline">Reviewed by <a href="${AUTHOR.url || '/about'}" rel="author">${AUTHOR.name}</a>${AUTHOR.title ? ', ' + AUTHOR.title : ''}</p>`
+    : `<!-- TODO(human): set config.author.name (+ title, bio) to render a real author byline and Person schema (EEAT). -->`;
+const disclosureBanner = () => `<p class="affiliate-disclosure-banner">${AFFILIATE_DISCLOSURE}</p>`;
+
 // Load Macro Content Cache
 // Load Macro Content Cache
 let macroCache = { clusters: {}, silos: {} };
@@ -193,6 +203,7 @@ function getHeader(basePath, title, breadcrumbs) {
                 <a href="/" style="color: #666; text-decoration: none;">HOME</a> ${breadcrumbs}
             </nav>
             <h1 style="font-size: 3rem; margin-bottom: 3rem;">${toTitleCase(title)}</h1>
+            ${authorByline()}
     `;
 }
 
@@ -232,6 +243,7 @@ function renderProductGrid(filteredProducts, pageUrl) {
     if (filteredProducts.length === 0) return '';
     
     return `
+    ${disclosureBanner()}
     <span class="section-title">Editor's Choice Selection</span>
     <div class="product-grid">
         ${filteredProducts.map(p => {
@@ -363,6 +375,7 @@ function renderComparisonFeature(products, pageUrl) {
     if (products.length === 0) return '';
     
     return `
+    ${disclosureBanner()}
     <span class="section-title">Head-to-Head Technical Breakdown</span>
     <div class="comparison-matchup-container">
         ${products.slice(0, 2).map((p, index) => {
@@ -441,6 +454,7 @@ structure.siloConfigs.forEach(silo => {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert ${silo.displayName} reviews and buyer guides for 2026. Discover the high-fidelity sound of premium ${silo.name} gear and accessories.">
+    <meta name="author" content="${AUTHOR_META}">
     <meta name="keywords" content="${silo.name} guitar, ${silo.name} review, boutique ${silo.name} 2026, professional guitar guides">
     <link rel="canonical" href="https://reviewsguitar.com/collections/${silo.name}/">
     ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}
@@ -575,6 +589,7 @@ structure.siloConfigs.forEach(silo => {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Expert ${page.title} analysis and buyer recommendations. Find elite ${silo.name} gear with our reviews.">
+    <meta name="author" content="${AUTHOR_META}">
     <meta name="keywords" content="${kwArray.join(', ')}">
     <link rel="canonical" href="${pageUrl}">
     ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}

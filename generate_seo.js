@@ -17,6 +17,16 @@ if (fs.existsSync('config.json')) {
     config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 }
 
+// EEAT helpers (author + affiliate disclosure). Author is config-driven so a real
+// reviewer can be filled in once (config.author) and propagate on regeneration.
+const AUTHOR = (config.author && config.author.name) ? config.author : null;
+const AUTHOR_META = AUTHOR ? AUTHOR.name : "ReviewsGuitar.com";
+const AFFILIATE_DISCLOSURE = config.affiliateDisclosure || "Some links on this page are affiliate links. As an Amazon Associate, ReviewsGuitar.com earns from qualifying purchases — at no extra cost to you.";
+const authorByline = () => AUTHOR
+    ? `<p class="byline">Reviewed by <a href="${AUTHOR.url || '/about'}" rel="author">${AUTHOR.name}</a>${AUTHOR.title ? ', ' + AUTHOR.title : ''}</p>`
+    : `<!-- TODO(human): set config.author.name (+ title, bio) to render a real author byline and Person schema (EEAT). -->`;
+const disclosureBanner = () => `<p class="affiliate-disclosure-banner">${AFFILIATE_DISCLOSURE}</p>`;
+
 // ASIN → slug mapping for cloaked affiliate links
 const ASIN_TO_SLUG = {
     'B0BYFC65L7': 'yamaha-fg800-acoustic-guitar',
@@ -420,6 +430,7 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${metaTags.title}</title>
     <meta name="description" content="${metaTags.description}">
+    <meta name="author" content="${AUTHOR_META}">
     <link rel="canonical" href="https://reviewsguitar.com/pages/${fileName}">
     ${config.pinterestDomainVerify ? `<meta name="p:domain_verify" content="${config.pinterestDomainVerify}"/>` : ''}
     <!-- Open Graph / Pinterest Rich Pins -->
@@ -530,6 +541,7 @@ ${schemaJson}
             <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
                 <span class="lf-section-label">${silo} · ${category}</span>
                 <h1>${toTitleCase(keyword)}</h1>
+                ${authorByline()}
                 <p style="font-size: 1.15rem; color: var(--text-dim); max-width: 600px; margin: 0 auto 2rem; line-height: 1.6;">${metaTags.description}</p>
                 <a href="#products" class="btn-amazon pinterest-cta">See Our Top Picks ↓</a>
             </div>
@@ -545,6 +557,7 @@ ${schemaJson}
                 ${aiArticle}
             </div>
 
+            ${disclosureBanner()}
             <div id="products">
             ${(category === 'comparisons' || silo === 'buying') ? renderComparisonFeature(finalProducts.slice(0, 4), fileName) : renderProductGrid(finalProducts.slice(0, 3), fileName)}
             </div>

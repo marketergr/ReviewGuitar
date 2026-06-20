@@ -189,6 +189,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
     <meta name="description" content="Discover the ultimate answer for: ${data.keyword}. Read our expert analysis and find out which gear wins.">
+    <meta name="author" content="ReviewsGuitar.com">
     <link rel="canonical" href="${canonical}">
     <!-- Pinterest Rich Pins -->
     <meta property="og:type" content="article">

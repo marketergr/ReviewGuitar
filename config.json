@@ -1,5 +1,12 @@
 {
   "amazonTrackingId": "reviewsguitar-20",
   "pinterestTagId": "",
-  "pinterestDomainVerify": ""
+  "pinterestDomainVerify": "",
+  "author": {
+    "name": "",
+    "title": "",
+    "bio": "",
+    "url": "/about"
+  },
+  "affiliateDisclosure": "Some links on this page are affiliate links. As an Amazon Associate, ReviewsGuitar.com earns from qualifying purchases — at no extra cost to you."
 }
