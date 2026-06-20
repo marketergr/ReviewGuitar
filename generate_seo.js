@@ -208,19 +208,45 @@ function generateMetaTags(keyword, silo, category, pageType = "landing") {
     };
 }
 
-function generateSchema(keyword, silo, category) {
-    return {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": keyword,
-        "description": `Expert review and analysis of ${keyword}`,
-        "brand": { "@type": "Brand", "name": "ReviewsGuitar" },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "254"
+// Honest schema graph for a guide page: Article + BreadcrumbList + FAQPage.
+// No fabricated Product/AggregateRating (these pages are multi-product guides,
+// not single-product reviews, and the old 4.8/254 rating was invented).
+function buildSchemaGraph(keyword, silo, category, fileName, aiArticle) {
+    const url = `${BASE_URL}/pages/${fileName}`;
+    const title = toTitleCase(keyword);
+    const siloName = silo.charAt(0).toUpperCase() + silo.slice(1);
+    const graph = [
+        {
+            "@type": "Article",
+            "@id": url + "#article",
+            "headline": title,
+            "description": `Reviews and buying guidance for ${keyword}.`,
+            "url": url,
+            "isPartOf": { "@type": "WebSite", "name": "ReviewsGuitar.com", "url": BASE_URL + "/" },
+            "publisher": { "@type": "Organization", "name": "ReviewsGuitar.com", "logo": { "@type": "ImageObject", "url": BASE_URL + "/images/logo.png" } },
+            "author": AUTHOR ? { "@type": "Person", "name": AUTHOR.name } : { "@type": "Organization", "name": "ReviewsGuitar.com" }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": BASE_URL + "/" },
+                { "@type": "ListItem", "position": 2, "name": siloName, "item": `${BASE_URL}/collections/${silo}` },
+                { "@type": "ListItem", "position": 3, "name": title, "item": url }
+            ]
         }
-    };
+    ];
+    const faqs = [];
+    const re = /<span class="faq-question">([\s\S]*?)<\/span>\s*<p class="faq-answer">([\s\S]*?)<\/p>/g;
+    let m;
+    while ((m = re.exec(aiArticle || '')) !== null) {
+        faqs.push({
+            "@type": "Question",
+            "name": m[1].replace(/<[^>]+>/g, '').trim(),
+            "acceptedAnswer": { "@type": "Answer", "text": m[2].replace(/<[^>]+>/g, '').trim() }
+        });
+    }
+    if (faqs.length) graph.push({ "@type": "FAQPage", "mainEntity": faqs });
+    return { "@context": "https://schema.org", "@graph": graph };
 }
 
 function renderProductGrid(filteredProducts, fileName) {
@@ -407,8 +433,7 @@ function getFooter(basePath) {
     <script src="${basePath}js/nav.min.js"></script>`;
 }
 
-function generateLandingPage(silo, category, keyword, metaTags, schema, fileName) {
-    const schemaJson = JSON.stringify(schema, null, 2);
+function generateLandingPage(silo, category, keyword, metaTags, fileName) {
     
     const matchedProducts = products.filter(p => p.silo === silo && (
         keyword.toLowerCase().includes(p.category) || 
@@ -417,6 +442,7 @@ function generateLandingPage(silo, category, keyword, metaTags, schema, fileName
     
     const finalProducts = matchedProducts.length > 0 ? matchedProducts : products.filter(p => p.silo === silo);
     const aiArticle = contentCache[keyword] || generateDeepContent(keyword, silo, category);
+    const schemaJson = JSON.stringify(buildSchemaGraph(keyword, silo, category, fileName, aiArticle), null, 2);
 
     const ogImage = finalProducts.length > 0 ? finalProducts[0].image : 'https://reviewsguitar.com/images/logo.png';
     const pinDescription = `${keyword} — Expert reviews, buying guides, and the best deals for ${new Date().getFullYear()}. Find your perfect guitar gear at ReviewsGuitar.com`;
@@ -581,9 +607,8 @@ function main() {
         for (const [category, keywords] of Object.entries(categories)) {
             for (const keyword of keywords) {
                 const metaTags = generateMetaTags(keyword, silo, category);
-                const schema = generateSchema(keyword, silo, category);
                 const filename = `${silo}_${category}_${keyword.replace(/\s+/g, '_')}.html`;
-                const pageContent = generateLandingPage(silo, category, keyword, metaTags, schema, filename);
+                const pageContent = generateLandingPage(silo, category, keyword, metaTags, filename);
                 
                 const pagePath = path.join(PROJECT_ROOT, 'pages', filename);
                 fs.writeFileSync(pagePath, pageContent);

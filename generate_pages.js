@@ -22,6 +22,17 @@ const authorByline = () => AUTHOR
     : `<!-- TODO(human): set config.author.name (+ title, bio) to render a real author byline and Person schema (EEAT). -->`;
 const disclosureBanner = () => `<p class="affiliate-disclosure-banner">${AFFILIATE_DISCLOSURE}</p>`;
 
+// BreadcrumbList (Home > Silo > Page) derived from the page URL, for JSON-LD.
+const titleCaseWords = s => String(s).replace(/-/g, ' ').toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+function breadcrumbFor(url) {
+    const base = 'https://reviewsguitar.com';
+    const segs = url.replace(/^https?:\/\/[^/]+/, '').replace(/\/$/, '').split('/').filter(Boolean);
+    const items = [{ "@type": "ListItem", "position": 1, "name": "Home", "item": base + "/" }];
+    if (segs[1]) items.push({ "@type": "ListItem", "position": 2, "name": titleCaseWords(segs[1]), "item": `${base}/collections/${segs[1]}` });
+    if (segs[2]) items.push({ "@type": "ListItem", "position": 3, "name": titleCaseWords(segs[2]), "item": `${base}/collections/${segs[1]}/${segs[2]}` });
+    return { "@type": "BreadcrumbList", "itemListElement": items };
+}
+
 // Load Macro Content Cache
 // Load Macro Content Cache
 let macroCache = { clusters: {}, silos: {} };
@@ -219,7 +230,7 @@ function generateProductSchema(products, url) {
             "image": p.image,
             "brand": {
                 "@type": "Brand",
-                "name": p.brand || "ReviewsGuitar Elite"
+                "name": p.brand || (p.name ? p.name.split(' ')[0] : "Generic")
             },
             "offers": {
                 "@type": "Offer",
@@ -228,14 +239,10 @@ function generateProductSchema(products, url) {
                 "price": p.price.replace(/[^0-9.]/g, ''),
                 "itemCondition": "https://schema.org/NewCondition",
                 "availability": "https://schema.org/InStock"
-            },
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": p.rating,
-                "reviewCount": Math.floor(Math.random() * 50) + 20
             }
         }))
     };
+    schema["@graph"].push(breadcrumbFor(url));
     return `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
 }
 
