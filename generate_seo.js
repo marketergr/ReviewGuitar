@@ -232,7 +232,7 @@ function renderProductGrid(filteredProducts, fileName) {
         ${filteredProducts.map(p => `
             <div class="product-card">
                 <div class="product-img-container">
-                    <img src="${p.image}" alt="${p.name}" class="product-img" data-pin-description="${p.name} — ${p.description}" data-pin-url="${BASE_URL}/go/${ASIN_TO_SLUG[p.amazonLink.match(/\/dp\/([A-Z0-9]{10})/)?.[1]] || ''}">
+                    <img src="${p.image}" alt="${p.name}" class="product-img" data-pin-description="${p.name} — ${p.description}" data-pin-url="${BASE_URL}/pages/${fileName}">
                 </div>
                 <div class="product-card-content">
                     <span class="product-badge">${p.category.toUpperCase()} PICK</span>
