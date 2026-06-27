@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 61,
+    "thin": 53,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -3840,12 +3840,11 @@
       "canonical": "https://reviewsguitar.com/best/acoustic-guitar-small-hands",
       "author": "ReviewsGuitar.com",
       "h1": "Best Acoustic Guitar For Small Hands 2026",
-      "words": 228,
+      "words": 574,
       "kw": "Comfortable acoustics for small hands",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -3857,12 +3856,11 @@
       "canonical": "https://reviewsguitar.com/best/acoustic-guitar-under-1000",
       "author": "ReviewsGuitar.com",
       "h1": "Best Sounding Acoustic Guitar Under 1000 Reviews",
-      "words": 226,
+      "words": 581,
       "kw": "Elite sound for under a grand",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -3874,12 +3872,11 @@
       "canonical": "https://reviewsguitar.com/best/acoustic-guitar-under-500",
       "author": "ReviewsGuitar.com",
       "h1": "Best Acoustic Guitar Under 500 Reviews",
-      "words": 230,
+      "words": 595,
       "kw": "Top solid-top acoustics under $500",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -3907,12 +3904,11 @@
       "canonical": "https://reviewsguitar.com/best/beginner-electric-guitar-kit",
       "author": "ReviewsGuitar.com",
       "h1": "Best Beginner Electric Guitar Starter Kits 2026",
-      "words": 224,
+      "words": 600,
       "kw": "Everything you need to play today",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4181,12 +4177,11 @@
       "canonical": "https://reviewsguitar.com/best/electric-guitar-metal-under-800",
       "author": "ReviewsGuitar.com",
       "h1": "Best Electric Guitar For Metal Under 800",
-      "words": 221,
+      "words": 604,
       "kw": "Elite metal guitars for $800",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4198,12 +4193,11 @@
       "canonical": "https://reviewsguitar.com/best/electric-guitar-under-1000",
       "author": "ReviewsGuitar.com",
       "h1": "Best Solid Body Electric Guitar Under 1000",
-      "words": 241,
+      "words": 609,
       "kw": "Premium feel for under $1000",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4215,12 +4209,11 @@
       "canonical": "https://reviewsguitar.com/best/fingerstyle-acoustic-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best Budget Acoustic Guitar For Fingerstyle",
-      "words": 225,
+      "words": 534,
       "kw": "Clear tones, budget price - fingerstyle",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4318,12 +4311,11 @@
       "canonical": "https://reviewsguitar.com/best/recording-acoustic-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best High-End Acoustic Guitar For Recording",
-      "words": 225,
+      "words": 588,
       "kw": "Crystal clear recording - top acoustics",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {

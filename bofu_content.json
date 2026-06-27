@@ -40,5 +40,309 @@
         "a": "Almost always, yes. Even good factory guitars ship with high action to avoid fret buzz in shipping. A $40–$60 professional setup lowers the action and makes chords dramatically easier to fret — it's the single best money a beginner can spend after the guitar itself."
       }
     ]
+  },
+  "/best/acoustic-guitar-under-500": {
+    "buyingGuide": {
+      "heading": "What to Look For in an Acoustic Under $500",
+      "intro": "Under $500 is the value sweet spot in acoustic guitars: you can get a real solid top without paying for a name on the headstock. Spend it on the things that affect tone and feel, not on cosmetics.",
+      "criteria": [
+        {
+          "h": "Insist on a solid top",
+          "p": "At this budget a solid spruce or cedar top is non-negotiable — it's the single biggest driver of tone and the main thing that improves with age. Laminate-top guitars belong below $200, not here."
+        },
+        {
+          "h": "Laminate back and sides are fine",
+          "p": "Almost every guitar under $500 pairs a solid top with laminate back and sides, and that's the right compromise. Laminate is more durable and humidity-tolerant, and at this price it barely affects the sound."
+        },
+        {
+          "h": "Body size for your playing",
+          "p": "Dreadnoughts give you volume and low-end for strumming; concert and grand-auditorium shapes are more balanced and comfortable. Pick by how it feels against your body and the music you play, not by which is 'better.'"
+        },
+        {
+          "h": "Factory setup quality",
+          "p": "Two identical models can feel completely different depending on setup. Budget for a $40–$60 pro setup; it lowers the action and is the difference between a guitar that's a joy to play and one that gathers dust."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can you get a solid-top acoustic for under $500?",
+        "a": "Yes — this is exactly the price range where solid-top guitars become standard. Brands like Yamaha, Fender, and Seagull all offer solid-spruce-top models well under $500. Below $200 you're usually getting all-laminate, so $300–$500 is the value zone."
+      },
+      {
+        "q": "Are laminate back and sides a deal-breaker?",
+        "a": "No. At this price, a solid top with laminate back and sides is the smart build. The top does most of the tonal work, and laminate sides are tougher and more stable in changing humidity — a genuine advantage for a guitar that travels or lives in a dry room."
+      },
+      {
+        "q": "Is a $500 acoustic noticeably better than a $150 one?",
+        "a": "Usually yes, in two ways: a solid top (richer, more dynamic tone that ages well) and better fretwork and tuning stability. The jump from $150 to $500 is one of the most worthwhile upgrades in acoustic guitars; beyond $500 the gains get smaller per dollar."
+      }
+    ]
+  },
+  "/best/acoustic-guitar-under-1000": {
+    "buyingGuide": {
+      "heading": "Buying an Acoustic in the $500–$1000 Range",
+      "intro": "Between $500 and $1000 you cross into serious instrument territory — all-solid construction, better tonewoods, and electronics that are actually gig-worthy. This is the last big tone jump before you hit diminishing returns.",
+      "criteria": [
+        {
+          "h": "All-solid vs. solid-top",
+          "p": "At this budget you can find all-solid-wood guitars (solid top, back, and sides), which resonate and age better than a solid-top/laminate build. It's the headline upgrade over a sub-$500 guitar — prioritise it if tone is your goal."
+        },
+        {
+          "h": "Tonewood pairing",
+          "p": "Rosewood back and sides give deep lows and sparkling highs (great for fingerstyle and recording); mahogany is more focused and punchy with strong mids (great for vocal accompaniment). Neither is better — match it to your music."
+        },
+        {
+          "h": "Electronics worth plugging in",
+          "p": "Onboard preamps at this level (undersaddle or blended systems) finally sound natural enough to gig with. If you play live or record, a quality pickup system here saves you buying one later."
+        },
+        {
+          "h": "Setup and tuning stability",
+          "p": "Better tuners, bone nut and saddle, and tighter fretwork mean the guitar stays in tune and plays cleanly up the neck. These details, not the logo, are what your hands and ears notice every day."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is an all-solid-wood acoustic worth it under $1000?",
+        "a": "For most players, yes. All-solid construction resonates more, has greater dynamic range, and opens up with age in a way solid-top/laminate guitars don't. If you're past the beginner stage and tone matters to you, it's the most meaningful upgrade in this price bracket."
+      },
+      {
+        "q": "Rosewood or mahogany back and sides?",
+        "a": "Rosewood is rich and complex with scooped mids — ideal for fingerstyle and recording. Mahogany is dry, punchy, and mid-forward — ideal for strumming and backing vocals so the guitar doesn't clash with your voice. Choose by the role the guitar plays in your music."
+      },
+      {
+        "q": "Does a pickup matter at this price?",
+        "a": "If you'll ever plug in, yes. Preamp systems in the $500–$1000 range are good enough to use live without sounding thin or quacky, and buying a guitar with one built in is cheaper than retrofitting later. If you only ever play at home, you can skip it and put the money into wood."
+      }
+    ]
+  },
+  "/best/fingerstyle-acoustic-guitar": {
+    "buyingGuide": {
+      "heading": "What Makes a Great Fingerstyle Acoustic",
+      "intro": "Fingerstyle lives and dies on note separation, balance, and comfort — not raw volume. A guitar built for strumming can sound muddy when you start picking individual strings. Here's what to prioritise.",
+      "criteria": [
+        {
+          "h": "Smaller, balanced body",
+          "p": "Concert, OM, and grand-auditorium shapes keep bass and treble in balance so individual notes ring clearly. Big dreadnoughts can overpower delicate picking with boomy low end — playable for fingerstyle, but rarely ideal."
+        },
+        {
+          "h": "Neck width and string spacing",
+          "p": "A wider nut (around 1.75\") and slightly wider string spacing give your fingers room to land cleanly without muting adjacent strings. This is one of the biggest comfort factors for fingerpicking."
+        },
+        {
+          "h": "Tonewood for clarity",
+          "p": "Spruce tops give bright, articulate attack; cedar tops are warmer and more responsive to a light touch. Rosewood back and sides add shimmer and sustain that flatter arpeggios."
+        },
+        {
+          "h": "Even response at low volume",
+          "p": "The best fingerstyle guitars sound full even when played softly. If a guitar only comes alive when you dig in hard, it'll fight you on quiet, dynamic passages."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What body shape is best for fingerstyle?",
+        "a": "Concert, OM (orchestra model), and grand-auditorium bodies are the fingerstyle favourites because they keep the bass and treble balanced for clear note separation. Dreadnoughts work but their strong low end can muddy intricate picking."
+      },
+      {
+        "q": "Do I need a wide nut for fingerstyle?",
+        "a": "It helps a lot. A nut width around 1.75\" (versus the typical 1.69\") gives your fretting and picking fingers more room, reducing accidental muting. If you have larger hands or play complex arrangements, prioritise a wider neck."
+      },
+      {
+        "q": "Cedar or spruce top for fingerpicking?",
+        "a": "Cedar responds beautifully to a light touch and sounds warm and immediate, which many fingerstyle players love. Spruce is brighter and more articulate with more headroom for dynamics. Cedar suits gentle players; spruce suits those who mix soft picking with harder strumming."
+      }
+    ]
+  },
+  "/best/acoustic-guitar-small-hands": {
+    "buyingGuide": {
+      "heading": "Choosing an Acoustic for Smaller Hands",
+      "intro": "If chords feel like a stretch, the guitar — not your hands — is usually the problem. The right dimensions make barre chords and wide shapes genuinely reachable. Focus on three measurements.",
+      "criteria": [
+        {
+          "h": "Shorter scale length",
+          "p": "Scale length is the distance the strings vibrate. A shorter scale (around 24.75\" or less) means frets are closer together and string tension is lower, so chords are easier to reach and fret. It's the single biggest comfort factor for small hands."
+        },
+        {
+          "h": "Narrower nut width",
+          "p": "A narrower nut (around 1.68\" or less) brings the strings closer together so your fingers don't have to span as far across the neck. Great for small hands — though fingerstyle players may prefer a touch more room."
+        },
+        {
+          "h": "Smaller body shape",
+          "p": "Concert, parlor, and travel-size bodies are easier to wrap your arm around and hold close, which also improves your fretting-hand angle. A big dreadnought can push your wrist into an awkward position."
+        },
+        {
+          "h": "Slim neck profile",
+          "p": "A thinner front-to-back neck ('C' or slim-taper profile) lets your thumb sit comfortably behind the neck so your fingers can curl over more easily for clean chords."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What does 'short-scale' mean and why does it help small hands?",
+        "a": "Scale length is the vibrating length of the strings. A shorter scale puts the frets closer together and lowers string tension, so chord shapes require less stretch and less finger pressure. For small hands, a short-scale guitar can be the difference between struggling and playing comfortably."
+      },
+      {
+        "q": "Is a narrow or wide nut better for small hands?",
+        "a": "A narrower nut (around 1.68\") brings the strings closer together so your fingers cover less distance — generally better for small hands and chord-strumming. The exception is intricate fingerstyle, where a little extra width prevents muting; choose based on your main playing style."
+      },
+      {
+        "q": "Are these guitars also good for kids or younger players?",
+        "a": "Yes. Short-scale, smaller-body, and parlor-size acoustics are ideal for kids, teens, and anyone who finds a full dreadnought unwieldy. They're full-quality instruments, just sized for comfort, so a younger player won't need to 'upgrade out' of them quickly."
+      }
+    ]
+  },
+  "/best/recording-acoustic-guitar": {
+    "buyingGuide": {
+      "heading": "What Makes an Acoustic Record Well",
+      "intro": "A guitar that wows in a shop can disappoint in a mix. Recording rewards balance, clarity, and tuning stability over sheer loudness — a boomy dreadnought that fills a room can swallow a mix. Here's what matters behind the mic.",
+      "criteria": [
+        {
+          "h": "Balanced, controlled low end",
+          "p": "Tight, even bass sits in a mix; excessive boom muddies it and eats up space your vocals and bass need. Smaller bodies (OM, grand auditorium) and mahogany often record cleaner than a big, bass-heavy dreadnought."
+        },
+        {
+          "h": "Note clarity and separation",
+          "p": "Microphones expose everything, so you want articulate note definition and a top that responds evenly across the strings. This is where a well-built solid top and quality bracing earn their keep."
+        },
+        {
+          "h": "Mic it, don't rely on the pickup",
+          "p": "For serious recording, a condenser microphone captures far more detail and natural tone than an onboard piezo pickup, which tends to sound thin and 'quacky.' The pickup is for live use; the mic is for the studio."
+        },
+        {
+          "h": "Tuning stability and fresh strings",
+          "p": "Microphones reveal the slightest tuning drift, and dull strings sound dead on tape. Good tuners, a properly cut nut, and a fresh set of strings (let them stretch and settle first) make the biggest difference to a clean take."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is a dreadnought good for recording?",
+        "a": "It can be, but its strong low end often needs taming in a mix. Many engineers prefer smaller-bodied guitars (OM, grand auditorium) or mahogany dreadnoughts for recording because their tighter, more balanced response sits more easily alongside vocals and other instruments."
+      },
+      {
+        "q": "Should I record with a microphone or the built-in pickup?",
+        "a": "Use a microphone for anything serious. Onboard piezo pickups are designed to fight feedback on a loud stage, not to capture natural tone, so they sound thin and synthetic on a recording. A single condenser mic positioned around the 12th–14th fret will outperform a pickup every time."
+      },
+      {
+        "q": "Do new strings really matter for recording?",
+        "a": "Hugely. Old strings sound dull and lifeless on tape, where there's nothing to hide behind. Put on a fresh set, then play and re-tune for 20–30 minutes so they stop stretching before you hit record — bright, stable strings are free studio polish."
+      }
+    ]
+  },
+  "/best/beginner-electric-guitar-kit": {
+    "buyingGuide": {
+      "heading": "How to Pick a Beginner Electric Guitar Kit",
+      "intro": "A starter kit gets you playing on day one — guitar, amp, and accessories in one box. The trap is paying for a pile of flashy extras wrapped around a poor guitar. Judge the kit by the instrument first.",
+      "criteria": [
+        {
+          "h": "The guitar quality comes first",
+          "p": "Everything else in the box is replaceable; the guitar is what you'll actually learn on. A solid Strat-, Tele-, or LP-style body from a reputable brand beats a no-name guitar bundled with extra 'stuff' every time."
+        },
+        {
+          "h": "Amp wattage for practice",
+          "p": "A 10–15 watt practice amp is plenty for a bedroom and often includes built-in overdrive and effects to keep practice fun. You don't need more power until you're jamming with a drummer."
+        },
+        {
+          "h": "What's actually in the bundle",
+          "p": "Look for the genuinely useful items: a gig bag, a tuner (or a free tuning app), a strap, spare strings, picks, and a cable. These save you a separate shopping trip; anything beyond that is bonus, not a reason to buy."
+        },
+        {
+          "h": "Budget for a setup",
+          "p": "Beginner electrics often ship with high action and sharp fret ends. A quick $40–$50 setup makes the guitar far easier to play and removes a major reason beginners give up."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Are beginner electric guitar starter kits worth it?",
+        "a": "Yes, if the guitar itself is good. A kit from a reputable brand bundles a decent guitar with a practice amp and the accessories you'd have to buy anyway, usually cheaper than buying separately. Just don't let a long list of cheap extras distract you from a weak instrument."
+      },
+      {
+        "q": "What size amp does a beginner need?",
+        "a": "A 10–15 watt practice amp is ideal. It's loud enough for any bedroom, usually includes onboard distortion and effects so practice stays fun, and keeps you from over-spending. Bigger amps only become necessary when you start playing with a drummer or gigging."
+      },
+      {
+        "q": "Strat, Tele, or Les Paul style for a first electric?",
+        "a": "All three are great; it comes down to sound and feel. Strat-style guitars are versatile and lightweight with bright single-coils; Tele-style are simple and rugged with a twangy bite; LP-style are heavier with thick, warm humbuckers suited to rock. Pick the one whose sound and look excites you most — motivation matters more than specs."
+      }
+    ]
+  },
+  "/best/electric-guitar-under-1000": {
+    "buyingGuide": {
+      "heading": "Buying a Solid-Body Electric Under $1000",
+      "intro": "Under $1000 is where electric guitars get genuinely professional — many gigging and recording players never need more. At this level you're paying for better pickups, hardware, and quality control, so focus on the parts that shape tone and reliability.",
+      "criteria": [
+        {
+          "h": "Pickups for your genre",
+          "p": "Single-coils (Strat/Tele) give bright, articulate, glassy tones for blues, funk, country, and indie. Humbuckers (LP/SG style) are thicker and hotter with no hum, suited to rock and heavier styles. Some guitars offer both via coil-splitting for maximum versatility."
+        },
+        {
+          "h": "Construction and woods",
+          "p": "Look for a well-cut neck joint, quality fretwork, and a comfortable neck profile. At this budget, country of origin matters less than build consistency — a well-made Indonesian or Mexican guitar can outplay a poorly finished pricier one."
+        },
+        {
+          "h": "Hardware and tuning stability",
+          "p": "Good tuners, a stable bridge, and a properly cut nut keep the guitar in tune through bends and vibrato. Cheap hardware is the most common weak point and the first thing players upgrade — buying it done right saves money later."
+        },
+        {
+          "h": "How much you'll modify",
+          "p": "A guitar you love as-is is worth more than a cheaper one you'll pour money into. At this price most guitars are gig-ready out of the box, so don't assume you'll need pickup or hardware swaps."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Single-coils or humbuckers under $1000?",
+        "a": "It depends on your music. Single-coils are bright, clear, and dynamic — perfect for blues, funk, country, and clean tones, with a trade-off of some 60-cycle hum. Humbuckers are fatter, louder, and hum-free — ideal for rock and high-gain. If you want both worlds, look for a guitar with coil-splitting."
+      },
+      {
+        "q": "Is a guitar made in Mexico or Indonesia good enough at this price?",
+        "a": "Absolutely. Modern overseas manufacturing for major brands is excellent, and many sub-$1000 guitars rival instruments that cost far more a decade ago. Judge the individual guitar's fretwork, setup, and feel rather than the flag on the label."
+      },
+      {
+        "q": "Will I need to upgrade the pickups?",
+        "a": "Usually not at this price. Most $700–$1000 electrics ship with genuinely good pickups that are gig- and recording-ready. Upgrades are a matter of taste, not necessity — buy a guitar whose stock sound you already like rather than a cheaper one you plan to 'fix.'"
+      }
+    ]
+  },
+  "/best/electric-guitar-metal-under-800": {
+    "buyingGuide": {
+      "heading": "What to Look For in a Metal Guitar Under $800",
+      "intro": "Metal asks specific things of a guitar: tight high-gain clarity, a fast neck, and rock-solid tuning under aggressive playing and low tunings. Here's what separates a true metal machine from a general-purpose electric.",
+      "criteria": [
+        {
+          "h": "High-output pickups",
+          "p": "Hot humbuckers — passive or active — give the tight, saturated attack metal needs and stay clear under heavy distortion where single-coils get fizzy and noisy. Active pickups offer an even more compressed, consistent high-gain tone favoured by many metal players."
+        },
+        {
+          "h": "Fast, thin neck",
+          "p": "A flatter fretboard radius and a thin neck profile make fast runs, wide stretches, and shredding far more comfortable. This is a defining feature of 'superstrat' style metal guitars."
+        },
+        {
+          "h": "Bridge: fixed vs. Floyd Rose",
+          "p": "A fixed or hardtail bridge holds tuning rock-solid and is simple to restring — ideal if you switch tunings. A Floyd Rose floating tremolo enables dramatic dive-bombs and flutter but is fussier to set up and retune. Choose based on whether you need the whammy theatrics."
+        },
+        {
+          "h": "Scale length for low tunings",
+          "p": "If you drop-tune, a longer scale (25.5\" or a baritone/multi-scale) keeps low strings tight and defined instead of floppy and muddy. For standard or one-step-down tuning, a normal scale is fine."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Active or passive pickups for metal?",
+        "a": "Both work; it's a tone choice. Active pickups (powered by a 9V battery) give a tight, compressed, consistent high-gain sound with very low noise — a metal staple. Passive high-output humbuckers sound a touch more dynamic and 'organic.' Under $800 you'll find excellent examples of each; pick by the tone you hear in your favourite bands."
+      },
+      {
+        "q": "Do I need a Floyd Rose tremolo for metal?",
+        "a": "Only if you want dive-bombs and extreme whammy effects. A Floyd Rose locks tuning superbly once set up but is more complex to restring and retune. Many metal players prefer a fixed bridge for rock-solid tuning and easy tuning changes — it comes down to whether the whammy is part of your style."
+      },
+      {
+        "q": "What scale length is best for drop tunings?",
+        "a": "For drop and low tunings, a longer scale length (25.5\" or longer, up to baritone) keeps the thick low strings tight and articulate rather than loose and muddy. If you mostly play in standard or drop-D, a standard scale is perfectly fine; go longer the lower you tune."
+      }
+    ]
   }
 }
