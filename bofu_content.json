@@ -1,0 +1,44 @@
+{
+  "/best/beginner-acoustic-guitar": {
+    "buyingGuide": {
+      "heading": "How to Choose Your First Acoustic Guitar",
+      "intro": "A great beginner acoustic gets out of your way so you can focus on learning. The wrong one fights you on every chord and quietly kills your motivation. Here are the four things that actually matter at this price point — everything else is marketing.",
+      "criteria": [
+        {
+          "h": "Solid top vs. laminate",
+          "p": "A solid spruce top resonates and opens up as it ages; laminate stays flat-sounding forever. Every guitar on this list with a solid top will sound noticeably richer a year from now. If you can stretch budget for one upgrade, make it this one."
+        },
+        {
+          "h": "Body shape and your size",
+          "p": "Dreadnoughts are loud and full but bulky; concert and grand-auditorium bodies are more comfortable for smaller players and fingerstyle. If a guitar is uncomfortable to hold on the couch, you won't pick it up — and the best guitar is the one you actually play."
+        },
+        {
+          "h": "Action and playability",
+          "p": "\"Action\" is the string height above the fretboard. High action makes fretting painful and is the #1 reason beginners quit. A factory setup is rarely perfect — budget $40–$60 for a professional setup, or learn to adjust the truss rod and saddle yourself. It transforms a cheap guitar."
+        },
+        {
+          "h": "Electronics: only if you'll plug in",
+          "p": "A built-in pickup (often marked \"E\" or \"ce\") lets you plug into an amp or interface. It's worth it if you plan to record or play live soon, but if you're learning chords in your bedroom, skip it and put the money toward a better top."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How much should a beginner spend on an acoustic guitar?",
+        "a": "The sweet spot is $150–$350. Below $100 the build quality and setup usually make learning harder, not cheaper. In the $150–$350 range you get a playable instrument with a solid top that will last for years — you won't outgrow it before you're intermediate."
+      },
+      {
+        "q": "Steel-string or nylon-string for a complete beginner?",
+        "a": "Steel-string acoustics are the standard for pop, rock, country, and folk — which is what most beginners want to play. Nylon (classical) guitars are gentler on the fingers and better for classical or flamenco. If you're unsure, start with steel; your fingertips toughen up within two weeks."
+      },
+      {
+        "q": "Dreadnought or concert body — which is better to learn on?",
+        "a": "A concert or grand-auditorium body is easier to wrap your arm around and more balanced for fingerpicking, making it friendlier for smaller players and beginners. Dreadnoughts are louder and punchier for strumming. Comfort wins for a first guitar, so try a concert size if you can."
+      },
+      {
+        "q": "Do I need a setup on a new beginner guitar?",
+        "a": "Almost always, yes. Even good factory guitars ship with high action to avoid fret buzz in shipping. A $40–$60 professional setup lowers the action and makes chords dramatically easier to fret — it's the single best money a beginner can spend after the guitar itself."
+      }
+    ]
+  }
+}

@@ -7,6 +7,14 @@ const BASE_URL = "https://reviewsguitar.com";
 // Load Products
 const products = JSON.parse(fs.readFileSync('products.json', 'utf8'));
 
+// Per-page editorial enrichment (buying guide + FAQ). Keyed by landing-page URL.
+// Pages without an entry render as before (no thin-content regression).
+let bofuContent = {};
+if (fs.existsSync('bofu_content.json')) {
+    try { bofuContent = JSON.parse(fs.readFileSync('bofu_content.json', 'utf8')); }
+    catch (e) { console.error('Error parsing bofu_content.json:', e); }
+}
+
 // ASIN → slug mapping for cloaked affiliate links
 const ASIN_TO_SLUG = {
     'B0BYFC65L7': 'yamaha-fg800-acoustic-guitar',
@@ -179,7 +187,50 @@ function matchProducts(keyword) {
 function generateBoFuPage(data, matchedProducts, fileName) {
     const heroImage = data.url.includes('acoustic') ? '/images/pinterest_acoustic_guitars.png' : '/images/pinterest_electric_guitars.png';
     const canonical = `${BASE_URL}${data.url}`;
-    
+
+    // --- Editorial enrichment: buying guide + FAQ (unique per page) ---
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const enrich = bofuContent[data.url] || {};
+    let buyingGuideHtml = '';
+    if (enrich.buyingGuide) {
+        const g = enrich.buyingGuide;
+        buyingGuideHtml = `
+            <section class="bofu-guide" style="margin-top: 3.5rem;">
+                <h2 style="font-family: 'Montserrat'; font-size: 1.8rem; color: #fff; margin-bottom: 1rem;">${esc(g.heading)}</h2>
+                <p style="color: #bbb; line-height: 1.8; font-size: 1.02rem;">${esc(g.intro)}</p>
+                ${(g.criteria || []).map(c => `
+                <div style="margin-top: 1.5rem;">
+                    <h3 style="font-family: 'Montserrat'; font-size: 1.2rem; color: #f3a847; margin-bottom: 0.4rem;">${esc(c.h)}</h3>
+                    <p style="color: #bbb; line-height: 1.7; margin: 0;">${esc(c.p)}</p>
+                </div>`).join('')}
+            </section>`;
+    }
+    let faqHtml = '';
+    let faqSchema = '';
+    if (Array.isArray(enrich.faq) && enrich.faq.length) {
+        faqHtml = `
+            <section class="bofu-faq" style="margin-top: 3.5rem;">
+                <h2 style="font-family: 'Montserrat'; font-size: 1.8rem; color: #fff; margin-bottom: 1.2rem;">Frequently Asked Questions</h2>
+                ${enrich.faq.map(f => `
+                <div style="border-top: 1px solid #2a2a2a; padding: 1.2rem 0;">
+                    <h3 style="font-family: 'Inter'; font-size: 1.05rem; color: #fff; margin: 0 0 0.5rem;">${esc(f.q)}</h3>
+                    <p style="color: #bbb; line-height: 1.7; margin: 0;">${esc(f.a)}</p>
+                </div>`).join('')}
+            </section>`;
+        faqSchema = `
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [${enrich.faq.map(f => `{
+        "@type": "Question",
+        "name": ${JSON.stringify(f.q)},
+        "acceptedAnswer": { "@type": "Answer", "text": ${JSON.stringify(f.a)} }
+      }`).join(',')}]
+    }
+    </script>`;
+    }
+
     let title = `${data.pinterest_hook} | ReviewsGuitar.com`;
     if (title.length > 65) title = data.pinterest_hook.substring(0, 65);
     const pageHtml = `<!DOCTYPE html>
@@ -201,7 +252,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
     <meta name="pinterest-rich-pin" content="true">
     <meta name="pin:description" content="${data.pinterest_hook} — The definitive answer for ${data.keyword}. Save this to your guitar board!">
     <meta name="pin:media" content="${BASE_URL}${heroImage}">
-    
+    ${faqSchema}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -283,6 +334,8 @@ function generateBoFuPage(data, matchedProducts, fileName) {
                 </div>
                 `).join('')}
             </div>
+            ${buyingGuideHtml}
+            ${faqHtml}
         </section>
 
         <aside class="bofu-sidebar">
