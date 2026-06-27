@@ -113,6 +113,33 @@ function matchProducts(keyword) {
     const BRANDS = ['yamaha', 'fender', 'squier', 'martin', 'taylor', 'prs', 'boss', 'tc electronic', 'epiphone', 'jackson', 'hercules', 'ernie ball', 'wingo', 'perri', 'hal leonard', 'justinguitar', 'nerecndens', 'gibson', 'ibanez', 'vox', 'marshall', 'gretsch', 'seagull'];
     const activeBrands = BRANDS.filter(b => kwLower.includes(b));
 
+    // Gear-type intent: route accessory/gear keywords to the right product CATEGORY
+    // instead of letting generic word-overlap surface guitar stands on every page.
+    // Order matters: more specific types are checked first (pickup before pick, capo before string).
+    let gearType = null;
+    if (/pickup|p-?90|humbucker|single.?coil|fluence/.test(kwLower)) gearType = 'pickups';
+    else if (/pedal|distortion|overdrive|\bwah\b|loop|fuzz|\bdelay\b|reverb|chorus/.test(kwLower)) gearType = 'pedals';
+    else if (/\bamp\b|amplifier|\bcombo\b/.test(kwLower)) gearType = 'amps';
+    else if (/capo/.test(kwLower)) gearType = 'capos';
+    else if (/headphone/.test(kwLower)) gearType = 'headphones';
+    else if (/\bcable/.test(kwLower)) gearType = 'cables';
+    else if (/\bcase|flight ?case|gig ?bag/.test(kwLower)) gearType = 'cases';
+    else if (/wireless/.test(kwLower)) gearType = 'wireless';
+    else if (/strap/.test(kwLower)) gearType = 'straps';
+    else if (/tuner|tuning/.test(kwLower)) gearType = 'tuners';
+    else if (/string/.test(kwLower)) gearType = 'strings';
+    else if (/\bpicks?\b/.test(kwLower)) gearType = 'picks';
+    else if (/\bstand/.test(kwLower)) gearType = 'stands';
+
+    // Canonical gear type for a product (category, with the mis-filed combo amp special-cased)
+    const productGearType = (p) => {
+        const n = p.name.toLowerCase();
+        if (/\bamp\b|combo amp|amplifier/.test(n)) return 'amps';
+        const c = (p.category || '').toLowerCase();
+        const KNOWN = ['pickups', 'pedals', 'strings', 'tuners', 'capos', 'picks', 'straps', 'wireless', 'stands', 'cases', 'cables', 'headphones'];
+        return KNOWN.includes(c) ? c : null;
+    };
+
     let scored = products.map(p => {
         let score = 0;
         const pNameLower = p.name.toLowerCase();
@@ -125,7 +152,18 @@ function matchProducts(keyword) {
                 score -= 10;
             }
         }
-        
+
+        // 1b. Gear-type match: dominate scoring for typed accessory/gear queries so
+        // the right category wins and unrelated accessories (e.g. stands) drop out.
+        if (gearType) {
+            const pType = productGearType(p);
+            if (pType === gearType) {
+                score += 45;            // correct gear type for the query
+            } else if (pType !== null) {
+                score -= 30;            // wrong-type accessory/gear: push it down
+            }
+        }
+
         // 2. Brand Match
         let pBrand = null;
         for (const b of BRANDS) {

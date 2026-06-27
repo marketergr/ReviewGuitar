@@ -462,7 +462,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/acoustic_professional_custom_acoustic_guitar_builders.html | 684 | 52 | 135 | …/acoustic/professional/custom-acoustic-guitar-builders | underscore-url |
 | pages/acoustic_professional_investment_grade_acoustic_guitars.html | 684 | 54 | 137 | …/acoustic/professional/investment-grade-acoustic-guitars | underscore-url |
 | pages/acoustic_professional_professional_acoustic_guitar_purchase.html | 684 | 58 | 141 | …/acoustic/professional/professional-acoustic-guitar | underscore-url |
-| pages/bofu_alternatives_epiphone-les-paul-standard.html | 229 | 51 | 129 | …/alternatives/epiphone-les-paul-standard | underscore-url thin(<300w) |
+| pages/bofu_alternatives_epiphone-les-paul-standard.html | 232 | 51 | 129 | …/alternatives/epiphone-les-paul-standard | underscore-url thin(<300w) |
 | pages/bofu_best_acoustic-guitar-flight-cases.html | 227 | 60 | 127 | …/best/acoustic-guitar-flight-cases | underscore-url thin(<300w) |
 | pages/bofu_best_acoustic-guitar-small-hands.html | 574 | 58 | 131 | …/best/acoustic-guitar-small-hands | underscore-url |
 | pages/bofu_best_acoustic-guitar-under-1000.html | 581 | 50 | 138 | …/best/acoustic-guitar-under-1000 | underscore-url |
@@ -470,36 +470,36 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_beginner-acoustic-guitar.html | 694 | 50 | 129 | …/best/beginner-acoustic-guitar | underscore-url |
 | pages/bofu_best_beginner-electric-guitar-kit.html | 600 | 54 | 137 | …/best/beginner-electric-guitar-kit | underscore-url |
 | pages/bofu_best_best-12-string-capo.html | 228 | 51 | 129 | …/best/best-12-string-capo | underscore-url thin(<300w) |
-| pages/bofu_best_best-7-string-guitar.html | 240 | 60 | 133 | …/best/best-7-string-guitar | underscore-url thin(<300w) |
+| pages/bofu_best_best-7-string-guitar.html | 235 | 60 | 133 | …/best/best-7-string-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_best-budget-bass.html | 240 | 46 | 132 | …/best/best-budget-bass | underscore-url thin(<300w) |
-| pages/bofu_best_best-guitar-cables.html | 248 | 54 | 130 | …/best/best-guitar-cables | underscore-url thin(<300w) |
-| pages/bofu_best_best-guitar-headphones.html | 248 | 56 | 134 | …/best/best-guitar-headphones | underscore-url thin(<300w) |
+| pages/bofu_best_best-guitar-cables.html | 250 | 54 | 130 | …/best/best-guitar-cables | underscore-url thin(<300w) |
+| pages/bofu_best_best-guitar-headphones.html | 251 | 56 | 134 | …/best/best-guitar-headphones | underscore-url thin(<300w) |
 | pages/bofu_best_best-lightweight-guitar.html | 236 | 59 | 136 | …/best/best-lightweight-guitar | underscore-url thin(<300w) |
-| pages/bofu_best_best-locking-tuners.html | 227 | 57 | 133 | …/best/best-locking-tuners | underscore-url thin(<300w) |
-| pages/bofu_best_best-loop-pedal-budget.html | 242 | 59 | 129 | …/best/best-loop-pedal-budget | underscore-url thin(<300w) |
-| pages/bofu_best_best-p90-pickups.html | 248 | 51 | 125 | …/best/best-p90-pickups | underscore-url thin(<300w) |
-| pages/bofu_best_best-shredding-picks.html | 248 | 47 | 131 | …/best/best-shredding-picks | underscore-url thin(<300w) |
-| pages/bofu_best_best-wah-pedals.html | 243 | 56 | 130 | …/best/best-wah-pedals | underscore-url thin(<300w) |
+| pages/bofu_best_best-locking-tuners.html | 235 | 57 | 133 | …/best/best-locking-tuners | underscore-url thin(<300w) |
+| pages/bofu_best_best-loop-pedal-budget.html | 239 | 59 | 129 | …/best/best-loop-pedal-budget | underscore-url thin(<300w) |
+| pages/bofu_best_best-p90-pickups.html | 247 | 51 | 125 | …/best/best-p90-pickups | underscore-url thin(<300w) |
+| pages/bofu_best_best-shredding-picks.html | 245 | 47 | 131 | …/best/best-shredding-picks | underscore-url thin(<300w) |
+| pages/bofu_best_best-wah-pedals.html | 237 | 56 | 130 | …/best/best-wah-pedals | underscore-url thin(<300w) |
 | pages/bofu_best_best-wireless-guitar-system.html | 247 | 57 | 130 | …/best/best-wireless-guitar-system | underscore-url thin(<300w) |
-| pages/bofu_best_blues-overdrive-pedals.html | 240 | 48 | 129 | …/best/blues-overdrive-pedals | underscore-url thin(<300w) |
+| pages/bofu_best_blues-overdrive-pedals.html | 230 | 48 | 129 | …/best/blues-overdrive-pedals | underscore-url thin(<300w) |
 | pages/bofu_best_boutique-electric-guitars-for-recording.html | 242 | 72 | 154 | ∅ | no-canonical underscore-url thin(<300w) title-long(71) |
 | pages/bofu_best_boutique-electric-guitars.html | 244 | 61 | 131 | …/best/boutique-electric-guitars | underscore-url thin(<300w) |
 | pages/bofu_best_electric-guitar-metal-under-800.html | 604 | 49 | 130 | …/best/electric-guitar-metal-under-800 | underscore-url |
 | pages/bofu_best_electric-guitar-under-1000.html | 609 | 49 | 132 | …/best/electric-guitar-under-1000 | underscore-url |
 | pages/bofu_best_fingerstyle-acoustic-guitar.html | 534 | 60 | 133 | …/best/fingerstyle-acoustic-guitar | underscore-url |
-| pages/bofu_best_guitar-strings-blues.html | 247 | 49 | 129 | …/best/guitar-strings-blues | underscore-url thin(<300w) |
-| pages/bofu_best_home-practice-guitar-amp.html | 250 | 53 | 128 | …/best/home-practice-guitar-amp | underscore-url thin(<300w) |
+| pages/bofu_best_guitar-strings-blues.html | 239 | 49 | 129 | …/best/guitar-strings-blues | underscore-url thin(<300w) |
+| pages/bofu_best_home-practice-guitar-amp.html | 253 | 53 | 128 | …/best/home-practice-guitar-amp | underscore-url thin(<300w) |
 | pages/bofu_best_hybrid-guitar-reviews.html | 244 | 57 | 134 | …/best/hybrid-guitar-reviews | underscore-url thin(<300w) |
 | pages/bofu_best_jazzmaster-style-guitars.html | 231 | 56 | 132 | …/best/jazzmaster-style-guitars | underscore-url thin(<300w) |
 | pages/bofu_best_premium-acoustic-guitars-under-3000.html | 311 | 68 | 172 | ∅ | no-canonical underscore-url desc-long(172) |
 | pages/bofu_best_recording-acoustic-guitar.html | 588 | 60 | 133 | …/best/recording-acoustic-guitar | underscore-url |
-| pages/bofu_best_telecaster-metal-pickups.html | 236 | 56 | 129 | …/best/telecaster-metal-pickups | underscore-url thin(<300w) |
+| pages/bofu_best_telecaster-metal-pickups.html | 242 | 56 | 129 | …/best/telecaster-metal-pickups | underscore-url thin(<300w) |
 | pages/bofu_best_travel-acoustic-guitar.html | 230 | 62 | 134 | …/best/travel-acoustic-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_vintage-guitars-investment-guide.html | 282 | 61 | 137 | ∅ | no-canonical underscore-url thin(<300w) |
-| pages/bofu_reviews_best-guitar-tuners.html | 244 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url thin(<300w) |
+| pages/bofu_reviews_best-guitar-tuners.html | 243 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url thin(<300w) |
 | pages/bofu_reviews_boss-katana-50-mkii.html | 540 | 51 | 129 | …/reviews/boss-katana-50-mkii | underscore-url |
 | pages/bofu_reviews_daddario-xs-strings.html | 533 | 57 | 38 | …/reviews/daddario-xs-strings | underscore-url |
-| pages/bofu_reviews_ernie-ball-volume-pedal.html | 234 | 54 | 125 | …/reviews/ernie-ball-volume-pedal | underscore-url thin(<300w) |
+| pages/bofu_reviews_ernie-ball-volume-pedal.html | 245 | 54 | 125 | …/reviews/ernie-ball-volume-pedal | underscore-url thin(<300w) |
 | pages/bofu_reviews_fender-mustang-lt25.html | 233 | 47 | 134 | …/reviews/fender-mustang-lt25 | underscore-url thin(<300w) |
 | pages/bofu_reviews_fender-player-ii-stratocaster.html | 567 | 54 | 131 | …/reviews/fender-player-ii-stratocaster | underscore-url |
 | pages/bofu_reviews_fishman-fluence-pickups.html | 221 | 58 | 127 | …/reviews/fishman-fluence-pickups | underscore-url thin(<300w) |
@@ -509,7 +509,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_reviews_vox-ac15.html | 240 | 57 | 126 | …/reviews/vox-ac15 | underscore-url thin(<300w) |
 | pages/bofu_reviews_yamaha-dynamic-classical.html | 227 | 51 | 131 | …/reviews/yamaha-dynamic-classical | underscore-url thin(<300w) |
 | pages/bofu_vs_fender-player-vs-american-professional.html | 173 | 61 | 131 | …/vs/fender-player-vs-american-professional | underscore-url thin(<300w) |
-| pages/bofu_vs_gibson-les-paul-50s-vs-60s.html | 171 | 50 | 132 | …/vs/gibson-les-paul-50s-vs-60s | underscore-url thin(<300w) |
+| pages/bofu_vs_gibson-les-paul-50s-vs-60s.html | 174 | 50 | 132 | …/vs/gibson-les-paul-50s-vs-60s | underscore-url thin(<300w) |
 | pages/bofu_vs_gretsch-streamliner-vs-epiphone-dot.html | 162 | 57 | 131 | …/vs/gretsch-streamliner-vs-epiphone-dot | underscore-url thin(<300w) |
 | pages/bofu_vs_ibanez-rg-vs-s-series.html | 177 | 53 | 125 | …/vs/ibanez-rg-vs-s-series | underscore-url thin(<300w) |
 | pages/bofu_vs_martin-d10e-vs-taylor-214ce.html | 159 | 59 | 125 | …/vs/martin-d10e-vs-taylor-214ce | underscore-url thin(<300w) |
