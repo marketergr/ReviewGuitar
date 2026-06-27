@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 53,
+    "thin": 47,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -4396,12 +4396,11 @@
       "canonical": "https://reviewsguitar.com/reviews/boss-katana-50-mkii",
       "author": "ReviewsGuitar.com",
       "h1": "Is Boss Katana 50 Mkii Worth It In 2026",
-      "words": 242,
+      "words": 540,
       "kw": "Boss Katana - The MVP of amps?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4413,12 +4412,11 @@
       "canonical": "https://reviewsguitar.com/reviews/daddario-xs-strings",
       "author": "ReviewsGuitar.com",
       "h1": "Is D'Addario Xs Coating Worth The Price",
-      "words": 219,
+      "words": 533,
       "kw": "Strings that last forever? XS review",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4464,12 +4462,11 @@
       "canonical": "https://reviewsguitar.com/reviews/fender-player-ii-stratocaster",
       "author": "ReviewsGuitar.com",
       "h1": "Fender Player Ii Stratocaster Review 2026",
-      "words": 227,
+      "words": 567,
       "kw": "Is the Player II actually better?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4532,12 +4529,11 @@
       "canonical": "https://reviewsguitar.com/reviews/tc-polytune-3",
       "author": "ReviewsGuitar.com",
       "h1": "Is Tc Electronic Polytune 3 Worth It",
-      "words": 240,
+      "words": 546,
       "kw": "Never be out of tune again - Polytune 3",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4787,12 +4783,11 @@
       "canonical": "https://reviewsguitar.com/vs/telecaster-vs-stratocaster-beginner",
       "author": "ReviewsGuitar.com",
       "h1": "Fender Telecaster Vs Stratocaster For Beginners",
-      "words": 163,
+      "words": 496,
       "kw": "Tele or Strat? Beginner's guide",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4804,12 +4799,11 @@
       "canonical": "https://reviewsguitar.com/vs/yamaha-fg800-vs-fender-cd-60s",
       "author": "ReviewsGuitar.com",
       "h1": "Yamaha Fg800 Vs Fender Cd-60s Comparison",
-      "words": 155,
+      "words": 457,
       "kw": "Yamaha or Fender? Side by side",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {

@@ -22,7 +22,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 
 - no-canonical: **3**
 - underscore-url: **147**
-- thin: **53**
+- thin: **47**
 - kw-stuffed: **32**
 - title-long: **1**
 - desc-long: **1**
@@ -101,7 +101,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_electric-guitar-under-1000.html
 - …and 87 more (see seo-audit.json)
 
-### Thin content (<300 visible words) (53)
+### Thin content (<300 visible words) (47)
 
 - pages/bofu_alternatives_epiphone-les-paul-standard.html
 - pages/bofu_best_acoustic-guitar-flight-cases.html
@@ -128,15 +128,11 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_travel-acoustic-guitar.html
 - pages/bofu_best_vintage-guitars-investment-guide.html
 - pages/bofu_reviews_best-guitar-tuners.html
-- pages/bofu_reviews_boss-katana-50-mkii.html
-- pages/bofu_reviews_daddario-xs-strings.html
 - pages/bofu_reviews_ernie-ball-volume-pedal.html
 - pages/bofu_reviews_fender-mustang-lt25.html
-- pages/bofu_reviews_fender-player-ii-stratocaster.html
 - pages/bofu_reviews_fishman-fluence-pickups.html
 - pages/bofu_reviews_marshall-dsl40cr.html
 - pages/bofu_reviews_prs-se-custom-24.html
-- pages/bofu_reviews_tc-polytune-3.html
 - pages/bofu_reviews_vox-ac15.html
 - pages/bofu_reviews_yamaha-dynamic-classical.html
 - pages/bofu_vs_fender-player-vs-american-professional.html
@@ -151,8 +147,6 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_vs_squier-classic-vibe-50s-vs-60s.html
 - pages/bofu_vs_squier-sonic-vs-affinity.html
 - pages/bofu_vs_taylor-gs-mini-mahogany-vs-spruce.html
-- pages/bofu_vs_telecaster-vs-stratocaster-beginner.html
-- pages/bofu_vs_yamaha-fg800-vs-fender-cd-60s.html
 - pages/bofu_vs_yamaha-fg830-vs-fg800.html
 - pages/bofu_vs_yamaha-pacifica-012-vs-112v.html
 - pages/bofu_vs_yamaha-pacifica-vs-squier-strat.html
@@ -503,15 +497,15 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_travel-acoustic-guitar.html | 230 | 62 | 134 | …/best/travel-acoustic-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_vintage-guitars-investment-guide.html | 282 | 61 | 137 | ∅ | no-canonical underscore-url thin(<300w) |
 | pages/bofu_reviews_best-guitar-tuners.html | 244 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url thin(<300w) |
-| pages/bofu_reviews_boss-katana-50-mkii.html | 242 | 51 | 129 | …/reviews/boss-katana-50-mkii | underscore-url thin(<300w) |
-| pages/bofu_reviews_daddario-xs-strings.html | 219 | 57 | 38 | …/reviews/daddario-xs-strings | underscore-url thin(<300w) |
+| pages/bofu_reviews_boss-katana-50-mkii.html | 540 | 51 | 129 | …/reviews/boss-katana-50-mkii | underscore-url |
+| pages/bofu_reviews_daddario-xs-strings.html | 533 | 57 | 38 | …/reviews/daddario-xs-strings | underscore-url |
 | pages/bofu_reviews_ernie-ball-volume-pedal.html | 234 | 54 | 125 | …/reviews/ernie-ball-volume-pedal | underscore-url thin(<300w) |
 | pages/bofu_reviews_fender-mustang-lt25.html | 233 | 47 | 134 | …/reviews/fender-mustang-lt25 | underscore-url thin(<300w) |
-| pages/bofu_reviews_fender-player-ii-stratocaster.html | 227 | 54 | 131 | …/reviews/fender-player-ii-stratocaster | underscore-url thin(<300w) |
+| pages/bofu_reviews_fender-player-ii-stratocaster.html | 567 | 54 | 131 | …/reviews/fender-player-ii-stratocaster | underscore-url |
 | pages/bofu_reviews_fishman-fluence-pickups.html | 221 | 58 | 127 | …/reviews/fishman-fluence-pickups | underscore-url thin(<300w) |
 | pages/bofu_reviews_marshall-dsl40cr.html | 235 | 57 | 130 | …/reviews/marshall-dsl40cr | underscore-url thin(<300w) |
 | pages/bofu_reviews_prs-se-custom-24.html | 246 | 55 | 118 | …/reviews/prs-se-custom-24 | underscore-url thin(<300w) |
-| pages/bofu_reviews_tc-polytune-3.html | 240 | 60 | 126 | …/reviews/tc-polytune-3 | underscore-url thin(<300w) |
+| pages/bofu_reviews_tc-polytune-3.html | 546 | 60 | 126 | …/reviews/tc-polytune-3 | underscore-url |
 | pages/bofu_reviews_vox-ac15.html | 240 | 57 | 126 | …/reviews/vox-ac15 | underscore-url thin(<300w) |
 | pages/bofu_reviews_yamaha-dynamic-classical.html | 227 | 51 | 131 | …/reviews/yamaha-dynamic-classical | underscore-url thin(<300w) |
 | pages/bofu_vs_fender-player-vs-american-professional.html | 173 | 61 | 131 | …/vs/fender-player-vs-american-professional | underscore-url thin(<300w) |
@@ -526,8 +520,8 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_vs_squier-classic-vibe-50s-vs-60s.html | 164 | 55 | 126 | …/vs/squier-classic-vibe-50s-vs-60s | underscore-url thin(<300w) |
 | pages/bofu_vs_squier-sonic-vs-affinity.html | 158 | 57 | 127 | …/vs/squier-sonic-vs-affinity | underscore-url thin(<300w) |
 | pages/bofu_vs_taylor-gs-mini-mahogany-vs-spruce.html | 166 | 61 | 130 | …/vs/taylor-gs-mini-mahogany-vs-spruce | underscore-url thin(<300w) |
-| pages/bofu_vs_telecaster-vs-stratocaster-beginner.html | 163 | 52 | 137 | …/vs/telecaster-vs-stratocaster-beginner | underscore-url thin(<300w) |
-| pages/bofu_vs_yamaha-fg800-vs-fender-cd-60s.html | 155 | 51 | 130 | …/vs/yamaha-fg800-vs-fender-cd-60s | underscore-url thin(<300w) |
+| pages/bofu_vs_telecaster-vs-stratocaster-beginner.html | 496 | 52 | 137 | …/vs/telecaster-vs-stratocaster-beginner | underscore-url |
+| pages/bofu_vs_yamaha-fg800-vs-fender-cd-60s.html | 457 | 51 | 130 | …/vs/yamaha-fg800-vs-fender-cd-60s | underscore-url |
 | pages/bofu_vs_yamaha-fg830-vs-fg800.html | 175 | 57 | 135 | …/vs/yamaha-fg830-vs-fg800 | underscore-url thin(<300w) |
 | pages/bofu_vs_yamaha-pacifica-012-vs-112v.html | 229 | 52 | 129 | …/vs/yamaha-pacifica-012-vs-112v | underscore-url thin(<300w) |
 | pages/bofu_vs_yamaha-pacifica-vs-squier-strat.html | 162 | 56 | 139 | …/vs/yamaha-pacifica-vs-squier-strat | underscore-url thin(<300w) |

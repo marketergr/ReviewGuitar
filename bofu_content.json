@@ -344,5 +344,233 @@
         "a": "For drop and low tunings, a longer scale length (25.5\" or longer, up to baritone) keeps the thick low strings tight and articulate rather than loose and muddy. If you mostly play in standard or drop-D, a standard scale is perfectly fine; go longer the lower you tune."
       }
     ]
+  },
+  "/reviews/fender-player-ii-stratocaster": {
+    "buyingGuide": {
+      "heading": "Is the Fender Player II Stratocaster Right for You?",
+      "intro": "The Player II is Fender's mid-tier, Mexican-made Strat — the default \"first real Fender\" for a lot of players stepping up from a Squier. Here's who it suits and what to weigh before buying.",
+      "criteria": [
+        {
+          "h": "What changed in the Player II",
+          "p": "Over the original Player series, Fender added rolled fingerboard edges and refreshed appointments, so the neck feels more broken-in and comfortable straight out of the box. Small refinements, but they're the ones your hands notice."
+        },
+        {
+          "h": "The single-coil sound",
+          "p": "Three single-coil pickups and a five-way switch deliver the classic bright, glassy, 'quacky' Strat tones — versatile across blues, funk, pop, and indie. The trade-off is the usual single-coil hum at high gain."
+        },
+        {
+          "h": "Build and upgrade path",
+          "p": "An alder body, bolt-on maple neck, and two-point tremolo give genuine Fender feel and a stable, mod-friendly platform. If you ever want noiseless pickups or locking tuners, it's an easy guitar to upgrade."
+        },
+        {
+          "h": "Where it sits in the range",
+          "p": "It's a clear step up from a Squier in fretwork, hardware, and resale value, and gets you most of the way to an American Strat's feel for a fraction of the price."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Fender Player II better than the original Player Stratocaster?",
+        "a": "The Player II refines the formula with rolled fingerboard edges and updated appointments for a more comfortable, broken-in feel, on the same proven alder-body platform. The improvements are incremental rather than dramatic, but they're genuine comfort upgrades."
+      },
+      {
+        "q": "Is a Made-in-Mexico Stratocaster good quality?",
+        "a": "Yes. Fender's Ensenada factory produces consistent, gig-ready instruments, and the Player series is its bread and butter. The gap to an American Strat is mostly finish detail and a few hardware touches, not fundamental playability or tone."
+      },
+      {
+        "q": "Is the Player II Stratocaster good for beginners?",
+        "a": "It's a fantastic long-term first guitar if the budget stretches — you won't outgrow it. That said, it costs noticeably more than a Squier, so beginners on a tight budget can start with a Squier and step up to a Player II later without missing out."
+      }
+    ]
+  },
+  "/reviews/boss-katana-50-mkii": {
+    "buyingGuide": {
+      "heading": "Boss Katana-50 MkII: What You're Actually Getting",
+      "intro": "The Katana-50 MkII is one of the best-selling amps in its class because it packs modeling versatility into a low price. Here's what matters before you buy.",
+      "criteria": [
+        {
+          "h": "Five voicings plus deep effects",
+          "p": "Clean, Crunch, Lead, Brown, and Acoustic voicings cover most styles, backed by a generous bank of onboard effects — enough that many players never plug in a single pedal."
+        },
+        {
+          "h": "Power control for any room",
+          "p": "Switchable 0.5W / 25W / 50W output is the killer feature: you get cranked, driven tones at true bedroom volume. It's what makes a 50-watt amp genuinely usable at home."
+        },
+        {
+          "h": "Tone Studio software",
+          "p": "The free Boss Tone Studio editor adds more effects slots, patch storage, and finer control over USB. It's optional, but it dramatically expands what the amp can do."
+        },
+        {
+          "h": "Who it's for",
+          "p": "Ideal for practice, home recording via USB, and small gigs. As a solid-state modeling combo it covers far more tonal ground than most beginners and intermediates will ever need."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Boss Katana-50 MkII good for home practice?",
+        "a": "Excellent. The 0.5-watt power setting lets you dial in cranked, saturated tones at whisper volume, which most amps can't do. Combined with built-in effects and headphone/USB output, it's one of the best home practice amps at the price."
+      },
+      {
+        "q": "Can you gig with a Katana-50 MkII?",
+        "a": "For small-to-medium venues, yes — especially when mic'd through a PA. For loud, full-band stages with a hard-hitting drummer, the 100-watt Katana gives more clean headroom, but the 50 handles most gigs comfortably."
+      },
+      {
+        "q": "Do I need the Tone Studio software to use it?",
+        "a": "No — it sounds great straight out of the box with its front-panel controls. But the free software is worth installing: it unlocks extra effects, patch storage, and deeper editing that make the amp far more flexible."
+      }
+    ]
+  },
+  "/reviews/tc-polytune-3": {
+    "buyingGuide": {
+      "heading": "TC Electronic PolyTune 3: Worth a Pedalboard Slot?",
+      "intro": "The PolyTune 3 does two clever things — it tunes all your strings at once and quietly improves your signal. Here's the breakdown before you give it board space.",
+      "criteria": [
+        {
+          "h": "Polyphonic tuning",
+          "p": "Strum all six strings and the display shows at a glance which ones are off — far faster than tuning string by string between songs in a set."
+        },
+        {
+          "h": "Strobe-mode accuracy",
+          "p": "A high-precision strobe mode is accurate enough for intonation setups, while chromatic and polyphonic modes handle everyday tuning. One pedal covers casual and meticulous tuning alike."
+        },
+        {
+          "h": "Built-in switchable buffer",
+          "p": "An onboard high-quality buffer preserves your tone across long cables and big pedalboards — a real advantage a clip-on tuner can't offer. You can switch it to true-bypass if you prefer."
+        },
+        {
+          "h": "Bright, readable display",
+          "p": "The auto-dimming bright display stays visible under stage lights and in direct sun, where many clip-on tuners wash out completely."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What is polyphonic tuning and is it actually useful?",
+        "a": "Polyphonic tuning checks all your strings simultaneously from a single strum, so you instantly see which string is out instead of tuning one at a time. Live, between songs, it's a genuine time-saver — and you can still switch to standard chromatic mode for fine-tuning."
+      },
+      {
+        "q": "What does the PolyTune 3's built-in buffer do?",
+        "a": "The buffer strengthens and preserves your guitar signal so long cable runs and multiple pedals don't dull your high end. On a medium-to-large pedalboard it keeps your tone clear; you can disable it for true bypass if your rig is simple."
+      },
+      {
+        "q": "Is a tuner pedal worth it over a clip-on tuner?",
+        "a": "If you play live or run a pedalboard, yes: it's always on, more accurate, mutes silently while you tune, and buffers your signal. A clip-on tuner is perfectly fine for bedroom practice, but the pedal earns its place on a gigging board."
+      }
+    ]
+  },
+  "/reviews/daddario-xs-strings": {
+    "buyingGuide": {
+      "heading": "Are D'Addario XS Coated Strings Worth the Price?",
+      "intro": "XS is D'Addario's premium coated string, promising long life without the dull, slick feel that gave older coated strings a bad name. Here's whether the premium is justified.",
+      "criteria": [
+        {
+          "h": "The coating technology",
+          "p": "An ultra-thin coating shields the strings from the sweat, dirt, and corrosion that kill tone, aiming to keep them bright and alive far longer than an uncoated set."
+        },
+        {
+          "h": "Longevity versus cost",
+          "p": "Coated strings cost more per set but can last several times longer, so for players whose strings die quickly the real cost-per-week often works out lower — plus far fewer restringing sessions."
+        },
+        {
+          "h": "Tone and feel",
+          "p": "XS retains more high-end sparkle than older coated strings and feels smooth without the squeaky, plasticky drag some players dislike. For most ears it sounds close to uncoated when fresh."
+        },
+        {
+          "h": "Who benefits most",
+          "p": "Players with acidic sweat that eats strings, gigging musicians who can't restring often, and anyone who simply hates the chore of frequent string changes."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long do D'Addario XS strings actually last?",
+        "a": "Many players report several times the usable life of uncoated strings — often weeks to months longer before the tone goes dead. The exact gain depends on your body chemistry and how often you play, but corrosion-prone players see the biggest difference."
+      },
+      {
+        "q": "Do coated strings sound different from regular strings?",
+        "a": "When fresh, modern coatings like XS sound very close to uncoated strings — some ears notice a touch less initial zing. The real advantage is that they hold that fresh tone much longer, so a month in they often sound clearly better than a dead uncoated set."
+      },
+      {
+        "q": "Are XS strings worth the higher price?",
+        "a": "If your strings go dead quickly or you can't restring often, yes — the longer life lowers your real cost and saves restringing time. If you already change strings every week for that brand-new feel, cheaper uncoated sets make more sense."
+      }
+    ]
+  },
+  "/vs/yamaha-fg800-vs-fender-cd-60s": {
+    "buyingGuide": {
+      "heading": "Yamaha FG800 vs Fender CD-60S: How to Choose",
+      "intro": "These are the two most-recommended beginner dreadnoughts, and they're closely matched. The decision comes down to feel and tone preference, not quality — both are outstanding value with a solid top.",
+      "criteria": [
+        {
+          "h": "Tone character",
+          "p": "The FG800 is known for a bright, projecting, slightly scooped voice; the CD-60S leans a touch warmer and rounder. Neither is 'better' — it's about which sound suits your music and your ear."
+        },
+        {
+          "h": "Neck feel",
+          "p": "The CD-60S has rolled fingerboard edges and an easy-rolling neck many beginners find instantly comfortable. The FG800's neck is a hair chunkier. If you can, hold both before deciding."
+        },
+        {
+          "h": "Build and solid top",
+          "p": "Both pair a solid spruce top with laminate back and sides — exactly the right build at this price — so both will open up and sound richer as they age."
+        },
+        {
+          "h": "Which to pick",
+          "p": "Choose the FG800 for bright strumming projection and Yamaha's legendary consistency; choose the CD-60S for a warmer voice and an extra-comfortable neck straight out of the box."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Yamaha FG800 or Fender CD-60S better for beginners?",
+        "a": "Both are top-tier beginner picks with solid spruce tops. The CD-60S's rolled fingerboard edges feel especially comfortable for new players, while the FG800 is brighter and famously consistent. You can't go wrong — choose by tone and neck feel."
+      },
+      {
+        "q": "Do both guitars have a solid top?",
+        "a": "Yes. Both use a solid spruce top with laminate back and sides, which is the ideal build in this price range. It means both guitars will improve and sound richer over the years, unlike all-laminate budget guitars."
+      },
+      {
+        "q": "Which one sounds better?",
+        "a": "The FG800 is brighter and more projecting; the CD-60S is warmer and rounder. 'Better' depends entirely on your taste — strummers who want sparkle tend to prefer the FG800, while players who want warmth lean toward the CD-60S."
+      }
+    ]
+  },
+  "/vs/telecaster-vs-stratocaster-beginner": {
+    "buyingGuide": {
+      "heading": "Telecaster vs Stratocaster: Which Should a Beginner Buy?",
+      "intro": "Fender's two icons feel and sound different enough to matter, and both are beginner-friendly. Here's how to choose the one that fits your music, your hands, and how you like to play.",
+      "criteria": [
+        {
+          "h": "Sound",
+          "p": "The Tele's two pickups give a twangy, bright, cutting tone loved in country, rock, and indie. The Strat's three pickups and five-way switch cover more ground, including the glassy in-between 'quack' tones for blues and funk."
+        },
+        {
+          "h": "Comfort and body",
+          "p": "The Strat has a contoured body with a belly cut and arm bevel that many find more comfortable to play for long stretches. The Tele's flat slab body is simpler and a little more old-school against you."
+        },
+        {
+          "h": "Tremolo vs hardtail bridge",
+          "p": "The Strat's tremolo (whammy) bar adds vibrato and dive effects but can need more tuning attention. The Tele's fixed bridge stays in tune effortlessly and is one less thing for a beginner to manage."
+        },
+        {
+          "h": "Simplicity vs versatility",
+          "p": "The Tele is wonderfully simple — fewer controls, classic tones, plug and play. The Strat trades a little simplicity for a wider tonal palette. Pick based on whether you value ease or range."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is a Telecaster or Stratocaster easier for a beginner?",
+        "a": "Both are beginner-friendly. The Telecaster is slightly simpler thanks to its fixed bridge, fewer controls, and rock-solid tuning. The Stratocaster is more comfortable to hold and more versatile. Let comfort and the sounds you want guide the choice."
+      },
+      {
+        "q": "Which has more versatile sounds?",
+        "a": "The Stratocaster, thanks to three pickups and a five-way selector that includes the famous in-between 'quack' positions favoured in funk and blues. The Telecaster offers fewer but iconic bright, twangy tones that cut through a mix."
+      },
+      {
+        "q": "Does the Stratocaster's tremolo cause tuning problems for beginners?",
+        "a": "It can drift more than a fixed bridge if used heavily or set up poorly, but a good setup keeps it stable. If you never plan to use a whammy bar, the Telecaster's hardtail bridge is the more carefree choice for a beginner."
+      }
+    ]
   }
 }
