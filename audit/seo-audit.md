@@ -22,7 +22,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 
 - no-canonical: **3**
 - underscore-url: **147**
-- thin: **25**
+- thin: **18**
 - kw-stuffed: **32**
 - title-long: **1**
 - desc-long: **1**
@@ -101,7 +101,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_electric-guitar-under-1000.html
 - …and 87 more (see seo-audit.json)
 
-### Thin content (<300 visible words) (25)
+### Thin content (<300 visible words) (18)
 
 - pages/bofu_alternatives_epiphone-les-paul-standard.html
 - pages/bofu_best_acoustic-guitar-flight-cases.html
@@ -121,13 +121,6 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_reviews_fishman-fluence-pickups.html
 - pages/bofu_reviews_prs-se-custom-24.html
 - pages/bofu_reviews_yamaha-dynamic-classical.html
-- pages/bofu_vs_gretsch-streamliner-vs-epiphone-dot.html
-- pages/bofu_vs_ibanez-rg-vs-s-series.html
-- pages/bofu_vs_martin-lx1-vs-baby-taylor.html
-- pages/bofu_vs_squier-classic-vibe-50s-vs-60s.html
-- pages/bofu_vs_squier-sonic-vs-affinity.html
-- pages/bofu_vs_yamaha-pacifica-012-vs-112v.html
-- pages/bofu_vs_yamaha-pacifica-vs-squier-strat.html
 
 ### Keyword-stuffed (exact match >3× in body) (32)
 
@@ -488,21 +481,21 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_reviews_yamaha-dynamic-classical.html | 227 | 51 | 131 | …/reviews/yamaha-dynamic-classical | underscore-url thin(<300w) |
 | pages/bofu_vs_fender-player-vs-american-professional.html | 493 | 61 | 131 | …/vs/fender-player-vs-american-professional | underscore-url |
 | pages/bofu_vs_gibson-les-paul-50s-vs-60s.html | 483 | 50 | 132 | …/vs/gibson-les-paul-50s-vs-60s | underscore-url |
-| pages/bofu_vs_gretsch-streamliner-vs-epiphone-dot.html | 162 | 57 | 131 | …/vs/gretsch-streamliner-vs-epiphone-dot | underscore-url thin(<300w) |
-| pages/bofu_vs_ibanez-rg-vs-s-series.html | 177 | 53 | 125 | …/vs/ibanez-rg-vs-s-series | underscore-url thin(<300w) |
+| pages/bofu_vs_gretsch-streamliner-vs-epiphone-dot.html | 460 | 57 | 131 | …/vs/gretsch-streamliner-vs-epiphone-dot | underscore-url |
+| pages/bofu_vs_ibanez-rg-vs-s-series.html | 475 | 53 | 125 | …/vs/ibanez-rg-vs-s-series | underscore-url |
 | pages/bofu_vs_martin-d10e-vs-taylor-214ce.html | 456 | 59 | 125 | …/vs/martin-d10e-vs-taylor-214ce | underscore-url |
 | pages/bofu_vs_martin-d18-vs-d28.html | 470 | 52 | 120 | …/vs/martin-d18-vs-d28 | underscore-url |
 | pages/bofu_vs_martin-d28-vs-taylor-814ce.html | 460 | 48 | 137 | …/vs/martin-d28-vs-taylor-814ce | underscore-url |
-| pages/bofu_vs_martin-lx1-vs-baby-taylor.html | 159 | 48 | 126 | …/vs/martin-lx1-vs-baby-taylor | underscore-url thin(<300w) |
+| pages/bofu_vs_martin-lx1-vs-baby-taylor.html | 460 | 48 | 126 | …/vs/martin-lx1-vs-baby-taylor | underscore-url |
 | pages/bofu_vs_seagull-s6-vs-yamaha-fg800.html | 454 | 59 | 132 | …/vs/seagull-s6-vs-yamaha-fg800 | underscore-url |
-| pages/bofu_vs_squier-classic-vibe-50s-vs-60s.html | 164 | 55 | 126 | …/vs/squier-classic-vibe-50s-vs-60s | underscore-url thin(<300w) |
-| pages/bofu_vs_squier-sonic-vs-affinity.html | 158 | 57 | 127 | …/vs/squier-sonic-vs-affinity | underscore-url thin(<300w) |
+| pages/bofu_vs_squier-classic-vibe-50s-vs-60s.html | 459 | 55 | 126 | …/vs/squier-classic-vibe-50s-vs-60s | underscore-url |
+| pages/bofu_vs_squier-sonic-vs-affinity.html | 449 | 57 | 127 | …/vs/squier-sonic-vs-affinity | underscore-url |
 | pages/bofu_vs_taylor-gs-mini-mahogany-vs-spruce.html | 461 | 61 | 130 | …/vs/taylor-gs-mini-mahogany-vs-spruce | underscore-url |
 | pages/bofu_vs_telecaster-vs-stratocaster-beginner.html | 496 | 52 | 137 | …/vs/telecaster-vs-stratocaster-beginner | underscore-url |
 | pages/bofu_vs_yamaha-fg800-vs-fender-cd-60s.html | 457 | 51 | 130 | …/vs/yamaha-fg800-vs-fender-cd-60s | underscore-url |
 | pages/bofu_vs_yamaha-fg830-vs-fg800.html | 482 | 57 | 135 | …/vs/yamaha-fg830-vs-fg800 | underscore-url |
-| pages/bofu_vs_yamaha-pacifica-012-vs-112v.html | 229 | 52 | 129 | …/vs/yamaha-pacifica-012-vs-112v | underscore-url thin(<300w) |
-| pages/bofu_vs_yamaha-pacifica-vs-squier-strat.html | 162 | 56 | 139 | …/vs/yamaha-pacifica-vs-squier-strat | underscore-url thin(<300w) |
+| pages/bofu_vs_yamaha-pacifica-012-vs-112v.html | 534 | 52 | 129 | …/vs/yamaha-pacifica-012-vs-112v | underscore-url |
+| pages/bofu_vs_yamaha-pacifica-vs-squier-strat.html | 475 | 56 | 139 | …/vs/yamaha-pacifica-vs-squier-strat | underscore-url |
 | pages/buying_comparisons_acoustic_vs_electric_guitar_buy.html | 588 | 52 | 135 | …/buying/comparisons/acoustic-vs-electric-guitar | underscore-url |
 | pages/buying_comparisons_best_guitar_vs_comparison.html | 583 | 46 | 129 | …/buying/comparisons/best-guitar-vs-comparison | underscore-url |
 | pages/buying_comparisons_guitar_brands_comparison.html | 580 | 45 | 128 | …/buying/comparisons/guitar-brands-comparison | underscore-url |

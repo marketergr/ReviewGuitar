@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 25,
+    "thin": 18,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -4597,12 +4597,11 @@
       "canonical": "https://reviewsguitar.com/vs/gretsch-streamliner-vs-epiphone-dot",
       "author": "ReviewsGuitar.com",
       "h1": "Gretsch G2622 Streamliner Vs Epiphone Dot",
-      "words": 162,
+      "words": 460,
       "kw": "Semi-hollow showdown: Gretsch vs Epi",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4614,12 +4613,11 @@
       "canonical": "https://reviewsguitar.com/vs/ibanez-rg-vs-s-series",
       "author": "ReviewsGuitar.com",
       "h1": "Ibanez Rg Vs S Series For Shredding",
-      "words": 177,
+      "words": 475,
       "kw": "RG or S series? The shred battle",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4679,12 +4677,11 @@
       "canonical": "https://reviewsguitar.com/vs/martin-lx1-vs-baby-taylor",
       "author": "ReviewsGuitar.com",
       "h1": "Martin Lxe Vs Baby Taylor Comparison",
-      "words": 159,
+      "words": 460,
       "kw": "Mini Martin or Baby Taylor?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4712,12 +4709,11 @@
       "canonical": "https://reviewsguitar.com/vs/squier-classic-vibe-50s-vs-60s",
       "author": "ReviewsGuitar.com",
       "h1": "Squier Classic Vibe 50s Vs 60s Strat",
-      "words": 164,
+      "words": 459,
       "kw": "Vintage vibes - 50s or 60s Squier?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4729,12 +4725,11 @@
       "canonical": "https://reviewsguitar.com/vs/squier-sonic-vs-affinity",
       "author": "ReviewsGuitar.com",
       "h1": "Squier Sonic Vs Affinity Series Strat",
-      "words": 158,
+      "words": 449,
       "kw": "Squier showdown - Sonic or Affinity?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4810,12 +4805,11 @@
       "canonical": "https://reviewsguitar.com/vs/yamaha-pacifica-012-vs-112v",
       "author": "ReviewsGuitar.com",
       "h1": "Is Yamaha Pacific 012 Better Than P112v",
-      "words": 229,
+      "words": 534,
       "kw": "Pacifica showdown - 012 vs 112V",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4827,12 +4821,11 @@
       "canonical": "https://reviewsguitar.com/vs/yamaha-pacifica-vs-squier-strat",
       "author": "ReviewsGuitar.com",
       "h1": "Yamaha Pacifica 112v Vs Squier Classic Vibe Strat",
-      "words": 162,
+      "words": 475,
       "kw": "The $300 battle: Pacifica vs Squier",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
