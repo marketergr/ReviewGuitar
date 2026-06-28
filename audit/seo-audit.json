@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 18,
+    "thin": 17,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -4369,12 +4369,11 @@
       "canonical": "https://reviewsguitar.com/reviews/best-guitar-tuners",
       "author": "ReviewsGuitar.com",
       "h1": "Best Clip-On Guitar Tuner Reviews 2026",
-      "words": 243,
+      "words": 609,
       "kw": "Never be out of tune again",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {

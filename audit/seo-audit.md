@@ -22,7 +22,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 
 - no-canonical: **3**
 - underscore-url: **147**
-- thin: **18**
+- thin: **17**
 - kw-stuffed: **32**
 - title-long: **1**
 - desc-long: **1**
@@ -101,7 +101,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_electric-guitar-under-1000.html
 - …and 87 more (see seo-audit.json)
 
-### Thin content (<300 visible words) (18)
+### Thin content (<300 visible words) (17)
 
 - pages/bofu_alternatives_epiphone-les-paul-standard.html
 - pages/bofu_best_acoustic-guitar-flight-cases.html
@@ -117,7 +117,6 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_telecaster-metal-pickups.html
 - pages/bofu_best_travel-acoustic-guitar.html
 - pages/bofu_best_vintage-guitars-investment-guide.html
-- pages/bofu_reviews_best-guitar-tuners.html
 - pages/bofu_reviews_fishman-fluence-pickups.html
 - pages/bofu_reviews_prs-se-custom-24.html
 - pages/bofu_reviews_yamaha-dynamic-classical.html
@@ -467,7 +466,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_telecaster-metal-pickups.html | 240 | 56 | 129 | …/best/telecaster-metal-pickups | underscore-url thin(<300w) |
 | pages/bofu_best_travel-acoustic-guitar.html | 230 | 62 | 134 | …/best/travel-acoustic-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_vintage-guitars-investment-guide.html | 282 | 61 | 137 | ∅ | no-canonical underscore-url thin(<300w) |
-| pages/bofu_reviews_best-guitar-tuners.html | 243 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url thin(<300w) |
+| pages/bofu_reviews_best-guitar-tuners.html | 609 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url |
 | pages/bofu_reviews_boss-katana-50-mkii.html | 544 | 51 | 129 | …/reviews/boss-katana-50-mkii | underscore-url |
 | pages/bofu_reviews_daddario-xs-strings.html | 533 | 57 | 38 | …/reviews/daddario-xs-strings | underscore-url |
 | pages/bofu_reviews_ernie-ball-volume-pedal.html | 589 | 54 | 125 | …/reviews/ernie-ball-volume-pedal | underscore-url |
