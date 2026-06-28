@@ -877,6 +877,278 @@
       }
     ]
   },
+  "/vs/martin-d18-vs-d28": {
+    "buyingGuide": {
+      "heading": "Martin D-18 vs D-28: Mahogany or Rosewood?",
+      "intro": "These two dreadnoughts are the heart of the classic 'mahogany vs rosewood' debate. Both are benchmark Martins; the right one comes down to the voice you want, not which is better.",
+      "criteria": [
+        {
+          "h": "Tonewood and voice",
+          "p": "The D-18's mahogany back and sides give a dry, focused, punchy tone with strong midrange — great for flatpicking and cutting through a mix. The D-28's rosewood delivers deep lows and sparkling, scooped highs with more overtone complexity."
+        },
+        {
+          "h": "Best playing styles",
+          "p": "The D-18 suits bluegrass flatpickers, singer-songwriters, and anyone who wants notes to stay defined. The D-28 favours big strummers and players who love a rich, piano-like spread of sound — it's the classic bluegrass-rhythm and recording dreadnought."
+        },
+        {
+          "h": "Feel and price",
+          "p": "Both share Martin's premium build and similar necks, so the decision is overwhelmingly tonal. The D-28 typically costs a bit more thanks to rosewood; the D-18 is often the lighter, more immediate-feeling guitar."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What's the main difference between a Martin D-18 and D-28?",
+        "a": "The back and sides: the D-18 uses mahogany for a dry, focused, midrange-forward tone, while the D-28 uses rosewood for deeper bass, sparkling highs, and more overtones. Both have a solid Sitka spruce top and Martin's dreadnought build — the wood is what sets their voices apart."
+      },
+      {
+        "q": "Is the D-28 worth the extra money over the D-18?",
+        "a": "Only if you want its sound. The D-28's rosewood gives a richer, more complex, scooped tone that many strummers and recording players prefer. If you want a punchy, focused, mid-rich voice for flatpicking and vocal accompaniment, the D-18 is arguably the better — and often cheaper — choice."
+      },
+      {
+        "q": "Which is better for bluegrass?",
+        "a": "Both are bluegrass staples. Flatpickers who want clear, articulate single-note runs often prefer the D-18's focused mahogany punch, while rhythm players who want a big, booming backdrop lean toward the D-28's rosewood depth. It comes down to your role in the band."
+      }
+    ]
+  },
+  "/vs/martin-d28-vs-taylor-814ce": {
+    "buyingGuide": {
+      "heading": "Martin D-28 vs Taylor 814ce: Tradition vs Modern",
+      "intro": "Two professional flagships with very different philosophies. The Martin D-28 is the classic dreadnought benchmark; the Taylor 814ce is the modern, versatile grand auditorium. Here's how to choose.",
+      "criteria": [
+        {
+          "h": "Body shape and balance",
+          "p": "The D-28 is a dreadnought — big, bold, and bass-forward for powerful strumming. The 814ce is a grand auditorium: more balanced and articulate across the strings, which suits fingerstyle and mixed playing better."
+        },
+        {
+          "h": "Tone character",
+          "p": "Both use rosewood back and sides, but the D-28 leans warm, woody, and traditional, while Taylor's voicing and bracing give the 814ce a clearer, more modern, piano-like articulation that records beautifully."
+        },
+        {
+          "h": "Playability and electronics",
+          "p": "Taylor necks are famously slim and easy, and the 814ce includes Taylor's Expression System electronics for plugging in. The D-28 is a purely acoustic classic with a more traditional neck feel — built to be mic'd."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Martin D-28 or Taylor 814ce better for fingerstyle?",
+        "a": "The Taylor 814ce generally suits fingerstyle better. Its grand auditorium body and Taylor's articulate voicing give excellent note separation and balance, while the D-28's dreadnought body is bigger and more bass-forward — superb for strumming but less defined for intricate picking."
+      },
+      {
+        "q": "Which one is better for recording?",
+        "a": "Both record well, but the 814ce's clarity, balance, and built-in electronics make it the more plug-and-play studio guitar. The D-28 offers a classic, warm dreadnought tone that engineers love when mic'd, but it needs more careful mic placement to tame its low end."
+      },
+      {
+        "q": "Do they feel different to play?",
+        "a": "Yes. Taylor necks tend to be slimmer and feel fast and modern out of the box, while Martin necks have a more traditional profile. If easy playability is a priority, the 814ce usually wins; if you want a classic dreadnought feel, the D-28 delivers it."
+      }
+    ]
+  },
+  "/vs/martin-d10e-vs-taylor-214ce": {
+    "buyingGuide": {
+      "heading": "Martin D-10E vs Taylor 214ce: The Sub-$1500 Battle",
+      "intro": "Two of the most popular acoustic-electrics in the intermediate range, each carrying its brand's signature voice. Both are excellent — here's how to pick.",
+      "criteria": [
+        {
+          "h": "Tonewoods and voice",
+          "p": "The D-10E (Road Series) typically pairs a solid spruce top with sapele for a warm, even, Martin-style tone. The 214ce uses solid spruce with layered rosewood for a brighter, more articulate Taylor voice with sparkling highs."
+        },
+        {
+          "h": "Body shape",
+          "p": "The D-10E is a dreadnought — bigger, louder, more bass for strumming. The 214ce is a grand auditorium, which is more balanced and comfortable for fingerstyle and mixed playing styles."
+        },
+        {
+          "h": "Neck feel and electronics",
+          "p": "Taylor's slim, modern neck is a big draw and the 214ce includes Expression System 2 electronics. The D-10E offers Martin's more traditional feel with onboard electronics too, so both are gig-ready."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Martin D-10E or Taylor 214ce better value?",
+        "a": "Both are strong value at their price; it depends on the sound and feel you want. The D-10E gives you a genuine solid-wood Martin dreadnought tone, while the 214ce offers Taylor's bright articulation, a slim neck, and a grand auditorium body. Try both — the 'better value' is whichever inspires you to play."
+      },
+      {
+        "q": "Which has an easier neck for beginners moving up?",
+        "a": "The Taylor 214ce is often the easier-playing of the two thanks to Taylor's famously slim, fast neck profile. The Martin D-10E has a slightly more traditional feel. Both are very playable, but players coming from an electric usually adapt to the Taylor neck quickly."
+      },
+      {
+        "q": "Dreadnought or grand auditorium for an all-rounder?",
+        "a": "The grand auditorium 214ce is the more versatile all-rounder — balanced enough for fingerstyle and loud enough for strumming. The D-10E dreadnought is the better pure strummer with more low-end power, but it's less ideal for delicate fingerpicking."
+      }
+    ]
+  },
+  "/vs/gibson-les-paul-50s-vs-60s": {
+    "buyingGuide": {
+      "heading": "Gibson Les Paul Standard 50s vs 60s: Which Era?",
+      "intro": "The modern 50s and 60s Standards are mechanically very similar Les Pauls — the headline difference is the neck profile, and that changes everything about how the guitar feels.",
+      "criteria": [
+        {
+          "h": "Neck profile",
+          "p": "The 50s Standard has a big, rounded, substantial neck that fills your hand and many players find encourages a relaxed grip. The 60s Standard has a slim-taper neck that's faster and more comfortable for quick playing and smaller hands."
+        },
+        {
+          "h": "Pickups and tone",
+          "p": "Both use Gibson humbuckers voiced for classic Les Paul tone (the 50s often slightly warmer, the 60s slightly brighter), but the difference is subtle. The neck feel, not the pickups, is what most players actually choose between."
+        },
+        {
+          "h": "Aesthetics",
+          "p": "The two eras carry period-correct cosmetic touches and finish options. If looks matter to you, browse both — but don't let cosmetics override which neck your hand prefers."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What's the real difference between a 50s and 60s Les Paul Standard?",
+        "a": "Primarily the neck. The 50s has a thick, rounded profile that fills your hand; the 60s has a slim-taper neck that's faster and easier for quick passages. Pickup voicings differ only subtly, so the neck feel is the deciding factor for most buyers."
+      },
+      {
+        "q": "Which neck is better for small hands or fast playing?",
+        "a": "The 60s slim-taper neck. Its thinner profile is easier to wrap your hand around for fast runs and suits smaller hands. The 50s rounded neck appeals to players who like a substantial handful of wood and find it more comfortable for chording and bends."
+      },
+      {
+        "q": "Do the two sound noticeably different?",
+        "a": "Only subtly. Both are classic Les Pauls with Gibson humbuckers; some hear the 50s as a touch warmer and the 60s as slightly brighter, but the gap is small and easily adjusted with your amp and pickup height. Choose by neck feel first, tone second."
+      }
+    ]
+  },
+  "/vs/fender-player-vs-american-professional": {
+    "buyingGuide": {
+      "heading": "Fender Player vs American Professional II: Worth the Jump?",
+      "intro": "The Player series (Made in Mexico) and the American Professional II (Made in USA) are both excellent, but there's a big price gap. Here's what the extra money actually buys.",
+      "criteria": [
+        {
+          "h": "Pickups and electronics",
+          "p": "The American Pro II uses upgraded pickups (V-Mod II) and refined wiring for a more nuanced, dynamic voice. The Player's pickups are very good for the price, but the Pro II's are a clear step up in clarity and character."
+        },
+        {
+          "h": "Fretwork and feel",
+          "p": "The Pro II adds rolled fingerboard edges, a comfortable 'Deep C' neck, narrow-tall frets, and a bone nut for a more broken-in, premium feel. The Player feels great too, but the Pro II's finishing details are more refined."
+        },
+        {
+          "h": "Hardware, finish and resale",
+          "p": "The Pro II brings better hardware (including a more stable bridge), finer finish work, and stronger resale value. The Player series offers most of the Fender experience for far less, making it the value champion."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the American Professional II worth $800 more than the Player?",
+        "a": "For working players and tone-focused buyers, often yes: you get better pickups, refined fretwork and neck feel, nicer hardware, and stronger resale. For beginners and budget-minded players, the Player series delivers most of the experience for far less and is the smarter value buy."
+      },
+      {
+        "q": "Is a Made-in-Mexico Player Fender good quality?",
+        "a": "Yes. The Player series is consistently well-built and gig-ready, and many pros use them happily. The American Pro II refines the details — pickups, frets, finish, hardware — but the Player is a genuine, quality Fender, not a compromise instrument."
+      },
+      {
+        "q": "Will I notice the difference as a beginner?",
+        "a": "You'll feel the Pro II's smoother fret edges and slightly nicer neck, but a beginner won't fully exploit the pickup and hardware upgrades early on. Many players start with a Player and step up to an American later once their ears and hands know what they want."
+      }
+    ]
+  },
+  "/vs/yamaha-fg830-vs-fg800": {
+    "buyingGuide": {
+      "heading": "Yamaha FG830 vs FG800: Is the Upgrade Worth It?",
+      "intro": "The FG800 and FG830 are two of the best-value beginner dreadnoughts around, and they're closely related. The main difference is the back and sides wood — here's whether it justifies the step up.",
+      "criteria": [
+        {
+          "h": "Back and sides wood",
+          "p": "Both share a solid spruce top, but the FG800 uses nato/okume laminate back and sides while the FG830 steps up to rosewood laminate. The rosewood adds more shimmering overtones and a slightly richer, more complex voice."
+        },
+        {
+          "h": "Tone difference",
+          "p": "The FG800 is bright, punchy, and famously consistent. The FG830 keeps that projection but layers in extra high-end sparkle and overtone bloom, which fingerstyle players and detail-focused strummers tend to appreciate."
+        },
+        {
+          "h": "Value",
+          "p": "The FG830 costs a little more for that rosewood voice and fancier appointments (binding, rosette). Both are superb value; the question is whether the added complexity is worth the small premium to your ears."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Yamaha FG830 better than the FG800?",
+        "a": "It's not strictly 'better' — it's a touch richer. Both have a solid spruce top, but the FG830's rosewood laminate back and sides add more overtones and sparkle versus the FG800's punchier, more focused nato/okume. Many players love the FG800's directness; others prefer the FG830's complexity."
+      },
+      {
+        "q": "Does the rosewood on the FG830 really matter?",
+        "a": "On laminate back and sides the effect is modest but audible: a bit more high-end shimmer and overtone bloom. If you play fingerstyle or want a more complex voice, it's a worthwhile upgrade. If you mainly strum and want a punchy, consistent guitar, the FG800 is all you need."
+      },
+      {
+        "q": "Which should a beginner buy?",
+        "a": "Either is an excellent first guitar. Choose the FG800 to save money and get Yamaha's legendary consistency, or the FG830 if you want a slightly richer tone and fancier looks for a small premium. You won't be disappointed with either."
+      }
+    ]
+  },
+  "/vs/seagull-s6-vs-yamaha-fg800": {
+    "buyingGuide": {
+      "heading": "Seagull S6 vs Yamaha FG800: Budget Acoustic Battle",
+      "intro": "Two of the most-recommended budget acoustics, from very different makers. The Canadian-built Seagull S6 and the Yamaha FG800 both punch above their price — here's how they differ.",
+      "criteria": [
+        {
+          "h": "Top wood and voice",
+          "p": "The S6 typically uses a pressure-tested solid cedar top for a warm, rich, fingerstyle-friendly tone. The FG800's solid spruce top is brighter and more projecting with a punchy strumming character."
+        },
+        {
+          "h": "Neck and nut width",
+          "p": "The Seagull S6 has a wider nut (around 1.8\"), giving more room for fingerpicking but feeling big for small hands. The FG800's narrower, more standard neck is friendlier for chord-strumming beginners."
+        },
+        {
+          "h": "Build and origin",
+          "p": "The S6 is built in Canada with a reputation for excellent quality control and value; the FG800 is built overseas with Yamaha's famous consistency. Both are reliable, well-made instruments at the price."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Seagull S6 or Yamaha FG800 better for fingerstyle?",
+        "a": "The Seagull S6 generally suits fingerstyle better, thanks to its warm cedar top and wider nut that gives your fingers more room. The FG800 is brighter and a touch tighter on the neck, which favours strumming — though it still fingerpicks well."
+      },
+      {
+        "q": "Which has a more comfortable neck?",
+        "a": "It depends on your hands. The FG800's narrower, standard-width neck is more comfortable for beginners and small hands, especially for chords. The S6's wider 1.8\" nut is roomier for fingerpicking but can feel large if you have smaller hands."
+      },
+      {
+        "q": "Cedar or spruce top — which should I pick?",
+        "a": "Cedar (S6) is warm, responsive to a light touch, and ages quickly — great for fingerstyle and softer players. Spruce (FG800) is brighter, louder, and has more headroom for hard strumming. Choose by the tone and playing style you prefer."
+      }
+    ]
+  },
+  "/vs/taylor-gs-mini-mahogany-vs-spruce": {
+    "buyingGuide": {
+      "heading": "Taylor GS Mini: Mahogany vs Spruce Top",
+      "intro": "The GS Mini is one of the best small-body guitars made, and it comes with either a mahogany or spruce top. Same superb build — different voice. Here's how to choose.",
+      "criteria": [
+        {
+          "h": "Top wood character",
+          "p": "The spruce top is bright, dynamic, and has more headroom — it gets louder and sparkles when you dig in. The mahogany top is warmer, drier, and more focused, with a compressed, even response that's easy on the ears."
+        },
+        {
+          "h": "Best playing styles",
+          "p": "Spruce suits players who strum hard and want maximum volume and dynamic range. Mahogany flatters fingerstyle, blues, and recording, where its warm, even, woody tone sits beautifully."
+        },
+        {
+          "h": "Everything else is shared",
+          "p": "Both share the GS Mini's compact body, big-for-its-size sound, and Taylor playability, so the top wood is genuinely the deciding factor — pick the voice, not the spec sheet."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the mahogany or spruce GS Mini better?",
+        "a": "Neither is better — they're voiced differently. The spruce top is brighter, louder, and more dynamic for strumming; the mahogany top is warmer, drier, and more even, which flatters fingerstyle and recording. Choose based on the tone you want, since the rest of the guitar is identical."
+      },
+      {
+        "q": "Which GS Mini top is better for fingerstyle?",
+        "a": "The mahogany top tends to suit fingerstyle better, with its warm, focused, compressed response that keeps notes even and smooth. The spruce top works for fingerstyle too but really shines when strummed, thanks to its extra brightness and headroom."
+      },
+      {
+        "q": "Does the top wood change the volume?",
+        "a": "Slightly. The spruce top generally has more headroom and gets louder when pushed, making it the better strummer. The mahogany top is a touch more compressed and even, which many players find more controllable and recording-friendly even if it's marginally quieter when dug into."
+      }
+    ]
+  },
   "/best/best-wah-pedals": {
     "buyingGuide": {
       "heading": "How to Choose a Wah Pedal",

@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 33,
+    "thin": 25,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -4565,12 +4565,11 @@
       "canonical": "https://reviewsguitar.com/vs/fender-player-vs-american-professional",
       "author": "ReviewsGuitar.com",
       "h1": "Fender Player Vs American Professional Ii",
-      "words": 173,
+      "words": 493,
       "kw": "Standard vs Pro - is it worth $800 more?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4582,12 +4581,11 @@
       "canonical": "https://reviewsguitar.com/vs/gibson-les-paul-50s-vs-60s",
       "author": "ReviewsGuitar.com",
       "h1": "Gibson Les Paul Standard 60s Vs 50s Review",
-      "words": 174,
+      "words": 483,
       "kw": "50s or 60s? The Gibson debate",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4633,12 +4631,11 @@
       "canonical": "https://reviewsguitar.com/vs/martin-d10e-vs-taylor-214ce",
       "author": "ReviewsGuitar.com",
       "h1": "Martin D-10e Vs Taylor 214ce Review",
-      "words": 159,
+      "words": 456,
       "kw": "Martin or Taylor? Intermediate matchup",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4650,12 +4647,11 @@
       "canonical": "https://reviewsguitar.com/vs/martin-d18-vs-d28",
       "author": "ReviewsGuitar.com",
       "h1": "Martin D-18 Vs D-28 Comparison",
-      "words": 155,
+      "words": 470,
       "kw": "The mahogany vs rosewood debate",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4667,12 +4663,11 @@
       "canonical": "https://reviewsguitar.com/vs/martin-d28-vs-taylor-814ce",
       "author": "ReviewsGuitar.com",
       "h1": "Martin D-28 Vs Taylor 814ce Professional Review",
-      "words": 164,
+      "words": 460,
       "kw": "D-28 or 814ce? Pro analysis",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4701,12 +4696,11 @@
       "canonical": "https://reviewsguitar.com/vs/seagull-s6-vs-yamaha-fg800",
       "author": "ReviewsGuitar.com",
       "h1": "Seagull S6 Original Vs Yamaha Fg800 Review",
-      "words": 169,
+      "words": 454,
       "kw": "The budget acoustic battle - S6 or FG?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4752,12 +4746,11 @@
       "canonical": "https://reviewsguitar.com/vs/taylor-gs-mini-mahogany-vs-spruce",
       "author": "ReviewsGuitar.com",
       "h1": "Taylor Gs Mini Mahogany Vs Spruce Review",
-      "words": 166,
+      "words": 461,
       "kw": "Mahogany or Spruce? Travel guitar battle",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4801,12 +4794,11 @@
       "canonical": "https://reviewsguitar.com/vs/yamaha-fg830-vs-fg800",
       "author": "ReviewsGuitar.com",
       "h1": "Yamaha Fg830 Vs Fg800 Is It Worth The Upgrade",
-      "words": 175,
+      "words": 482,
       "kw": "Yamaha FG series - which is for you?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
