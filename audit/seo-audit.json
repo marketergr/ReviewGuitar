@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 46,
+    "thin": 42,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -4039,12 +4039,11 @@
       "canonical": "https://reviewsguitar.com/best/best-loop-pedal-budget",
       "author": "ReviewsGuitar.com",
       "h1": "Best Budget Friendly Guitar Loop Pedals",
-      "words": 239,
+      "words": 574,
       "kw": "Start looping today - top budget picks",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4089,12 +4088,11 @@
       "canonical": "https://reviewsguitar.com/best/best-wah-pedals",
       "author": "ReviewsGuitar.com",
       "h1": "Best Wah Pedals For Classic Rock Reviews",
-      "words": 237,
+      "words": 624,
       "kw": "Crying tones - best wah pedals 2026",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4123,12 +4121,11 @@
       "canonical": "https://reviewsguitar.com/best/blues-overdrive-pedals",
       "author": "ReviewsGuitar.com",
       "h1": "Best Overdrive Pedals For Blues Players",
-      "words": 230,
+      "words": 599,
       "kw": "Get that perfect blues grit",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4395,7 +4392,7 @@
       "canonical": "https://reviewsguitar.com/reviews/boss-katana-50-mkii",
       "author": "ReviewsGuitar.com",
       "h1": "Is Boss Katana 50 Mkii Worth It In 2026",
-      "words": 540,
+      "words": 544,
       "kw": "Boss Katana - The MVP of amps?",
       "kwInBody": 2,
       "flags": [
@@ -4427,12 +4424,11 @@
       "canonical": "https://reviewsguitar.com/reviews/ernie-ball-volume-pedal",
       "author": "ReviewsGuitar.com",
       "h1": "Is Ernie Ball Volume Pedal Worth It",
-      "words": 245,
+      "words": 589,
       "kw": "Smooth swells - Ernie Ball review",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4528,7 +4524,7 @@
       "canonical": "https://reviewsguitar.com/reviews/tc-polytune-3",
       "author": "ReviewsGuitar.com",
       "h1": "Is Tc Electronic Polytune 3 Worth It",
-      "words": 546,
+      "words": 547,
       "kw": "Never be out of tune again - Polytune 3",
       "kwInBody": 2,
       "flags": [

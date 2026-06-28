@@ -535,6 +535,158 @@
       }
     ]
   },
+  "/best/best-wah-pedals": {
+    "buyingGuide": {
+      "heading": "How to Choose a Wah Pedal",
+      "intro": "A wah pedal sweeps a tone filter as you rock the treadle, giving that vocal 'wah' that defined classic rock and funk. Most beginners can ignore the boutique options — start with what matters.",
+      "criteria": [
+        {
+          "h": "Voicing and sweep range",
+          "p": "A wah's character lives in its sweep — how far it travels from dark to bright and where its peak sits. The classic Cry Baby voicing is the reference point most players know from the records; wider-range wahs suit lead players who want more vocal expression."
+        },
+        {
+          "h": "True bypass vs. buffered",
+          "p": "Standard wahs can load down your tone when off. A true-bypass wah (or adding a buffer to your board) keeps your signal clear when the pedal isn't engaged — worth knowing if you run a long signal chain."
+        },
+        {
+          "h": "Build and treadle feel",
+          "p": "A wah takes constant foot pressure, so a heavy die-cast housing and a smooth, sturdy treadle matter for reliability. Cheap wahs develop scratchy pots and loose feel fast."
+        },
+        {
+          "h": "Switch type",
+          "p": "Most wahs engage via a click switch under the toe. Some players prefer auto-switching or optical designs that turn on as you touch the treadle — handy live, but the classic click switch is simple and dependable."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What does a wah pedal actually do?",
+        "a": "A wah pedal sweeps a resonant tone filter as you move the treadle with your foot, shifting emphasis from bass to treble to create the vocal 'wah' sound. Rocked rhythmically it adds funk and expression; parked in one spot it works as a fixed tone filter for a cocked-wah lead tone."
+      },
+      {
+        "q": "Is the Dunlop Cry Baby a good first wah?",
+        "a": "Yes — the Cry Baby is the wah most players picture when they think of the effect, it's on countless classic rock records, and it's built like a tank. It's the safe default first wah; you can explore wider-sweep or boutique voicings later once you know what you want to change."
+      },
+      {
+        "q": "Do I need a true-bypass wah?",
+        "a": "It helps if you run a long pedal chain, because a standard wah can dull your tone when switched off. True bypass (or a buffer elsewhere on your board) preserves your clean signal. For a small setup it matters less, but it's a worthwhile feature to look for."
+      }
+    ]
+  },
+  "/best/best-loop-pedal-budget": {
+    "buyingGuide": {
+      "heading": "Choosing a Budget Loop Pedal",
+      "intro": "A looper records a phrase and plays it back instantly so you can jam over yourself — gold for practice, songwriting, and solo performance. On a budget, simpler is usually better.",
+      "criteria": [
+        {
+          "h": "Loop time you actually need",
+          "p": "Entry loopers give around 5 minutes of recording, which is plenty for practising scales over a chord loop or building a song idea. Don't overpay for hours of loop time you won't use."
+        },
+        {
+          "h": "Sound quality and bypass",
+          "p": "Look for true bypass and uncompressed, high-resolution audio so your looped parts sound as good as your live playing. A transparent looper won't color your tone when it's off."
+        },
+        {
+          "h": "Simple vs. multi-track",
+          "p": "One-knob, single-track loopers are the easiest to learn and the cheapest. Multi-track and dedicated stop-button loopers add flexibility for performance but cost more and take longer to master — overkill for most beginners."
+        },
+        {
+          "h": "Footswitch control",
+          "p": "Everything is controlled by tapping the footswitch — record, play, overdub. Make sure the timing feels natural to you, since looping live is all about hitting the switch cleanly in rhythm."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What is a loop pedal used for?",
+        "a": "A loop pedal records a short phrase you play and instantly repeats it, so you can layer parts or solo over your own backing. It's brilliant for practising lead over a rhythm loop, sketching song ideas, and one-person live performance."
+      },
+      {
+        "q": "How much loop time do I need on a budget?",
+        "a": "Around 5 minutes — which entry-level loopers like the TC Electronic Ditto offer — is plenty for practice loops and song ideas. Longer loop times and multiple tracks are nice for performers, but most players never run out of room with a simple single-track looper."
+      },
+      {
+        "q": "Are simple one-knob loopers good enough?",
+        "a": "For most players, yes. A single-track, one-knob looper is the easiest to learn, the cheapest, and sounds excellent if it has true bypass. Multi-track loopers add power for live performance but a longer learning curve — start simple and upgrade only if you outgrow it."
+      }
+    ]
+  },
+  "/best/blues-overdrive-pedals": {
+    "buyingGuide": {
+      "heading": "What Makes a Great Blues Overdrive",
+      "intro": "Blues overdrive is about the breakup of a cranked tube amp at sane volume — warm, touch-sensitive grit that cleans up when you roll back your guitar. Here's what to look for.",
+      "criteria": [
+        {
+          "h": "Transparent vs. mid-hump voicing",
+          "p": "Transparent overdrives (like the Boss BD-2) keep your amp's character and add grit on top; mid-humped overdrives (Tube Screamer style) push mids forward to cut through a band. Blues players often want transparency so the amp still sounds like itself."
+        },
+        {
+          "h": "Cleans up with your volume knob",
+          "p": "The hallmark of a great blues drive is dynamic response — dig in for grit, roll your guitar volume back for near-clean. Test how the pedal reacts to your picking and volume, not just how it sounds maxed out."
+        },
+        {
+          "h": "Gain range",
+          "p": "You want gentle-to-medium gain, not metal saturation. A blues overdrive should break up smoothly and keep note definition, so chords stay clear rather than turning to mush."
+        },
+        {
+          "h": "Stacking and amp pairing",
+          "p": "Many players stack a light overdrive into an already-edge-of-breakup amp for extra harmonic richness. Consider how the pedal behaves both into a clean amp and pushing a slightly dirty one."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What's the difference between overdrive and distortion for blues?",
+        "a": "Overdrive produces softer, dynamic, amp-like breakup that responds to your touch — ideal for blues. Distortion is heavier, more compressed, and more aggressive, suited to rock and metal. For authentic blues grit that cleans up with your volume knob, you want an overdrive, not a distortion."
+      },
+      {
+        "q": "Is the Boss BD-2 Blues Driver good for blues?",
+        "a": "Yes — it's a long-standing favourite for exactly this. The BD-2 delivers warm, transparent, touch-sensitive overdrive that mimics a cranked tube amp and cleans up beautifully when you roll back your guitar's volume. It's a reliable, affordable benchmark for blues breakup."
+      },
+      {
+        "q": "Should a blues overdrive be transparent or mid-focused?",
+        "a": "It depends on your amp and band. Transparent overdrives preserve your amp's natural voice and suit players who already love their clean tone. Mid-focused (Tube Screamer-style) drives push your sound forward in a mix. Many blues players keep one of each, but a transparent drive is the more versatile starting point."
+      }
+    ]
+  },
+  "/reviews/ernie-ball-volume-pedal": {
+    "buyingGuide": {
+      "heading": "Ernie Ball VP JR: What to Know",
+      "intro": "The VP JR is the industry-standard volume pedal — smooth swells, reliable level control, and a build that survives years of touring. The main thing to get right is matching it to your pickups.",
+      "criteria": [
+        {
+          "h": "Passive (250K) vs. active (25K)",
+          "p": "Get the 250K version for passive pickups (standard guitars) and the 25K version for active pickups or line-level signals. Using the wrong impedance version causes an uneven, abrupt swell, so this is the one spec you must match."
+        },
+        {
+          "h": "Volume swells and dynamics",
+          "p": "Beyond simple level control, a volume pedal lets you fade notes in for ambient, pedal-steel-style swells. The VP JR's smooth taper is what makes those swells gradual and musical rather than jumpy."
+        },
+        {
+          "h": "Build and placement",
+          "p": "Its all-aluminum chassis is famously road-tough. Placement matters: early in the chain it controls drive, after your drives/effects it acts as a clean master volume — decide which job you want it to do."
+        },
+        {
+          "h": "Tuner output",
+          "p": "A handy tuner-out jack lets you mute and tune silently while sending signal to a tuner, which is genuinely useful live."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Ernie Ball VP JR worth it?",
+        "a": "For most players, yes — it's the long-standing industry standard for a reason: smooth swells, a tough aluminum build that survives touring, and a useful tuner output. As long as you buy the right impedance version for your pickups, it's a buy-once volume pedal."
+      },
+      {
+        "q": "Which VP JR do I need — 250K or 25K?",
+        "a": "Choose the 250K version for passive pickups (most standard guitars) and the 25K version for active pickups or line-level signals. Matching the impedance is essential; the wrong version produces an uneven, abrupt volume swell instead of a smooth one."
+      },
+      {
+        "q": "Where should a volume pedal go in my signal chain?",
+        "a": "It depends on the job. Placed early (before your drive pedals) it changes how hard you push them, acting like a remote guitar-volume knob. Placed after your effects it works as a clean master volume for swells and fades. Many players keep it near the end for consistent volume control."
+      }
+    ]
+  },
   "/best/best-p90-pickups": {
     "buyingGuide": {
       "heading": "How to Choose P-90 Pickups",
