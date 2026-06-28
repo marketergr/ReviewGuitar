@@ -966,5 +966,55 @@
     ],
     "image": "/images/electric-15.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0D2LQNDS7/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-13",
+    "name": "Seymour Duncan Phat Cat P-90 Set",
+    "silo": "accessories",
+    "category": "pickups",
+    "description": "True single-coil P-90 tone in a humbucker-sized housing — a drop-in upgrade for HB-routed guitars with raw, gritty vintage growl.",
+    "price": "$149.00",
+    "rating": 4.7,
+    "features": [
+      "Humbucker-sized P-90",
+      "True single-coil tone",
+      "Drop-in for HB routes"
+    ],
+    "pros": [
+      "Vintage P-90 grit and bite",
+      "No routing needed",
+      "Great for blues, punk and rock"
+    ],
+    "cons": [
+      "Single-coil hum",
+      "Pricier than ceramic pickups"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B00XH0MVZC/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-14",
+    "name": "Gibson P-90 Single Coil Pickup",
+    "silo": "accessories",
+    "category": "pickups",
+    "description": "The classic Gibson P-90 soapbar single-coil — fat, midrange-rich vintage tone sitting between single-coil clarity and humbucker warmth.",
+    "price": "$109.00",
+    "rating": 4.6,
+    "features": [
+      "Authentic Gibson P-90",
+      "Single-coil soapbar/dogear",
+      "Vintage-voiced"
+    ],
+    "pros": [
+      "Genuine Gibson tone",
+      "Fat mids and growl",
+      "Iconic vintage character"
+    ],
+    "cons": [
+      "Single-coil hum",
+      "Mounting type must match your guitar"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B000H28NKA/?tag=reviewsguitar-20"
   }
 ]

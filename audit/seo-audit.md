@@ -1,6 +1,6 @@
 # SEO Audit — reviewsguitar.com
 
-_Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-only)._
+_Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-only)._
 
 > Word counts are visible-text approximations (scripts/styles/tags stripped). "kw" = title phrase minus brand; kwInBody = exact-match repeats in visible text.
 
@@ -22,7 +22,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 
 - no-canonical: **3**
 - underscore-url: **147**
-- thin: **47**
+- thin: **46**
 - kw-stuffed: **32**
 - title-long: **1**
 - desc-long: **1**
@@ -101,7 +101,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_electric-guitar-under-1000.html
 - …and 87 more (see seo-audit.json)
 
-### Thin content (<300 visible words) (47)
+### Thin content (<300 visible words) (46)
 
 - pages/bofu_alternatives_epiphone-les-paul-standard.html
 - pages/bofu_best_acoustic-guitar-flight-cases.html
@@ -113,7 +113,6 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_best-lightweight-guitar.html
 - pages/bofu_best_best-locking-tuners.html
 - pages/bofu_best_best-loop-pedal-budget.html
-- pages/bofu_best_best-p90-pickups.html
 - pages/bofu_best_best-shredding-picks.html
 - pages/bofu_best_best-wah-pedals.html
 - pages/bofu_best_best-wireless-guitar-system.html
@@ -477,7 +476,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_best-lightweight-guitar.html | 236 | 59 | 136 | …/best/best-lightweight-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_best-locking-tuners.html | 235 | 57 | 133 | …/best/best-locking-tuners | underscore-url thin(<300w) |
 | pages/bofu_best_best-loop-pedal-budget.html | 239 | 59 | 129 | …/best/best-loop-pedal-budget | underscore-url thin(<300w) |
-| pages/bofu_best_best-p90-pickups.html | 247 | 51 | 125 | …/best/best-p90-pickups | underscore-url thin(<300w) |
+| pages/bofu_best_best-p90-pickups.html | 665 | 51 | 125 | …/best/best-p90-pickups | underscore-url |
 | pages/bofu_best_best-shredding-picks.html | 245 | 47 | 131 | …/best/best-shredding-picks | underscore-url thin(<300w) |
 | pages/bofu_best_best-wah-pedals.html | 237 | 56 | 130 | …/best/best-wah-pedals | underscore-url thin(<300w) |
 | pages/bofu_best_best-wireless-guitar-system.html | 247 | 57 | 130 | …/best/best-wireless-guitar-system | underscore-url thin(<300w) |
@@ -493,7 +492,7 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_jazzmaster-style-guitars.html | 231 | 56 | 132 | …/best/jazzmaster-style-guitars | underscore-url thin(<300w) |
 | pages/bofu_best_premium-acoustic-guitars-under-3000.html | 311 | 68 | 172 | ∅ | no-canonical underscore-url desc-long(172) |
 | pages/bofu_best_recording-acoustic-guitar.html | 588 | 60 | 133 | …/best/recording-acoustic-guitar | underscore-url |
-| pages/bofu_best_telecaster-metal-pickups.html | 242 | 56 | 129 | …/best/telecaster-metal-pickups | underscore-url thin(<300w) |
+| pages/bofu_best_telecaster-metal-pickups.html | 240 | 56 | 129 | …/best/telecaster-metal-pickups | underscore-url thin(<300w) |
 | pages/bofu_best_travel-acoustic-guitar.html | 230 | 62 | 134 | …/best/travel-acoustic-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_vintage-guitars-investment-guide.html | 282 | 61 | 137 | ∅ | no-canonical underscore-url thin(<300w) |
 | pages/bofu_reviews_best-guitar-tuners.html | 243 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url thin(<300w) |
@@ -502,11 +501,11 @@ _Generated 2026-06-27 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_reviews_ernie-ball-volume-pedal.html | 245 | 54 | 125 | …/reviews/ernie-ball-volume-pedal | underscore-url thin(<300w) |
 | pages/bofu_reviews_fender-mustang-lt25.html | 233 | 47 | 134 | …/reviews/fender-mustang-lt25 | underscore-url thin(<300w) |
 | pages/bofu_reviews_fender-player-ii-stratocaster.html | 567 | 54 | 131 | …/reviews/fender-player-ii-stratocaster | underscore-url |
-| pages/bofu_reviews_fishman-fluence-pickups.html | 221 | 58 | 127 | …/reviews/fishman-fluence-pickups | underscore-url thin(<300w) |
-| pages/bofu_reviews_marshall-dsl40cr.html | 235 | 57 | 130 | …/reviews/marshall-dsl40cr | underscore-url thin(<300w) |
+| pages/bofu_reviews_fishman-fluence-pickups.html | 233 | 58 | 127 | …/reviews/fishman-fluence-pickups | underscore-url thin(<300w) |
+| pages/bofu_reviews_marshall-dsl40cr.html | 244 | 57 | 130 | …/reviews/marshall-dsl40cr | underscore-url thin(<300w) |
 | pages/bofu_reviews_prs-se-custom-24.html | 246 | 55 | 118 | …/reviews/prs-se-custom-24 | underscore-url thin(<300w) |
 | pages/bofu_reviews_tc-polytune-3.html | 546 | 60 | 126 | …/reviews/tc-polytune-3 | underscore-url |
-| pages/bofu_reviews_vox-ac15.html | 240 | 57 | 126 | …/reviews/vox-ac15 | underscore-url thin(<300w) |
+| pages/bofu_reviews_vox-ac15.html | 249 | 57 | 126 | …/reviews/vox-ac15 | underscore-url thin(<300w) |
 | pages/bofu_reviews_yamaha-dynamic-classical.html | 227 | 51 | 131 | …/reviews/yamaha-dynamic-classical | underscore-url thin(<300w) |
 | pages/bofu_vs_fender-player-vs-american-professional.html | 173 | 61 | 131 | …/vs/fender-player-vs-american-professional | underscore-url thin(<300w) |
 | pages/bofu_vs_gibson-les-paul-50s-vs-60s.html | 174 | 50 | 132 | …/vs/gibson-les-paul-50s-vs-60s | underscore-url thin(<300w) |

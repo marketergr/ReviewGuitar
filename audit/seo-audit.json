@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-27",
+  "generated": "2026-06-28",
   "count": 373,
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 47,
+    "thin": 46,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -4056,12 +4056,11 @@
       "canonical": "https://reviewsguitar.com/best/best-p90-pickups",
       "author": "ReviewsGuitar.com",
       "h1": "Best P90 Pickups For Jazz And Blues",
-      "words": 247,
+      "words": 665,
       "kw": "Vintage growl - best P90 picks",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4327,7 +4326,7 @@
       "canonical": "https://reviewsguitar.com/best/telecaster-metal-pickups",
       "author": "ReviewsGuitar.com",
       "h1": "Best Pickups For Telecaster Metal Tones",
-      "words": 242,
+      "words": 240,
       "kw": "Turn your Tele into a metal machine",
       "kwInBody": 2,
       "flags": [
@@ -4478,7 +4477,7 @@
       "canonical": "https://reviewsguitar.com/reviews/fishman-fluence-pickups",
       "author": "ReviewsGuitar.com",
       "h1": "Is Fishman Fluence Humbucker Worth It",
-      "words": 221,
+      "words": 233,
       "kw": "Infinite tone? Fishman Fluence review",
       "kwInBody": 2,
       "flags": [
@@ -4495,7 +4494,7 @@
       "canonical": "https://reviewsguitar.com/reviews/marshall-dsl40cr",
       "author": "ReviewsGuitar.com",
       "h1": "Is Marshall Dsl40cr Worth It For Gigging",
-      "words": 235,
+      "words": 244,
       "kw": "The gig-ready Marshall - full review",
       "kwInBody": 2,
       "flags": [
@@ -4545,7 +4544,7 @@
       "canonical": "https://reviewsguitar.com/reviews/vox-ac15",
       "author": "ReviewsGuitar.com",
       "h1": "Is Vox Ac15 Worth It For Small Clubs",
-      "words": 240,
+      "words": 249,
       "kw": "The British jangle - Vox AC15 review",
       "kwInBody": 2,
       "flags": [

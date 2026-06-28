@@ -535,6 +535,48 @@
       }
     ]
   },
+  "/best/best-p90-pickups": {
+    "buyingGuide": {
+      "heading": "How to Choose P-90 Pickups",
+      "intro": "P-90s are the in-between pickup — fatter than a Strat single-coil, brighter and grittier than a humbucker. Picking the right set is mostly about fit and output, so start with how they'll mount in your guitar.",
+      "criteria": [
+        {
+          "h": "Mounting: soapbar, dogear, or humbucker-sized",
+          "p": "The format has to match your guitar's route. Soapbar and dogear are the traditional P-90 mounts; humbucker-sized P-90s (like the Seymour Duncan Phat Cat) drop straight into a standard humbucker route with no woodwork — the easy upgrade for an HB-equipped guitar."
+        },
+        {
+          "h": "Output and voicing",
+          "p": "Vintage-wound P-90s stay clear, open, and dynamic; hotter-wound versions push your amp harder and suit heavier rock. Match the output to how much grit and volume you want before the amp even breaks up."
+        },
+        {
+          "h": "Neck vs. bridge character",
+          "p": "Neck P-90s are warm, round, and woody; bridge P-90s are gritty and cutting. A matched set is voiced specifically for each position, so buy the pair rather than two of the same."
+        },
+        {
+          "h": "Hum comes with the territory",
+          "p": "True P-90s are single-coils, so they hum like single-coils — more than a humbucker. It's part of their raw charm, but if you play high-gain or near computer screens, consider a noiseless P-90-voiced set."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What's the difference between a P-90 and a humbucker?",
+        "a": "A P-90 is a single-coil pickup (wider than a Strat's), so it's brighter, grittier, and more dynamic — but it hums. A humbucker uses two coils to cancel hum and sounds fatter, smoother, and higher-output. Tonally, the P-90 sits right between a Strat single-coil and a humbucker."
+      },
+      {
+        "q": "Will P-90 pickups fit my guitar?",
+        "a": "Only if the mounting style matches. Traditional soapbar and dogear P-90s need a P-90 route. If your guitar has humbucker routes, choose a humbucker-sized P-90 such as the Seymour Duncan Phat Cat — it drops in with no modification, which is the simplest way to get P-90 tone into an HB guitar."
+      },
+      {
+        "q": "Do P-90 pickups hum?",
+        "a": "Yes. True P-90s are single-coils, so they hum — especially under high gain or near screens and lighting. It's part of their raw, vintage character. If hum is a dealbreaker for you, look at noiseless or stacked P-90-voiced sets that keep most of the tone without the buzz."
+      },
+      {
+        "q": "Are P-90s good for blues and punk?",
+        "a": "Excellent for both. Their gritty midrange and dynamic response make P-90s a favourite for blues, punk, classic rock, and garage tones — raw and aggressive when you dig in, yet they clean up nicely when you roll the volume back."
+      }
+    ]
+  },
   "/vs/telecaster-vs-stratocaster-beginner": {
     "buyingGuide": {
       "heading": "Telecaster vs Stratocaster: Which Should a Beginner Buy?",
