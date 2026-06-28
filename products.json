@@ -1116,5 +1116,80 @@
     ],
     "image": "/images/ernie_ball_vp_jr.png",
     "amazonLink": "https://www.amazon.com/dp/B0002GZ052/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-19",
+    "name": "Marshall DSL40CR Tube Combo Amp",
+    "silo": "accessories",
+    "category": "amps",
+    "description": "A 40-watt all-tube 1x12 combo with the classic Marshall roar — two channels, reverb, and an effects loop. A gigging workhorse that nails crunch to high-gain.",
+    "price": "$749.99",
+    "rating": 4.8,
+    "features": [
+      "40W 2-channel tube combo",
+      "12\" Celestion speaker",
+      "Reverb + FX loop, power resistor (40/20W)"
+    ],
+    "pros": [
+      "Authentic Marshall tube tone",
+      "Loud enough to gig",
+      "Great cleans and high-gain"
+    ],
+    "cons": [
+      "Heavy tube combo",
+      "Loud to crank at home"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B078Y7LNY5/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-20",
+    "name": "Vox AC15C1 Tube Combo Amp",
+    "silo": "accessories",
+    "category": "amps",
+    "description": "The 15-watt 1x12 tube combo behind that chimey British jangle — lush onboard reverb and tremolo, and a Top Boost channel that breaks up beautifully.",
+    "price": "$899.99",
+    "rating": 4.8,
+    "features": [
+      "15W Class A tube combo",
+      "12\" Celestion Greenback",
+      "Top Boost channel, reverb + tremolo"
+    ],
+    "pros": [
+      "Iconic chimey clean tone",
+      "Lovely natural overdrive",
+      "Studio and stage favourite"
+    ],
+    "cons": [
+      "Breaks up early (loud for cleans)",
+      "Heavy for a 15-watter"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B0038MTH8S/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-21",
+    "name": "Fender Mustang LT25 Modeling Amp",
+    "silo": "accessories",
+    "category": "amps",
+    "description": "A 25-watt digital modeling practice amp with 30 presets, 20+ effects, a color screen, and USB recording. The go-to do-everything bedroom amp.",
+    "price": "$179.99",
+    "rating": 4.7,
+    "features": [
+      "25W modeling combo, 8\" speaker",
+      "30 presets, 20+ effects",
+      "USB audio + headphone out"
+    ],
+    "pros": [
+      "Huge range of tones cheaply",
+      "Great for silent practice/recording",
+      "Simple color-screen interface"
+    ],
+    "cons": [
+      "Solid-state, not a tube feel",
+      "Small speaker limits low end"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B07N29M92M/?tag=reviewsguitar-20"
   }
 ]

@@ -535,6 +535,120 @@
       }
     ]
   },
+  "/reviews/marshall-dsl40cr": {
+    "buyingGuide": {
+      "heading": "Is the Marshall DSL40CR Worth It for Gigging?",
+      "intro": "The DSL40CR is Marshall's affordable all-tube workhorse, and for many players it's the first 'real' Marshall that's genuinely gig-ready. Here's what matters if you're buying it to play out.",
+      "criteria": [
+        {
+          "h": "Real tube tone and headroom",
+          "p": "Its 40 watts of valve power give the classic Marshall crunch and enough clean headroom to stay punchy in a band mix. This is the amp doing the heavy lifting on countless club and pub stages."
+        },
+        {
+          "h": "Two channels plus reverb and FX loop",
+          "p": "A footswitchable clean/crunch channel pair, onboard reverb, and an effects loop cover most gigging needs out of the box — you can run time-based effects in the loop and switch sounds mid-song."
+        },
+        {
+          "h": "Volume management",
+          "p": "40 tube watts is loud. The built-in power reduction (40W/20W) helps tame it for smaller rooms and rehearsals, but this is still an amp that wants some volume to sing — worth knowing if you also need it at home."
+        },
+        {
+          "h": "Weight and practicality",
+          "p": "As a tube 1x12 combo it's reasonably portable for gigs but heavier than a modeling amp. Factor in occasional tube replacement as part of owning any valve amp."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Marshall DSL40CR loud enough for gigs?",
+        "a": "Yes. At 40 all-tube watts it's loud enough for most club, bar, and rehearsal-room gigs, often with headroom to spare — and for bigger stages you'd simply mic it through the PA. Many players find it has more volume than they can fully use indoors."
+      },
+      {
+        "q": "Can you use the DSL40CR at home?",
+        "a": "You can, with caveats. The switchable power reduction (40W to 20W) helps lower the volume, but tube amps sound their best with some air moving, so it won't get its full character at whisper levels. If home is your main use, a lower-wattage or modeling amp may suit better."
+      },
+      {
+        "q": "Does the DSL40CR have good clean tones?",
+        "a": "Its clean channel is solid and stays punchy in a mix, though Marshalls are best known for their crunch and lead voicings. If pristine, jangly cleans are your priority, a Fender or Vox-style amp leans that way; for rock crunch and singing leads, the DSL shines."
+      }
+    ]
+  },
+  "/reviews/vox-ac15": {
+    "buyingGuide": {
+      "heading": "Is the Vox AC15 Worth It for Small Clubs?",
+      "intro": "The AC15C1 is the amp behind that unmistakable British 'chime' — think jangly cleans and a sweet, musical breakup. For small-club and studio players it's a classic choice; here's what to weigh.",
+      "criteria": [
+        {
+          "h": "That chimey clean tone",
+          "p": "The AC15's Top Boost circuit and Celestion speaker deliver the sparkling, bell-like clean tone Vox is famous for — a defining sound of British rock, indie, and jangle-pop."
+        },
+        {
+          "h": "15 watts for small rooms",
+          "p": "Fifteen Class-A tube watts is well suited to small clubs, studios, and rehearsals. It's loud for its rating, and crucially it breaks up at usable volumes rather than only when deafening."
+        },
+        {
+          "h": "Natural overdrive and onboard effects",
+          "p": "Push the Top Boost channel and you get a rich, harmonically complex overdrive without any pedals. Built-in reverb and tremolo add lush, gig-ready ambience straight from the amp."
+        },
+        {
+          "h": "Cleans-at-volume trade-off",
+          "p": "Because it breaks up relatively early, getting loud, pristine cleans on a bigger stage can be tricky. For a small club that edge-of-breakup character is exactly the appeal, but it's worth understanding before you buy."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Vox AC15 loud enough for small clubs?",
+        "a": "For most small clubs, studios, and rehearsals, yes — 15 Class-A tube watts is louder than the rating suggests and cuts through well. For larger or louder stages you'd mic it through the PA, which is standard practice anyway."
+      },
+      {
+        "q": "Can the AC15 stay clean at gig volume?",
+        "a": "Only up to a point. The AC15 is designed to break up musically as you turn it up, so very loud, pristine cleans are harder to achieve than on a higher-headroom amp. In a small club that early, chimey breakup is the whole appeal; if you need big clean headroom, consider the AC30 or a Fender."
+      },
+      {
+        "q": "Does the Vox AC15 take pedals well?",
+        "a": "Yes. Its responsive clean and Top Boost channels are a great pedal platform, especially for overdrives, fuzzes, and modulation. Many players pair it with a light overdrive to push the front end and use the amp's natural chime as the foundation."
+      }
+    ]
+  },
+  "/reviews/fender-mustang-lt25": {
+    "buyingGuide": {
+      "heading": "Is the Fender Mustang LT25 Worth It for Practice?",
+      "intro": "The Mustang LT25 is one of the most popular practice amps for good reason: a huge range of tones, silent-practice features, and a beginner-friendly price. Here's what you're getting.",
+      "criteria": [
+        {
+          "h": "Modeling versatility",
+          "p": "Built-in amp models and 30 presets cover everything from clean Fender sparkle to high-gain, plus 20-plus effects. It's a whole tonal playground in one small box — ideal while you figure out the sounds you like."
+        },
+        {
+          "h": "Silent practice and recording",
+          "p": "A headphone output lets you practise silently at any hour, and the USB port doubles as an audio interface for recording straight into a computer — a genuinely useful feature at this price."
+        },
+        {
+          "h": "Simple color-screen interface",
+          "p": "An easy color display and minimal controls make dialing in and saving tones painless, which matters for beginners who don't want to wade through menus."
+        },
+        {
+          "h": "What it isn't",
+          "p": "It's a 25-watt solid-state modeling combo with a small 8-inch speaker — superb for practice and recording, but not built to gig over a drummer or deliver true tube feel and low-end thump."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the Fender Mustang LT25 good for beginners?",
+        "a": "Excellent. It's affordable, simple to use via its color screen, and its presets and effects let a beginner explore dozens of tones and styles without buying pedals. The headphone output also makes silent practice easy, which keeps you playing more."
+      },
+      {
+        "q": "Can you gig with a Mustang LT25?",
+        "a": "It's really a practice and recording amp. At 25 solid-state watts with an 8-inch speaker, it can struggle to cut through a live band, especially against drums. For gigging, a louder modeling amp or a tube combo is a better fit; for home and recording, the LT25 is hard to beat for the money."
+      },
+      {
+        "q": "Does the Mustang LT25 work for recording?",
+        "a": "Yes — its USB output doubles as an audio interface, so you can record its modeled tones directly into a computer with no extra gear. Combined with the headphone output for monitoring, it's a capable little practice-and-record setup for a bedroom musician."
+      }
+    ]
+  },
   "/best/home-practice-guitar-amp": {
     "buyingGuide": {
       "heading": "How to Choose a Home Practice Amp",

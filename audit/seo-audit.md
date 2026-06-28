@@ -22,7 +22,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 
 - no-canonical: **3**
 - underscore-url: **147**
-- thin: **36**
+- thin: **33**
 - kw-stuffed: **32**
 - title-long: **1**
 - desc-long: **1**
@@ -101,7 +101,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_electric-guitar-under-1000.html
 - …and 87 more (see seo-audit.json)
 
-### Thin content (<300 visible words) (36)
+### Thin content (<300 visible words) (33)
 
 - pages/bofu_alternatives_epiphone-les-paul-standard.html
 - pages/bofu_best_acoustic-guitar-flight-cases.html
@@ -118,11 +118,8 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_travel-acoustic-guitar.html
 - pages/bofu_best_vintage-guitars-investment-guide.html
 - pages/bofu_reviews_best-guitar-tuners.html
-- pages/bofu_reviews_fender-mustang-lt25.html
 - pages/bofu_reviews_fishman-fluence-pickups.html
-- pages/bofu_reviews_marshall-dsl40cr.html
 - pages/bofu_reviews_prs-se-custom-24.html
-- pages/bofu_reviews_vox-ac15.html
 - pages/bofu_reviews_yamaha-dynamic-classical.html
 - pages/bofu_vs_fender-player-vs-american-professional.html
 - pages/bofu_vs_gibson-les-paul-50s-vs-60s.html
@@ -259,13 +256,13 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/accessories/tc-electronic-polytune-3-vs-nerecndens-66pcs-guitar-accessories-kit.html | 399 | 71 | 117 | …/collections/accessories/tc-electronic-polytune-3-vs-nerecndens-66pcs-guitar-accessories-kit | — |
 | collections/accessories/tc-electronic-polytune-3-vs-perris-leathers-jacquard-strap.html | 386 | 70 | 160 | …/collections/accessories/tc-electronic-polytune-3-vs-perris-leathers-jacquard-strap | — |
 | collections/accessories/tc-electronic-polytune-3-vs-wingo-professional-guitar-capo.html | 380 | 69 | 152 | …/collections/accessories/tc-electronic-polytune-3-vs-wingo-professional-guitar-capo | — |
-| collections/accessories/tuners.html | 678 | 46 | 114 | …/collections/accessories/tuners | kw-stuffed(4x) |
+| collections/accessories/tuners.html | 673 | 46 | 114 | …/collections/accessories/tuners | kw-stuffed(4x) |
 | collections/accessories/wingo-professional-guitar-capo-vs-fender-fct-2-clip-on-tuner.html | 382 | 71 | 140 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-fct-2-clip-on-tuner | — |
 | collections/accessories/wingo-professional-guitar-capo-vs-fender-premium-picks-sampler.html | 380 | 66 | 156 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-premium-picks-sampler | — |
 | collections/accessories/wingo-professional-guitar-capo-vs-fender-telepath-wireless-system.html | 378 | 53 | 143 | …/collections/accessories/wingo-professional-guitar-capo-vs-fender-telepath-wireless-system | — |
 | collections/accessories/wingo-professional-guitar-capo-vs-perris-leathers-jacquard-strap.html | 379 | 69 | 159 | …/collections/accessories/wingo-professional-guitar-capo-vs-perris-leathers-jacquard-strap | — |
 | collections/acoustic/best-for-beginners.html | 455 | 56 | 121 | …/collections/acoustic/best-for-beginners | — |
-| collections/acoustic/best-under-500.html | 744 | 58 | 123 | …/collections/acoustic/best-under-500 | kw-stuffed(4x) |
+| collections/acoustic/best-under-500.html | 746 | 58 | 123 | …/collections/acoustic/best-under-500 | kw-stuffed(4x) |
 | collections/acoustic/care-guide.html | 676 | 52 | 117 | …/collections/acoustic/care-guide | kw-stuffed(4x) |
 | collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-10e-road-series.html | 357 | 64 | 157 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-10e-road-series | — |
 | collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-18-standard-series.html | 366 | 67 | 160 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-martin-d-18-standard-series | — |
@@ -273,7 +270,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-plus-acoustic-guitar.html | 364 | 45 | 135 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-214ce-plus-acoustic-guitar | — |
 | collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-314ce-studio.html | 355 | 59 | 152 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-taylor-314ce-studio | — |
 | collections/acoustic/fender-cd-60s-dreadnought-vs-yamaha-fg830-acoustic-guitar.html | 362 | 68 | 130 | …/collections/acoustic/fender-cd-60s-dreadnought-vs-yamaha-fg830-acoustic-guitar | — |
-| collections/acoustic/hybrid-guide.html | 688 | 59 | 124 | …/collections/acoustic/hybrid-guide | kw-stuffed(4x) |
+| collections/acoustic/hybrid-guide.html | 685 | 59 | 124 | …/collections/acoustic/hybrid-guide | kw-stuffed(4x) |
 | collections/acoustic/index.html | 531 | 37 | 133 | …/collections/acoustic/ | kw-stuffed(9x) |
 | collections/acoustic/martin-d-10e-road-series-vs-martin-d-18-standard-series.html | 374 | 66 | 159 | …/collections/acoustic/martin-d-10e-road-series-vs-martin-d-18-standard-series | — |
 | collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-k-deluxe.html | 362 | 60 | 153 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-214ce-k-deluxe | — |
@@ -281,7 +278,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/acoustic/martin-d-10e-road-series-vs-taylor-314ce-studio.html | 363 | 58 | 151 | …/collections/acoustic/martin-d-10e-road-series-vs-taylor-314ce-studio | — |
 | collections/acoustic/martin-d-10e-road-series-vs-yamaha-fg830-acoustic-guitar.html | 380 | 67 | 160 | …/collections/acoustic/martin-d-10e-road-series-vs-yamaha-fg830-acoustic-guitar | — |
 | collections/acoustic/martin-d-18-standard-series-vs-taylor-214ce-k-deluxe.html | 378 | 63 | 156 | …/collections/acoustic/martin-d-18-standard-series-vs-taylor-214ce-k-deluxe | — |
-| collections/acoustic/premium-guide.html | 684 | 61 | 126 | …/collections/acoustic/premium-guide | kw-stuffed(4x) |
+| collections/acoustic/premium-guide.html | 689 | 61 | 126 | …/collections/acoustic/premium-guide | kw-stuffed(4x) |
 | collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-martin-d-18-standard-series.html | 379 | 43 | 133 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-martin-d-18-standard-series | — |
 | collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 369 | 69 | 143 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-214ce-k-deluxe | — |
 | collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-314ce-studio.html | 372 | 67 | 160 | …/collections/acoustic/taylor-214ce-plus-acoustic-guitar-vs-taylor-314ce-studio | — |
@@ -299,12 +296,12 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/acoustic/yamaha-fg830-acoustic-guitar-vs-martin-d-18-standard-series.html | 377 | 70 | 128 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-martin-d-18-standard-series | — |
 | collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-214ce-k-deluxe.html | 365 | 64 | 157 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-214ce-k-deluxe | — |
 | collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-314ce-studio.html | 366 | 62 | 155 | …/collections/acoustic/yamaha-fg830-acoustic-guitar-vs-taylor-314ce-studio | — |
-| collections/bass/bass-buying-guide.html | 631 | 51 | 24 | …/collections/bass/bass-buying-guide | kw-stuffed(4x) |
+| collections/bass/bass-buying-guide.html | 629 | 51 | 24 | …/collections/bass/bass-buying-guide | kw-stuffed(4x) |
 | collections/bass/fender-american-pro-ii-jazz-bass-vs-squier-classic-vibe-mustang-bass.html | 413 | 68 | 125 | …/collections/bass/fender-american-pro-ii-jazz-bass-vs-squier-classic-vibe-mustang-bass | — |
 | collections/bass/index.html | 350 | 33 | 125 | …/collections/bass/ | kw-stuffed(6x) |
 | collections/bass/mustang-bass.html | 704 | 46 | 125 | …/collections/bass/mustang-bass | — |
-| collections/bass/pro-jazz-bass.html | 645 | 47 | 126 | …/collections/bass/pro-jazz-bass | — |
-| collections/buying/deals-guide.html | 651 | 50 | 113 | …/collections/buying/deals-guide | kw-stuffed(4x) |
+| collections/bass/pro-jazz-bass.html | 647 | 47 | 126 | …/collections/bass/pro-jazz-bass | — |
+| collections/buying/deals-guide.html | 654 | 50 | 113 | …/collections/buying/deals-guide | kw-stuffed(4x) |
 | collections/buying/fender-cd-60s-dreadnought-vs-epiphone-sg-standard-61.html | 360 | 64 | 57 | …/collections/buying/fender-cd-60s-dreadnought-vs-epiphone-sg-standard-61 | — |
 | collections/buying/fender-cd-60s-dreadnought-vs-jackson-js22-dinky.html | 353 | 58 | 151 | …/collections/buying/fender-cd-60s-dreadnought-vs-jackson-js22-dinky | — |
 | collections/buying/fender-cd-60s-dreadnought-vs-squier-affinity-telecaster.html | 352 | 66 | 159 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-affinity-telecaster | — |
@@ -312,7 +309,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-mustang-bass.html | 374 | 60 | 150 | …/collections/buying/fender-cd-60s-dreadnought-vs-squier-classic-vibe-mustang-bass | — |
 | collections/buying/fender-cd-60s-dreadnought-vs-yamaha-pacifica-112v.html | 349 | 60 | 153 | …/collections/buying/fender-cd-60s-dreadnought-vs-yamaha-pacifica-112v | — |
 | collections/buying/index.html | 425 | 34 | 128 | …/collections/buying/ | kw-stuffed(4x) |
-| collections/buying/return-policy.html | 658 | 52 | 115 | …/collections/buying/return-policy | kw-stuffed(4x) |
+| collections/buying/return-policy.html | 653 | 52 | 115 | …/collections/buying/return-policy | kw-stuffed(4x) |
 | collections/buying/squier-affinity-telecaster-vs-squier-classic-vibe-mustang-bass.html | 375 | 62 | 119 | …/collections/buying/squier-affinity-telecaster-vs-squier-classic-vibe-mustang-bass | — |
 | collections/buying/squier-affinity-telecaster-vs-yamaha-fg830-acoustic-guitar.html | 364 | 69 | 143 | …/collections/buying/squier-affinity-telecaster-vs-yamaha-fg830-acoustic-guitar | — |
 | collections/buying/squier-classic-vibe-mustang-bass-vs-epiphone-sg-standard-61.html | 383 | 71 | 64 | …/collections/buying/squier-classic-vibe-mustang-bass-vs-epiphone-sg-standard-61 | — |
@@ -333,7 +330,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/buying/yamaha-fg830-acoustic-guitar-vs-yamaha-pacifica-112v.html | 360 | 63 | 156 | …/collections/buying/yamaha-fg830-acoustic-guitar-vs-yamaha-pacifica-112v | — |
 | collections/electric/amp-reviews.html | 695 | 53 | 118 | …/collections/electric/amp-reviews | kw-stuffed(4x) |
 | collections/electric/best-under-1000.html | 825 | 59 | 124 | …/collections/electric/best-under-1000 | kw-stuffed(4x) |
-| collections/electric/best-under-300.html | 683 | 58 | 123 | …/collections/electric/best-under-300 | kw-stuffed(4x) |
+| collections/electric/best-under-300.html | 678 | 58 | 123 | …/collections/electric/best-under-300 | kw-stuffed(4x) |
 | collections/electric/effects-pedals.html | 691 | 51 | 116 | …/collections/electric/effects-pedals | kw-stuffed(4x) |
 | collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61.html | 374 | 69 | 62 | …/collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61 | — |
 | collections/electric/epiphone-les-paul-standard-60s-vs-fender-player-plus-telecaster.html | 372 | 63 | 120 | …/collections/electric/epiphone-les-paul-standard-60s-vs-fender-player-plus-telecaster | — |
@@ -360,7 +357,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/electric/fender-player-ii-stratocaster-vs-yamaha-pacifica-112v.html | 372 | 64 | 157 | …/collections/electric/fender-player-ii-stratocaster-vs-yamaha-pacifica-112v | — |
 | collections/electric/index.html | 580 | 37 | 133 | …/collections/electric/ | kw-stuffed(9x) |
 | collections/electric/jackson-js22-dinky-vs-fender-player-plus-telecaster.html | 359 | 62 | 155 | …/collections/electric/jackson-js22-dinky-vs-fender-player-plus-telecaster | — |
-| collections/electric/metal-guitars.html | 708 | 52 | 117 | …/collections/electric/metal-guitars | kw-stuffed(4x) |
+| collections/electric/metal-guitars.html | 710 | 52 | 117 | …/collections/electric/metal-guitars | kw-stuffed(4x) |
 | collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-les-paul-standard-60s.html | 404 | 62 | 119 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-les-paul-standard-60s | — |
 | collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-sg-standard-61.html | 408 | 67 | 60 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-epiphone-sg-standard-61 | — |
 | collections/electric/prs-john-mayer-se-silver-sky-vs-fender-american-ultra-telecaster.html | 403 | 64 | 121 | …/collections/electric/prs-john-mayer-se-silver-sky-vs-fender-american-ultra-telecaster | — |
@@ -382,7 +379,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/electric/prs-se-silver-sky-vs-epiphone-sg-standard-61.html | 377 | 56 | 49 | …/collections/electric/prs-se-silver-sky-vs-epiphone-sg-standard-61 | — |
 | collections/electric/prs-se-silver-sky-vs-fender-player-plus-telecaster.html | 366 | 61 | 154 | …/collections/electric/prs-se-silver-sky-vs-fender-player-plus-telecaster | — |
 | collections/electric/prs-se-silver-sky-vs-jackson-js22-dinky.html | 372 | 50 | 143 | …/collections/electric/prs-se-silver-sky-vs-jackson-js22-dinky | — |
-| collections/electric/silver-sky-review.html | 921 | 61 | 126 | …/collections/electric/silver-sky-review | kw-stuffed(4x) |
+| collections/electric/silver-sky-review.html | 916 | 61 | 126 | …/collections/electric/silver-sky-review | kw-stuffed(4x) |
 | collections/electric/squier-affinity-telecaster-vs-epiphone-les-paul-standard-60s.html | 368 | 71 | 117 | …/collections/electric/squier-affinity-telecaster-vs-epiphone-les-paul-standard-60s | — |
 | collections/electric/squier-affinity-telecaster-vs-epiphone-sg-standard-61.html | 360 | 65 | 58 | …/collections/electric/squier-affinity-telecaster-vs-epiphone-sg-standard-61 | — |
 | collections/electric/squier-affinity-telecaster-vs-fender-american-ultra-telecaster.html | 365 | 62 | 119 | …/collections/electric/squier-affinity-telecaster-vs-fender-american-ultra-telecaster | — |
@@ -406,11 +403,11 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | collections/electric/yamaha-pacifica-112v-vs-fender-player-plus-telecaster.html | 355 | 64 | 157 | …/collections/electric/yamaha-pacifica-112v-vs-fender-player-plus-telecaster | — |
 | collections/electric/yamaha-pacifica-112v-vs-jackson-js22-dinky.html | 360 | 53 | 146 | …/collections/electric/yamaha-pacifica-112v-vs-jackson-js22-dinky | — |
 | collections/electric/yamaha-pacifica-112v-vs-prs-se-silver-sky.html | 359 | 52 | 145 | …/collections/electric/yamaha-pacifica-112v-vs-prs-se-silver-sky | — |
-| collections/learning/apps.html | 692 | 53 | 118 | …/collections/learning/apps | kw-stuffed(4x) |
-| collections/learning/best-guitar-lesson-affiliates.html | 706 | 59 | 124 | …/collections/learning/best-guitar-lesson-affiliates | kw-stuffed(4x) |
-| collections/learning/courses.html | 694 | 52 | 117 | …/collections/learning/courses | kw-stuffed(4x) |
+| collections/learning/apps.html | 694 | 53 | 118 | …/collections/learning/apps | kw-stuffed(4x) |
+| collections/learning/best-guitar-lesson-affiliates.html | 711 | 59 | 124 | …/collections/learning/best-guitar-lesson-affiliates | kw-stuffed(4x) |
+| collections/learning/courses.html | 697 | 52 | 117 | …/collections/learning/courses | kw-stuffed(4x) |
 | collections/learning/index.html | 413 | 39 | 135 | …/collections/learning/ | kw-stuffed(4x) |
-| collections/learning/techniques.html | 688 | 49 | 114 | …/collections/learning/techniques | kw-stuffed(4x) |
+| collections/learning/techniques.html | 690 | 49 | 114 | …/collections/learning/techniques | kw-stuffed(4x) |
 | collections/learning/tips.html | 406 | 46 | 111 | …/collections/learning/tips | — |
 | contact.html | 442 | 31 | 115 | …/contact | — |
 | guides/recording/best-way-to-distribute-your-guitar-music-in-2026.html | 446 | 69 | 160 | …/guides/recording/best-way-to-distribute-your-guitar-music-in-2026 | — |
@@ -462,7 +459,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_best-7-string-guitar.html | 235 | 60 | 133 | …/best/best-7-string-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_best-budget-bass.html | 240 | 46 | 132 | …/best/best-budget-bass | underscore-url thin(<300w) |
 | pages/bofu_best_best-guitar-cables.html | 250 | 54 | 130 | …/best/best-guitar-cables | underscore-url thin(<300w) |
-| pages/bofu_best_best-guitar-headphones.html | 251 | 56 | 134 | …/best/best-guitar-headphones | underscore-url thin(<300w) |
+| pages/bofu_best_best-guitar-headphones.html | 268 | 56 | 134 | …/best/best-guitar-headphones | underscore-url thin(<300w) |
 | pages/bofu_best_best-lightweight-guitar.html | 574 | 59 | 136 | …/best/best-lightweight-guitar | underscore-url |
 | pages/bofu_best_best-locking-tuners.html | 235 | 57 | 133 | …/best/best-locking-tuners | underscore-url thin(<300w) |
 | pages/bofu_best_best-loop-pedal-budget.html | 574 | 59 | 129 | …/best/best-loop-pedal-budget | underscore-url |
@@ -477,7 +474,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_electric-guitar-under-1000.html | 609 | 49 | 132 | …/best/electric-guitar-under-1000 | underscore-url |
 | pages/bofu_best_fingerstyle-acoustic-guitar.html | 534 | 60 | 133 | …/best/fingerstyle-acoustic-guitar | underscore-url |
 | pages/bofu_best_guitar-strings-blues.html | 593 | 49 | 129 | …/best/guitar-strings-blues | underscore-url |
-| pages/bofu_best_home-practice-guitar-amp.html | 625 | 53 | 128 | …/best/home-practice-guitar-amp | underscore-url |
+| pages/bofu_best_home-practice-guitar-amp.html | 642 | 53 | 128 | …/best/home-practice-guitar-amp | underscore-url |
 | pages/bofu_best_hybrid-guitar-reviews.html | 244 | 57 | 134 | …/best/hybrid-guitar-reviews | underscore-url thin(<300w) |
 | pages/bofu_best_jazzmaster-style-guitars.html | 231 | 56 | 132 | …/best/jazzmaster-style-guitars | underscore-url thin(<300w) |
 | pages/bofu_best_premium-acoustic-guitars-under-3000.html | 311 | 68 | 172 | ∅ | no-canonical underscore-url desc-long(172) |
@@ -489,13 +486,13 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_reviews_boss-katana-50-mkii.html | 544 | 51 | 129 | …/reviews/boss-katana-50-mkii | underscore-url |
 | pages/bofu_reviews_daddario-xs-strings.html | 533 | 57 | 38 | …/reviews/daddario-xs-strings | underscore-url |
 | pages/bofu_reviews_ernie-ball-volume-pedal.html | 589 | 54 | 125 | …/reviews/ernie-ball-volume-pedal | underscore-url |
-| pages/bofu_reviews_fender-mustang-lt25.html | 233 | 47 | 134 | …/reviews/fender-mustang-lt25 | underscore-url thin(<300w) |
+| pages/bofu_reviews_fender-mustang-lt25.html | 575 | 47 | 134 | …/reviews/fender-mustang-lt25 | underscore-url |
 | pages/bofu_reviews_fender-player-ii-stratocaster.html | 567 | 54 | 131 | …/reviews/fender-player-ii-stratocaster | underscore-url |
 | pages/bofu_reviews_fishman-fluence-pickups.html | 233 | 58 | 127 | …/reviews/fishman-fluence-pickups | underscore-url thin(<300w) |
-| pages/bofu_reviews_marshall-dsl40cr.html | 244 | 57 | 130 | …/reviews/marshall-dsl40cr | underscore-url thin(<300w) |
+| pages/bofu_reviews_marshall-dsl40cr.html | 611 | 57 | 130 | …/reviews/marshall-dsl40cr | underscore-url |
 | pages/bofu_reviews_prs-se-custom-24.html | 246 | 55 | 118 | …/reviews/prs-se-custom-24 | underscore-url thin(<300w) |
 | pages/bofu_reviews_tc-polytune-3.html | 547 | 60 | 126 | …/reviews/tc-polytune-3 | underscore-url |
-| pages/bofu_reviews_vox-ac15.html | 249 | 57 | 126 | …/reviews/vox-ac15 | underscore-url thin(<300w) |
+| pages/bofu_reviews_vox-ac15.html | 602 | 57 | 126 | …/reviews/vox-ac15 | underscore-url |
 | pages/bofu_reviews_yamaha-dynamic-classical.html | 227 | 51 | 131 | …/reviews/yamaha-dynamic-classical | underscore-url thin(<300w) |
 | pages/bofu_vs_fender-player-vs-american-professional.html | 173 | 61 | 131 | …/vs/fender-player-vs-american-professional | underscore-url thin(<300w) |
 | pages/bofu_vs_gibson-les-paul-50s-vs-60s.html | 174 | 50 | 132 | …/vs/gibson-les-paul-50s-vs-60s | underscore-url thin(<300w) |
