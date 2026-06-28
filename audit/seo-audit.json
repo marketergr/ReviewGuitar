@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 42,
+    "thin": 36,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -3920,12 +3920,11 @@
       "canonical": "https://reviewsguitar.com/best/best-12-string-capo",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Capo For 12 String Acoustic",
-      "words": 228,
+      "words": 594,
       "kw": "No buzz - best 12-string capos",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4005,12 +4004,11 @@
       "canonical": "https://reviewsguitar.com/best/best-lightweight-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best Lightweight Electric Guitar For Back Pain",
-      "words": 236,
+      "words": 574,
       "kw": "Save your back - lightweight electrics",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4071,12 +4069,11 @@
       "canonical": "https://reviewsguitar.com/best/best-shredding-picks",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Picks For Fast Shredding 2026",
-      "words": 245,
+      "words": 584,
       "kw": "Speed starts with the pick",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4104,12 +4101,11 @@
       "canonical": "https://reviewsguitar.com/best/best-wireless-guitar-system",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Wireless Systems For Gigging",
-      "words": 247,
+      "words": 610,
       "kw": "Cut the cord - best wireless systems",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4221,12 +4217,11 @@
       "canonical": "https://reviewsguitar.com/best/guitar-strings-blues",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Strings For Blues Longevity",
-      "words": 239,
+      "words": 593,
       "kw": "Top 5 blues strings for 2026",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4238,12 +4233,11 @@
       "canonical": "https://reviewsguitar.com/best/home-practice-guitar-amp",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Amp For Home Practice 2026",
-      "words": 253,
+      "words": 625,
       "kw": "Play at home without losing tone",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {

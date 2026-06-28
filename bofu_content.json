@@ -535,6 +535,234 @@
       }
     ]
   },
+  "/best/home-practice-guitar-amp": {
+    "buyingGuide": {
+      "heading": "How to Choose a Home Practice Amp",
+      "intro": "A home amp has the opposite job of a stage amp: it needs to sound great quiet, not loud. The right one keeps you practising; the wrong one is too loud to use and gathers dust. Focus on these.",
+      "criteria": [
+        {
+          "h": "Low wattage is a feature, not a limit",
+          "p": "For home, 10–30 watts (or a modeling amp with a power-down setting) is ideal. Big tube amps only sound their best when painfully loud; a smaller or attenuated amp gives you great driven tone at apartment-friendly volume."
+        },
+        {
+          "h": "Modeling vs. tube for the bedroom",
+          "p": "Modeling amps shine at home — many amp voices and effects built in, great low-volume tone, and headphone/USB outputs for silent practice and recording. A small tube amp sounds wonderful but is pricier, heavier, and loud to crank."
+        },
+        {
+          "h": "Headphone and USB output",
+          "p": "A headphone out lets you practise silently at any hour, and a USB out lets you record straight into a computer. For most home players these two jacks are more useful than extra wattage."
+        },
+        {
+          "h": "Built-in effects",
+          "p": "Onboard reverb, delay, and overdrive keep practice fun and save you buying pedals early on. A modeling amp's effects are usually enough to cover every style you'll explore as you learn."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How many watts do I need for a home practice amp?",
+        "a": "Far fewer than you'd think — 10 to 30 watts is plenty for any home or apartment. The key is being able to get your tone at low volume, which is why many players prefer a modeling amp or one with a power-attenuation setting over a big tube amp that only sings when it's loud."
+      },
+      {
+        "q": "Modeling or tube amp for bedroom practice?",
+        "a": "Modeling amps are usually the better home choice: multiple amp voices, built-in effects, great low-volume tone, and headphone/USB outputs for silent practice and recording. Small tube amps sound superb but cost more, weigh more, and need volume to come alive."
+      },
+      {
+        "q": "Do I need a headphone output on a practice amp?",
+        "a": "It's one of the most useful features for home use. A headphone output lets you practise silently at any hour without disturbing anyone, and amps that offer it often include a USB output too, so you can record directly into your computer."
+      }
+    ]
+  },
+  "/best/guitar-strings-blues": {
+    "buyingGuide": {
+      "heading": "Choosing Strings for Blues Tone and Longevity",
+      "intro": "Blues is all about feel — big bends, vibrato, and dynamics — so your strings matter more than for almost any other style. Here's how to balance tone, bendability, and how long they last.",
+      "criteria": [
+        {
+          "h": "Gauge: bendability vs. tone",
+          "p": "Lighter gauges (.009–.042) bend easily and suit expressive blues lead; heavier gauges (.011+) give a fatter, louder tone with more tension — the classic SRV approach — but are harder on the fingers. Pick the lightest gauge that still feels substantial to you."
+        },
+        {
+          "h": "Pure nickel vs. nickel-plated",
+          "p": "Pure nickel strings are warmer, smoother, and more vintage-voiced — a blues favourite. Nickel-plated steel is brighter and louder with more bite. For traditional blues warmth, lean pure nickel."
+        },
+        {
+          "h": "Coated for longevity",
+          "p": "If your strings go dead quickly or you can't change them often, coated strings hold their tone far longer. You trade a touch of initial brightness for strings that stay usable for weeks or months — often cheaper per week overall."
+        },
+        {
+          "h": "Consistency you can rely on",
+          "p": "Stick with a reputable brand so every set feels and tunes the same. Blues lives in muscle memory; inconsistent strings throw off your bends and vibrato."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What gauge strings are best for blues?",
+        "a": "Most blues players land between .009–.042 (easy, expressive bending) and .011–.049 (fatter tone, more tension). Lighter sets favour fluid lead playing; heavier sets give the thick, loud tone associated with players like SRV. Choose the lightest gauge that still feels solid under your fingers."
+      },
+      {
+        "q": "Are coated strings good for blues longevity?",
+        "a": "Yes — if you want strings that last, coated sets resist the sweat and dirt that kill tone, holding their sound for weeks or months longer than uncoated. You give up a little initial zing, but for players who hate frequent restringing or have corrosive sweat, the longevity is well worth it."
+      },
+      {
+        "q": "Pure nickel or nickel-plated strings for blues?",
+        "a": "Pure nickel strings are warmer and smoother with a vintage voice that suits traditional blues. Nickel-plated steel is brighter and louder with more attack. Many blues players prefer pure nickel for warmth, but it comes down to whether you want vintage smoothness or modern bite."
+      }
+    ]
+  },
+  "/best/best-shredding-picks": {
+    "buyingGuide": {
+      "heading": "What Makes a Great Pick for Fast Playing",
+      "intro": "For speed and accuracy, the pick is the most underrated piece of gear you own. A flimsy or grippy-less pick fights your picking hand. Here's what fast players look for.",
+      "criteria": [
+        {
+          "h": "Thickness and stiffness",
+          "p": "Heavier picks (1.0mm and up) flex less, so more of your energy goes into the string and notes speak instantly — ideal for fast alternate picking. Thin picks flap and slow you down. Most shredders use 1.0–1.5mm or thicker."
+        },
+        {
+          "h": "Tip shape and bevel",
+          "p": "A sharper, pointed tip gives a precise, articulate attack that helps fast runs stay clean. Many speed-oriented picks add a bevel that lets the pick glide across strings with less resistance."
+        },
+        {
+          "h": "Material",
+          "p": "Materials like Ultem, Tortex, and Ultex are stiff with a bright, fast attack and low friction. The material changes both the feel and the tone, so it's worth trying a few to find what suits your hand."
+        },
+        {
+          "h": "Grip",
+          "p": "Fast playing means a pick that won't twist or slip when your hand sweats. Look for a textured surface, grip holes, or a slightly tacky material so you can hold lightly and stay relaxed at speed."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What pick thickness is best for shredding?",
+        "a": "Most fast players use 1.0mm or thicker, often 1.14–1.5mm. Heavier picks flex less, so your picking energy transfers straight to the string and notes respond instantly — essential for clean, fast alternate picking. Thin picks flap against the strings and hold you back."
+      },
+      {
+        "q": "Does pick material affect playing speed?",
+        "a": "Yes. Stiff, low-friction materials like Ultem, Ultex, and Tortex glide across the strings with a fast, bright attack, while softer materials drag. The right material lets the pick move quickly and predictably, which directly helps speed and accuracy — it's worth trying a few."
+      },
+      {
+        "q": "Do I need a pointed-tip pick to play fast?",
+        "a": "It helps. A sharper, pointed tip gives a more precise, articulate attack that keeps fast runs clean, and a beveled edge reduces resistance as the pick crosses strings. Rounder tips sound warmer but can feel less defined at high speed."
+      }
+    ]
+  },
+  "/best/best-12-string-capo": {
+    "buyingGuide": {
+      "heading": "Choosing a Capo for a 12-String Guitar",
+      "intro": "A 12-string puts twice the strings and more tension under the capo, so an ordinary clamp can leave you buzzing and out of tune. Here's what to look for so every course rings clean.",
+      "criteria": [
+        {
+          "h": "Even, firm clamping pressure",
+          "p": "Twelve strings need consistent pressure across the whole neck. A quality trigger or screw capo applies firm, even force so the thinner octave strings don't buzz or choke — the most common problem with cheap capos on a 12-string."
+        },
+        {
+          "h": "Spring (trigger) vs. screw-adjust",
+          "p": "Trigger capos are fast to move one-handed; screw-adjust capos let you dial in exact tension, which helps on a high-tension 12-string. If you change positions a lot mid-song, trigger; if you want precise, buzz-free pressure, screw-adjust."
+        },
+        {
+          "h": "Fretboard radius match",
+          "p": "The capo's bar should match your fretboard curve. A flat capo on a curved board (or vice versa) presses unevenly and pulls some strings sharp. Many capos suit standard acoustic radii; check if your neck is unusually flat or curved."
+        },
+        {
+          "h": "Build and string protection",
+          "p": "A sturdy capo with a quality rubber sleeve protects your strings and holds calibration over time. Flimsy capos lose tension and start buzzing within months of regular use."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do 12-string guitars need a special capo?",
+        "a": "Not a dedicated one, but they demand a good one. The extra strings and higher overall tension mean a weak or uneven capo will leave the thin octave strings buzzing or out of tune. A quality trigger or screw capo that applies firm, even pressure across the neck handles a 12-string reliably."
+      },
+      {
+        "q": "Will a capo pull my 12-string out of tune?",
+        "a": "It can, if it clamps unevenly or too hard. Uneven pressure pulls some strings sharp — more noticeable on a 12-string's paired octave strings. A capo with even clamping and a radius that matches your fretboard minimises this; screw-adjust models let you set just enough tension to avoid pulling sharp."
+      },
+      {
+        "q": "Trigger or screw-adjust capo for a 12-string?",
+        "a": "Trigger (spring) capos are quick to reposition one-handed and fine for most players. Screw-adjust capos let you fine-tune the exact pressure, which is helpful on a high-tension 12-string to eliminate buzz without pulling strings sharp. Choose speed (trigger) or precision (screw)."
+      }
+    ]
+  },
+  "/best/best-wireless-guitar-system": {
+    "buyingGuide": {
+      "heading": "Choosing a Wireless Guitar System for Gigs",
+      "intro": "A wireless system frees you from the cable on stage, but a bad one adds latency, drops out, or dulls your tone. For gigging, reliability and transparency matter more than features.",
+      "criteria": [
+        {
+          "h": "2.4GHz vs. UHF",
+          "p": "Modern 2.4GHz digital systems are affordable, license-free, and sound great for most gigs. UHF systems can offer longer range and more channels for big or crowded-spectrum stages, but cost more. For club and bar gigs, 2.4GHz is usually all you need."
+        },
+        {
+          "h": "Low latency",
+          "p": "Latency is the tiny delay between playing and hearing the note. Good systems keep it low enough to be imperceptible; cheap ones introduce a lag you feel in your timing. Look for systems quoting just a few milliseconds."
+        },
+        {
+          "h": "Range and reliability",
+          "p": "Check the rated range covers your stage with margin, and that the system handles obstacles and other wireless gear without dropouts. A reliable connection matters far more than maximum range numbers on paper."
+        },
+        {
+          "h": "Tone transparency and battery life",
+          "p": "A good wireless system should sound like a short cable — no tone-suck or added fizz. Also check rechargeable battery life covers a full gig (plus soundcheck) on one charge."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is 2.4GHz or UHF better for a gigging guitarist?",
+        "a": "For most club and bar gigs, a 2.4GHz digital system is ideal — affordable, license-free, and great-sounding. UHF systems offer longer range and more simultaneous channels for large stages or RF-crowded venues, but they cost more and can require frequency coordination. Start with 2.4GHz unless you're playing big productions."
+      },
+      {
+        "q": "Will a wireless system add noticeable latency?",
+        "a": "A good modern system keeps latency to a few milliseconds — low enough that you won't feel it. Budget or older units can introduce a lag that throws off your timing. Check the quoted latency spec and favour well-reviewed digital systems to keep the response feeling like a cable."
+      },
+      {
+        "q": "How much range do I need for live shows?",
+        "a": "For typical stages, anything rated around 30 metres (100 feet) of line-of-sight is plenty, since you're rarely far from your receiver. Reliability through obstacles and other wireless gear matters more than headline range numbers — a stable connection across your stage beats a big spec you'll never use."
+      }
+    ]
+  },
+  "/best/best-lightweight-guitar": {
+    "buyingGuide": {
+      "heading": "Choosing a Lightweight Electric Guitar",
+      "intro": "If long practice or gigs leave your back and shoulders aching, guitar weight is the fix. Several factors decide how heavy an electric feels — here's what to prioritise for comfort.",
+      "criteria": [
+        {
+          "h": "Body wood",
+          "p": "Lighter tonewoods make the biggest difference. Basswood, paulownia, and lighter mahogany or alder bodies weigh noticeably less than dense ash or thick mahogany. A heavy slab body is the main culprit behind a back-straining guitar."
+        },
+        {
+          "h": "Chambering and weight relief",
+          "p": "Many modern guitars are chambered or weight-relieved — hollowed pockets inside the body that cut weight without changing the look. A semi-hollow or chambered design can shave a meaningful amount off the total."
+        },
+        {
+          "h": "Body size and shape",
+          "p": "Smaller-bodied and offset designs often weigh less and balance better on a strap, reducing neck dive and shoulder strain. How the guitar balances matters as much as the raw number on the scale."
+        },
+        {
+          "h": "Strap and ergonomics",
+          "p": "Even a lighter guitar feels heavy on a thin strap. A wide, padded strap spreads the load, and a well-balanced body keeps weight off your fretting shoulder during long sessions."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Which guitar woods are the lightest?",
+        "a": "Basswood and paulownia are among the lightest body woods, with lighter cuts of alder and mahogany also comfortable. Dense woods like swamp ash (heavier pieces) and thick mahogany are the usual cause of a back-straining guitar. Body wood is the single biggest factor in overall weight."
+      },
+      {
+        "q": "What is weight relief or chambering?",
+        "a": "Weight relief and chambering are hollowed-out pockets routed inside a solid-body guitar to reduce weight without changing its outward shape. A chambered or semi-hollow body can shave off a significant amount, making the guitar far more comfortable for long sessions while keeping a solid-body look."
+      },
+      {
+        "q": "Does body shape help with back pain?",
+        "a": "Yes. Smaller-bodied and offset guitars often weigh less and balance better on a strap, which reduces the strain on your shoulder and back. Combined with a wide padded strap to spread the load, a well-balanced lighter body makes long practice and gigs far easier on your body."
+      }
+    ]
+  },
   "/best/best-wah-pedals": {
     "buyingGuide": {
       "heading": "How to Choose a Wah Pedal",
