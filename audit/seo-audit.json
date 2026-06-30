@@ -1,10 +1,10 @@
 {
-  "generated": "2026-06-28",
+  "generated": "2026-06-30",
   "count": 373,
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 17,
+    "thin": 13,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -3823,12 +3823,11 @@
       "canonical": "https://reviewsguitar.com/best/acoustic-guitar-flight-cases",
       "author": "ReviewsGuitar.com",
       "h1": "Best Acoustic Guitar Cases For Flying",
-      "words": 227,
+      "words": 607,
       "kw": "Protect your guitar - best flight cases",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -3953,7 +3952,7 @@
       "canonical": "https://reviewsguitar.com/best/best-budget-bass",
       "author": "ReviewsGuitar.com",
       "h1": "Best Budget Bass Guitar For Recording 2026",
-      "words": 240,
+      "words": 236,
       "kw": "Solid low end on a budget",
       "kwInBody": 2,
       "flags": [
@@ -3970,12 +3969,11 @@
       "canonical": "https://reviewsguitar.com/best/best-guitar-cables",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Cables For Stage Use Reviews",
-      "words": 250,
+      "words": 616,
       "kw": "Bulletproof cables for live shows",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -3987,12 +3985,11 @@
       "canonical": "https://reviewsguitar.com/best/best-guitar-headphones",
       "author": "ReviewsGuitar.com",
       "h1": "Best Headphones For Guitar Amp Practice 2026",
-      "words": 268,
+      "words": 576,
       "kw": "Hear every detail - best headphones",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4020,12 +4017,11 @@
       "canonical": "https://reviewsguitar.com/best/best-locking-tuners",
       "author": "ReviewsGuitar.com",
       "h1": "Best Locking Tuners For Stratocaster Review",
-      "words": 235,
+      "words": 597,
       "kw": "Perfect tuning - best locking tuners",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4369,7 +4365,7 @@
       "canonical": "https://reviewsguitar.com/reviews/best-guitar-tuners",
       "author": "ReviewsGuitar.com",
       "h1": "Best Clip-On Guitar Tuner Reviews 2026",
-      "words": 609,
+      "words": 621,
       "kw": "Never be out of tune again",
       "kwInBody": 2,
       "flags": [
@@ -4449,7 +4445,7 @@
       "canonical": "https://reviewsguitar.com/reviews/fender-player-ii-stratocaster",
       "author": "ReviewsGuitar.com",
       "h1": "Fender Player Ii Stratocaster Review 2026",
-      "words": 567,
+      "words": 583,
       "kw": "Is the Player II actually better?",
       "kwInBody": 2,
       "flags": [

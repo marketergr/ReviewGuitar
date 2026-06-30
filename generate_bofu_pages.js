@@ -119,7 +119,6 @@ function matchProducts(keyword) {
     let gearType = null;
     if (/pickup|p-?90|humbucker|single.?coil|fluence/.test(kwLower)) gearType = 'pickups';
     else if (/pedal|distortion|overdrive|\bwah\b|loop|fuzz|\bdelay\b|reverb|chorus/.test(kwLower)) gearType = 'pedals';
-    else if (/\bamp\b|amplifier|\bcombo\b/.test(kwLower)) gearType = 'amps';
     else if (/capo/.test(kwLower)) gearType = 'capos';
     else if (/headphone/.test(kwLower)) gearType = 'headphones';
     else if (/\bcable/.test(kwLower)) gearType = 'cables';
@@ -129,6 +128,10 @@ function matchProducts(keyword) {
     else if (/tuner|tuning/.test(kwLower)) gearType = 'tuners';
     else if (/string/.test(kwLower)) gearType = 'strings';
     else if (/\bpicks?\b/.test(kwLower)) gearType = 'picks';
+    // 'amps' is a fallback: "amp" often appears as context (e.g. "headphones for
+    // guitar amp practice"), so only treat it as the subject when no more specific
+    // accessory type matched first.
+    else if (/\bamp\b|amplifier|\bcombo\b/.test(kwLower)) gearType = 'amps';
     else if (/\bstand/.test(kwLower)) gearType = 'stands';
 
     // Canonical gear type for a product (category, with the mis-filed combo amp special-cased)

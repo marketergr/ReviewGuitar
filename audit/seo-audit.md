@@ -1,6 +1,6 @@
 # SEO Audit — reviewsguitar.com
 
-_Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-only)._
+_Generated 2026-06-30 · branch `seo-remediation` · 373 pages audited (read-only)._
 
 > Word counts are visible-text approximations (scripts/styles/tags stripped). "kw" = title phrase minus brand; kwInBody = exact-match repeats in visible text.
 
@@ -22,7 +22,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 
 - no-canonical: **3**
 - underscore-url: **147**
-- thin: **17**
+- thin: **13**
 - kw-stuffed: **32**
 - title-long: **1**
 - desc-long: **1**
@@ -101,15 +101,11 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 - pages/bofu_best_electric-guitar-under-1000.html
 - …and 87 more (see seo-audit.json)
 
-### Thin content (<300 visible words) (17)
+### Thin content (<300 visible words) (13)
 
 - pages/bofu_alternatives_epiphone-les-paul-standard.html
-- pages/bofu_best_acoustic-guitar-flight-cases.html
 - pages/bofu_best_best-7-string-guitar.html
 - pages/bofu_best_best-budget-bass.html
-- pages/bofu_best_best-guitar-cables.html
-- pages/bofu_best_best-guitar-headphones.html
-- pages/bofu_best_best-locking-tuners.html
 - pages/bofu_best_boutique-electric-guitars-for-recording.html
 - pages/bofu_best_boutique-electric-guitars.html
 - pages/bofu_best_hybrid-guitar-reviews.html
@@ -433,7 +429,7 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/acoustic_professional_investment_grade_acoustic_guitars.html | 684 | 54 | 137 | …/acoustic/professional/investment-grade-acoustic-guitars | underscore-url |
 | pages/acoustic_professional_professional_acoustic_guitar_purchase.html | 684 | 58 | 141 | …/acoustic/professional/professional-acoustic-guitar | underscore-url |
 | pages/bofu_alternatives_epiphone-les-paul-standard.html | 232 | 51 | 129 | …/alternatives/epiphone-les-paul-standard | underscore-url thin(<300w) |
-| pages/bofu_best_acoustic-guitar-flight-cases.html | 227 | 60 | 127 | …/best/acoustic-guitar-flight-cases | underscore-url thin(<300w) |
+| pages/bofu_best_acoustic-guitar-flight-cases.html | 607 | 60 | 127 | …/best/acoustic-guitar-flight-cases | underscore-url |
 | pages/bofu_best_acoustic-guitar-small-hands.html | 574 | 58 | 131 | …/best/acoustic-guitar-small-hands | underscore-url |
 | pages/bofu_best_acoustic-guitar-under-1000.html | 581 | 50 | 138 | …/best/acoustic-guitar-under-1000 | underscore-url |
 | pages/bofu_best_acoustic-guitar-under-500.html | 595 | 55 | 128 | …/best/acoustic-guitar-under-500 | underscore-url |
@@ -441,11 +437,11 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_beginner-electric-guitar-kit.html | 600 | 54 | 137 | …/best/beginner-electric-guitar-kit | underscore-url |
 | pages/bofu_best_best-12-string-capo.html | 594 | 51 | 129 | …/best/best-12-string-capo | underscore-url |
 | pages/bofu_best_best-7-string-guitar.html | 235 | 60 | 133 | …/best/best-7-string-guitar | underscore-url thin(<300w) |
-| pages/bofu_best_best-budget-bass.html | 240 | 46 | 132 | …/best/best-budget-bass | underscore-url thin(<300w) |
-| pages/bofu_best_best-guitar-cables.html | 250 | 54 | 130 | …/best/best-guitar-cables | underscore-url thin(<300w) |
-| pages/bofu_best_best-guitar-headphones.html | 268 | 56 | 134 | …/best/best-guitar-headphones | underscore-url thin(<300w) |
+| pages/bofu_best_best-budget-bass.html | 236 | 46 | 132 | …/best/best-budget-bass | underscore-url thin(<300w) |
+| pages/bofu_best_best-guitar-cables.html | 616 | 54 | 130 | …/best/best-guitar-cables | underscore-url |
+| pages/bofu_best_best-guitar-headphones.html | 576 | 56 | 134 | …/best/best-guitar-headphones | underscore-url |
 | pages/bofu_best_best-lightweight-guitar.html | 574 | 59 | 136 | …/best/best-lightweight-guitar | underscore-url |
-| pages/bofu_best_best-locking-tuners.html | 235 | 57 | 133 | …/best/best-locking-tuners | underscore-url thin(<300w) |
+| pages/bofu_best_best-locking-tuners.html | 597 | 57 | 133 | …/best/best-locking-tuners | underscore-url |
 | pages/bofu_best_best-loop-pedal-budget.html | 574 | 59 | 129 | …/best/best-loop-pedal-budget | underscore-url |
 | pages/bofu_best_best-p90-pickups.html | 665 | 51 | 125 | …/best/best-p90-pickups | underscore-url |
 | pages/bofu_best_best-shredding-picks.html | 584 | 47 | 131 | …/best/best-shredding-picks | underscore-url |
@@ -466,12 +462,12 @@ _Generated 2026-06-28 · branch `seo-remediation` · 373 pages audited (read-onl
 | pages/bofu_best_telecaster-metal-pickups.html | 240 | 56 | 129 | …/best/telecaster-metal-pickups | underscore-url thin(<300w) |
 | pages/bofu_best_travel-acoustic-guitar.html | 230 | 62 | 134 | …/best/travel-acoustic-guitar | underscore-url thin(<300w) |
 | pages/bofu_best_vintage-guitars-investment-guide.html | 282 | 61 | 137 | ∅ | no-canonical underscore-url thin(<300w) |
-| pages/bofu_reviews_best-guitar-tuners.html | 609 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url |
+| pages/bofu_reviews_best-guitar-tuners.html | 621 | 47 | 128 | …/reviews/best-guitar-tuners | underscore-url |
 | pages/bofu_reviews_boss-katana-50-mkii.html | 544 | 51 | 129 | …/reviews/boss-katana-50-mkii | underscore-url |
 | pages/bofu_reviews_daddario-xs-strings.html | 533 | 57 | 38 | …/reviews/daddario-xs-strings | underscore-url |
 | pages/bofu_reviews_ernie-ball-volume-pedal.html | 589 | 54 | 125 | …/reviews/ernie-ball-volume-pedal | underscore-url |
 | pages/bofu_reviews_fender-mustang-lt25.html | 575 | 47 | 134 | …/reviews/fender-mustang-lt25 | underscore-url |
-| pages/bofu_reviews_fender-player-ii-stratocaster.html | 567 | 54 | 131 | …/reviews/fender-player-ii-stratocaster | underscore-url |
+| pages/bofu_reviews_fender-player-ii-stratocaster.html | 583 | 54 | 131 | …/reviews/fender-player-ii-stratocaster | underscore-url |
 | pages/bofu_reviews_fishman-fluence-pickups.html | 233 | 58 | 127 | …/reviews/fishman-fluence-pickups | underscore-url thin(<300w) |
 | pages/bofu_reviews_marshall-dsl40cr.html | 611 | 57 | 130 | …/reviews/marshall-dsl40cr | underscore-url |
 | pages/bofu_reviews_prs-se-custom-24.html | 246 | 55 | 118 | …/reviews/prs-se-custom-24 | underscore-url thin(<300w) |

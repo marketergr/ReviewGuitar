@@ -1191,5 +1191,105 @@
     ],
     "image": "/images/silo-electric.png",
     "amazonLink": "https://www.amazon.com/dp/B07N29M92M/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-22",
+    "name": "Fender Professional Instrument Cable (10 ft)",
+    "silo": "accessories",
+    "category": "cables",
+    "description": "A stage-ready 10-foot guitar cable with a spiral-shielded, anti-kink design and durable nickel-plated connectors for a clear, reliable signal.",
+    "price": "$24.99",
+    "rating": 4.8,
+    "features": [
+      "10 ft, straight-to-straight",
+      "Spiral shielding, anti-kink",
+      "Nickel-plated 1/4\" plugs"
+    ],
+    "pros": [
+      "Tough, tangle-resistant build",
+      "Clear, quiet signal",
+      "Trusted Fender quality"
+    ],
+    "cons": [
+      "Pricier than no-name cables",
+      "Standard (not premium oxygen-free) copper"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B07MVZQXRZ/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-23",
+    "name": "Audio-Technica ATH-M50x Studio Headphones",
+    "silo": "accessories",
+    "category": "headphones",
+    "description": "The studio-standard closed-back monitor headphones — accurate, detailed sound with deep bass and excellent isolation for practice and recording.",
+    "price": "$149.00",
+    "rating": 4.8,
+    "features": [
+      "Closed-back studio monitors",
+      "45mm drivers, wide frequency range",
+      "Detachable cables, swivel earcups"
+    ],
+    "pros": [
+      "Accurate, detailed sound",
+      "Great isolation for silent practice",
+      "Built to last"
+    ],
+    "cons": [
+      "Tight clamp at first",
+      "Not wireless (M50x base model)"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B00HVLUR86/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-24",
+    "name": "Gator GTSA-GTRDREAD Acoustic Flight Case",
+    "silo": "accessories",
+    "category": "cases",
+    "description": "A molded ATA flight case for dreadnought acoustics with TSA-approved locking latches and a tough exterior — built to survive airlines and touring.",
+    "price": "$159.99",
+    "rating": 4.7,
+    "features": [
+      "Molded ATA flight case",
+      "TSA-approved locking latches",
+      "Fits dreadnought acoustics"
+    ],
+    "pros": [
+      "Serious impact protection",
+      "Airline/tour ready",
+      "Lockable for security"
+    ],
+    "cons": [
+      "Heavier than a gig bag",
+      "Overkill for home use"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B01BGX82G8/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-25",
+    "name": "Fender Deluxe Locking Tuners (Set of 6)",
+    "silo": "accessories",
+    "category": "tuners",
+    "description": "Drop-in locking machine heads for Stratocaster and Telecaster that clamp the string in place — faster restrings and rock-solid tuning stability.",
+    "price": "$54.99",
+    "rating": 4.8,
+    "features": [
+      "Locking machine heads, set of 6",
+      "Drop-in for Strat/Tele",
+      "Staggered post height"
+    ],
+    "pros": [
+      "Greatly improved tuning stability",
+      "Fast, easy string changes",
+      "Direct Fender fit"
+    ],
+    "cons": [
+      "Check headstock fit before buying",
+      "Pricier than standard tuners"
+    ],
+    "image": "/images/silo-electric.png",
+    "amazonLink": "https://www.amazon.com/dp/B000L6GD04/?tag=reviewsguitar-20"
   }
 ]
