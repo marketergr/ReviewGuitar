@@ -4,7 +4,7 @@
   "flagCount": {
     "kw-stuffed": 32,
     "underscore-url": 147,
-    "thin": 13,
+    "thin": 9,
     "no-canonical": 3,
     "title-long": 1,
     "desc-long": 1
@@ -3823,7 +3823,7 @@
       "canonical": "https://reviewsguitar.com/best/acoustic-guitar-flight-cases",
       "author": "ReviewsGuitar.com",
       "h1": "Best Acoustic Guitar Cases For Flying",
-      "words": 607,
+      "words": 628,
       "kw": "Protect your guitar - best flight cases",
       "kwInBody": 2,
       "flags": [
@@ -3839,7 +3839,7 @@
       "canonical": "https://reviewsguitar.com/best/acoustic-guitar-small-hands",
       "author": "ReviewsGuitar.com",
       "h1": "Best Acoustic Guitar For Small Hands 2026",
-      "words": 574,
+      "words": 588,
       "kw": "Comfortable acoustics for small hands",
       "kwInBody": 2,
       "flags": [
@@ -3855,7 +3855,7 @@
       "canonical": "https://reviewsguitar.com/best/acoustic-guitar-under-1000",
       "author": "ReviewsGuitar.com",
       "h1": "Best Sounding Acoustic Guitar Under 1000 Reviews",
-      "words": 581,
+      "words": 599,
       "kw": "Elite sound for under a grand",
       "kwInBody": 2,
       "flags": [
@@ -3887,7 +3887,7 @@
       "canonical": "https://reviewsguitar.com/best/beginner-acoustic-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best Acoustic Guitar For Beginners 2026",
-      "words": 694,
+      "words": 708,
       "kw": "Top 5 beginner acoustics 2026",
       "kwInBody": 2,
       "flags": [
@@ -3903,7 +3903,7 @@
       "canonical": "https://reviewsguitar.com/best/beginner-electric-guitar-kit",
       "author": "ReviewsGuitar.com",
       "h1": "Best Beginner Electric Guitar Starter Kits 2026",
-      "words": 600,
+      "words": 615,
       "kw": "Everything you need to play today",
       "kwInBody": 2,
       "flags": [
@@ -3919,7 +3919,7 @@
       "canonical": "https://reviewsguitar.com/best/best-12-string-capo",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Capo For 12 String Acoustic",
-      "words": 594,
+      "words": 615,
       "kw": "No buzz - best 12-string capos",
       "kwInBody": 2,
       "flags": [
@@ -3935,12 +3935,11 @@
       "canonical": "https://reviewsguitar.com/best/best-7-string-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best 7 String Electric Guitar For Beginners",
-      "words": 235,
+      "words": 601,
       "kw": "Dive into 7 strings - best budget picks",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4001,7 +4000,7 @@
       "canonical": "https://reviewsguitar.com/best/best-lightweight-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best Lightweight Electric Guitar For Back Pain",
-      "words": 574,
+      "words": 598,
       "kw": "Save your back - lightweight electrics",
       "kwInBody": 2,
       "flags": [
@@ -4065,7 +4064,7 @@
       "canonical": "https://reviewsguitar.com/best/best-shredding-picks",
       "author": "ReviewsGuitar.com",
       "h1": "Best Guitar Picks For Fast Shredding 2026",
-      "words": 584,
+      "words": 597,
       "kw": "Speed starts with the pick",
       "kwInBody": 2,
       "flags": [
@@ -4165,7 +4164,7 @@
       "canonical": "https://reviewsguitar.com/best/electric-guitar-metal-under-800",
       "author": "ReviewsGuitar.com",
       "h1": "Best Electric Guitar For Metal Under 800",
-      "words": 604,
+      "words": 626,
       "kw": "Elite metal guitars for $800",
       "kwInBody": 2,
       "flags": [
@@ -4181,7 +4180,7 @@
       "canonical": "https://reviewsguitar.com/best/electric-guitar-under-1000",
       "author": "ReviewsGuitar.com",
       "h1": "Best Solid Body Electric Guitar Under 1000",
-      "words": 609,
+      "words": 633,
       "kw": "Premium feel for under $1000",
       "kwInBody": 2,
       "flags": [
@@ -4197,7 +4196,7 @@
       "canonical": "https://reviewsguitar.com/best/fingerstyle-acoustic-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best Budget Acoustic Guitar For Fingerstyle",
-      "words": 534,
+      "words": 548,
       "kw": "Clear tones, budget price - fingerstyle",
       "kwInBody": 2,
       "flags": [
@@ -4245,7 +4244,7 @@
       "canonical": "https://reviewsguitar.com/best/hybrid-guitar-reviews",
       "author": "ReviewsGuitar.com",
       "h1": "Best Acoustic Electric Hybrid Guitar Reviews",
-      "words": 244,
+      "words": 267,
       "kw": "Best of both worlds - hybrid guitars",
       "kwInBody": 2,
       "flags": [
@@ -4262,12 +4261,11 @@
       "canonical": "https://reviewsguitar.com/best/jazzmaster-style-guitars",
       "author": "ReviewsGuitar.com",
       "h1": "Best Jazzmaster Style Guitars 2026 Reviews",
-      "words": 231,
+      "words": 575,
       "kw": "Offset power - top Jazzmasters 2026",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4297,7 +4295,7 @@
       "canonical": "https://reviewsguitar.com/best/recording-acoustic-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best High-End Acoustic Guitar For Recording",
-      "words": 588,
+      "words": 602,
       "kw": "Crystal clear recording - top acoustics",
       "kwInBody": 2,
       "flags": [
@@ -4330,12 +4328,11 @@
       "canonical": "https://reviewsguitar.com/best/travel-acoustic-guitar",
       "author": "ReviewsGuitar.com",
       "h1": "Best Travel Acoustic Guitar With Electronics",
-      "words": 230,
+      "words": 605,
       "kw": "Big sound, small package - travel guitars",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4494,12 +4491,11 @@
       "canonical": "https://reviewsguitar.com/reviews/prs-se-custom-24",
       "author": "ReviewsGuitar.com",
       "h1": "Is Prs Se Custom 24 Worth It",
-      "words": 246,
+      "words": 630,
       "kw": "PRS SE - The only guitar you need?",
       "kwInBody": 2,
       "flags": [
-        "underscore-url",
-        "thin(<300w)"
+        "underscore-url"
       ]
     },
     {
@@ -4736,7 +4732,7 @@
       "canonical": "https://reviewsguitar.com/vs/taylor-gs-mini-mahogany-vs-spruce",
       "author": "ReviewsGuitar.com",
       "h1": "Taylor Gs Mini Mahogany Vs Spruce Review",
-      "words": 461,
+      "words": 477,
       "kw": "Mahogany or Spruce? Travel guitar battle",
       "kwInBody": 2,
       "flags": [

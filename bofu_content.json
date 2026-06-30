@@ -1577,6 +1577,158 @@
       }
     ]
   },
+  "/best/best-7-string-guitar": {
+    "buyingGuide": {
+      "heading": "Choosing a 7-String Guitar as a Beginner",
+      "intro": "A 7-string adds a low B below the standard six, opening up heavier riffs and extended range. If it's your first, a few things make the jump much smoother.",
+      "criteria": [
+        {
+          "h": "Scale length for tight lows",
+          "p": "That low B string needs tension to stay clear and punchy. A longer scale (25.5\" or a baritone/multi-scale) keeps it tight; too short and the low string feels floppy and sounds muddy."
+        },
+        {
+          "h": "Neck width and comfort",
+          "p": "A 7-string neck is wider to fit the extra string. Look for a thin, flat profile (the superstrat shape many beginners find comfortable) so chords and fast runs don't feel like a stretch."
+        },
+        {
+          "h": "Pickups for clarity under gain",
+          "p": "High-output humbuckers keep the low string defined under heavy distortion, where weaker pickups turn to mush. This matters most if you're playing metal, which is where most 7-strings live."
+        },
+        {
+          "h": "Bridge and tuning stability",
+          "p": "A hardtail (fixed) bridge keeps things simple and tuning-stable, which is ideal for a beginner switching between standard and dropped tunings on the low string."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is a 7-string guitar harder for a beginner?",
+        "a": "Not dramatically. The fundamentals are the same as a 6-string; you just have an extra low string and a slightly wider neck. If you mostly want the heavier, extended range for metal, starting on a 7-string is perfectly reasonable — just expect a short adjustment to the wider neck."
+      },
+      {
+        "q": "What tuning does a 7-string use?",
+        "a": "Standard 7-string tuning adds a low B below the usual EADGBE, giving you B-E-A-D-G-B-E. From there many metal players drop the low B to A for even heavier riffs. The extra string is all about extended low-end range."
+      },
+      {
+        "q": "Do I need a longer scale length on a 7-string?",
+        "a": "It helps a lot. A 25.5\" or longer scale keeps that low B string tight and articulate rather than loose and muddy. Beginners on a budget 7-string with a standard scale will be fine in standard tuning, but the longer the scale, the better the low string behaves when you drop-tune."
+      }
+    ]
+  },
+  "/best/jazzmaster-style-guitars": {
+    "buyingGuide": {
+      "heading": "What to Know About Jazzmaster-Style Guitars",
+      "intro": "The offset Jazzmaster is an icon of indie, surf, and alternative rock, with a look and a jangly voice all its own. Here's what defines the style and what to look for.",
+      "criteria": [
+        {
+          "h": "Offset body and comfort",
+          "p": "The asymmetric offset body isn't just looks — it's contoured to sit comfortably whether you play seated or standing. It's a big part of why these guitars feel so easy to wear for long sets."
+        },
+        {
+          "h": "Single-coil voice",
+          "p": "Jazzmaster-style single-coils are wider and warmer than a Strat's, giving a rich, jangly, slightly mellow tone that shines on clean and lightly-driven indie and surf parts. Expect classic single-coil character (and a little hum)."
+        },
+        {
+          "h": "Floating tremolo and bridge",
+          "p": "The floating tremolo gives gentle, shimmery vibrato that's central to the surf sound. It's more setup-sensitive than a hardtail, so a good setup (and sometimes a bridge upgrade) helps tuning stability."
+        },
+        {
+          "h": "The control layout",
+          "p": "Jazzmasters have a distinctive rhythm/lead circuit with extra switching. It looks complex but offers quick switches between a warm rhythm tone and a brighter lead voice once you learn it."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What music is a Jazzmaster good for?",
+        "a": "Despite the name, Jazzmasters are best known for surf, indie, alternative, shoegaze, and punk. Their warm, jangly single-coils and floating tremolo suit clean and lightly-overdriven tones beautifully, though they handle plenty of rock too. They're prized for character as much as versatility."
+      },
+      {
+        "q": "How is a Jazzmaster different from a Stratocaster?",
+        "a": "A Jazzmaster has an offset body, wider and warmer single-coils, a floating tremolo, and a unique rhythm/lead control circuit. A Strat is brighter and more all-purpose with three pickups and a synchronized tremolo. The Jazzmaster trades some versatility for a distinctive jangle and feel."
+      },
+      {
+        "q": "Are the Jazzmaster's extra controls complicated?",
+        "a": "They look intimidating but aren't hard once you learn them. The upper-bout 'rhythm circuit' gives a preset warm tone, while the main controls handle your lead sounds — letting you flip between two voices quickly. Many players just leave it on the lead circuit and use it like a normal guitar."
+      }
+    ]
+  },
+  "/best/travel-acoustic-guitar": {
+    "buyingGuide": {
+      "heading": "Choosing a Travel Acoustic With Electronics",
+      "intro": "A travel acoustic has to be small enough to take anywhere yet sound big enough to be worth playing — and onboard electronics let you plug in wherever you land. Here's what matters.",
+      "criteria": [
+        {
+          "h": "Size vs. sound",
+          "p": "Travel and small-body guitars sacrifice some volume and bass for portability. The best ones (compact GS Mini-style bodies) still sound surprisingly full, so look for a design known for punching above its size rather than the very smallest body you can find."
+        },
+        {
+          "h": "A solid top",
+          "p": "Even on a small guitar, a solid top makes a big difference to tone and projection. It's the single biggest factor in whether a travel guitar sounds rich or boxy."
+        },
+        {
+          "h": "Onboard electronics",
+          "p": "Built-in electronics (often marked with an 'e') let you plug straight into an amp, PA, or interface — invaluable for travel, busking, and gigs. Many include an onboard tuner, which is one less thing to pack."
+        },
+        {
+          "h": "Build and durability",
+          "p": "A travel guitar lives in cars, planes, and overhead bins, so a tough build and a good gig bag or case matter. Layered (laminate) back and sides are actually an advantage here for humidity and knock resistance."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do travel acoustic guitars actually sound good?",
+        "a": "The best ones do. Compact designs like the GS Mini-style body are engineered to deliver a full, rich tone despite their size, especially with a solid top. They won't match a full dreadnought's volume and low end, but a quality travel acoustic sounds far bigger than you'd expect."
+      },
+      {
+        "q": "Why get a travel acoustic with electronics?",
+        "a": "Onboard electronics let you plug into an amp, PA, or audio interface wherever you are — perfect for travel, busking, open mics, and small gigs without needing a microphone. Many systems also include a built-in tuner, making the guitar more self-contained for life on the road."
+      },
+      {
+        "q": "What size is best for a travel guitar?",
+        "a": "A compact small-body shape (like a GS Mini or similar) is the sweet spot: small enough for overhead bins and easy carrying, but big enough to sound full. Ultra-tiny guitars are more portable but sound thinner, so balance packability against the tone you'll actually enjoy playing."
+      }
+    ]
+  },
+  "/reviews/prs-se-custom-24": {
+    "buyingGuide": {
+      "heading": "Is the PRS SE Custom 24 Worth It?",
+      "intro": "The SE Custom 24 is the guitar that made many players take affordable PRS seriously — it brings the brand's signature look, feel, and versatility at a fraction of a USA model's price. Here's what you're getting.",
+      "criteria": [
+        {
+          "h": "Build and woods",
+          "p": "A carved maple top on a mahogany body, set neck, and 24-fret rosewood fingerboard give it a premium look and a resonant, balanced tone that punches well above its price."
+        },
+        {
+          "h": "Versatile pickups",
+          "p": "Its humbuckers with coil-splitting cover thick rock and metal tones as well as convincing single-coil-style sparkle, making it one of the more versatile guitars in its class — great if you play multiple styles."
+        },
+        {
+          "h": "Playability",
+          "p": "The wide-thin neck profile is fast and comfortable for most hands, and PRS's quality control means clean fretwork and a stable setup out of the box more often than many rivals."
+        },
+        {
+          "h": "Value vs. USA PRS",
+          "p": "You give up the USA model's nitro finish, premium hardware, and some hand-finishing, but the SE captures most of the playing experience for far less — and it holds its resale value well."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the PRS SE Custom 24 worth the money?",
+        "a": "For most players, yes. It offers a carved maple top, versatile coil-splitting humbuckers, a fast neck, and PRS build quality at a mid-range price. It's a genuine do-everything guitar that's gig- and recording-ready out of the box, which is why it's one of the most recommended guitars in its class."
+      },
+      {
+        "q": "What's the difference between the SE Custom 24 and a USA PRS Custom 24?",
+        "a": "The USA model adds a nitrocellulose finish, premium USA-made pickups and hardware, more hand-finishing, and tighter tolerances — for a much higher price. The SE, made overseas, captures most of the feel, looks, and versatility for a fraction of the cost, which is what makes it such strong value."
+      },
+      {
+        "q": "Is the SE Custom 24 good for beginners?",
+        "a": "It's a great guitar to grow into. It's very playable and versatile, so a beginner won't outgrow it, though it costs more than entry-level guitars. If your budget allows, it's an instrument you can keep for years; if money is tight, a cheaper starter is fine and you can step up to one later."
+      }
+    ]
+  },
   "/best/best-wah-pedals": {
     "buyingGuide": {
       "heading": "How to Choose a Wah Pedal",

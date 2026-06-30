@@ -126,7 +126,7 @@ function matchProducts(keyword) {
     else if (/wireless/.test(kwLower)) gearType = 'wireless';
     else if (/strap/.test(kwLower)) gearType = 'straps';
     else if (/tuner|tuning/.test(kwLower)) gearType = 'tuners';
-    else if (/string/.test(kwLower)) gearType = 'strings';
+    else if (/\bstrings\b|guitar.?string/.test(kwLower)) gearType = 'strings'; // plural/"guitar string" so "7 string guitar" stays a guitar
     else if (/\bpicks?\b/.test(kwLower)) gearType = 'picks';
     // 'amps' is a fallback: "amp" often appears as context (e.g. "headphones for
     // guitar amp practice"), so only treat it as the subject when no more specific
@@ -186,7 +186,7 @@ function matchProducts(keyword) {
 
         // 3. Model / Word Match
         // Extract specific model words from keyword (e.g. fg800, 112v, etc.)
-        const modelWords = ['fg800', 'fg830', 'cd-60s', 'stratocaster', 'strat', 'telecaster', 'tele', 'pacifica', 'dinky', 'mustang', 'katana', 'polytune', 'ds-1', 'd-18', 'd-10e', '214ce', '314ce', 'silver sky', 'ultra', 'regular slinky', 'xs', 'gs414b', 'fct-2', 'telepath', '66pcs', 'method', 'lessons'];
+        const modelWords = ['fg800', 'fg830', 'cd-60s', 'stratocaster', 'strat', 'telecaster', 'tele', 'pacifica', 'dinky', 'mustang', 'katana', 'polytune', 'ds-1', 'd-18', 'd-10e', '214ce', '314ce', 'silver sky', 'ultra', 'regular slinky', 'xs', 'gs414b', 'fct-2', 'telepath', '66pcs', 'method', 'lessons', 'jazzmaster', 'custom 24', '7 string', 'gs mini'];
         modelWords.forEach(mw => {
             if (kwLower.includes(mw) && pNameLower.includes(mw)) {
                 score += 25;
