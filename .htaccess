@@ -1,6 +1,16 @@
 # GuitarReview.com 301 Redirects
 RewriteEngine On
 
+# Stale-taxonomy 301 Redirects (GSC 404 cleanup)
+RewriteRule ^collections/ultra-tele-review.html$ /collections/electric/ultra-tele-review [R=301,L]
+RewriteRule ^collections/pedals.html$ /collections/accessories/pedals [R=301,L]
+RewriteRule ^collections/strings.html$ /collections/accessories/strings [R=301,L]
+RewriteRule ^collections/starters.html$ /collections/electric/starters [R=301,L]
+RewriteRule ^collections/electric/under-1000.html$ /collections/electric/best-under-1000 [R=301,L]
+RewriteRule ^collections/amp-reviews.html$ /collections/electric/amp-reviews [R=301,L]
+RewriteRule ^collections/electric/starter-kit.html$ /acoustic/beginner/affordable-acoustic-guitar-starter-kit [R=301,L]
+RewriteRule ^collections/accessories/picks-2026.html$ /accessories/picks/best-guitar-picks-2026 [R=301,L]
+RewriteRule ^collections/where-to-buy.html$ /collections/buying/where-to-buy [R=301,L]
 # Pinterest Legacy Redirects
 RewriteRule ^guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck/?$ /collections/electric/ultra-tele-review.html [R=301,L]
 RewriteRule ^guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck$ /collections/electric/ultra-tele-review.html [R=301,L]

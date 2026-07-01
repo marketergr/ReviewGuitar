@@ -78,6 +78,51 @@
   ],
   "redirects": [
     {
+      "source": "/collections/ultra-tele-review.html",
+      "destination": "/collections/electric/ultra-tele-review",
+      "permanent": true
+    },
+    {
+      "source": "/collections/pedals.html",
+      "destination": "/collections/accessories/pedals",
+      "permanent": true
+    },
+    {
+      "source": "/collections/strings.html",
+      "destination": "/collections/accessories/strings",
+      "permanent": true
+    },
+    {
+      "source": "/collections/starters.html",
+      "destination": "/collections/electric/starters",
+      "permanent": true
+    },
+    {
+      "source": "/collections/electric/under-1000.html",
+      "destination": "/collections/electric/best-under-1000",
+      "permanent": true
+    },
+    {
+      "source": "/collections/amp-reviews.html",
+      "destination": "/collections/electric/amp-reviews",
+      "permanent": true
+    },
+    {
+      "source": "/collections/electric/starter-kit.html",
+      "destination": "/acoustic/beginner/affordable-acoustic-guitar-starter-kit",
+      "permanent": true
+    },
+    {
+      "source": "/collections/accessories/picks-2026.html",
+      "destination": "/accessories/picks/best-guitar-picks-2026",
+      "permanent": true
+    },
+    {
+      "source": "/collections/where-to-buy.html",
+      "destination": "/collections/buying/where-to-buy",
+      "permanent": true
+    },
+    {
       "source": "/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck",
       "destination": "/collections/electric/ultra-tele-review.html",
       "permanent": true

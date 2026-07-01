@@ -20,13 +20,38 @@ const pinterestMappings = {
     'guitar-taylor-214ce-plus-acoustic-guitar-in-natural': '/collections/acoustic/premium-guide.html',
 };
 
+// Stale-taxonomy 301s: dead crawled URLs (GSC 404s) that have an obvious live
+// equivalent at a different path. Source = dead URL, destination = live clean URL.
+// Dead URLs with NO live equivalent are intentionally omitted so they cleanly 404
+// (they are not in the sitemap and are not linked internally).
+const staleTaxonomyRedirects = {
+    '/collections/ultra-tele-review.html': '/collections/electric/ultra-tele-review',
+    '/collections/pedals.html': '/collections/accessories/pedals',
+    '/collections/strings.html': '/collections/accessories/strings',
+    '/collections/starters.html': '/collections/electric/starters',
+    '/collections/electric/under-1000.html': '/collections/electric/best-under-1000',
+    '/collections/amp-reviews.html': '/collections/electric/amp-reviews',
+    '/collections/electric/starter-kit.html': '/acoustic/beginner/affordable-acoustic-guitar-starter-kit',
+    '/collections/accessories/picks-2026.html': '/accessories/picks/best-guitar-picks-2026',
+    '/collections/where-to-buy.html': '/collections/buying/where-to-buy',
+};
+
 function generateRedirects() {
     console.log("Generating Redirect rules...");
-    
+
     let htaccess = "# GuitarReview.com 301 Redirects\nRewriteEngine On\n\n";
     let vercelRedirects = [];
     let redirectCount = 0;
-    
+
+    // --- Stale-taxonomy 301 Redirects (dead crawled URLs -> live equivalents) ---
+    htaccess += "# Stale-taxonomy 301 Redirects (GSC 404 cleanup)\n";
+    Object.entries(staleTaxonomyRedirects).forEach(([oldPath, newPath]) => {
+        const noSlash = oldPath.replace(/^\//, '');
+        htaccess += `RewriteRule ^${noSlash}$ ${newPath} [R=301,L]\n`;
+        vercelRedirects.push({ "source": oldPath, "destination": newPath, "permanent": true });
+        redirectCount += 1;
+    });
+
     // --- Pinterest Legacy Redirects ---
     htaccess += "# Pinterest Legacy Redirects\n";
     Object.entries(pinterestMappings).forEach(([oldPath, newPath]) => {
