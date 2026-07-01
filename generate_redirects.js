@@ -36,6 +36,30 @@ const staleTaxonomyRedirects = {
     '/collections/where-to-buy.html': '/collections/buying/where-to-buy',
 };
 
+// 410 Gone: dead crawled URLs (GSC 404s) with NO live equivalent. These should
+// NOT be redirected anywhere (that would mislead) and are already absent from the
+// sitemap and internal links. Returning an explicit 410 tells Google the URL is
+// permanently gone so it is dropped from the index faster than a soft 404.
+//   - All 37 /buy/{spec}/ auto-generated spec pages (matched by prefix rule below).
+//   - 14 stale /collections/ product/hub URLs that were never rebuilt.
+//   - The /guitar-* Pinterest catch-all already handles legacy product URLs (301).
+const goneCollections = [
+    '/collections/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html',
+    '/collections/online-vs-store.html',
+    '/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html',
+    '/collections/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html',
+    '/collections/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html',
+    '/collections/learning/beginner-tips.html',
+    '/collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html',
+    '/collections/accessories/tuners-review.html',
+    '/collections/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html',
+    '/collections/learning/online-courses.html',
+    '/collections/accessories/cables-affordable.html',
+    '/collections/learning/apps-review.html',
+    '/collections/accessories/cases-hard.html',
+    '/collections/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html',
+];
+
 function generateRedirects() {
     console.log("Generating Redirect rules...");
 
@@ -50,6 +74,18 @@ function generateRedirects() {
         htaccess += `RewriteRule ^${noSlash}$ ${newPath} [R=301,L]\n`;
         vercelRedirects.push({ "source": oldPath, "destination": newPath, "permanent": true });
         redirectCount += 1;
+    });
+
+    // --- 410 Gone: dead URLs with no equivalent (GSC 404 cleanup) ---
+    // Explicit 410 so search engines drop these permanently-removed URLs quickly.
+    // These are intentionally NOT in the sitemap and NOT linked internally.
+    htaccess += "\n# 410 Gone (GSC 404 cleanup — permanently removed, no equivalent)\n";
+    // All auto-generated /buy/{spec}/ spec pages (37 crawled) — match the whole prefix.
+    htaccess += `RewriteRule ^buy/ - [G,L]\n`;
+    // Specific stale /collections/ URLs that were never rebuilt.
+    goneCollections.forEach((oldPath) => {
+        const noSlash = oldPath.replace(/^\//, '');
+        htaccess += `RewriteRule ^${noSlash}$ - [G,L]\n`;
     });
 
     // --- Pinterest Legacy Redirects ---
