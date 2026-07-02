@@ -1723,3 +1723,54 @@ body > nav ul li a.active::after {
     color: var(--text-dim);
     font-style: italic;
 }
+
+/* ==========================================================================
+   CTA buttons — comparison-table per-row buttons + mobile full-width (48px)
+   ========================================================================== */
+/* Turn plain comparison-table "Check Price" links into styled Amazon buttons. */
+.cta-btn-mini {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: linear-gradient(135deg, #f7dfa5 0%, #f0c14b 100%);
+    border: 1px solid #a88734;
+    color: #111 !important;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(240, 193, 75, 0.15);
+}
+.cta-btn-mini::before { content: '🛒'; font-size: 0.9rem; }
+.cta-btn-mini:hover {
+    background: linear-gradient(135deg, #f5d78e 0%, #eeb933 100%);
+    border-color: #9c7e31;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(240, 193, 75, 0.3);
+}
+
+/* Mobile: primary Amazon CTAs become full-width, 48px tall tap targets. */
+@media (max-width: 768px) {
+    .cta-check-price,
+    .cta-button-group .btn-amazon,
+    .cta-button-group .btn,
+    .product-callout .callout-cta .btn-amazon,
+    .matchup-card .btn-amazon,
+    .matchup-card .btn {
+        display: flex;
+        width: 100%;
+        min-height: 48px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Table CTA cells: let the mini button fill the cell for a bigger tap target. */
+    .comparison-table .cta-cell .cta-btn-mini {
+        width: 100%;
+        min-height: 44px;
+    }
+}
