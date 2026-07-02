@@ -353,7 +353,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
                     ${matchedProducts.map((p, idx) => `
                     <li style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #222; padding-bottom: 0.5rem;">
                         <span style="color: #ccc; font-weight: 600;">${idx === 0 ? '🏆 Top Pick: ' : '🎯 Runner Up: '} ${p.name}</span>
-                        <a href="${getCloakedLink(p.amazonLink)}" style="background: #f3a847; color: #111; padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.9rem;" target="_blank" rel="noopener nofollow">View</a>
+                        <a href="${getCloakedLink(p.amazonLink)}" style="background: #f3a847; color: #111; padding: 0.4rem 0.8rem; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.9rem;" target="_blank" rel="sponsored nofollow noopener">View</a>
                     </li>
                     `).join('')}
                 </ul>
@@ -370,7 +370,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
                         <h2 style="font-family: 'Montserrat'; font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff;">${p.name}</h2>
                         <div style="color: #f3a847; font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem;">${p.price}</div>
                         <p style="color: #bbb; line-height: 1.5; font-size: 0.95rem; margin-bottom: 1.5rem;">${p.description}</p>
-                        <a href="${getCloakedLink(p.amazonLink)}" class="amazon-btn" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                        <a href="${getCloakedLink(p.amazonLink)}" class="amazon-btn cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
                     </div>
                 </div>
                 `).join('')}

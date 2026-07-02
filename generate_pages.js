@@ -293,7 +293,7 @@ function renderProductGrid(filteredProducts, pageUrl) {
                     </ul>
                     <div class="product-price">${p.price}</div>
                     <div class="cta-button-group">
-                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                        <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
                         <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                             Save
@@ -410,7 +410,7 @@ function renderComparisonFeature(products, pageUrl) {
             </div>
             
             <div class="cta-button-group">
-                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'}" target="_blank" rel="noopener nofollow">Check Price on Amazon</a>
+                <a href="${getCloakedLink(p.amazonLink)}" class="${index === 0 ? 'btn-amazon' : 'btn'} cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
                 <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
                     <svg viewBox="0 0 24 24" fill="currentColor" style="width: 16px; height: 16px; margin-right: 6px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                     Save
@@ -436,7 +436,7 @@ function renderComparisonFeature(products, pageUrl) {
                             <h4 class="product-title" style="font-size: 1.25rem;">${p.name}</h4>
                             <div class="product-price" style="font-size: 1.4rem;">${p.price}</div>
                             <div class="cta-button-group">
-                                <a href="${getCloakedLink(p.amazonLink)}" class="btn" target="_blank" rel="noopener nofollow">Check on Amazon</a>
+                                <a href="${getCloakedLink(p.amazonLink)}" class="btn cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check on Amazon</a>
                                 <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
                                     <svg viewBox="0 0 24 24" fill="currentColor" style="width: 12px; height: 12px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.16 9.4 7.64 11.2-.1-.94-.2-2.37.04-3.4l1.37-5.83s-.35-.7-.35-1.74c0-1.63.95-2.85 2.13-2.85 1 0 1.49.75 1.49 1.66 0 1-.64 2.52-.97 3.92-.28 1.17.58 2.12 1.73 2.12 2.08 0 3.68-2.2 3.68-5.37 0-2.8-2.02-4.77-4.9-4.77-3.34 0-5.3 2.5-5.3 5.1 0 1 .38 2.08.87 2.68.1.11.11.2.08.3l-.33 1.35c-.05.2-.18.25-.4.15-1.52-.7-2.46-2.9-2.46-4.66 0-3.8 2.76-7.28 7.95-7.28 4.17 0 7.42 2.97 7.42 6.95 0 4.14-2.6 7.48-6.22 7.48-1.2 0-2.35-.63-2.73-1.37l-.75 2.85c-.27 1.04-1 2.35-1.49 3.16C10.74 23.83 11.36 24 12c6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0z"/></svg>
                                 </a>
