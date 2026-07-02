@@ -514,7 +514,7 @@ ${schemaJson}
 </head>
 <body>
     <header>
-        <h1>ReviewsGuitar.com</h1>
+        <div class="site-logo"><a href="/">ReviewsGuitar.com</a></div>
         <p>THE ELITE SOURCE FOR GUITAR REVIEWS & GUIDES</p>
     </header>
     <nav>
