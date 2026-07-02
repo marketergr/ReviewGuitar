@@ -279,9 +279,13 @@ silos.forEach(silo => {
         for (let j = i + 1; j < siloProducts.length; j++) {
             const pA = siloProducts[i];
             const pB = siloProducts[j];
+            // Accessories: only compare within the same product type (category),
+            // e.g. strings-vs-strings, amps-vs-amps. Prevents nonsensical
+            // combinatorial pages (guitar stand vs headphones) that Google won't index.
+            if (silo === 'accessories' && pA.category !== pB.category) continue;
             const slug = `${slugify(pA.name)}-vs-${slugify(pB.name)}`;
             const fileName = `${slug}.html`;
-            
+
             const html = generateComparisonPageHtml(pA, pB, silo, fileName, `collections/${silo}`);
             fs.writeFileSync(path.join(dir, fileName), html);
             pageCount++;
