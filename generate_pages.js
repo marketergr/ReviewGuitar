@@ -22,6 +22,13 @@ const authorByline = () => AUTHOR
     : `<!-- TODO(human): set config.author.name (+ title, bio) to render a real author byline and Person schema (EEAT). -->`;
 const disclosureBanner = () => `<p class="affiliate-disclosure-banner">${AFFILIATE_DISCLOSURE}</p>`;
 
+// Price freshness: use a product's lastChecked field if present, else the build date.
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
+const priceChecked = (p) => {
+    const d = (p && p.lastChecked) ? p.lastChecked : BUILD_DATE;
+    return `<span class="price-checked">Price checked: ${d}</span>`;
+};
+
 // BreadcrumbList (Home > Silo > Page) derived from the page URL, for JSON-LD.
 const titleCaseWords = s => String(s).replace(/-/g, ' ').toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
 function breadcrumbFor(url) {
@@ -316,7 +323,7 @@ function renderProductGrid(filteredProducts, pageUrl) {
                     <ul class="product-features">
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
-                    <div class="product-price">${p.price}</div>
+                    <div class="product-price">${p.price} ${priceChecked(p)}</div>
                     <div class="cta-button-group">
                         <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
                         <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
@@ -423,8 +430,8 @@ function renderComparisonFeature(products, pageUrl) {
             <img src="${p.image}" alt="${p.name} Technical Comparison" class="matchup-img" loading="lazy" decoding="async">
             
             <h3 class="product-title">${p.name}</h3>
-            <div class="product-price">${p.price}</div>
-            
+            <div class="product-price">${p.price} ${priceChecked(p)}</div>
+
             <p class="product-desc">${p.description}</p>
             
             <div class="matchup-tech-specs">
@@ -459,7 +466,7 @@ function renderComparisonFeature(products, pageUrl) {
                         </div>
                         <div class="product-card-content">
                             <h4 class="product-title" style="font-size: 1.25rem;">${p.name}</h4>
-                            <div class="product-price" style="font-size: 1.4rem;">${p.price}</div>
+                            <div class="product-price" style="font-size: 1.4rem;">${p.price} ${priceChecked(p)}</div>
                             <div class="cta-button-group">
                                 <a href="${getCloakedLink(p.amazonLink)}" class="btn cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check on Amazon</a>
                                 <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(pageUrl)}&media=${encodeURIComponent(absoluteImage)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">

@@ -27,6 +27,10 @@ const authorByline = () => AUTHOR
     : `<!-- TODO(human): set config.author.name (+ title, bio) to render a real author byline and Person schema (EEAT). -->`;
 const disclosureBanner = () => `<p class="affiliate-disclosure-banner">${AFFILIATE_DISCLOSURE}</p>`;
 
+// Price freshness: use lastChecked if present, else the build date.
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
+const priceChecked = (p) => `<span class="price-checked">Price checked: ${(p && p.lastChecked) ? p.lastChecked : BUILD_DATE}</span>`;
+
 // ASIN → slug mapping for cloaked affiliate links
 const ASIN_TO_SLUG = {
     'B0BYFC65L7': 'yamaha-fg800-acoustic-guitar',
@@ -309,7 +313,7 @@ function renderProductGrid(filteredProducts, fileName) {
                     <ul class="product-features">
                         ${p.features.map(f => `<li>${f}</li>`).join('')}
                     </ul>
-                    <div class="product-price">${p.price}</div>
+                    <div class="product-price">${p.price} ${priceChecked(p)}</div>
                     <div class="cta-button-group">
                         <a href="${getCloakedLink(p.amazonLink)}" class="btn-amazon cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
                         <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
@@ -343,7 +347,7 @@ function renderComparisonFeature(products, fileName) {
             <img src="${p.image}" alt="${p.name}" class="matchup-img" loading="lazy" decoding="async" data-pin-description="${p.name} — ${p.description}">
             
             <h3 class="product-title">${p.name}</h3>
-            <div class="product-price">${p.price}</div>
+            <div class="product-price">${p.price} ${priceChecked(p)}</div>
             
             <p class="product-desc">${p.description}</p>
             
@@ -377,7 +381,7 @@ function renderComparisonFeature(products, fileName) {
                         </div>
                         <div class="product-card-content">
                             <h4 class="product-title">${p.name}</h4>
-                            <div class="product-price">${p.price}</div>
+                            <div class="product-price">${p.price} ${priceChecked(p)}</div>
                             <div class="cta-button-group">
                                 <a href="${getCloakedLink(p.amazonLink)}" class="btn cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check on Amazon</a>
                                 <a href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent('https://reviewsguitar.com/pages/' + fileName)}&media=${encodeURIComponent(p.image)}&description=${encodeURIComponent(p.name + ' — ' + p.description)}" class="btn-pinterest" target="_blank" rel="noopener nofollow">
