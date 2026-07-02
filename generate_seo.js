@@ -211,7 +211,7 @@ function generateMetaTags(keyword, silo, category, pageType = "landing") {
 // Honest schema graph for a guide page: Article + BreadcrumbList + FAQPage.
 // No fabricated Product/AggregateRating (these pages are multi-product guides,
 // not single-product reviews, and the old 4.8/254 rating was invented).
-function buildSchemaGraph(keyword, silo, category, fileName, aiArticle) {
+function buildSchemaGraph(keyword, silo, category, fileName, aiArticle, pageProducts) {
     const url = `${BASE_URL}/pages/${fileName}`;
     const title = toTitleCase(keyword);
     const siloName = silo.charAt(0).toUpperCase() + silo.slice(1);
@@ -246,6 +246,31 @@ function buildSchemaGraph(keyword, silo, category, fileName, aiArticle) {
         });
     }
     if (faqs.length) graph.push({ "@type": "FAQPage", "mainEntity": faqs });
+    // Honest per-product Product nodes with the REAL editorial rating from products.json.
+    // ratingCount reflects our single expert review; no reviewCount is fabricated.
+    (pageProducts || []).forEach(p => {
+        const rv = Number(p.rating);
+        const node = {
+            "@type": "Product",
+            "name": p.name,
+            "description": p.description,
+            "image": p.image,
+            "brand": { "@type": "Brand", "name": p.brand || (p.name ? p.name.split(' ')[0] : "Generic") },
+            "offers": {
+                "@type": "Offer",
+                "url": p.amazonLink || url,
+                "priceCurrency": "USD",
+                "price": String(p.price || '').replace(/[^0-9.]/g, ''),
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+            }
+        };
+        if (!Number.isNaN(rv) && rv > 0) {
+            node.aggregateRating = { "@type": "AggregateRating", "ratingValue": rv, "bestRating": 5, "worstRating": 1, "ratingCount": 1 };
+            node.review = { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": rv, "bestRating": 5, "worstRating": 1 }, "author": { "@type": "Organization", "name": "ReviewsGuitar.com" } };
+        }
+        graph.push(node);
+    });
     return { "@context": "https://schema.org", "@graph": graph };
 }
 
@@ -442,7 +467,7 @@ function generateLandingPage(silo, category, keyword, metaTags, fileName) {
     
     const finalProducts = matchedProducts.length > 0 ? matchedProducts : products.filter(p => p.silo === silo);
     const aiArticle = contentCache[keyword] || generateDeepContent(keyword, silo, category);
-    const schemaJson = JSON.stringify(buildSchemaGraph(keyword, silo, category, fileName, aiArticle), null, 2);
+    const schemaJson = JSON.stringify(buildSchemaGraph(keyword, silo, category, fileName, aiArticle, finalProducts.slice(0, 4)), null, 2);
 
     const ogImage = finalProducts.length > 0 ? finalProducts[0].image : 'https://reviewsguitar.com/images/logo.png';
     const pinDescription = `${keyword} — Expert reviews, buying guides, and the best deals for ${new Date().getFullYear()}. Find your perfect guitar gear at ReviewsGuitar.com`;

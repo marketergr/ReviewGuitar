@@ -130,33 +130,40 @@ function slugify(text) {
         .replace(/-+$/, '');            // Trim - from end of text
 }
 
+function comparisonProductNode(p) {
+    const node = {
+        "@type": "Product",
+        "name": p.name,
+        "description": p.description || p.name,
+        "image": p.image,
+        "brand": { "@type": "Brand", "name": p.brand || (p.name ? p.name.split(' ')[0] : "Generic") },
+        "offers": {
+            "@type": "Offer",
+            "url": getCloakedAbsoluteLink(p.amazonLink),
+            "price": String(p.price || '').replace('$', '').replace(',', ''),
+            "priceCurrency": "USD",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock"
+        }
+    };
+    // Honest AggregateRating/Review from the REAL per-product rating in products.json.
+    // Each product keeps its own rating; no merged/fabricated score. No reviewCount invented.
+    const rv = Number(p.rating);
+    if (!Number.isNaN(rv) && rv > 0) {
+        node.aggregateRating = { "@type": "AggregateRating", "ratingValue": rv, "bestRating": 5, "worstRating": 1, "ratingCount": 1 };
+        node.review = { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": rv, "bestRating": 5, "worstRating": 1 }, "author": { "@type": "Organization", "name": "ReviewsGuitar.com" } };
+    }
+    return node;
+}
+
 function generateComparisonSchema(pA, pB, url) {
+    const schema = {
+        "@context": "https://schema.org",
+        "@graph": [comparisonProductNode(pA), comparisonProductNode(pB)]
+    };
     return `
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "${pA.name} vs ${pB.name}",
-      "description": "Head-to-head comparison between ${pA.name} and ${pB.name}.",
-      "brand": {
-        "@type": "Brand",
-        "name": "ReviewsGuitar Comparison"
-      },
-      "offers": [
-        {
-          "@type": "Offer",
-          "url": "${getCloakedAbsoluteLink(pA.amazonLink)}",
-          "price": "${pA.price.replace('$', '').replace(',', '')}",
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "url": "${getCloakedAbsoluteLink(pB.amazonLink)}",
-          "price": "${pB.price.replace('$', '').replace(',', '')}",
-          "priceCurrency": "USD"
-        }
-      ]
-    }
+${JSON.stringify(schema, null, 2)}
     </script>
     `;
 }

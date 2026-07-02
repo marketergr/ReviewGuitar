@@ -223,24 +223,49 @@ function generateProductSchema(products, url) {
     
     const schema = {
         "@context": "https://schema.org",
-        "@graph": products.map(p => ({
-            "@type": "Product",
-            "name": p.name,
-            "description": p.description,
-            "image": p.image,
-            "brand": {
-                "@type": "Brand",
-                "name": p.brand || (p.name ? p.name.split(' ')[0] : "Generic")
-            },
-            "offers": {
-                "@type": "Offer",
-                "url": url,
-                "priceCurrency": "USD",
-                "price": p.price.replace(/[^0-9.]/g, ''),
-                "itemCondition": "https://schema.org/NewCondition",
-                "availability": "https://schema.org/InStock"
+        "@graph": products.map(p => {
+            const node = {
+                "@type": "Product",
+                "name": p.name,
+                "description": p.description,
+                "image": p.image,
+                "brand": {
+                    "@type": "Brand",
+                    "name": p.brand || (p.name ? p.name.split(' ')[0] : "Generic")
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": url,
+                    "priceCurrency": "USD",
+                    "price": p.price.replace(/[^0-9.]/g, ''),
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "availability": "https://schema.org/InStock"
+                }
+            };
+            // Honest AggregateRating using the REAL editorial rating from products.json.
+            // No reviewCount is fabricated; ratingCount reflects our single expert review.
+            const rv = Number(p.rating);
+            if (!Number.isNaN(rv) && rv > 0) {
+                node.aggregateRating = {
+                    "@type": "AggregateRating",
+                    "ratingValue": rv,
+                    "bestRating": 5,
+                    "worstRating": 1,
+                    "ratingCount": 1
+                };
+                node.review = {
+                    "@type": "Review",
+                    "reviewRating": {
+                        "@type": "Rating",
+                        "ratingValue": rv,
+                        "bestRating": 5,
+                        "worstRating": 1
+                    },
+                    "author": { "@type": "Organization", "name": "ReviewsGuitar.com" }
+                };
             }
-        }))
+            return node;
+        })
     };
     schema["@graph"].push(breadcrumbFor(url));
     return `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
