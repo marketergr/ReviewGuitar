@@ -225,9 +225,78 @@ function matchProducts(keyword) {
     return scored.slice(0, sliceCount).map(s => s.product);
 }
 
+// Star string from a numeric rating (visible + extractable signal for LLMs).
+function ratingBadge(p) {
+    const rv = Number(p.rating);
+    if (Number.isNaN(rv) || rv <= 0) return '';
+    return `<span style="color:#f3a847;font-weight:bold;font-size:0.95rem;margin-left:0.75rem;" aria-label="Rated ${rv} out of 5">★ ${rv}/5</span>`;
+}
+
+// Honest schema graph for a BoFu page. Real editorial ratings only (ratingCount:1,
+// a single expert review). Single-product review pages emit a single Product with a
+// Review node; multi-product "best" pages emit an ItemList of Products. Every page
+// gets a BreadcrumbList. FAQPage is added separately from the enrich block.
+function buildBofuSchema(data, products, isSingle) {
+    const canonical = `${BASE_URL}${data.url}`;
+    const priceNum = s => String(s || '').replace(/[^0-9.]/g, '');
+    const productNode = p => {
+        const rv = Number(p.rating);
+        const node = {
+            "@type": "Product",
+            "name": p.name,
+            "description": p.description,
+            "image": p.image ? `${BASE_URL}${p.image}` : undefined,
+            "brand": { "@type": "Brand", "name": p.name ? p.name.split(' ')[0] : "Generic" },
+            "offers": {
+                "@type": "Offer",
+                "url": p.amazonLink || canonical,
+                "priceCurrency": "USD",
+                "price": priceNum(p.price),
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition"
+            }
+        };
+        if (!Number.isNaN(rv) && rv > 0) {
+            node.aggregateRating = { "@type": "AggregateRating", "ratingValue": rv, "bestRating": 5, "worstRating": 1, "ratingCount": 1 };
+            node.review = { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": rv, "bestRating": 5, "worstRating": 1 }, "author": { "@type": "Organization", "name": "ReviewsGuitar.com" }, "publisher": { "@type": "Organization", "name": "ReviewsGuitar.com" } };
+        }
+        if (Array.isArray(p.pros) && p.pros.length) node.positiveNotes = { "@type": "ItemList", "itemListElement": p.pros.map((t, i) => ({ "@type": "ListItem", "position": i + 1, "name": t })) };
+        if (Array.isArray(p.cons) && p.cons.length) node.negativeNotes = { "@type": "ItemList", "itemListElement": p.cons.map((t, i) => ({ "@type": "ListItem", "position": i + 1, "name": t })) };
+        return node;
+    };
+    const graph = [{
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": BASE_URL + "/" },
+            { "@type": "ListItem", "position": 2, "name": (data.type || 'Guides').replace(/\b\w/g, c => c.toUpperCase()), "item": canonical }
+        ]
+    }];
+    if (isSingle && products.length) {
+        graph.push(productNode(products[0]));
+    } else if (products.length) {
+        graph.push({
+            "@type": "ItemList",
+            "itemListElement": products.map((p, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "item": productNode(p)
+            }))
+        });
+    }
+    return JSON.stringify({ "@context": "https://schema.org", "@graph": graph }, null, 2);
+}
+
 function generateBoFuPage(data, matchedProducts, fileName) {
     const heroImage = data.url.includes('acoustic') ? '/images/pinterest_acoustic_guitars.png' : '/images/pinterest_electric_guitars.png';
     const canonical = `${BASE_URL}${data.url}`;
+
+    // Single-product review pages ("is X worth it", type=review) should NOT show
+    // three unrelated "runner up" products — that mismatch confused both users and
+    // answer engines (e.g. a strings review listing guitars). Keep just the subject.
+    const isSingleReview = (data.type === 'review') && !/\bvs\b|comparison|best|top\b|\bunder\b/i.test(data.keyword);
+    if (isSingleReview && matchedProducts.length > 1) {
+        matchedProducts = matchedProducts.slice(0, 1);
+    }
 
     // --- Editorial enrichment: buying guide + FAQ (unique per page) ---
     const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -272,6 +341,57 @@ function generateBoFuPage(data, matchedProducts, fileName) {
     </script>`;
     }
 
+    // Honest Product/Review/AggregateRating + ItemList + BreadcrumbList graph.
+    const productSchema = `
+    <script type="application/ld+json">
+${buildBofuSchema(data, matchedProducts, isSingleReview)}
+    </script>`;
+
+    // --- TL;DR answer box (extractable, near the top) ---
+    const topPick = matchedProducts[0];
+    let tldrHtml = '';
+    if (topPick) {
+        const rb = Number(topPick.rating) > 0 ? ` (rated ${Number(topPick.rating)}/5)` : '';
+        const reason = (Array.isArray(topPick.pros) && topPick.pros[0]) ? topPick.pros[0] : (topPick.description || '').split('.')[0];
+        const verdict = isSingleReview
+            ? `Our verdict: the <strong>${esc(topPick.name)}</strong>${rb} at ${esc(topPick.price)} — ${esc(reason)}.`
+            : `Top pick: <strong>${esc(topPick.name)}</strong>${rb} at ${esc(topPick.price)} — ${esc(reason)}.`;
+        tldrHtml = `
+            <div style="background:#141414;border-left:4px solid #f3a847;border-radius:8px;padding:1.25rem 1.5rem;margin-top:2rem;">
+                <div style="text-transform:uppercase;letter-spacing:1px;font-size:0.75rem;color:#f3a847;font-weight:bold;margin-bottom:0.4rem;">Short answer</div>
+                <p style="margin:0;color:#eee;line-height:1.6;font-size:1.02rem;">${verdict}</p>
+            </div>`;
+    }
+
+    // --- Comparison table (multi-product pages only): a clean, LLM-liftable grid ---
+    let comparisonTable = '';
+    if (!isSingleReview && matchedProducts.length > 1) {
+        comparisonTable = `
+            <section style="margin-top:3rem;overflow-x:auto;">
+                <h2 style="font-family:'Montserrat';font-size:1.6rem;color:#fff;margin-bottom:1rem;">At a glance</h2>
+                <table style="width:100%;border-collapse:collapse;font-size:0.95rem;color:#ddd;">
+                    <thead>
+                        <tr style="border-bottom:2px solid #333;text-align:left;">
+                            <th style="padding:0.6rem 0.8rem;">Product</th>
+                            <th style="padding:0.6rem 0.8rem;">Price</th>
+                            <th style="padding:0.6rem 0.8rem;">Our rating</th>
+                            <th style="padding:0.6rem 0.8rem;">Best for</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${matchedProducts.map((p, idx) => `
+                        <tr style="border-bottom:1px solid #222;">
+                            <td style="padding:0.6rem 0.8rem;font-weight:600;color:#fff;">${idx === 0 ? '🏆 ' : ''}${esc(p.name)}</td>
+                            <td style="padding:0.6rem 0.8rem;">${esc(p.price)}</td>
+                            <td style="padding:0.6rem 0.8rem;">${Number(p.rating) > 0 ? '★ ' + Number(p.rating) + '/5' : '—'}</td>
+                            <td style="padding:0.6rem 0.8rem;color:#bbb;">${esc((Array.isArray(p.pros) && p.pros[0]) ? p.pros[0] : (p.description || '').split('.')[0])}</td>
+                        </tr>`).join('')}
+                    </tbody>
+                </table>
+                <p style="font-size:0.8rem;color:#666;margin-top:0.6rem;">Ratings are ReviewsGuitar.com editorial scores (5-point scale, single expert review). Prices last checked ${new Date().toISOString().slice(0, 10)}; verify current price at the retailer.</p>
+            </section>`;
+    }
+
     let title = `${data.pinterest_hook} | ReviewsGuitar.com`;
     if (title.length > 65) title = data.pinterest_hook.substring(0, 65);
     const pageHtml = `<!DOCTYPE html>
@@ -293,6 +413,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
     <meta name="pinterest-rich-pin" content="true">
     <meta name="pin:description" content="${data.pinterest_hook} — The definitive answer for ${data.keyword}. Save this to your guitar board!">
     <meta name="pin:media" content="${BASE_URL}${heroImage}">
+    ${productSchema}
     ${faqSchema}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -345,6 +466,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
             <p style="font-size: 0.85rem; color: #666; margin-top: 1rem; border-top: 1px solid #333; padding-top: 0.5rem;">
                 <em>Disclosure: As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.</em>
             </p>
+            ${tldrHtml}
 
             <!-- Quick Links (Above the Fold) -->
             <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 1.5rem; margin-top: 2rem;">
@@ -367,14 +489,17 @@ function generateBoFuPage(data, matchedProducts, fileName) {
                     </div>
                     <div class="product-info-col">
                         <span style="color: #e60023; font-weight: bold; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 0.5rem;">${idx === 0 ? '🏆 TOP PICK' : '🎯 RUNNER UP'}</span>
-                        <h2 style="font-family: 'Montserrat'; font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff;">${p.name}</h2>
+                        <h2 style="font-family: 'Montserrat'; font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff;">${p.name}${ratingBadge(p)}</h2>
                         <div style="color: #f3a847; font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem;">${p.price}</div>
-                        <p style="color: #bbb; line-height: 1.5; font-size: 0.95rem; margin-bottom: 1.5rem;">${p.description}</p>
+                        <p style="color: #bbb; line-height: 1.5; font-size: 0.95rem; margin-bottom: 1rem;">${p.description}</p>
+                        ${(Array.isArray(p.pros) && p.pros.length) ? `<div style="margin-bottom:0.6rem;"><span style="color:#7ec87e;font-weight:600;font-size:0.85rem;">Pros:</span> <span style="color:#bbb;font-size:0.9rem;">${p.pros.join(' · ')}</span></div>` : ''}
+                        ${(Array.isArray(p.cons) && p.cons.length) ? `<div style="margin-bottom:1.2rem;"><span style="color:#e08a8a;font-weight:600;font-size:0.85rem;">Cons:</span> <span style="color:#bbb;font-size:0.9rem;">${p.cons.join(' · ')}</span></div>` : ''}
                         <a href="${getCloakedLink(p.amazonLink)}" class="amazon-btn cta-check-price" target="_blank" rel="sponsored nofollow noopener">Check Price on Amazon</a>
                     </div>
                 </div>
                 `).join('')}
             </div>
+            ${comparisonTable}
             ${buyingGuideHtml}
             ${faqHtml}
         </section>
