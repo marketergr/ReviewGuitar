@@ -426,7 +426,9 @@
       }
     ],
     "match": {
-      "none": true
+      "pinIds": [
+        "accessories-27"
+      ]
     }
   },
   "/reviews/tc-polytune-3": {
@@ -1044,7 +1046,13 @@
         "q": "Do the two sound noticeably different?",
         "a": "Only subtly. Both are classic Les Pauls with Gibson humbuckers; some hear the 50s as a touch warmer and the 60s as slightly brighter, but the gap is small and easily adjusted with your amp and pickup height. Choose by neck feel first, tone second."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "electric-19",
+        "electric-9"
+      ]
+    }
   },
   "/vs/fender-player-vs-american-professional": {
     "buyingGuide": {
@@ -2194,7 +2202,9 @@
       }
     ],
     "match": {
-      "none": true
+      "pinIds": [
+        "acoustic-10"
+      ]
     }
   },
   "/reviews/fishman-fluence-pickups": {
@@ -2235,7 +2245,9 @@
       }
     ],
     "match": {
-      "none": true
+      "pinIds": [
+        "accessories-26"
+      ]
     }
   },
   "/alternatives/epiphone-les-paul-standard": {

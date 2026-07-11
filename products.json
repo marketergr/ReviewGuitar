@@ -1391,5 +1391,115 @@
     ],
     "image": "/images/silo-electric.png",
     "amazonLink": "https://www.amazon.com/dp/B0B4KSJKHD/?tag=reviewsguitar-20"
+  },
+  {
+    "id": "electric-19",
+    "name": "Gibson Les Paul Standard 60s",
+    "silo": "electric",
+    "category": "professional",
+    "description": "The USA-made benchmark: a non-weight-relieved mahogany body, carved maple cap and 60s BurstBucker Alnico 5 humbuckers. A SlimTaper neck, ABR-1 bridge and Grover tuners deliver the classic Les Paul voice and sustain. Ships with a hardshell case.",
+    "price": "$2,799.00",
+    "rating": null,
+    "features": [
+      "Mahogany body, carved maple cap",
+      "60s BurstBucker (Alnico 5) pickups",
+      "SlimTaper mahogany neck",
+      "ABR-1 Tune-o-matic, Grover tuners",
+      "Includes hardshell case"
+    ],
+    "pros": [
+      "Authentic USA Les Paul tone and sustain",
+      "Hand-wired audio-taper controls",
+      "Strong resale value"
+    ],
+    "cons": [
+      "Premium price",
+      "Heavier than weight-relieved LPs"
+    ],
+    "image": "",
+    "amazonLink": "https://www.amazon.com/s?k=Gibson+Les+Paul+Standard+60s&tag=reviewsguitar-20"
+  },
+  {
+    "id": "acoustic-10",
+    "name": "Yamaha C40II Classical Guitar",
+    "silo": "acoustic",
+    "category": "classical",
+    "description": "A full-size nylon-string classical with a spruce top and meranti back and sides. The 650mm scale and wide 52mm nut give the mellow, forgiving feel classical and fingerstyle players want, at an entry price.",
+    "price": "$189.99",
+    "rating": null,
+    "features": [
+      "Spruce top",
+      "Meranti back and sides",
+      "Nato neck, rosewood fingerboard",
+      "650mm scale, 52mm nut",
+      "Nylon strings"
+    ],
+    "pros": [
+      "Excellent value for a full-size classical",
+      "Warm, forgiving nylon tone",
+      "Great for beginners and fingerstyle"
+    ],
+    "cons": [
+      "Laminated (not solid) top",
+      "No onboard electronics"
+    ],
+    "image": "",
+    "amazonLink": "https://www.amazon.com/YAMAHA-C40II-Yamaha-Classical-Guitar/dp/B005B6EZ36/?tag=reviewsguitar-20",
+    "pinnedOnly": true
+  },
+  {
+    "id": "accessories-26",
+    "name": "Fishman Fluence Modern Humbucker Set",
+    "silo": "accessories",
+    "category": "pickups",
+    "description": "A two-pickup active set pairing an Alnico neck and Ceramic bridge humbucker, each with multiple switchable Fluence voices — from clear, articulate cleans to tight, high-output modern crunch. Runs on a 9V battery or the optional rechargeable pack.",
+    "price": "$299.00",
+    "rating": null,
+    "features": [
+      "Alnico neck + Ceramic bridge",
+      "Multiple switchable voices per pickup",
+      "Noiseless Fluence core",
+      "Battery or rechargeable pack",
+      "6-string set"
+    ],
+    "pros": [
+      "Hum-free, consistent output",
+      "Two distinct voices per pickup",
+      "Strong for modern tones and cleans"
+    ],
+    "cons": [
+      "Requires active power",
+      "Install/wiring can be involved"
+    ],
+    "image": "",
+    "amazonLink": "https://www.amazon.com/Fishman-Fluence-Humbucker-Ceramic-Pickups/dp/B00S6YHZ1O/?tag=reviewsguitar-20",
+    "pinnedOnly": true
+  },
+  {
+    "id": "accessories-27",
+    "name": "Boss Katana-50 MkII Combo Amp",
+    "silo": "accessories",
+    "category": "amps",
+    "description": "A 50-watt 1x12 modeling combo with five amp characters (each with a variation), 60+ built-in BOSS effects, and power control down to 0.5W for quiet practice. USB and headphone/recording outputs with cabinet emulation.",
+    "price": "$259.00",
+    "rating": null,
+    "features": [
+      "50W 1x12, power control 50/25/0.5W",
+      "5 amp characters + variations",
+      "60+ BOSS effects (5 simultaneous)",
+      "USB + phones/recording out",
+      "BOSS Tone Studio editing"
+    ],
+    "pros": [
+      "Huge tonal range for the price",
+      "Great quiet-practice and recording features",
+      "Reliable gig backup"
+    ],
+    "cons": [
+      "Deep editing needs the app",
+      "Modeling, not a real tube amp"
+    ],
+    "image": "",
+    "amazonLink": "https://www.amazon.com/BOSS-KTN-50-2-Katana-50-MkII-50-watt-KTN-50-MK2/dp/B07YVP6K7N/?tag=reviewsguitar-20"
   }
 ]

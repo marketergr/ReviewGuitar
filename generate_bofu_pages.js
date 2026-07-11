@@ -158,7 +158,9 @@ function matchProducts(keyword, opts = {}) {
         return KNOWN.includes(c) ? c : null;
     };
 
-    let scored = products.map(p => {
+    // pinnedOnly products (e.g. a nylon classical, a specific humbucker) appear ONLY on
+    // pages that explicitly pin them — never via auto-matching on category roundups.
+    let scored = products.filter(p => !p.pinnedOnly).map(p => {
         let score = 0;
         const pNameLower = p.name.toLowerCase();
         
@@ -521,7 +523,7 @@ ${buildBofuSchema(data, matchedProducts, isSingleReview)}
                 ${matchedProducts.map((p, idx) => `
                 <div class="product-row">
                     <div class="product-img-col">
-                        <img src="${p.image}" alt="${p.name}">
+                        ${p.image ? `<img src="${p.image}" alt="${p.name}">` : `<div style="color:#888;font-size:0.8rem;text-align:center;padding:1.5rem;line-height:1.4;">${esc(p.name)}<br><span style="color:#666;">image coming soon</span></div>`}
                     </div>
                     <div class="product-info-col">
                         <span style="color: #e60023; font-weight: bold; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 0.5rem;">${idx === 0 ? '🏆 TOP PICK' : '🎯 RUNNER UP'}</span>

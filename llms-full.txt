@@ -94,6 +94,15 @@
 - Cons: Tuners are basic; Lacks complex overtones of high-end models
 - More: https://reviewsguitar.com/best/acoustic-guitar-under-500
 
+### Yamaha C40II Classical Guitar
+- Price (last checked): $189.99
+- Type: classical
+- Summary: A full-size nylon-string classical with a spruce top and meranti back and sides. The 650mm scale and wide 52mm nut give the mellow, forgiving feel classical and fingerstyle players want, at an entry price.
+- Key specs: Spruce top; Meranti back and sides; Nato neck, rosewood fingerboard; 650mm scale, 52mm nut; Nylon strings
+- Pros: Excellent value for a full-size classical; Warm, forgiving nylon tone; Great for beginners and fingerstyle
+- Cons: Laminated (not solid) top; No onboard electronics
+- More: https://reviewsguitar.com/collections/acoustic
+
 ## ELECTRIC
 
 ### Fender American Ultra Telecaster
@@ -244,6 +253,15 @@
 - Key specs: 7 string, 24 frets; High-output humbuckers; Fast thin Dinky neck, hardtail
 - Pros: Affordable entry to 7 string; Tight low-end for metal; Easy, fast neck
 - Cons: Stock pickups are basic; Needs a setup out of the box
+- More: https://reviewsguitar.com/collections/electric
+
+### Gibson Les Paul Standard 60s
+- Price (last checked): $2,799.00
+- Type: professional
+- Summary: The USA-made benchmark: a non-weight-relieved mahogany body, carved maple cap and 60s BurstBucker Alnico 5 humbuckers. A SlimTaper neck, ABR-1 bridge and Grover tuners deliver the classic Les Paul voice and sustain. Ships with a hardshell case.
+- Key specs: Mahogany body, carved maple cap; 60s BurstBucker (Alnico 5) pickups; SlimTaper mahogany neck; ABR-1 Tune-o-matic, Grover tuners; Includes hardshell case
+- Pros: Authentic USA Les Paul tone and sustain; Hand-wired audio-taper controls; Strong resale value
+- Cons: Premium price; Heavier than weight-relieved LPs
 - More: https://reviewsguitar.com/collections/electric
 
 ## ACCESSORIES
@@ -497,6 +515,24 @@
 - Pros: No tone loss compared to cables; Compact plug-and-play design; Very reliable connectivity
 - Cons: Potential 2.4GHz WiFi interference; Higher price than budget wireless units
 - More: https://reviewsguitar.com/best/best-wireless-guitar-system
+
+### Fishman Fluence Modern Humbucker Set
+- Price (last checked): $299.00
+- Type: pickups
+- Summary: A two-pickup active set pairing an Alnico neck and Ceramic bridge humbucker, each with multiple switchable Fluence voices — from clear, articulate cleans to tight, high-output modern crunch. Runs on a 9V battery or the optional rechargeable pack.
+- Key specs: Alnico neck + Ceramic bridge; Multiple switchable voices per pickup; Noiseless Fluence core; Battery or rechargeable pack; 6-string set
+- Pros: Hum-free, consistent output; Two distinct voices per pickup; Strong for modern tones and cleans
+- Cons: Requires active power; Install/wiring can be involved
+- More: https://reviewsguitar.com/collections/accessories
+
+### Boss Katana-50 MkII Combo Amp
+- Price (last checked): $259.00
+- Type: amps
+- Summary: A 50-watt 1x12 modeling combo with five amp characters (each with a variation), 60+ built-in BOSS effects, and power control down to 0.5W for quiet practice. USB and headphone/recording outputs with cabinet emulation.
+- Key specs: 50W 1x12, power control 50/25/0.5W; 5 amp characters + variations; 60+ BOSS effects (5 simultaneous); USB + phones/recording out; BOSS Tone Studio editing
+- Pros: Huge tonal range for the price; Great quiet-practice and recording features; Reliable gig backup
+- Cons: Deep editing needs the app; Modeling, not a real tube amp
+- More: https://reviewsguitar.com/collections/accessories
 
 ## BASS
 
