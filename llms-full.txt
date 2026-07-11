@@ -1,261 +1,566 @@
-# ReviewsGuitar.com - Complete Gear Database
-> **Last Updated:** 2026-06-18T17:37:24.401Z
+# ReviewsGuitar.com — Complete Gear Database
+> Last updated: 2026-07-11
+> Every entry uses real editorial data from ReviewsGuitar.com: our rating (5-point, single expert review), last-checked price, key specs, and honest pros/cons. Links are canonical and verified live. Affiliate disclosure: we earn Amazon Associate commissions at no extra cost to you.
 
-Below is the comprehensive list of all guitars, amps, pedals, and learning resources reviewed on ReviewsGuitar.com.
-
-## Category: BEGINNER
-
-### Yamaha FG800 Acoustic Guitar
-- **Brand:** undefined
-- **Price:** $229.99
-- **Key Feature:** The gold standard for beginner acoustic guitars.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-1](https://reviewsguitar.com/reviews/acoustic-1)
-
-### Fender CD-60S Dreadnought
-- **Brand:** undefined
-- **Price:** $199.99
-- **Key Feature:** Excellent playability and rich tone.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-2](https://reviewsguitar.com/reviews/acoustic-2)
-
-### Squier Affinity Telecaster
-- **Brand:** undefined
-- **Price:** $289.99
-- **Key Feature:** Classic Telecaster style and tone at an accessible price.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-2](https://reviewsguitar.com/reviews/electric-2)
-
-### Squier Classic Vibe Mustang Bass
-- **Brand:** undefined
-- **Price:** $459.99
-- **Key Feature:** Short-scale comfort with a punchy 60s vibe.
-- **Review Link:** [https://reviewsguitar.com/reviews/bass-2](https://reviewsguitar.com/reviews/bass-2)
-
-### Yamaha FG830 Acoustic Guitar
-- **Brand:** undefined
-- **Price:** $399.99
-- **Key Feature:** The top-tier of the FG series.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-5](https://reviewsguitar.com/reviews/acoustic-5)
-
-### Squier Classic Vibe '60s Stratocaster
-- **Brand:** undefined
-- **Price:** $449.99
-- **Key Feature:** A tribute to the 1960s Strat.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-8](https://reviewsguitar.com/reviews/electric-8)
-
-### Yamaha Pacifica 112V
-- **Brand:** undefined
-- **Price:** $329.99
-- **Key Feature:** The reigning champion of beginner versatility.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-10](https://reviewsguitar.com/reviews/electric-10)
-
-### Epiphone SG Standard '61
-- **Brand:** undefined
-- **Price:** $549.00
-- **Key Feature:** Classic 60s SG styling with ProBucker humbuckers and CTS electronics.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-13](https://reviewsguitar.com/reviews/electric-13)
-
-### Jackson JS22 Dinky
-- **Brand:** undefined
-- **Price:** $199.99
-- **Key Feature:** High-output humbuckers and a fast maple neck with a compound-radius fingerboard.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-14](https://reviewsguitar.com/reviews/electric-14)
-
-## Category: INTERMEDIATE
-
-### Martin D-10E Road Series
-- **Brand:** undefined
-- **Price:** $899.00
-- **Key Feature:** Solid wood construction with a rich, full-bodied sound.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-3](https://reviewsguitar.com/reviews/acoustic-3)
-
-### Fender Player II Stratocaster
-- **Brand:** undefined
-- **Price:** $799.99
-- **Key Feature:** The evolution of the standard.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-6](https://reviewsguitar.com/reviews/electric-6)
-
-### Epiphone Les Paul Standard 60s
-- **Brand:** undefined
-- **Price:** $649.00
-- **Key Feature:** Inspired by Gibson.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-9](https://reviewsguitar.com/reviews/electric-9)
-
-### Taylor 214ce-K Deluxe
-- **Brand:** undefined
-- **Price:** $1,599.00
-- **Key Feature:** Stunning Koa aesthetics with Taylor's signature playability.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-8](https://reviewsguitar.com/reviews/acoustic-8)
-
-## Category: STRINGS
-
-### D'Addario XS Coated Strings
-- **Brand:** undefined
-- **Price:** $14.99
-- **Key Feature:** Premium coated strings that last 3x longer while maintaining a natural feel.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-1](https://reviewsguitar.com/reviews/accessories-1)
-
-### Ernie Ball Regular Slinky Strings
-- **Brand:** undefined
-- **Price:** $16.99
-- **Key Feature:** The classic rock string.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-5](https://reviewsguitar.com/reviews/accessories-5)
-
-## Category: TUNERS
-
-### TC Electronic PolyTune 3
-- **Brand:** undefined
-- **Price:** $99.00
-- **Key Feature:** The world's most advanced polyphonic tuner.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-2](https://reviewsguitar.com/reviews/accessories-2)
-
-### Fender FCT-2 Clip-On Tuner
-- **Brand:** undefined
-- **Price:** $14.99
-- **Key Feature:** Professional accuracy in a compact, durable design.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-10](https://reviewsguitar.com/reviews/accessories-10)
-
-## Category: PEDALS
-
-### Boss DS-1 Distortion Pedal
-- **Brand:** undefined
-- **Price:** $62.00
-- **Key Feature:** The most iconic distortion pedal ever made.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-3](https://reviewsguitar.com/reviews/accessories-3)
-
-## Category: PROFESSIONAL
-
-### PRS John Mayer SE Silver Sky
-- **Brand:** undefined
-- **Price:** $849.00
-- **Key Feature:** The SE Silver Sky is a workhorse version of the original John Mayer signature model, delivering vintage-inspired tones with modern PRS reliability.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-3](https://reviewsguitar.com/reviews/electric-3)
-
-### Fender American Ultra Telecaster
-- **Brand:** undefined
-- **Price:** $2,199.99
-- **Key Feature:** The ultimate in precision and performance.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-4](https://reviewsguitar.com/reviews/electric-4)
-
-### PRS SE Mark Holcomb Signature
-- **Brand:** undefined
-- **Price:** $1,099.00
-- **Key Feature:** Designed for the modern metal player.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-5](https://reviewsguitar.com/reviews/electric-5)
-
-### Fender American Pro II Jazz Bass
-- **Brand:** undefined
-- **Price:** $1,799.99
-- **Key Feature:** The 'Dark Night' of bass guitars.
-- **Review Link:** [https://reviewsguitar.com/reviews/bass-1](https://reviewsguitar.com/reviews/bass-1)
-
-### Taylor 214ce Plus Acoustic Guitar
-- **Brand:** undefined
-- **Price:** $1,399.00
-- **Key Feature:** A working professional's acoustic.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-4](https://reviewsguitar.com/reviews/acoustic-4)
-
-### Taylor 314ce Studio
-- **Brand:** undefined
-- **Price:** $1,999.00
-- **Key Feature:** The ultimate workhorse acoustic-electric.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-6](https://reviewsguitar.com/reviews/acoustic-6)
-
-### PRS SE Silver Sky
-- **Brand:** undefined
-- **Price:** $849.00
-- **Key Feature:** John Mayer's signature tone made accessible.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-11](https://reviewsguitar.com/reviews/electric-11)
+## ACOUSTIC
 
 ### Martin D-18 Standard Series
-- **Brand:** undefined
-- **Price:** $2,799.00
-- **Key Feature:** The definitive mahogany dreadnought.
-- **Review Link:** [https://reviewsguitar.com/reviews/acoustic-7](https://reviewsguitar.com/reviews/acoustic-7)
+- Price (last checked): $2,799.00
+- Our rating: 5/5
+- Type: professional
+- Summary: The definitive mahogany dreadnought. Solid Sitka spruce top and mahogany back/sides for clear, warm, woody tone.
+- Key specs: Solid Sitka Spruce Top; Solid Mahogany Back/Sides; Forward Shifted Bracing; Dovetail Neck Joint
+- Pros: The gold standard for recording; Punchy mids and clear highs; Lifetime investment
+- Cons: Investment price point; No electronics included
+- More: https://reviewsguitar.com/collections/acoustic
+
+### Martin D-10E Road Series
+- Price (last checked): $899.00
+- Our rating: 4.9/5
+- Type: intermediate
+- Summary: Solid wood construction with a rich, full-bodied sound. Road-ready and built to last.
+- Key specs: Solid Sapele Body; Fishman MX-T Electronics; Soft Shell Case Included
+- Pros: Iconic Martin tone; Professional-grade electronics; Sustainable materials
+- Cons: Heavier than standard D-28s; Pricey for a 'Road Series' model
+- More: https://reviewsguitar.com/best/acoustic-guitar-under-1000
+
+### Taylor 214ce Plus Acoustic Guitar
+- Price (last checked): $1,399.00
+- Our rating: 4.9/5
+- Type: professional
+- Summary: A working professional's acoustic. Features Taylor's signature playability with an upgraded aesthetic and gloss finish.
+- Key specs: Solid Sitka Spruce Top; Rosewood Layered Back/Sides; Expression System 2 Electronics
+- Pros: Incredible articulation; Stage-ready electronics; Aerocase included
+- Cons: Layered back/sides at this price point; Very bright tone isn't for everyone
+- More: https://reviewsguitar.com/collections/acoustic
+
+### Yamaha FG830 Acoustic Guitar
+- Price (last checked): $399.99
+- Our rating: 4.9/5
+- Type: beginner
+- Summary: The top-tier of the FG series. Solid spruce top with rosewood back and sides for enhanced resonance and depth.
+- Key specs: Solid Spruce Top; Rosewood Back & Sides; Scalloped Bracing; Die-Cast Tuners
+- Pros: Rich, complex overtones; Great projection; Unbeatable value
+- Cons: Body is quite large for children; Basic aesthetic
+- More: https://reviewsguitar.com/collections/acoustic
+
+### Taylor 314ce Studio
+- Price (last checked): $1,999.00
+- Our rating: 4.9/5
+- Type: professional
+- Summary: The ultimate workhorse acoustic-electric. V-Class bracing and the Expression System 2 electronics make this a stage favorite.
+- Key specs: Grand Auditorium Body; Solid Sapele Back/Sides; V-Class Bracing; ES2 Electronics
+- Pros: Perfect balance across frequencies; Extremely easy playability; Professional electronics
+- Cons: Sapele back isn't fully Rosewood; Slightly clinical tone
+- More: https://reviewsguitar.com/collections/acoustic
+
+### Taylor 214ce-K Deluxe
+- Price (last checked): $1,599.00
+- Our rating: 4.9/5
+- Type: intermediate
+- Summary: Stunning Koa aesthetics with Taylor's signature playability. Features a gloss finish and Expression System 2.
+- Key specs: Solid Sitka Spruce Top; Layered Koa Back/Sides; ES2 Electronics; Grand Auditorium Shape
+- Pros: Visually stunning koa; Clear, modern tone; Includes hard case
+- Cons: Layered back at this price; Koa can be bright
+- More: https://reviewsguitar.com/collections/acoustic
+
+### Taylor GS Mini-e Mahogany Travel Acoustic
+- Price (last checked): $599.00
+- Our rating: 4.9/5
+- Type: intermediate
+- Summary: The best-selling travel acoustic with electronics: a compact GS Mini body, solid mahogany top, big-for-its-size sound, and ES-B electronics with an onboard tuner for plugging in anywhere.
+- Key specs: Compact travel body; Solid mahogany top; ES-B electronics w/ onboard tuner
+- Pros: Huge sound for a small travel guitar; Built-in electronics for gigs; Superb Taylor playability
+- Cons: Premium price for the size; Smaller body = less bass than a dreadnought
+- More: https://reviewsguitar.com/collections/acoustic
+
+### Yamaha FG800 Acoustic Guitar
+- Price (last checked): $229.99
+- Our rating: 4.8/5
+- Type: beginner
+- Summary: The gold standard for beginner acoustic guitars. Solid spruce top with authentic, well-balanced sound.
+- Key specs: Solid Spruce Top; Nato/Okume Back & Sides; Walnut Fingerboard
+- Pros: Incredible sustain for the price; Build quality outlasts clones; Highly comfortable neck profile
+- Cons: Basic aesthetic appointments; Action may need slight adjustment
+- More: https://reviewsguitar.com/best/beginner-acoustic-guitar
+
+### Fender CD-60S Dreadnought
+- Price (last checked): $199.99
+- Our rating: 4.7/5
+- Type: beginner
+- Summary: Excellent playability and rich tone. Perfect for those starting their acoustic journey.
+- Key specs: Dreadnought Body; Solid Spruce Top; Easy-to-Play Neck
+- Pros: Solid wood top at budget price; Rolled fingerboard edges; Very lightweight
+- Cons: Tuners are basic; Lacks complex overtones of high-end models
+- More: https://reviewsguitar.com/best/acoustic-guitar-under-500
+
+## ELECTRIC
+
+### Fender American Ultra Telecaster
+- Price (last checked): $2,199.99
+- Our rating: 5/5
+- Type: professional
+- Summary: The ultimate in precision and performance. Features the unique 'Texas Tea' finish and a lightning-fast roasted maple neck.
+- Key specs: Texas Tea Finish; Ultra Noiseless Vintage Pickups; Augmented 'D' Neck Profile
+- Pros: Silent electronics for studio use; Incredible sustain; Boutique-level finish
+- Cons: Premium price point; Modern feel may not suit vintage purists
+- More: https://reviewsguitar.com/collections/electric
+
+### PRS John Mayer SE Silver Sky
+- Price (last checked): $849.00
+- Our rating: 4.9/5
+- Type: professional
+- Summary: The SE Silver Sky is a workhorse version of the original John Mayer signature model, delivering vintage-inspired tones with modern PRS reliability.
+- Key specs: Poplar Body; 635JM 'S' Single-Coil Pickups; 8.5" Fretboard Radius; 2-Point Steel Tremolo
+- Pros: Authentic JM signature tone; Exceptional build quality for the price; Extremely comfortable 635JM neck carve
+- Cons: Polarizing 'inverted' headstock; Gig bag included instead of hard case
+- More: https://reviewsguitar.com/collections/electric
+
+### PRS SE Mark Holcomb Signature
+- Price (last checked): $1,099.00
+- Our rating: 4.9/5
+- Type: professional
+- Summary: Designed for the modern metal player. High-output Seymour Duncan pickups and a flat 20" radius for fast leads.
+- Key specs: Holcomb Burst Finish; Seymour Duncan Alpha/Omega Pickups; 25.5" Scale Length
+- Pros: Exceptional clarity for low tunings; Satin neck finish; Rock-solid tuning
+- Cons: Very high output not for everyone; Bridge can be sharp
+- More: https://reviewsguitar.com/collections/electric
+
+### Fender Player II Stratocaster
+- Price (last checked): $799.99
+- Our rating: 4.9/5
+- Type: intermediate
+- Summary: The evolution of the standard. Featuring rolled fingerboard edges, upgraded Alnico V pickups, and the classic 2-point tremolo.
+- Key specs: Alder Body; Player Series Alnico 5 Pickups; Modern C Neck Profile; Rolled Edges
+- Pros: Exceptional comfort; Pure vintage Strat quack; Reliable hardware
+- Cons: Price increase over original Player; No locking tuners
+- More: https://reviewsguitar.com/collections/electric
+
+### Yamaha Pacifica 112V
+- Price (last checked): $329.99
+- Our rating: 4.9/5
+- Type: beginner
+- Summary: The reigning champion of beginner versatility. Humbucker/Single/Single configuration for any genre.
+- Key specs: Solid Alder Body; Maple Neck; Rosewood Fingerboard; Push-Pull Coil Tap
+- Pros: Versatile pickup layout; Solid build quality; Easy to play
+- Cons: Basic aesthetic; Bridge pickup can be bright
+- More: https://reviewsguitar.com/collections/electric
+
+### PRS SE Silver Sky
+- Price (last checked): $849.00
+- Our rating: 4.9/5
+- Type: professional
+- Summary: John Mayer's signature tone made accessible. Features the 635JM 'S' pickups and a comfortable 8.5" radius.
+- Key specs: Poplar Body; Maple Neck; Rosewood Fingerboard; Steel Tremolo
+- Pros: Vintage single-coil clarity; Incredible neck feel; Premium gig bag included
+- Cons: Plastic tuners feel cheap; Nut may need lubrication
+- More: https://reviewsguitar.com/collections/electric
+
+### PRS SE Custom 24 Electric Guitar
+- Price (last checked): $899.00
+- Our rating: 4.9/5
+- Type: intermediate
+- Summary: The benchmark sub-$1000 electric: a carved maple-top mahogany body, 24-fret wide-thin neck, and versatile 85/15 S humbuckers with coil-splitting. Pro feel and tone for the money.
+- Key specs: Carved maple top, mahogany body; 85/15 S pickups w/ coil-split; 24-fret wide-thin neck
+- Pros: Stunning build for the price; Hugely versatile tones; Holds value well
+- Cons: Tremolo setup takes care; Some prefer a fatter neck
+- More: https://reviewsguitar.com/reviews/prs-se-custom-24
+
+### Squier Classic Vibe '60s Stratocaster
+- Price (last checked): $449.99
+- Our rating: 4.8/5
+- Type: beginner
+- Summary: A tribute to the 1960s Strat. Fender-designed alnico pickups and vintage-tinted gloss neck finish.
+- Key specs: Poplar Body; Alnico Single-Coil Pickups; C-Shaped Neck; Vintage-Style Tremolo
+- Pros: Pro-level sound at half the price; Stunning vintage looks; Great modding platform
+- Cons: Thick gloss neck can feel sticky; Narrow tall frets not for everyone
+- More: https://reviewsguitar.com/collections/electric
+
+### Epiphone Les Paul Standard 60s
+- Price (last checked): $649.00
+- Our rating: 4.8/5
+- Type: intermediate
+- Summary: Inspired by Gibson. Features ProBucker humbuckers and a SlimTaper 60s neck for that classic vibe.
+- Key specs: Mahogany Body; AA Flame Maple Veneer; ProBucker-2 & 3; Grover Rotomatics
+- Pros: Amazing value; Classic LP sustain; Reliable electronics
+- Cons: Heavier than modern Gibsons; Poly finish is quite thick
+- More: https://reviewsguitar.com/collections/electric
 
 ### Fender Player Plus Telecaster
-- **Brand:** undefined
-- **Price:** $1,099.99
-- **Key Feature:** Combining classic Tele vibe with modern features.
-- **Review Link:** [https://reviewsguitar.com/reviews/electric-15](https://reviewsguitar.com/reviews/electric-15)
+- Price (last checked): $1,099.99
+- Our rating: 4.8/5
+- Type: professional
+- Summary: Combining classic Tele vibe with modern features. Noiseless pickups and a 12" radius for smooth bends.
+- Key specs: Alder Body; Noiseless Tele Pickups; Locking Tuners; 12" Radius
+- Pros: Silent electronics; Modern playability; Stunning finishes
+- Cons: Single coil purists might miss the noise!; Pricey for a Mexican model
+- More: https://reviewsguitar.com/collections/electric
 
-## Category: BOOKS
+### Epiphone SG Standard '61
+- Price (last checked): $549.00
+- Our rating: 4.7/5
+- Type: beginner
+- Summary: Classic 60s SG styling with ProBucker humbuckers and CTS electronics. A rock powerhouse for any level.
+- Key specs: Mahogany Body; SlimTaper 60s Neck; ProBucker 2/3; Graph Tech Nut
+- Pros: Vintage vibes; Great sounding pickups; Accessible price
+- Cons: Fret edges can be rough; Basic hardware
+- More: https://reviewsguitar.com/collections/electric
 
-### Hal Leonard Guitar Method Book
-- **Brand:** undefined
-- **Price:** $24.99
-- **Key Feature:** The standard in guitar education for decades.
-- **Review Link:** [https://reviewsguitar.com/reviews/learning-1](https://reviewsguitar.com/reviews/learning-1)
+### Squier Classic Vibe 60s Jazzmaster
+- Price (last checked): $449.99
+- Our rating: 4.7/5
+- Type: intermediate
+- Summary: A faithful, affordable jazzmaster with vintage-voiced single-coils, the offset body and floating tremolo. Lush, jangly tone for indie, surf and alternative.
+- Key specs: Offset jazzmaster body; Fender-designed alnico single-coils; Vintage-style floating tremolo
+- Pros: Authentic jazzmaster jangle; Great build for the price; Distinctive offset looks
+- Cons: Floating trem needs setup know-how; Single-coil hum
+- More: https://reviewsguitar.com/collections/electric
 
-### JustinGuitar Beginner Course
-- **Brand:** undefined
-- **Price:** $19.99
-- **Key Feature:** Companion books to the world's most popular online guitar course.
-- **Review Link:** [https://reviewsguitar.com/reviews/learning-2](https://reviewsguitar.com/reviews/learning-2)
+### Squier Affinity Telecaster
+- Price (last checked): $289.99
+- Our rating: 4.6/5
+- Type: beginner
+- Summary: Classic Telecaster style and tone at an accessible price. Perfect for rock, country, and blues.
+- Key specs: Poplar Body; Two Single-Coil Pickups; Maple Neck
+- Pros: Authentic Tele 'twang'; Slim, fast neck; Solid value-to-performance ratio
+- Cons: Bridge can feel sharp on palms; Pickups lack high-end sparkle
+- More: https://reviewsguitar.com/best/beginner-electric-guitar-kit
 
-## Category: COMPARISONS
+### Jackson JS22 Dinky
+- Price (last checked): $199.99
+- Our rating: 4.6/5
+- Type: beginner
+- Summary: High-output humbuckers and a fast maple neck with a compound-radius fingerboard. Built for speed and metal.
+- Key specs: Poplar Body; High-Output Humbuckers; Amaranth Fingerboard; Jumbo Frets
+- Pros: Fastest neck in its class; Heavy distortion clarity; Super affordable
+- Cons: Tuners feel loose; Basic tremolo
+- More: https://reviewsguitar.com/collections/electric
 
-### Acoustic vs Electric Starter Guitars
-- **Brand:** undefined
-- **Price:** $250 - $350
-- **Key Feature:** Comparing the Yamaha FG800 Acoustic against the Squier Affinity Stratocaster.
-- **Review Link:** [https://reviewsguitar.com/reviews/buying-2](https://reviewsguitar.com/reviews/buying-2)
+### Jackson JS22-7 Dinky 7 String Electric Guitar
+- Price (last checked): $229.99
+- Our rating: 4.6/5
+- Type: beginner
+- Summary: An affordable 7 string superstrat built for metal beginners: extended range, high-output humbuckers, a fast thin neck and a hardtail bridge for rock-solid low tunings.
+- Key specs: 7 string, 24 frets; High-output humbuckers; Fast thin Dinky neck, hardtail
+- Pros: Affordable entry to 7 string; Tight low-end for metal; Easy, fast neck
+- Cons: Stock pickups are basic; Needs a setup out of the box
+- More: https://reviewsguitar.com/collections/electric
 
-### Boss Katana-50 MkII Combo Amp
-- **Brand:** undefined
-- **Price:** $299.99
-- **Key Feature:** The ultimate modeling amp showdown for 2026.
-- **Review Link:** [https://reviewsguitar.com/reviews/buying-3](https://reviewsguitar.com/reviews/buying-3)
+## ACCESSORIES
 
-## Category: STANDS
+### TC Electronic PolyTune 3
+- Price (last checked): $99.00
+- Our rating: 5/5
+- Type: tuners
+- Summary: The world's most advanced polyphonic tuner. Accurate, fast, and built like a tank.
+- Key specs: Polyphonic Tuning; Bonafide Buffer; Retina Display
+- Pros: Instant tuning of all strings; Crystal clear display; Built-in premium buffer
+- Cons: Large footprint for small boards; Battery life is average
+- More: https://reviewsguitar.com/reviews/tc-polytune-3
 
 ### Hercules GS414B PLUS Guitar Stand
-- **Brand:** undefined
-- **Price:** $52.99
-- **Key Feature:** The industry standard for stage-ready guitar stands.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-4](https://reviewsguitar.com/reviews/accessories-4)
+- Price (last checked): $52.99
+- Our rating: 5/5
+- Type: stands
+- Summary: The industry standard for stage-ready guitar stands. Auto-grip system secures your instrument flawlessly.
+- Key specs: Auto-Grip System; Height Adjustable; Specially Formulated Foam
+- Pros: Impossible to knock over accidentally; Safe for nitrocellulose finishes; Folds down compactly
+- Cons: More expensive than basic A-frames; A bit heavy for gig bags
+- More: https://reviewsguitar.com/collections/accessories
 
-### Amazon Basics A-Frame Guitar Stand
-- **Brand:** undefined
-- **Price:** $15.49
-- **Key Feature:** Solid, lightweight, and incredibly reliable.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-7](https://reviewsguitar.com/reviews/accessories-7)
+### D'Addario XS Coated Strings
+- Price (last checked): $14.99
+- Our rating: 4.9/5
+- Type: strings
+- Summary: Premium coated strings that last 3x longer while maintaining a natural feel.
+- Key specs: Phosphor Bronze; Ultra-Thin Film Coating; NY Steel Core
+- Pros: Incredible longevity; Consistent tone for weeks; Minimal finger noise
+- Cons: Slightly higher price point; Coating might feel 'slick' to some
+- More: https://reviewsguitar.com/reviews/daddario-xs-strings
 
-## Category: KITS
+### Boss DS-1 Distortion Pedal
+- Price (last checked): $62.00
+- Our rating: 4.8/5
+- Type: pedals
+- Summary: The most iconic distortion pedal ever made. Hard-edged attack that remains smooth.
+- Key specs: Classic Distortion; Tone/Level/Dist Controls; Bulletproof Build
+- Pros: Foundational rock tone; Responsive gain control; Low price/High durability
+- Cons: Can sound 'thin' into cheap amps; Niche utility for jazz/blues
+- More: https://reviewsguitar.com/collections/accessories
+
+### Ernie Ball Regular Slinky Strings
+- Price (last checked): $16.99
+- Our rating: 4.8/5
+- Type: strings
+- Summary: The classic rock string. Uncoated, pure nickel wound tone that has been heard on decades of hit records.
+- Key specs: 10-46 Gauge; Nickel Wound; Element Shield Packaging
+- Pros: Classic bright tone; Extremely affordable in bulk; Reliable intonation
+- Cons: Corrode faster than coated strings; Requires changing every 2-3 weeks for pros
+- More: https://reviewsguitar.com/collections/accessories
 
 ### NERECNDENS 66PCS Guitar Accessories Kit
-- **Brand:** undefined
-- **Price:** $21.99
-- **Key Feature:** A comprehensive all-in-one survival kit for every guitarist.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-6](https://reviewsguitar.com/reviews/accessories-6)
+- Price (last checked): $21.99
+- Our rating: 4.8/5
+- Type: kits
+- Summary: A comprehensive all-in-one survival kit for every guitarist. Includes everything from high-quality strings and a digital tuner to a versatile capo and assorted picks.
+- Key specs: Digital Clip-On Tuner; Reinforced Guitar Capo; Acoustic String Sets & Winder; Picks, Pins, and Bone Nuts
+- Pros: Incredible value for beginners; All essential tools in one pack; Includes protective storage case
+- Cons: Strings are generic grade; Tuner requires CR2032 battery
+- More: https://reviewsguitar.com/collections/accessories
 
-## Category: CAPOS
+### Amazon Basics A-Frame Guitar Stand
+- Price (last checked): $15.49
+- Our rating: 4.8/5
+- Type: stands
+- Summary: Solid, lightweight, and incredibly reliable. This A-frame stand fits both acoustic and electric guitars and folds flat for easy transport.
+- Key specs: Universal A-Frame Design; Padded Foam Arms; Locking Mechanism for Stability; Non-Slip Feet
+- Pros: Extremely affordable; Fits wide range of body shapes; Very durable steel construction
+- Cons: Not recommended for nitro finishes; Fixed height
+- More: https://reviewsguitar.com/collections/accessories
 
 ### WINGO Professional Guitar Capo
-- **Brand:** undefined
-- **Price:** $10.99
-- **Key Feature:** Engineered for precision and aesthetics.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-8](https://reviewsguitar.com/reviews/accessories-8)
-
-## Category: PICKS
+- Price (last checked): $10.99
+- Our rating: 4.8/5
+- Type: capos
+- Summary: Engineered for precision and aesthetics. This rosewood-finished capo provides even pressure across the fretboard without causing buzz.
+- Key specs: Aircraft-Grade Zinc Alloy; Premium Rosewood Finish; High-Tension Steel Spring; Silicone Padding Protection
+- Pros: Elegant visual design; One-handed quick release; Perfect tuning stability
+- Cons: Slightly heavier than plastic capos; Finish can wear over years of use
+- More: https://reviewsguitar.com/best/best-12-string-capo
 
 ### Fender Premium Picks Sampler
-- **Brand:** undefined
-- **Price:** $13.99
-- **Key Feature:** The definitive pick collection from the industry leader.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-9](https://reviewsguitar.com/reviews/accessories-9)
-
-## Category: STRAPS
+- Price (last checked): $13.99
+- Our rating: 4.8/5
+- Type: picks
+- Summary: The definitive pick collection from the industry leader. Experiment with different gauges and materials to find your perfect attack.
+- Key specs: Thin, Medium, and Heavy Gauges; Celluloid Construction; Classic 351 Shape; Assorted Colors
+- Pros: Ideal for discovering your style; Traditional warm feel; Excellent grip texture
+- Cons: Picks tend to 'disappear'!; Celluloid wears faster than Tortex
+- More: https://reviewsguitar.com/collections/accessories
 
 ### Perri’s Leathers Jacquard Strap
-- **Brand:** undefined
-- **Price:** $12.99
-- **Key Feature:** Combining vintage aesthetics with modern comfort.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-11](https://reviewsguitar.com/reviews/accessories-11)
+- Price (last checked): $12.99
+- Our rating: 4.8/5
+- Type: straps
+- Summary: Combining vintage aesthetics with modern comfort. This strap features unique jacquard patterns and soft cotton backing for long playing sessions.
+- Key specs: 2-Inch Width; Adjustable Length (39" - 58"); Leather Reinforced Ends; Woven Jacquard Fabric
+- Pros: Beautiful vintage patterns; Very comfortable on shoulders; Secure fit on strap buttons
+- Cons: Edges can be a bit stiff initially; Pattern is one-sided
+- More: https://reviewsguitar.com/collections/accessories
 
-## Category: WIRELESS
+### Dunlop Cry Baby GCB95 Wah Pedal
+- Price (last checked): $109.99
+- Our rating: 4.8/5
+- Type: pedals
+- Summary: The classic wah pedal heard on countless classic rock records — an expressive, vocal sweep with a smooth, throaty voice.
+- Key specs: Iconic wah voice; Heavy-duty Hot Potz pot; Bulletproof die-cast housing
+- Pros: The classic rock wah sound; Built like a tank; Expressive, vocal sweep
+- Cons: No true bypass (stock); Single fixed voicing
+- More: https://reviewsguitar.com/collections/accessories
+
+### Boss BD-2 Blues Driver Pedal
+- Price (last checked): $109.99
+- Our rating: 4.8/5
+- Type: pedals
+- Summary: Warm, transparent overdrive that nails the smooth blues breakup of a cranked tube amp; cleans up beautifully with your guitar volume.
+- Key specs: Smooth tube-style overdrive; Tone/Level/Gain controls; Touch-sensitive dynamics
+- Pros: Great blues breakup; Cleans up with volume knob; Boss-tough build
+- Cons: Can get fizzy at max gain; Brighter voicing than some rivals
+- More: https://reviewsguitar.com/collections/accessories
+
+### Marshall DSL40CR Tube Combo Amp
+- Price (last checked): $749.99
+- Our rating: 4.8/5
+- Type: amps
+- Summary: A 40-watt all-tube 1x12 combo with the classic Marshall roar — two channels, reverb, and an effects loop. A gigging workhorse that nails crunch to high-gain.
+- Key specs: 40W 2-channel tube combo; 12" Celestion speaker; Reverb + FX loop, power resistor (40/20W)
+- Pros: Authentic Marshall tube tone; Loud enough to gig; Great cleans and high-gain
+- Cons: Heavy tube combo; Loud to crank at home
+- More: https://reviewsguitar.com/collections/accessories
+
+### Vox AC15C1 Tube Combo Amp
+- Price (last checked): $899.99
+- Our rating: 4.8/5
+- Type: amps
+- Summary: The 15-watt 1x12 tube combo behind that chimey British jangle — lush onboard reverb and tremolo, and a Top Boost channel that breaks up beautifully.
+- Key specs: 15W Class A tube combo; 12" Celestion Greenback; Top Boost channel, reverb + tremolo
+- Pros: Iconic chimey clean tone; Lovely natural overdrive; Studio and stage favourite
+- Cons: Breaks up early (loud for cleans); Heavy for a 15-watter
+- More: https://reviewsguitar.com/collections/accessories
+
+### Fender Professional Instrument Cable (10 ft)
+- Price (last checked): $24.99
+- Our rating: 4.8/5
+- Type: cables
+- Summary: A stage-ready 10-foot guitar cable with a spiral-shielded, anti-kink design and durable nickel-plated connectors for a clear, reliable signal.
+- Key specs: 10 ft, straight-to-straight; Spiral shielding, anti-kink; Nickel-plated 1/4" plugs
+- Pros: Tough, tangle-resistant build; Clear, quiet signal; Trusted Fender quality
+- Cons: Pricier than no-name cables; Standard (not premium oxygen-free) copper
+- More: https://reviewsguitar.com/collections/accessories
+
+### Audio-Technica ATH-M50x Studio Headphones
+- Price (last checked): $149.00
+- Our rating: 4.8/5
+- Type: headphones
+- Summary: The studio-standard closed-back monitor headphones — accurate, detailed sound with deep bass and excellent isolation for practice and recording.
+- Key specs: Closed-back studio monitors; 45mm drivers, wide frequency range; Detachable cables, swivel earcups
+- Pros: Accurate, detailed sound; Great isolation for silent practice; Built to last
+- Cons: Tight clamp at first; Not wireless (M50x base model)
+- More: https://reviewsguitar.com/collections/accessories
+
+### Fender Deluxe Locking Tuners (Set of 6)
+- Price (last checked): $54.99
+- Our rating: 4.8/5
+- Type: tuners
+- Summary: Drop-in locking machine heads for Stratocaster and Telecaster that clamp the string in place — faster restrings and rock-solid tuning stability.
+- Key specs: Locking machine heads, set of 6; Drop-in for Strat/Tele; Staggered post height
+- Pros: Greatly improved tuning stability; Fast, easy string changes; Direct Fender fit
+- Cons: Check headstock fit before buying; Pricier than standard tuners
+- More: https://reviewsguitar.com/collections/accessories
+
+### Fender FCT-2 Clip-On Tuner
+- Price (last checked): $14.99
+- Our rating: 4.7/5
+- Type: tuners
+- Summary: Professional accuracy in a compact, durable design. The FCT-2 is easy to read even on the darkest stages thanks to its vibrant display.
+- Key specs: Vibration-Based Tuning; 360-Degree Rotation; Bright LED Display; Dual-Hinge Clip
+- Pros: Works in noisy environments; Extremely discrete on headstock; Fast response time
+- Cons: Screen is smaller than PolyTune; Clip is tight on thick headstocks
+- More: https://reviewsguitar.com/collections/accessories
+
+### Seymour Duncan Phat Cat P-90 Set
+- Price (last checked): $149.00
+- Our rating: 4.7/5
+- Type: pickups
+- Summary: True single-coil P-90 tone in a humbucker-sized housing — a drop-in upgrade for HB-routed guitars with raw, gritty vintage growl.
+- Key specs: Humbucker-sized P-90; True single-coil tone; Drop-in for HB routes
+- Pros: Vintage P-90 grit and bite; No routing needed; Great for blues, punk and rock
+- Cons: Single-coil hum; Pricier than ceramic pickups
+- More: https://reviewsguitar.com/collections/accessories
+
+### TC Electronic Ditto Looper Pedal
+- Price (last checked): $129.99
+- Our rating: 4.7/5
+- Type: pedals
+- Summary: Dead-simple loop pedal with true-bypass and pristine sound — strum a part and play over it. Ideal for practice and budget pedalboards.
+- Key specs: 5 minutes of loop time; True bypass / analog-dry-through; One-knob simplicity
+- Pros: Effortless to use; Transparent, clean sound; Tiny pedalboard footprint
+- Cons: Single loop track; No undo/redo on base model
+- More: https://reviewsguitar.com/collections/accessories
+
+### Ernie Ball VP JR 250K Volume Pedal
+- Price (last checked): $99.99
+- Our rating: 4.7/5
+- Type: pedals
+- Summary: The industry-standard passive volume pedal — smooth swells, reliable volume control, and a tough aluminum build that lasts.
+- Key specs: Passive 250K (for passive pickups); Smooth swell taper; All-aluminum chassis
+- Pros: Smooth volume swells; Road-tough build; Tuner output jack
+- Cons: Use 25K version for active pickups; No buffer (passive)
+- More: https://reviewsguitar.com/collections/accessories
+
+### Fender Mustang LT25 Modeling Amp
+- Price (last checked): $179.99
+- Our rating: 4.7/5
+- Type: amps
+- Summary: A 25-watt digital modeling practice amp with 30 presets, 20+ effects, a color screen, and USB recording. The go-to do-everything bedroom amp.
+- Key specs: 25W modeling combo, 8" speaker; 30 presets, 20+ effects; USB audio + headphone out
+- Pros: Huge range of tones cheaply; Great for silent practice/recording; Simple color-screen interface
+- Cons: Solid-state, not a tube feel; Small speaker limits low end
+- More: https://reviewsguitar.com/collections/accessories
+
+### Gator GTSA-GTRDREAD Acoustic Flight Case
+- Price (last checked): $159.99
+- Our rating: 4.7/5
+- Type: cases
+- Summary: A molded ATA flight case for dreadnought acoustics with TSA-approved locking latches and a tough exterior — built to survive airlines and touring.
+- Key specs: Molded ATA flight case; TSA-approved locking latches; Fits dreadnought acoustics
+- Pros: Serious impact protection; Airline/tour ready; Lockable for security
+- Cons: Heavier than a gig bag; Overkill for home use
+- More: https://reviewsguitar.com/collections/accessories
+
+### Gibson P-90 Single Coil Pickup
+- Price (last checked): $109.00
+- Our rating: 4.6/5
+- Type: pickups
+- Summary: The classic Gibson P-90 soapbar single-coil — fat, midrange-rich vintage tone sitting between single-coil clarity and humbucker warmth.
+- Key specs: Authentic Gibson P-90; Single-coil soapbar/dogear; Vintage-voiced
+- Pros: Genuine Gibson tone; Fat mids and growl; Iconic vintage character
+- Cons: Single-coil hum; Mounting type must match your guitar
+- More: https://reviewsguitar.com/collections/accessories
 
 ### Fender Telepath Wireless System
-- **Brand:** undefined
-- **Price:** $199.99
-- **Key Feature:** Freedom from cables with zero latency.
-- **Review Link:** [https://reviewsguitar.com/reviews/accessories-12](https://reviewsguitar.com/reviews/accessories-12)
+- Price (last checked): $199.99
+- Our rating: 4.5/5
+- Type: wireless
+- Summary: Freedom from cables with zero latency. The Telepath system uses high-fidelity 2.4GHz technology to deliver pure tone with total mobility.
+- Key specs: Ultra-Low Latency (<4ms); 100ft Range; Rechargeable Battery (8+ Hours); Auto-Pairing System
+- Pros: No tone loss compared to cables; Compact plug-and-play design; Very reliable connectivity
+- Cons: Potential 2.4GHz WiFi interference; Higher price than budget wireless units
+- More: https://reviewsguitar.com/best/best-wireless-guitar-system
+
+## BASS
+
+### Fender American Pro II Jazz Bass
+- Price (last checked): $1,799.99
+- Our rating: 5/5
+- Type: professional
+- Summary: The 'Dark Night' of bass guitars. V-Mod II pickups and refined ergonomics for the professional stage.
+- Key specs: Dark Night Finish; V-Mod II Single-Coil Jazz Bass Pickups; Slim C Neck
+- Pros: Incredible tonal definition; Premium bridge hardware; Stunning visual depth
+- Cons: Heavier than some modern alternatives; Requires active case maintenance
+- More: https://reviewsguitar.com/collections/bass
+
+### Squier Classic Vibe Mustang Bass
+- Price (last checked): $459.99
+- Our rating: 4.7/5
+- Type: beginner
+- Summary: Short-scale comfort with a punchy 60s vibe. Features the iconic competition stripes.
+- Key specs: Lake Placid Blue with Olympic White Stripes; 30" Short Scale; Fender-Designed Alnico Pickup
+- Pros: Extremely easy to play; Cool retro aesthetic; Big tone from a small package
+- Cons: Limited high-end access; Tuners are basic
+- More: https://reviewsguitar.com/best/best-budget-bass
+
+## LEARNING
+
+### JustinGuitar Beginner Course
+- Price (last checked): $19.99
+- Our rating: 4.9/5
+- Type: books
+- Summary: Companion books to the world's most popular online guitar course. Highly practical and focused on getting you playing quickly.
+- Key specs: Practical Chord Focus; Rhythm Strumming Patterns; Spiral Bound available
+- Pros: Direct tie-in with free video lessons; Very encouraging tone; Focuses on musicality, not just theory
+- Cons: Moves fast if you don't practice; Less focus on classical notation
+- More: https://reviewsguitar.com/collections/learning
+
+### Hal Leonard Guitar Method Book
+- Price (last checked): $24.99
+- Our rating: 4.8/5
+- Type: books
+- Summary: The standard in guitar education for decades. Includes audio access and covers everything from basic tuning to complex chord melodies.
+- Key specs: Spiral Bound; Audio Access Included; Covers Books 1, 2, & 3
+- Pros: Highly structured progression; Great for self-taught players; Includes standard notation and tab
+- Cons: Some songs feel a bit dated; Requires discipline to follow
+- More: https://reviewsguitar.com/collections/learning
+
+## BUYING
+
+### Acoustic vs Electric Starter Guitars
+- Price (last checked): $250 - $350
+- Our rating: 4.8/5
+- Type: comparisons
+- Summary: Comparing the Yamaha FG800 Acoustic against the Squier Affinity Stratocaster. The eternal debate for beginners settled.
+- Key specs: Acoustic: Grab and go, builds finger strength; Electric: Easier on fingers, requires amp setup; Both: Trusted reliable brands
+- Pros: Acoustic: No extra gear required; Electric: Volume control with headphones
+- Cons: Acoustic: Harder to press strings initially; Electric: Amp limits portability
+- More: https://reviewsguitar.com/collections/buying
+
+### Boss Katana-50 MkII Combo Amp
+- Price (last checked): $299.99
+- Our rating: 4.8/5
+- Type: comparisons
+- Summary: The ultimate modeling amp showdown for 2026. Comparing the raw power of the Katana against the intuitive UI of the Mustang.
+- Key specs: Katana: 5 Amp Characters, 60+ Boss Effects; Mustang: Color Screen, WiFi Updates; Both: 50 Watts, 12-inch Speakers
+- Pros: Katana: Superior high-gain tones and gig volume; Mustang: Much easier to dial in tones without a PC
+- Cons: Katana: Tone studio software is complex; Mustang: High gain sounds slightly more digital
+- More: https://reviewsguitar.com/reviews/boss-katana-50-mkii
 

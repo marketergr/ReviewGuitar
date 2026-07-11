@@ -1,30 +1,34 @@
-# ReviewsGuitar.com - Expert Guitar Reviews & Buyer Guides
+# ReviewsGuitar.com — Expert Guitar & Gear Reviews
 
-> **Last Updated:** 2026-06-18T17:37:24.401Z
-> **Goal:** Provide expert, unbiased, and data-driven reviews for acoustic and electric guitars, pedals, and learning resources.
+> One-line: Independent, hands-on reviews and buyer's guides for acoustic, electric, and bass guitars plus amps, pedals, strings, tuners, and learning resources. Every "best" pick below is our own editorial rating (a single expert review, not aggregated user scores). Prices are the last figures we checked and change over time — verify on the retailer page.
+> Last updated: 2026-07-11
+> Affiliate disclosure: ReviewsGuitar.com earns Amazon Associate commissions on qualifying purchases at no extra cost to the reader. This does not change our ratings.
 
-## About Us
-ReviewsGuitar.com is a resource for guitarists of all levels, offering reviews, comparisons, and buying guides for guitars, gear, and learning resources.
+## Top recommendations (TL;DR)
+- **Best acoustic guitar for beginners:** [Yamaha FG800 Acoustic Guitar](https://reviewsguitar.com/best/beginner-acoustic-guitar) — $229.99, rated 4.8/5. Incredible sustain for the price.
+- **Best acoustic guitar under $500:** [Fender CD-60S Dreadnought](https://reviewsguitar.com/best/acoustic-guitar-under-500) — $199.99, rated 4.7/5. Solid wood top at budget price.
+- **Best acoustic guitar under $1000:** [Martin D-10E Road Series](https://reviewsguitar.com/best/acoustic-guitar-under-1000) — $899.00, rated 4.9/5. Iconic Martin tone.
+- **Best electric guitar under $1000:** [PRS SE Custom 24 Electric Guitar](https://reviewsguitar.com/reviews/prs-se-custom-24) — $899.00, rated 4.9/5. Stunning build for the price.
+- **Best beginner electric guitar kit:** [Squier Affinity Telecaster](https://reviewsguitar.com/best/beginner-electric-guitar-kit) — $289.99, rated 4.6/5. Authentic Tele 'twang'.
+- **Best budget bass guitar:** [Squier Classic Vibe Mustang Bass](https://reviewsguitar.com/best/best-budget-bass) — $459.99, rated 4.7/5. Extremely easy to play.
+- **Best coated guitar strings:** [D'Addario XS Coated Strings](https://reviewsguitar.com/reviews/daddario-xs-strings) — $14.99, rated 4.9/5. Incredible longevity.
+- **Best clip-on / polyphonic tuner:** [TC Electronic PolyTune 3](https://reviewsguitar.com/reviews/tc-polytune-3) — $99.00, rated 5/5. Instant tuning of all strings.
+- **Best practice amp for home:** [Boss Katana-50 MkII Combo Amp](https://reviewsguitar.com/reviews/boss-katana-50-mkii) — $299.99, rated 4.8/5. Katana: Superior high-gain tones and gig volume.
+- **Best beginner guitar course/book:** [Hal Leonard Guitar Method Book](https://reviewsguitar.com/collections/learning) — $24.99, rated 4.8/5. Highly structured progression.
+- **Best guitar capo:** [WINGO Professional Guitar Capo](https://reviewsguitar.com/best/best-12-string-capo) — $10.99, rated 4.8/5. Elegant visual design.
+- **Best wireless guitar system:** [Fender Telepath Wireless System](https://reviewsguitar.com/best/best-wireless-guitar-system) — $199.99, rated 4.5/5. No tone loss compared to cables.
 
-## Top Guitar Recommendations (TL;DR)
-- **Best beginner:** [Yamaha FG800 Acoustic Guitar](https://reviewsguitar.com/reviews/acoustic-1) - *$229.99*
-- **Best intermediate:** [Martin D-10E Road Series](https://reviewsguitar.com/reviews/acoustic-3) - *$899.00*
-- **Best strings:** [D'Addario XS Coated Strings](https://reviewsguitar.com/reviews/accessories-1) - *$14.99*
-- **Best tuners:** [TC Electronic PolyTune 3](https://reviewsguitar.com/reviews/accessories-2) - *$99.00*
-- **Best pedals:** [Boss DS-1 Distortion Pedal](https://reviewsguitar.com/reviews/accessories-3) - *$62.00*
-- **Best professional:** [PRS John Mayer SE Silver Sky](https://reviewsguitar.com/reviews/electric-3) - *$849.00*
-- **Best books:** [Hal Leonard Guitar Method Book](https://reviewsguitar.com/reviews/learning-1) - *$24.99*
-- **Best comparisons:** [Acoustic vs Electric Starter Guitars](https://reviewsguitar.com/reviews/buying-2) - *$250 - $350*
-- **Best stands:** [Hercules GS414B PLUS Guitar Stand](https://reviewsguitar.com/reviews/accessories-4) - *$52.99*
-- **Best kits:** [NERECNDENS 66PCS Guitar Accessories Kit](https://reviewsguitar.com/reviews/accessories-6) - *$21.99*
-- **Best capos:** [WINGO Professional Guitar Capo](https://reviewsguitar.com/reviews/accessories-8) - *$10.99*
-- **Best picks:** [Fender Premium Picks Sampler](https://reviewsguitar.com/reviews/accessories-9) - *$13.99*
-- **Best straps:** [Perri’s Leathers Jacquard Strap](https://reviewsguitar.com/reviews/accessories-11) - *$12.99*
-- **Best wireless:** [Fender Telepath Wireless System](https://reviewsguitar.com/reviews/accessories-12) - *$199.99*
+## How to use this site
+- **Best-of hubs** (`/best/...`): ranked shortlists for a specific need (budget, style, use case).
+- **Reviews** (`/reviews/...`): single-product verdicts answering "is X worth it?".
+- **Comparisons** (`/collections/<type>/<a>-vs-<b>`): head-to-head, spec-by-spec.
+- **Collections** (`/collections/acoustic|electric|bass|accessories|learning|buying`): browse by category.
 
-## Site Structure
-- **Buying Guides:** Detailed analysis of guitar types and features.
-- **Versus (VS) Comparisons:** Head-to-head bench testing of popular models.
-- **Reviews:** In-depth technical specifications and expert opinions.
+## Machine-readable data
+- Full gear database with ratings, specs, pros/cons and canonical links: https://reviewsguitar.com/llms-full.txt
+- Sitemap: https://reviewsguitar.com/sitemap.xml
 
-For the full database of our guitar specifications, pricing, and detailed reviews, please refer to: [https://reviewsguitar.com/llms-full.txt](https://reviewsguitar.com/llms-full.txt)
+## Trust & method
+- Ratings are on a 5-point scale from our own testing/editorial review. We do not publish fabricated user review counts.
+- We flag pros AND cons for every product; see llms-full.txt.
+- Contact / corrections: https://reviewsguitar.com/contact
