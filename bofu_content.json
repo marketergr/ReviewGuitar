@@ -381,7 +381,12 @@
         "q": "Is the Player II Stratocaster good for beginners?",
         "a": "It's a fantastic long-term first guitar if the budget stretches — you won't outgrow it. That said, it costs noticeably more than a Squier, so beginners on a tight budget can start with a Squier and step up to a Player II later without missing out."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "electric-6"
+      ]
+    }
   },
   "/reviews/boss-katana-50-mkii": {
     "buyingGuide": {
@@ -419,7 +424,10 @@
         "q": "Do I need the Tone Studio software to use it?",
         "a": "No — it sounds great straight out of the box with its front-panel controls. But the free software is worth installing: it unlocks extra effects, patch storage, and deeper editing that make the amp far more flexible."
       }
-    ]
+    ],
+    "match": {
+      "none": true
+    }
   },
   "/reviews/tc-polytune-3": {
     "buyingGuide": {
@@ -457,7 +465,12 @@
         "q": "Is a tuner pedal worth it over a clip-on tuner?",
         "a": "If you play live or run a pedalboard, yes: it's always on, more accurate, mutes silently while you tune, and buffers your signal. A clip-on tuner is perfectly fine for bedroom practice, but the pedal earns its place on a gigging board."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "accessories-2"
+      ]
+    }
   },
   "/reviews/daddario-xs-strings": {
     "buyingGuide": {
@@ -495,7 +508,12 @@
         "q": "Are XS strings worth the higher price?",
         "a": "If your strings go dead quickly or you can't restring often, yes — the longer life lowers your real cost and saves restringing time. If you already change strings every week for that brand-new feel, cheaper uncoated sets make more sense."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "accessories-1"
+      ]
+    }
   },
   "/vs/yamaha-fg800-vs-fender-cd-60s": {
     "buyingGuide": {
@@ -571,7 +589,12 @@
         "q": "Does the DSL40CR have good clean tones?",
         "a": "Its clean channel is solid and stays punchy in a mix, though Marshalls are best known for their crunch and lead voicings. If pristine, jangly cleans are your priority, a Fender or Vox-style amp leans that way; for rock crunch and singing leads, the DSL shines."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "accessories-19"
+      ]
+    }
   },
   "/reviews/vox-ac15": {
     "buyingGuide": {
@@ -609,7 +632,12 @@
         "q": "Does the Vox AC15 take pedals well?",
         "a": "Yes. Its responsive clean and Top Boost channels are a great pedal platform, especially for overdrives, fuzzes, and modulation. Many players pair it with a light overdrive to push the front end and use the amp's natural chime as the foundation."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "accessories-20"
+      ]
+    }
   },
   "/reviews/fender-mustang-lt25": {
     "buyingGuide": {
@@ -647,7 +675,12 @@
         "q": "Does the Mustang LT25 work for recording?",
         "a": "Yes — its USB output doubles as an audio interface, so you can record its modeled tones directly into a computer with no extra gear. Combined with the headphone output for monitoring, it's a capable little practice-and-record setup for a bedroom musician."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "accessories-21"
+      ]
+    }
   },
   "/best/home-practice-guitar-amp": {
     "buyingGuide": {
@@ -1727,7 +1760,12 @@
         "q": "Is the SE Custom 24 good for beginners?",
         "a": "It's a great guitar to grow into. It's very playable and versatile, so a beginner won't outgrow it, though it costs more than entry-level guitars. If your budget allows, it's an instrument you can keep for years; if money is tight, a cheaper starter is fine and you can step up to one later."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "electric-16"
+      ]
+    }
   },
   "/best/best-wah-pedals": {
     "buyingGuide": {
@@ -1879,7 +1917,12 @@
         "q": "Where should a volume pedal go in my signal chain?",
         "a": "It depends on the job. Placed early (before your drive pedals) it changes how hard you push them, acting like a remote guitar-volume knob. Placed after your effects it works as a clean master volume for swells and fades. Many players keep it near the end for consistent volume control."
       }
-    ]
+    ],
+    "match": {
+      "pinIds": [
+        "accessories-18"
+      ]
+    }
   },
   "/best/best-p90-pickups": {
     "buyingGuide": {
@@ -2149,7 +2192,10 @@
         "q": "Is it worth upgrading from the FG800 to the FG830?",
         "a": "If tone matters to you, yes. The Yamaha FG830 ($399.99, rated 4.9/5) adds rosewood back and sides and scalloped bracing over the FG800, giving richer, more complex overtones and better projection. Both are excellent; the FG830 is the more resonant instrument for a modest step up in price."
       }
-    ]
+    ],
+    "match": {
+      "none": true
+    }
   },
   "/reviews/fishman-fluence-pickups": {
     "buyingGuide": {
@@ -2187,7 +2233,10 @@
         "q": "Are P-90 pickups a good upgrade?",
         "a": "If you want fat, gritty vintage character, yes. Passive P-90s such as the Seymour Duncan Phat Cat P-90 Set ($149.00, rated 4.7/5) and the Gibson P-90 ($109.00, rated 4.6/5) deliver rich midrange and dynamic bite that shine for blues, punk, and classic rock. They do hum like any single-coil, so they're less suited to very high-gain, hum-free applications."
       }
-    ]
+    ],
+    "match": {
+      "none": true
+    }
   },
   "/alternatives/epiphone-les-paul-standard": {
     "buyingGuide": {
@@ -2225,6 +2274,14 @@
         "q": "Why choose an alternative over the Epiphone Les Paul Standard?",
         "a": "Usually weight, price, or upper-fret access. The Les Paul Standard 60s ($649.00, rated 4.8/5) is superb but heavy and single-cut; an alternative like the Epiphone SG Standard '61 ($549.00, rated 4.7/5) trims weight, cost, and neck access limitations while keeping the humbucker tone. Choose based on comfort and how high on the neck you play."
       }
-    ]
+    ],
+    "match": {
+      "silo": "electric",
+      "brandNeutral": true,
+      "excludeIds": [
+        "electric-9",
+        "electric-13"
+      ]
+    }
   }
 }

@@ -93,9 +93,9 @@ function parseCSV(content) {
     });
 }
 
-function matchProducts(keyword) {
+function matchProducts(keyword, opts = {}) {
     const kwLower = keyword.toLowerCase();
-    
+
     // Determine target silo
     let targetSilo = null;
     if (kwLower.includes('electric')) {
@@ -106,8 +106,19 @@ function matchProducts(keyword) {
         targetSilo = 'bass';
     } else if (kwLower.includes('learning') || kwLower.includes('lessons') || kwLower.includes('course') || kwLower.includes('book') || kwLower.includes('app')) {
         targetSilo = 'learning';
-    } else if (kwLower.includes('string') || kwLower.includes('pedal') || kwLower.includes('amp') || kwLower.includes('cable') || kwLower.includes('tuner') || kwLower.includes('strap') || kwLower.includes('wireless') || kwLower.includes('accessory') || kwLower.includes('stand') || kwLower.includes('capo') || kwLower.includes('pick') || kwLower.includes('headphones') || kwLower.includes('cases') || kwLower.includes('flight')) {
+    } else if (/\bstrings?\b|\bpedals?\b|\bamp\b|amplifier|\bcables?\b|\btuner|\bstraps?\b|wireless|accessor|\bstands?\b|\bcapos?\b|\bpicks?\b|headphone|\bcases?\b|flight/.test(kwLower)) {
+        // Word-boundary matches so "standARD", "exAMPle" etc. don't mis-route to accessories.
         targetSilo = 'accessories';
+    }
+
+    // Explicit override wins; otherwise infer silo from guitar MODEL words when the
+    // query has no silo keyword (e.g. "les paul alternatives", "player ii stratocaster").
+    // This stops cross-silo leakage (guitar stands surfacing on a Les Paul page).
+    if (opts.silo) {
+        targetSilo = opts.silo;
+    } else if (!targetSilo) {
+        if (/\bles paul\b|\bsg\b|stratocaster|\bstrat\b|telecaster|\btele\b|pacifica|dinky|jazzmaster|silver sky|custom 24/.test(kwLower)) targetSilo = 'electric';
+        else if (/classical|nylon|dreadnought|fingerstyle|\bconcert\b/.test(kwLower)) targetSilo = 'acoustic';
     }
 
     const BRANDS = ['yamaha', 'fender', 'squier', 'martin', 'taylor', 'prs', 'boss', 'tc electronic', 'epiphone', 'jackson', 'hercules', 'ernie ball', 'wingo', 'perri', 'hal leonard', 'justinguitar', 'nerecndens', 'gibson', 'ibanez', 'vox', 'marshall', 'gretsch', 'seagull'];
@@ -132,7 +143,11 @@ function matchProducts(keyword) {
     // guitar amp practice"), so only treat it as the subject when no more specific
     // accessory type matched first.
     else if (/\bamp\b|amplifier|\bcombo\b/.test(kwLower)) gearType = 'amps';
-    else if (/\bstand/.test(kwLower)) gearType = 'stands';
+    else if (/\bstands?\b/.test(kwLower)) gearType = 'stands'; // not "standARD"
+
+    // A forced/inferred GUITAR silo must not inherit an accessory gear type
+    // (e.g. "les paul standard" must never fall into the 'stands' bucket).
+    if (targetSilo && targetSilo !== 'accessories') gearType = null;
 
     // Canonical gear type for a product (category, with the mis-filed combo amp special-cased)
     const productGearType = (p) => {
@@ -176,7 +191,9 @@ function matchProducts(keyword) {
             }
         }
         
-        if (activeBrands.length > 0) {
+        // Skip brand scoring for "alternatives" pages (opts.brandNeutral): there we WANT
+        // other brands, not the named product itself.
+        if (!opts.brandNeutral && activeBrands.length > 0) {
             if (pBrand && activeBrands.includes(pBrand)) {
                 score += 20;
             } else if (pBrand) {
@@ -219,10 +236,26 @@ function matchProducts(keyword) {
         return { product: p, score };
     });
     
+    // Hard silo gate: never show accessories on a guitar page (or a guitar on an
+    // accessory page). Prevents brand-match leakage (e.g. a "Gibson P-90 pickup" on a
+    // Gibson guitar page) that a soft score penalty couldn't stop.
+    if (targetSilo === 'electric' || targetSilo === 'acoustic' || targetSilo === 'bass') {
+        scored = scored.filter(s => s.product.silo === targetSilo);
+    }
+    // Drop explicitly excluded products (e.g. the subject of an "alternatives" page).
+    if (Array.isArray(opts.excludeIds) && opts.excludeIds.length) {
+        scored = scored.filter(s => !opts.excludeIds.includes(s.product.id));
+    }
     scored.sort((a, b) => b.score - a.score);
-    // Return top 2 for vs pages, top 4 for best-of/other
+    // Show only genuinely-relevant products instead of padding to 4 with cross-type
+    // junk (headphones on a "best bass" page, a stand on "acoustic under 500"). If
+    // nothing is relevant, return [] so the page renders an honest category-level guide.
+    let relevant = scored.filter(s => s.score > 0);
+    if (relevant.length === 0 && targetSilo) {
+        relevant = scored.filter(s => s.product.silo === targetSilo); // in-silo fallback
+    }
     const sliceCount = kwLower.includes(' vs ') || kwLower.includes('comparison') ? 2 : 4;
-    return scored.slice(0, sliceCount).map(s => s.product);
+    return relevant.slice(0, sliceCount).map(s => s.product);
 }
 
 // Star string from a numeric rating (visible + extractable signal for LLMs).
@@ -297,6 +330,7 @@ function generateBoFuPage(data, matchedProducts, fileName) {
     if (isSingleReview && matchedProducts.length > 1) {
         matchedProducts = matchedProducts.slice(0, 1);
     }
+    const hasProducts = matchedProducts.length > 0;
 
     // --- Editorial enrichment: buying guide + FAQ (unique per page) ---
     const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -461,14 +495,16 @@ ${buildBofuSchema(data, matchedProducts, isSingleReview)}
             <span class="bofu-badge">${data.type.toUpperCase()} GUIDE</span>
             <h1 class="bofu-intent-header">${data.keyword.replace(/\b\w/g, c => c.toUpperCase())}</h1>
             <p style="font-size: 1.1rem; color: #aaa; line-height: 1.7;">
-                Stop endlessly searching. We've compared the top gear matching <strong>${data.keyword}</strong> on specs, real-world value, and player feedback. Here are our top choices for 2026.
+                ${hasProducts
+                    ? `Stop endlessly searching. We've compared the top gear matching <strong>${data.keyword}</strong> on specs, real-world value, and player feedback. Here are our top choices for 2026.`
+                    : `Here's our practical take on <strong>${data.keyword}</strong> — what matters, how to judge it, and the questions worth answering before you buy.`}
             </p>
             <p style="font-size: 0.85rem; color: #666; margin-top: 1rem; border-top: 1px solid #333; padding-top: 0.5rem;">
                 <em>Disclosure: As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.</em>
             </p>
             ${tldrHtml}
 
-            <!-- Quick Links (Above the Fold) -->
+            ${hasProducts ? `<!-- Quick Links (Above the Fold) -->
             <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 1.5rem; margin-top: 2rem;">
                 <h3 style="font-family: 'Montserrat'; font-size: 1.2rem; margin-top: 0; color: #fff;">Quick Links</h3>
                 <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.8rem;">
@@ -479,9 +515,9 @@ ${buildBofuSchema(data, matchedProducts, isSingleReview)}
                     </li>
                     `).join('')}
                 </ul>
-            </div>
+            </div>` : ''}
 
-            <div class="product-stack">
+            ${hasProducts ? `<div class="product-stack">
                 ${matchedProducts.map((p, idx) => `
                 <div class="product-row">
                     <div class="product-img-col">
@@ -498,7 +534,7 @@ ${buildBofuSchema(data, matchedProducts, isSingleReview)}
                     </div>
                 </div>
                 `).join('')}
-            </div>
+            </div>` : ''}
             ${comparisonTable}
             ${buyingGuideHtml}
             ${faqHtml}
@@ -558,12 +594,23 @@ function main() {
     if (!fs.existsSync(path.join(PROJECT_ROOT, 'pages'))) fs.mkdirSync(path.join(PROJECT_ROOT, 'pages'));
 
     bofuData.forEach(data => {
-        const matchedProducts = matchProducts(data.keyword);
-        if (matchedProducts.length === 0) {
-            // fallback if no match
-            matchedProducts.push(products[0], products[1]); 
+        // Per-URL match control (bofu_content.json > match):
+        //   { none:true }            -> subject not in catalog; render honest category-level page
+        //   { pinIds:[...] }         -> feature exactly these catalog products (single reviews)
+        //   { silo, brandNeutral, excludeIds } -> steer the matcher (e.g. alternatives pages)
+        const enrich = bofuContent[data.url] || {};
+        const m = enrich.match || {};
+        let matchedProducts;
+        if (m.none) {
+            matchedProducts = [];
+        } else if (Array.isArray(m.pinIds) && m.pinIds.length) {
+            matchedProducts = m.pinIds.map(id => products.find(p => p.id === id)).filter(Boolean);
+        } else {
+            matchedProducts = matchProducts(data.keyword, m);
         }
-        
+        // No unrelated-product fallback: an empty list now yields an honest page carried
+        // by the buying guide + FAQ, instead of padding with Yamaha FG800 etc.
+
         const slug = data.url.replace(/\//g, '_').replace(/^_/, '');
         const fileName = `bofu_${slug}.html`;
         generateBoFuPage(data, matchedProducts, fileName);
