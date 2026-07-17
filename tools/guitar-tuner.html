@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 2% rule: head term + every classifying entity front-loaded -->
+    <meta name="description" content="Free online guitar tuner. Tune acoustic or electric guitar by mic or by ear — standard EADGBE, Drop D, Half-step, Open G. No sign-up, works in your browser.">
+    <meta name="author" content="ReviewsGuitar.com">
+    <meta name="keywords" content="online guitar tuner, free guitar tuner, tune guitar online, acoustic guitar tuner, electric guitar tuner, standard tuning EADGBE, drop d tuner, chromatic tuner">
+    <title>Online Guitar Tuner — Free, Mic &amp; By Ear | ReviewsGuitar</title>
+    <link rel="canonical" href="https://reviewsguitar.com/tools/guitar-tuner">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Guitar Tuner — Mic &amp; By Ear">
+    <meta property="og:description" content="Tune your acoustic or electric guitar free in the browser. Mic detection or reference tones. Standard, Drop D, Half-step and Open tunings. No sign-up.">
+    <meta property="og:url" content="https://reviewsguitar.com/tools/guitar-tuner">
+    <meta property="og:site_name" content="ReviewsGuitar.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- WebApplication schema: this is a tool, not an article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Online Guitar Tuner",
+      "url": "https://reviewsguitar.com/tools/guitar-tuner",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires a modern browser; microphone optional",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": [
+        "Microphone pitch detection",
+        "Reference tone playback (tune by ear)",
+        "Standard EADGBE, Drop D, Half-step down, Open G tunings",
+        "Cents-accurate tuning meter"
+      ],
+      "publisher": { "@type": "Organization", "name": "ReviewsGuitar.com", "url": "https://reviewsguitar.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is this online guitar tuner free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The tuner is completely free, needs no sign-up, and runs in your browser. Audio is processed on your device and never uploaded." } },
+        { "@type": "Question", "name": "Can I tune an electric guitar without an amp?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Play the string acoustically near your microphone, or use the reference-tone mode to tune by ear without a mic at all." } },
+        { "@type": "Question", "name": "What is standard guitar tuning?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Standard tuning is E2 A2 D3 G3 B3 E4, low to high. The tuner also supports Drop D, Half-step down, and Open G." } }
+      ]
+    }
+    </script>
+
+    <style>
+    /* rg-tuner-* : project-specific scheme, custom DOM — no generator fingerprint */
+    .rg-tuner-stage{max-width:760px;margin:0 auto;padding:0 1rem}
+    .rg-tuner-badges{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.1rem 0 1.6rem}
+    .rg-tuner-badge{font:600 .8rem/1 'Montserrat',sans-serif;letter-spacing:.02em;color:var(--primary);
+        background:var(--primary-glow);border:1px solid var(--border-hover);border-radius:999px;padding:.5rem .85rem}
+    /* CENTERPIECE — dominant, above the fold, self-evident */
+    .rg-tuner-core{background:var(--surface-card);border:1px solid var(--border);border-radius:22px;
+        box-shadow:var(--shadow),var(--shadow-glow);padding:2rem 1.25rem 1.6rem;text-align:center}
+    .rg-tuner-note{font:800 clamp(4.5rem,22vw,9rem)/1 'Montserrat',sans-serif;color:var(--text);margin:.2rem 0;min-height:1em}
+    .rg-tuner-note[data-in="1"]{color:var(--accent-green);text-shadow:0 0 40px rgba(46,204,113,.35)}
+    .rg-tuner-target{color:var(--text-dim);font:600 1rem/1 'Montserrat',sans-serif;letter-spacing:.18em;text-transform:uppercase}
+    .rg-tuner-meter{position:relative;height:74px;margin:1.4rem auto .4rem;max-width:520px;
+        border-radius:14px;background:linear-gradient(90deg,#1a1420,#161622,#141a17);border:1px solid var(--border);overflow:hidden}
+    .rg-tuner-center-line{position:absolute;left:50%;top:8px;bottom:8px;width:2px;margin-left:-1px;background:var(--primary);opacity:.55}
+    .rg-tuner-needle{position:absolute;top:6px;bottom:6px;width:6px;margin-left:-3px;border-radius:6px;
+        background:var(--accent);left:50%;transition:left .08s linear,background .15s}
+    .rg-tuner-needle[data-in="1"]{background:var(--accent-green)}
+    .rg-tuner-cents{font:600 .95rem/1 'Inter',sans-serif;color:var(--text-dim);margin-top:.3rem;min-height:1.2em}
+    .rg-tuner-strings{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;margin:1.5rem 0 .4rem}
+    .rg-str{width:56px;height:56px;border-radius:50%;border:1px solid var(--border);background:var(--surface);
+        color:var(--text);font:700 1.15rem/1 'Montserrat',sans-serif;cursor:pointer;transition:var(--transition)}
+    .rg-str:hover{border-color:var(--border-hover);color:var(--primary);transform:translateY(-2px)}
+    .rg-str[data-active="1"]{border-color:var(--primary);color:#06060a;background:var(--primary);box-shadow:0 0 22px var(--primary-glow)}
+    .rg-tuner-controls{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-top:1.2rem}
+    .rg-btn{font:700 .95rem/1 'Montserrat',sans-serif;border-radius:12px;padding:.9rem 1.4rem;cursor:pointer;border:1px solid var(--border-hover)}
+    .rg-btn-primary{background:var(--primary);color:#06060a;border-color:var(--primary)}
+    .rg-btn-primary:hover{background:var(--primary-hover)}
+    .rg-btn-ghost{background:transparent;color:var(--text)}
+    .rg-btn-ghost:hover{color:var(--primary)}
+    .rg-tuner-mode{display:flex;gap:.4rem;justify-content:center;margin:0 auto 1.1rem;flex-wrap:wrap}
+    .rg-tuner-mode label{font:600 .82rem/1 'Inter',sans-serif;color:var(--text-dim);
+        border:1px solid var(--border);border-radius:999px;padding:.5rem .8rem;cursor:pointer}
+    .rg-tuner-mode input{position:absolute;opacity:0;pointer-events:none}
+    .rg-tuner-mode input:checked + label{color:#06060a;background:var(--primary);border-color:var(--primary)}
+    .rg-tuner-status{font:600 .85rem/1.4 'Inter',sans-serif;color:var(--text-dim);margin-top:.9rem;min-height:1.4em}
+    .rg-cta{max-width:760px;margin:2.4rem auto 0;padding:1.4rem 1.25rem;text-align:center;
+        background:var(--surface-glass);border:1px solid var(--border);border-radius:16px}
+    .rg-cta a{color:var(--primary);font-weight:700}
+    .rg-tuner-copy{max-width:720px;margin:1.6rem auto 0;color:var(--text-dim);font:400 1rem/1.7 'Inter',sans-serif;text-align:center}
+    .rg-disc{max-width:720px;margin:1.4rem auto 0;color:var(--text-dim);font:400 .78rem/1.5 'Inter',sans-serif;text-align:center;opacity:.8}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-logo"><a href="/">ReviewsGuitar.com</a></div>
+        <p>THE ELITE SOURCE FOR GUITAR REVIEWS &amp; GUIDES</p>
+    </header>
+
+    <nav>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/acoustic">Acoustic</a></li>
+            <li><a href="/collections/electric">Electric</a></li>
+            <li><a href="/collections/accessories">Accessories</a></li>
+            <li><a href="/collections/learning">Learning</a></li>
+            <li><a href="/tools/">Tools</a></li>
+        </ul>
+    </nav>
+
+    <main class="rg-tuner-stage">
+        <!-- H1 = head term verbatim -->
+        <h1 style="text-align:center;margin:1.6rem 0 .4rem;font-family:'Montserrat',sans-serif">Online Guitar Tuner</h1>
+
+        <!-- Attributes as discrete visual elements, adjacent to the centerpiece -->
+        <div class="rg-tuner-badges">
+            <span class="rg-tuner-badge">Free</span>
+            <span class="rg-tuner-badge">No sign-up</span>
+            <span class="rg-tuner-badge">Mic or by ear</span>
+            <span class="rg-tuner-badge">Standard · Drop D · Open G</span>
+            <span class="rg-tuner-badge">Acoustic &amp; electric</span>
+        </div>
+
+        <!-- CENTERPIECE -->
+        <section class="rg-tuner-core" aria-label="Guitar tuner">
+            <div class="rg-tuner-mode" role="radiogroup" aria-label="Tuning">
+                <input type="radio" name="rg-tuning" id="t-std" value="standard" checked><label for="t-std">Standard EADGBE</label>
+                <input type="radio" name="rg-tuning" id="t-drop" value="dropd"><label for="t-drop">Drop D</label>
+                <input type="radio" name="rg-tuning" id="t-half" value="halfstep"><label for="t-half">½-Step Down</label>
+                <input type="radio" name="rg-tuning" id="t-open" value="openg"><label for="t-open">Open G</label>
+            </div>
+
+            <div class="rg-tuner-target" id="rg-target">Play a string or pick one below</div>
+            <div class="rg-tuner-note" id="rg-note">—</div>
+
+            <div class="rg-tuner-meter" aria-hidden="true">
+                <div class="rg-tuner-center-line"></div>
+                <div class="rg-tuner-needle" id="rg-needle" data-in="0"></div>
+            </div>
+            <div class="rg-tuner-cents" id="rg-cents">±0 cents</div>
+
+            <div class="rg-tuner-strings" id="rg-strings"><!-- string buttons injected --></div>
+
+            <div class="rg-tuner-controls">
+                <button class="rg-btn rg-btn-primary" id="rg-mic">🎤 Start Mic Tuner</button>
+                <button class="rg-btn rg-btn-ghost" id="rg-ref">🔊 Play Reference Tone</button>
+            </div>
+            <div class="rg-tuner-status" id="rg-status">Mic mode detects your pitch live. No mic? Tap a string to hear its note and tune by ear.</div>
+        </section>
+
+        <!-- ~3 sentences, entities front-loaded -->
+        <p class="rg-tuner-copy">
+            This free online guitar tuner tunes acoustic and electric guitars in standard EADGBE, Drop D, half-step down, and Open G.
+            Use the microphone for live, cents-accurate pitch detection, or play reference tones to tune by ear.
+            Audio stays on your device — nothing is uploaded and no sign-up is required.
+        </p>
+
+        <!-- Cross-links to the rest of the free-tool cluster -->
+        <div style="max-width:760px;margin:1.8rem auto 0;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap">
+            <a href="/tools/metronome" style="font:600 .85rem/1 'Montserrat',sans-serif;color:var(--text);border:1px solid var(--border);border-radius:999px;padding:.6rem 1rem;text-decoration:none">⏱ Metronome</a>
+            <a href="/tools/string-tension-calculator" style="font:600 .85rem/1 'Montserrat',sans-serif;color:var(--text);border:1px solid var(--border);border-radius:999px;padding:.6rem 1rem;text-decoration:none">🎚 String Tension</a>
+            <a href="/tools/chord-finder" style="font:600 .85rem/1 'Montserrat',sans-serif;color:var(--text);border:1px solid var(--border);border-radius:999px;padding:.6rem 1rem;text-decoration:none">🎵 Chord Finder</a>
+        </div>
+
+        <!-- CTA into the money path -->
+        <div class="rg-cta">
+            Tuning a lot? A dedicated clip-on tuner is faster on stage.
+            See our <a href="/collections/accessories/tuners">best guitar tuners tested for 2026 →</a>
+        </div>
+
+        <p class="rg-disc">
+            As an Amazon Associate, ReviewsGuitar.com earns from qualifying purchases. Links to gear may be affiliate links at no extra cost to you.
+        </p>
+    </main>
+
+    <footer class="footer-hub">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>REVIEWSGUITAR.COM</h2>
+                <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Tools</h3>
+                <ul class="footer-links">
+                    <li><a href="/tools/guitar-tuner">Online Guitar Tuner</a></li>
+                    <li><a href="/collections/accessories/tuners">Best Tuners 2026</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Collections</h3>
+                <ul class="footer-links">
+                    <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
+                    <li><a href="/collections/electric">Electric Guitars</a></li>
+                    <li><a href="/collections/accessories">Essential Gear</a></li>
+                    <li><a href="/collections/learning">Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms &amp; Conditions</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function () {
+        "use strict";
+        // Note tables (Hz). Low string -> high string.
+        var TUNINGS = {
+            standard: [["E2",82.41],["A2",110.00],["D3",146.83],["G3",196.00],["B3",246.94],["E4",329.63]],
+            dropd:    [["D2",73.42],["A2",110.00],["D3",146.83],["G3",196.00],["B3",246.94],["E4",329.63]],
+            halfstep: [["Eb2",77.78],["Ab2",103.83],["Db3",138.59],["Gb3",185.00],["Bb3",233.08],["Eb4",311.13]],
+            openg:    [["D2",73.42],["G2",98.00],["D3",146.83],["G3",196.00],["B3",246.94],["D4",293.66]]
+        };
+        var noteStrings = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+
+        var els = {
+            strings: document.getElementById("rg-strings"),
+            note: document.getElementById("rg-note"),
+            target: document.getElementById("rg-target"),
+            cents: document.getElementById("rg-cents"),
+            needle: document.getElementById("rg-needle"),
+            status: document.getElementById("rg-status"),
+            mic: document.getElementById("rg-mic"),
+            ref: document.getElementById("rg-ref")
+        };
+
+        var tuning = "standard";
+        var selected = 0;
+        var audioCtx = null;
+        var analyser = null, buf = null, rafId = null, micStream = null, micOn = false;
+
+        function currentSet(){ return TUNINGS[tuning]; }
+
+        function renderStrings(){
+            els.strings.innerHTML = "";
+            currentSet().forEach(function(s, i){
+                var b = document.createElement("button");
+                b.className = "rg-str";
+                b.textContent = s[0].replace(/[0-9]/g,"");
+                b.setAttribute("data-active", i === selected ? "1" : "0");
+                b.setAttribute("aria-label", "Tune string " + s[0]);
+                b.addEventListener("click", function(){ selectString(i); playReference(); });
+                els.strings.appendChild(b);
+            });
+            updateTargetLabel();
+        }
+        function selectString(i){
+            selected = i;
+            [].forEach.call(els.strings.children, function(c, idx){
+                c.setAttribute("data-active", idx === selected ? "1" : "0");
+            });
+            updateTargetLabel();
+        }
+        function updateTargetLabel(){
+            els.target.textContent = "Target · " + currentSet()[selected][0];
+        }
+
+        // ---- Reference tone (works with no mic) ----
+        function ctx(){ audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)(); return audioCtx; }
+        function playReference(){
+            var freq = currentSet()[selected][1];
+            var c = ctx();
+            var osc = c.createOscillator(), g = c.createGain();
+            osc.type = "sine"; osc.frequency.value = freq;
+            g.gain.setValueAtTime(0.0001, c.currentTime);
+            g.gain.exponentialRampToValueAtTime(0.25, c.currentTime + 0.02);
+            g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + 1.6);
+            osc.connect(g); g.connect(c.destination);
+            osc.start(); osc.stop(c.currentTime + 1.7);
+            els.note.textContent = currentSet()[selected][0].replace(/[0-9]/g,"");
+        }
+        els.ref.addEventListener("click", playReference);
+
+        // ---- Mic pitch detection (autocorrelation) ----
+        function autoCorrelate(buffer, sampleRate){
+            var SIZE = buffer.length, rms = 0, i;
+            for (i=0;i<SIZE;i++){ rms += buffer[i]*buffer[i]; }
+            rms = Math.sqrt(rms/SIZE);
+            if (rms < 0.01) return -1; // too quiet
+            var r1=0, r2=SIZE-1, thres=0.2;
+            for (i=0;i<SIZE/2;i++){ if (Math.abs(buffer[i])<thres){ r1=i; break; } }
+            for (i=1;i<SIZE/2;i++){ if (Math.abs(buffer[SIZE-i])<thres){ r2=SIZE-i; break; } }
+            buffer = buffer.slice(r1, r2); SIZE = buffer.length;
+            var c = new Array(SIZE).fill(0);
+            for (i=0;i<SIZE;i++){ for (var j=0;j<SIZE-i;j++){ c[i]+=buffer[j]*buffer[j+i]; } }
+            var d=0; while (d<SIZE-1 && c[d]>c[d+1]) d++;
+            var maxval=-1, maxpos=-1;
+            for (i=d;i<SIZE;i++){ if (c[i]>maxval){ maxval=c[i]; maxpos=i; } }
+            var T0 = maxpos;
+            if (T0<=0) return -1;
+            var x1=c[T0-1]||0, x2=c[T0], x3=c[T0+1]||0;
+            var a=(x1+x3-2*x2)/2, b=(x3-x1)/2;
+            if (a) T0 = T0 - b/(2*a);
+            return sampleRate/T0;
+        }
+        function freqToNote(freq){
+            var n = 12*(Math.log(freq/440)/Math.log(2));
+            var midi = Math.round(n)+69;
+            var name = noteStrings[(midi%12+12)%12];
+            var refFreq = 440*Math.pow(2,(midi-69)/12);
+            var cents = Math.floor(1200*Math.log(freq/refFreq)/Math.log(2));
+            return { name:name, cents:cents };
+        }
+        function loop(){
+            analyser.getFloatTimeDomainData(buf);
+            var freq = autoCorrelate(buf, audioCtx.sampleRate);
+            if (freq > 0){
+                var info = freqToNote(freq);
+                var inTune = Math.abs(info.cents) <= 4;
+                els.note.textContent = info.name;
+                els.note.setAttribute("data-in", inTune ? "1" : "0");
+                els.cents.textContent = (info.cents>0?"+":"") + info.cents + " cents " + (inTune ? "· in tune ✓" : info.cents>0 ? "· too sharp" : "· too flat");
+                var pos = Math.max(-50, Math.min(50, info.cents));
+                els.needle.style.left = (50 + pos) + "%";
+                els.needle.setAttribute("data-in", inTune ? "1" : "0");
+            }
+            rafId = requestAnimationFrame(loop);
+        }
+        function startMic(){
+            navigator.mediaDevices.getUserMedia({ audio:true }).then(function(stream){
+                micStream = stream; micOn = true;
+                var c = ctx();
+                analyser = c.createAnalyser(); analyser.fftSize = 2048;
+                buf = new Float32Array(analyser.fftSize);
+                c.createMediaStreamSource(stream).connect(analyser);
+                els.mic.textContent = "⏹ Stop Mic";
+                els.status.textContent = "Listening… play one string at a time. Green = in tune (±4 cents).";
+                loop();
+            }).catch(function(){
+                els.status.textContent = "Microphone blocked. Use the reference tones below to tune by ear instead.";
+            });
+        }
+        function stopMic(){
+            micOn = false;
+            if (rafId) cancelAnimationFrame(rafId);
+            if (micStream) micStream.getTracks().forEach(function(t){ t.stop(); });
+            els.mic.textContent = "🎤 Start Mic Tuner";
+            els.status.textContent = "Mic stopped. Restart it or tap a string to tune by ear.";
+            els.needle.setAttribute("data-in","0");
+        }
+        els.mic.addEventListener("click", function(){ micOn ? stopMic() : startMic(); });
+
+        // Tuning switch
+        [].forEach.call(document.querySelectorAll('input[name="rg-tuning"]'), function(r){
+            r.addEventListener("change", function(){ tuning = r.value; selected = 0; renderStrings(); });
+        });
+
+        renderStrings();
+    })();
+    </script>
+</body>
+</html>

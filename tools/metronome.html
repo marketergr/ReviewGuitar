@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online metronome for guitar practice. Set BPM from 40 to 240, choose time signature, accent the downbeat, and tap tempo — no sign-up, works in your browser.">
+    <meta name="author" content="ReviewsGuitar.com">
+    <meta name="keywords" content="online metronome, free metronome, guitar metronome, metronome bpm, tap tempo, practice metronome, time signature metronome">
+    <title>Online Metronome — Free BPM &amp; Tap Tempo | ReviewsGuitar</title>
+    <link rel="canonical" href="https://reviewsguitar.com/tools/metronome">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Metronome — BPM &amp; Tap Tempo">
+    <meta property="og:description" content="Practice guitar in time with a free online metronome. 40–240 BPM, time signatures, accented downbeat, tap tempo. No sign-up.">
+    <meta property="og:url" content="https://reviewsguitar.com/tools/metronome">
+    <meta property="og:site_name" content="ReviewsGuitar.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Online Metronome",
+      "url": "https://reviewsguitar.com/tools/metronome",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any (web browser)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": ["40–240 BPM tempo control","Time signatures 2/4, 3/4, 4/4, 6/8","Accented downbeat","Tap tempo"],
+      "publisher": { "@type": "Organization", "name": "ReviewsGuitar.com", "url": "https://reviewsguitar.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What BPM should I practice guitar at?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Start slow enough to play a passage cleanly — often 60–80 BPM — then raise the tempo by 4–8 BPM once it is accurate. Speed built on clean repetitions sticks; speed built on mistakes does not." } },
+        { "@type": "Question", "name": "Is this online metronome free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is free, needs no sign-up, and runs entirely in your browser with accurate Web Audio timing." } }
+      ]
+    }
+    </script>
+
+    <style>
+    .rg-met-stage{max-width:720px;margin:0 auto;padding:0 1rem}
+    .rg-met-badges{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.1rem 0 1.5rem}
+    .rg-met-badge{font:600 .8rem/1 'Montserrat',sans-serif;color:var(--primary);background:var(--primary-glow);
+        border:1px solid var(--border-hover);border-radius:999px;padding:.5rem .85rem}
+    .rg-met-core{background:var(--surface-card);border:1px solid var(--border);border-radius:22px;
+        box-shadow:var(--shadow),var(--shadow-glow);padding:2rem 1.25rem;text-align:center}
+    /* Centerpiece: giant BPM + beat lights */
+    .rg-met-bpm{font:800 clamp(4rem,20vw,8rem)/1 'Montserrat',sans-serif;color:var(--primary);text-shadow:0 0 40px var(--primary-glow)}
+    .rg-met-bpm-label{color:var(--text-dim);font:600 .95rem/1 'Montserrat',sans-serif;letter-spacing:.2em;text-transform:uppercase}
+    .rg-met-beats{display:flex;gap:.6rem;justify-content:center;margin:1.4rem 0}
+    .rg-beat{width:26px;height:26px;border-radius:50%;background:var(--surface);border:1px solid var(--border);transition:transform .06s,background .06s}
+    .rg-beat[data-on="1"]{background:var(--text);transform:scale(1.25)}
+    .rg-beat[data-on="1"][data-accent="1"]{background:var(--primary);box-shadow:0 0 22px var(--primary-glow)}
+    .rg-met-slider{width:100%;max-width:460px;margin:.6rem auto 0;display:block;accent-color:var(--primary)}
+    .rg-met-row{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-top:1.3rem}
+    .rg-btn{font:700 .95rem/1 'Montserrat',sans-serif;border-radius:12px;padding:.9rem 1.3rem;cursor:pointer;border:1px solid var(--border-hover)}
+    .rg-btn-primary{background:var(--primary);color:#06060a;border-color:var(--primary);min-width:150px}
+    .rg-btn-primary:hover{background:var(--primary-hover)}
+    .rg-btn-ghost{background:transparent;color:var(--text)}
+    .rg-btn-ghost:hover{color:var(--primary)}
+    .rg-step{width:52px;height:52px;border-radius:12px;background:var(--surface);border:1px solid var(--border);
+        color:var(--text);font:700 1.5rem/1 'Montserrat',sans-serif;cursor:pointer}
+    .rg-step:hover{border-color:var(--border-hover);color:var(--primary)}
+    .rg-met-sig{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;margin:1.3rem 0 .2rem}
+    .rg-met-sig input{position:absolute;opacity:0;pointer-events:none}
+    .rg-met-sig label{font:600 .85rem/1 'Inter',sans-serif;color:var(--text-dim);border:1px solid var(--border);
+        border-radius:999px;padding:.5rem .85rem;cursor:pointer}
+    .rg-met-sig input:checked + label{color:#06060a;background:var(--primary);border-color:var(--primary)}
+    .rg-met-copy{max-width:700px;margin:1.6rem auto 0;color:var(--text-dim);font:400 1rem/1.7 'Inter',sans-serif;text-align:center}
+    .rg-cta{max-width:720px;margin:2.2rem auto 0;padding:1.4rem 1.25rem;text-align:center;background:var(--surface-glass);
+        border:1px solid var(--border);border-radius:16px}
+    .rg-cta a{color:var(--primary);font-weight:700}
+    .rg-tools-strip{max-width:720px;margin:1.8rem auto 0;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+    .rg-tools-strip a{font:600 .85rem/1 'Montserrat',sans-serif;color:var(--text);border:1px solid var(--border);
+        border-radius:999px;padding:.6rem 1rem;text-decoration:none}
+    .rg-tools-strip a:hover{border-color:var(--border-hover);color:var(--primary)}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-logo"><a href="/">ReviewsGuitar.com</a></div>
+        <p>THE ELITE SOURCE FOR GUITAR REVIEWS &amp; GUIDES</p>
+    </header>
+    <nav>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/acoustic">Acoustic</a></li>
+            <li><a href="/collections/electric">Electric</a></li>
+            <li><a href="/collections/accessories">Accessories</a></li>
+            <li><a href="/collections/learning">Learning</a></li>
+            <li><a href="/tools/">Tools</a></li>
+        </ul>
+    </nav>
+
+    <main class="rg-met-stage">
+        <h1 style="text-align:center;margin:1.6rem 0 .4rem;font-family:'Montserrat',sans-serif">Online Metronome</h1>
+        <div class="rg-met-badges">
+            <span class="rg-met-badge">Free</span>
+            <span class="rg-met-badge">No sign-up</span>
+            <span class="rg-met-badge">40–240 BPM</span>
+            <span class="rg-met-badge">Tap tempo</span>
+            <span class="rg-met-badge">Accented downbeat</span>
+        </div>
+
+        <section class="rg-met-core" aria-label="Metronome">
+            <div class="rg-met-bpm-label">Tempo</div>
+            <div class="rg-met-bpm"><span id="rg-bpm">100</span> <span style="font-size:.28em;color:var(--text-dim)">BPM</span></div>
+            <div class="rg-met-beats" id="rg-beats" aria-hidden="true"></div>
+
+            <input class="rg-met-slider" id="rg-slider" type="range" min="40" max="240" value="100" aria-label="Tempo in BPM">
+
+            <div class="rg-met-sig" role="radiogroup" aria-label="Time signature">
+                <input type="radio" name="rg-sig" id="s24" value="2"><label for="s24">2/4</label>
+                <input type="radio" name="rg-sig" id="s34" value="3"><label for="s34">3/4</label>
+                <input type="radio" name="rg-sig" id="s44" value="4" checked><label for="s44">4/4</label>
+                <input type="radio" name="rg-sig" id="s68" value="6"><label for="s68">6/8</label>
+            </div>
+
+            <div class="rg-met-row">
+                <button class="rg-step" id="rg-minus" aria-label="Slower">−</button>
+                <button class="rg-btn rg-btn-primary" id="rg-toggle">▶ Start</button>
+                <button class="rg-step" id="rg-plus" aria-label="Faster">+</button>
+            </div>
+            <div class="rg-met-row">
+                <button class="rg-btn rg-btn-ghost" id="rg-tap">👆 Tap Tempo</button>
+            </div>
+        </section>
+
+        <p class="rg-met-copy">
+            This free online metronome keeps your guitar practice in time from 40 to 240 BPM across 2/4, 3/4, 4/4, and 6/8.
+            The downbeat is accented so you always hear beat one; use tap tempo to match a song by ear.
+            Timing runs on the Web Audio clock, so it stays accurate even in a background tab.
+        </p>
+
+        <div class="rg-tools-strip">
+            <a href="/tools/guitar-tuner">🎸 Guitar Tuner</a>
+            <a href="/tools/string-tension-calculator">🎚 String Tension</a>
+            <a href="/tools/chord-finder">🎵 Chord Finder</a>
+        </div>
+
+        <div class="rg-cta">
+            Practicing daily? A clip-on metronome-tuner keeps you in time away from the screen.
+            See our <a href="/collections/accessories/tuners">best tuners &amp; metronomes for 2026 →</a>
+        </div>
+    </main>
+
+    <footer class="footer-hub">
+        <div class="footer-content">
+            <div class="footer-brand"><h2>REVIEWSGUITAR.COM</h2>
+                <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p></div>
+            <div class="footer-column"><h3>Free Tools</h3><ul class="footer-links">
+                <li><a href="/tools/guitar-tuner">Guitar Tuner</a></li>
+                <li><a href="/tools/metronome">Metronome</a></li>
+                <li><a href="/tools/string-tension-calculator">String Tension Calculator</a></li>
+                <li><a href="/tools/chord-finder">Chord Finder</a></li>
+            </ul></div>
+            <div class="footer-column"><h3>Collections</h3><ul class="footer-links">
+                <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
+                <li><a href="/collections/electric">Electric Guitars</a></li>
+                <li><a href="/collections/accessories">Essential Gear</a></li>
+            </ul></div>
+            <div class="footer-column"><h3>Legal</h3><ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul></div>
+        </div>
+    </footer>
+
+    <script>
+    (function(){
+        "use strict";
+        var bpm=100, sig=4, playing=false, audioCtx=null;
+        var nextTime=0, beat=0, timer=null, lookahead=0.1, scheduleMs=25;
+        var el={bpm:document.getElementById('rg-bpm'),slider:document.getElementById('rg-slider'),
+            beats:document.getElementById('rg-beats'),toggle:document.getElementById('rg-toggle'),
+            plus:document.getElementById('rg-plus'),minus:document.getElementById('rg-minus'),tap:document.getElementById('rg-tap')};
+
+        function ctx(){ audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)(); return audioCtx; }
+        function renderBeats(){
+            el.beats.innerHTML='';
+            for(var i=0;i<sig;i++){ var d=document.createElement('div'); d.className='rg-beat';
+                d.setAttribute('data-on','0'); d.setAttribute('data-accent', i===0?'1':'0'); el.beats.appendChild(d); }
+        }
+        function setBpm(v){ bpm=Math.max(40,Math.min(240,v)); el.bpm.textContent=bpm; el.slider.value=bpm; }
+        function click(time, accent){
+            var c=ctx(), osc=c.createOscillator(), g=c.createGain();
+            osc.frequency.value=accent?1500:900; osc.type='square';
+            g.gain.setValueAtTime(0.0001,time); g.gain.exponentialRampToValueAtTime(accent?0.5:0.32,time+0.001);
+            g.gain.exponentialRampToValueAtTime(0.0001,time+0.05);
+            osc.connect(g); g.connect(c.destination); osc.start(time); osc.stop(time+0.06);
+        }
+        function flash(i){
+            var nodes=el.beats.children;
+            [].forEach.call(nodes,function(n){ n.setAttribute('data-on','0'); });
+            if(nodes[i]) nodes[i].setAttribute('data-on','1');
+            setTimeout(function(){ if(nodes[i]) nodes[i].setAttribute('data-on','0'); }, Math.min(120, 60000/bpm*0.5));
+        }
+        function scheduler(){
+            var c=ctx();
+            while(nextTime < c.currentTime + lookahead){
+                var accent=(beat%sig)===0;
+                click(nextTime, accent);
+                (function(b,t){ var delay=(t-c.currentTime)*1000; setTimeout(function(){ flash(b); }, Math.max(0,delay)); })(beat%sig, nextTime);
+                nextTime += 60.0/bpm;
+                beat++;
+            }
+        }
+        function start(){
+            playing=true; el.toggle.textContent='⏹ Stop'; beat=0;
+            var c=ctx(); if(c.state==='suspended') c.resume();
+            nextTime=c.currentTime+0.06; timer=setInterval(scheduler, scheduleMs);
+        }
+        function stop(){
+            playing=false; el.toggle.textContent='▶ Start'; clearInterval(timer);
+            [].forEach.call(el.beats.children,function(n){ n.setAttribute('data-on','0'); });
+        }
+        el.toggle.addEventListener('click',function(){ playing?stop():start(); });
+        el.slider.addEventListener('input',function(){ setBpm(parseInt(el.slider.value,10)); });
+        el.plus.addEventListener('click',function(){ setBpm(bpm+1); });
+        el.minus.addEventListener('click',function(){ setBpm(bpm-1); });
+        [].forEach.call(document.querySelectorAll('input[name="rg-sig"]'),function(r){
+            r.addEventListener('change',function(){ sig=parseInt(r.value,10); renderBeats(); beat=0; });
+        });
+        // Tap tempo
+        var taps=[];
+        el.tap.addEventListener('click',function(){
+            var now=performance.now(); taps.push(now); taps=taps.filter(function(t){ return now-t<3000; });
+            if(taps.length>=2){
+                var diffs=[]; for(var i=1;i<taps.length;i++) diffs.push(taps[i]-taps[i-1]);
+                var avg=diffs.reduce(function(a,b){return a+b;},0)/diffs.length;
+                setBpm(Math.round(60000/avg));
+            }
+        });
+        renderBeats(); setBpm(100);
+    })();
+    </script>
+</body>
+</html>

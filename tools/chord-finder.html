@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free guitar chord finder with fretboard diagrams. See finger positions for major, minor, 7th, and barre chords in every key — hear each chord. No sign-up.">
+    <meta name="author" content="ReviewsGuitar.com">
+    <meta name="keywords" content="guitar chord finder, guitar chords chart, chord diagrams, major minor 7th chords, barre chords, how to play guitar chords">
+    <title>Guitar Chord Finder — Free Chord Diagrams | ReviewsGuitar</title>
+    <link rel="canonical" href="https://reviewsguitar.com/tools/chord-finder">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Guitar Chord Finder — Fretboard Diagrams">
+    <meta property="og:description" content="Find guitar chord shapes with clear fretboard diagrams. Major, minor, 7th and barre chords in every key. Hear each chord. No sign-up.">
+    <meta property="og:url" content="https://reviewsguitar.com/tools/chord-finder">
+    <meta property="og:site_name" content="ReviewsGuitar.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Guitar Chord Finder",
+      "url": "https://reviewsguitar.com/tools/chord-finder",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any (web browser)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": ["Fretboard chord diagrams","Major, minor, 7th and barre shapes","All 12 keys","Audio playback of each chord"],
+      "publisher": { "@type": "Organization", "name": "ReviewsGuitar.com", "url": "https://reviewsguitar.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What are the easiest guitar chords for beginners?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Em, C, G, D, and A are the most common open chords for beginners. Em uses only two fingers, and together these five let you play thousands of songs." } },
+        { "@type": "Question", "name": "How do I read a guitar chord diagram?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vertical lines are strings (low E on the left), horizontal lines are frets. Dots show where to press; an O above a string means play it open, an X means do not play it." } }
+      ]
+    }
+    </script>
+
+    <style>
+    .rg-c-stage{max-width:760px;margin:0 auto;padding:0 1rem}
+    .rg-c-badges{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.1rem 0 1.4rem}
+    .rg-c-badge{font:600 .8rem/1 'Montserrat',sans-serif;color:var(--primary);background:var(--primary-glow);
+        border:1px solid var(--border-hover);border-radius:999px;padding:.5rem .85rem}
+    .rg-c-picker{display:flex;gap:.35rem;flex-wrap:wrap;justify-content:center;margin-bottom:.7rem}
+    .rg-c-key{width:44px;height:44px;border-radius:10px;background:var(--surface);border:1px solid var(--border);
+        color:var(--text);font:700 1rem/1 'Montserrat',sans-serif;cursor:pointer}
+    .rg-c-key[data-active="1"]{background:var(--primary);color:#06060a;border-color:var(--primary)}
+    .rg-c-type{display:flex;gap:.35rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.3rem}
+    .rg-c-type button{padding:.55rem .9rem;border-radius:999px;background:var(--surface);border:1px solid var(--border);
+        color:var(--text-dim);font:600 .85rem/1 'Inter',sans-serif;cursor:pointer}
+    .rg-c-type button[data-active="1"]{background:var(--primary);color:#06060a;border-color:var(--primary)}
+    /* Centerpiece: the chord diagram */
+    .rg-c-core{background:var(--surface-card);border:1px solid var(--border);border-radius:22px;
+        box-shadow:var(--shadow),var(--shadow-glow);padding:1.6rem 1rem;text-align:center}
+    .rg-c-name{font:800 clamp(2.2rem,10vw,3.4rem)/1 'Montserrat',sans-serif;color:var(--text);margin-bottom:.2rem}
+    .rg-c-diagram{margin:1rem auto 0;max-width:280px}
+    .rg-c-play{margin-top:1.2rem;font:700 .95rem/1 'Montserrat',sans-serif;border-radius:12px;padding:.9rem 1.4rem;
+        cursor:pointer;background:var(--primary);color:#06060a;border:1px solid var(--primary)}
+    .rg-c-play:hover{background:var(--primary-hover)}
+    .rg-c-copy{max-width:700px;margin:1.6rem auto 0;color:var(--text-dim);font:400 1rem/1.7 'Inter',sans-serif;text-align:center}
+    .rg-cta{max-width:760px;margin:2rem auto 0;padding:1.4rem 1.25rem;text-align:center;background:var(--surface-glass);
+        border:1px solid var(--border);border-radius:16px}
+    .rg-cta a{color:var(--primary);font-weight:700}
+    .rg-tools-strip{max-width:760px;margin:1.8rem auto 0;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+    .rg-tools-strip a{font:600 .85rem/1 'Montserrat',sans-serif;color:var(--text);border:1px solid var(--border);
+        border-radius:999px;padding:.6rem 1rem;text-decoration:none}
+    .rg-tools-strip a:hover{border-color:var(--border-hover);color:var(--primary)}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-logo"><a href="/">ReviewsGuitar.com</a></div>
+        <p>THE ELITE SOURCE FOR GUITAR REVIEWS &amp; GUIDES</p>
+    </header>
+    <nav>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/acoustic">Acoustic</a></li>
+            <li><a href="/collections/electric">Electric</a></li>
+            <li><a href="/collections/accessories">Accessories</a></li>
+            <li><a href="/collections/learning">Learning</a></li>
+            <li><a href="/tools/">Tools</a></li>
+        </ul>
+    </nav>
+
+    <main class="rg-c-stage">
+        <h1 style="text-align:center;margin:1.6rem 0 .4rem;font-family:'Montserrat',sans-serif">Guitar Chord Finder</h1>
+        <div class="rg-c-badges">
+            <span class="rg-c-badge">Free</span>
+            <span class="rg-c-badge">No sign-up</span>
+            <span class="rg-c-badge">Fretboard diagrams</span>
+            <span class="rg-c-badge">Hear each chord</span>
+            <span class="rg-c-badge">All 12 keys</span>
+        </div>
+
+        <div class="rg-c-picker" id="rg-keys" role="radiogroup" aria-label="Key"></div>
+        <div class="rg-c-type" id="rg-types" role="radiogroup" aria-label="Chord type"></div>
+
+        <section class="rg-c-core" aria-label="Chord diagram">
+            <div class="rg-c-name" id="rg-cname">C</div>
+            <div id="rg-frets" class="rg-c-diagram" aria-hidden="true"></div>
+            <button class="rg-c-play" id="rg-strum">🔊 Play Chord</button>
+        </section>
+
+        <p class="rg-c-copy">
+            This free guitar chord finder shows finger positions for major, minor, 7th, and barre chords in every key.
+            Vertical lines are strings with low E on the left; dots mark where to press, O means play open, and X means skip that string.
+            Tap play to hear the chord and check your shape by ear.
+        </p>
+
+        <div class="rg-tools-strip">
+            <a href="/tools/guitar-tuner">🎸 Guitar Tuner</a>
+            <a href="/tools/metronome">⏱ Metronome</a>
+            <a href="/tools/string-tension-calculator">🎚 String Tension</a>
+        </div>
+
+        <div class="rg-cta">
+            Learning chords faster with a plan — see our
+            <a href="/collections/learning/courses">best guitar courses &amp; apps for 2026 →</a>
+        </div>
+    </main>
+
+    <footer class="footer-hub">
+        <div class="footer-content">
+            <div class="footer-brand"><h2>REVIEWSGUITAR.COM</h2>
+                <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p></div>
+            <div class="footer-column"><h3>Free Tools</h3><ul class="footer-links">
+                <li><a href="/tools/guitar-tuner">Guitar Tuner</a></li>
+                <li><a href="/tools/metronome">Metronome</a></li>
+                <li><a href="/tools/string-tension-calculator">String Tension Calculator</a></li>
+                <li><a href="/tools/chord-finder">Chord Finder</a></li>
+            </ul></div>
+            <div class="footer-column"><h3>Collections</h3><ul class="footer-links">
+                <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
+                <li><a href="/collections/electric">Electric Guitars</a></li>
+                <li><a href="/collections/learning">Learn Guitar</a></li>
+            </ul></div>
+            <div class="footer-column"><h3>Legal</h3><ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul></div>
+        </div>
+    </footer>
+
+    <script>
+    (function(){
+        "use strict";
+        // Chord library. frets: string order low E -> high E. -1 = mute (X), 0 = open (O), n = fret.
+        // midi: MIDI note numbers per sounded string (for audio), aligned to frets, null where muted.
+        var KEYS=["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+        var openMidi=[40,45,50,55,59,64]; // E2 A2 D3 G3 B3 E4
+        // Base open/common shapes for C, A, G, E, D approach; provide curated common voicings per key+type.
+        // For compactness we store the most common playable voicing for each key & type.
+        var LIB={
+            "major":{
+                "C":[-1,3,2,0,1,0],"C#":[-1,4,3,1,2,1],"D":[-1,-1,0,2,3,2],"D#":[-1,6,5,3,4,3],
+                "E":[0,2,2,1,0,0],"F":[1,3,3,2,1,1],"F#":[2,4,4,3,2,2],"G":[3,2,0,0,0,3],
+                "G#":[4,6,6,5,4,4],"A":[-1,0,2,2,2,0],"A#":[-1,1,3,3,3,1],"B":[-1,2,4,4,4,2]
+            },
+            "minor":{
+                "C":[-1,3,5,5,4,3],"C#":[-1,4,6,6,5,4],"D":[-1,-1,0,2,3,1],"D#":[-1,6,8,8,7,6],
+                "E":[0,2,2,0,0,0],"F":[1,3,3,1,1,1],"F#":[2,4,4,2,2,2],"G":[3,5,5,3,3,3],
+                "G#":[4,6,6,4,4,4],"A":[-1,0,2,2,1,0],"A#":[-1,1,3,3,2,1],"B":[-1,2,4,4,3,2]
+            },
+            "7th":{
+                "C":[-1,3,2,3,1,0],"C#":[-1,4,3,4,2,1],"D":[-1,-1,0,2,1,2],"D#":[-1,6,5,6,4,3],
+                "E":[0,2,0,1,0,0],"F":[1,3,1,2,1,1],"F#":[2,4,2,3,2,2],"G":[3,2,0,0,0,1],
+                "G#":[4,6,4,5,4,4],"A":[-1,0,2,0,2,0],"A#":[-1,1,3,1,3,1],"B":[-1,2,1,2,0,2]
+            }
+        };
+        var TYPES=[["major","Major"],["minor","Minor"],["7th","7th"]];
+        var state={key:"C",type:"major"};
+
+        var el={keys:document.getElementById('rg-keys'),types:document.getElementById('rg-types'),
+                name:document.getElementById('rg-cname'),frets:document.getElementById('rg-frets'),strum:document.getElementById('rg-strum')};
+
+        KEYS.forEach(function(k){
+            var b=document.createElement('button'); b.className='rg-c-key'; b.textContent=k;
+            b.setAttribute('data-active',k===state.key?'1':'0');
+            b.addEventListener('click',function(){ state.key=k; syncKeys(); draw(); }); el.keys.appendChild(b);
+        });
+        TYPES.forEach(function(t){
+            var b=document.createElement('button'); b.textContent=t[1]; b.setAttribute('data-t',t[0]);
+            b.setAttribute('data-active',t[0]===state.type?'1':'0');
+            b.addEventListener('click',function(){ state.type=t[0]; syncTypes(); draw(); }); el.types.appendChild(b);
+        });
+        function syncKeys(){ [].forEach.call(el.keys.children,function(c){ c.setAttribute('data-active',c.textContent===state.key?'1':'0'); }); }
+        function syncTypes(){ [].forEach.call(el.types.children,function(c){ c.setAttribute('data-active',c.getAttribute('data-t')===state.type?'1':'0'); }); }
+
+        function label(){ return state.key + (state.type==='minor'?'m':state.type==='7th'?'7':''); }
+
+        function draw(){
+            el.name.textContent=label();
+            var f=LIB[state.type][state.key];
+            var W=240,H=260, padL=30,padT=44, sw=(W-padL*2)/5, nFrets=5;
+            var minFret=99,maxFret=0;
+            f.forEach(function(v){ if(v>0){ if(v<minFret)minFret=v; if(v>maxFret)maxFret=v; } });
+            var base=(maxFret>4)?minFret:1; if(base<1)base=1;
+            var svg='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="'+label()+' chord diagram">';
+            svg+='<rect x="0" y="0" width="'+W+'" height="'+H+'" fill="none"/>';
+            // nut or fret position label
+            if(base===1){ svg+='<rect x="'+padL+'" y="'+(padT-6)+'" width="'+(sw*5)+'" height="6" fill="#f5f5f5"/>'; }
+            else { svg+='<text x="6" y="'+(padT+18)+'" fill="#a1a1aa" font-family="Montserrat" font-size="14">'+base+'fr</text>'; }
+            // fret lines
+            for(var fr=0;fr<=nFrets;fr++){ var y=padT+fr*((H-padT-24)/nFrets);
+                svg+='<line x1="'+padL+'" y1="'+y+'" x2="'+(padL+sw*5)+'" y2="'+y+'" stroke="#33333f" stroke-width="2"/>'; }
+            // strings
+            for(var s=0;s<6;s++){ var x=padL+s*sw;
+                svg+='<line x1="'+x+'" y1="'+padT+'" x2="'+x+'" y2="'+(H-24)+'" stroke="#55555f" stroke-width="2"/>'; }
+            // markers
+            var frH=(H-padT-24)/nFrets;
+            for(var i=0;i<6;i++){ var v=f[i], x=padL+i*sw;
+                if(v===-1){ svg+='<text x="'+x+'" y="'+(padT-14)+'" fill="#e74c3c" font-family="Montserrat" font-size="16" text-anchor="middle">✕</text>'; }
+                else if(v===0){ svg+='<circle cx="'+x+'" cy="'+(padT-18)+'" r="6" fill="none" stroke="#2ecc71" stroke-width="2"/>'; }
+                else { var rel=v-base+1; var cy=padT+(rel-0.5)*frH;
+                    svg+='<circle cx="'+x+'" cy="'+cy+'" r="10" fill="#ffa500"/>'; }
+            }
+            svg+='</svg>';
+            el.frets.innerHTML=svg;
+        }
+
+        // Audio: strum the sounded strings
+        var audioCtx=null;
+        function ctx(){ audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)(); return audioCtx; }
+        el.strum.addEventListener('click',function(){
+            var c=ctx(); if(c.state==='suspended')c.resume();
+            var f=LIB[state.type][state.key], t0=c.currentTime;
+            f.forEach(function(v,i){
+                if(v===-1) return;
+                var midi=openMidi[i]+v; var freq=440*Math.pow(2,(midi-69)/12);
+                var start=t0+i*0.045;
+                var osc=c.createOscillator(), g=c.createGain();
+                osc.type='triangle'; osc.frequency.value=freq;
+                g.gain.setValueAtTime(0.0001,start); g.gain.exponentialRampToValueAtTime(0.22,start+0.01);
+                g.gain.exponentialRampToValueAtTime(0.0001,start+1.4);
+                osc.connect(g); g.connect(c.destination); osc.start(start); osc.stop(start+1.5);
+            });
+        });
+
+        draw();
+    })();
+    </script>
+</body>
+</html>

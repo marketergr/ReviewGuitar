@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free guitar string tension calculator. Enter gauge, scale length, and tuning to get pounds of tension per string — for standard, drop, and custom tunings. No sign-up.">
+    <meta name="author" content="ReviewsGuitar.com">
+    <meta name="keywords" content="guitar string tension calculator, string tension chart, string gauge calculator, scale length tension, drop tuning tension, guitar string pounds">
+    <title>Guitar String Tension Calculator — Free | ReviewsGuitar</title>
+    <link rel="canonical" href="https://reviewsguitar.com/tools/string-tension-calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Guitar String Tension Calculator">
+    <meta property="og:description" content="Calculate string tension in pounds from gauge, scale length, and tuning. Standard, drop, and custom tunings. No sign-up.">
+    <meta property="og:url" content="https://reviewsguitar.com/tools/string-tension-calculator">
+    <meta property="og:site_name" content="ReviewsGuitar.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Guitar String Tension Calculator",
+      "url": "https://reviewsguitar.com/tools/string-tension-calculator",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any (web browser)",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": ["Per-string tension in pounds","Any scale length","Standard, drop and custom tunings","Total neck tension"],
+      "publisher": { "@type": "Organization", "name": "ReviewsGuitar.com", "url": "https://reviewsguitar.com/" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How is guitar string tension calculated?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tension (lb) = (unit weight × (2 × scale length in inches × frequency))² ÷ 386.4. Unit weight comes from the string gauge and construction; frequency comes from the target note. This calculator uses D'Addario unit-weight data." } },
+        { "@type": "Question", "name": "What is a good total string tension for a guitar?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A standard-tuned electric with 10–46 gauge sits around 95–110 lb of total tension across a 25.5-inch scale. Lighter sets feel slinkier; heavier sets and longer scales raise tension." } }
+      ]
+    }
+    </script>
+
+    <style>
+    .rg-t-stage{max-width:820px;margin:0 auto;padding:0 1rem}
+    .rg-t-badges{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin:1.1rem 0 1.5rem}
+    .rg-t-badge{font:600 .8rem/1 'Montserrat',sans-serif;color:var(--primary);background:var(--primary-glow);
+        border:1px solid var(--border-hover);border-radius:999px;padding:.5rem .85rem}
+    .rg-t-core{background:var(--surface-card);border:1px solid var(--border);border-radius:22px;
+        box-shadow:var(--shadow),var(--shadow-glow);padding:1.6rem 1rem}
+    .rg-t-controls{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:1.2rem}
+    .rg-t-field{display:flex;flex-direction:column;gap:.35rem}
+    .rg-t-field label{font:600 .78rem/1 'Montserrat',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--text-dim)}
+    .rg-t-field select{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:10px;
+        padding:.7rem .8rem;font:600 .95rem/1 'Inter',sans-serif;min-width:190px}
+    /* Centerpiece: the live tension table */
+    .rg-t-table{width:100%;border-collapse:collapse;font:400 .95rem/1.3 'Inter',sans-serif}
+    .rg-t-table th{font:700 .72rem/1 'Montserrat',sans-serif;letter-spacing:.08em;text-transform:uppercase;
+        color:var(--text-dim);text-align:left;padding:.6rem .5rem;border-bottom:1px solid var(--border)}
+    .rg-t-table td{padding:.75rem .5rem;border-bottom:1px solid var(--border)}
+    .rg-t-note{font-weight:700;color:var(--text)}
+    .rg-t-lb{font:800 1.05rem/1 'Montserrat',sans-serif;color:var(--primary)}
+    .rg-t-bar{height:8px;border-radius:5px;background:var(--primary);opacity:.85;min-width:4px}
+    .rg-t-total{display:flex;justify-content:space-between;align-items:center;margin-top:1.1rem;padding:1rem;
+        background:var(--surface-glass);border:1px solid var(--border-hover);border-radius:12px}
+    .rg-t-total b{font:800 1.6rem/1 'Montserrat',sans-serif;color:var(--primary)}
+    .rg-t-copy{max-width:760px;margin:1.6rem auto 0;color:var(--text-dim);font:400 1rem/1.7 'Inter',sans-serif;text-align:center}
+    .rg-cta{max-width:820px;margin:2rem auto 0;padding:1.4rem 1.25rem;text-align:center;background:var(--surface-glass);
+        border:1px solid var(--border);border-radius:16px}
+    .rg-cta a{color:var(--primary);font-weight:700}
+    .rg-tools-strip{max-width:820px;margin:1.8rem auto 0;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+    .rg-tools-strip a{font:600 .85rem/1 'Montserrat',sans-serif;color:var(--text);border:1px solid var(--border);
+        border-radius:999px;padding:.6rem 1rem;text-decoration:none}
+    .rg-tools-strip a:hover{border-color:var(--border-hover);color:var(--primary)}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-logo"><a href="/">ReviewsGuitar.com</a></div>
+        <p>THE ELITE SOURCE FOR GUITAR REVIEWS &amp; GUIDES</p>
+    </header>
+    <nav>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/acoustic">Acoustic</a></li>
+            <li><a href="/collections/electric">Electric</a></li>
+            <li><a href="/collections/accessories">Accessories</a></li>
+            <li><a href="/collections/learning">Learning</a></li>
+            <li><a href="/tools/">Tools</a></li>
+        </ul>
+    </nav>
+
+    <main class="rg-t-stage">
+        <h1 style="text-align:center;margin:1.6rem 0 .4rem;font-family:'Montserrat',sans-serif">Guitar String Tension Calculator</h1>
+        <div class="rg-t-badges">
+            <span class="rg-t-badge">Free</span>
+            <span class="rg-t-badge">No sign-up</span>
+            <span class="rg-t-badge">Tension in pounds</span>
+            <span class="rg-t-badge">Any scale length</span>
+            <span class="rg-t-badge">Drop &amp; custom tunings</span>
+        </div>
+
+        <section class="rg-t-core" aria-label="String tension calculator">
+            <div class="rg-t-controls">
+                <div class="rg-t-field">
+                    <label for="rg-gauge">String set (gauge)</label>
+                    <select id="rg-gauge"></select>
+                </div>
+                <div class="rg-t-field">
+                    <label for="rg-scale">Scale length</label>
+                    <select id="rg-scale"></select>
+                </div>
+                <div class="rg-t-field">
+                    <label for="rg-tuning">Tuning</label>
+                    <select id="rg-tuning"></select>
+                </div>
+            </div>
+
+            <table class="rg-t-table">
+                <thead><tr><th>String</th><th>Gauge</th><th>Note</th><th>Tension</th><th style="width:34%">Relative</th></tr></thead>
+                <tbody id="rg-rows"></tbody>
+            </table>
+
+            <div class="rg-t-total">
+                <span style="font:600 .95rem/1 'Montserrat',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim)">Total neck tension</span>
+                <b><span id="rg-total">0</span> lb</b>
+            </div>
+        </section>
+
+        <p class="rg-t-copy">
+            This free guitar string tension calculator turns string gauge, scale length, and tuning into pounds of tension per string.
+            Tension equals unit weight times the square of twice the scale length times frequency, divided by 386.4 — using D'Addario's published unit weights for electric (nickel-wound) strings.
+            Use it to compare a 9–42 versus 10–46 set, or to check tension before dropping to Drop C or Drop D.
+        </p>
+
+        <div class="rg-tools-strip">
+            <a href="/tools/guitar-tuner">🎸 Guitar Tuner</a>
+            <a href="/tools/metronome">⏱ Metronome</a>
+            <a href="/tools/chord-finder">🎵 Chord Finder</a>
+        </div>
+
+        <div class="rg-cta">
+            Ready to restring? See our tested picks for
+            <a href="/collections/accessories/strings">the best guitar strings for 2026 →</a>
+        </div>
+    </main>
+
+    <footer class="footer-hub">
+        <div class="footer-content">
+            <div class="footer-brand"><h2>REVIEWSGUITAR.COM</h2>
+                <p>Establishing the elite standard for musical gear analysis in 2026. We test, we play, we review—so you can find your perfect sound without the noise.</p></div>
+            <div class="footer-column"><h3>Free Tools</h3><ul class="footer-links">
+                <li><a href="/tools/guitar-tuner">Guitar Tuner</a></li>
+                <li><a href="/tools/metronome">Metronome</a></li>
+                <li><a href="/tools/string-tension-calculator">String Tension Calculator</a></li>
+                <li><a href="/tools/chord-finder">Chord Finder</a></li>
+            </ul></div>
+            <div class="footer-column"><h3>Collections</h3><ul class="footer-links">
+                <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
+                <li><a href="/collections/electric">Electric Guitars</a></li>
+                <li><a href="/collections/accessories/strings">Guitar Strings</a></li>
+            </ul></div>
+            <div class="footer-column"><h3>Legal</h3><ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul></div>
+        </div>
+    </footer>
+
+    <script>
+    (function(){
+        "use strict";
+        // D'Addario official unit weights (lb/in), extracted from D'Addario's published string tension chart.
+        // Plain steel (PL) and Nickel Wound (NW), keyed by gauge in thousandths of an inch.
+        var PL={8:0.00001418,9:0.00001794,10:0.00002215,11:0.0000268,12:0.0000319,13:0.00003744,14:0.00004342,15:0.00004984,16:0.00005671,17:0.00006402,18:0.00007177,20:0.00008861};
+        var NW={17:0.00005524,18:0.00006215,20:0.00007495,22:0.00009184,24:0.00010857,26:0.00012671,28:0.00014666,30:0.00017236,32:0.00019347,34:0.0002159,36:0.00023964,38:0.00026471,42:0.00032279,44:0.00035182,46:0.00038216,49:0.00043014,52:0.00048109,54:0.00053838,56:0.00057598,59:0.00064191,62:0.00070697};
+        // note frequencies (Hz)
+        var F={"C2":65.41,"C#2":69.30,"D2":73.42,"D#2":77.78,"E2":82.41,"F2":87.31,"F#2":92.50,"G2":98.00,"G#2":103.83,"A2":110.00,"A#2":116.54,"B2":123.47,
+               "C3":130.81,"C#3":138.59,"D3":146.83,"D#3":155.56,"E3":164.81,"F3":174.61,"G3":196.00,"A3":220.00,"B3":246.94,"C4":261.63,"D4":293.66,"E4":329.63};
+        // Electric (nickel wound) gauge sets. Each string is [gauge, "P" plain | "W" wound], high E -> low E.
+        var SETS={
+            "9-42 (Super Light)":[[9,"P"],[11,"P"],[16,"P"],[24,"W"],[32,"W"],[42,"W"]],
+            "9-46 (Custom Light)":[[9,"P"],[11,"P"],[16,"P"],[26,"W"],[36,"W"],[46,"W"]],
+            "10-46 (Regular Light)":[[10,"P"],[13,"P"],[17,"P"],[26,"W"],[36,"W"],[46,"W"]],
+            "10-52 (Light Top / Heavy Bottom)":[[10,"P"],[13,"P"],[17,"P"],[30,"W"],[42,"W"],[52,"W"]],
+            "11-49 (Medium)":[[11,"P"],[14,"P"],[18,"P"],[28,"W"],[38,"W"],[49,"W"]],
+            "11-54 (Heavy / Drop)":[[11,"P"],[14,"P"],[18,"P"],[32,"W"],[44,"W"],[54,"W"]],
+            "12-52 (Jazz, wound G)":[[12,"P"],[16,"P"],[20,"W"],[32,"W"],[42,"W"],[52,"W"]]
+        };
+        function uw(g,type){ return type==="W" ? NW[g] : PL[g]; }
+        var SCALES={ '24.75" (Gibson / Les Paul)':24.75, '25.0" (PRS)':25.0, '25.5" (Fender / Strat)':25.5, '26.5" (Baritone)':26.5, '27.0" (Baritone)':27.0 };
+        // tuning presets: high E -> low E order to match set order
+        var TUNINGS={
+            "Standard (EADGBE)":["E4","B3","G3","D3","A2","E2"],
+            "Drop D":["E4","B3","G3","D3","A2","D2"],
+            "Half-Step Down (Eb)":["D#4","A#3","F#3","C#3","G#2","D#2"],
+            "Full-Step Down (D)":["D4","A3","F3","C3","G2","D2"],
+            "Drop C":["D4","A3","F3","C3","G2","C2"]
+        };
+        // add missing sharps to F
+        F["D#4"]=311.13; F["A#3"]=233.08; F["F#3"]=185.00; F["C#3"]=138.59; F["G#2"]=103.83; F["D#2"]=77.78;
+        F["F3"]=174.61; F["C3"]=130.81; F["G2"]=98.00;
+
+        var el={gauge:document.getElementById('rg-gauge'),scale:document.getElementById('rg-scale'),
+                tuning:document.getElementById('rg-tuning'),rows:document.getElementById('rg-rows'),total:document.getElementById('rg-total')};
+        function opts(sel,obj,def){ Object.keys(obj).forEach(function(k){ var o=document.createElement('option'); o.value=k; o.textContent=k; if(k===def)o.selected=true; sel.appendChild(o); }); }
+        opts(el.gauge,SETS,"10-46 (Regular Light)"); opts(el.scale,SCALES,'25.5" (Fender / Strat)'); opts(el.tuning,TUNINGS,"Standard (EADGBE)");
+
+        function noteName(n){ return n.replace(/[0-9]/g,''); }
+        function calc(){
+            var set=SETS[el.gauge.value], scale=SCALES[el.scale.value], tun=TUNINGS[el.tuning.value];
+            var rows=[], max=0, total=0;
+            for(var i=0;i<6;i++){
+                var g=set[i][0], type=set[i][1], note=tun[i], f=F[note]||0;
+                var w=uw(g,type)||0;
+                var t=(w*Math.pow(2*scale*f,2))/386.4;
+                total+=t; if(t>max)max=t; rows.push({g:g,type:type,note:note,t:t,str:6-i});
+            }
+            el.rows.innerHTML='';
+            rows.forEach(function(r){
+                var tr=document.createElement('tr');
+                tr.innerHTML='<td>'+r.str+'</td><td>.'+String(r.g).padStart(3,'0')+(r.type==='W'?' <span style="color:var(--text-dim);font-size:.8em">wound</span>':'')+'</td>'+
+                    '<td class="rg-t-note">'+noteName(r.note)+'</td>'+
+                    '<td class="rg-t-lb">'+r.t.toFixed(1)+' lb</td>'+
+                    '<td><div class="rg-t-bar" style="width:'+Math.max(4,(r.t/max*100))+'%"></div></td>';
+                el.rows.appendChild(tr);
+            });
+            el.total.textContent=total.toFixed(1);
+        }
+        [el.gauge,el.scale,el.tuning].forEach(function(s){ s.addEventListener('change',calc); });
+        calc();
+    })();
+    </script>
+</body>
+</html>
