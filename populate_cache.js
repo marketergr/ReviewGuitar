@@ -69,7 +69,7 @@ function generateArticle(silo, category, keyword) {
         </div>
         <div class="faq-item">
             <span class="faq-question">What if I need more help with ${kw}?</span>
-            <p class="faq-answer">We're here to help! Check out our learning silo for beginner-friendly lessons that will walk you through every step of using your new gear.</p>
+            <p class="faq-answer">We're here to help! Check out our learning hub for beginner-friendly lessons that will walk you through every step of using your new gear.</p>
         </div>
     </div>
     `;

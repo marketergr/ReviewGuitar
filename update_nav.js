@@ -4,40 +4,45 @@ const path = require('path');
 const NEW_NAV = `<nav>
         <div class="mobile-menu-toggle">☰ Menu</div>
         <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li class="dropdown">
-                <a href="/collections/acoustic/index.html">Acoustic</a>
+                <a href="/collections/acoustic">Acoustic</a>
                 <div class="dropdown-content">
-                    <a href="/collections/acoustic/best-for-beginners.html">Best for Beginners</a>
-                    <a href="/collections/acoustic/best-under-500.html">Best Under $500</a>
-                    <a href="/collections/acoustic/premium-guide.html">Premium Guide</a>
+                    <a href="/collections/acoustic">All Acoustic Guitars</a>
+                    <a href="/collections/acoustic/best-for-beginners">Best for Beginners</a>
+                    <a href="/collections/acoustic/best-under-500">Best Under $500</a>
+                    <a href="/collections/acoustic/premium-guide">Premium Guide</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="/collections/electric/index.html">Electric</a>
+                <a href="/collections/electric">Electric</a>
                 <div class="dropdown-content">
-                    <a href="/collections/electric/starters.html">Starter Kits</a>
-                    <a href="/collections/electric/metal-guitars.html">Best for Metal</a>
-                    <a href="/collections/electric/best-under-300.html">Best Under $300</a>
+                    <a href="/collections/electric">All Electric Guitars</a>
+                    <a href="/collections/electric/starters">Starter Kits</a>
+                    <a href="/collections/electric/metal-guitars">Best for Metal</a>
+                    <a href="/collections/electric/best-under-300">Best Under $300</a>
+                    <a href="/collections/electric/best-under-1000">Best Under $1000</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="/collections/accessories/index.html">Gear</a>
+                <a href="/collections/accessories">Gear</a>
                 <div class="dropdown-content">
-                    <a href="/collections/accessories/strings.html">Strings</a>
-                    <a href="/collections/accessories/pedals.html">Pedals</a>
-                    <a href="/collections/accessories/amps.html">Amps</a>
+                    <a href="/collections/accessories">All Gear</a>
+                    <a href="/collections/accessories/strings">Strings</a>
+                    <a href="/collections/accessories/pedals">Pedals</a>
+                    <a href="/collections/accessories/amps">Amps</a>
                 </div>
             </li>
             <li class="dropdown">
-                <a href="/collections/learning/index.html">Education</a>
+                <a href="/collections/learning">Education</a>
                 <div class="dropdown-content">
-                    <a href="/collections/learning/apps.html">Learning Apps</a>
-                    <a href="/collections/learning/courses.html">Video Courses</a>
-                    <a href="/collections/learning/tips.html">Guitar Tips</a>
+                    <a href="/collections/learning">All Education</a>
+                    <a href="/collections/learning/apps">Learning Apps</a>
+                    <a href="/collections/learning/courses">Video Courses</a>
+                    <a href="/collections/learning/tips">Guitar Tips</a>
                 </div>
             </li>
-            <li><a href="/collections/buying/index.html">Guides</a></li>
+            <li><a href="/collections/buying">Guides</a></li>
         </ul>
     </nav>`;
 
@@ -50,27 +55,27 @@ const NEW_FOOTER = `<footer class="footer-hub">
             <div class="footer-column">
                 <h3>Collections</h3>
                 <ul class="footer-links">
-                    <li><a href="/collections/acoustic/index.html">Acoustic Guitars</a></li>
-                    <li><a href="/collections/electric/index.html">Electric Guitars</a></li>
-                    <li><a href="/collections/accessories/index.html">Essential Gear</a></li>
-                    <li><a href="/collections/learning/index.html">Education</a></li>
+                    <li><a href="/collections/acoustic">Acoustic Guitars</a></li>
+                    <li><a href="/collections/electric">Electric Guitars</a></li>
+                    <li><a href="/collections/accessories">Essential Gear</a></li>
+                    <li><a href="/collections/learning">Education</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Guides</h3>
                 <ul class="footer-links">
-                    <li><a href="/collections/acoustic/beginner-guide.html">Beginner Start</a></li>
-                    <li><a href="/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html">Metal Guide</a></li>
-                    <li><a href="/collections/buying/index.html">Buying Strategy</a></li>
+                    <li><a href="/collections/acoustic/best-for-beginners">Beginner Start</a></li>
+                    <li><a href="/collections/electric/metal-guitars">Metal Guide</a></li>
+                    <li><a href="/collections/buying">Buying Strategy</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Legal</h3>
                 <ul class="footer-links">
-                    <li><a href="/about.html">About Us</a></li>
-                    <li><a href="/privacy.html">Privacy Policy</a></li>
-                    <li><a href="/terms.html">Terms & Conditions</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -88,6 +93,42 @@ const NEW_FOOTER = `<footer class="footer-hub">
                     navLinks.classList.toggle('active');
                 });
             }
+
+            const isMobile = () => window.innerWidth <= 768;
+            
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                let closeTimer = null;
+                
+                dropdown.addEventListener('mouseenter', () => {
+                    if (isMobile()) return;
+                    clearTimeout(closeTimer);
+                    dropdown.classList.add('is-open');
+                });
+                
+                dropdown.addEventListener('mouseleave', () => {
+                    if (isMobile()) return;
+                    closeTimer = setTimeout(() => {
+                        dropdown.classList.remove('is-open');
+                    }, 150);
+                });
+                
+                const trigger = dropdown.querySelector('a');
+                if (trigger) {
+                    trigger.addEventListener('click', (e) => {
+                        if (!isMobile()) return;
+                        e.preventDefault();
+                        const isOpen = dropdown.classList.contains('is-open');
+                        document.querySelectorAll('.dropdown.is-open').forEach(d => d.classList.remove('is-open'));
+                        if (!isOpen) dropdown.classList.add('is-open');
+                    });
+                }
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.dropdown')) {
+                    document.querySelectorAll('.dropdown.is-open').forEach(d => d.classList.remove('is-open'));
+                }
+            });
         });
     </script>
 </body>`;
@@ -119,6 +160,11 @@ function processDir(dir) {
             const styleRegex = /<link rel="stylesheet" href="[^"]*style\.min\.css">/i;
             if (styleRegex.test(content)) {
                 content = content.replace(styleRegex, '<link rel="stylesheet" href="/css/style.min.css">');
+            }
+
+            // Inject favicon link if not already present
+            if (!content.includes('rel="icon"') && !content.includes('rel="shortcut icon"')) {
+                content = content.replace(/<\/head>/i, '    <link rel="icon" type="image/png" href="/images/favicon.png">\n</head>');
             }
             
             fs.writeFileSync(fullPath, content);

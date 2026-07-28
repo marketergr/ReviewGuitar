@@ -1,0 +1,34 @@
+# ReviewsGuitar.com — Expert Guitar & Gear Reviews
+
+> One-line: Independent, hands-on reviews and buyer's guides for acoustic, electric, and bass guitars plus amps, pedals, strings, tuners, and learning resources. Every "best" pick below is our own editorial rating (a single expert review, not aggregated user scores). Prices are the last figures we checked and change over time — verify on the retailer page.
+> Last updated: 2026-07-11
+> Affiliate disclosure: ReviewsGuitar.com earns Amazon Associate commissions on qualifying purchases at no extra cost to the reader. This does not change our ratings.
+
+## Top recommendations (TL;DR)
+- **Best acoustic guitar for beginners:** [Yamaha FG800 Acoustic Guitar](https://reviewsguitar.com/best/beginner-acoustic-guitar) — $229.99, rated 4.8/5. Incredible sustain for the price.
+- **Best acoustic guitar under $500:** [Fender CD-60S Dreadnought](https://reviewsguitar.com/best/acoustic-guitar-under-500) — $199.99, rated 4.7/5. Solid wood top at budget price.
+- **Best acoustic guitar under $1000:** [Martin D-10E Road Series](https://reviewsguitar.com/best/acoustic-guitar-under-1000) — $899.00, rated 4.9/5. Iconic Martin tone.
+- **Best electric guitar under $1000:** [PRS SE Custom 24 Electric Guitar](https://reviewsguitar.com/reviews/prs-se-custom-24) — $899.00, rated 4.9/5. Stunning build for the price.
+- **Best beginner electric guitar kit:** [Squier Affinity Telecaster](https://reviewsguitar.com/best/beginner-electric-guitar-kit) — $289.99, rated 4.6/5. Authentic Tele 'twang'.
+- **Best budget bass guitar:** [Squier Classic Vibe Mustang Bass](https://reviewsguitar.com/best/best-budget-bass) — $459.99, rated 4.7/5. Extremely easy to play.
+- **Best coated guitar strings:** [D'Addario XS Coated Strings](https://reviewsguitar.com/reviews/daddario-xs-strings) — $14.99, rated 4.9/5. Incredible longevity.
+- **Best clip-on / polyphonic tuner:** [TC Electronic PolyTune 3](https://reviewsguitar.com/reviews/tc-polytune-3) — $99.00, rated 5/5. Instant tuning of all strings.
+- **Best practice amp for home:** [Boss Katana-50 MkII Combo Amp](https://reviewsguitar.com/reviews/boss-katana-50-mkii) — $299.99, rated 4.8/5. Katana: Superior high-gain tones and gig volume.
+- **Best beginner guitar course/book:** [Hal Leonard Guitar Method Book](https://reviewsguitar.com/collections/learning) — $24.99, rated 4.8/5. Highly structured progression.
+- **Best guitar capo:** [WINGO Professional Guitar Capo](https://reviewsguitar.com/best/best-12-string-capo) — $10.99, rated 4.8/5. Elegant visual design.
+- **Best wireless guitar system:** [Fender Telepath Wireless System](https://reviewsguitar.com/best/best-wireless-guitar-system) — $199.99, rated 4.5/5. No tone loss compared to cables.
+
+## How to use this site
+- **Best-of hubs** (`/best/...`): ranked shortlists for a specific need (budget, style, use case).
+- **Reviews** (`/reviews/...`): single-product verdicts answering "is X worth it?".
+- **Comparisons** (`/collections/<type>/<a>-vs-<b>`): head-to-head, spec-by-spec.
+- **Collections** (`/collections/acoustic|electric|bass|accessories|learning|buying`): browse by category.
+
+## Machine-readable data
+- Full gear database with ratings, specs, pros/cons and canonical links: https://reviewsguitar.com/llms-full.txt
+- Sitemap: https://reviewsguitar.com/sitemap.xml
+
+## Trust & method
+- Ratings are on a 5-point scale from our own testing/editorial review. We do not publish fabricated user review counts.
+- We flag pros AND cons for every product; see llms-full.txt.
+- Contact / corrections: https://reviewsguitar.com/contact

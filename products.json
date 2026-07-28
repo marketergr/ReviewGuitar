@@ -34,7 +34,7 @@
     "rating": 4.7,
     "features": [
       "Dreadnought Body",
-      "Solid Mahogany Top",
+      "Solid Spruce Top",
       "Easy-to-Play Neck"
     ],
     "pros": [
@@ -196,7 +196,7 @@
       "Can sound 'thin' into cheap amps",
       "Niche utility for jazz/blues"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-v-8-v-L._AC_SL1500_.jpg",
+    "image": "/images/boss_ds1_pedal.png",
     "amazonLink": "https://www.amazon.com/dp/B0002CZV82/?tag=reviewsguitar-20"
   },
   {
@@ -347,7 +347,7 @@
       "Some songs feel a bit dated",
       "Requires discipline to follow"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-v-8-v-L._AC_SL1500_.jpg",
+    "image": "/images/hal_leonard_method.png",
     "amazonLink": "https://www.amazon.com/dp/B0002EWTWG/?tag=reviewsguitar-20"
   },
   {
@@ -495,7 +495,7 @@
       "More expensive than basic A-frames",
       "A bit heavy for gig bags"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-v-L._AC_SL1500_.jpg",
+    "image": "/images/hercules_stand.png",
     "amazonLink": "https://www.amazon.com/dp/B000P5WTQS/?tag=reviewsguitar-20"
   },
   {
@@ -520,7 +520,7 @@
       "Corrode faster than coated strings",
       "Requires changing every 2-3 weeks for pros"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-v-L._AC_SL1500_.jpg",
+    "image": "/images/ernie_ball_strings.png",
     "amazonLink": "https://www.amazon.com/dp/B0002M6CVC/?tag=reviewsguitar-20"
   },
   {
@@ -595,7 +595,7 @@
       "Strings are generic grade",
       "Tuner requires CR2032 battery"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "/images/accessories-6.jpg",
     "amazonLink": "https://www.amazon.com/dp/B085MTSHCY/?tag=reviewsguitar-20"
   },
   {
@@ -621,7 +621,7 @@
       "Not recommended for nitro finishes",
       "Fixed height"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "/images/accessories-7.jpg",
     "amazonLink": "https://www.amazon.com/dp/B018FCZKR2/?tag=reviewsguitar-20"
   },
   {
@@ -647,7 +647,7 @@
       "Slightly heavier than plastic capos",
       "Finish can wear over years of use"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "/images/accessories-8.jpg",
     "amazonLink": "https://www.amazon.com/dp/B073LSS9TJ/?tag=reviewsguitar-20"
   },
   {
@@ -673,7 +673,7 @@
       "Picks tend to 'disappear'!",
       "Celluloid wears faster than Tortex"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-v-8-x-L._AC_SL1500_.jpg",
+    "image": "/images/accessories-9.jpg",
     "amazonLink": "https://www.amazon.com/dp/B07ZRYKNGS/?tag=reviewsguitar-20"
   },
   {
@@ -699,7 +699,7 @@
       "Screen is smaller than PolyTune",
       "Clip is tight on thick headstocks"
     ],
-    "image": "https://m.media-amazon.com/images/I/71v-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "/images/accessories-10.jpg",
     "amazonLink": "https://www.amazon.com/dp/B074KGZ9Z7/?tag=reviewsguitar-20"
   },
   {
@@ -725,7 +725,7 @@
       "Edges can be a bit stiff initially",
       "Pattern is one-sided"
     ],
-    "image": "https://m.media-amazon.com/images/I/81x-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "/images/accessories-11.jpg",
     "amazonLink": "https://www.amazon.com/dp/B078MPY48Y/?tag=reviewsguitar-20"
   },
   {
@@ -751,7 +751,7 @@
       "Potential 2.4GHz WiFi interference",
       "Higher price than budget wireless units"
     ],
-    "image": "https://m.media-amazon.com/images/I/81v-x-v-8-x-L._AC_SL1500_.jpg",
+    "image": "/images/accessories-12.jpg",
     "amazonLink": "https://www.amazon.com/dp/B0D7G4MWZ9/?tag=reviewsguitar-20"
   },
   {

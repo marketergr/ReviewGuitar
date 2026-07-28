@@ -13,7 +13,7 @@ if (vercelConfig.rewrites) {
         const localPath = route.destination.startsWith('/') ? route.destination.substring(1) : route.destination;
         const fullPath = path.join(process.cwd(), localPath);
 
-        if (!fs.existsSync(fullPath)) {
+        if (!fs.existsSync(fullPath) && !fs.existsSync(fullPath + '.html')) {
             missingFiles.push({
                 source: route.source,
                 destination: route.destination,

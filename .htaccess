@@ -1,31 +1,161 @@
-# Gzip compression
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json
-</IfModule>
+# GuitarReview.com 301 Redirects
+RewriteEngine On
 
-# Browser Caching
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 month"
-  ExpiresByType image/jpg "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
+# Stale-taxonomy 301 Redirects (GSC 404 cleanup)
+RewriteRule ^collections/ultra-tele-review.html$ /collections/electric/ultra-tele-review [R=301,L]
+RewriteRule ^collections/pedals.html$ /collections/accessories/pedals [R=301,L]
+RewriteRule ^collections/strings.html$ /collections/accessories/strings [R=301,L]
+RewriteRule ^collections/starters.html$ /collections/electric/starters [R=301,L]
+RewriteRule ^collections/electric/under-1000.html$ /collections/electric/best-under-1000 [R=301,L]
+RewriteRule ^collections/amp-reviews.html$ /collections/electric/amp-reviews [R=301,L]
+RewriteRule ^collections/electric/starter-kit.html$ /acoustic/beginner/affordable-acoustic-guitar-starter-kit [R=301,L]
+RewriteRule ^collections/accessories/picks-2026.html$ /accessories/picks/best-guitar-picks-2026 [R=301,L]
+RewriteRule ^collections/where-to-buy.html$ /collections/buying/where-to-buy [R=301,L]
 
-# Security Headers
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set X-Frame-Options "SAMEORIGIN"
-  Header set X-XSS-Protection "1; mode=block"
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
-</IfModule>
+# 410 Gone (GSC 404 cleanup — permanently removed, no equivalent)
+RewriteRule ^buy/ - [G,L]
+RewriteRule ^collections/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html$ - [G,L]
+RewriteRule ^collections/online-vs-store.html$ - [G,L]
+RewriteRule ^collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html$ - [G,L]
+RewriteRule ^collections/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html$ - [G,L]
+RewriteRule ^collections/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html$ - [G,L]
+RewriteRule ^collections/learning/beginner-tips.html$ - [G,L]
+RewriteRule ^collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html$ - [G,L]
+RewriteRule ^collections/accessories/tuners-review.html$ - [G,L]
+RewriteRule ^collections/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html$ - [G,L]
+RewriteRule ^collections/learning/online-courses.html$ - [G,L]
+RewriteRule ^collections/accessories/cables-affordable.html$ - [G,L]
+RewriteRule ^collections/learning/apps-review.html$ - [G,L]
+RewriteRule ^collections/accessories/cases-hard.html$ - [G,L]
+RewriteRule ^collections/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html$ - [G,L]
+# Pinterest Legacy Redirects
+RewriteRule ^guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck/?$ /collections/electric/ultra-tele-review.html [R=301,L]
+RewriteRule ^guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck$ /collections/electric/ultra-tele-review.html [R=301,L]
+RewriteRule ^guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit/?$ /collections/electric/silver-sky-review.html [R=301,L]
+RewriteRule ^guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit$ /collections/electric/silver-sky-review.html [R=301,L]
+RewriteRule ^prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst/?$ /collections/electric/metal-guitars.html [R=301,L]
+RewriteRule ^prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst$ /collections/electric/metal-guitars.html [R=301,L]
+RewriteRule ^fender-custom-shop-1959-stratocaster-relic-super-faded-aged-shell-pink/?$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^fender-custom-shop-1959-stratocaster-relic-super-faded-aged-shell-pink$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^guitar-fender-custom-shop-1963-stratocaster-heavy-relic-aged-3-colour-sunburst-left-handed/?$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^guitar-fender-custom-shop-1963-stratocaster-heavy-relic-aged-3-colour-sunburst-left-handed$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^guitar-fender-american-acoustasonic-jazzmaster-acoustic-electric-guitar-in-natural/?$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^guitar-fender-american-acoustasonic-jazzmaster-acoustic-electric-guitar-in-natural$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^guitar-yamaha-pacifica-311h-electric-guitar-in-vintage-white/?$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^guitar-yamaha-pacifica-311h-electric-guitar-in-vintage-white$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^guitar-yamaha-fg800-acoustic-guitar-in-natural/?$ /collections/acoustic/best-for-beginners.html [R=301,L]
+RewriteRule ^guitar-yamaha-fg800-acoustic-guitar-in-natural$ /collections/acoustic/best-for-beginners.html [R=301,L]
+RewriteRule ^guitar-fender-cd-60s-dreadnought-in-natural/?$ /collections/acoustic/best-under-500.html [R=301,L]
+RewriteRule ^guitar-fender-cd-60s-dreadnought-in-natural$ /collections/acoustic/best-under-500.html [R=301,L]
+RewriteRule ^guitar-martin-d-10e-road-series-in-natural/?$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^guitar-martin-d-10e-road-series-in-natural$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^guitar-taylor-214ce-plus-acoustic-guitar-in-natural/?$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^guitar-taylor-214ce-plus-acoustic-guitar-in-natural$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^best-under-500/?$ /collections/acoustic/best-under-500.html [R=301,L]
+RewriteRule ^best-under-500.html$ /collections/acoustic/best-under-500.html [R=301,L]
+RewriteRule ^silos/acoustic/best-under-500.html$ /collections/acoustic/best-under-500.html [R=301,L]
+RewriteRule ^top-brands/?$ /collections/acoustic/top-brands.html [R=301,L]
+RewriteRule ^top-brands.html$ /collections/acoustic/top-brands.html [R=301,L]
+RewriteRule ^silos/acoustic/top-brands.html$ /collections/acoustic/top-brands.html [R=301,L]
+RewriteRule ^care-guide/?$ /collections/acoustic/care-guide.html [R=301,L]
+RewriteRule ^care-guide.html$ /collections/acoustic/care-guide.html [R=301,L]
+RewriteRule ^silos/acoustic/care-guide.html$ /collections/acoustic/care-guide.html [R=301,L]
+RewriteRule ^best-for-beginners/?$ /collections/acoustic/best-for-beginners.html [R=301,L]
+RewriteRule ^best-for-beginners.html$ /collections/acoustic/best-for-beginners.html [R=301,L]
+RewriteRule ^silos/acoustic/best-for-beginners.html$ /collections/acoustic/best-for-beginners.html [R=301,L]
+RewriteRule ^premium-guide/?$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^premium-guide.html$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^silos/acoustic/premium-guide.html$ /collections/acoustic/premium-guide.html [R=301,L]
+RewriteRule ^hybrid-guide/?$ /collections/acoustic/hybrid-guide.html [R=301,L]
+RewriteRule ^hybrid-guide.html$ /collections/acoustic/hybrid-guide.html [R=301,L]
+RewriteRule ^silos/acoustic/hybrid-guide.html$ /collections/acoustic/hybrid-guide.html [R=301,L]
+RewriteRule ^silos/acoustic/index.html$ /collections/acoustic/index.html [R=301,L]
+RewriteRule ^silos/acoustic/?$ /collections/acoustic/index.html [R=301,L]
+RewriteRule ^best-under-300/?$ /collections/electric/best-under-300.html [R=301,L]
+RewriteRule ^best-under-300.html$ /collections/electric/best-under-300.html [R=301,L]
+RewriteRule ^silos/electric/best-under-300.html$ /collections/electric/best-under-300.html [R=301,L]
+RewriteRule ^best-under-1000/?$ /collections/electric/best-under-1000.html [R=301,L]
+RewriteRule ^best-under-1000.html$ /collections/electric/best-under-1000.html [R=301,L]
+RewriteRule ^silos/electric/best-under-1000.html$ /collections/electric/best-under-1000.html [R=301,L]
+RewriteRule ^starters/?$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^starters.html$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^silos/electric/starters.html$ /collections/electric/starters.html [R=301,L]
+RewriteRule ^amp-reviews/?$ /collections/electric/amp-reviews.html [R=301,L]
+RewriteRule ^amp-reviews.html$ /collections/electric/amp-reviews.html [R=301,L]
+RewriteRule ^silos/electric/amp-reviews.html$ /collections/electric/amp-reviews.html [R=301,L]
+RewriteRule ^effects-pedals/?$ /collections/electric/effects-pedals.html [R=301,L]
+RewriteRule ^effects-pedals.html$ /collections/electric/effects-pedals.html [R=301,L]
+RewriteRule ^silos/electric/effects-pedals.html$ /collections/electric/effects-pedals.html [R=301,L]
+RewriteRule ^silver-sky-review/?$ /collections/electric/silver-sky-review.html [R=301,L]
+RewriteRule ^silver-sky-review.html$ /collections/electric/silver-sky-review.html [R=301,L]
+RewriteRule ^silos/electric/silver-sky-review.html$ /collections/electric/silver-sky-review.html [R=301,L]
+RewriteRule ^ultra-tele-review/?$ /collections/electric/ultra-tele-review.html [R=301,L]
+RewriteRule ^ultra-tele-review.html$ /collections/electric/ultra-tele-review.html [R=301,L]
+RewriteRule ^silos/electric/ultra-tele-review.html$ /collections/electric/ultra-tele-review.html [R=301,L]
+RewriteRule ^metal-guitars/?$ /collections/electric/metal-guitars.html [R=301,L]
+RewriteRule ^metal-guitars.html$ /collections/electric/metal-guitars.html [R=301,L]
+RewriteRule ^silos/electric/metal-guitars.html$ /collections/electric/metal-guitars.html [R=301,L]
+RewriteRule ^silos/electric/index.html$ /collections/electric/index.html [R=301,L]
+RewriteRule ^silos/electric/?$ /collections/electric/index.html [R=301,L]
+RewriteRule ^pro-jazz-bass/?$ /collections/bass/pro-jazz-bass.html [R=301,L]
+RewriteRule ^pro-jazz-bass.html$ /collections/bass/pro-jazz-bass.html [R=301,L]
+RewriteRule ^silos/bass/pro-jazz-bass.html$ /collections/bass/pro-jazz-bass.html [R=301,L]
+RewriteRule ^mustang-bass/?$ /collections/bass/mustang-bass.html [R=301,L]
+RewriteRule ^mustang-bass.html$ /collections/bass/mustang-bass.html [R=301,L]
+RewriteRule ^silos/bass/mustang-bass.html$ /collections/bass/mustang-bass.html [R=301,L]
+RewriteRule ^bass-buying-guide/?$ /collections/bass/bass-buying-guide.html [R=301,L]
+RewriteRule ^bass-buying-guide.html$ /collections/bass/bass-buying-guide.html [R=301,L]
+RewriteRule ^silos/bass/bass-buying-guide.html$ /collections/bass/bass-buying-guide.html [R=301,L]
+RewriteRule ^silos/bass/index.html$ /collections/bass/index.html [R=301,L]
+RewriteRule ^silos/bass/?$ /collections/bass/index.html [R=301,L]
+RewriteRule ^strings/?$ /collections/accessories/strings.html [R=301,L]
+RewriteRule ^strings.html$ /collections/accessories/strings.html [R=301,L]
+RewriteRule ^silos/accessories/strings.html$ /collections/accessories/strings.html [R=301,L]
+RewriteRule ^pedals/?$ /collections/accessories/pedals.html [R=301,L]
+RewriteRule ^pedals.html$ /collections/accessories/pedals.html [R=301,L]
+RewriteRule ^silos/accessories/pedals.html$ /collections/accessories/pedals.html [R=301,L]
+RewriteRule ^amps/?$ /collections/accessories/amps.html [R=301,L]
+RewriteRule ^amps.html$ /collections/accessories/amps.html [R=301,L]
+RewriteRule ^silos/accessories/amps.html$ /collections/accessories/amps.html [R=301,L]
+RewriteRule ^cables/?$ /collections/accessories/cables.html [R=301,L]
+RewriteRule ^cables.html$ /collections/accessories/cables.html [R=301,L]
+RewriteRule ^silos/accessories/cables.html$ /collections/accessories/cables.html [R=301,L]
+RewriteRule ^tuners/?$ /collections/accessories/tuners.html [R=301,L]
+RewriteRule ^tuners.html$ /collections/accessories/tuners.html [R=301,L]
+RewriteRule ^silos/accessories/tuners.html$ /collections/accessories/tuners.html [R=301,L]
+RewriteRule ^silos/accessories/index.html$ /collections/accessories/index.html [R=301,L]
+RewriteRule ^silos/accessories/?$ /collections/accessories/index.html [R=301,L]
+RewriteRule ^courses/?$ /collections/learning/courses.html [R=301,L]
+RewriteRule ^courses.html$ /collections/learning/courses.html [R=301,L]
+RewriteRule ^silos/learning/courses.html$ /collections/learning/courses.html [R=301,L]
+RewriteRule ^apps/?$ /collections/learning/apps.html [R=301,L]
+RewriteRule ^apps.html$ /collections/learning/apps.html [R=301,L]
+RewriteRule ^silos/learning/apps.html$ /collections/learning/apps.html [R=301,L]
+RewriteRule ^tips/?$ /collections/learning/tips.html [R=301,L]
+RewriteRule ^tips.html$ /collections/learning/tips.html [R=301,L]
+RewriteRule ^silos/learning/tips.html$ /collections/learning/tips.html [R=301,L]
+RewriteRule ^techniques/?$ /collections/learning/techniques.html [R=301,L]
+RewriteRule ^techniques.html$ /collections/learning/techniques.html [R=301,L]
+RewriteRule ^silos/learning/techniques.html$ /collections/learning/techniques.html [R=301,L]
+RewriteRule ^best-guitar-lesson-affiliates/?$ /collections/learning/best-guitar-lesson-affiliates.html [R=301,L]
+RewriteRule ^best-guitar-lesson-affiliates.html$ /collections/learning/best-guitar-lesson-affiliates.html [R=301,L]
+RewriteRule ^silos/learning/best-guitar-lesson-affiliates.html$ /collections/learning/best-guitar-lesson-affiliates.html [R=301,L]
+RewriteRule ^silos/learning/index.html$ /collections/learning/index.html [R=301,L]
+RewriteRule ^silos/learning/?$ /collections/learning/index.html [R=301,L]
+RewriteRule ^where-to-buy/?$ /collections/buying/where-to-buy.html [R=301,L]
+RewriteRule ^where-to-buy.html$ /collections/buying/where-to-buy.html [R=301,L]
+RewriteRule ^silos/buying/where-to-buy.html$ /collections/buying/where-to-buy.html [R=301,L]
+RewriteRule ^deals-guide/?$ /collections/buying/deals-guide.html [R=301,L]
+RewriteRule ^deals-guide.html$ /collections/buying/deals-guide.html [R=301,L]
+RewriteRule ^silos/buying/deals-guide.html$ /collections/buying/deals-guide.html [R=301,L]
+RewriteRule ^return-policy/?$ /collections/buying/return-policy.html [R=301,L]
+RewriteRule ^return-policy.html$ /collections/buying/return-policy.html [R=301,L]
+RewriteRule ^silos/buying/return-policy.html$ /collections/buying/return-policy.html [R=301,L]
+RewriteRule ^silos/buying/index.html$ /collections/buying/index.html [R=301,L]
+RewriteRule ^silos/buying/?$ /collections/buying/index.html [R=301,L]
 
-# Remove .html extension (Optional but cleaner)
-# RewriteEngine On
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteCond %{REQUEST_FILENAME}\.html -f
-# RewriteRule ^(.*)$ $1.html [NC,L]
+# Catch-all for unmatched Pinterest /guitar-* URLs
+RewriteRule ^guitar-.*/?$ /?utm_source=Pinterest&utm_medium=organic [R=301,L]
+
+# Catch-all for other legacy product URLs
+RewriteRule ^(.+-vs-.+)/?$ /pages/buying_guides_guitar_buying_guide_2026.html [R=301,L]
