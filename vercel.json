@@ -10,12 +10,137 @@
       "source": "/go/:slug",
       "destination": "https://www.amazon.com/s?k=:slug&tag=reviewsguitar-20",
       "permanent": false
+    },
+    {
+      "source": "/buy/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/collections/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html",
+      "destination": "/collections/electric/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html",
+      "destination": "/collections/electric/metal-guitars.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/ultra-tele-review.html",
+      "destination": "/collections/electric/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/pedals.html",
+      "destination": "/collections/accessories/pedals.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/strings.html",
+      "destination": "/collections/accessories/strings.html",
+      "permanent": true
+    },
+    {
+      "source": "/guitar-esp-usa-eclipse-cats-eye-marble/",
+      "destination": "/collections/electric/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/starters.html",
+      "destination": "/collections/electric/starters.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/electric/under-1000.html",
+      "destination": "/collections/electric/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/amp-reviews.html",
+      "destination": "/collections/electric/amp-reviews.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html",
+      "destination": "/collections/acoustic/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html",
+      "destination": "/collections/bass/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/electric/starter-kit.html",
+      "destination": "/collections/electric/starters.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/learning/beginner-tips.html",
+      "destination": "/collections/learning/tips.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html",
+      "destination": "/collections/acoustic/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/accessories/picks-2026.html",
+      "destination": "/collections/accessories/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/accessories/tuners-review.html",
+      "destination": "/collections/accessories/tuners.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html",
+      "destination": "/collections/bass/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/learning/online-courses.html",
+      "destination": "/collections/learning/courses.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/accessories/cables-affordable.html",
+      "destination": "/pages/accessories_cables_best_guitar_cables_2026.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/learning/apps-review.html",
+      "destination": "/collections/learning/apps.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/accessories/cases-hard.html",
+      "destination": "/collections/accessories/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html",
+      "destination": "/collections/electric/index.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/where-to-buy.html",
+      "destination": "/collections/buying/where-to-buy.html",
+      "permanent": true
+    },
+    {
+      "source": "/collections/online-vs-store.html",
+      "destination": "/collections/buying/online-vs-store.html",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
       "source": "/best/beginner-acoustic-guitar",
-      "destination": "/collections/acoustic/best-for-beginners.html"
+      "destination": "/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar.html"
     },
     {
       "source": "/vs/yamaha-fg800-vs-fender-cd-60s",
@@ -23,19 +148,19 @@
     },
     {
       "source": "/best/electric-guitar-metal-under-800",
-      "destination": "/collections/electric/metal-guitars.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/reviews/fender-player-ii-stratocaster",
-      "destination": "/collections/electric/fender-american-ultra-telecaster-vs-fender-player-ii-stratocaster.html"
+      "destination": "/collections/electric/fender-player-stratocaster-vs-fender-player-ii-stratocaster.html"
     },
     {
       "source": "/vs/martin-d28-vs-taylor-814ce",
-      "destination": "/collections/acoustic/index.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/best/beginner-electric-guitar-kit",
-      "destination": "/collections/electric/starters.html"
+      "destination": "/pages/electric_beginner_starter_electric_guitar_kit_buy.html"
     },
     {
       "source": "/vs/yamaha-pacifica-vs-squier-strat",
@@ -43,43 +168,43 @@
     },
     {
       "source": "/best/acoustic-guitar-under-500",
-      "destination": "/collections/acoustic/best-under-500.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/reviews/prs-se-custom-24",
-      "destination": "/collections/electric/silver-sky-review.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/best/guitar-strings-blues",
-      "destination": "/collections/accessories/strings.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/vs/gibson-les-paul-50s-vs-60s",
-      "destination": "/collections/electric/index.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/best/travel-acoustic-guitar",
-      "destination": "/collections/acoustic/hybrid-guide.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/alternatives/epiphone-les-paul-standard",
-      "destination": "/collections/electric/epiphone-les-paul-standard-60s-vs-epiphone-sg-standard-61.html"
+      "destination": "/collections/electric/gibson-les-paul-standard-60s-vs-epiphone-les-paul-standard-60s.html"
     },
     {
       "source": "/best/home-practice-guitar-amp",
-      "destination": "/collections/electric/amp-reviews.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/reviews/boss-katana-50-mkii",
-      "destination": "/collections/electric/amp-reviews.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/best/fingerstyle-acoustic-guitar",
-      "destination": "/collections/acoustic/index.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/vs/telecaster-vs-stratocaster-beginner",
-      "destination": "/collections/electric/squier-classic-vibe-60s-stratocaster-vs-yamaha-pacifica-112v.html"
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
     },
     {
       "source": "/reviews/best-guitar-tuners",
@@ -183,7 +308,7 @@
     },
     {
       "source": "/reviews/daddario-xs-strings",
-      "destination": "/collections/accessories/daddario-xs-coated-strings-vs-amazon-basics-a-frame-guitar-stand.html"
+      "destination": "/collections/accessories/daddario-xs-coated-strings-vs-perris-leathers-jacquard-strap.html"
     },
     {
       "source": "/best/best-loop-pedal-budget",
@@ -252,6 +377,14 @@
     {
       "source": "/vs/seagull-s6-vs-yamaha-fg800",
       "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+    },
+    {
+      "source": "/best/best-guitar-stands-2026",
+      "destination": "/pages/accessories_stands_best_guitar_stands_2026.html"
+    },
+    {
+      "source": "/vs/les-paul-vs-sg",
+      "destination": "/collections/electric/gibson-les-paul-standard-60s-vs-gibson-sg-standard.html"
     }
   ]
 }

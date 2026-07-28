@@ -36,7 +36,22 @@ lines.forEach(line => {
   
   if (!match) {
     const fragments = slug.split('-');
-    match = actualFiles.find(f => fragments.every(frag => f.toLowerCase().includes(frag.toLowerCase())));
+    const keyword = columns[0].replace(/"/g, '').toLowerCase();
+    const keywordTokens = keyword.split(/\s+/).filter(t => t.length > 2);
+    
+    const matches = actualFiles.filter(f => fragments.every(frag => f.toLowerCase().includes(frag.toLowerCase())));
+    if (matches.length > 0) {
+      matches.sort((a, b) => {
+        let aScore = 0;
+        let bScore = 0;
+        keywordTokens.forEach(t => {
+          if (a.toLowerCase().includes(t)) aScore += (a.toLowerCase().split(t).length - 1);
+          if (b.toLowerCase().includes(t)) bScore += (b.toLowerCase().split(t).length - 1);
+        });
+        return bScore - aScore;
+      });
+      match = matches[0];
+    }
   }
   
   if (!match) {
@@ -56,10 +71,19 @@ lines.forEach(line => {
 });
 
 // Robust Vercel Config
+const vercelConfigPath = 'vercel.json';
+let existingConfig = {};
+try {
+  existingConfig = JSON.parse(fs.readFileSync(vercelConfigPath, 'utf8'));
+} catch (e) {
+  console.log('Error reading existing vercel.json:', e.message);
+}
+
 const vercelConfig = {
-  // Removing cleanUrls to prevent interference with manual rewrites
+  "cleanUrls": existingConfig.cleanUrls !== undefined ? existingConfig.cleanUrls : true,
+  "redirects": existingConfig.redirects || [],
   "rewrites": rewrites
 };
 
-fs.writeFileSync('vercel.json', JSON.stringify(vercelConfig, null, 2));
+fs.writeFileSync(vercelConfigPath, JSON.stringify(vercelConfig, null, 2));
 console.log(`Final Vercel Routing Map: ${rewrites.length} entries generated.`);
