@@ -704,7 +704,7 @@
   },
   {
     "id": "accessories-11",
-    "name": "Perri\u2019s Leathers Jacquard Strap",
+    "name": "Perri’s Leathers Jacquard Strap",
     "silo": "accessories",
     "category": "straps",
     "description": "Combining vintage aesthetics with modern comfort. This strap features unique jacquard patterns and soft cotton backing for long playing sessions.",
@@ -1142,5 +1142,55 @@
     ],
     "image": "https://m.media-amazon.com/images/I/61Nl-j4B3wL._AC_SL1200_.jpg",
     "amazonLink": "https://www.amazon.com/s?k=String+Swing+CC01K+Wall+Mount&tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-14",
+    "name": "Seymour Duncan Phat Cat P-90 Set",
+    "silo": "accessories",
+    "category": "pickups",
+    "description": "True single-coil P-90 tone in a humbucker-sized housing — a drop-in upgrade for HB-routed guitars with raw, gritty vintage growl.",
+    "price": "$149.00",
+    "rating": 4.7,
+    "features": [
+      "Humbucker-sized P-90",
+      "True single-coil tone",
+      "Drop-in for HB routes"
+    ],
+    "pros": [
+      "Vintage P-90 grit and bite",
+      "No routing needed",
+      "Great for blues, punk and rock"
+    ],
+    "cons": [
+      "Single-coil hum",
+      "Pricier than ceramic pickups"
+    ],
+    "image": "/images/seymour_duncan_phat_cat.png",
+    "amazonLink": "https://www.amazon.com/s?k=Seymour+Duncan+Phat+Cat+P90+Set&tag=reviewsguitar-20"
+  },
+  {
+    "id": "accessories-15",
+    "name": "Gibson P-90 Single Coil Pickup",
+    "silo": "accessories",
+    "category": "pickups",
+    "description": "The classic Gibson P-90 soapbar single-coil — fat, midrange-rich vintage tone sitting between single-coil clarity and humbucker warmth.",
+    "price": "$109.00",
+    "rating": 4.6,
+    "features": [
+      "Authentic Gibson P-90",
+      "Single-coil soapbar/dogear",
+      "Vintage-voiced"
+    ],
+    "pros": [
+      "Genuine Gibson tone",
+      "Fat mids and growl",
+      "Iconic vintage character"
+    ],
+    "cons": [
+      "Single-coil hum",
+      "Mounting type must match your guitar"
+    ],
+    "image": "/images/gibson_p90_pickup.png",
+    "amazonLink": "https://www.amazon.com/s?k=Gibson+P-90+Single+Coil+Pickup&tag=reviewsguitar-20"
   }
 ]
