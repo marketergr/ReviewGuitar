@@ -223,6 +223,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/alternatives/epiphone-les-paul-standard</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/best/acoustic-guitar-flight-cases</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -236,6 +242,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/best/acoustic-guitar-under-1000</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/best/acoustic-guitar-under-500</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -343,7 +355,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/best/electric-guitar-metal-under-800</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/best/electric-guitar-under-1000</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/best/fingerstyle-acoustic-guitar</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/best/guitar-strings-blues</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/best/home-practice-guitar-amp</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -368,6 +404,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/best/telecaster-metal-pickups</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/best/travel-acoustic-guitar</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -440,6 +482,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/pages/accessories_picks_top_rated_guitar_picks</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/pages/accessories_stands_best_guitar_stands_2026</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -529,6 +577,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/pages/acoustic_intermediate_acoustic_guitar_upgrade_deals</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -577,55 +631,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://reviewsguitar.com/pages/bofu_alternatives_epiphone-les-paul-standard</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_acoustic-guitar-under-500</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_beginner-acoustic-guitar</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_beginner-electric-guitar-kit</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://reviewsguitar.com/pages/bofu_best_boutique-electric-guitars-for-recording</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_electric-guitar-metal-under-800</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_fingerstyle-acoustic-guitar</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_guitar-strings-blues</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_home-practice-guitar-amp</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -637,61 +643,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://reviewsguitar.com/pages/bofu_best_travel-acoustic-guitar</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://reviewsguitar.com/pages/bofu_best_vintage-guitars-investment-guide</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_reviews_boss-katana-50-mkii</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_reviews_daddario-xs-strings</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_reviews_fender-player-ii-stratocaster</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_reviews_prs-se-custom-24</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_vs_gibson-les-paul-50s-vs-60s</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_vs_martin-d28-vs-taylor-814ce</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_vs_seagull-s6-vs-yamaha-fg800</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/pages/bofu_vs_telecaster-vs-stratocaster-beginner</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -746,6 +698,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/pages/buying_guides_best_guitar_buying_guide</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/pages/buying_guides_guitar_buying_guide_2026</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -818,6 +776,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/pages/electric_beginner_best_electric_guitar_for_beginners_2026</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/pages/electric_beginner_starter_electric_guitar_kit_buy</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -979,6 +943,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/reviews/boss-katana-50-mkii</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/reviews/daddario-xs-strings</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/reviews/ernie-ball-volume-pedal</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -991,6 +967,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/reviews/fender-player-ii-stratocaster</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/reviews/fishman-fluence-pickups</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -998,6 +980,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/reviews/marshall-dsl40cr</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/reviews/prs-se-custom-24</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1027,6 +1015,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/vs/gibson-les-paul-50s-vs-60s</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/vs/gretsch-streamliner-vs-epiphone-dot</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -1039,6 +1033,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/vs/les-paul-vs-sg</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/vs/martin-d10e-vs-taylor-214ce</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -1046,6 +1046,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/vs/martin-d18-vs-d28</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/vs/martin-d28-vs-taylor-814ce</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1081,6 +1087,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/vs/telecaster-vs-stratocaster-beginner</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/vs/yamaha-fg800-vs-fender-cd-60s</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -1103,12 +1115,6 @@
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/alternatives/epiphone-les-paul-standard</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://reviewsguitar.com/collections/accessories/amazon-basics-a-frame-guitar-stand-vs-string-swing-cc01k-wall-mount-hanger</loc>
@@ -1196,6 +1202,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/collections/accessories/daddario-xs-coated-strings-vs-nerecndens-66pcs-guitar-accessories-kit</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/collections/accessories/daddario-xs-coated-strings-vs-perris-leathers-jacquard-strap</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2071,6 +2083,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/collections/electric/fender-player-stratocaster-vs-fender-player-ii-stratocaster</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/collections/electric/fender-player-stratocaster-vs-fender-player-plus-telecaster</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -2131,6 +2149,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://reviewsguitar.com/collections/electric/gibson-les-paul-standard-60s-vs-epiphone-les-paul-standard-60s</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://reviewsguitar.com/collections/electric/gibson-les-paul-standard-60s-vs-epiphone-sg-standard-61</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -2138,6 +2162,12 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/collections/electric/gibson-les-paul-standard-60s-vs-fender-player-plus-telecaster</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://reviewsguitar.com/collections/electric/gibson-les-paul-standard-60s-vs-gibson-sg-standard</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2642,24 +2672,6 @@
   </url>
   <url>
     <loc>https://reviewsguitar.com/guides/recording/best-way-to-distribute-your-guitar-music-in-2026</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/reviews/daddario-xs-strings</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/reviews/fender-player-ii-stratocaster</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://reviewsguitar.com/vs/les-paul-vs-sg</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

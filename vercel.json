@@ -216,7 +216,7 @@
   "rewrites": [
     {
       "source": "/best/beginner-acoustic-guitar",
-      "destination": "/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar.html"
+      "destination": "/pages/bofu_best_beginner-acoustic-guitar"
     },
     {
       "source": "/vs/yamaha-fg800-vs-fender-cd-60s",
@@ -224,19 +224,19 @@
     },
     {
       "source": "/best/electric-guitar-metal-under-800",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_best_electric-guitar-metal-under-800"
     },
     {
       "source": "/reviews/fender-player-ii-stratocaster",
-      "destination": "/collections/electric/fender-player-stratocaster-vs-fender-player-ii-stratocaster.html"
+      "destination": "/pages/bofu_reviews_fender-player-ii-stratocaster"
     },
     {
       "source": "/vs/martin-d28-vs-taylor-814ce",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_vs_martin-d28-vs-taylor-814ce"
     },
     {
       "source": "/best/beginner-electric-guitar-kit",
-      "destination": "/pages/electric_beginner_starter_electric_guitar_kit_buy.html"
+      "destination": "/pages/bofu_best_beginner-electric-guitar-kit"
     },
     {
       "source": "/vs/yamaha-pacifica-vs-squier-strat",
@@ -244,43 +244,43 @@
     },
     {
       "source": "/best/acoustic-guitar-under-500",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_best_acoustic-guitar-under-500"
     },
     {
       "source": "/reviews/prs-se-custom-24",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_reviews_prs-se-custom-24"
     },
     {
       "source": "/best/guitar-strings-blues",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_best_guitar-strings-blues"
     },
     {
       "source": "/vs/gibson-les-paul-50s-vs-60s",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_vs_gibson-les-paul-50s-vs-60s"
     },
     {
       "source": "/best/travel-acoustic-guitar",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_best_travel-acoustic-guitar"
     },
     {
       "source": "/alternatives/epiphone-les-paul-standard",
-      "destination": "/collections/electric/gibson-les-paul-standard-60s-vs-epiphone-les-paul-standard-60s.html"
+      "destination": "/pages/bofu_alternatives_epiphone-les-paul-standard"
     },
     {
       "source": "/best/home-practice-guitar-amp",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_best_home-practice-guitar-amp"
     },
     {
       "source": "/reviews/boss-katana-50-mkii",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_reviews_boss-katana-50-mkii"
     },
     {
       "source": "/best/fingerstyle-acoustic-guitar",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_best_fingerstyle-acoustic-guitar"
     },
     {
       "source": "/vs/telecaster-vs-stratocaster-beginner",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_vs_telecaster-vs-stratocaster-beginner"
     },
     {
       "source": "/reviews/best-guitar-tuners",
@@ -384,7 +384,7 @@
     },
     {
       "source": "/reviews/daddario-xs-strings",
-      "destination": "/collections/accessories/daddario-xs-coated-strings-vs-perris-leathers-jacquard-strap.html"
+      "destination": "/pages/bofu_reviews_daddario-xs-strings"
     },
     {
       "source": "/best/best-loop-pedal-budget",
@@ -452,15 +452,15 @@
     },
     {
       "source": "/vs/seagull-s6-vs-yamaha-fg800",
-      "destination": "/pages/buying_guides_guitar_buying_guide_2026.html"
+      "destination": "/pages/bofu_vs_seagull-s6-vs-yamaha-fg800"
     },
     {
       "source": "/best/best-guitar-stands-2026",
-      "destination": "/pages/accessories_stands_best_guitar_stands_2026.html"
+      "destination": "/pages/bofu_best_best-guitar-stands-2026"
     },
     {
       "source": "/vs/les-paul-vs-sg",
-      "destination": "/collections/electric/gibson-les-paul-standard-60s-vs-gibson-sg-standard.html"
+      "destination": "/pages/bofu_vs_les-paul-vs-sg"
     }
   ]
 }
