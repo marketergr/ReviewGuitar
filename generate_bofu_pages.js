@@ -280,7 +280,7 @@ function buildBofuSchema(data, products, isSingle) {
             "@type": "Product",
             "name": p.name,
             "description": p.description,
-            "image": p.image ? `${BASE_URL}${p.image}` : undefined,
+            "image": p.image ? (/^https?:\/\//.test(p.image) ? p.image : `${BASE_URL}${p.image}`) : undefined,
             "brand": { "@type": "Brand", "name": p.name ? p.name.split(' ')[0] : "Generic" },
             "offers": {
                 "@type": "Offer",

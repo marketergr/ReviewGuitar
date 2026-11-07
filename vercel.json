@@ -78,6 +78,51 @@
   ],
   "redirects": [
     {
+      "source": "/best-acoustics-under-500",
+      "destination": "/best/acoustic-guitar-under-500",
+      "permanent": true
+    },
+    {
+      "source": "/best-beginner-electric-guitars",
+      "destination": "/best/beginner-electric-guitar-kit",
+      "permanent": true
+    },
+    {
+      "source": "/best/best-guitar-tuners",
+      "destination": "/reviews/best-guitar-tuners",
+      "permanent": true
+    },
+    {
+      "source": "/epiphone-vs-gibson-les-paul",
+      "destination": "/alternatives/epiphone-les-paul-standard",
+      "permanent": true
+    },
+    {
+      "source": "/fender-am-pro-ii-review",
+      "destination": "/best/home-practice-guitar-amp",
+      "permanent": true
+    },
+    {
+      "source": "/prs-vs-fender-tele",
+      "destination": "/vs/telecaster-vs-stratocaster-beginner",
+      "permanent": true
+    },
+    {
+      "source": "/squier-classic-vibe-60s",
+      "destination": "/vs/squier-classic-vibe-50s-vs-60s",
+      "permanent": true
+    },
+    {
+      "source": "/vs/stratocaster-vs-telecaster",
+      "destination": "/vs/telecaster-vs-stratocaster-beginner",
+      "permanent": true
+    },
+    {
+      "source": "/yamaha-fg800-vs-fg830",
+      "destination": "/vs/yamaha-fg830-vs-fg800",
+      "permanent": true
+    },
+    {
       "source": "/collections/ultra-tele-review.html",
       "destination": "/collections/electric/ultra-tele-review",
       "permanent": true
