@@ -64,19 +64,22 @@ const PRIORITY_URLS = [
   BASE_URL + '/collections/buying/online-vs-store',
   BASE_URL + '/collections/buying/where-to-buy',
   // High-value SEO landing pages
-  BASE_URL + '/pages/acoustic_beginner_best_acoustic_guitar_for_beginners_2026',
-  BASE_URL + '/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar',
-  BASE_URL + '/pages/electric_beginner_best_electric_guitar_for_beginners_2026',
-  BASE_URL + '/pages/acoustic_professional_best_acoustic_guitar_brands_2026',
-  BASE_URL + '/pages/electric_professional_best_electric_guitar_brands_2026',
-  BASE_URL + '/pages/acoustic_advanced_best_acoustic_guitar_for_recording',
-  BASE_URL + '/pages/buying_guides_guitar_buying_guide_2026',
-  BASE_URL + '/pages/buying_guides_how_to_buy_a_guitar_guide',
-  BASE_URL + '/pages/buying_comparisons_acoustic_vs_electric_guitar_buy',
-  BASE_URL + '/pages/accessories_strings_best_guitar_strings_2026',
-  BASE_URL + '/pages/accessories_picks_best_guitar_picks_2026',
-  BASE_URL + '/pages/learning_courses_best_guitar_courses_2026',
-  BASE_URL + '/pages/learning_apps_best_guitar_learning_apps_2026',
+  BASE_URL + '/acoustic/beginner/best-acoustic-guitar-for-beginners-2026',
+  BASE_URL + '/acoustic/beginner/top-rated-beginner-acoustic-guitar',
+  BASE_URL + '/electric/beginner/best-electric-guitar-for-beginners-2026',
+  BASE_URL + '/acoustic/professional/best-acoustic-guitar-brands-2026',
+  BASE_URL + '/electric/professional/best-electric-guitar-brands-2026',
+  BASE_URL + '/acoustic/advanced/best-acoustic-guitar-for-recording',
+  BASE_URL + '/buying/guides/guitar-buying-guide-2026',
+  BASE_URL + '/buying/guides/how-to-buy-a-guitar',
+  BASE_URL + '/buying/comparisons/acoustic-vs-electric-guitar',
+  BASE_URL + '/accessories/strings/best-guitar-strings-2026',
+  BASE_URL + '/accessories/picks/best-guitar-picks-2026',
+  BASE_URL + '/learning/courses/best-guitar-courses-2026',
+  BASE_URL + '/learning/apps/best-guitar-learning-apps-2026',
+  BASE_URL + '/acoustic/professional/best-premium-acoustic-guitars-under-3000',
+  BASE_URL + '/electric/professional/best-boutique-electric-guitars-for-recording',
+  BASE_URL + '/buying/guides/vintage-guitars-investment-guide',
 ];
 
 function sleep(ms) {
@@ -84,6 +87,14 @@ function sleep(ms) {
 }
 
 async function getAuth() {
+  if (!fs.existsSync(CREDENTIALS_PATH)) {
+    throw new Error(
+      `Missing service account key file at ${CREDENTIALS_PATH}\n` +
+      `   Download a JSON key for reviewsguitar@spatial-rock-469222-r7.iam.gserviceaccount.com\n` +
+      `   from https://console.cloud.google.com/iam-admin/serviceaccounts?project=spatial-rock-469222-r7\n` +
+      `   and save it as GSC/credentials.json`
+    );
+  }
   const auth = new google.auth.GoogleAuth({
     keyFile: CREDENTIALS_PATH,
     scopes: ['https://www.googleapis.com/auth/webmasters']
@@ -104,8 +115,29 @@ async function runSubmission() {
   console.log('🚀 ReviewsGuitar.com — URL Indexing Submission');
   console.log('='.repeat(55));
 
+  // Determine URLs to submit
+  let urlsToSubmit = PRIORITY_URLS;
+  if (submitAll) {
+    const allUrls = getAllSitemapUrls();
+    // Merge, deduplicating, priority first
+    const seen = new Set(PRIORITY_URLS);
+    const extras = allUrls.filter(u => !seen.has(u));
+    urlsToSubmit = [...PRIORITY_URLS, ...extras];
+    console.log(`📋 Submitting ALL ${urlsToSubmit.length} URLs from sitemap\n`);
+  } else {
+    console.log(`📋 Submitting ${urlsToSubmit.length} priority URLs\n`);
+    console.log('   Use --all to submit all sitemap URLs\n');
+  }
+
   if (isDryRun) {
     console.log('🔵 DRY RUN MODE — no URLs will actually be submitted\n');
+    console.log(`  [Sitemap] Would submit sitemap: ${BASE_URL}/sitemap.xml`);
+    for (let i = 0; i < urlsToSubmit.length; i++) {
+      console.log(`  [${i + 1}/${urlsToSubmit.length}] Would submit: ${urlsToSubmit[i]}`);
+    }
+    console.log('\n' + '='.repeat(55));
+    console.log(`Dry run complete! Would have submitted sitemap + ${urlsToSubmit.length} URLs.`);
+    return;
   }
 
   let authClient;
@@ -119,6 +151,7 @@ async function runSubmission() {
   const sc = google.searchconsole({ version: 'v1', auth: authClient });
 
   // Verify GSC access
+  let targetSiteUrl = GSC_PROPERTY;
   try {
     const sites = await sc.sites.list();
     const entries = sites.data.siteEntry || [];
@@ -128,24 +161,22 @@ async function runSubmission() {
       console.error(`   Email: ${require(CREDENTIALS_PATH).client_email}`);
       process.exit(1);
     }
-    console.log(`✅ GSC access confirmed\n`);
+    targetSiteUrl = matched.siteUrl;
+    console.log(`✅ GSC access confirmed (${targetSiteUrl})\n`);
   } catch (e) {
     console.error('❌ Cannot verify GSC access:', e.message);
     process.exit(1);
   }
 
-  // Determine URLs to submit
-  let urlsToSubmit = PRIORITY_URLS;
-  if (submitAll) {
-    const allUrls = getAllSitemapUrls();
-    // Merge, deduplicating, priority first
-    const seen = new Set(PRIORITY_URLS);
-    const extras = allUrls.filter(u => !seen.has(u));
-    urlsToSubmit = [...PRIORITY_URLS, ...extras];
-    console.log(`📋 Submitting ALL ${urlsToSubmit.length} URLs from sitemap\n`);
-  } else {
-    console.log(`📋 Submitting ${urlsToSubmit.length} priority URLs\n`);
-    console.log('   Use --all to submit all sitemap URLs\n');
+  // Submit sitemap.xml first
+  try {
+    await sc.sitemaps.submit({
+      siteUrl: targetSiteUrl,
+      feedpath: `${BASE_URL}/sitemap.xml`
+    });
+    console.log(`✅ Submitted sitemap: ${BASE_URL}/sitemap.xml\n`);
+  } catch (e) {
+    console.warn(`⚠️  Could not submit sitemap.xml automatically: ${e.message}\n`);
   }
 
   let submitted = 0, failed = 0, skipped = 0;
