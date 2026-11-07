@@ -155,14 +155,25 @@ async function runSubmission() {
   try {
     const sites = await sc.sites.list();
     const entries = sites.data.siteEntry || [];
-    const matched = entries.find(s => s.siteUrl === GSC_PROPERTY || s.siteUrl.includes('reviewsguitar'));
+    const matched = entries.find(
+      s => (s.siteUrl === GSC_PROPERTY || s.siteUrl.includes('reviewsguitar')) &&
+           s.permissionLevel !== 'siteUnverifiedUser'
+    );
     if (!matched) {
-      console.error('❌ No GSC access. Add service account to GSC first.');
-      console.error(`   Email: ${require(CREDENTIALS_PATH).client_email}`);
+      const saEmail = require(CREDENTIALS_PATH).client_email;
+      console.error('❌ Service account is authenticated, but does not have Verified/Full access to reviewsguitar.com in GSC yet.');
+      console.error('   Current permission level: siteUnverifiedUser\n');
+      console.error('   Fix (Option 1 — Add User in GSC):');
+      console.error('   1. Open: https://search.google.com/search-console/users?resource_id=sc-domain%3Areviewsguitar.com');
+      console.error('      (or https://search.google.com/search-console/users?resource_id=https%3A%2F%2Freviewsguitar.com%2F)');
+      console.error(`   2. Click "Add user" and enter: ${saEmail}`);
+      console.error('   3. Permission: Full -> Add\n');
+      console.error('   Fix (Option 2 — Auto-verify via Site Verification API):');
+      console.error('   Enable: https://console.developers.google.com/apis/api/siteverification.googleapis.com/overview?project=148958660569');
       process.exit(1);
     }
     targetSiteUrl = matched.siteUrl;
-    console.log(`✅ GSC access confirmed (${targetSiteUrl})\n`);
+    console.log(`✅ GSC access confirmed (${targetSiteUrl} — ${matched.permissionLevel})\n`);
   } catch (e) {
     console.error('❌ Cannot verify GSC access:', e.message);
     process.exit(1);
