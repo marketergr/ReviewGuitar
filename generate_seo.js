@@ -606,7 +606,7 @@ ${schemaJson}
 
         <div class="container" style="max-width: 1000px;">
             <nav class="breadcrumb-nav">
-                <a href="../index.html">HOME</a> > ${silo} > ${category}
+                <a href="/">HOME</a> > ${silo} > ${category}
             </nav>
 
             <!-- TODO(human): Add first-hand notes for this guide (hands-on impressions, action height/setup needed, who it genuinely suits) to strengthen first-hand experience signals. Current copy is general guidance. -->

@@ -78,6 +78,11 @@
   ],
   "redirects": [
     {
+      "source": "/silos/:path*",
+      "destination": "/collections/:path*",
+      "permanent": true
+    },
+    {
       "source": "/best-acoustics-under-500",
       "destination": "/best/acoustic-guitar-under-500",
       "permanent": true
@@ -139,122 +144,117 @@
     },
     {
       "source": "/collections/electric/guitar-prs-john-mayer-se-silver-sky-in-dragon-fruit.html",
-      "destination": "/collections/electric/index.html",
+      "destination": "/collections/electric/",
       "permanent": true
     },
     {
       "source": "/collections/electric/prs-se-mark-holcomb-signature-electric-guitar-in-holcomb-burst.html",
-      "destination": "/collections/electric/metal-guitars.html",
-      "permanent": true
-    },
-    {
-      "source": "/collections/ultra-tele-review.html",
-      "destination": "/collections/electric/index.html",
+      "destination": "/collections/electric/metal-guitars",
       "permanent": true
     },
     {
       "source": "/collections/pedals.html",
-      "destination": "/collections/accessories/pedals.html",
+      "destination": "/collections/accessories/pedals",
       "permanent": true
     },
     {
       "source": "/collections/strings.html",
-      "destination": "/collections/accessories/strings.html",
+      "destination": "/collections/accessories/strings",
       "permanent": true
     },
     {
       "source": "/guitar-esp-usa-eclipse-cats-eye-marble/",
-      "destination": "/collections/electric/index.html",
+      "destination": "/collections/electric/",
       "permanent": true
     },
     {
       "source": "/collections/starters.html",
-      "destination": "/collections/electric/starters.html",
+      "destination": "/collections/electric/starters",
       "permanent": true
     },
     {
       "source": "/collections/electric/under-1000.html",
-      "destination": "/collections/electric/index.html",
+      "destination": "/collections/electric/",
       "permanent": true
     },
     {
       "source": "/collections/amp-reviews.html",
-      "destination": "/collections/electric/amp-reviews.html",
+      "destination": "/collections/electric/amp-reviews",
       "permanent": true
     },
     {
       "source": "/collections/acoustic/guitar-alvarez-af30ce-artist-series-om-folk-electro-acoustic.html",
-      "destination": "/collections/acoustic/index.html",
+      "destination": "/collections/acoustic/",
       "permanent": true
     },
     {
       "source": "/collections/bass/guitar-squier-fsr-classic-vibe-60s-competition-mustang-bass-in-lake-placid-blue-with-olympic-white-stripes.html",
-      "destination": "/collections/bass/index.html",
+      "destination": "/collections/bass/",
       "permanent": true
     },
     {
       "source": "/collections/electric/starter-kit.html",
-      "destination": "/collections/electric/starters.html",
+      "destination": "/collections/electric/starters",
       "permanent": true
     },
     {
       "source": "/collections/learning/beginner-tips.html",
-      "destination": "/collections/learning/tips.html",
+      "destination": "/collections/learning/tips",
       "permanent": true
     },
     {
       "source": "/collections/acoustic/guitar-yamaha-ntx3-brown-sunburst.html",
-      "destination": "/collections/acoustic/index.html",
+      "destination": "/collections/acoustic/",
       "permanent": true
     },
     {
       "source": "/collections/accessories/picks-2026.html",
-      "destination": "/collections/accessories/index.html",
+      "destination": "/collections/accessories/",
       "permanent": true
     },
     {
       "source": "/collections/accessories/tuners-review.html",
-      "destination": "/collections/accessories/tuners.html",
+      "destination": "/collections/accessories/tuners",
       "permanent": true
     },
     {
       "source": "/collections/bass/guitar-fender-limited-edition-american-professional-ii-jazz-bass-in-dark-night.html",
-      "destination": "/collections/bass/index.html",
+      "destination": "/collections/bass/",
       "permanent": true
     },
     {
       "source": "/collections/learning/online-courses.html",
-      "destination": "/collections/learning/courses.html",
+      "destination": "/collections/learning/courses",
       "permanent": true
     },
     {
       "source": "/collections/accessories/cables-affordable.html",
-      "destination": "/pages/accessories_cables_best_guitar_cables_2026.html",
+      "destination": "/accessories/cables/best-guitar-cables-2026",
       "permanent": true
     },
     {
       "source": "/collections/learning/apps-review.html",
-      "destination": "/collections/learning/apps.html",
+      "destination": "/collections/learning/apps",
       "permanent": true
     },
     {
       "source": "/collections/accessories/cases-hard.html",
-      "destination": "/collections/accessories/index.html",
+      "destination": "/collections/accessories/",
       "permanent": true
     },
     {
       "source": "/collections/electric/guitar-fender-fsr-american-ultra-telecaster-in-texas-tea-with-roasted-maple-neck.html",
-      "destination": "/collections/electric/index.html",
+      "destination": "/collections/electric/",
       "permanent": true
     },
     {
       "source": "/collections/where-to-buy.html",
-      "destination": "/collections/buying/where-to-buy.html",
+      "destination": "/collections/buying/where-to-buy",
       "permanent": true
     },
     {
       "source": "/collections/online-vs-store.html",
-      "destination": "/collections/buying/online-vs-store.html",
+      "destination": "/collections/buying/online-vs-store",
       "permanent": true
     }
   ],
@@ -506,6 +506,354 @@
     {
       "source": "/vs/les-paul-vs-sg",
       "destination": "/pages/bofu_vs_les-paul-vs-sg"
+    },
+    {
+      "source": "/best/premium-acoustic-guitars-under-3000",
+      "destination": "/pages/bofu_best_premium-acoustic-guitars-under-3000"
+    },
+    {
+      "source": "/best/boutique-electric-guitars-for-recording",
+      "destination": "/pages/bofu_best_boutique-electric-guitars-for-recording"
+    },
+    {
+      "source": "/best/vintage-guitars-investment-guide",
+      "destination": "/pages/bofu_best_vintage-guitars-investment-guide"
+    },
+    {
+      "source": "/acoustic/beginner/best-acoustic-guitar-for-beginners-2026",
+      "destination": "/pages/acoustic_beginner_best_acoustic_guitar_for_beginners_2026"
+    },
+    {
+      "source": "/acoustic/beginner/top-rated-beginner-acoustic-guitar",
+      "destination": "/pages/acoustic_beginner_top_rated_beginner_acoustic_guitar"
+    },
+    {
+      "source": "/acoustic/beginner/affordable-acoustic-guitar-starter-kit",
+      "destination": "/pages/acoustic_beginner_affordable_acoustic_guitar_starter_kit"
+    },
+    {
+      "source": "/acoustic/beginner/buy-acoustic-guitar-beginner-bundle",
+      "destination": "/pages/acoustic_beginner_buy_acoustic_guitar_beginner_bundle"
+    },
+    {
+      "source": "/acoustic/intermediate/best-intermediate-acoustic-guitar",
+      "destination": "/pages/acoustic_intermediate_best_intermediate_acoustic_guitar"
+    },
+    {
+      "source": "/acoustic/intermediate/professional-acoustic-guitar-reviews",
+      "destination": "/pages/acoustic_intermediate_professional_acoustic_guitar_reviews"
+    },
+    {
+      "source": "/acoustic/intermediate/top-selling-acoustic-guitars-2026",
+      "destination": "/pages/acoustic_intermediate_top_selling_acoustic_guitars_2026"
+    },
+    {
+      "source": "/acoustic/intermediate/acoustic-guitar-upgrade-deals",
+      "destination": "/pages/acoustic_intermediate_acoustic_guitar_upgrade_deals"
+    },
+    {
+      "source": "/acoustic/advanced/professional-acoustic-guitar-comparison",
+      "destination": "/pages/acoustic_advanced_professional_acoustic_guitar_comparison"
+    },
+    {
+      "source": "/acoustic/advanced/best-acoustic-guitar-for-recording",
+      "destination": "/pages/acoustic_advanced_best_acoustic_guitar_for_recording"
+    },
+    {
+      "source": "/acoustic/advanced/high-end-acoustic-guitar-reviews",
+      "destination": "/pages/acoustic_advanced_high_end_acoustic_guitar_reviews"
+    },
+    {
+      "source": "/acoustic/advanced/acoustic-guitar-tonewood",
+      "destination": "/pages/acoustic_advanced_acoustic_guitar_tonewood_guide"
+    },
+    {
+      "source": "/acoustic/professional/professional-acoustic-guitar",
+      "destination": "/pages/acoustic_professional_professional_acoustic_guitar_purchase"
+    },
+    {
+      "source": "/acoustic/professional/best-acoustic-guitar-brands-2026",
+      "destination": "/pages/acoustic_professional_best_acoustic_guitar_brands_2026"
+    },
+    {
+      "source": "/acoustic/professional/custom-acoustic-guitar-builders",
+      "destination": "/pages/acoustic_professional_custom_acoustic_guitar_builders"
+    },
+    {
+      "source": "/acoustic/professional/investment-grade-acoustic-guitars",
+      "destination": "/pages/acoustic_professional_investment_grade_acoustic_guitars"
+    },
+    {
+      "source": "/electric/beginner/best-electric-guitar-for-beginners-2026",
+      "destination": "/pages/electric_beginner_best_electric_guitar_for_beginners_2026"
+    },
+    {
+      "source": "/electric/beginner/starter-electric-guitar-kit",
+      "destination": "/pages/electric_beginner_starter_electric_guitar_kit_buy"
+    },
+    {
+      "source": "/electric/beginner/affordable-electric-guitar-beginner",
+      "destination": "/pages/electric_beginner_affordable_electric_guitar_beginner"
+    },
+    {
+      "source": "/electric/beginner/top-rated-beginner-electric-guitar",
+      "destination": "/pages/electric_beginner_top_rated_beginner_electric_guitar"
+    },
+    {
+      "source": "/electric/intermediate/best-intermediate-electric-guitar",
+      "destination": "/pages/electric_intermediate_best_intermediate_electric_guitar"
+    },
+    {
+      "source": "/electric/intermediate/electric-guitar-upgrade-deals",
+      "destination": "/pages/electric_intermediate_electric_guitar_upgrade_deals"
+    },
+    {
+      "source": "/electric/intermediate/professional-electric-guitar-reviews",
+      "destination": "/pages/electric_intermediate_professional_electric_guitar_reviews"
+    },
+    {
+      "source": "/electric/intermediate/top-selling-electric-guitars-2026",
+      "destination": "/pages/electric_intermediate_top_selling_electric_guitars_2026"
+    },
+    {
+      "source": "/electric/advanced/professional-electric-guitar-comparison",
+      "destination": "/pages/electric_advanced_professional_electric_guitar_comparison"
+    },
+    {
+      "source": "/electric/advanced/best-electric-guitar-for-solos",
+      "destination": "/pages/electric_advanced_best_electric_guitar_for_solos"
+    },
+    {
+      "source": "/electric/advanced/high-end-electric-guitar-reviews",
+      "destination": "/pages/electric_advanced_high_end_electric_guitar_reviews"
+    },
+    {
+      "source": "/electric/advanced/electric-guitar-customization",
+      "destination": "/pages/electric_advanced_electric_guitar_customization_guide"
+    },
+    {
+      "source": "/electric/professional/professional-electric-guitar",
+      "destination": "/pages/electric_professional_professional_electric_guitar_purchase"
+    },
+    {
+      "source": "/electric/professional/best-electric-guitar-brands-2026",
+      "destination": "/pages/electric_professional_best_electric_guitar_brands_2026"
+    },
+    {
+      "source": "/electric/professional/custom-electric-guitar-builders",
+      "destination": "/pages/electric_professional_custom_electric_guitar_builders"
+    },
+    {
+      "source": "/electric/professional/investment-grade-electric-guitars",
+      "destination": "/pages/electric_professional_investment_grade_electric_guitars"
+    },
+    {
+      "source": "/accessories/strings/best-guitar-strings-2026",
+      "destination": "/pages/accessories_strings_best_guitar_strings_2026"
+    },
+    {
+      "source": "/accessories/strings/buy-guitar-strings-bulk",
+      "destination": "/pages/accessories_strings_buy_guitar_strings_bulk"
+    },
+    {
+      "source": "/accessories/strings/guitar-strings-comparison",
+      "destination": "/pages/accessories_strings_guitar_strings_review_comparison"
+    },
+    {
+      "source": "/accessories/strings/affordable-guitar-strings-deals",
+      "destination": "/pages/accessories_strings_affordable_guitar_strings_deals"
+    },
+    {
+      "source": "/accessories/picks/best-guitar-picks-2026",
+      "destination": "/pages/accessories_picks_best_guitar_picks_2026"
+    },
+    {
+      "source": "/accessories/picks/buy-guitar-picks-bulk",
+      "destination": "/pages/accessories_picks_buy_guitar_picks_bulk"
+    },
+    {
+      "source": "/accessories/picks/guitar-picks-comparison",
+      "destination": "/pages/accessories_picks_guitar_picks_review_comparison"
+    },
+    {
+      "source": "/accessories/picks/top-rated-guitar-picks",
+      "destination": "/pages/accessories_picks_top_rated_guitar_picks"
+    },
+    {
+      "source": "/accessories/cables/best-guitar-cables-2026",
+      "destination": "/pages/accessories_cables_best_guitar_cables_2026"
+    },
+    {
+      "source": "/accessories/cables/buy-instrument-cables",
+      "destination": "/pages/accessories_cables_buy_instrument_cables"
+    },
+    {
+      "source": "/accessories/cables/guitar-cable-comparison",
+      "destination": "/pages/accessories_cables_guitar_cable_review_comparison"
+    },
+    {
+      "source": "/accessories/cables/affordable-guitar-cables",
+      "destination": "/pages/accessories_cables_affordable_guitar_cables"
+    },
+    {
+      "source": "/accessories/stands/best-guitar-stands-2026",
+      "destination": "/pages/accessories_stands_best_guitar_stands_2026"
+    },
+    {
+      "source": "/accessories/stands/buy-guitar-stands",
+      "destination": "/pages/accessories_stands_buy_guitar_stands"
+    },
+    {
+      "source": "/accessories/stands/guitar-stand-comparison",
+      "destination": "/pages/accessories_stands_guitar_stand_review_comparison"
+    },
+    {
+      "source": "/accessories/stands/top-rated-guitar-stands",
+      "destination": "/pages/accessories_stands_top_rated_guitar_stands"
+    },
+    {
+      "source": "/accessories/cases/best-guitar-cases-2026",
+      "destination": "/pages/accessories_cases_best_guitar_cases_2026"
+    },
+    {
+      "source": "/accessories/cases/buy-guitar-cases-reviews",
+      "destination": "/pages/accessories_cases_buy_guitar_cases_reviews"
+    },
+    {
+      "source": "/accessories/cases/guitar-case-comparison",
+      "destination": "/pages/accessories_cases_guitar_case_comparison_guide"
+    },
+    {
+      "source": "/accessories/cases/affordable-guitar-hard-cases",
+      "destination": "/pages/accessories_cases_affordable_guitar_hard_cases"
+    },
+    {
+      "source": "/learning/courses/best-guitar-courses-2026",
+      "destination": "/pages/learning_courses_best_guitar_courses_2026"
+    },
+    {
+      "source": "/learning/courses/buy-online-guitar-lessons",
+      "destination": "/pages/learning_courses_buy_online_guitar_lessons"
+    },
+    {
+      "source": "/learning/courses/guitar-learning-courses",
+      "destination": "/pages/learning_courses_guitar_learning_courses_review"
+    },
+    {
+      "source": "/learning/courses/top-rated-guitar-courses",
+      "destination": "/pages/learning_courses_top_rated_guitar_courses"
+    },
+    {
+      "source": "/learning/books/best-guitar-books-2026",
+      "destination": "/pages/learning_books_best_guitar_books_2026"
+    },
+    {
+      "source": "/learning/books/buy-guitar-learning-books",
+      "destination": "/pages/learning_books_buy_guitar_learning_books"
+    },
+    {
+      "source": "/learning/books/guitar-method-book",
+      "destination": "/pages/learning_books_guitar_method_book_review"
+    },
+    {
+      "source": "/learning/books/top-guitar-books-for-beginners",
+      "destination": "/pages/learning_books_top_guitar_books_for_beginners"
+    },
+    {
+      "source": "/learning/videos/best-guitar-video-courses",
+      "destination": "/pages/learning_videos_best_guitar_video_courses"
+    },
+    {
+      "source": "/learning/videos/buy-guitar-tutorial-videos",
+      "destination": "/pages/learning_videos_buy_guitar_tutorial_videos"
+    },
+    {
+      "source": "/learning/videos/guitar-lesson-video",
+      "destination": "/pages/learning_videos_guitar_lesson_video_review"
+    },
+    {
+      "source": "/learning/videos/top-rated-guitar-tutorials",
+      "destination": "/pages/learning_videos_top_rated_guitar_tutorials"
+    },
+    {
+      "source": "/learning/apps/best-guitar-learning-apps-2026",
+      "destination": "/pages/learning_apps_best_guitar_learning_apps_2026"
+    },
+    {
+      "source": "/learning/apps/buy-guitar-app-subscription",
+      "destination": "/pages/learning_apps_buy_guitar_app_subscription"
+    },
+    {
+      "source": "/learning/apps/guitar-app-comparison",
+      "destination": "/pages/learning_apps_guitar_app_review_comparison"
+    },
+    {
+      "source": "/learning/apps/top-guitar-learning-apps",
+      "destination": "/pages/learning_apps_top_guitar_learning_apps"
+    },
+    {
+      "source": "/buying/guides/guitar-buying-2026",
+      "destination": "/pages/buying_guides_guitar_buying_guide_2026"
+    },
+    {
+      "source": "/buying/guides/best-guitar-buying",
+      "destination": "/pages/buying_guides_best_guitar_buying_guide"
+    },
+    {
+      "source": "/buying/guides/how-to-a-guitar",
+      "destination": "/pages/buying_guides_how_to_buy_a_guitar_guide"
+    },
+    {
+      "source": "/buying/guides/guitar",
+      "destination": "/pages/buying_guides_guitar_purchase_guide_review"
+    },
+    {
+      "source": "/buying/reviews/guitar-reviews-2026",
+      "destination": "/pages/buying_reviews_guitar_reviews_2026"
+    },
+    {
+      "source": "/buying/reviews/best-guitar-reviews-site",
+      "destination": "/pages/buying_reviews_best_guitar_reviews_site"
+    },
+    {
+      "source": "/buying/reviews/guitar-comparison",
+      "destination": "/pages/buying_reviews_guitar_review_comparison"
+    },
+    {
+      "source": "/buying/reviews/top-guitar-reviews",
+      "destination": "/pages/buying_reviews_top_guitar_reviews"
+    },
+    {
+      "source": "/buying/comparisons/guitar-comparison-2026",
+      "destination": "/pages/buying_comparisons_guitar_comparison_2026"
+    },
+    {
+      "source": "/buying/comparisons/best-guitar-vs-comparison",
+      "destination": "/pages/buying_comparisons_best_guitar_vs_comparison"
+    },
+    {
+      "source": "/buying/comparisons/acoustic-vs-electric-guitar",
+      "destination": "/pages/buying_comparisons_acoustic_vs_electric_guitar_buy"
+    },
+    {
+      "source": "/buying/comparisons/guitar-brands-comparison",
+      "destination": "/pages/buying_comparisons_guitar_brands_comparison"
+    },
+    {
+      "source": "/buying/deals/best-guitar-deals-2026",
+      "destination": "/pages/buying_deals_best_guitar_deals_2026"
+    },
+    {
+      "source": "/buying/deals/guitar-sale-deals",
+      "destination": "/pages/buying_deals_guitar_sale_deals"
+    },
+    {
+      "source": "/buying/deals/affordable-guitar-deals",
+      "destination": "/pages/buying_deals_affordable_guitar_deals"
+    },
+    {
+      "source": "/buying/deals/guitar-discount-offers",
+      "destination": "/pages/buying_deals_guitar_discount_offers"
     }
   ]
 }

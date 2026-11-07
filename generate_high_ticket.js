@@ -9,6 +9,7 @@ const pagesDir = path.join(__dirname, 'pages');
 const articles = [
   {
     filename: 'bofu_best_premium-acoustic-guitars-under-3000.html',
+    canonical: 'https://reviewsguitar.com/best/premium-acoustic-guitars-under-3000',
     title: 'Top Premium Acoustic Guitars Under $3000 (2026)',
     mainTitle: 'The Best Premium Acoustic Guitars Under $3000',
     description: 'A professional guide to the best premium acoustic guitars under $3000, featuring Martin, Taylor, and Gibson. Stop buying budget guitars and invest in a lifetime instrument.',
@@ -41,6 +42,7 @@ const articles = [
   },
   {
     filename: 'bofu_best_boutique-electric-guitars-for-recording.html',
+    canonical: 'https://reviewsguitar.com/best/boutique-electric-guitars-for-recording',
     title: 'Best Boutique Electric Guitars for Recording (2026)',
     mainTitle: 'Top Boutique Electric Guitars for the Studio',
     description: 'Find the absolute best boutique electric guitars for recording in 2026. Perfect for studio musicians looking for zero-hum performance and endless sustain.',
@@ -64,6 +66,7 @@ const articles = [
   },
   {
     filename: 'bofu_best_vintage-guitars-investment-guide.html',
+    canonical: 'https://reviewsguitar.com/best/vintage-guitars-investment-guide',
     title: 'The 2026 Vintage Guitar Investment Guide',
     mainTitle: 'Investing in Vintage Guitars: What to Buy in 2026',
     description: 'Learn which vintage guitars are actually worth buying as an investment in 2026. A complete guide to navigating Reverb for the best deals.',
@@ -96,6 +99,7 @@ const articles = [
 
 articles.forEach(article => {
     let result = template
+        .replace('<title>{{title}}</title>', `<link rel="canonical" href="${article.canonical}">\n    <title>{{title}}</title>`)
         .replace(/{{title}}/g, article.title + ' | ReviewsGuitar.com')
         .replace(/{{mainTitle}}/g, article.mainTitle)
         .replace(/{{description}}/g, article.description)
