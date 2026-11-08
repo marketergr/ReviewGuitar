@@ -26,7 +26,7 @@ const path = require('path');
 const fs = require('fs');
 
 const CREDENTIALS_PATH = path.join(__dirname, 'credentials.json');
-const GSC_PROPERTY = 'sc-domain:reviewsguitar.com';
+let GSC_PROPERTY = 'https://reviewsguitar.com/';
 const BASE_URL = 'https://reviewsguitar.com';
 
 const args = process.argv.slice(2);
@@ -119,6 +119,7 @@ async function runAudit() {
       console.error(`   Set permission: Full`);
       process.exit(1);
     }
+    GSC_PROPERTY = matched.siteUrl;
     console.log(`✅ GSC access confirmed: ${matched.siteUrl} (${matched.permissionLevel})\n`);
   } catch (e) {
     console.error('❌ Cannot list sites:', e.message);

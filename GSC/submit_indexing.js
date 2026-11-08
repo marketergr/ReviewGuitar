@@ -208,7 +208,7 @@ async function runSubmission() {
       await sc.urlInspection.index.inspect({
         requestBody: {
           inspectionUrl: url,
-          siteUrl: GSC_PROPERTY
+          siteUrl: targetSiteUrl
         }
       });
 
