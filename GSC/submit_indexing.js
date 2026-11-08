@@ -190,8 +190,22 @@ async function runSubmission() {
     console.warn(`⚠️  Could not submit sitemap.xml automatically: ${e.message}\n`);
   }
 
-  let submitted = 0, failed = 0, skipped = 0;
+  const resultPath = path.join(__dirname, 'indexing_results.json');
+  const alreadySubmitted = new Set();
   const results = [];
+  if (fs.existsSync(resultPath)) {
+    try {
+      const prev = JSON.parse(fs.readFileSync(resultPath, 'utf8'));
+      for (const item of (prev.results || [])) {
+        if (item.status === 'submitted') {
+          alreadySubmitted.add(item.url);
+          results.push(item);
+        }
+      }
+    } catch (_) {}
+  }
+
+  let submitted = results.length, failed = 0, skipped = 0;
 
   for (let i = 0; i < urlsToSubmit.length; i++) {
     const url = urlsToSubmit[i];
@@ -199,6 +213,12 @@ async function runSubmission() {
 
     if (isDryRun) {
       console.log(`  ${progress} Would submit: ${url}`);
+      skipped++;
+      continue;
+    }
+
+    if (alreadySubmitted.has(url)) {
+      console.log(`  ⏭️  ${progress} Already submitted: ${url}`);
       skipped++;
       continue;
     }
@@ -216,9 +236,9 @@ async function runSubmission() {
       submitted++;
       results.push({ url, status: 'submitted' });
 
-      // Rate limiting: ~1 request per 2 seconds
+      // Rate limiting: ~2.5 requests per second (well within 600/min quota)
       if (i < urlsToSubmit.length - 1) {
-        await sleep(2000);
+        await sleep(400);
       }
     } catch (e) {
       if (e.message.includes('Quota')) {
@@ -236,7 +256,6 @@ async function runSubmission() {
 
   // Save results
   if (!isDryRun && results.length > 0) {
-    const resultPath = path.join(__dirname, 'indexing_results.json');
     fs.writeFileSync(resultPath, JSON.stringify({
       timestamp: new Date().toISOString(),
       submitted,
