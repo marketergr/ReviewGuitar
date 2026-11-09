@@ -1771,6 +1771,85 @@ body > nav ul li a.active::after {
     font-style: italic;
 }
 
+.author-byline {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    margin: 0.5rem 0 2rem;
+}
+
+.author-byline a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.author-byline .byline-verified {
+    color: var(--accent-green);
+    font-weight: 700;
+}
+
+.silo-directory-section {
+    margin-top: 5rem;
+    padding-top: 3.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.silo-directory-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+
+.silo-directory-section p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.silo-directory-group {
+    margin-bottom: 2.5rem;
+}
+
+.silo-directory-group h3 {
+    font-size: 0.85rem;
+    color: var(--primary);
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.silo-directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.75rem;
+}
+
+.silo-directory-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.silo-directory-link:hover {
+    border-color: var(--primary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* ==========================================================================
    CTA buttons — comparison-table per-row buttons + mobile full-width (48px)
    ========================================================================== */
