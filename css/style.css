@@ -400,8 +400,7 @@ body > nav ul li a.active::after {
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 2rem;
-    position: sticky;
-    top: 100px;
+    position: relative;
     box-shadow: var(--shadow);
 }
 
