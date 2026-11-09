@@ -1,18 +1,8 @@
 User-agent: *
 Allow: /
-
-# GEO Strategy: Explicitly allow AI crawlers to build authority
-User-agent: GPTBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: Claude-Web
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-User-agent: Google-Extended
-Allow: /
+Disallow: /GSC/
 
 Sitemap: https://reviewsguitar.com/sitemap.xml
+Sitemap: https://reviewsguitar.com/sitemap-blogs.xml
+Sitemap: https://reviewsguitar.com/sitemap-comparisons.xml
+Sitemap: https://reviewsguitar.com/feed.xml
