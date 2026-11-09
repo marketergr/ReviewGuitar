@@ -399,9 +399,9 @@ function renderComparisonFeature(products, fileName) {
 
 function renderCrossSiloLinks(silo, basePath) {
     const accessoryLinks = [
-        { name: "Top-Rated Strings", url: "/collections/accessories" },
-        { name: "Essential Tuners", url: "/collections/accessories" },
-        { name: "Beginner Lessons", url: "/collections/learning" }
+        { name: "Top-Rated Strings", url: "/collections/accessories/strings" },
+        { name: "Essential Tuners", url: "/collections/accessories/tuners" },
+        { name: "Beginner Lessons", url: "/collections/learning/courses" }
     ];
 
     if (silo === 'accessories' || silo === 'learning' || silo === 'buying') return '';
@@ -412,7 +412,7 @@ function renderCrossSiloLinks(silo, basePath) {
         <div class="recommendations-list">
             ${accessoryLinks.map(link => `
                 <a href="${link.url}" class="recom-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    <svg width="16" height="16" style="width: 16px; height: 16px; flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
                     ${link.name}
                 </a>
             `).join('')}

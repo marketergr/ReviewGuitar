@@ -352,7 +352,15 @@ body > nav ul li a.active::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 0.45rem;
     transition: var(--transition);
+}
+
+.btn-pinterest svg,
+.pinterest-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
 }
 
 .btn-pinterest:hover {
@@ -1424,11 +1432,50 @@ body > nav ul li a.active::after {
     padding: 3rem;
 }
 
+.recommendations-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 800;
+    display: block;
+}
+
 .recommendations-list {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: 1.5rem;
+}
+
+.recom-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.8rem 1.35rem;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.recom-badge:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 165, 0, 0.12);
+}
+
+.recom-badge svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--primary);
 }
 
 .other-contenders-section {
