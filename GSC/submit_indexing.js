@@ -70,16 +70,16 @@ const PRIORITY_URLS = [
   BASE_URL + '/acoustic/professional/best-acoustic-guitar-brands-2026',
   BASE_URL + '/electric/professional/best-electric-guitar-brands-2026',
   BASE_URL + '/acoustic/advanced/best-acoustic-guitar-for-recording',
-  BASE_URL + '/buying/guides/guitar-buying-guide-2026',
-  BASE_URL + '/buying/guides/how-to-buy-a-guitar',
+  BASE_URL + '/buying/guides/first-guitar-buying-guide',
+  BASE_URL + '/buying/guides/what-to-look-for-when-buying-a-guitar',
   BASE_URL + '/buying/comparisons/acoustic-vs-electric-guitar',
   BASE_URL + '/accessories/strings/best-guitar-strings-2026',
   BASE_URL + '/accessories/picks/best-guitar-picks-2026',
   BASE_URL + '/learning/courses/best-guitar-courses-2026',
   BASE_URL + '/learning/apps/best-guitar-learning-apps-2026',
-  BASE_URL + '/acoustic/professional/best-premium-acoustic-guitars-under-3000',
-  BASE_URL + '/electric/professional/best-boutique-electric-guitars-for-recording',
-  BASE_URL + '/buying/guides/vintage-guitars-investment-guide',
+  BASE_URL + '/best/premium-acoustic-guitars-under-3000',
+  BASE_URL + '/best/boutique-electric-guitars-for-recording',
+  BASE_URL + '/best/vintage-guitars-investment-guide',
 ];
 
 function sleep(ms) {
