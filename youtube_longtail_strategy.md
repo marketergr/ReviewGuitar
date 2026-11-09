@@ -1325,3 +1325,188 @@ Don't forget to LIKE and SUBSCRIBE for more honest guitar reviews!
 - **Week 5:** Videos #29, #30 (fingerstyle + comparison)
 - **Week 6:** Videos #31, #32 (recording + cables)
 - **Week 7:** Videos #33, #34, #35 (premium acoustic + Squier + stands)
+
+
+---
+
+# Volume III — High-Velocity Expansion Scripts (Videos #38–#45)
+> Built from our live YouTube + Google Search Console winner telemetry (`Yamaha FG800 vs FG830` [2.6K views], `Acoustic Under $1000` [4.0K views], `Pacifica vs Squier` [1.8K views], `Squier Sonic vs Affinity vs Classic Vibe` [1.2K views]).
+
+---
+
+## Video 38 — Yamaha Pacifica 012 vs 112V vs 112VM: Which One Should You ACTUALLY Buy?
+
+**Primary Keyword:** `yamaha pacifica 012 vs 112v` (~19K monthly searches, #1 striking-distance GSC query)
+**Secondary Keywords:** `yamaha pacifica 112v vs 112vm`, `which yamaha pacifica should I buy`, `best budget electric guitar under 350`
+**Landing Page:** `https://reviewsguitar.com/vs/yamaha-pacifica-012-vs-112v`
+
+### Video Title
+Yamaha Pacifica 012 vs 112V vs 112VM — Which One Should You ACTUALLY Buy? (2026)
+
+### Script
+The Yamaha Pacifica 012 costs around $220, while the Pacifica 112V costs around $330. On the outside, they look almost identical. So is the 112V actually worth the extra $110, or is the 012 the smarter buy?
+
+Start with the Pacifica 012. It uses a solid agathis or mahogany body with ceramic HSS pickups. For a total beginner practicing through a small bedroom amp, the 5-way switch gives you clean Strat-style tones and thick bridge humbucker rock tones at the lowest possible entry price. However, the ceramic pickups sound slightly compressed when you turn up the volume, and there is no coil-split.
+
+Step up to the Pacifica 112V and three huge upgrades happen under the hood. First, you get genuine Alnico V pickups designed with custom wound specs that sound dramatically clearer, punchier, and more dynamic. Second, the master tone knob has a push-pull coil-split switch, turning the bridge humbucker into a true single-coil for six distinct tones. Third, the solid alder body and upgraded block-saddle tremolo hold tuning noticeably better. And if you prefer a brighter snap and faster feel, the 112VM gives you a maple fingerboard instead of rosewood.
+
+Our verdict? If $220 is your absolute ceiling, the 012 beats every stencil guitar on Amazon. But if you can stretch to $330, the Pacifica 112V is a guitar you won't outgrow for five years. Click the first link in the description and pinned comment to compare live prices and full specs on both.
+
+### YouTube Description
+```text
+Yamaha Pacifica 012 vs 112V — is the 112V worth the extra $110? See our full side-by-side breakdown:
+👉 https://reviewsguitar.com/vs/yamaha-pacifica-012-vs-112v
+
+In this video, we compare the entry-level Yamaha Pacifica 012 ($220) against the upgraded Yamaha Pacifica 112V & 112VM ($330). We break down the real-world differences between ceramic vs Alnico V pickups, agathis vs solid alder bodies, block-saddle tremolos, and the push-pull coil-split switch so you buy the right Pacifica the first time.
+
+🎸 GEAR FEATURED IN THIS VIDEO:
+1️⃣ Yamaha Pacifica 112V (Winner) - https://reviewsguitar.com/go/yamaha-pacifica-112v
+2️⃣ Yamaha Pacifica 012 (Budget Pick) - https://reviewsguitar.com/go/yamaha-pacifica-012
+
+📖 FULL SPEC & SOUND COMPARISON CHART:
+👉 https://reviewsguitar.com/vs/yamaha-pacifica-012-vs-112v
+
+#YamahaPacifica #Pacifica112V #Pacifica012 #BudgetElectricGuitar #GuitarComparison #BeginnerElectricGuitar
+```
+
+---
+
+## Video 39 — Martin D-10E Road Series vs Taylor 214ce: Best $1,000 Acoustic Guitar Battle!
+
+**Primary Keyword:** `martin d10e vs taylor 214ce` (~16K monthly searches, low competition, high affiliate payout)
+**Secondary Keywords:** `best acoustic guitar under 1000`, `martin vs taylor under 1500`, `martin d-10e review 2026`
+**Landing Page:** `https://reviewsguitar.com/vs/martin-d10e-vs-taylor-214ce`
+
+### Video Title
+Martin D-10E Road Series vs Taylor 214ce — Don't Buy the Wrong $1,000 Acoustic! (2026)
+
+### Script
+When you have $900 to $1,300 to spend on an acoustic guitar, every serious buyer ends up torn between two instruments: the Martin D-10E Road Series and the Taylor 214ce. Both are legendary names, but their construction and voicing could not be more different.
+
+The Martin D-10E is an all-solid-wood dreadnought—either solid Sitka spruce over solid sapele, or all-solid sapele. Because there is zero laminate wood in the body, the D-10E delivers that unmistakable deep, chest-thumping Martin bass response and woody midrange warmth. Plus, the Fishman MX-T electronics include a hidden soundhole tuner that automatically mutes your output jack when you tune on stage.
+
+The Taylor 214ce takes the opposite engineering approach. It pairs a torrefied solid spruce top with layered rosewood or walnut back and sides in a sleek Grand Auditorium cutaway body. Where the Martin is warm and boomy, the Taylor 214ce is surgical, bright, and articulate—making every note pop in a studio mix or worship band. And Taylor's slim 1-11/16 inch neck feels almost as fast as an electric guitar.
+
+Choose the Martin D-10E if you want all-solid-wood warmth and massive unplugged dreadnought projection. Choose the Taylor 214ce if you prioritize effortless neck playability, upper-fret cutaway access, and sparkling plugged-in clarity. Check the link in the description and pinned comment for our full comparison chart and today's lowest prices.
+
+### YouTube Description
+```text
+Martin D-10E Road Series vs Taylor 214ce — which $1,000 acoustic guitar wins in 2026?
+👉 https://reviewsguitar.com/vs/martin-d10e-vs-taylor-214ce
+
+We put the all-solid-wood Martin D-10E Road Series dreadnought head-to-head against the Taylor 214ce Grand Auditorium. Compare their bass response, neck profiles, all-solid vs layered tonewoods, and Fishman MX-T vs Expression System 2 electronics.
+
+🎸 GEAR FEATURED IN THIS VIDEO:
+1️⃣ Martin D-10E Road Series - https://reviewsguitar.com/go/martin-d-10e-road-series
+2️⃣ Taylor 214ce Plus - https://reviewsguitar.com/go/taylor-214ce-plus-acoustic-guitar
+
+📖 FULL HEAD-TO-HEAD COMPARISON:
+👉 https://reviewsguitar.com/vs/martin-d10e-vs-taylor-214ce
+
+#MartinD10E #Taylor214ce #MartinVsTaylor #AcousticGuitar #BestAcousticGuitarUnder1000
+```
+
+---
+
+## Video 40 — Alvarez AF30CE Artist Series Review (2026): Better Than Yamaha & Fender Under $500?
+
+**Primary Keyword:** `alvarez af30ce review` / `alvarez artist series acoustic guitar` (#1 GSC impression cluster!)
+**Secondary Keywords:** `best acoustic electric guitar under 500`, `alvarez af30ce vs yamaha fs800`, `om folk acoustic guitar`
+**Landing Page:** `https://reviewsguitar.com/collections/acoustic/premium-guide`
+
+### Video Title
+Alvarez AF30CE Artist Series Review (2026) — The Best Acoustic-Electric Under $500?
+
+### Script
+Everyone talks about Yamaha and Fender under $500, but luthiers and acoustic purists have a secret favorite in this price bracket: the Alvarez AF30CE Artist Series. At around $479, does this OM folk cutaway actually beat the big-box brands?
+
+What separates the Alvarez AF30CE from entry-level guitars is its hand-selected A+ solid Sitka spruce top paired with Alvarez's forward-shifted FST2 scalloped X-bracing. By moving the bracing axis slightly closer to the soundhole, a larger surface area of the solid spruce soundboard vibrates freely. The result is an OM-sized concert guitar that projects with the volume and warmth of a much larger body.
+
+Hardware is where Alvarez truly humiliates other sub-$500 guitars. Instead of cheap hollow plastic, the AF30CE ships from the factory with a genuine real bone nut and real bone saddle, a bi-level rosewood/laurel bridge that increases string break-angle tension, and an LR Baggs StagePro EQ pickup system with a built-in chromatic tuner.
+
+If you want a comfortable concert cutaway with real bone hardware and stage-ready LR Baggs electronics under $500, the Alvarez AF30CE is in a class of its own. Click the link in the description and pinned comment to see our full bench test and check current pricing.
+
+### YouTube Description
+```text
+Is the Alvarez AF30CE Artist Series the best acoustic-electric guitar under $500 in 2026? See our full review:
+👉 https://reviewsguitar.com/collections/acoustic/premium-guide
+
+We bench-test the Alvarez AF30CE Artist Series OM/Folk acoustic-electric guitar—breaking down its A+ solid Sitka spruce top, forward-shifted FST2 scalloped bracing, real bone nut & saddle, and LR Baggs StagePro electronics against similarly priced Yamaha, Fender, and Martin models.
+
+🎸 GEAR FEATURED IN THIS VIDEO:
+1️⃣ Alvarez AF30CE Artist Series - https://reviewsguitar.com/collections/acoustic/premium-guide
+2️⃣ Martin D-10E Road Series - https://reviewsguitar.com/go/martin-d-10e-road-series
+3️⃣ Taylor 214ce Plus - https://reviewsguitar.com/go/taylor-214ce-plus-acoustic-guitar
+
+#AlvarezGuitars #AlvarezAF30CE #AlvarezArtistSeries #AcousticElectricGuitar #BestAcousticUnder500
+```
+
+---
+
+## Video 41 — Squier Classic Vibe 50s vs 60s Stratocaster: Don't Buy the Wrong One! (2026)
+
+**Primary Keyword:** `squier classic vibe 50s vs 60s` (~14K monthly searches, low competition)
+**Secondary Keywords:** `squier classic vibe strat review`, `maple vs laurel fretboard strat`, `best squier stratocaster 2026`
+**Landing Page:** `https://reviewsguitar.com/vs/squier-classic-vibe-50s-vs-60s`
+
+### Video Title
+Squier Classic Vibe 50s vs 60s Stratocaster: Don't Buy the Wrong One! (2026)
+
+### Script
+Our Squier Sonic vs Affinity vs Classic Vibe video proved that the Classic Vibe is the king of budget Fenders. But once you decide on a Classic Vibe, you face a tough choice: the '50s Stratocaster or the '60s Stratocaster? They cost the exact same price, yet they feel and sound noticeably different.
+
+The Classic Vibe '50s Stratocaster is built around a glossy one-piece maple neck and fingerboard. Tonally, that maple fingerboard gives your notes an immediate, percussive snap and glassy treble attack—think Buddy Holly, Eric Clapton's "Blackie," and David Gilmour cleans. If you love bright, bell-like neck pickup tones that cut right through a mix, the '50s is your guitar.
+
+The Classic Vibe '60s Stratocaster swaps the maple board for an Indian laurel fingerboard over a nato or nyatoh body. That darker fingerboard wood slightly softens the high-end transients, giving you a warmer, throatier midrange growl that excels at Stevie Ray Vaughan, John Mayer, and Jimi Hendrix blues-rock overdrive.
+
+Both share identical Fender-designed Alnico single-coil pickups, a 9.5-inch radius, and narrow-tall frets. Choose the '50s for bright maple snap; choose the '60s for warm blues-rock bite. Click the link in the description and pinned comment to compare both side-by-side.
+
+### YouTube Description
+```text
+Squier Classic Vibe 50s vs 60s Stratocaster — which vintage-spec Strat should you buy in 2026?
+👉 https://reviewsguitar.com/vs/squier-classic-vibe-50s-vs-60s
+
+We compare the Squier Classic Vibe '50s Stratocaster (maple fingerboard) against the Classic Vibe '60s Stratocaster (laurel fingerboard) on tone, neck feel, Fender-designed Alnico pickups, and sustain.
+
+🎸 GEAR FEATURED IN THIS VIDEO:
+1️⃣ Squier Classic Vibe '60s Stratocaster - https://reviewsguitar.com/go/squier-classic-vibe-60s-strat
+2️⃣ Squier Classic Vibe '50s Stratocaster - https://reviewsguitar.com/go/squier-classic-vibe-50s-strat
+
+📖 FULL HEAD-TO-HEAD COMPARISON:
+👉 https://reviewsguitar.com/vs/squier-classic-vibe-50s-vs-60s
+
+#SquierClassicVibe #ClassicVibe50s #ClassicVibe60s #SquierStratocaster #FenderSquier #GuitarComparison
+```
+
+---
+
+## Video 42 — Gretsch G2622 Streamliner vs Epiphone ES-335 / Dot: Best Semi-Hollow Guitar Battle!
+
+**Primary Keyword:** `gretsch streamliner vs epiphone dot` (~11K monthly searches, top GSC Page-1 comparison)
+**Secondary Keywords:** `best budget semi hollow guitar`, `gretsch g2622 review`, `epiphone es-335 vs gretsch`
+**Landing Page:** `https://reviewsguitar.com/vs/gretsch-streamliner-vs-epiphone-dot`
+
+### Video Title
+Gretsch G2622 Streamliner vs Epiphone ES-335 — Best Semi-Hollow Guitar Under $600! (2026)
+
+### Script
+If you want the warm, woody resonance of a semi-hollow electric guitar without feedback at stage volume, two titans rule the sub-$600 price bracket: the Gretsch G2622 Streamliner and the Epiphone ES-335 Dot. Which one deserves your hard-earned cash?
+
+The Gretsch G2622 Streamliner is armed with Broad'Tron BT-2S/BT-3S humbuckers and a lightweight spruce center block. Unlike traditional muddy humbuckers, Broad'Trons retain that signature Gretsch high-end chime and definition while still handling crunchy indie rock, worship, and classic rock overdrive. Plus, it's noticeably lighter on your shoulder during two-hour rehearsals.
+
+The Epiphone ES-335 Dot is pure Gibson heritage. Built with a solid maple center block and Alnico Classic PRO humbuckers, it delivers a thicker, creamier midrange sustain that B.B. King, Chuck Berry, and Dave Grohl made famous. If you play blues, jazz, or Foo Fighters-style rock, the ES-335 gives you that unmistakable fat 335 roar.
+
+Want chimey articulation and lightweight comfort? Grab the Gretsch G2622. Want thick, creamy blues-rock sustain? Grab the Epiphone ES-335. Click the link in the description and pinned comment for our full spec breakdown and current deals.
+
+### YouTube Description
+```text
+Gretsch G2622 Streamliner vs Epiphone ES-335 Dot — which semi-hollow electric guitar wins in 2026?
+👉 https://reviewsguitar.com/vs/gretsch-streamliner-vs-epiphone-dot
+
+We compare the Gretsch G2622 Streamliner Center Block against the Epiphone ES-335 Dot on Broad'Tron vs Alnico Classic PRO pickups, center-block feedback rejection, weight, and neck profile.
+
+📖 FULL HEAD-TO-HEAD BREAKDOWN:
+👉 https://reviewsguitar.com/vs/gretsch-streamliner-vs-epiphone-dot
+
+#GretschG2622 #EpiphoneES335 #SemiHollowGuitar #GretschStreamliner #EpiphoneDot #GuitarComparison
+```

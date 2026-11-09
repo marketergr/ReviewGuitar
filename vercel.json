@@ -104,13 +104,73 @@
     },
     {
       "source": "/fender-am-pro-ii-review",
-      "destination": "/best/home-practice-guitar-amp",
+      "destination": "/vs/fender-player-vs-american-professional",
       "permanent": true
     },
     {
       "source": "/prs-vs-fender-tele",
-      "destination": "/vs/telecaster-vs-stratocaster-beginner",
+      "destination": "/collections/electric/fender-player-ii-telecaster-vs-prs-se-custom-24",
       "permanent": true
+    },
+    {
+      "source": "/go/yamaha-fg800-acoustic-guitar",
+      "destination": "https://www.amazon.com/dp/B01CFOAQP2?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/fender-cd-60s-dreadnought",
+      "destination": "https://www.amazon.com/dp/B071FV8G1Z?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/taylor-214ce-plus-acoustic-guitar",
+      "destination": "https://www.amazon.com/dp/B084T5713T?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/martin-d-10e-road-series",
+      "destination": "https://www.amazon.com/dp/B07N25BFD2?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/yamaha-pacifica-112v",
+      "destination": "https://www.amazon.com/dp/B001N85NUG?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/squier-affinity-stratocaster",
+      "destination": "https://www.amazon.com/dp/B096L3C7DQ?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/squier-classic-vibe-60s-strat",
+      "destination": "https://www.amazon.com/dp/B07G4W81BN?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/dunlop-crybaby-gcb95",
+      "destination": "https://www.amazon.com/dp/B0002CZVK0?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/hercules-gs414b-plus",
+      "destination": "https://www.amazon.com/dp/B079YWMH91?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/string-swing-cc01k",
+      "destination": "https://www.amazon.com/dp/B0002GLCRC?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/ernie-ball-regular-slinky-strings",
+      "destination": "https://www.amazon.com/dp/B0002M6C6Y?tag=reviewsguitar-20",
+      "permanent": false
+    },
+    {
+      "source": "/go/tc-polytune-3-clip",
+      "destination": "https://www.amazon.com/dp/B0756M2Q6B?tag=reviewsguitar-20",
+      "permanent": false
     },
     {
       "source": "/squier-classic-vibe-60s",
