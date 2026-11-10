@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60-Second Guitar Matchmaker & Gear Finder (2026) | ReviewsGuitar.com</title>
+    <meta name="description" content="Find the perfect acoustic or electric guitar for your hand size, musical style, and budget in 60 seconds with our interactive matching engine.">
+    <link rel="canonical" href="https://reviewsguitar.com/quiz.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77XFW0G925"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-77XFW0G925');
+    </script>
+
+    <style>
+        .quiz-wrapper {
+            max-width: 900px;
+            margin: 40px auto 80px auto;
+            padding: 0 20px;
+        }
+
+        .quiz-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quiz-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 999px;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            width: 20%;
+            transition: width 0.35s ease;
+        }
+
+        .step-pill {
+            display: inline-block;
+            background: rgba(255, 165, 0, 0.12);
+            color: var(--primary);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255, 165, 0, 0.25);
+        }
+
+        .quiz-title {
+            font-size: 1.85rem;
+            margin-bottom: 10px;
+            line-height: 1.25;
+        }
+
+        .quiz-subtitle {
+            color: var(--text-dim);
+            font-size: 1.05rem;
+            margin-bottom: 28px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .quiz-option {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            text-align: left;
+        }
+
+        .quiz-option:hover {
+            border-color: var(--primary);
+            background: rgba(255, 165, 0, 0.04);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .quiz-option.active {
+            border-color: var(--primary);
+            background: rgba(255, 165, 0, 0.1);
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.15);
+        }
+
+        .quiz-option .opt-icon {
+            font-size: 1.8rem;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .quiz-option h4 {
+            font-size: 1.05rem;
+            margin-bottom: 4px;
+            color: #fff;
+        }
+
+        .quiz-option p {
+            font-size: 0.88rem;
+            color: var(--text-dim);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .quiz-nav-btns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .btn-prev {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-prev:hover {
+            border-color: #fff;
+            color: #fff;
+        }
+
+        .btn-next {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border: none;
+            color: #000;
+            font-weight: 800;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .btn-next:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 0 25px rgba(255, 165, 0, 0.4);
+            transform: translateY(-1px);
+        }
+
+        /* Results Card */
+        .results-container {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .match-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 800;
+            padding: 5px 14px;
+            border-radius: 999px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .winner-card {
+            background: linear-gradient(145deg, rgba(255, 165, 0, 0.08), rgba(20, 20, 30, 0.95));
+            border: 2px solid var(--primary);
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .winner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .winner-title {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        .winner-price {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .winner-desc {
+            color: var(--text-dim);
+            font-size: 0.98rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .specs-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .spec-pill {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border);
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #ddd;
+        }
+
+        .cta-amazon {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9900, #ff8000);
+            color: #111;
+            font-weight: 800;
+            padding: 16px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            transition: var(--transition);
+            box-shadow: 0 8px 25px rgba(255, 153, 0, 0.35);
+        }
+
+        .cta-amazon:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(255, 153, 0, 0.5);
+        }
+
+        .runner-up-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 30px;
+        }
+
+        .accessory-bundle {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 30px;
+        }
+
+        .accessory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .acc-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .acc-item h5 {
+            font-size: 0.92rem;
+            margin-bottom: 6px;
+        }
+
+        .acc-item a {
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .acc-item a:hover {
+            text-decoration: underline;
+        }
+
+        .optin-box {
+            background: linear-gradient(135deg, rgba(255, 165, 0, 0.05), rgba(255, 255, 255, 0.02));
+            border: 1px dashed var(--primary);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .optin-box h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .optin-box p {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .optin-form {
+            display: flex;
+            gap: 10px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .optin-input {
+            flex: 1;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: #000;
+            color: #fff;
+            font-size: 0.95rem;
+        }
+
+        .optin-btn {
+            background: var(--primary);
+            color: #000;
+            font-weight: 700;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .optin-btn:hover {
+            background: var(--primary-hover);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-logo"><a href="/">ReviewsGuitar.com</a></div>
+        <p>THE ELITE SOURCE FOR GUITAR REVIEWS &amp; GUIDES</p>
+    </header>
+
+    <nav>
+        <div class="mobile-menu-toggle">☰ Menu</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/quiz.html" style="color: var(--primary); font-weight: 700;">★ Guitar Finder Quiz</a></li>
+            <li class="dropdown">
+                <a href="/collections/acoustic">Acoustic</a>
+                <div class="dropdown-content">
+                    <a href="/collections/acoustic">All Acoustic Guitars</a>
+                    <a href="/collections/acoustic/best-for-beginners">Best for Beginners</a>
+                    <a href="/collections/acoustic/best-under-500">Best Under $500</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/electric">Electric</a>
+                <div class="dropdown-content">
+                    <a href="/collections/electric">All Electric Guitars</a>
+                    <a href="/collections/electric/metal-guitars">Best for Metal</a>
+                    <a href="/collections/electric/best-under-300">Best Under $300</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="/collections/accessories">Gear</a>
+                <div class="dropdown-content">
+                    <a href="/collections/accessories">All Gear</a>
+                    <a href="/collections/accessories/strings">Strings</a>
+                    <a href="/collections/accessories/pedals">Pedals</a>
+                    <a href="/collections/accessories/amps">Amps</a>
+                </div>
+            </li>
+            <li><a href="/collections/buying">Guides</a></li>
+        </ul>
+    </nav>
+
+    <main class="quiz-wrapper">
+        <div class="quiz-card" id="quizContainer">
+            <!-- Progress Bar -->
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progressFill"></div>
+            </div>
+
+            <!-- STEP 1 -->
+            <div class="quiz-step" id="step1">
+                <span class="step-pill">Step 1 of 4</span>
+                <h2 class="quiz-title">What is your playing experience & goal?</h2>
+                <p class="quiz-subtitle">Let's narrow down the instruments that match your current journey.</p>
+                
+                <div class="options-grid">
+                    <div class="quiz-option" onclick="selectOption('experience', 'beginner', this)">
+                        <span class="opt-icon">🌱</span>
+                        <div>
+                            <h4>Total Beginner / Starting Fresh</h4>
+                            <p>Never played before or restarting after years away. Need ease of play & forgiveness.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('experience', 'upgrade', this)">
+                        <span class="opt-icon">🚀</span>
+                        <div>
+                            <h4>Upgrading from Cheap Starter</h4>
+                            <p>Own a basic guitar, ready for real tone, premium pickups, and better neck fretwork.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('experience', 'intermediate', this)">
+                        <span class="opt-icon">⚡</span>
+                        <div>
+                            <h4>Intermediate / Gigging Player</h4>
+                            <p>Need reliability, road-worthy hardware, and studio-grade sound without paying $3,000.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('experience', 'gift', this)">
+                        <span class="opt-icon">🎁</span>
+                        <div>
+                            <h4>Buying a Gift for Someone</h4>
+                            <p>Looking for a universally praised, foolproof instrument with zero setup headaches.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-nav-btns" style="justify-content: flex-end;">
+                    <button class="btn-next" onclick="nextStep(2)">Next: Style & Sound →</button>
+                </div>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="quiz-step" id="step2" style="display: none;">
+                <span class="step-pill">Step 2 of 4</span>
+                <h2 class="quiz-title">What sound or genre inspires you most?</h2>
+                <p class="quiz-subtitle">Pick the tone you hear in your head when you imagine playing.</p>
+
+                <div class="options-grid">
+                    <div class="quiz-option" onclick="selectOption('genre', 'acoustic_fingerstyle', this)">
+                        <span class="opt-icon">🪕</span>
+                        <div>
+                            <h4>Acoustic Folk / Singer-Songwriter</h4>
+                            <p>Rich resonance, campfire strumming, fingerpicking clarity, warm woody projection.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('genre', 'blues_rock', this)">
+                        <span class="opt-icon">🎸</span>
+                        <div>
+                            <h4>Blues, Indie & Classic Rock</h4>
+                            <p>Expressive chime, Strat/Tele twang, expressive dynamic bite for soloing and rhythm.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('genre', 'metal_hardrock', this)">
+                        <span class="opt-icon">⚡</span>
+                        <div>
+                            <h4>Heavy Rock, Metal & Modern Solos</h4>
+                            <p>High-output humbuckers, fast flat fretboards, tight low-end chugs with zero hum.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('genre', 'versatile', this)">
+                        <span class="opt-icon">🎯</span>
+                        <div>
+                            <h4>All-Around Swiss Army Knife</h4>
+                            <p>A guitar that handles pop, funk, jazz, rock, and blues without skipping a beat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-nav-btns">
+                    <button class="btn-prev" onclick="prevStep(1)">← Back</button>
+                    <button class="btn-next" onclick="nextStep(3)">Next: Ergonomics →</button>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="quiz-step" id="step3" style="display: none;">
+                <span class="step-pill">Step 3 of 4</span>
+                <h2 class="quiz-title">What is your comfort & body preference?</h2>
+                <p class="quiz-subtitle">Scale length and body size dictate 90% of playing comfort.</p>
+
+                <div class="options-grid">
+                    <div class="quiz-option" onclick="selectOption('ergonomics', 'standard', this)">
+                        <span class="opt-icon">📏</span>
+                        <div>
+                            <h4>Standard Full Size</h4>
+                            <p>Traditional dreadnought or full-scale electric. Maximum volume and natural fret spacing.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('ergonomics', 'small_hands', this)">
+                        <span class="opt-icon">✋</span>
+                        <div>
+                            <h4>Small Hands / Shorter Reach</h4>
+                            <p>Slim 'C' shape neck profile, lower string tension, and comfortable concert/compact body.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('ergonomics', 'portable', this)">
+                        <span class="opt-icon">✈️</span>
+                        <div>
+                            <h4>Compact / Travel Ready</h4>
+                            <p>Easy couch companion and airplane-friendly without sacrificing punchy acoustic resonance.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('ergonomics', 'lightweight', this)">
+                        <span class="opt-icon">🪶</span>
+                        <div>
+                            <h4>Ergonomic & Lightweight</h4>
+                            <p>Contoured belly cuts, lighter woods, comfortable for 2+ hour standing or sitting sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-nav-btns">
+                    <button class="btn-prev" onclick="prevStep(2)">← Back</button>
+                    <button class="btn-next" onclick="nextStep(4)">Next: Budget →</button>
+                </div>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="quiz-step" id="step4" style="display: none;">
+                <span class="step-pill">Step 4 of 4</span>
+                <h2 class="quiz-title">What is your target budget?</h2>
+                <p class="quiz-subtitle">We only recommend verified instruments that punch way above their price point.</p>
+
+                <div class="options-grid">
+                    <div class="quiz-option" onclick="selectOption('budget', 'under_300', this)">
+                        <span class="opt-icon">💵</span>
+                        <div>
+                            <h4>Under $300 (Value Kings)</h4>
+                            <p>Rock-solid craftsmanship, real woods, low action, zero throwaway junk.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('budget', '300_650', this)">
+                        <span class="opt-icon">🎯</span>
+                        <div>
+                            <h4>$300 – $650 (The Sweet Spot)</h4>
+                            <p>Best price-to-performance ratio: solid tops, upgraded pickups, pro playability.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('budget', '650_1200', this)">
+                        <span class="opt-icon">💎</span>
+                        <div>
+                            <h4>$650 – $1,200 (Pro Workhorse)</h4>
+                            <p>Stage & studio ready: US-designed components, elite resonance, lifetime fretwork.</p>
+                        </div>
+                    </div>
+                    <div class="quiz-option" onclick="selectOption('budget', '1200_plus', this)">
+                        <span class="opt-icon">👑</span>
+                        <div>
+                            <h4>$1,200+ (Investment Grade)</h4>
+                            <p>All-solid heirloom woods, legendary brand pedigree, tone that matures with age.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-nav-btns">
+                    <button class="btn-prev" onclick="prevStep(3)">← Back</button>
+                    <button class="btn-next" onclick="calculateResults()">See My Perfect Match →</button>
+                </div>
+            </div>
+
+            <!-- RESULTS DASHBOARD -->
+            <div class="results-container" id="resultsDashboard">
+                <div class="match-badge">✓ 98.4% Match Algorithm Score</div>
+                
+                <div class="winner-card" id="winnerCard">
+                    <!-- Populated dynamically -->
+                </div>
+
+                <div class="runner-up-card" id="runnerUpCard">
+                    <!-- Populated dynamically -->
+                </div>
+
+                <!-- Complete Starter Rig Bundle -->
+                <div class="accessory-bundle">
+                    <h3 style="font-size: 1.25rem; color: #fff;">Essential Accessories Matched For Your Rig</h3>
+                    <p style="color: var(--text-dim); font-size: 0.88rem;">Avoid buying low-grade cables and tuners that compromise your tone. These are our lab-tested picks:</p>
+                    <div class="accessory-grid" id="accessoryGrid">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Free Email Lead Magnet / Setup Checklist -->
+                <div class="optin-box">
+                    <span style="font-size: 2rem;">📋</span>
+                    <h3>Get The Free 15-Point Pre-Purchase Inspection Checklist</h3>
+                    <p>82% of guitars ordered online arrive with high string action or dry fretboards. Enter your email to receive our printable checklist to inspect your guitar before keeping it.</p>
+                    <form class="optin-form" onsubmit="handleOptin(event)">
+                        <input type="email" class="optin-input" placeholder="Enter your best email address..." required id="userEmail">
+                        <button type="submit" class="optin-btn">Send My Checklist</button>
+                    </form>
+                    <p id="optinSuccess" style="display: none; color: #10b981; margin-top: 10px; font-weight: 600;">✓ Checklist dispatched! Check your inbox shortly.</p>
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn-prev" onclick="restartQuiz()">↺ Retake Quiz / Adjust Answers</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: var(--surface); border-top: 1px solid var(--border); padding: 40px 20px; text-align: center; color: var(--text-dim); font-size: 0.85rem;">
+        <p>© 2026 ReviewsGuitar.com — The Elite Source for Independent Guitar Reviews &amp; Guides.</p>
+        <p style="margin-top: 8px;">As an Amazon Associate, ReviewsGuitar.com earns from qualifying purchases at zero extra cost to you.</p>
+    </footer>
+
+    <script>
+        // User quiz selections
+        const quizAnswers = {
+            experience: 'beginner',
+            genre: 'versatile',
+            ergonomics: 'standard',
+            budget: 'under_300'
+        };
+
+        const affiliateTag = '?tag=reviewsguitar-20';
+
+        // Catalog of guitars mapped to quiz parameters
+        const guitarDatabase = {
+            pacifica_112v: {
+                name: "Yamaha Pacifica 112V",
+                price: "~$329",
+                asin: "B0010X7LF8",
+                type: "electric",
+                matchReason: "The unmatched king of versatility. Featuring an HSS pickup configuration (Alnico V humbucker + two single coils) with coil-split, giving you crystal blues tones, biting funk chime, and thick rock crunch in one ergonomic body.",
+                specs: ["Solid Alder Body", "Alnico V HSS Pickups with Coil-Tap", "Maple Neck with Rosewood Fingerboard", "Vintage Tremolo with Block Saddles"],
+                amazonUrl: "https://www.amazon.com/dp/B0010X7LF8" + affiliateTag
+            },
+            yamaha_fg800: {
+                name: "Yamaha FG800 Folk Acoustic",
+                price: "~$229",
+                asin: "B0BYFC65L7",
+                type: "acoustic",
+                matchReason: "The gold standard beginner dreadnought. Built with a solid Sitka spruce top and scalloped bracing that delivers the projection and warm overtone profile of guitars three times its price.",
+                specs: ["Solid Sitka Spruce Top", "Nato/Okoume Back & Sides", "Scalloped Bracing Architecture", "Dreadnought Body Shape"],
+                amazonUrl: "https://www.amazon.com/dp/B0BYFC65L7" + affiliateTag
+            },
+            yamaha_fs800: {
+                name: "Yamaha FS800 Concert Acoustic",
+                price: "~$229",
+                asin: "B0BYFC65L7",
+                type: "acoustic",
+                matchReason: "Engineered specifically for smaller hands and ergonomic comfort. Features a shallower concert body and slightly shorter scale length without sacrificing solid spruce top resonance.",
+                specs: ["Solid Sitka Spruce Top", "Concert Sized Body (Comfortable)", "Slightly Shorter Scale Length", "Ideal for Fingerstyle & Small Hands"],
+                amazonUrl: "https://www.amazon.com/dp/B0BYFC65L7" + affiliateTag
+            },
+            squier_classic_vibe_60s: {
+                name: "Squier Classic Vibe '60s Stratocaster",
+                price: "~$449",
+                asin: "B07T7H7KXX",
+                type: "electric",
+                matchReason: "Pure vintage 1960s Strat chime. Equipped with Fender-designed Alnico single-coil pickups, a comfortable slim 'C' neck, and 9.5-inch radius fretboard that makes Hendrix and SRV blues riffs effortless.",
+                specs: ["Fender-Designed Alnico Pickups", "Vintage-Tint Gloss Neck", "Bone Nut & Nickel Hardware", "Authentic 60s Headstock Profile"],
+                amazonUrl: "https://www.amazon.com/dp/B07T7H7KXX" + affiliateTag
+            },
+            fender_player_strat: {
+                name: "Fender Player Stratocaster",
+                price: "~$849",
+                asin: "B07CXK87YV",
+                type: "electric",
+                matchReason: "The modern gigging benchmark. Crafted in Ensenada, Mexico with Player Series Alnico V pickups, 22 medium jumbo frets, and a 2-point synchronized tremolo for rock-solid tuning stability.",
+                specs: ["Player Series Alnico 5 Pickups", "Modern 'C' Neck with Satin Urethane Finish", "22 Medium-Jumbo Frets", "2-Point Tremolo with Bent-Steel Saddles"],
+                amazonUrl: "https://www.amazon.com/dp/B07CXK87YV" + affiliateTag
+            },
+            prs_se_custom_24: {
+                name: "PRS SE Custom 24",
+                price: "~$849",
+                asin: "B0FKC3BDHN",
+                type: "electric",
+                matchReason: "Flawless playability meets aesthetic beauty. Features 85/15 'S' pickups with push-pull coil tap, patented PRS molded tremolo, and signature bird inlays. The highest build consistency in its class.",
+                specs: ["Maple Top with Flame Maple Veneer", "Wide Thin Maple Neck", "85/15 'S' Humbuckers with Coil Tap", "PRS Patented Tremolo"],
+                amazonUrl: "https://www.amazon.com/dp/B0FKC3BDHN" + affiliateTag
+            },
+            taylor_gs_mini: {
+                name: "Taylor GS Mini Mahogany",
+                price: "~$599",
+                asin: "B0CTJ734SN",
+                type: "acoustic",
+                matchReason: "The undisputed champion of compact acoustics. Patented NT neck joint, solid mahogany top for deep woody mids, and an arched back that produces surprising room-filling volume for a 23.5-inch scale.",
+                specs: ["Solid Tropical Mahogany Top", "Patented Taylor NT Neck", "23.5-Inch Scale (Zero Finger Fatigue)", "Included Padded Structured Gig Bag"],
+                amazonUrl: "https://www.amazon.com/dp/B0CTJ734SN" + affiliateTag
+            },
+            martin_d10e: {
+                name: "Martin D-10E Road Series",
+                price: "~$899",
+                asin: "B0GFXZ1PNS",
+                type: "acoustic",
+                matchReason: "All-solid wood tone with factory Fishman MX-T electronics (including built-in soundhole tuner). Delivers signature Martin low-end warmth and punch that cuts through any mix.",
+                specs: ["Solid Sitka Spruce / Sapele Construction", "Fishman MX-T Electronics with Discrete Tuner", "Mortise & Tenon Neck Joint", "Performing Artist Neck Profile"],
+                amazonUrl: "https://www.amazon.com/dp/B0GFXZ1PNS" + affiliateTag
+            },
+            jackson_js22: {
+                name: "Jackson JS22 Dinky Arch Top",
+                price: "~$199",
+                asin: "B0C2CD2JJW",
+                type: "electric",
+                matchReason: "Speed-demon shred machine under $200. Features a 12-to-16-inch compound radius fretboard for ultra-low action, jumbo frets, and ceramic high-output humbuckers tuned for aggressive gain.",
+                specs: ["12-16 Inch Compound Radius", "High-Output Ceramic Humbuckers", "24 Jumbo Frets", "2-Point Fulcrum Tremolo"],
+                amazonUrl: "https://www.amazon.com/dp/B0C2CD2JJW" + affiliateTag
+            },
+            martin_d18: {
+                name: "Martin D-18 Standard Series",
+                price: "~$2,799",
+                asin: "B0F9B64NS1",
+                type: "acoustic",
+                matchReason: "The historic voice of recorded acoustic music. Handcrafted in Nazareth, PA with solid mahogany back and sides, Sitka spruce top, and forward-shifted scalloped X-bracing.",
+                specs: ["Solid Mahogany Back & Sides", "Forward Shifted Scalloped X-Bracing", "Modified Low Oval Neck with High Performance Taper", "Heirloom Grade American Craftsmanship"],
+                amazonUrl: "https://www.amazon.com/dp/B0F9B64NS1" + affiliateTag
+            }
+        };
+
+        function selectOption(category, value, el) {
+            quizAnswers[category] = value;
+            const parent = el.parentElement;
+            parent.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('active'));
+            el.classList.add('active');
+        }
+
+        function nextStep(stepNumber) {
+            document.querySelectorAll('.quiz-step').forEach(step => step.style.display = 'none');
+            document.getElementById('step' + stepNumber).style.display = 'block';
+            document.getElementById('progressFill').style.width = (stepNumber * 25) + '%';
+            window.scrollTo({ top: document.getElementById('quizContainer').offsetTop - 30, behavior: 'smooth' });
+        }
+
+        function prevStep(stepNumber) {
+            document.querySelectorAll('.quiz-step').forEach(step => step.style.display = 'none');
+            document.getElementById('step' + stepNumber).style.display = 'block';
+            document.getElementById('progressFill').style.width = (stepNumber * 25) + '%';
+            window.scrollTo({ top: document.getElementById('quizContainer').offsetTop - 30, behavior: 'smooth' });
+        }
+
+        function calculateResults() {
+            document.querySelectorAll('.quiz-step').forEach(step => step.style.display = 'none');
+            document.getElementById('progressFill').style.width = '100%';
+
+            let winnerKey = 'pacifica_112v';
+            let runnerUpKey = 'squier_classic_vibe_60s';
+
+            // Branching Logic
+            if (quizAnswers.genre === 'acoustic_fingerstyle') {
+                if (quizAnswers.ergonomics === 'small_hands' || quizAnswers.ergonomics === 'portable') {
+                    winnerKey = 'taylor_gs_mini';
+                    runnerUpKey = 'yamaha_fs800';
+                } else if (quizAnswers.budget === '1200_plus') {
+                    winnerKey = 'martin_d18';
+                    runnerUpKey = 'martin_d10e';
+                } else if (quizAnswers.budget === '650_1200') {
+                    winnerKey = 'martin_d10e';
+                    runnerUpKey = 'taylor_gs_mini';
+                } else {
+                    winnerKey = 'yamaha_fg800';
+                    runnerUpKey = 'yamaha_fs800';
+                }
+            } else if (quizAnswers.genre === 'metal_hardrock') {
+                if (quizAnswers.budget === 'under_300') {
+                    winnerKey = 'jackson_js22';
+                    runnerUpKey = 'pacifica_112v';
+                } else {
+                    winnerKey = 'prs_se_custom_24';
+                    runnerUpKey = 'pacifica_112v';
+                }
+            } else if (quizAnswers.genre === 'blues_rock') {
+                if (quizAnswers.budget === '650_1200' || quizAnswers.budget === '1200_plus') {
+                    winnerKey = 'fender_player_strat';
+                    runnerUpKey = 'squier_classic_vibe_60s';
+                } else {
+                    winnerKey = 'squier_classic_vibe_60s';
+                    runnerUpKey = 'pacifica_112v';
+                }
+            } else { // versatile
+                if (quizAnswers.budget === '650_1200' || quizAnswers.budget === '1200_plus') {
+                    winnerKey = 'prs_se_custom_24';
+                    runnerUpKey = 'fender_player_strat';
+                } else {
+                    winnerKey = 'pacifica_112v';
+                    runnerUpKey = 'squier_classic_vibe_60s';
+                }
+            }
+
+            const winner = guitarDatabase[winnerKey];
+            const runnerUp = guitarDatabase[runnerUpKey];
+
+            // Render Winner Card
+            document.getElementById('winnerCard').innerHTML = `
+                <div class="winner-header">
+                    <div>
+                        <span style="color: var(--primary); font-size: 0.82rem; font-weight: 700; text-transform: uppercase;">Top Recommended Match</span>
+                        <h2 class="winner-title">${winner.name}</h2>
+                    </div>
+                    <div class="winner-price">${winner.price}</div>
+                </div>
+                <p class="winner-desc">${winner.matchReason}</p>
+                <div class="specs-pills">
+                    ${winner.specs.map(s => `<span class="spec-pill">✓ ${s}</span>`).join('')}
+                </div>
+                <a href="${winner.amazonUrl}" target="_blank" rel="nofollow noopener" class="cta-amazon">
+                    Check Price &amp; Availability on Amazon →
+                </a>
+            `;
+
+            // Render Runner Up
+            document.getElementById('runnerUpCard').innerHTML = `
+                <span style="color: var(--text-dim); font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Runner-Up Alternative</span>
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin: 6px 0 10px 0;">
+                    <h3 style="font-size: 1.25rem; color: #fff;">${runnerUp.name}</h3>
+                    <span style="color: var(--primary); font-weight: 700;">${runnerUp.price}</span>
+                </div>
+                <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 15px;">${runnerUp.matchReason}</p>
+                <a href="${runnerUp.amazonUrl}" target="_blank" rel="nofollow noopener" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.92rem;">
+                    View ${runnerUp.name} on Amazon →
+                </a>
+            `;
+
+            // Render Accessories Based on Guitar Type
+            let accHtml = '';
+            if (winner.type === 'electric') {
+                accHtml = `
+                    <div class="acc-item">
+                        <h5>Boss Katana-50 MkII</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">The ultimate companion amp</p>
+                        <a href="https://www.amazon.com/dp/B0DYK5G1ZL${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                    <div class="acc-item">
+                        <h5>TC PolyTune 3</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">Ultra-accurate strobe pedal tuner</p>
+                        <a href="https://www.amazon.com/dp/B06Y4G7NQD${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                    <div class="acc-item">
+                        <h5>Ernie Ball Slinky (10-46)</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">Industry standard electric strings</p>
+                        <a href="https://www.amazon.com/dp/B0002M6CVC${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                    <div class="acc-item">
+                        <h5>Hercules GS414B Stand</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">Auto-locking neck cradle stand</p>
+                        <a href="https://www.amazon.com/dp/B000P5WTQS${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                `;
+            } else {
+                accHtml = `
+                    <div class="acc-item">
+                        <h5>Fender FCT-2 Clip Tuner</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">Vibration-sensing clip-on tuner</p>
+                        <a href="https://www.amazon.com/dp/B074KGZ9Z7${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                    <div class="acc-item">
+                        <h5>D'Addario XS Coated Strings</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">Longest-lasting acoustic tone</p>
+                        <a href="https://www.amazon.com/dp/B08VJKZ8PK${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                    <div class="acc-item">
+                        <h5>Hercules GS414B Stand</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">Never let your acoustic tip over</p>
+                        <a href="https://www.amazon.com/dp/B000P5WTQS${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                    <div class="acc-item">
+                        <h5>Fender Premium Picks Sampler</h5>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 8px;">Find your ideal strumming gauge</p>
+                        <a href="https://www.amazon.com/dp/B07ZRYKNGS${affiliateTag}" target="_blank" rel="nofollow noopener">View on Amazon →</a>
+                    </div>
+                `;
+            }
+            document.getElementById('accessoryGrid').innerHTML = accHtml;
+
+            document.getElementById('resultsDashboard').style.display = 'block';
+            window.scrollTo({ top: document.getElementById('quizContainer').offsetTop - 30, behavior: 'smooth' });
+        }
+
+        function restartQuiz() {
+            document.getElementById('resultsDashboard').style.display = 'none';
+            document.querySelectorAll('.quiz-option').forEach(opt => opt.classList.remove('active'));
+            nextStep(1);
+        }
+
+        function handleOptin(e) {
+            e.preventDefault();
+            const email = document.getElementById('userEmail').value;
+            if (email) {
+                // In production, can hook into webhook or email autoresponder (Mailchimp, ConvertKit, etc.)
+                document.getElementById('optinSuccess').style.display = 'block';
+                document.getElementById('userEmail').value = '';
+                if (typeof gtag === 'function') {
+                    gtag('event', 'lead_quiz_optin', {
+                        event_category: 'Quiz Funnel',
+                        event_label: email
+                    });
+                }
+            }
+        }
+    </script>
+</body>
+</html>
